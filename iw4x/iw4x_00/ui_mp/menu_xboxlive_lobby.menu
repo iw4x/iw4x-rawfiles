@@ -1,0 +1,263 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define K_DPAD_LEFT									22
+#define K_DPAD_RIGHT								23
+#define K_APAD_LEFT									30
+#define K_APAD_RIGHT								31
+#define K_F1										167
+
+#define MENU_NAME									"menu_xboxlive_lobby"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									dvarString("playlist_name")
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CHOICE_Y(i)									(30 + (i * 20))
+#define CHOICE_ORIGIN(i)							-64 CHOICE_Y(i)
+#define CHOICE_RECT(i)								CHOICE_ORIGIN(i) 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define HR_ORIGIN(i)								0 (CHOICE_Y(i) - 0.5)
+#define HR_RECT(i)									HR_ORIGIN(i) 216 1 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define MENU_PANEL_MAP_PREVIEW_WIDTH				216
+#define MENU_PANEL_MAP_PREVIEW_HEIGHT				122
+
+#define MENU_PANEL_MAP_PREVIEW \
+	itemDef \
+	{ \
+		name										"preview_image" \
+		rect										0 -159 MENU_PANEL_MAP_PREVIEW_WIDTH MENU_PANEL_MAP_PREVIEW_HEIGHT HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									CHOICE_TEXTCOLOR \
+		textScale									CHOICE_TEXTSIZE \
+		decoration									\
+		visible										1 \
+		exp											material("preview_" + dvarString("ui_mapname")) \
+	} \
+	itemDef \
+	{ \
+		name										"preview_mapname" \
+		rect										0 -159 MENU_PANEL_MAP_PREVIEW_WIDTH (MENU_PANEL_MAP_PREVIEW_HEIGHT - 103) HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0 0 0 0.5 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									UI_FONT_SMALL \
+		textScale									CHOICE_TEXTSIZE \
+		textAlign									6 \
+		textAlignX									-4 \
+		textAlignY									-1 \
+		decoration									\
+		autoWrapped									\
+		visible										1 \
+		exp											text(dvarString("party_mapname")) \
+	} \
+	itemDef \
+	{ \
+		name										"vetostatus" \
+		rect										0 -140 MENU_PANEL_MAP_PREVIEW_WIDTH (MENU_PANEL_MAP_PREVIEW_HEIGHT - 103) HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									1 0 0 0.25 \
+		background									"white" \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									UI_FONT_SMALL \
+		textScale									CHOICE_TEXTSIZE \
+		textAlign									6 \
+		textAlignX									-4 \
+		decoration									\
+		autoWrapped									\
+		visible										when(dvarString("party_vetoStatus") != "") \
+		exp											text(dvarString("party_vetoStatus")) \
+	} \
+	itemDef \
+	{ \
+		name										"preview_gametype" \
+		rect										0 -56 MENU_PANEL_MAP_PREVIEW_WIDTH (MENU_PANEL_MAP_PREVIEW_HEIGHT - 103) HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0 0 0 0.5 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									UI_FONT_SMALL \
+		textScale									CHOICE_TEXTSIZE \
+		textAlign									6 \
+		textAlignX									-4 \
+		decoration									\
+		autoWrapped									\
+		visible										1 \
+		exp											text(dvarString("party_gametype")) \
+	}
+
+#define ITEM_BUTTON_SUMMARY_VIS(visArg) \
+	itemDef \
+	{ \
+		name									"button_summary" \
+		style									WINDOW_STYLE_FILLED \
+		rect									-64 -24 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		group									"mw2_button" \
+		foreColor								CHOICE_TEXTCOLOR \
+		disableColor							MENU_BUTTON_TEXTCOLOR_DISABLED \
+		background								HIGHLIGHT_SHADER_ART \
+		type									ITEM_TYPE_BUTTON \
+		textFont								UI_FONT_SMALL \
+		textAlign								ITEM_ALIGN_TOP_RIGHT \
+		textAlignX								-60 \
+		textScale								CHOICE_TEXTSIZE \
+		text									"@PLATFORM_GAME_SUMMARY_CAPS" \
+		visible									visArg \
+		mouseEnter \
+		{ \
+			play								CHOICE_FOCUS_SOUND; \
+		} \
+		onFocus \
+		{ \
+			setItemColor						self backColor 0 0 0 1; \
+		} \
+		leaveFocus \
+		{ \
+			setItemColor						self backColor 0 0 0 0; \
+		} \
+		action \
+		{ \
+			play								CHOICE_CLICK_SOUND; \
+			open								"popup_summary"; \
+		} \
+	}
+
+#define ON_MENU_OPEN \
+	if (dvarBool("ui_opensummary")) \
+	{ \
+		setLocalVarInt								ui_autoopened (1); \
+		open										"popup_summary"; \
+		setDvar										"ui_opensummary" 0; \
+	} \
+	focusFirst; \
+	exec "selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow";
+
+#define ON_MENU_ESC \
+	open											"leavelobbywarning";
+
+#define ON_MENU_KEY_K_DPAD_LEFT \
+	if (getfocuseditemname() == "lobbyList") \
+	{ \
+		focusfirst; \
+	}
+
+#define ON_MENU_KEY_K_APAD_LEFT \
+	ON_MENU_KEY_K_DPAD_LEFT
+
+#define ON_MENU_KEY_K_APAD_RIGHT \
+	setFocus										"lobbyList"; \
+	setLocalVarString								"ui_hint_text" ("@MPUI_DESC_PLAYER_OPTIONS");
+
+#define ON_MENU_KEY_K_DPAD_RIGHT \
+	ON_MENU_KEY_K_APAD_RIGHT
+
+#define ON_MENU_KEY_K_F1 \
+	open											"popup_summary"; \
+	play											CHOICE_CLICK_SOUND;
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	MENU_EXEC_KEYINT(K_APAD_LEFT, ON_MENU_KEY_K_APAD_LEFT)
+	MENU_EXEC_KEYINT(K_APAD_RIGHT, ON_MENU_KEY_K_APAD_RIGHT)
+	MENU_EXEC_KEYINT(K_DPAD_LEFT, ON_MENU_KEY_K_DPAD_LEFT)
+	MENU_EXEC_KEYINT(K_DPAD_RIGHT, ON_MENU_KEY_K_DPAD_RIGHT)
+	MENU_EXEC_KEYINT(K_F1, ON_MENU_KEY_K_F1)
+
+	#define BACKGROUND_IW4
+	#include "ui_mp/bg.inc"
+	#include "ui_mp/lobby.inc"
+
+	ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
+
+	MENU_CHOICE_TITLE_RAW(MENU_TITLE, 0, 0.4, 1)
+
+	MENU_CHOICE_HORIZONTAL_LINE(1)
+
+	MENU_CHOICE_DBUTTON_VIS(1, button_1, "@MENU_CREATE_A_CLASS_CAPS", "@PERKS_UNLOCKED_BY_CHALLENGE", when(!isItemUnlocked("cac")))
+	MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_CREATE_A_CLASS_CAPS", open "cac_popup";, "@MPUI_DESC_CREATE_A_CLASS", when(isItemUnlocked("cac")))
+	MENU_CHOICE_NEWICON_VIS(1, when( ( isItemUnlocked("cac") && ( getPlayerDataAnyBoolTrue( "weaponNew" ) || getPlayerDataAnyBoolTrue( "camoNew" ) || getPlayerDataAnyBoolTrue( "attachmentNew" ) ) || getPlayerDataAnyBoolTrue( "perkNew" ) || ( ( getPlayerData( "perkNew" , "frag_grenade_mp" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "frag_grenade_mp" , 8 ) ) ) || ( getPlayerData( "perkNew" , "semtex_mp" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "semtex_mp" , 8 ) ) ) || ( getPlayerData( "perkNew" , "c4_mp" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "c4_mp" , 8 ) ) ) || ( getPlayerData( "perkNew" , "claymore_mp" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "claymore_mp" , 8 ) ) ) || ( getPlayerData( "perkNew" , "throwingknife_mp" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "throwingknife_mp" , 8 ) ) ) || ( getPlayerData( "perkNew" , "specialty_tacticalinsertion" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "specialty_tacticalinsertion" , 8 ) ) ) || ( getPlayerData( "perkNew" , "specialty_blastshield" ) || getPlayerData( "perkNew" , tablelookup( "mp/perkTable.csv" , 1 , "specialty_blastshield" , 8 ) ) ) || weaponClassNew( "weapon_grenade" ) || weaponClassNew( "weapon_equipment" ) ) || getPlayerData( "featureNew" , "cac" ) ) ) )
+	MENU_CHOICE_DBUTTON_VIS(2, button_2, "@MENU_PLAYERCARD_CAPS", "@PERKS_UNLOCKED_BY_CHALLENGE", when(!isItemUnlocked("cac")))
+	MENU_CHOICE_BUTTON_VIS(2, button_2, "@MENU_PLAYERCARD_CAPS", open "popup_callsign";, "@MPUI_DESC_PLAYERCARD", when(isItemUnlocked("cac")))
+	MENU_CHOICE_NEWICON_VIS(2, when( ( getPlayerData( "featureNew" , "cas" ) || getPlayerData( "featureNew" , "token_1" ) || getPlayerData( "featureNew" , "token_2" ) || getPlayerData( "featureNew" , "token_3" ) || getPlayerData( "featureNew" , "token_4" ) || getPlayerData( "featureNew" , "token_5" ) || getPlayerData( "featureNew" , "token_6" ) || getPlayerData( "featureNew" , "token_7" ) || getPlayerData( "featureNew" , "token_8" ) || getPlayerData( "featureNew" , "token_9" ) || getPlayerData( "featureNew" , "token_10" ) || getPlayerData( "featureNew" , "token_11" ) || getPlayerData( "featureNew" , "token_12" ) ) || getPlayerData( "featureNew" , "clantag" ) || ( getPlayerDataAnyBoolTrue( "iconNew" ) || getPlayerData( "featureNew" , "playercard_icon" ) ) || ( getPlayerDataAnyBoolTrue( "titleNew" ) || getPlayerData( "featureNew" , "playercard_title" ) ) ))
+	MENU_CHOICE_BUTTON_VIS(3, button_3, "@MENU_BARRACKS_CAPS", open "menu_online_barracks";, "@PATCH_DESC_BARRACKS", 1)
+	MENU_CHOICE_NEWICON_VIS(3, when( ( ( getPlayerDataAnyBoolTrue( "challengeTierNew" ) || getPlayerData( "featureNew" , "challenges" ) ) || getPlayerData( "featureNew" , "challenges" ) || getPlayerData( "featureNew" , "prestige" ) ) ) )
+	MENU_CHOICE_BUTTON_VIS(4, button_4, "@MENU_FRIENDS_CAPS", open "popup_friends";, "@MPUI_DESC_FRIENDS", 1)
+
+	MENU_CHOICE_HORIZONTAL_LINE(4)
+
+	itemDef
+	{
+		name										"button_5"
+		rect										CHOICE_RECT(5)
+		foreColor									CHOICE_TEXTCOLOR
+		disableColor								0.6 0.55 0.55 1
+		style										WINDOW_STYLE_FILLED
+		background									HIGHLIGHT_SHADER_ART
+		group										"mw2_button"
+		type										ITEM_TYPE_BUTTON
+		textAlign									ITEM_ALIGN_TOP_RIGHT
+		textAlignX									-60
+		textScale									CHOICE_TEXTSIZE
+		textFont									CHOICE_TEXTFONT
+		text										"@MENU_VOTE_TO_SKIP_CAPS"
+		disabled									when(!dvarbool("party_vetoButtonVisible"))
+		visible										1
+		execKeyInt 29
+		{
+			focusfirst;
+		}
+		execKeyInt 21
+		{
+			focusfirst;
+		}
+		mouseEnter
+		{
+			play									CHOICE_FOCUS_SOUND;
+		}
+		onFocus
+		{
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarBool							ui_menuAButton (1);
+			setLocalVarFloat						ui_popupYPos (getfocuseditemy());
+			if (dvarBool("party_vetoButtonVisible"))
+			{
+				setLocalVarString					ui_hint_text ("@MPUI_DESC_VOTE_TO_SKIP");
+			}
+			else
+			{
+				setLocalVarString					ui_hint_text ("@MPUI_VOTE_CAST");
+			}
+		}
+		leaveFocus
+		{
+			setItemColor							self backColor 0 0 0 0;
+			setLocalVarBool							ui_menuAButton (0);
+			setLocalVarString						ui_hint_text "@NULL_EMPTY";
+		}
+		action
+		{
+			play									CHOICE_CLICK_SOUND;
+			focusfirst;
+			open									"skipmapconfirmation";
+		}
+	}
+
+	MENU_PANEL_MAP_PREVIEW
+
+	ITEM_BUTTON_SUMMARY_VIS(1)
+	ITEM_BUTTON_BACK(ON_MENU_ESC)
+}

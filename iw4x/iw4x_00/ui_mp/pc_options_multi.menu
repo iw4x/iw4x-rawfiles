@@ -1,0 +1,99 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_multi"
+#define MENU_TITLE									"@MENU_MULTIPLAYER"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_game"; \
+	close "pc_options_look"; \
+	close "pc_options_movement"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	exec											"setfromdvar ui_name name"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	setLocalVarBool									ui_hint_display 1; \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setFocus										"buttonMulti";
+
+#define ON_MENU_CLOSE \
+	setLocalVarBool									ui_hint_display 0; \
+	exec											"setfromdvar name ui_name";
+
+#define ON_MENU_ESC \
+	close self; \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	{ \
+		execnow										"setfromdvar r_picmip ui_r_picmip"; \
+		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
+		execnow										"setfromdvar r_picmip_spec ui_r_picmip_spec"; \
+		execnow										"setfromdvar r_picmip_manual ui_r_picmip_manual"; \
+		exec										"wait; wait; r_applyPicmip"; \
+		setLocalVarBool								"ui_showPicApply" (0); \
+	} \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	{ \
+		open										"all_restart_popmenu"; \
+	} \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define SIDEBAR_RIGHT
+	#include "ui_mp/bg.inc"
+
+	#include "ui_mp/leftside_options.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_EDITFIELD(0, "@MENU_PLAYER_NAME", "ui_name", 15)
+
+	PC_OPTIONS_SEPERATOR(0)
+
+	PC_OPTIONS_FLOATLIST_RAW(1, "@MENU_MAXPACKETS", "cl_maxpackets", {"30" 30 "100" 100 "125" 125}, ;, ;, when(0), 1)
+	PC_OPTIONS_FLOATLIST_RAW(2, "@MENU_SNAPS", "snaps", {"20" 20 "30" 30}, ;, ;, when(0), 1)
+
+	PC_OPTIONS_SEPERATOR(2)
+
+	PC_OPTIONS_DVARYESNO(3, "@MENU_LAGOMETER", "drawLagometer", ;, when(0))
+	PC_OPTIONS_STRLIST_RAW(4, "@MENU_DRAWFPS", "cg_drawFPS", {"Off"; "Off"; "Simple"; "Simple"; "SimpleRanges"; "SimpleRanges"; "Verbose"; "Verbose"; "Verbose+Viewpos"; "Verbose+Viewpos"}, ;, ;, when(0), 1)
+	PC_OPTIONS_DVARYESNO(5, "@MENU_FPSLABELS", "cg_drawFPSLabels", ;, when(0))
+
+	PC_OPTIONS_SEPERATOR(5)
+
+	PC_OPTIONS_DVARYESNO_RAW(6, "@MENU_STREAMFRIENDLY_UI", "ui_streamFriendly", ;, "@MPUI_DESC_STREAM_FRIENDLY_UI", when(0), 1)
+	PC_OPTIONS_FLOATLIST_RAW(7, "@MENU_FRIENDNOTIFY", "cl_notifyFriendState", {"Always" -1 "Never" 0 "in Menu" 1}, ;, "@MPUI_DESC_FRIENDNOTIFY", when(dvarBool("ui_streamFriendly")), 1)
+}

@@ -1,0 +1,88 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_movement"
+#define MENU_TITLE									"@MENU_MOVEMENT"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_game"; \
+	close "pc_options_look"; \
+	close "pc_options_multi"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	setLocalVarBool									"ui_hideBack" (1); \
+	setLocalVarBool									ui_hint_display 0;
+
+#define ON_MENU_CLOSE \
+	setLocalVarBool									"ui_hideBack" (0); \
+	open											"pc_options_controls";
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define DISABLE_SIDEBAR
+	#define BACKGROUND_FULL
+	#include "ui_mp/bg.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_KEYBINDING(0, "@MENU_FORWARD", "+forward")
+	PC_OPTIONS_KEYBINDING(1, "@MENU_MOVE_BACK", "+back")
+	PC_OPTIONS_KEYBINDING(2, "@MENU_MOVE_LEFT", "+moveleft")
+	PC_OPTIONS_KEYBINDING(3, "@MENU_MOVE_RIGHT", "+moveright")
+	PC_OPTIONS_KEYBINDING(4, "@MENU_STANDJUMP", "+gostand")
+	PC_OPTIONS_KEYBINDING(5, "@MENU_CROUCH", "togglecrouch")
+	PC_OPTIONS_KEYBINDING(6, "@MENU_PRONE", "toggleprone")
+	PC_OPTIONS_KEYBINDING(7, "@MENU_SPRINT_HOLD_BREATH", "+breath_sprint")
+
+	PC_OPTIONS_SEPERATOR(7)
+
+	PC_OPTIONS_KEYBINDING(8, "@MENU_HOLD_DOWN_CROUCH", "+movedown")
+	PC_OPTIONS_KEYBINDING(9, "@MENU_HOLD_DOWN_PRONE", "+prone")
+	PC_OPTIONS_KEYBINDING(10, "@MENU_CHANGE_STANCE", "+stance")
+	PC_OPTIONS_KEYBINDING(11, "@MENU_SPRINT", "+sprint")
+	PC_OPTIONS_KEYBINDING(12, "@MENU_HOLD_BREATH", "+holdbreath")
+	PC_OPTIONS_KEYBINDING(13, "@MENU_TURN_LEFT", "+left")
+	PC_OPTIONS_KEYBINDING(14, "@MENU_TURN_RIGHT", "+right")
+	PC_OPTIONS_KEYBINDING(15, "@MENU_STRAFE", "+strafe")
+
+	ITEM_BUTTON_BACK(ON_MENU_ESC)
+
+	PC_OPTIONS_KEYBINDSTATUS
+
+	ITEM_BUTTON_BACK(ON_MENU_ESC)
+}

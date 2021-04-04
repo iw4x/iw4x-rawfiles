@@ -1,0 +1,332 @@
+#define NUM_CUSTOM_CLASSES 15
+#define CALCULATED_HEIGHT ( 24 + ( ( int( 5 + min( 5 , getplayerdata( "prestige" ) / 2 + 0.500000 ) ) ) + ( int( min( 10, getplayerdata( "prestige" ) ) / 10.0 ) * ( NUM_CUSTOM_CLASSES - 10 ) ) ) * 20 )
+
+{
+	menuDef
+	{
+		name cac_popup
+		fullscreen 0
+		rect -64 0 280 0 1 1
+		style 1
+		foreColor 1 1 1 1
+		backColor 1 1 1 1
+		background white
+		exp rect Y ( localvarfloat( "ui_cac_popup_ypos" )  )
+		exp rect H ( CALCULATED_HEIGHT )
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		onOpen
+		{
+			setLocalVarFloat ui_cac_popup_ypos 0.000000;
+			setLocalVarInt ui_leftPopup 1;
+			focusFirst;
+			open "cac_popup_preview";
+		}
+		onClose
+		{
+			setLocalVarInt ui_leftPopup 1;
+			close "cac_popup_preview";
+			close "main_background";
+		}
+		onESC
+		{
+			close "self";
+		}
+		focusColor 1 1 1 1
+		popup
+		outOfBoundsClick
+		allowedBinding "+talk"
+		itemDef
+		{
+			rect -854 -480 1708 960 1 1
+			style 1
+			foreColor 1 1 1 1
+			backColor 0 0 0 0.35
+			background white
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+		}
+		itemDef
+		{
+			rect -854 -480 1708 960 1 1
+			style 1
+			foreColor 1 1 1 1
+			backColor 1 1 1 1
+			background xpbar_stencilbase
+			decoration
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 0 280 0 1 1
+			style 1
+			foreColor 1 1 1 1
+			backColor 0.5 0.5 0.5 1
+			background white
+			decoration
+			visible 1
+			exp rect H (  )
+		}
+		itemDef
+		{
+			rect 0 0 1708 480 1 1
+			style 3
+			foreColor 1 1 1 0.75
+			background mw2_popup_bg_fogstencil
+			decoration
+			visible 1
+			exp rect X ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 1 1
+			style 3
+			foreColor 0.85 0.85 0.85 1
+			background mw2_popup_bg_fogscroll
+			decoration
+			visible 1
+			exp rect X ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 280 0 1 1
+			style 3
+			foreColor 1 1 1 1
+			background mockup_popup_bg_stencilfill
+			decoration
+			visible 1
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 1 1
+			style 3
+			foreColor 1 1 1 0.75
+			background mw2_popup_bg_fogstencil
+			decoration
+			visible 1
+			exp rect X ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 1 1
+			style 3
+			foreColor 0.85 0.85 0.85 1
+			background mw2_popup_bg_fogscroll
+			decoration
+			visible 1
+			exp rect X ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 280 0 1 1
+			style 3
+			foreColor 1 1 1 0
+			background small_box_lightfx
+			decoration
+			visible 1
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect -32 -32 32 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_tl
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+		}
+		itemDef
+		{
+			rect 0 -32 280 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_t
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+		}
+		itemDef
+		{
+			rect 280 -32 32 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_tr
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+		}
+		itemDef
+		{
+			rect 280 0 32 0 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_r
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect 280 0 32 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_br
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect 0 0 280 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_b
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect -32 0 32 32 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_bl
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect -32 0 32 0 1 1
+			style 3
+			foreColor 0 0 0 1
+			background drop_shadow_l
+			decoration
+			visible when ( !localvarint( "ui_centerPopup" )  )
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect 280 0 -256 0 1 1
+			style 1
+			foreColor 1 1 1 1
+			backColor 0.35 0.35 0.35 1
+			background gradient_slow_fadein
+			decoration
+			visible 1
+			exp rect H ( CALCULATED_HEIGHT )
+		}
+		itemDef
+		{
+			rect 0 0 280 22 1 1
+			style 1
+			foreColor 1 1 1 1
+			backColor 1 1 1 0.25
+			background gradient_fadein
+			decoration
+			textAlign 6
+			textAlignX -4
+			textScale 0.375
+			textFont 9
+			text "@MENU_YOUR_CLASSES_CAPS"
+			visible 1
+		}
+
+		#define CAC_CLASS(nameArg,itemNum,prestigeNum,newVisArg) \
+		itemDef \
+		{ \
+			name nameArg \
+			rect 0 (24 + (itemNum*20)) 336 20 1 1 \
+			style 1 \
+			foreColor 1 1 1 1 \
+			background menu_button_selection_bar \
+			group mw2_popup_button \
+			type 1 \
+			textAlign 6 \
+			textAlignX -60 \
+			textScale 0.375 \
+			textFont 3 \
+			onFocus \
+			{ \
+				play "mouse_over"; \
+				if ( dvarstring( "gameMode" ) != "mp"  ) \
+				{ \
+					setItemColor mw2_popup_button backcolor 0 0 0 0; \
+				} \
+				setItemColor self backcolor 0 0 0 1; \
+				setLocalVarBool ui_popupAButton 1; \
+				setLocalVarInt classIndex itemNum; \
+				if ( !( tablelookup( "mp/attachmentTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 ) , 12 ) != "" || tablelookup( "mp/attachmentTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 ) , 12 ) != "" ) && ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_gl" || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_grip" || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_shotgun" ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_heartbeat"  ) \
+				{ \
+					setPlayerData ( "customClasses" , localVarInt ( "classIndex"), "perks" , 0 , "specialty_null"; \
+				} \
+				setLocalVarString loadoutPrimary ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" )  ); \
+				setLocalVarString loadoutPrimaryAttachment ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 )  ); \
+				setLocalVarString loadoutPrimaryAttachment2 ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 )  ); \
+				if ( localvarstring( "loadoutPrimaryAttachment2" ) == ""  ) \
+				{ \
+					setLocalVarString loadoutPrimaryAttachment2 ( "none"  ); \
+				} \
+				setLocalVarString loadoutPrimaryCamo ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "camo" )  ); \
+				setLocalVarString loadoutSecondaryCamo ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" )  ); \
+				setLocalVarString loadoutSecondary ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" )  ); \
+				setLocalVarString loadoutSecondaryAttachment ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 )  ); \
+				setLocalVarString loadoutSecondaryAttachment2 ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 )  ); \
+				if ( localvarstring( "loadoutSecondaryAttachment2" ) == ""  ) \
+				{ \
+					setLocalVarString loadoutSecondaryAttachment2 ( "none"  ); \
+				} \
+				setLocalVarString loadoutSecondaryCamo ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" )  ); \
+				setLocalVarString loadoutEquipment ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 )  ); \
+				setLocalVarString loadoutPerk1 ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 )  ); \
+				setLocalVarString loadoutPerk2 ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 )  ); \
+				setLocalVarString loadoutPerk3 ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 )  ); \
+				setLocalVarString loadoutStreak1 ( getplayerdata( "killstreaks" , 0 )  ); \
+				setLocalVarString loadoutStreak2 ( getplayerdata( "killstreaks" , 1 )  ); \
+				setLocalVarString loadoutStreak3 ( getplayerdata( "killstreaks" , 2 )  ); \
+				setLocalVarString loadoutDeathStreak ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) ); \
+				setLocalVarString loadoutOffhandSecondary ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "specialGrenade" ) ); \
+				setLocalVarString loadoutClassName ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "name" ) ); \
+			} \
+			leaveFocus \
+			{ \
+				setItemColor self backcolor 1 1 1 0; \
+				setLocalVarBool ui_popupAButton 1; \
+			} \
+			action \
+			{ \
+				play "mouse_click"; \
+				setPlayerData ( "customClasses" , itemNum , "inUse" , "true"); \
+				setLocalVarInt classIndex itemNum; \
+				open "menu_cac_assault"; \
+			} \
+			exp text ( getplayerdata( "customClasses" , itemNum , "name" )  ) \
+			visible when(getplayerdata( "prestige" ) >= prestigeNum) \
+		} \
+		itemDef \
+		{ \
+			rect 64 (24 + (20*itemNum)) 40 20 1 1 \
+			style 3 \
+			foreColor 1 1 1 1 \
+			background specialty_new \
+			decoration \
+			textScale 0.55 \
+			visible when ( getplayerdata( "prestige" ) >= prestigeNum && newVisArg && getplayerdata( "customClasses" , 1 , "inUse" ) == 0  ) \
+		}
+		CAC_CLASS("cac_customclass1",0,0,0)
+		CAC_CLASS("cac_customclass2",1,0,1)
+		CAC_CLASS("cac_customclass3",2,0,1)
+		CAC_CLASS("cac_customclass4",3,0,1)
+		CAC_CLASS("cac_customclass5",4,0,1)
+		CAC_CLASS("cac_customclass6",5,1,1)
+		CAC_CLASS("cac_customclass7",6,3,1)
+		CAC_CLASS("cac_customclass8",7,5,1)
+		CAC_CLASS("cac_customclass9",8,7,1)
+		CAC_CLASS("cac_customclass10",9,9,1)
+		CAC_CLASS("cac_customclass11",10,10,1)
+		CAC_CLASS("cac_customclass12",11,10,1)
+		CAC_CLASS("cac_customclass13",12,10,1)
+		CAC_CLASS("cac_customclass14",13,10,1)
+		CAC_CLASS("cac_customclass15",14,10,1)
+	}
+}

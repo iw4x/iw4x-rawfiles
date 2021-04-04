@@ -1,0 +1,285 @@
+{
+	menuDef
+	{
+		name "connect"
+		rect 0 0 640 480 0 0
+		style 1
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		onOpen
+		{
+			exec "selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow";
+		}
+		itemDef
+		{
+			rect -426.667 -240 853.333 480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "$levelbriefing"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -426.667 -236 853.333 -400 2 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "gradient_bottom"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -426.667 -163 853.333 200 2 3
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "gradient_bottom"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 0 26 3 1
+			decoration
+			visible 1
+			//forecolor 1 0.8 0.4 1
+			//forecolor 0 0.68 1 1
+			//forecolor 0.525 0.753 0 1
+			forecolor 0.051 0.741 0 1
+			textfont 9
+			textalign 6
+			textalignx -8
+			textscale 0.5833
+			textstyle 3
+			exp text ( gametypename( ) )
+		}
+		itemDef
+		{
+			rect 0 26 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 6
+			textalignx -8
+			textscale 0.5833
+			textstyle 3
+			exp text ( getmapname( ) )
+		}
+		itemDef
+		{
+			rect 0 56 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 6
+			textalignx -8
+			textscale 0.275
+			textstyle 3
+			exp text ( connectioninfo( ) )
+		}
+		itemDef
+		{
+			rect 0 56 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx -6
+			textscale 0.275
+			textstyle 3
+			visible when ( connectioninfo( ) != "" && ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 <= 0.25 ) )
+			exp text ( "" )
+		}
+		itemDef
+		{
+			rect 0 56 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx -6
+			textscale 0.275
+			textstyle 3
+			visible when ( connectioninfo( ) != "" && ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.25 && ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 <= 0.5 ) )
+			exp text ( "." )
+		}
+		itemDef
+		{
+			rect 0 56 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx -6
+			textscale 0.275
+			textstyle 3
+			visible when ( connectioninfo( ) != "" && ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.5 && ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 <= 0.75 ) )
+			exp text ( ".." )
+		}
+		itemDef
+		{
+			rect 0 56 0 26 3 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx -6
+			textscale 0.275
+			textstyle 3
+			visible when ( connectioninfo( ) != "" && ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.75 ) )
+			exp text ( "..." )
+		}
+		itemDef
+		{
+			rect 0 86 0 26 3 1
+			decoration
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 6
+			textalignx -8
+			textscale 0.375
+			textstyle 3
+			exp text(dvarString("fs_game"))
+			visible when (dvarstring("fs_game") != "")
+		}
+		itemDef
+		{
+			rect -252 -60 504 3 2 3
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 1 1 1 0.2
+			textscale 0.55
+			visible when ( !dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			name "loadbar"
+			rect -252 -60 504 3 2 3
+			decoration
+			visible 1
+			style 6
+			forecolor 1 1 1 0.5
+			background "white"
+			textscale 0.55
+			visible when ( !dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect 20 -60 410 2 1 3
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textaligny 4
+			textscale 0.275
+			textstyle 3
+			dvar "didyouknow"
+			visible when ( !dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect -20 -60 0 2 1 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx 40
+			textaligny -26
+			textscale 0.5833
+			textstyle 3
+			text "@MENU_INTEL"
+			visible when ( !dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect -320 -60 640 3 2 3
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 1 1 1 0.2
+			textscale 0.55
+			visible when ( dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			name "loadbar"
+			rect -320 -60 640 3 2 3
+			decoration
+			visible 1
+			style 6
+			forecolor 1 1 1 0.5
+			background "white"
+			textscale 0.55
+			visible when ( dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect -36 -56 484 2 1 3
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx 80
+			textaligny 4
+			textscale 0.275
+			textstyle 3
+			dvar "didyouknow"
+			visible when ( dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect -36 -60 0 2 1 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx 80
+			textaligny -26
+			textscale 0.5833
+			textstyle 3
+			text "@MENU_INTEL"
+			visible when ( dvarbool( "wideScreen" ) )
+		}
+		/*itemDef
+		{
+			//rect -104 -56 128 64 3 3
+			rect -170 -66 128 64 3 3
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "logo_iw"
+			textscale 0.55
+			visible when ( dvarbool( "wideScreen" ) )
+		}
+		itemDef
+		{
+			rect -148 -56 128 64 3 3
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "logo_iw"
+			textscale 0.55
+			visible when ( !dvarbool( "wideScreen" ) )
+		}*/
+	}
+}

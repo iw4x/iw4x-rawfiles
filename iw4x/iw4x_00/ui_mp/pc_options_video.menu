@@ -1,0 +1,138 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_video"
+#define MENU_TITLE									"@MENU_VIDEO"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_game"; \
+	close "pc_options_look"; \
+	close "pc_options_movement"; \
+	close "pc_options_multi"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setLocalVarBool									"ui_hideBack" ( 1 ); \
+	if (!localvarint("ui_showApply") && !localvarint("ui_showPicApply")) \
+	{ \
+		exec										"exec options_graphics.cfg"; \
+		exec										"setfromdvar ui_r_fullscreen r_fullscreen"; \
+	} \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setFocus										"buttonVideo";
+
+#define ON_MENU_CLOSE \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarBool									"ui_hideBack" (0); \
+	execOnDvarIntValue								"r_lodScaleRigid" 2 "set r_lodScaleSkinned 4; set r_lodBiasSkinned -200; set r_lodBiasRigid -100"; \
+	execOnDvarIntValue								"r_lodScaleRigid" 1 "set r_lodScaleSkinned 1; set r_lodBiasSkinned 0; set r_lodBiasRigid 0"; \
+	exec											"setfromdvar r_fullscreen ui_r_fullscreen"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+#define ON_MENU_ESC \
+	close											self; \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	{ \
+		execnow										"setfromdvar r_picmip ui_r_picmip"; \
+		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
+		execnow										"setfromdvar r_picmip_spec ui_r_picmip_spec"; \
+		execnow										"setfromdvar r_picmip_manual ui_r_picmip_manual"; \
+		exec										"wait; wait; r_applyPicmip"; \
+		setLocalVarBool								"ui_showPicApply" (0); \
+	} \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	{ \
+		open										"all_restart_popmenu"; \
+	} \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define SIDEBAR_RIGHT
+	#include "ui_mp/bg.inc"
+
+	#include "ui_mp/leftside_options.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_DVARENUMLIST(0, "@MENU_VIDEO_MODE", "ui_r_mode", "r_mode", ACTION_SHOW_APPLY, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())))
+	PC_OPTIONS_DVARYESNO_RAW(1, "@MENU_D3D9EX", "r_useD3D9Ex", ACTION_SHOW_APPLY, "@MPUI_DESC_D3D9EX", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+	PC_OPTIONS_SEPERATOR(1)
+
+	PC_OPTIONS_DVARYESNO(2, "@MENU_FULLSCREEN", "ui_r_fullscreen", ACTION_SHOW_APPLY exec "vid_xpos 0;vid_ypos 0";, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())))
+	PC_OPTIONS_DVARYESNO_RAW(3, "@MENU_NOBORDER", "r_noborder", ACTION_SHOW_APPLY exec "vid_xpos 0;vid_ypos 0";, "@MPUI_DESC_NOBORDER", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+	PC_OPTIONS_DVARYESNO_RAW(4, "@MENU_NATIVECURSOR", "ui_nativeCursor", ;, "@MPUI_DESC_NATIVECURSOR", when(0), 1)
+	PC_OPTIONS_SEPERATOR(4)
+
+	PC_OPTIONS_DVARSLIDER_RAW(5, "@MENU_BRIGHTNESS", "r_gamma", 0.5, 3, 0.8, setLocalVarBool ui_brightness_hint_display (1);, setLocalVarBool ui_brightness_hint_display (0);, execNow "profile_menuDvarsFinish";, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1, 0)
+	PC_OPTIONS_FLOATLIST_RAW(6, "@MENU_FOV", "cg_fov", {"65 (Default)" 65 "80" 80 "90" 90 "120" 120}, execNow "profile_menuDvarsFinish";, "@MPUI_DESC_FOV", when(0), 1)
+	PC_OPTIONS_FLOATLIST_RAW(7, "@MENU_FOVSCALE", "cg_fovscale", {"1 (Default)" 1 "1.1" 1.1 "1.2" 1.2 "1.3" 1.3 "1.4" 1.4 "1.5" 1.5 "1.6" 1.6 "1.7" 1.7 "1.8" 1.8 "1.9" 1.9 "2" 2}, execNow "profile_menuDvarsFinish";, "@MPUI_DESC_FOVSCALE", when(0), 1)
+	PC_OPTIONS_FLOATLIST_RAW(8, "@MENU_MAXFPS", "com_maxfps", { "30" 30 "85 (Default)" 85 "125" 125 "250" 250 "333" 333 "Unlimited" 0}, ;, "@MPUI_DESC_MAXFPS", when(0), 1)
+	PC_OPTIONS_SEPERATOR(8)
+
+	itemDef
+	{
+		rect										260 CHOICE_Y(9) 225 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		style										WINDOW_STYLE_FILLED
+		foreColor									CHOICE_TEXTCOLOR
+		disablecolor								0.6 0.55 0.55 1
+		background									"menu_setting_selection_bar"
+		type										ITEM_TYPE_BUTTON
+		textFont									UI_FONT_SMALL
+		textAlign									ITEM_ALIGN_TOP_RIGHT
+		textAlignX									-60
+		textScale									CHOICE_TEXTSIZE
+		text										"@MENU_ADVANCED_VIDEO"
+		visible										1
+		mouseEnter
+		{
+			play									CHOICE_FOCUS_SOUND;
+		}
+		onFocus
+		{
+			setItemColor							self backColor 0 0 0 1;
+		}
+		leaveFocus
+		{
+			setItemColor							self backColor 0 0 0 0;
+		}
+		action
+		{
+			open									"pc_options_advanced_video";
+			close									self;
+		}
+	}
+}

@@ -1,0 +1,4115 @@
+{
+"skycolor" "0.701961 0.945098 1"
+"skylight" "0.46"
+"sunRadiosity" "2"
+"radiosityScale" "2"
+"_color" "0.4 0.415686 1"
+"sunlight" "1.25"
+"sundirection" "-147 119 0"
+"suncolor" "1 0.941176 0.768627"
+"ambient" ".10"
+"classname" "worldspawn"
+}
+{
+"gndLt" "2734377701"
+"ltOrigin" "3154 -3914.72 114.129"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "3162 -3901 -107"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0.159553 257.927 0.976317"
+}
+{
+"gndLt" "2834373701"
+"ltOrigin" "3315.45 -3779.81 108.653"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "3302.5 -3817.5 -109"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "3.987 71.1252 -0.771867"
+}
+{
+"gndLt" "47483e5e01"
+"ltOrigin" "125.538 -2279.57 -149.907"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "158 -2259.5 -370.5"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "359.876 230.749 -0.0934409"
+}
+{
+"gndLt" "0404040001"
+"ltOrigin" "-2114.88 -4712.41 215.505"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2167 -4699 -159.1"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "1.44418 75.3694 5.51458"
+}
+{
+"gndLt" "2d24190000"
+"ltOrigin" "342.003 -1739.04 -148.97"
+"spawnflags" "4"
+"targetname" "pf36_auto1"
+"script_gameobjectname" "hq"
+"origin" "342.235 -1739.48 -163.9"
+"angles" "1.00001 95.9 -1.18573e-007"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "30271b0000"
+"ltOrigin" "344.833 -1734.53 -126.594"
+"spawnflags" "4"
+"target" "pf36_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "345.749 -1734.57 -133.974"
+"angles" "1.19244e-008 5.9 -1.00001"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "346.403 -1721.67 -133.613"
+"spawnflags" "4"
+"targetname" "pf36_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0.766036 135.904 -89.3569"
+"origin" "348.913 -1719.47 -134.231"
+}
+{
+"targetname" "pf36_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "342 -1740 -148"
+"model" "*1"
+}
+{
+"targetname" "pf36_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "338 -1735 -125"
+"model" "*2"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "507 -1617 -104"
+"model" "?0"
+}
+{
+"gndLt" "4346420001"
+"ltOrigin" "531.702 -1415.42 -4.79433"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "532.406 -1420.04 -4"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 185.9 0"
+}
+{
+"gndLt" "2532354d01"
+"ltOrigin" "-2863.49 -2044.43 247.279"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2877.5 -2008.9 -127.8"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "4.4216 254.486 -1.88423"
+}
+{
+"gndLt" "2633368401"
+"ltOrigin" "-1931.14 -458.428 83.1469"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1921.8 -474 -184"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 314.474 0"
+}
+{
+"gndLt" "2733368101"
+"ltOrigin" "-2116.13 -1007.54 204.027"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2169.8 -1003 -171.2"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "355.396 194.885 -1.22234"
+}
+{
+"gndLt" "2431342601"
+"ltOrigin" "-2354.65 -3895.84 250.985"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2359 -3883 -126.6"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0.326448 74.8846 1.20482"
+}
+{
+"spawnflags" "12"
+"dmg" "10000"
+"classname" "trigger_hurt"
+"origin" "0 -2048 -380"
+"model" "?1"
+}
+{
+"gndLt" "2b34347801"
+"ltOrigin" "-2173.95 -2385.53 15.0436"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2162 -2389.5 -199"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "356.436 334.439 0.718661"
+}
+{
+"gndLt" "373b345d01"
+"ltOrigin" "-932.403 171.834 12.6057"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-918.3 165.6 -208"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0 165.22 0"
+}
+{
+"gndLt" "181a190001"
+"ltOrigin" "-467.961 -4784.89 77.5028"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-447.602 -4793.12 -137.495"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0.541802 258.546 2.67197"
+}
+{
+"gndLt" "2b2b290000"
+"ltOrigin" "1672.56 -1567.75 -180.872"
+"spawnflags" "4"
+"targetname" "pf161_auto1"
+"script_gameobjectname" "hq"
+"origin" "1674.1 -1568.25 -195.9"
+"angles" "356 350 9.38422e-007"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "2d2d2b0000"
+"ltOrigin" "1674.95 -1571.54 -158.353"
+"spawnflags" "4"
+"target" "pf161_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "1675.27 -1572.52 -165.694"
+"angles" "360 260 3.99999"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1687.32 -1576.59 -164.252"
+"spawnflags" "4"
+"targetname" "pf161_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "356.937 30.0688 -92.5733"
+"origin" "1688.9 -1579.7 -164.669"
+}
+{
+"targetname" "pf161_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1673 -1568 -180"
+"model" "*3"
+}
+{
+"targetname" "pf161_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1676 -1565 -157"
+"model" "*4"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "1629 -1664 -136"
+"model" "?2"
+}
+{
+"gndLt" "3d433c7001"
+"ltOrigin" "-2272.64 -5573.14 111.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2251.1 -5544.8 -156"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 77.4866 0"
+}
+{
+"gndLt" "2c37378801"
+"ltOrigin" "-2220.45 -5731.77 111.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2250.4 -5718.1 -156"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 196.479 0"
+}
+{
+"gndLt" "40453d8201"
+"ltOrigin" "-2060.47 -5452.12 55.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2074.45 -5456.99 -160"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 209.788 0"
+}
+{
+"gndLt" "2a35363101"
+"ltOrigin" "-2138.22 -5172.16 101.867"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2144 -5130 -164"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "357.874 96.9871 4.0484"
+}
+{
+"gndLt" "2531344701"
+"ltOrigin" "-2469.68 -4970.99 256.175"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2505 -4949.5 -121.6"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "359.54 179.799 -0.204687"
+}
+{
+"gndLt" "2e37365d01"
+"ltOrigin" "-1875.45 -5304.35 86.2139"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1867.73 -5338.5 -179.614"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.594 274.879 4.74634"
+}
+{
+"gndLt" "3039398101"
+"ltOrigin" "-1849.7 -5645.85 111.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1835.1 -5614.8 -156"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 103.755 0"
+}
+{
+"gndLt" "2c33311b01"
+"ltOrigin" "-2148.34 -4175.07 149.069"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2202 -4206.5 -226.6"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "359.968 269.437 -3.84584"
+}
+{
+"gndLt" "272b292501"
+"ltOrigin" "-2119.65 -4352.28 215.239"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2176 -4396 -159.6"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "352.892 240.115 -2.90623"
+}
+{
+"gndLt" "2632365901"
+"ltOrigin" "-2564.24 -3011.21 255.888"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2673.5 -3011 -116.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "354.183 240.727 -10.2932"
+}
+{
+"gndLt" "2632357001"
+"ltOrigin" "-2356.77 -3580.11 250.913"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2368 -3580 -126.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "359.404 239.8 -1.04704"
+}
+{
+"gndLt" "343b366701"
+"ltOrigin" "-507.573 -2777.07 -1.53792"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-512.936 -2775.89 -216.102"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "358.728 159.251 -1.19202"
+}
+{
+"gndLt" "35322b0000"
+"ltOrigin" "1401.54 -4477.36 -105.111"
+"spawnflags" "4"
+"targetname" "pf296_auto1"
+"script_gameobjectname" "hq"
+"origin" "1401.54 -4477.17 -120"
+"angles" "0 181 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "35312b0000"
+"ltOrigin" "1397.49 -4474.15 -82.547"
+"spawnflags" "4"
+"target" "pf296_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "1397.47 -4473.24 -90"
+"angles" "0 91 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1384.71 -4471.51 -89.4216"
+"spawnflags" "4"
+"targetname" "pf296_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 221 -89.9997"
+"origin" "1382.69 -4468.79 -90"
+}
+{
+"targetname" "pf296_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1402 -4477 -104"
+"model" "*5"
+}
+{
+"targetname" "pf296_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1398 -4481 -81"
+"model" "*6"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "1398 -4273 -72"
+"model" "?3"
+}
+{
+"gndLt" "2633378401"
+"ltOrigin" "3834.89 355.836 119.24"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "3833.5 357.7 -96"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 153.5 0"
+}
+{
+"gndLt" "2633377d01"
+"ltOrigin" "3924 -2773 258.009"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "3924 -2773 -120"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0 141.5 0"
+}
+{
+"gndLt" "3742451001"
+"ltOrigin" "2265.01 -937.181 187.638"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "2276.9 -849.4 -184.2"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "2.57319 344.357 9.10879"
+}
+{
+"gndLt" "3740417601"
+"ltOrigin" "2589.39 -957.036 109.531"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "2643.02 -974.626 -153.929"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "353.526 343.933 2.25426"
+}
+{
+"gndLt" "404a4c7001"
+"ltOrigin" "2540.62 -872.327 44.8249"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2553 -852.471 -165.21"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "353.469 74.0427 -5.52004"
+}
+{
+"gndLt" "333b396301"
+"ltOrigin" "2013.31 -2532.6 210.009"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "2014.9 -2532.6 -168"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0 41.3734 0"
+}
+{
+"gndLt" "14191a0001"
+"ltOrigin" "2013.47 -2621.41 50.0979"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2007.22 -2639 -164.495"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "2.61959 189.998 2.76417"
+}
+{
+"gndLt" "202322b001"
+"ltOrigin" "1863.42 -2657.12 106.402"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "1878.04 -2682.81 -159.804"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "357.569 309.474 0.948944"
+}
+{
+"gndLt" "2b373a0601"
+"ltOrigin" "2784.7 -4771.43 274.641"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "2831.5 -4759 -100.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "1.9096 111.811 -4.65295"
+}
+{
+"gndLt" "2734373e01"
+"ltOrigin" "3007.3 -4802.51 166.47"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "3003.5 -4802.5 -90"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "359.141 218.405 -0.683306"
+}
+{
+"gndLt" "2734374001"
+"ltOrigin" "2819.67 -4460.7 114.851"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2839 -4463 -99.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "1.87567 247.079 4.63677"
+}
+{
+"gndLt" "2834388101"
+"ltOrigin" "3768.08 -2962.57 144.225"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "3756.5 -2958.5 -112"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "0 97.9 0"
+}
+{
+"gndLt" "2f393a6001"
+"ltOrigin" "956.552 -4964.34 103.917"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "999.5 -4999.5 -157.5"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.909 270.657 10.9229"
+}
+{
+"gndLt" "2734388101"
+"ltOrigin" "2107.13 -4984.58 152.23"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "2106.5 -4988.5 -104"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "359.99 135 0"
+}
+{
+"gndLt" "2834378001"
+"ltOrigin" "1048.8 -5460.51 43.489"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "1038 -5458 -171"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "3.16873 84.5301 -0.390595"
+}
+{
+"gndLt" "2b37396c01"
+"ltOrigin" "2704.25 -4551.67 157.154"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "2737 -4540 -100.5"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "354.91 6.8863 -0.676648"
+}
+{
+"gndLt" "2633387d01"
+"ltOrigin" "1087.39 -6337.55 96.271"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "1093 -6340 -160"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "0.0577843 294.8 0"
+}
+{
+"gndLt" "2431354c01"
+"ltOrigin" "-2655.65 -2805.21 274.964"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2764 -2805 -97.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "354.232 240.718 -10.2055"
+}
+{
+"gndLt" "3a423f6801"
+"ltOrigin" "1688.11 -4919.99 143.998"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "1758 -4924 -111.5"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "359.556 271.672 12.6088"
+}
+{
+"gndLt" "2832346d01"
+"ltOrigin" "-2169.35 -1832.78 59.1885"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2268 -1785 -191"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "339.983 164.047 0.238828"
+}
+{
+"gndLt" "46473f3801"
+"ltOrigin" "1120.1 -3216.13 -90"
+"sound_csv_include" "destruct_large_propane_tank"
+"csv_include" "destructible_propane_tank02"
+"destructible_type" "toy_propane_tank02"
+"targetname" "destructible_toy"
+"origin" "1120 -3216 -90"
+"classname" "script_model"
+"model" "com_propane_tank02"
+"angles" "0 270 0"
+}
+{
+"gndLt" "635b498b01"
+"ltOrigin" "1220.71 -2886.5 -123.894"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "1216 -2886.5 -123.1"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "1220.71 -2886.5 -98.3943"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "1216 -2886.5 -97.6"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "2f3030000b"
+"ltOrigin" "1136 -2756.19 -145.111"
+"spawnflags" "4"
+"targetname" "pf504_auto1"
+"script_gameobjectname" "hq"
+"origin" "1136 -2756 -160"
+"angles" "0 180 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "333534000b"
+"ltOrigin" "1132 -2752.98 -122.547"
+"spawnflags" "4"
+"target" "pf504_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "1132 -2752 -130"
+"angles" "0 90 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1119.28 -2750.06 -129.422"
+"spawnflags" "4"
+"targetname" "pf504_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 220 -89.9997"
+"origin" "1117.3 -2747.3 -130"
+}
+{
+"targetname" "pf504_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1137 -2756 -144"
+"model" "*7"
+}
+{
+"targetname" "pf504_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "1132 -2759 -121"
+"model" "*8"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "1056 -2692 -98"
+"model" "?4"
+}
+{
+"gndLt" "5f57447f01"
+"ltOrigin" "1220.23 -2853 -104.5"
+"origin" "1216 -2853 -104.5"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "2d34312801"
+"ltOrigin" "-653.055 -3034.3 106.156"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-683.584 -3017.05 -160.9"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.911 169.321 0.779572"
+}
+{
+"gndLt" "2f342e0000"
+"ltOrigin" "-313.344 -2874 163.208"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-319.3 -2866.6 -214.1"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "1.84845 17.4683 1.41525"
+}
+{
+"gndLt" "2633377e01"
+"ltOrigin" "2142.19 155.863 149.665"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "2174 139.5 -116"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "356.625 334.471 1.67616"
+}
+{
+"gndLt" "2633365101"
+"ltOrigin" "2610.83 928.277 314.131"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "2720 956 -58"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "349.399 44.1007 -6.02691"
+}
+{
+"gndLt" "3f403b8b01"
+"ltOrigin" "-677.688 -189.586 150.18"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-704.6 -199.5 -172.3"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 162.495 0"
+}
+{
+"gndLt" "584f413c01"
+"ltOrigin" "185.522 200.122 -123.575"
+"sound_csv_include" "destruct_gaspump"
+"targetname" "destructible_toy"
+"destructible_type" "destructible_gaspump"
+"csv_include" "destructible_gaspump01"
+"model" "furniture_gaspump01_damaged"
+"classname" "script_model"
+"origin" "186 200 -172"
+"angles" "0 1.00179e-005 0"
+}
+{
+"gndLt" "665b454501"
+"ltOrigin" "-37.5223 199.878 -123.575"
+"sound_csv_include" "destruct_gaspump"
+"targetname" "destructible_toy"
+"destructible_type" "destructible_gaspump"
+"csv_include" "destructible_gaspump01"
+"model" "furniture_gaspump01_damaged"
+"classname" "script_model"
+"origin" "-38 200 -172"
+"angles" "0 180 0"
+}
+{
+"gndLt" "504e417f01"
+"ltOrigin" "-1491.17 -2484.73 139.696"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-1472.1 -2515.2 -184"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "358.815 266.814 -0.10433"
+}
+{
+"gndLt" "33342d5001"
+"ltOrigin" "-1351.2 -1217.28 143.47"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-1367.5 -1257.8 -180"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "358.928 190.809 1.11472"
+}
+{
+"gndLt" "534e3d6c01"
+"ltOrigin" "-1232.07 -1373.89 38.1776"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-1276.2 -1395.5 -181.2"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "2.13258 24.3207 0.235497"
+}
+{
+"gndLt" "40423b6801"
+"ltOrigin" "-1328.27 -2143.72 34.9436"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-1313.5 -2159.2 -186.2"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "357.96 93.8768 -0.638654"
+}
+{
+"gndLt" "3e403b0000"
+"ltOrigin" "-785.199 -1419.1 31.7797"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-784 -1347.7 -185.7"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "6.0315 295.734 6.83664"
+}
+{
+"gndLt" "2d35334301"
+"ltOrigin" "-613.548 -2460.5 146.48"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-604.8 -2480.6 -176"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 213.757 0"
+}
+{
+"gndLt" "343b385801"
+"ltOrigin" "-251.436 -1454.76 138.48"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-231.7 -1435.2 -184"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 354.976 0"
+}
+{
+"gndLt" "2633378b01"
+"ltOrigin" "-1796.45 -205.706 74.6337"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1814.5 -222.3 -191.9"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "3.36332 272.477 0.145384"
+}
+{
+"gndLt" "2633367101"
+"ltOrigin" "-2070.79 -623.736 77.7099"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2117.1 -639.1 -185.2"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "356.606 237.736 -5.35811"
+}
+{
+"gndLt" "2732356201"
+"ltOrigin" "-1381.5 -387.496 31.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-1365 -379.5 -184"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 20.4039 0"
+}
+{
+"gndLt" "333b397801"
+"ltOrigin" "545.367 643.521 36.4067"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "601.2 623.8 -173.5"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "359.681 88.2981 -10.6149"
+}
+{
+"gndLt" "383e380901"
+"ltOrigin" "5.96084 -1787.03 36.6057"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "24.2 -1769.9 -184"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0 243.333 0"
+}
+{
+"gndLt" "3438334e01"
+"ltOrigin" "-882.574 -2168.57 144.815"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-864.7 -2145.7 -179.2"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "357.82 48.235 -2.43882"
+}
+{
+"gndLt" "2633368101"
+"ltOrigin" "-1641.26 -323.41 75.1469"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1624 -316 -192"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 40.5286 0"
+}
+{
+"gndLt" "2733366a01"
+"ltOrigin" "-1498.56 -148.22 202.009"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-1479.6 -153.2 -176"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0 14.489 0"
+}
+{
+"gndLt" "2633363e01"
+"ltOrigin" "-1769.8 224.224 19.5134"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-1807 229 -190.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "10.822 30.5387 6.30162"
+}
+{
+"gndLt" "373e3a7801"
+"ltOrigin" "-1602.74 -3257.15 92.6057"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-1588.3 -3266.6 -128"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0 162.08 0"
+}
+{
+"gndLt" "2e36345401"
+"ltOrigin" "-2172.68 -3167.49 120.617"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-2138.1 -3146.3 -201.9"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "359.756 342.372 1.72488"
+}
+{
+"gndLt" "42463c2001"
+"ltOrigin" "-1371.98 -3907.49 88.1017"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "-1423.7 -3927.3 -131.3"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "2.86527 31.6899 1.76805"
+}
+{
+"gndLt" "2532357601"
+"ltOrigin" "-2423.36 -1265.59 246.446"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2445.2 -1224 -128.2"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "356.983 74.673 3.77817"
+}
+{
+"gndLt" "2733364e01"
+"ltOrigin" "-2652.2 -1917.7 274.309"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-2761.1 -1917.7 -98.1"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "354.178 240.698 -10.2451"
+}
+{
+"gndLt" "3236310000"
+"ltOrigin" "-1062.17 -4455.65 203.158"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-1099.3 -4470.6 -120.4"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "358.918 165.395 0.483664"
+}
+{
+"gndLt" "373b352001"
+"ltOrigin" "-344.391 -2685.71 87.2157"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-309.813 -2697.17 -179.801"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.688 6.84448 0.983734"
+}
+{
+"angles" "270 340.183 9.18991e-006"
+"origin" "-484.984 -2128.25 32"
+"targetname" "barrel_fireFX_origin"
+"classname" "script_struct"
+}
+{
+"angles" "270 70.183 5.97706e-006"
+"origin" "-610.414 -1911.86 32"
+"targetname" "barrel_fireFX_origin"
+"classname" "script_struct"
+}
+{
+"angles" "270 250.183 -6.42571e-006"
+"origin" "-218.525 -1988.32 -104"
+"targetname" "barrel_fireFX_origin"
+"classname" "script_struct"
+}
+{
+"gndLt" "4e53560003"
+"ltOrigin" "-781.137 -2131.02 14.8886"
+"spawnflags" "4"
+"targetname" "pf1011_auto1"
+"script_gameobjectname" "hq"
+"origin" "-780.983 -2131.13 0"
+"angles" "0 52.1 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "52575b0003"
+"ltOrigin" "-776.122 -2129.84 37.453"
+"spawnflags" "4"
+"target" "pf1011_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "-775.37 -2130.43 30"
+"angles" "0 322.1 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-766.185 -2121.86 30.5784"
+"spawnflags" "4"
+"targetname" "pf1011_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 92.1 -89.9997"
+"origin" "-762.631 -2121.72 30"
+}
+{
+"targetname" "pf1011_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-781 -2132 16"
+"model" "*9"
+}
+{
+"targetname" "pf1011_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-781 -2126 39"
+"model" "*10"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "-662 -2118 64"
+"model" "?5"
+}
+{
+"origin" "-706.21 -2222.29 -88"
+"lighttargetname" "pf853_auto8"
+"classname" "info_notnull"
+"angles" "0 232.1 0"
+}
+{
+"gndLt" "373d3c3301"
+"ltOrigin" "-72.125 -512.105 -106"
+"sound_csv_include" "destruct_large_propane_tank"
+"csv_include" "destructible_propane_tank02"
+"destructible_type" "toy_propane_tank02"
+"targetname" "destructible_toy"
+"origin" "-72 -512 -106"
+"classname" "script_model"
+"model" "com_propane_tank02"
+"angles" "0 180 0"
+}
+{
+"gndLt" "30332d0000"
+"ltOrigin" "-567.409 -3254.94 238.958"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-531.5 -3214.7 -137.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "358.166 86.3745 -1.87608"
+}
+{
+"gndLt" "3136310001"
+"ltOrigin" "-446.943 -2946.21 15.4693"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-460.198 -2931.98 -199.198"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "357.823 77.7874 0.975396"
+}
+{
+"gndLt" "2633374801"
+"ltOrigin" "1918.51 410.743 134.602"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "1959.5 436.5 -130.5"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.05 74.0329 -3.57549"
+}
+{
+"gndLt" "2f393b5001"
+"ltOrigin" "1884.97 -4887.69 151.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "1905 -4855 -116"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 84.7 0"
+}
+{
+"gndLt" "2734378301"
+"ltOrigin" "3268.53 -4094.53 218.87"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "3305.5 -4094.5 -104.5"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "359.113 334.497 0.449138"
+}
+{
+"gndLt" "2633378601"
+"ltOrigin" "4287.94 460 282.009"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "4289 460 -96"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0 59.4 0"
+}
+{
+"gndLt" "2633378101"
+"ltOrigin" "2459.67 1210.58 191.779"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "2464 1232 -65"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "356.503 84.6962 -2.44118"
+}
+{
+"gndLt" "2a35387901"
+"ltOrigin" "3642.52 -2879.38 95.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "3625 -2890.5 -120"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 185.5 0"
+}
+{
+"gndLt" "2633374301"
+"ltOrigin" "2082.72 -5120.93 98.6035"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2060 -5132 -116"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "358.105 185.103 -0.185445"
+}
+{
+"gndLt" "2633377a01"
+"ltOrigin" "880.959 -6411.65 45.5104"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "882 -6409.5 -169.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "359.688 66.87 -0.627816"
+}
+{
+"gndLt" "2531354d01"
+"ltOrigin" "-273.39 -7872.94 50.8175"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-269.5 -7892.5 -162.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "5.58707 143.676 3.82913"
+}
+{
+"gndLt" "2833351501"
+"ltOrigin" "-2214.7 -3389.21 100.362"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2231 -3401 -114"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "356.963 164.611 1.93305"
+}
+{
+"gndLt" "2934355d01"
+"ltOrigin" "-2245.19 -2078.74 17.1057"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2246 -2072 -197"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "359.188 75.2847 -2.81999"
+}
+{
+"gndLt" "2731327801"
+"ltOrigin" "-2141.83 -1731.42 51.5305"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2153.5 -1660 -152"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "354.356 35.0784 18.1275"
+}
+{
+"gndLt" "2733368201"
+"ltOrigin" "-2101.74 -1180.51 34.1817"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2109 -1191.5 -178"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "359.338 264.041 -6.28299"
+}
+{
+"gndLt" "2632368601"
+"ltOrigin" "-1972.01 -836.183 31.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-1959.5 -833 -184"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 34.7039 0"
+}
+{
+"gndLt" "2531358601"
+"ltOrigin" "-727.581 1455.91 95.5808"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-744.5 1495.2 -117"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "353.791 109.122 1.0193"
+}
+{
+"gndLt" "2633369901"
+"ltOrigin" "-162.286 1333.6 117.463"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-161.5 1345.7 -96.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "4.70017 250.519 -3.08687"
+}
+{
+"gndLt" "2833357d01"
+"ltOrigin" "130.201 1133.53 73.6537"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "80.5 1135.5 -136.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "4.48541 72.3469 11.4446"
+}
+{
+"gndLt" "2633378401"
+"ltOrigin" "262.387 1582.64 57.9542"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "260.5 1586.5 -157"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "1.58685 49.1485 1.75116"
+}
+{
+"gndLt" "343b395801"
+"ltOrigin" "697.947 1652.61 59.0979"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "685.5 1672 -156"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "359.268 95.3113 0.400303"
+}
+{
+"gndLt" "353b395601"
+"ltOrigin" "1297.46 2504.19 62.3132"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "1289.5 2504 -152.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "1.97314 74.0324 -0.625679"
+}
+{
+"gndLt" "2f38376401"
+"ltOrigin" "1539.45 2708.09 57.2744"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "1546.5 2705.5 -157.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "358.061 330.749 1.18884"
+}
+{
+"gndLt" "41433ad801"
+"ltOrigin" "2260.93 2611.19 82.9332"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2257.5 2601 -132"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "1.40884 167.319 -0.730194"
+}
+{
+"gndLt" "2d35353a01"
+"ltOrigin" "1712.93 1145.19 135.933"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "1709.5 1135 -79"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "1.40884 167.319 -0.730194"
+}
+{
+"gndLt" "2633374401"
+"ltOrigin" "2159.95 1185.47 144.437"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2112 1152 -64"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "348.984 202.745 5.48105"
+}
+{
+"gndLt" "2734378301"
+"ltOrigin" "2570.44 633.963 96.5894"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "2592 672 -115.5"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "357.453 359.692 9.4557"
+}
+{
+"gndLt" "2f38374f01"
+"ltOrigin" "2381.98 842.497 175.261"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "2368.5 872 -82"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "3.59696 0.751812 3.30795"
+}
+{
+"gndLt" "2734377d01"
+"ltOrigin" "3889.58 -2618.69 144.325"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "3889.5 -2615.5 -112"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "359.995 31.0363 0.122094"
+}
+{
+"gndLt" "2633376d01"
+"ltOrigin" "896.427 -6747.8 95.1064"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "900.5 -6744 -161.5"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "359.53 310.999 0.561699"
+}
+{
+"gndLt" "2531354501"
+"ltOrigin" "-75.003 -7774.35 103.131"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "-63 -7813.5 -155"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "6.18052 131.174 2.52417"
+}
+{
+"gndLt" "2633363b01"
+"ltOrigin" "-242.588 -8189.2 152.882"
+"csv_include" "animated_models_foliage_red_pine_lg"
+"precache_script" "maps animated_models foliage_red_pine_lg"
+"targetname" "animated_model"
+"origin" "-239 -8224.5 -104"
+"model" "foliage_red_pine_lg_animated"
+"classname" "script_model"
+"angles" "354.926 299.477 -2.85996"
+}
+{
+"script_label" "_a"
+"script_bombmode_original" "1"
+"target" "pf1121_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "-904 -1863 -180"
+"model" "?6"
+}
+{
+"targetname" "pf1121_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "-904 -1863 -180"
+"model" "?7"
+}
+{
+"gndLt" "3a3d390000"
+"ltOrigin" "-904.375 -1865.34 -170.444"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1121_1"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "-903.7 -1863.5 -187.9"
+"angles" "0 236.865 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "-905 -1864 -160"
+"model" "*11"
+}
+{
+"gndLt" "373b370000"
+"ltOrigin" "-904.118 -1863.91 -159.877"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 56.865 0"
+"origin" "-904.793 -1865.17 -189.9"
+"script_exploder" "pf1121_1"
+"script_gameobjectname" "bombzone"
+"spawnflags" "4"
+"targetname" "pf1121_auto1"
+"target" "pf1121_auto2"
+}
+{
+"script_label" "_b"
+"script_bombmode_original" "1"
+"target" "pf1122_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "1531 -2656 -190"
+"model" "?8"
+}
+{
+"targetname" "pf1122_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "1531 -2656 -190"
+"model" "?9"
+}
+{
+"gndLt" "373d3b7b01"
+"ltOrigin" "1532.25 -2655.04 -170.391"
+"target" "pf1122_auto2"
+"targetname" "pf1122_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1122_2"
+"origin" "1533.01 -2653.88 -199.734"
+"angles" "359.229 249.108 4.66442"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "393e3c7001"
+"ltOrigin" "1531.95 -2655.13 -183.953"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1122_2"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "1531.79 -2656.6 -197.7"
+"angles" "0.770893 69.1081 -4.66442"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "1531 -2654 -170"
+"model" "*12"
+}
+{
+"angles" "0 270 0"
+"targetname" "flag_descriptor"
+"origin" "2048 -2096 -160"
+"script_linkto" "pf0_flag2 pf0_flag1"
+"script_linkname" "pf0_flag3"
+"classname" "script_origin"
+}
+{
+"angles" "0 270 0"
+"targetname" "flag_descriptor"
+"origin" "16 -3952 -136"
+"script_linkto" "pf0_flag2 pf0_flag3"
+"script_linkname" "pf0_flag1"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"script_linkname" "pf0_flag2"
+"script_linkto" "pf0_flag1 pf0_flag3"
+"origin" "-864 -1856 -176"
+"targetname" "flag_descriptor"
+"angles" "358.317 254.914 2.92259"
+}
+{
+"script_label" "_c"
+"model" "prop_flag_neutral"
+"script_gameobjectname" "dom onslaught"
+"origin" "2103 -2093.4 -169.2"
+"targetname" "flag_primary"
+"height" "128"
+"radius" "160"
+"classname" "trigger_radius"
+"angles" "0 148.458 0"
+}
+{
+"gndLt" "323a398b01"
+"ltOrigin" "-1355.69 -4384.42 -123.151"
+"spawnflags" "4"
+"script_gameobjectname" "sd"
+"origin" "-1355.5 -4384.2 -126.6"
+"targetname" "sd_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+"angles" "359.979 270.554 2.20957"
+}
+{
+"script_gameobjectname" "sd"
+"targetname" "sd_bomb_pickup_trig"
+"classname" "trigger_multiple"
+"origin" "-1355 -4384 -127"
+"model" "?10"
+}
+{
+"gndLt" "2833368201"
+"ltOrigin" "2800.44 19.4282 164.864"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "2811 -4 -96"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 272.34 0"
+}
+{
+"gndLt" "2f37368b01"
+"ltOrigin" "-2390.59 -2339.95 61.3292"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2387.4 -2302.8 -205.3"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.059 96.4951 2.51204"
+}
+{
+"gndLt" "2633378c01"
+"ltOrigin" "135.147 1427.58 105.957"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "150.3 1407.7 -160.6"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "2.28962 343.655 -0.67126"
+}
+{
+"gndLt" "2734378601"
+"ltOrigin" "353.669 2296.61 60.6946"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "349.4 2312.9 -151.6"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "9.46793 280.187 -3.80681"
+}
+{
+"gndLt" "3038375d01"
+"ltOrigin" "686.138 1294.48 105.537"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "664.5 1286.2 -161.3"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.298 220.386 -0.232408"
+}
+{
+"gndLt" "3038374301"
+"ltOrigin" "1755.02 2748.26 101.57"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "1756.3 2734.8 -164.8"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "1.50635 320.328 -1.36095"
+}
+{
+"gndLt" "2633379401"
+"ltOrigin" "-1646.67 1126.31 135.106"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1654.6 1179.6 -126.4"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "354.2 131.846 -5.17151"
+}
+{
+"gndLt" "2633365401"
+"ltOrigin" "-1804.41 705.286 78.1882"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1835.1 758.6 -183.8"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "1.95981 194.533 -7.51525"
+}
+{
+"gndLt" "2834367c01"
+"ltOrigin" "-1007.63 -6108.69 107.763"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-989.457 -6121.8 -159.103"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "1.94422 18.1047 0.635498"
+}
+{
+"gndLt" "313a3a8101"
+"ltOrigin" "-818.444 -5814.88 208.426"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "-837.5 -5804.5 -168.5"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "359.106 115.921 1.83955"
+}
+{
+"gndLt" "2733368901"
+"ltOrigin" "-2456.05 -6663.01 111.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-2424.8 -6683.6 -156"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 352.233 0"
+}
+{
+"gndLt" "313a394c01"
+"ltOrigin" "-1028.77 -5831.87 53.0289"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-1025.48 -5819.9 -161.801"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "2.01316 349.808 -0.361851"
+}
+{
+"gndLt" "3e433d8401"
+"ltOrigin" "-736.379 -5605.75 43.4967"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-750.496 -5599.97 -171.597"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0.560582 74.1 1.96712"
+}
+{
+"gndLt" "2833368301"
+"ltOrigin" "-727.729 -6329.69 43.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-735.196 -6324.47 -172"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 73.3708 0"
+}
+{
+"gndLt" "2c37388b01"
+"ltOrigin" "-668.14 -5880.12 43.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-656.701 -5890.41 -172"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 262.621 0"
+}
+{
+"gndLt" "2733378601"
+"ltOrigin" "-1862.97 -6593.73 55.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-1880.98 -6603.8 -160"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 193.792 0"
+}
+{
+"gndLt" "2c37388201"
+"ltOrigin" "-1812.56 -5498.13 111.147"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-1826.9 -5513.8 -156"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "0 238.271 0"
+}
+{
+"gndLt" "2834368801"
+"ltOrigin" "-2278.04 -6631.64 55.2395"
+"csv_include" "animated_models_foliage_red_pine_med"
+"precache_script" "maps animated_models foliage_red_pine_med"
+"targetname" "animated_model"
+"origin" "-2289.34 -6633.48 -160"
+"model" "foliage_red_pine_med_animated"
+"classname" "script_model"
+"angles" "0 218.544 0"
+}
+{
+"gndLt" "2c35369a01"
+"ltOrigin" "1608.09 -3345 252.309"
+"csv_include" "animated_models_foliage_red_pine_xxl"
+"precache_script" "maps animated_models foliage_red_pine_xxl"
+"targetname" "animated_model"
+"origin" "1606.5 -3345 -125.7"
+"model" "foliage_red_pine_xxl_animated"
+"classname" "script_model"
+"angles" "0 221.373 0"
+}
+{
+"gndLt" "2c36375201"
+"ltOrigin" "1612.25 -3680.17 121.39"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "1600.2 -3701.7 -98.1"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0.353076 64.9577 -1.26155"
+}
+{
+"classname" "mp_global_intermission"
+"angles" "0 105 0"
+"origin" "-732 -3328 -56"
+}
+{
+"gndLt" "3438355901"
+"ltOrigin" "518.75 -4190.06 70.3904"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "506.7 -4211.6 -149.1"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0.353076 64.9577 -1.26155"
+}
+{
+"gndLt" "3036353201"
+"ltOrigin" "581.721 -3163.48 4.33359"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "545.1 -3258.5 -201.5"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "13.1831 58.459 -4.37541"
+}
+{
+"gndLt" "4e4d426a01"
+"ltOrigin" "1814.02 -1926 23.5097"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "1798.8 -1905.9 -196.8"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "354.396 304.234 -2.63625"
+}
+{
+"gndLt" "2733366201"
+"ltOrigin" "3225.98 -3755.68 211.418"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "3195.3 -3784.3 -110.1"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "4.00938 96.0413 0.936962"
+}
+{
+"gndLt" "3e3f380000"
+"ltOrigin" "1133.38 -2102.7 138.48"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "1137.8 -2126.5 -184"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 230.764 0"
+}
+{
+"gndLt" "2935395c01"
+"ltOrigin" "2425.16 -1514.92 41.2349"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "2428.1 -1532.3 -176.3"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "357.8 62.5499 -4.22626"
+}
+{
+"gndLt" "3138376801"
+"ltOrigin" "2538.19 -1705.77 154.18"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "2517.1 -1711.8 -168.3"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 118.484 0"
+}
+{
+"gndLt" "2935378501"
+"ltOrigin" "3055.98 6.71604 164.864"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3045.5 28.8 -96"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 98.6682 0"
+}
+{
+"gndLt" "2834376601"
+"ltOrigin" "2933.04 -131.526 164.864"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "2951.9 -135.5 -96"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 309.683 0"
+}
+{
+"gndLt" "2834375601"
+"ltOrigin" "3666.54 -2321.58 164.864"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3667.1 -2301.9 -96"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 43.1982 0"
+}
+{
+"gndLt" "2935379901"
+"ltOrigin" "4014.34 -2531.57 147.516"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "4029.6 -2513.5 -111.3"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "6.37971 296.559 3.17914"
+}
+{
+"gndLt" "2633378e01"
+"ltOrigin" "3918.23 -3886.88 140.694"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3923.5 -3905.8 -120.4"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "1.67113 262.724 -0.213335"
+}
+{
+"gndLt" "2633376e01"
+"ltOrigin" "3604 -3853.64 138.41"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3613.6 -3894.6 -119.8"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "357.25 234.733 1.943"
+}
+{
+"gndLt" "2633378201"
+"ltOrigin" "3697.2 -4070.06 146.31"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3668.6 -4079.2 -113.4"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "359.868 137.299 1.86806"
+}
+{
+"gndLt" "2633377a01"
+"ltOrigin" "3427.89 -4015.32 148.005"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "3417.7 -4007.4 -112.6"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "3.22004 106.979 0.982543"
+}
+{
+"gndLt" "4145406a01"
+"ltOrigin" "1963.01 -4361.9 136.236"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "2004.23 -4353.87 -127.323"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "3.93799 78.8295 -4.65107"
+}
+{
+"gndLt" "393e3a6901"
+"ltOrigin" "2388.8 -2630.8 78.1917"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "2396.9 -2645.5 -147.1"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "356.505 181.694 5.27202"
+}
+{
+"gndLt" "2e37369201"
+"ltOrigin" "3177.88 -2512.81 202.879"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "3188.3 -2518.2 -118.5"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "2.63332 236.267 -0.0562729"
+}
+{
+"gndLt" "2a35379301"
+"ltOrigin" "3184.05 -2690.24 90.941"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "3224.3 -2642.6 -125.5"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "2.80127 215.956 -3.85448"
+}
+{
+"gndLt" "3f423b5c01"
+"ltOrigin" "-656.052 -4609.51 141.521"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-647.834 -4568.07 -124.707"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "357.998 81.3773 2.71457"
+}
+{
+"gndLt" "3d3f383e01"
+"ltOrigin" "-484.971 -4234.27 134.605"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "-505.2 -4247.03 -132.003"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "358.631 214.986 1.95461"
+}
+{
+"gndLt" "2c383a9e01"
+"ltOrigin" "1981.51 -776.64 111.637"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "2015.38 -707.57 -146.321"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "2.19854 344.11 13.9726"
+}
+{
+"gndLt" "3d413b3f01"
+"ltOrigin" "764.995 -2651.55 80.8696"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "811.107 -2656.45 -178.276"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "9.24106 118.986 -6.28623"
+}
+{
+"gndLt" "3438330000"
+"ltOrigin" "865.015 -3755.95 177.125"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "899.6 -3773.1 -144.6"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0.424416 264.674 1.58417"
+}
+{
+"gndLt" "23211e0000"
+"ltOrigin" "-1036.69 -3644.5 -93.1114"
+"spawnflags" "4"
+"targetname" "pf1362_auto1"
+"script_gameobjectname" "hq"
+"origin" "-1036.5 -3644.5 -108"
+"angles" "0 90 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "23211e0000"
+"ltOrigin" "-1033.48 -3640.5 -70.547"
+"spawnflags" "4"
+"target" "pf1362_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "-1032.5 -3640.5 -78"
+"angles" "0 6.37545e-006 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1030.56 -3627.78 -77.4216"
+"spawnflags" "4"
+"targetname" "pf1362_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 130 -89.9997"
+"origin" "-1027.8 -3625.8 -78"
+}
+{
+"targetname" "pf1362_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-1036 -3645 -92"
+"model" "*13"
+}
+{
+"targetname" "pf1362_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-1040 -3640 -69"
+"model" "*14"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "-928 -3532 -44"
+"model" "?11"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_allies"
+"targetname" "ctf_trig_allies"
+"origin" "36 -3952 -148"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 270.099 0"
+}
+{
+"gndLt" "3a3a357301"
+"ltOrigin" "40.4835 -3978.31 -114.489"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "36 -3952 -164"
+"targetname" "ctf_flag_allies"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 270.099 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_allies"
+"origin" "36 -3952 -148"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 270.099 0"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_axis"
+"targetname" "ctf_trig_axis"
+"origin" "1160 -904 -176"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 270.101 0"
+}
+{
+"gndLt" "333a398b01"
+"ltOrigin" "1164.48 -930.312 -142.489"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "1160 -904 -192"
+"targetname" "ctf_flag_axis"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 270.101 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_axis"
+"origin" "1160 -904 -176"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 270.101 0"
+}
+{
+"classname" "trigger_use_touch"
+"targetname" "sab_bomb_allies"
+"script_gameobjectname" "sab"
+"target" "pf1400_auto1"
+"origin" "104 -3960 -156"
+"model" "?12"
+}
+{
+"targetname" "sab_bomb_defuse_allies"
+"script_gameobjectname" "sab"
+"classname" "trigger_use_touch"
+"origin" "104 -3960 -156"
+"model" "?13"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "104 -3962 -136"
+"model" "*15"
+}
+{
+"gndLt" "3b3c368601"
+"ltOrigin" "103.879 -3961.58 -135.977"
+"targetname" "pf1400_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1400_1"
+"origin" "104 -3963 -166"
+"angles" "0 90 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b368501"
+"ltOrigin" "107.406 -3965.56 -146.544"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1400_1"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "104 -3960 -164"
+"angles" "0 270 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"classname" "trigger_use_touch"
+"targetname" "sab_bomb_axis"
+"script_gameobjectname" "sab"
+"target" "pf1401_auto1"
+"origin" "1136 -912 -184"
+"model" "?14"
+}
+{
+"targetname" "sab_bomb_defuse_axis"
+"script_gameobjectname" "sab"
+"classname" "trigger_use_touch"
+"origin" "1136 -912 -184"
+"model" "?15"
+}
+{
+"gndLt" "3139398b01"
+"ltOrigin" "1135.88 -913.58 -163.977"
+"targetname" "pf1401_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1401_2"
+"origin" "1136 -915 -194"
+"angles" "0 90 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "323a3a8b01"
+"ltOrigin" "1139.41 -917.563 -174.544"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1401_2"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "1136 -912 -192"
+"angles" "0 270 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "1136 -914 -164"
+"model" "*16"
+}
+{
+"gndLt" "3f433d7f01"
+"ltOrigin" "301.362 -2427.73 -320.909"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"origin" "301.2 -2427.9 -324.3"
+"targetname" "sab_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+"angles" "1.10638 17.9988 -3.40111"
+}
+{
+"script_gameobjectname" "sab"
+"targetname" "sab_bomb_pickup_trig"
+"classname" "trigger_multiple"
+"origin" "301 -2428 -324"
+"model" "?16"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "38.3 -3952.1 -164"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_a"
+"angles" "0 269.901 0"
+}
+{
+"gndLt" "3c3e395d01"
+"ltOrigin" "99.5229 -914.765 60.8643"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "106.5 -936 -200"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 231.053 0"
+}
+{
+"gndLt" "302c260000"
+"ltOrigin" "-428 121.814 -161.111"
+"spawnflags" "4"
+"targetname" "pf1406_auto1"
+"script_gameobjectname" "hq"
+"origin" "-428 122 -176"
+"angles" "0 180 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "2f2b250000"
+"ltOrigin" "-432 125.02 -138.547"
+"spawnflags" "4"
+"target" "pf1406_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "-432 126 -146"
+"angles" "0 90 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-444.717 127.943 -145.422"
+"spawnflags" "4"
+"targetname" "pf1406_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 220 -89.9997"
+"origin" "-446.7 130.7 -146"
+}
+{
+"targetname" "pf1406_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-427 122 -160"
+"model" "*17"
+}
+{
+"targetname" "pf1406_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-432 119 -137"
+"model" "*18"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "-440 200 -120"
+"model" "?17"
+}
+{
+"script_label" "_b"
+"model" "prop_flag_neutral"
+"script_gameobjectname" "dom onslaught"
+"origin" "-864 -1824 -186.8"
+"targetname" "flag_primary"
+"height" "128"
+"radius" "160"
+"classname" "trigger_radius"
+"angles" "0.795585 179.996 -1.9885"
+}
+{
+"classname" "misc_turret"
+"export" "5"
+"model" "weapon_minigun"
+"weaponinfo" "turret_minigun_mp"
+"origin" "-974.5 -3337 60"
+"angles" "0 90 0"
+}
+{
+"angles" "0 270 0"
+"origin" "1248 -2427 4"
+"weaponinfo" "turret_minigun_mp"
+"model" "weapon_minigun"
+"export" "6"
+"classname" "misc_turret"
+}
+{
+"gndLt" "3239377401"
+"ltOrigin" "760.138 1062.48 124.237"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "738.5 1054.2 -142.6"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "359.298 220.386 -0.232408"
+}
+{
+"gndLt" "45463df001"
+"ltOrigin" "1979.02 2560.26 125.47"
+"csv_include" "animated_models_foliage_red_pine_xl"
+"precache_script" "maps animated_models foliage_red_pine_xl"
+"targetname" "animated_model"
+"origin" "1980.3 2546.8 -140.9"
+"model" "foliage_red_pine_xl_animated"
+"classname" "script_model"
+"angles" "1.50635 320.328 -1.36095"
+}
+{
+"gndLt" "4243364201"
+"ltOrigin" "-1739.72 -2019.41 142.48"
+"csv_include" "animated_models_foliage_tree_river_birch_xl_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_xl_a"
+"targetname" "animated_model"
+"origin" "-1737.6 -2042.2 -180"
+"model" "foliage_tree_river_birch_xl_a_animated"
+"classname" "script_model"
+"angles" "0 200.76 0"
+}
+{
+"gndLt" "3c42412c01"
+"ltOrigin" "219.63 -1379.97 30.0591"
+"csv_include" "animated_models_foliage_tree_river_birch_lg_a"
+"precache_script" "maps animated_models foliage_tree_river_birch_lg_a"
+"targetname" "animated_model"
+"origin" "191.8 -1432.9 -182.7"
+"model" "foliage_tree_river_birch_lg_a_animated"
+"classname" "script_model"
+"angles" "0.97244 6.82383 -8.07212"
+}
+{
+"gndLt" "2834377901"
+"ltOrigin" "1886.26 145.528 132.864"
+"csv_include" "animated_models_foliage_tree_grey_oak_xl_a"
+"precache_script" "maps animated_models foliage_tree_grey_oak_xl_a"
+"targetname" "animated_model"
+"origin" "1901.7 160.6 -128"
+"model" "foliage_tree_grey_oak_xl_a_animated"
+"classname" "script_model"
+"angles" "0 25.7739 0"
+}
+{
+"targetname" "minimap_corner"
+"origin" "2848 912 2432"
+"classname" "script_origin"
+}
+{
+"targetname" "minimap_corner"
+"origin" "-2896 -5408 2432"
+"classname" "script_origin"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "trigger_use_touch"
+"targetname" "bombtrigger"
+"origin" "-2112 456 1088"
+"model" "?18"
+}
+{
+"script_gameobjectname" "airdrop_pallet"
+"targetname" "pf1440_auto1"
+"classname" "script_brushmodel"
+"origin" "-2112 456 1066"
+"model" "*19"
+}
+{
+"ltOrigin" "-2112 456.186 1080.89"
+"target" "pf1440_auto1"
+"targetname" "airdrop_crate"
+"origin" "-2112 456 1066"
+"classname" "script_model"
+"model" "com_plasticcase_green_big_us_dirt"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"targetname" "auto19"
+"script_accel" "20"
+"script_airspeed" "80"
+"origin" "-3896 -5544 1192"
+"target" "auto2"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "40"
+"script_accel" "20"
+"target" "auto3"
+"targetname" "auto2"
+"origin" "-1912 -6328 1160"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "60"
+"script_accel" "20"
+"target" "auto5"
+"targetname" "auto4"
+"origin" "-1320 -3816 1032"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "50"
+"script_accel" "20"
+"target" "auto6"
+"targetname" "auto5"
+"origin" "-1140 -2024 1132"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "50"
+"script_accel" "20"
+"target" "auto7"
+"targetname" "auto6"
+"origin" "-522 -337 1201"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "40"
+"script_accel" "20"
+"target" "auto9"
+"targetname" "auto8"
+"origin" "1096 -712 1160"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "40"
+"script_accel" "15"
+"target" "auto10"
+"targetname" "auto9"
+"origin" "952 -1912 1144"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"angles" "0 250 0"
+"script_airspeed" "30"
+"script_accel" "10"
+"targetname" "auto10"
+"origin" "164.4 -2815.3 1128"
+"classname" "script_origin"
+}
+{
+"targetname" "auto11"
+"_color" "0.501961 1.000000 1.000000"
+"script_airspeed" "80"
+"script_accel" "40"
+"target" "auto12"
+"origin" "-952 -1337 1263.5"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"origin" "-3960 -5528 1192"
+"target" "auto19"
+"targetname" "heli_start"
+"classname" "script_origin"
+}
+{
+"target" "auto49"
+"_color" "0.501961 1.000000 1.000000"
+"origin" "2920.5 -1048 1111.5"
+"targetname" "heli_loop_start"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"angles" "0 250 0"
+"height" "128"
+"origin" "251.6 -2848.7 1128"
+"targetname" "heli_dest"
+"target" "auto10"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto20"
+"targetname" "heli_start"
+"origin" "8520 904 920"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto24"
+"targetname" "auto20"
+"script_accel" "20"
+"script_airspeed" "60"
+"origin" "8440 904 920"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto25"
+"targetname" "auto24"
+"script_accel" "20"
+"script_airspeed" "60"
+"origin" "2520 552 1224"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto8"
+"targetname" "auto25"
+"script_accel" "20"
+"script_airspeed" "40"
+"origin" "1304 520 1208"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto26"
+"origin" "-1512 -8120 1064"
+"targetname" "heli_start"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto27"
+"targetname" "auto26"
+"origin" "-1592 -8088 1064"
+"script_accel" "20"
+"script_airspeed" "60"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto31"
+"targetname" "auto30"
+"origin" "1592 -2456 1144"
+"script_accel" "20"
+"script_airspeed" "50"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto9"
+"targetname" "auto31"
+"origin" "1853 -1469 1112"
+"script_accel" "20"
+"script_airspeed" "50"
+"classname" "script_origin"
+}
+{
+"origin" "8697 2945.5 390"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"origin" "5599.5 -8757.5 710"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"origin" "-5657.5 -8758 710"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"origin" "232 -3048 920"
+"target" "auto41"
+"targetname" "heli_crash_start"
+"classname" "script_origin"
+}
+{
+"script_accel" "20"
+"script_airspeed" "40"
+"target" "auto42"
+"origin" "264 -3144 920"
+"targetname" "auto41"
+"classname" "script_origin"
+}
+{
+"script_accel" "30"
+"script_airspeed" "50"
+"targetname" "auto43"
+"origin" "1496 -6216 -72"
+"classname" "script_origin"
+}
+{
+"script_accel" "30"
+"script_airspeed" "50"
+"target" "auto44"
+"origin" "352 -3808 620"
+"targetname" "auto42"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"script_airspeed" "60"
+"script_accel" "20"
+"origin" "632 -6200 1192"
+"targetname" "auto28"
+"target" "auto30"
+"_color" "0.000000 1.000000 0.501961"
+}
+{
+"classname" "script_origin"
+"origin" "767.5 388.5 1208"
+"targetname" "auto7"
+"target" "auto8"
+"script_accel" "10"
+"script_airspeed" "30"
+"_color" "0.000000 1.000000 0.501961"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"target" "auto28"
+"targetname" "auto27"
+"origin" "-240 -7296 1088"
+"script_accel" "20"
+"script_airspeed" "60"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "auto44"
+"origin" "696 -4568 368"
+"target" "auto43"
+"script_airspeed" "50"
+"script_accel" "30"
+}
+{
+"classname" "script_origin"
+"origin" "-1535.9 -4264.8 1005.5"
+"targetname" "auto12"
+"target" "auto40"
+"script_accel" "30"
+"script_airspeed" "30"
+"_color" "0.501961 1.000000 1.000000"
+}
+{
+"_color" "0.501961 1.000000 1.000000"
+"script_airspeed" "50"
+"script_accel" "30"
+"target" "auto49"
+"targetname" "auto48"
+"origin" "2323.2 -2064.5 1139.3"
+"classname" "script_origin"
+}
+{
+"_color" "0.501961 1.000000 1.000000"
+"script_airspeed" "30"
+"script_accel" "30"
+"target" "auto51"
+"targetname" "auto40"
+"origin" "2577.1 -3752.7 996.8"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "heli_leave"
+"origin" "-5880.5 2000.5 710"
+}
+{
+"classname" "script_origin"
+"origin" "1512.5 -536 1111.5"
+"target" "auto11"
+"targetname" "auto18"
+"script_accel" "20"
+"script_airspeed" "40"
+"_color" "0.501961 1.000000 1.000000"
+}
+{
+"_color" "0.000000 1.000000 0.501961"
+"script_airspeed" "50"
+"script_accel" "20"
+"target" "auto4"
+"targetname" "auto3"
+"origin" "-1352 -5352 1096"
+"classname" "script_origin"
+}
+{
+"script_delay" "3"
+"classname" "script_origin"
+"origin" "2258.2 -2840.6 1036"
+"targetname" "auto51"
+"target" "auto48"
+"script_accel" "30"
+"script_airspeed" "25"
+"_color" "0.501961 1.000000 1.000000"
+}
+{
+"classname" "script_origin"
+"origin" "2872.5 -1016 1207.5"
+"targetname" "auto49"
+"target" "auto18"
+"script_accel" "30"
+"script_airspeed" "80"
+"_color" "0.501961 1.000000 1.000000"
+}
+{
+"classname" "script_origin"
+"targetname" "airstrikeheight"
+"origin" "278.5 9.5 1655"
+}
+{
+"script_gameobjectname" "airdrop_pallet"
+"targetname" "pf1441_auto1"
+"classname" "script_brushmodel"
+"origin" "-219 946 -181"
+"model" "*20"
+}
+{
+"ltOrigin" "-219.4 945.786 -181.311"
+"target" "pf1441_auto1"
+"targetname" "care_package"
+"origin" "-219.4 945.6 -196.2"
+"classname" "script_model"
+"model" "com_plasticcase_green_big_us_dirt"
+}
+{
+"angles" "0 90 0"
+"origin" "1304 568 3064"
+"targetname" "remoteMissileTarget"
+"classname" "script_origin"
+}
+{
+"angles" "0 90 0"
+"script_targetoffset_z" "10000"
+"origin" "3240 2328 6856"
+"target" "remoteMissileTarget"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"angles" "270 18.083 3.24642e-006"
+"origin" "483.8 -1763.9 -134"
+"targetname" "barrel_fireFX_origin"
+"classname" "script_struct"
+}
+{
+"angles" "0 0 0"
+"origin" "3672 -3352 3064"
+"targetname" "remoteMissileTarget2"
+"classname" "script_origin"
+}
+{
+"origin" "368 672 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "448 752 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "370 438 -111"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "-1228 -4986 -120"
+"angles" "0 90 0"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"origin" "-1452 -4970 -120"
+"angles" "0 90 0"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"origin" "-1224 -5092 -123"
+"angles" "0 90 0"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"origin" "560 344 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "480 376 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "423 348 -156"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "-1228 -4986 -112"
+"angles" "0 90 0"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"origin" "-1452 -4970 -112"
+"angles" "0 90 0"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"origin" "-1224 -5092 -116"
+"angles" "0 90 0"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"origin" "544 344 -144"
+"angles" "0 270 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "1253 -4301 -60"
+"angles" "0 70 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2340.9 -902 -170.3"
+"angles" "0 270 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "-1637.4 -4423.9 -114.2"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1228 -4986 -128"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_attacker_start"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 90 0"
+"origin" "-1292 -5034 -112"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 90 0"
+"origin" "-1412 -5058 -120"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 90 0"
+"origin" "-1292 -5034 -120"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 90 0"
+"origin" "-1356 -5002 -120"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 90 0"
+"origin" "-1340 -5098 -120"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 85 0"
+"origin" "-1300 -4906 -120"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 90 0"
+"origin" "-1412 -5058 -112"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 90 0"
+"origin" "-1340 -5098 -112"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 85 0"
+"origin" "-1300 -4906 -112"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 90 0"
+"origin" "-1356 -5002 -112"
+}
+{
+"origin" "-1380 -4906 -112"
+"angles" "0 85 0"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"origin" "-1380 -4906 -120"
+"angles" "0 85 0"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"angles" "0 90 0"
+"origin" "-1292 -5034 -128"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"angles" "0 90 0"
+"origin" "-1412 -5058 -128"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"angles" "0 90 0"
+"origin" "-1340 -5098 -128"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"angles" "0 85 0"
+"origin" "-1300 -4906 -128"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"angles" "0 90 0"
+"origin" "-1356 -5002 -128"
+}
+{
+"origin" "-1380 -4906 -128"
+"angles" "0 85 0"
+"classname" "mp_dd_spawn_attacker_start"
+}
+{
+"origin" "-1452 -4970 -128"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_attacker_start"
+}
+{
+"origin" "-1224 -5092 -131"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_attacker_start"
+}
+{
+"origin" "-1479.7 -4378.5 -113.2"
+"angles" "0 75 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1377.4 -4415.8 -116"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1435.6 -4466.6 -111.9"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1557.4 -4423.9 -114.2"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1263.7 -4378.5 -113.2"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1201.4 -4415.8 -116"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1307.6 -4466.6 -111.9"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "-1133.4 -4391.9 -98.2"
+"angles" "0 90 0"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"origin" "528 96 -160"
+"angles" "0 265 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "448 96 -160"
+"angles" "0 265 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "512 672 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "440 224 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "504 192 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "560 248 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "360 548 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "488 544 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "432 616 -168"
+"angles" "0 265 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "440 480 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "504 448 -168"
+"angles" "0 270 0"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"origin" "488 288 -160"
+"angles" "0 270 0"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"origin" "-312 -136 -144"
+"angles" "0 345 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-280 -200 -144"
+"angles" "0 345 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-248 -96 -144"
+"angles" "0 345 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-280 -32 -144"
+"angles" "0 345 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-352 -240 -144"
+"angles" "0 345 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "368 392 -144"
+"angles" "0 270 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "424 336 -144"
+"angles" "0 270 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "480 392 -144"
+"angles" "0 270 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-312 -136 -136"
+"angles" "0 345 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "-280 -200 -136"
+"angles" "0 345 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "-248 -96 -136"
+"angles" "0 345 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "-280 -32 -136"
+"angles" "0 345 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "-352 -240 -136"
+"angles" "0 345 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "368 392 -136"
+"angles" "0 270 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "424 336 -136"
+"angles" "0 270 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "480 392 -136"
+"angles" "0 270 0"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"origin" "560 344 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "480 376 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "423 348 -164"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "528 96 -168"
+"angles" "0 265 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "448 96 -168"
+"angles" "0 265 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "440 224 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "504 192 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "560 248 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "488 288 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "488 96 -160"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender"
+}
+{
+"origin" "-1108.4 -4341.5 -107.6"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "972 -3002 -158"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 75 0"
+"origin" "1568 -1234 -202"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 180 0"
+"origin" "1668 -4118 -6"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 323 0"
+"origin" "-1022 -3362 -106"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 350 0"
+"origin" "1488 -1546 -182"
+}
+{
+"origin" "1818 -1540 -182"
+"angles" "0 93 0"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 90 0"
+"origin" "1060 -2888 -144"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "1124 -4080 -112"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 353 0"
+"origin" "1750 -4066 -126"
+}
+{
+"origin" "1750 -4066 -126"
+"angles" "0 353 0"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 0 0"
+"origin" "1104 -2280 -144"
+}
+{
+"origin" "-674.5 303.4 -172"
+"angles" "0 271 0"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 99 0"
+"origin" "258.8 -1733.7 -147"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 52 0"
+"origin" "-504 -2216 -128"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 320 0"
+"origin" "-1864 -4004 -116"
+}
+{
+"origin" "-1588 -1164 -168"
+"angles" "0 341 0"
+"classname" "mp_dom_spawn"
+}
+{
+"origin" "-1868 -1772 -168"
+"angles" "0 341 0"
+"classname" "mp_dom_spawn"
+}
+{
+"origin" "-364 -1900 -128"
+"angles" "0 215 0"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 175 0"
+"origin" "2812 -2556 -140"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 175 0"
+"origin" "2760 -2084 -152"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 93 0"
+"origin" "-830 -3714 -106"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 65 0"
+"origin" "-716 -4968 -156"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 242 0"
+"origin" "-286 452 -176"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 270 0"
+"origin" "1816 -186 -98"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 93 0"
+"origin" "1818 -1540 -182"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "972 -3002 -158"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 75 0"
+"origin" "1568 -1234 -202"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 180 0"
+"origin" "1668 -4118 -6"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 323 0"
+"origin" "-1022 -3362 -106"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 350 0"
+"origin" "1488 -1546 -182"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 90 0"
+"origin" "1060 -2888 -144"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "1124 -4080 -112"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 353 0"
+"origin" "1750 -4066 -126"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "972 -3002 -158"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 0 0"
+"origin" "1104 -2280 -144"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 271 0"
+"origin" "-674.5 303.4 -172"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 99 0"
+"origin" "258.8 -1733.7 -147"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 52 0"
+"origin" "-504 -2216 -128"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 320 0"
+"origin" "-1864 -4004 -116"
+}
+{
+"origin" "-1588 -1164 -168"
+"angles" "0 341 0"
+"classname" "mp_tdm_spawn"
+}
+{
+"origin" "-1868 -1772 -168"
+"angles" "0 341 0"
+"classname" "mp_tdm_spawn"
+}
+{
+"origin" "-364 -1900 -128"
+"angles" "0 215 0"
+"classname" "mp_tdm_spawn"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 175 0"
+"origin" "2812 -2556 -140"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 175 0"
+"origin" "2760 -2084 -152"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 93 0"
+"origin" "-830 -3714 -106"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 65 0"
+"origin" "-716 -4968 -156"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 242 0"
+"origin" "-286 452 -176"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 270 0"
+"origin" "1816 -186 -98"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 93 0"
+"origin" "1818 -1540 -182"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "972 -3002 -158"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 75 0"
+"origin" "1568 -1234 -202"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 180 0"
+"origin" "1668 -4118 -6"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 323 0"
+"origin" "-1022 -3362 -106"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 350 0"
+"origin" "1488 -1546 -182"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 90 0"
+"origin" "1060 -2888 -144"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "1124 -4080 -112"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 353 0"
+"origin" "1750 -4066 -126"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "972 -3002 -158"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 0 0"
+"origin" "1104 -2280 -144"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 271 0"
+"origin" "-674.5 303.4 -172"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 99 0"
+"origin" "258.8 -1733.7 -147"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 52 0"
+"origin" "-504 -2216 -128"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 320 0"
+"origin" "-1864 -4004 -116"
+}
+{
+"origin" "-1588 -1164 -168"
+"angles" "0 341 0"
+"classname" "mp_dm_spawn"
+}
+{
+"origin" "-1868 -1772 -168"
+"angles" "0 341 0"
+"classname" "mp_dm_spawn"
+}
+{
+"origin" "-364 -1900 -128"
+"angles" "0 215 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 175 0"
+"origin" "2812 -2556 -140"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 175 0"
+"origin" "2760 -2084 -152"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 93 0"
+"origin" "-830 -3714 -106"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 65 0"
+"origin" "-716 -4968 -156"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 242 0"
+"origin" "-286 452 -176"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 270 0"
+"origin" "1816 -186 -98"
+}
+{
+"origin" "-288 136 -144"
+"angles" "0 90 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-592 448 -144"
+"angles" "0 270 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "664 -1752 -129"
+"angles" "0 165 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "1712 -1320 -169.7"
+"angles" "0 240 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "2768 -2080 -144.8"
+"angles" "0 180 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "1464 -1720 -184"
+"angles" "0 15 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-129.3 -2127.1 -180.5"
+"angles" "0 70 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-288 136 -144"
+"angles" "0 90 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "-592 448 -144"
+"angles" "0 270 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "664 -1752 -129"
+"angles" "0 165 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "1712 -1320 -169.7"
+"angles" "0 240 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "2768 -2080 -144.8"
+"angles" "0 180 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "1464 -1720 -184"
+"angles" "0 15 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "-129.3 -2127.1 -180.5"
+"angles" "0 70 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "1436 -4452 14"
+"angles" "0 90 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1372 -4404 14"
+"angles" "0 90 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1308 -4452 14"
+"angles" "0 75 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1440 -4344 -88"
+"angles" "0 90 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1384 -4296 -88"
+"angles" "0 90 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1320 -4344 -88"
+"angles" "0 75 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1644 -4436 14"
+"angles" "0 75 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1572 -4452 14"
+"angles" "0 60 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "1436 -4452 14"
+"angles" "0 90 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1372 -4404 14"
+"angles" "0 90 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1308 -4452 14"
+"angles" "0 75 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1440 -4344 -88"
+"angles" "0 90 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1384 -4296 -88"
+"angles" "0 90 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1320 -4344 -88"
+"angles" "0 75 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1644 -4436 14"
+"angles" "0 75 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "1572 -4452 14"
+"angles" "0 60 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 0 0"
+"origin" "1768 -4088 -122.3"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 0 0"
+"origin" "1112 -4104 14"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 0 0"
+"origin" "984 -3008 -144"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 75 0"
+"origin" "-713.3 -4957.5 -141.7"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 90 0"
+"origin" "-832 -3712 -80"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 1.00179e-005 0"
+"origin" "-1880 -2824 -169.5"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 180 0"
+"origin" "1668.3 -4112.8 14"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 0 0"
+"origin" "-1030.8 -3351.4 -80"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 0 0"
+"origin" "1768 -4088 -122.3"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 0 0"
+"origin" "1112 -4104 14"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 0 0"
+"origin" "984 -3008 -144"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 75 0"
+"origin" "-713.3 -4957.5 -141.7"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 90 0"
+"origin" "-832 -3712 -80"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 1.00179e-005 0"
+"origin" "-1880 -2824 -169.5"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 180 0"
+"origin" "1668.3 -4112.8 14"
+}
+{
+"classname" "mp_ctf_spawn_allies"
+"angles" "0 0 0"
+"origin" "-1030.8 -3351.4 -80"
+}
+{
+"origin" "2209.1 -901.7 -160.9"
+"angles" "0 270 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2276.9 -902 -170.3"
+"angles" "0 270 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2136.6 -854.2 -158.8"
+"angles" "0 195 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2065 -787.6 -147.1"
+"angles" "0 195 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2209.1 -789.7 -144.9"
+"angles" "0 270 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2236.9 -846 -154.3"
+"angles" "0 270 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2152.7 -750.1 -142.8"
+"angles" "0 210 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "2089.1 -699.6 -131.1"
+"angles" "0 210 0"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"origin" "-679.6 302.6 -168"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"origin" "1811.4 -190 -95.8"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender_b"
+}
+{
+"origin" "-232.8 729.3 -164"
+"angles" "0 315 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"origin" "1300.5 -183.8 -279.7"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_defender"
+}
+{
+"origin" "-73.9 -4650.9 -260"
+"angles" "0 45 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"origin" "-709.7 -4953.3 -145"
+"angles" "0 75 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"origin" "1018.3 -4212.2 -111.8"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"origin" "-1879.9 -2825.6 -174.4"
+"angles" "0 1.00179e-005 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"angles" "0 0 0"
+"script_targetoffset_z" "10000"
+"origin" "5592 -4184 6856"
+"target" "remoteMissileTarget2"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"angles" "0 270 0"
+"origin" "-808 -5400 3064"
+"targetname" "remoteMissileTarget3"
+"classname" "script_origin"
+}
+{
+"angles" "0 270 0"
+"script_targetoffset_z" "10000"
+"origin" "-1640 -7320 6856"
+"target" "remoteMissileTarget3"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"angles" "0 180 0"
+"origin" "-2856 -984 3064"
+"targetname" "remoteMissileTarget4"
+"classname" "script_origin"
+}
+{
+"angles" "0 180 0"
+"script_targetoffset_z" "10000"
+"origin" "-5128 8 6856"
+"target" "remoteMissileTarget4"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"origin" "1571.2 -1230.3 -197.8"
+"angles" "0 351.1 0"
+"classname" "mp_dd_spawn_defender_b"
+}
+{
+"origin" "584 -1280 -168"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender"
+}
+{
+"origin" "-905.3 -552.8 -172"
+"angles" "0 0 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"script_gameobjectname" "gtnw"
+"targetname" "gtnw_zone"
+"origin" "201 -2166 -367"
+"height" "128"
+"radius" "80"
+"classname" "trigger_radius"
+}
+{
+"script_gameobjectname" "gtnw"
+"classname" "script_brushmodel"
+"origin" "201 -2166 -338"
+"angles" "0 -11.865 0"
+"model" "*11"
+}
+{
+"spawnflags" "4"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 45 0"
+"origin" "201 -2166 -367"
+"script_exploder" "pf812_1"
+"script_gameobjectname" "gtnw"
+}

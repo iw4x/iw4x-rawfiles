@@ -1,0 +1,321 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define MENU_NAME									"createserver"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									"@MENU_CREATE_GAME_CAPS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CHOICE_Y(i)									(48 + (i * 20))
+#define CHOICE_ORIGIN(i)							-64 CHOICE_Y(i)
+#define CHOICE_RECT(i)								CHOICE_ORIGIN(i) 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define HR_ORIGIN(i)								0 (CHOICE_Y(i) - 0.5)
+#define HR_RECT(i)									HR_ORIGIN(i) 216 1 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define MENU_PANEL_POS_X							-300
+#define MENU_PANEL_POS_Y							48
+#define MENU_PANEL_WIDTH							300
+
+#define MENU_PANEL_ITEM_WIDTH						MENU_PANEL_WIDTH
+#define MENU_PANEL_ITEM_HEIGHT						18
+#define MENU_PANEL_ITEM_POS_X						MENU_PANEL_POS_X
+#define MENU_PANEL_ITEM_POS_Y(i)					((MENU_PANEL_POS_Y + 8) + (i * MENU_PANEL_ITEM_HEIGHT))
+#define MENU_PANEL_ITEM_RECT(i)						MENU_PANEL_POS_X MENU_PANEL_ITEM_POS_Y(i) MENU_PANEL_ITEM_WIDTH MENU_PANEL_ITEM_HEIGHT HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+
+#define MENU_PANEL_ITEM(itemIndex, nameArg, typeArg, textArg, dvarArg, maxCharsArg) \
+		MENU_PANEL_ITEM_VIS(itemIndex, nameArg, typeArg, textArg, dvarArg, maxCharsArg, 1)
+
+#define MENU_PANEL_ITEM_VIS(itemIndex, nameArg, typeArg, textArg, dvarArg, maxCharsArg, visArg) \
+		itemDef \
+		{ \
+			name										nameArg \
+			rect										MENU_PANEL_ITEM_RECT(itemIndex) \
+			style										WINDOW_STYLE_FILLED \
+			type										typeArg \
+			foreColor									CHOICE_TEXTCOLOR \
+			background									"menu_rules_selection_bar" \
+			textFont									UI_FONT_SMALL \
+			textAlign									ITEM_ALIGN_RIGHT \
+			textAlignX									-52 \
+			textAlignY									16 \
+			textScale									CHOICE_TEXTSIZE \
+			text										" " \
+			maxChars									maxCharsArg \
+			maxPaintChars								maxCharsArg \
+			dvar										dvarArg \
+			visible										visArg \
+			onFocus \
+			{ \
+				play									CHOICE_FOCUS_SOUND \
+				setItemColor							self backColor 0 0 0 1; \
+			} \
+			leaveFocus \
+			{ \
+				setItemColor							self backColor 0 0 0 0; \
+			} \
+		} \
+		itemDef \
+		{ \
+			rect										MENU_PANEL_ITEM_RECT(itemIndex) \
+			style										WINDOW_STYLE_FILLED \
+			foreColor									CHOICE_TEXTCOLOR \
+			textFont									UI_FONT_SMALL \
+			textAlignX									8 \
+			textAlignY									16 \
+			textScale									CHOICE_TEXTSIZE \
+			decoration									\
+			text										textArg \
+			visible										visArg \
+		}
+
+
+#define MENU_PANEL_SETTINGS \
+	itemDef \
+	{ \
+		name										"panel_title" \
+		rect										MENU_PANEL_POS_X MENU_PANEL_POS_Y MENU_PANEL_WIDTH 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_FILLED \
+		foreColor									CHOICE_TEXTCOLOR \
+		backColor									0 0 0 0.45 \
+		background									"gradient_center" \
+		textAlignX									6 \
+		textAlignY									18 \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									9 \
+		decoration									\
+		text										"@MENU_GAME_SETTINGS_CAPS" \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"panel_background" \
+		rect										MENU_PANEL_POS_X (MENU_PANEL_POS_Y + 20) MENU_PANEL_WIDTH 66 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_FILLED \
+		foreColor									CHOICE_TEXTCOLOR \
+		backColor									1 1 1 0.1 \
+		decoration									\
+		visible										1 \
+	} \
+	MENU_PANEL_ITEM(1, "hostname", ITEM_TYPE_EDITFIELD, "@MENU_SERVER_NAME", "sv_hostname", 18) \
+	MENU_PANEL_ITEM(2, "maxplayers", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PLAYERS", "party_maxplayers", 2) \
+	MENU_PANEL_ITEM(3, "maxping", ITEM_TYPE_NUMERICFIELD, "@MENU_MAXIMUM_PING", "sv_maxping", 3)
+
+#define MENU_ITEM_NAT_TYPE \
+	itemDef \
+	{ \
+		name										"nattype" \
+		rect										-64 188 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_FILLED \
+		type										ITEM_TYPE_BUTTON \
+		textFont									UI_FONT_SMALL \
+		foreColor									CHOICE_TEXTCOLOR \
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textAlignX									-60 \
+		textScale									CHOICE_TEXTSIZE \
+		disableColor								0.6 0.55 0.55 1 \
+		background									"menu_button_selection_bar" \
+		decoration									\
+		visible										when(getlocalizednattype() != locstring("@NETWORK_STRICT")) \
+		exp											text(locstring("@NETWORK_YOURNATTYPE") + " " + getlocalizednattype()) \
+	} \
+	itemDef \
+	{ \
+		name										"nattype" \
+		rect										-64 188 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_FILLED \
+		type										ITEM_TYPE_BUTTON \
+		textFont									UI_FONT_SMALL \
+		foreColor									CHOICE_TEXTCOLOR \
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textAlignX									-60 \
+		textScale									CHOICE_TEXTSIZE \
+		disableColor								0.6 0.55 0.55 1 \
+		background									"menu_button_selection_bar" \
+		decoration									\
+		visible										when(getlocalizednattype() == locstring("@NETWORK_STRICT")) \
+		exp											text(locstring("@NETWORK_YOURNATTYPE") + " ^1" + getlocalizednattype()) \
+	} \
+	itemDef \
+	{ \
+		name										"namehint" \
+		rect 										0 240 212 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		type										ITEM_TYPE_BUTTON \
+		foreColor									CHOICE_TEXTCOLOR \
+		textAlign									ITEM_ALIGN_LEGACY_RIGHT \
+		textscale									0.2916 \
+		autowrapped									\
+		decoration									\
+		visible										when(getlocalizednattype() == locstring("@NETWORK_STRICT")) \
+		exp											text("@PATCH_STRICTHINT") \
+	}
+
+#define MENU_PANEL_MAP_PREVIEW_WIDTH				216
+#define MENU_PANEL_MAP_PREVIEW_HEIGHT				122
+
+#define MENU_PANEL_MAP_PREVIEW \
+	itemDef \
+	{ \
+		name										"preview_image" \
+		rect										0 -139 MENU_PANEL_MAP_PREVIEW_WIDTH MENU_PANEL_MAP_PREVIEW_HEIGHT HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									CHOICE_TEXTCOLOR \
+		textScale									CHOICE_TEXTSIZE \
+		decoration									\
+		visible										1 \
+		exp											material("preview_" + dvarString("ui_mapname")) \
+	} \
+	itemDef \
+	{ \
+		name										"preview_mapname" \
+		rect										0 -139 MENU_PANEL_MAP_PREVIEW_WIDTH (MENU_PANEL_MAP_PREVIEW_HEIGHT - 103) HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0 0 0 0.5 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									UI_FONT_SMALL \
+		textScale									CHOICE_TEXTSIZE \
+		textAlign									6 \
+		textAlignX									-4 \
+		textAlignY									-1 \
+		decoration									\
+		autoWrapped									\
+		visible										1 \
+		exp											text(dvarString("party_mapname")) \
+	} \
+	itemDef \
+	{ \
+		name										"preview_gametype" \
+		rect										0 -36 MENU_PANEL_MAP_PREVIEW_WIDTH (MENU_PANEL_MAP_PREVIEW_HEIGHT - 103) HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0 0 0 0.5 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									UI_FONT_SMALL \
+		textScale									CHOICE_TEXTSIZE \
+		textAlign									6 \
+		textAlignX									-4 \
+		decoration									\
+		autoWrapped									\
+		visible										1 \
+		exp											text(dvarString("party_gametype")) \
+	}
+
+#define ON_MENU_OPEN \
+	uiScript										"loadArenas"; \
+	execNow											xblive_rankedmatch 0; \
+	execNow											xblive_privatematch 1; \
+	exec											"exec dvar_defaults.cfg";
+
+#define ON_MENU_CLOSE \
+	open											"main_text";
+
+#define ON_MENU_ESC \
+	exec											"xstopparty"; \
+	if (inprivateparty() && !privatepartyhost() && privatepartyhostinlobby()) \
+	{ \
+		exec										"xstopprivateparty"; \
+		exec										"xstartprivateparty"; \
+	} \
+	setDvar											"xblive_privatematch" 0; \
+	close											self;
+
+#define ACTION_START \
+	exec											"selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow;" \
+	exec											"xpartygo";
+
+#define ACTION_RULES \
+	if (dvarString(ui_gametype) == "arena") \
+	{ \
+		open										"settings_quick_arena"; \
+	} \
+	if (dvarString(ui_gametype) == "war") \
+	{ \
+		open										"settings_quick_war"; \
+	} \
+	if (dvarString(ui_gametype) == "sd") \
+	{ \
+		open										"settings_quick_sd"; \
+	} \
+	if (dvarString(ui_gametype) == "sab") \
+	{ \
+		open										"settings_quick_sab"; \
+	} \
+	if (dvarString(ui_gametype) == "dm") \
+	{ \
+		open										"settings_quick_dm"; \
+	} \
+	if (dvarString(ui_gametype) == "dom") \
+	{ \
+		open										"settings_quick_dom"; \
+	} \
+	if (dvarString(ui_gametype) == "ctf") \
+	{ \
+		open										"settings_quick_ctf"; \
+	} \
+	if (dvarString(ui_gametype) == "koth") \
+	{ \
+		open										"settings_quick_koth"; \
+	} \
+	if (dvarString(ui_gametype) == "oneflag") \
+	{ \
+		open										"settings_quick_oneflag"; \
+	} \
+	if (dvarString(ui_gametype) == "dd") \
+	{ \
+		open										"settings_quick_dd"; \
+	} \
+	if (dvarString(ui_gametype) == "vip") \
+	{ \
+		open										"settings_quick_vip"; \
+	} \
+	if (dvarString(ui_gametype) == "gtnw") \
+	{ \
+		open										"settings_quick_gtnw"; \
+	}
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_IW4
+	#include "ui_mp/bg.inc"
+
+	ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
+
+	MENU_PANEL_SETTINGS
+
+	MENU_CHOICE_TITLE(MENU_TITLE, 18)
+
+	MENU_CHOICE_BUTTON(0, button_0, "@MENU_START_GAME_CAPS", ACTION_START, "@NULL_EMPTY")
+
+	MENU_CHOICE_HORIZONTAL_LINE(1)
+
+	MENU_CHOICE_BUTTON(1, button_1, "@MENU_CHANGE_MAP_CAPS", open "settings_map", "@NULL_EMPTY")
+	MENU_CHOICE_BUTTON(2, button_2, "@MENU_CHANGE_GAME_MODE_CAPS", open "settings_gametype", "@NULL_EMPTY")
+	MENU_CHOICE_BUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", ACTION_RULES, "@NULL_EMPTY", when(dvarString(ui_gametype) != "arena" && dvarString(ui_gametype) != "oneflag"))
+	MENU_CHOICE_DBUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", "@NULL_EMPTY", when(dvarString(ui_gametype) == "arena" || dvarString(ui_gametype) == "oneflag"))
+
+	MENU_CHOICE_HORIZONTAL_LINE(4)
+	MENU_CHOICE_BUTTON(4, button_4, "@MENU_PASSWORD_CAPS", open "popup_serverpassword", "@NULL_EMPTY")
+
+	MENU_CHOICE_HORIZONTAL_LINE(5)
+	MENU_CHOICE_BUTTON(5, button_5, "@PLATFORM_BACK_CAPS", close self;, "@NULL_EMPTY")
+
+	MENU_ITEM_NAT_TYPE
+	MENU_PANEL_MAP_PREVIEW
+
+	ITEM_BUTTON_FRIENDS(-120)
+}

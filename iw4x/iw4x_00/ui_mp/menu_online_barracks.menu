@@ -1,0 +1,220 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/barracks.inc"
+
+#undef TEXTSIZE_TITLE
+#define TEXTSIZE_TITLE								FONTSCALE_BIG
+
+#define MENU_NAME									"menu_online_barracks"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									"@MPUI_BARRACKS_CAP"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CHOICE_Y(i)									((PLAYERCARD_POS_Y + 28) + (i * 20))
+#define CHOICE_ORIGIN(i)							-64 CHOICE_Y(i)
+#define CHOICE_RECT(i)								CHOICE_ORIGIN(i) 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define HR_ORIGIN(i)								0 (CHOICE_Y(i) - 0.5)
+#define HR_RECT(i)									HR_ORIGIN(i) 216 1 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+
+#define ON_MENU_OPEN \
+	focusFirst;
+
+#define ON_MENU_ESC \
+	close											self;
+
+#define BUTTON_BASE(itemIndex, nameArg, textArg, disabledArg) \
+	name											nameArg \
+	rect											CHOICE_RECT(itemIndex) \
+	group											"mw2_button" \
+	style											WINDOW_STYLE_FILLED \
+	foreColor										CHOICE_TEXTCOLOR \
+	disableColor									MENU_BUTTON_TEXTCOLOR_DISABLED \
+	background										HIGHLIGHT_SHADER_ART \
+	type											ITEM_TYPE_BUTTON \
+	textFont										CHOICE_TEXTFONT \
+	textAlign										ITEM_ALIGN_TOP_RIGHT \
+	textAlignX										-60 \
+	textScale										CHOICE_TEXTSIZE \
+	disabled										when (disabledArg) \
+	text											textArg \
+	visible											1 \
+	BUTTON_LEAVE_FOCUS								\
+
+#define BUTTON_ACTION(actionArg) \
+	action \
+	{ \
+		play										CHOICE_CLICK_SOUND; \
+		actionArg									\
+	}
+
+#define BUTTON_LEAVE_FOCUS \
+	leaveFocus \
+	{ \
+		setItemColor								self backColor 0 0 0 0; \
+		setLocalVarString							"ui_hint_text" ("@NULL_EMPTY"); \
+		setLocalVarBool								"ui_menuAButton" (0); \
+	}
+
+#define HINT_AREA \
+	itemDef \
+	{ \
+		rect										0 320 215 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		decoration									\
+		autowrapped									\
+		visible										1 \
+		foreColor									1 1 1 0.65 \
+		textFont									UI_FONT_SMALL \
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textAlignX									-1 \
+		textScale									CHOICE_TEXTSIZE \
+		exp											text (localvarstring("ui_hint_text")) \
+	}
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_IW4
+	#include "ui_mp/bg.inc"
+
+	ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
+
+	MENU_CHOICE_TITLE(MENU_TITLE, PLAYERCARD_POS_Y)
+
+	MENU_PARTY_STATUS_STRING
+
+	HINT_AREA
+
+	itemDef
+	{
+		BUTTON_BASE(0, "button_0", "@MPUI_CHALLENGES_CAPS", !isItemUnlocked("challenges"))
+		BUTTON_ACTION(setPlayerData("featureNew", "challenges", "false"); open "menu_challenges";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			if (isItemUnlocked("challenges"))
+			{
+				setLocalVarString					"ui_hint_text" ("@MPUI_DESC_CHALLENGES");
+			}
+			else
+			{
+				if (tablelookup("mp/unlockTable.csv", 0, "challenges", 2) == 9999)
+				{
+					setLocalVarString				"ui_hint_text" ("@PERKS_UNLOCKED_AT_NONE");
+				}
+				else
+				{
+					if (tablelookup("mp/unlockTable.csv", 0, "challenges", 3) != "")
+					{
+						setLocalVarString			"ui_hint_text" ("@PERKS_UNLOCKED_BY_CHALLENGE");
+					}
+					else
+					{
+						setLocalVarString			"ui_hint_text" ("@" + tablelookup("mp/rankTable.csv", 0, tablelookup("mp/unlockTable.csv", 0, "challenges", 2) , 17));
+					}
+				}
+				exec								"set ui_hint_text THIS MENU SHOULD BE UPDATED TO USE setLocalVarString ui_hint_text;";
+			}
+		}
+	}
+
+	MENU_CHOICE_NEWICON_VIS(0, when((getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)), 7))) && getplayerdata("featureNew" ,"prestige")))
+
+	itemDef
+	{
+		BUTTON_BASE(1, "button_1", "@MPUI_HIGHLIGHTS_CAPS", 0)
+		BUTTON_ACTION(open "menu_records";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						"ui_hint_text" ("@MPUI_DESC_HIGHLIGHTS");
+		}
+	}
+	
+	MENU_CHOICE_HORIZONTAL_LINE(2)
+
+	itemDef
+	{
+		BUTTON_BASE(2, "button_2", "@MENU_CUSTOM_TITLE_CAPS", 0)
+		BUTTON_ACTION(open "popup_customtitle";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						"ui_hint_text" ("@MPUI_DESC_CUSTOM_TITLE");
+		}
+	}
+
+	MENU_CHOICE_HORIZONTAL_LINE(3)
+
+	itemDef
+	{
+		BUTTON_BASE(3, "button_3", "@MPUI_RESET_STATS_CAPS", 0)
+		BUTTON_ACTION(open "stats_reset";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						"ui_hint_text" ("@MPUI_DESC_RESET_STATS");
+		}
+	}
+
+	itemDef
+	{
+		BUTTON_BASE(4, "button_4", "@MPUI_UNLOCK_STATS_CAPS", 0)
+		BUTTON_ACTION(open "stats_unlock";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						"ui_hint_text" ("@MPUI_DESC_UNLOCK_STATS");
+		}
+	}
+
+	MENU_CHOICE_HORIZONTAL_LINE_VIS(5, when ((getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))) == 0))
+
+	itemDef
+	{
+		BUTTON_BASE(5, "button_5", "@MPUI_PRESTIGE_MODE_CAPS", !(getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)), 7))) && !(getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))))
+		visible										when (!(getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))))
+		BUTTON_ACTION(open "prestige_reset1";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setPlayerData("featureNew", "prestige", "false");
+			if (!(getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)) , 7))))
+			{
+				setLocalVarString					"ui_hint_text" ( "@MPUI_DESC_PRESTIGE2" );
+			}
+			else
+			{
+				setLocalVarString					"ui_hint_text" ( "@MPUI_DESC_PRESTIGE" );
+			}
+		}
+	}
+
+	MENU_CHOICE_NEWICON_VIS(5, when((getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)), 7))) && getplayerdata("featureNew", "prestige")))
+
+	MENU_ITEM_PLAYERCARD
+	MENU_ITEM_PLAYERSTATS
+
+	ITEM_BUTTON_FRIENDS(-120)
+	ITEM_BUTTON_BACK(close self;)
+}

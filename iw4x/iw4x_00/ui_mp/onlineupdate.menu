@@ -1,0 +1,265 @@
+{
+	menuDef
+	{
+		name "onlineupdate"
+		rect -150 -44 300 44 2 2
+		popup
+		legacySplitScreenScale
+		style 1
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		background "white"
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		onOpen
+		{
+			setLocalVarInt "ui_centerPopup" ( 1 );
+		}
+		onClose
+		{
+			setLocalVarInt "ui_centerPopup" ( 0 );
+		}
+		onEsc
+		{
+			close self;
+		}
+		itemDef
+		{
+			rect -1004 -524 1708 960 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0 0 0 0.35
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -1004 -524 1708 960 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 1 1 1 1
+			background "xpbar_stencilbase"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 300 44 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.5 0.5 1
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -150 -44 1708 480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.75
+			background "mw2_popup_bg_fogstencil"
+			textscale 0.55
+			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect -150 -44 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0.85 0.85 0.85 1
+			background "mw2_popup_bg_fogscroll"
+			textscale 0.55
+			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 300 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "mockup_popup_bg_stencilfill"
+			textscale 0.55
+			exp rect h ( ( 24 + 1 * 20 ) )
+		}
+		itemDef
+		{
+			rect -150 -44 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.75
+			background "mw2_popup_bg_fogstencil"
+			textscale 0.55
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect -150 -44 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0.85 0.85 0.85 1
+			background "mw2_popup_bg_fogscroll"
+			textscale 0.55
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect -150 -44 300 0 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0
+			background "small_box_lightfx"
+			textscale 0.55
+			exp rect h ( ( 24 + 1 * 20 ) )
+		}
+		itemDef
+		{
+			rect -64 -64 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_tl"
+			textscale 0.55
+			
+		}
+		itemDef
+		{
+			rect 0 -64 300 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_t"
+			textscale 0.55
+			
+		}
+		itemDef
+		{
+			rect 300 -64 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_tr"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 300 0 64 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_r"
+			textscale 0.55
+			exp rect h ( ( 24 + 1 * 20 ) )
+		}
+		itemDef
+		{
+			rect 300 0 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_br"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 1 * 20 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 300 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_b"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 1 * 20 ) ) )
+		}
+		itemDef
+		{
+			rect -64 0 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_bl"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 1 * 20 ) ) )
+		}
+		itemDef
+		{
+			rect -63 0 64 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_l"
+			textscale 0.55
+			exp rect h ( ( 24 + 1 * 20 ) )
+		}
+		itemDef
+		{
+			rect 0 6 300 40 2 2
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			type 1
+			textalign 5
+			textscale 0.375
+			exp text ( dvarstring( "popupText" ) )
+		}
+		itemDef
+		{
+			rect 0 10 300 40 2 2
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			type 1
+			textalign 5
+			textaligny 10
+			textscale 0.375
+			visible when ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.25 && ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 <= 0.5 )
+			exp text ( "." )
+		}
+		itemDef
+		{
+			rect 0 10 300 40 2 2
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			type 1
+			textalign 5
+			textaligny 10
+			textscale 0.375
+			visible when ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.5 && ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 <= 0.75 )
+			exp text ( ".." )
+		}
+		itemDef
+		{
+			rect 0 10 300 40 2 2
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			type 1
+			textalign 5
+			textaligny 10
+			textscale 0.375
+			visible when ( ( sin( milliseconds( ) * 0.005 ) + 1 ) * 0.5 > 0.75 )
+			exp text ( "..." )
+		}
+	}
+}

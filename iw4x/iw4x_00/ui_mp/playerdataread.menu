@@ -1,0 +1,78 @@
+{
+	menuDef
+	{
+		name "playerdataread"
+		rect 0 0 0 0 0 0
+		decoration
+		forecolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		onOpen
+		{
+			setLocalVarInt "oldClassIndex" ( localvarint( "classIndex" ) );
+
+			setDvar	"ui_checkclass" 0;
+			open "resetclass";
+			setDvar	"ui_checkclass" 1;
+			open "resetclass";
+			setDvar	"ui_checkclass" 2;
+			open "resetclass";
+			setDvar	"ui_checkclass" 3;
+			open "resetclass";
+			setDvar	"ui_checkclass" 4;
+			open "resetclass";
+			setDvar	"ui_checkclass" 5;
+			open "resetclass";
+			setDvar	"ui_checkclass" 6;
+			open "resetclass";
+			setDvar	"ui_checkclass" 7;
+			open "resetclass";
+			setDvar	"ui_checkclass" 8;
+			open "resetclass";
+			setDvar	"ui_checkclass" 9;
+			open "resetclass";
+			setDvar	"ui_checkclass" 10;
+			open "resetclass";
+			setDvar	"ui_checkclass" 11;
+			open "resetclass";
+			setDvar	"ui_checkclass" 12;
+			open "resetclass";
+			setDvar	"ui_checkclass" 13;
+			open "resetclass";
+			setDvar	"ui_checkclass" 14;
+			open "resetclass";
+
+			exec "checkClasses";
+
+			setLocalVarInt "classIndex" ( localvarint( "oldClassIndex" ) );
+			if ( !isitemunlocked( getplayerdata( "killstreaks" , 0 ) ) && getplayerdata( "killstreaks" , 0 ) != "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Killstreak " + getplayerdata( "killstreaks" , 0 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setPlayerData( "killstreaks" , 0 , "none" );
+			}
+			setPlayerData( "killstreakUnlocked" , "uav" , "true" );
+			if ( !isitemunlocked( getplayerdata( "killstreaks" , 1 ) ) && getplayerdata( "killstreaks" , 1 ) != "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Killstreak " + getplayerdata( "killstreaks" , 1 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setPlayerData( "killstreaks" , 1 , "none" );
+			}
+			setPlayerData( "killstreakUnlocked" , "airdrop" , "true" );
+			if ( !isitemunlocked( getplayerdata( "killstreaks" , 2 ) ) && getplayerdata( "killstreaks" , 2 ) != "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Killstreak " + getplayerdata( "killstreaks" , 2 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setPlayerData( "killstreaks" , 2 , "none" );
+			}
+			setPlayerData( "killstreakUnlocked" , "predator_missile" , "true" );
+			setLocalVarInt "ui_tempVar" ( getplayerdata( "prestige" ) + 1 );
+			setPlayerData( "challengeState" , "ch_prestige" , "localVarInt" ( "ui_tempVar" ) );
+			setLocalVarInt "ui_tempVar" ( getplayerdata( "prestige" ) );
+			setPlayerData( "challengeProgress" , "ch_prestige" , "localVarInt" ( "ui_tempVar" ) );
+			if ( getplayerdata( "prestige" ) == 10 )
+			{
+				setPlayerData( "challengeState" , "ch_prestige_10" , 2 ) setPlayerData( "challengeProgress" , "ch_prestige_10" , 1 );
+			}
+			close self;
+		}
+	}
+}

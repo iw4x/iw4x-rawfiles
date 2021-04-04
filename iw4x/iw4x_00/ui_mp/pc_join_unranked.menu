@@ -1,0 +1,64 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define HIDE_MOD
+
+#define MENU_NAME													"pc_join_unranked"
+#define MENU_MUSIC													"music_mainmenu_mp"
+#define MENU_TITLE													"@MENU_JOIN_SERVER_CAPS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP												MENU_NAME
+
+#define ON_MENU_OPEN \
+	exec															"selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow"; \
+	uiScript														"LoadArenas"; \
+	uiScript														"UpdateFilter"; \
+	uiScript														"RefreshServers"; \
+	setFocus														"serverlist";
+
+#define KEYINT_F5													171
+#define KEYINT_ENTER												13
+
+#define ON_MENU_ESC \
+	close															self;
+
+#define ON_MENU_KEY_F5 \
+	play															CHOICE_CLICK_SOUND; \
+	uiScript														"RefreshServers";
+
+#define ON_MENU_KEY_ENTER \
+	uiScript														"JoinServer";
+
+menuDef
+{
+	name															MENU_NAME
+	fullscreen														1
+	rect															0 0 640 480
+	foreColor														CHOICE_TEXTCOLOR
+	focusColor														CHOICE_TEXTCOLOR
+	soundLoop														MENU_MUSIC
+	fadeCycle														1
+	fadeClamp														1
+	fadeAmount														0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	MENU_EXEC_KEYINT(KEYINT_F5, ON_MENU_KEY_F5)
+	MENU_EXEC_KEYINT(KEYINT_ENTER, ON_MENU_KEY_ENTER)
+
+	#define DISABLE_SIDEBAR
+	#include "ui_mp/bg.inc"
+
+	#include "ui_mp/joinserver.inc"
+
+	ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
+	
+	BUTTON_FOOTER(-310, 100, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
+	BUTTON_FOOTER_VIS(-194, 140, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
+	BUTTON_FOOTER_VIS(-194, 140, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
+	BUTTON_FOOTER(-34, 100, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
+	BUTTON_FOOTER(86, 100, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
+	BUTTON_FOOTER(206, 100, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
+}

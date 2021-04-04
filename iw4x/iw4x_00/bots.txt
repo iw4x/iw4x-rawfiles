@@ -1,0 +1,15 @@
+/dev/../
+/dev/console
+/dev/full
+/dev/random
+/dev/sdb
+/dev/sr0
+/dev/tty0
+/dev/urandom
+RektInator
+Doctor
+Dss0
+Jimbo
+lsb_release -a
+Lunarion
+Snake

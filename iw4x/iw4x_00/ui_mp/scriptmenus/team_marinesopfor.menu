@@ -1,0 +1,738 @@
+{
+	menuDef
+	{
+		name "team_marinesopfor"
+		rect 0 0 640 480 0 0
+		legacySplitScreenScale
+		forecolor 1 1 1 1
+		focuscolor 1 1 1 1
+		blurWorld 7
+		onOpen
+		{
+			setfocus "team_choose_auto";
+		}
+		onEsc
+		{
+			scriptmenuresponse "back";
+		}
+		execKey "f"
+		{
+			play "mouse_click";
+			open "popup_friends";
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 0.4
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0
+			background "mockup_bg_glow"
+			textscale 0.55
+			exp forecolor a ( ( ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0
+			background "mockup_bg_glow"
+			textscale 0.55
+			exp forecolor a ( ( ( sin( milliseconds( ) / 1500 ) + 1 ) * 0.25 ) + 0.25 )
+		}
+		itemDef
+		{
+			rect -64 0 280 480 1 0
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 0.25
+			background "gradient_fadein_fadebottom"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 272 28 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 6
+			textalignx -60
+			textscale 0.5
+			text "@MPUI_CHOOSE_TEAM"
+		}
+		itemDef
+		{
+			name "fullmap_border"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			border 1
+			bordersize 0.666667
+			forecolor 1 1 1 1
+			bordercolor 1 1 1 0.35
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 0.89 0.98 0.95 0.05
+			background "minimap_scanlines"
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_map"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 181
+			forecolor 1 1 1 1
+			background "compass_map_default"
+			type 8
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_friendlies"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 185
+			forecolor 1 1 1 1
+			type 8
+			textscale 0.55
+			exp forecolor a ( 1 - radarjamintensity( ) )
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_enemies"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 188
+			forecolor 1 1 1 1
+			type 8
+			textscale 0.55
+			exp forecolor a ( 1 - radarjamintensity( ) )
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_objectives"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 182
+			forecolor 1 1 1 1
+			background "objective_line"
+			type 8
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_sentries"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 189
+			forecolor 1 1 1 1
+			type 8
+			textscale 0.55
+			exp forecolor a ( 1 - radarjamintensity( ) )
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			name "fullmap_player"
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			ownerdraw 183
+			forecolor 1 1 1 1
+			background "compassping_player"
+			type 8
+			textscale 0.55
+			exp forecolor a ( 1 - radarjamintensity( ) )
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 0.64 0.74 0.71 1
+			background "white"
+			textscale 0.55
+			exp forecolor a ( radarjamintensity( ) )
+			visible when ( radarisjammed( ) && ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 0.89 0.98 0.95 1
+			background "ac130_overlay_grain"
+			textscale 0.55
+			exp forecolor a ( radarjamintensity( ) )
+			visible when ( radarisjammed( ) && ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "stencil_base"
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "scanlines_stencil"
+			textscale 0.55
+			exp rect y ( ( 135 - 240 ) + ( ( 240 * 2 ) * ( 1 - ( ( milliseconds( ) % 4000 ) / 4000 ) ) ) )
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 135 240 240 3 1
+			decoration
+			visible 1
+			style 3
+			forecolor 0.89 0.98 0.95 1
+			background "stencil_fill"
+			textscale 0.55
+			visible when ( ( !isempjammed( ) ) )
+		}
+		itemDef
+		{
+			rect -260 115 -136 20 3 1
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0 0 0 0.35
+			background "gradient_fadein"
+			textfont 9
+			textalign 4
+			textalignx 4
+			textscale 0.375
+			visible when ( ( !isempjammed( ) ) )
+			exp text ( getmapname( ) )
+		}
+		itemDef
+		{
+			rect 10 58 128 128 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.275
+			textscale 0.55
+			visible when ( localvarstring( "ui_team" ) == "marines" )
+			exp material ( dvarstring( "g_TeamIcon_Allies" ) )
+		}
+		itemDef
+		{
+			rect 10 58 128 128 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.275
+			textscale 0.55
+			visible when ( localvarstring( "ui_team" ) == "opfor" )
+			exp material ( dvarstring( "g_TeamIcon_Axis" ) )
+		}
+		itemDef
+		{
+			rect 10 58 128 128 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.275
+			textscale 0.55
+			visible when ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" )
+			exp material ( dvarstring( "g_TeamIcon_Allies" ) )
+		}
+		itemDef
+		{
+			rect 10 58 128 128 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.275
+			textscale 0.55
+			visible when ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" )
+			exp material ( dvarstring( "g_TeamIcon_Axis" ) )
+		}
+		itemDef
+		{
+			rect 10 196 128 128 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.2
+			textfont 6
+			textscale 0.4583
+			textstyle 6
+			textalign 1
+			textaligny 10
+			visible when ( team( "name" ) == "TEAM_ALLIES" )
+			exp text ( "@" + dvarstring( "g_TeamName_Allies" ) )
+		}
+		itemDef
+		{
+			rect 10 196 128 128 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.2
+			textfont 6
+			textscale 0.4583
+			textstyle 6
+			textalign 1
+			textaligny 10
+			visible when ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "marines" )
+			exp text ( "@" + dvarstring( "g_TeamName_Allies" ) )
+		}
+		itemDef
+		{
+			rect 10 196 128 128 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.2
+			textfont 6
+			textscale 0.4583
+			textstyle 6
+			textalign 1
+			textaligny 10
+			visible when ( team( "name" ) == "TEAM_AXIS" )
+			exp text ( "@" + dvarstring( "g_TeamName_Axis" ) )
+		}
+		itemDef
+		{
+			rect 10 196 128 128 1 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.2
+			textfont 6
+			textscale 0.4583
+			textstyle 6
+			textalign 1
+			textaligny 10
+			visible when ( team( "name" ) == "TEAM_FREE" && localvarstring( "ui_team" ) == "opfor" )
+			exp text ( "@" + dvarstring( "g_TeamName_Axis" ) )
+		}
+		itemDef
+		{
+			name "team_choose_spectator"
+			rect -64 28 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MPUI_SPECTATOR"
+			visible when ( team( "name" ) != "TEAM_SPECTATOR" )
+			disabled when ( team( "name" ) == "TEAM_SPECTATOR" || !dvarbool( "scr_game_spectatetype" ) )
+			action
+			{
+				play "mouse_click";
+				scriptmenuresponse "spectator";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "team_choose_axis"
+			rect -64 48 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			disabled when ( team( "name" ) == "TEAM_AXIS" )
+			exp text ( "@" + dvarstring( "g_TeamName_Axis" ) )
+			action
+			{
+				play "mouse_click";
+				scriptmenuresponse "axis";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "team_choose_allies"
+			rect -64 68 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			disabled when ( team( "name" ) == "TEAM_ALLIES" )
+			exp text ( "@" + dvarstring( "g_TeamName_Allies" ) )
+			action
+			{
+				play "mouse_click";
+				scriptmenuresponse "allies";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 0 88 216 1 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.65
+			background "gradient_fadein"
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "team_choose_auto"
+			rect -64 88 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MPUI_AUTOASSIGN"
+			action
+			{
+				play "mouse_click";
+				scriptmenuresponse "autoassign";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 0 108 216 1 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.65
+			background "gradient_fadein"
+			textscale 0.55
+			visible when ( team( "name" ) == "TEAM_SPECTATOR" )
+		}
+		itemDef
+		{
+			name "team_choose_endgame"
+			rect -64 108 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MPUI_END_GAME"
+			visible when ( team( "name" ) == "TEAM_SPECTATOR" && ( dvarbool( "onlineunrankedgameandhost" ) || dvarbool( "sv_running" ) ) )
+			action
+			{
+				play "mouse_click";
+				open "popup_endgame";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "team_choose_leavegame"
+			rect -64 108 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@MPUI_LEAVE_GAME"
+			visible when ( team( "name" ) == "TEAM_SPECTATOR" && ( !dvarbool( "onlineunrankedgameandhost" ) && !dvarbool( "sv_running" ) ) )
+			action
+			{
+				play "mouse_click";
+				if ( ( inprivateparty( ) && !privatepartyhost( ) && privatepartyhostinlobby( ) ) )
+				{
+					open "popup_leavegameandparty";
+				}
+				else
+				{
+					open "popup_leavegame";
+				}
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect -64 -40 336 20 1 3
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@PLATFORM_FRIENDS_CAPS"
+			action
+			{
+				play "mouse_click";
+				play "mouse_click";
+				open "popup_friends";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect -64 -20 336 20 1 3
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@PLATFORM_BACK_CAPS"
+			visible when ( "@PLATFORM_BACK_CAPS" == "@PLATFORM_BACK_CAPS" )
+			action
+			{
+				play "mouse_click";
+				play "mouse_click";
+				"escape" self;
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect -64 -20 336 20 1 3
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			text "@PLATFORM_BACK_CAPS"
+			visible when ( "@PLATFORM_BACK_CAPS" == "@PLATFORM_GAME_SUMMARY_CAPS" )
+			action
+			{
+				play "mouse_click";
+				open "popup_summary";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define HIDE_MOD
+
+#define MENU_NAME													"changelog"
+#define MENU_MUSIC													"music_mainmenu_mp"
+#define MENU_TITLE													"@MENU_CHANGELOG"
+
+#define ITEM_MENU_TITLE_RECT										10 0 272 28 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+#define ITEM_MENU_TITLE_RECT_WIDESCREEN								5 0 272 28 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
+
+#define ITEM_CHANGLOG_PANEL_WIDTH									640
+#define ITEM_CHANGLOG_PANEL_HEIGHT									400
+#define ITEM_CHANGLOG_PANEL_RECT									0 0 ITEM_CHANGLOG_PANEL_WIDTH ITEM_CHANGLOG_PANEL_HEIGHT HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+
+#define ITEM_CHANGLOG_TEXT_WIDTH									ITEM_CHANGLOG_PANEL_WIDTH
+#define ITEM_CHANGLOG_TEXT_HEIGHT									(ITEM_CHANGLOG_PANEL_HEIGHT - 3)
+#define ITEM_CHANGLOG_TEXT_RECT										0 0 ITEM_CHANGLOG_TEXT_WIDTH ITEM_CHANGLOG_TEXT_HEIGHT HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+
+#define ITEM_CHANGLOG \
+		ITEM_CHANGLOG_PANEL \
+		ITEM_CHANGLOG_TEXT
+
+#define ITEM_CHANGLOG_PANEL \
+	itemDef \
+	{ \
+		rect														ITEM_CHANGLOG_PANEL_RECT \
+		style														WINDOW_STYLE_SHADER \
+		foreColor													0.3 0.3 0.3 0.5 \
+		background													"white" \
+		decoration													\
+		visible														1 \
+		exp															rect x (0 - (ITEM_CHANGLOG_PANEL_WIDTH / 2)) \
+	} \
+	itemDef \
+	{ \
+		rect														ITEM_CHANGLOG_PANEL_RECT \
+		style														WINDOW_STYLE_FILLED \
+		foreColor													CHOICE_TEXTCOLOR \
+		backColor													0 0 0 0.375 \
+		background													"white" \
+		visible														1 \
+		exp															rect x (0 - (ITEM_CHANGLOG_PANEL_WIDTH / 2)) \
+	}
+
+
+#define ITEM_MENU_TITLE_VIS(textArg, visArg) \
+	itemDef \
+	{ \
+		rect										0 0 ITEM_CHANGLOG_TEXT_WIDTH 28 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									9 \
+		textScale									0.45 \
+		decoration									\
+		text										textArg \
+		textAlignX									5 \
+		textAlignY									-10 \
+		visible										visArg \
+		exp											rect x (0 - (ITEM_CHANGLOG_TEXT_WIDTH / 2)) \
+	}
+
+{
+	menuDef
+	{
+		name														MENU_NAME
+		fullscreen													1
+		rect														0 0 640 480
+		foreColor													CHOICE_TEXTCOLOR
+		focusColor													CHOICE_TEXTCOLOR
+		soundLoop													MENU_MUSIC
+		fadeCycle													1
+		fadeClamp													1
+		fadeAmount													0.1
+
+		MENU_ON_ESC(close self;)
+
+		#define DISABLE_SIDEBAR
+		//#define BACKGROUND_MP
+		#include "ui_mp/bg.inc"
+
+		ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
+
+		ITEM_CHANGLOG_PANEL
+
+		itemDef
+		{
+			rect														ITEM_CHANGLOG_TEXT_RECT
+			style														WINDOW_STYLE_FILLED
+			foreColor													CHOICE_TEXTCOLOR
+			type 														ITEM_TYPE_LISTBOX
+			textAlignX													6
+			textAlignY													6
+			textScale													CHOICE_TEXTSIZE
+			textFont													7
+			visible														1
+			feeder														62
+			elementWidth												ITEM_CHANGLOG_TEXT_WIDTH
+			elementHeight												12
+			notSelectable
+			exp															rect x(0 - (ITEM_CHANGLOG_TEXT_WIDTH / 2))
+//			numcols			xpos		textlen						xwidth		alignment
+			columns	1
+							0			ITEM_CHANGLOG_TEXT_WIDTH	100			0
+		}
+
+
+		ITEM_BUTTON_BACK(close self;)
+	}
+}

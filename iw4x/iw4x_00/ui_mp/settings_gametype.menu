@@ -1,0 +1,714 @@
+{
+	menuDef
+	{
+		name settings_gametype
+		fullscreen 1
+		rect 0 0 640 480
+		style 1
+		border 0
+		ownerdraw 0
+		ownerdrawFlag 0
+		borderSize 0
+		foreColor 1 1 1 1
+		backColor 0 0 0 0
+		borderColor 0 0 0 0
+		outlineColor 0 0 0 0
+		soundLoop music_mainmenu_mp
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		fadeInAmount 0
+		blurWorld 0
+		onOpen
+		{
+			focusfirst;
+			setfocusbydvar ui_gametype;
+			setLocalVarBool "ui_more_gametypes" ( 0 );
+		}
+		onClose
+		{
+			execNow xupdatepartystate;
+		}
+		onESC
+		{
+			close settings_gametype;
+		}
+		focusColor 1 1 1 1
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_background
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 0 1708 480
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.5
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_cloud_overlay
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			exp rect x ( ( 0 - 107 ) - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.5
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mw2_main_cloud_overlay
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+			exp rect x ( ( - 107 + 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) )  )
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mockup_bg_glow
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+   		    exp forecolor a ( ( ( ( sin milliseconds( ) / 1500 ) + 1 ) * 0.250000 ) + 0.250000  )  
+		}
+		itemDef
+		{
+			rect 0 0 640 480 4 4
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background mockup_bg_glow
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+     		exp forecolor a ( ( ( ( sin milliseconds( ) / 480 ) + 1 ) * 0.250000 ) + 0.250000  )
+		}
+		itemDef
+		{
+			rect 0 0 272 28 1 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 6
+			textAlignX -60
+			textAlignY 0
+			textScale 0.44
+			textStyle 0
+			textFont 9
+			feeder 0
+			text "@MENU_CHOOSE_GAME_MODE_CAP"
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 28 640 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.15
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -32 -4 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_tl
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 -4 640 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_t
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 640 -4 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_tr
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 640 28 32 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_r
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 640 384 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_br
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 0 384 640 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_b
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -32 384 32 32 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_bl
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -32 28 32 356 4 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background drop_shadow_l
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		
+	#define CHOICE_Y(i) (8 + (i * 20))
+	//half pixels are GREAT - well, they seem to work here
+	#define HR_ORIGIN(i) 0 (CHOICE_Y(i) - 0.5)
+	#define CHOICE_ORIGIN(i) -64 CHOICE_Y(i)
+	#define CHOICE_RECT(i) CHOICE_ORIGIN(i) 316 20 1 1
+	#define HR_RECT(i) HR_ORIGIN(i) 216 1 1 1
+	#define CHOICE_ICON_Y(i) (28 + (i * 20.5))
+	
+	#define GAMETYPE_BUTTON(itemIndex, visArg, textArg) \
+		itemDef \
+		{ \
+			rect CHOICE_RECT(itemIndex) \
+			style 1 \
+			border 0 \
+			ownerdraw 0 \
+			ownerdrawFlag 0 \
+			borderSize 0 \
+			foreColor 1 1 1 1 \
+			backColor 0 0 0 0 \
+			borderColor 0 0 0 0 \
+			outlineColor 0 0 0 0 \
+			background menu_button_selection_bar \
+			group mw2_button \
+			type 1 \
+			align 0 \
+			textAlign 6 \
+			textAlignX -60 \
+			textAlignY 0 \
+			textScale 0.375 \
+			textStyle 0 \
+			textFont 3 \
+			feeder 0 \
+			visible 1 \
+			visible visArg \
+			exp text ( "@" + tablelookup( "mp/gameTypesTable.csv" , 0 ,  textArg , 1 ) + "_CAPS"  ) \
+			onFocus \
+			{ \
+				play "mouse_over"; \
+				setItemColor self backcolor 0 0 0 1; \
+				setLocalVarBool "ui_menuAButton" ( 1 ); \
+				setLocalVarString ui_info_name "@" + tablelookup( "mp/gameTypesTable.csv" , 0 , textArg , 1  ); \
+				setLocalVarString ui_info_desc "@" + tablelookup( "mp/gameTypesTable.csv" , 0 , textArg , 2  ); \
+				setLocalVarString ui_info_icon tablelookup( "mp/gameTypesTable.csv" , 0 , textArg , 3  ); \
+			} \
+			leaveFocus \
+			{ \
+				setItemColor self backcolor 0 0 0 0; \
+				setLocalVarBool "ui_menuAButton" ( 0 ); \
+				setLocalVarString ui_info_name ( "@NULL_EMPTY" ); \
+				setLocalVarString ui_info_desc ( "@NULL_EMPTY" ); \
+				setLocalVarString ui_info_icon tablelookup( "mp/gameTypesTable.csv" , 0 , textArg , 3  ); \
+			} \
+			action \
+			{ \
+				play "mouse_click"; \
+				setDvar ui_gametype textArg; \
+				setDvar g_gametype textArg; \
+				execOnDvarIntValue "splitscreen" 1 "exec default_splitscreen.cfg"; \
+				execOnDvarIntValue "systemlink" 1 "exec default_systemlink.cfg"; \
+				execOnDvarIntValue "xblive_privatematch" 1 "exec default_xboxlive.cfg"; \
+				close "self"; \
+			} \
+		}
+		
+	#define GAMETYPE_BUTTON_SCROLLER(itemIndex, visArg, textArg, scrollArg) \
+		itemDef \
+		{ \
+			rect CHOICE_RECT(itemIndex) \
+			style 1 \
+			border 0 \
+			ownerdraw 0 \
+			ownerdrawFlag 0 \
+			borderSize 0 \
+			foreColor 1 1 1 1 \
+			backColor 0 0 0 0 \
+			borderColor 0 0 0 0 \
+			outlineColor 0 0 0 0 \
+			background menu_button_selection_bar \
+			group mw2_button \
+			type 1 \
+			align 0 \
+			textAlign 6 \
+			textAlignX -60 \
+			textAlignY 0 \
+			textScale 0.375 \
+			textStyle 0 \
+			textFont 3 \
+			text textArg \
+			feeder 0 \
+			visible 1 \
+			visible visArg \
+			onFocus \
+			{ \
+				play "mouse_over"; \
+				setItemColor self backcolor 0 0 0 1; \
+				setLocalVarBool "ui_menuBButton" ( 1 ); \
+			} \
+			leaveFocus \
+			{ \
+				setItemColor self backcolor 0 0 0 0; \
+				setLocalVarBool "ui_menuBButton" ( 0 ); \
+			} \
+			action \
+			{ \
+				play "mouse_click"; \
+				setLocalVarBool "ui_more_gametypes" ( scrollArg ); \
+			} \
+		}
+		
+		/*GAMETYPE_BUTTON(1, when( localVarBool("ui_more_gametypes") == 0), arena)
+		GAMETYPE_BUTTON(2, when( localVarBool("ui_more_gametypes") == 0), ctf)
+		GAMETYPE_BUTTON(3, when( localVarBool("ui_more_gametypes") == 0), cranked)
+		GAMETYPE_BUTTON(4, when( localVarBool("ui_more_gametypes") == 0), dd)
+		GAMETYPE_BUTTON(1, when( localVarBool("ui_more_gametypes") == 1), dd)
+		GAMETYPE_BUTTON(5, when( localVarBool("ui_more_gametypes") == 0), dom)
+		GAMETYPE_BUTTON(2, when( localVarBool("ui_more_gametypes") == 1), dom)
+		GAMETYPE_BUTTON(6, when( localVarBool("ui_more_gametypes") == 0), dm)
+		GAMETYPE_BUTTON(3, when( localVarBool("ui_more_gametypes") == 1), dm)
+		GAMETYPE_BUTTON(7, when( localVarBool("ui_more_gametypes") == 0), gtnw)
+		GAMETYPE_BUTTON(4, when( localVarBool("ui_more_gametypes") == 1), gtnw)
+		GAMETYPE_BUTTON(8, when( localVarBool("ui_more_gametypes") == 0), gg)
+		GAMETYPE_BUTTON(5, when( localVarBool("ui_more_gametypes") == 1), gg)
+		GAMETYPE_BUTTON(9, when( localVarBool("ui_more_gametypes") == 0), infected)
+		GAMETYPE_BUTTON(6, when( localVarBool("ui_more_gametypes") == 1), infected)
+		GAMETYPE_BUTTON(10, when( localVarBool("ui_more_gametypes") == 0), koth)
+		GAMETYPE_BUTTON(7, when( localVarBool("ui_more_gametypes") == 1), koth)
+		GAMETYPE_BUTTON(11, when( localVarBool("ui_more_gametypes") == 0), conf)
+		GAMETYPE_BUTTON(8, when( localVarBool("ui_more_gametypes") == 1), conf)
+		GAMETYPE_BUTTON(12, when( localVarBool("ui_more_gametypes") == 0), oneflag)
+		GAMETYPE_BUTTON(9, when( localVarBool("ui_more_gametypes") == 1), oneflag)
+		GAMETYPE_BUTTON(13, when( localVarBool("ui_more_gametypes") == 0), oitc)
+		GAMETYPE_BUTTON(10, when( localVarBool("ui_more_gametypes") == 1), oitc)
+		GAMETYPE_BUTTON(14, when( localVarBool("ui_more_gametypes") == 0), sab)
+		GAMETYPE_BUTTON(11, when( localVarBool("ui_more_gametypes") == 1), sab)
+		GAMETYPE_BUTTON(15, when( localVarBool("ui_more_gametypes") == 0), sd)
+		GAMETYPE_BUTTON(12, when( localVarBool("ui_more_gametypes") == 1), sd)
+		GAMETYPE_BUTTON(16, when( localVarBool("ui_more_gametypes") == 0), ss)
+		GAMETYPE_BUTTON(13, when( localVarBool("ui_more_gametypes") == 1), ss)
+		GAMETYPE_BUTTON(14, when( localVarBool("ui_more_gametypes") == 1), war)
+		GAMETYPE_BUTTON(15, when( localVarBool("ui_more_gametypes") == 1), tdef)
+		GAMETYPE_BUTTON(16, when( localVarBool("ui_more_gametypes") == 1), vip)
+		GAMETYPE_BUTTON_SCROLLER(17, when( localVarBool("ui_more_gametypes") == 1), "@MENU_SCROLL_UP", 0)
+		GAMETYPE_BUTTON_SCROLLER(17, when( localVarBool("ui_more_gametypes") == 0), "@MENU_SCROLL_DOWN", 1)*/
+
+		GAMETYPE_BUTTON(1, 1, dm)
+		GAMETYPE_BUTTON(2, 1, war)
+		GAMETYPE_BUTTON(3, 1, sd)
+		GAMETYPE_BUTTON(4, 1, sab)
+		GAMETYPE_BUTTON(5, 1, dom)
+		GAMETYPE_BUTTON(6, 1, koth)
+		GAMETYPE_BUTTON(7, 1, ctf)
+		GAMETYPE_BUTTON(8, 1, dd)
+		GAMETYPE_BUTTON(9, 1, vip)
+		GAMETYPE_BUTTON(10, 1, gtnw)
+		GAMETYPE_BUTTON(11, 1, oneflag)
+		GAMETYPE_BUTTON(12, 1, arena)
+		
+		/*
+		GAMETYPE_BUTTON(1, dm)
+		GAMETYPE_BUTTON(2, war)
+		GAMETYPE_BUTTON(3, sd)
+		GAMETYPE_BUTTON(4, sab)
+		GAMETYPE_BUTTON(5, dom)
+		GAMETYPE_BUTTON(6, koth)
+		GAMETYPE_BUTTON(7, ctf)
+		GAMETYPE_BUTTON(8, dd)
+		GAMETYPE_BUTTON(9, vip)
+		GAMETYPE_BUTTON(10, gtnw)
+		GAMETYPE_BUTTON(11, oneflag)
+		GAMETYPE_BUTTON(12, arena)
+		GAMETYPE_BUTTON(13, ss)
+		GAMETYPE_BUTTON(14, gg)
+		GAMETYPE_BUTTON(15, oitc)
+		GAMETYPE_BUTTON(16, conf)
+		GAMETYPE_BUTTON(17, dzone)
+		*/
+
+		itemDef
+		{
+			rect -64 -20 336 20 1 3
+			style 1
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			origin 0 0
+			background menu_button_selection_bar
+			group mw2_button
+			type 1
+			align 0
+			textAlign 6
+			textAlignX -60
+			textAlignY 0
+			textScale 0.375
+			textStyle 0
+			textFont 3
+			feeder 0
+			text "@PLATFORM_BACK_CAPS"
+			visible 1
+			onFocus
+			{
+				play "mouse_over";
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool ui_menuAButton 1;
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 0.0;
+				setLocalVarBool ui_menuAButton 1;
+			}
+			action
+			{
+				play mouse_click;
+                close self;
+			}
+		}
+		itemDef
+		{
+			rect -272 28 272 356 3 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0 0 0 0.7
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background black
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			feeder 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -272 28 264 200 3 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 4
+			textAlignX 8
+			textAlignY 0
+			textScale 0.375
+			textStyle 0
+			textFont 9
+			feeder 0
+			visible 1
+			exp text ( localvarstring( "ui_info_name" )  )
+		}
+		itemDef
+		{
+			rect -272 28 264 200 3 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 0.65
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			autoWrapped 
+			type 0
+			align 0
+			textAlign 4
+			textAlignX 8
+			textAlignY 20
+			textScale 0.375
+			textStyle 0
+			textFont 3
+			feeder 0
+			visible 1
+			exp text ( localvarstring( "ui_info_desc" )  )
+		}
+	}
+}

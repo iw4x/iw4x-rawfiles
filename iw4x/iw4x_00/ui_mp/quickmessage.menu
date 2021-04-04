@@ -1,0 +1,123 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP			"quickmessage"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/popupstyle.inc"	
+#include "ui/choices_setup_popmenu.menu"
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			186
+
+#undef CHOICE_POPUP_BACKCOLOR
+#define CHOICE_POPUP_BACKCOLOR  0.2 0.2 0.22 0.65
+
+#define ORIGIN_QUICKMESSAGEWINDOW		0 16
+
+#undef CHOICE_POPUP_BACKCOLOR
+#define CHOICE_POPUP_BACKCOLOR 0.2 0.2 0.22 0.65
+
+#define ITEM_COUNT 6
+
+{
+	menuDef
+	{
+		name quickmessage
+		visible 0
+		fullscreen 0
+		rect -52 314 CHOICE_POPUP_WIDTH CHOICE_POPUP_HEIGHT( ITEM_COUNT ) CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN
+		border 1
+		borderSize 2
+		borderColor 0 0 0 0
+		focusColor 1 1 1 1
+		style 1
+		popup
+		onOpen
+		{
+			close "quickcommands";
+			close "quickstatements";
+			close "quickresponses";
+			setDvar cl_bypassMouseInput 1;
+		}
+		onClose
+		{
+			setDvar cl_bypassMouseInput 0;
+		}
+		onEsc
+		{
+			play "mouse_click";
+			close self;
+		}
+
+		PREPROC_SHADER_DRAW( -4 -4 CHOICE_POPUP_WIDTH CHOICE_POPUP_HEIGHT( ITEM_COUNT ), 0 0, "white", CHOICE_POPUP_BACKCOLOR, 1, CHOICE_POPUP_BORDER_WIDTH, CHOICE_POPUP_BORDER_COLOR )
+		PREPROC_SHADER_DRAW( -4 -4 CHOICE_POPUP_WIDTH CHOICE_POPUP_HEIGHT( ITEM_COUNT ), 0 0, "gradient_bottom", 1 1 1 0.7, 1, CHOICE_POPUP_BORDER_WIDTH, CHOICE_POPUP_BORDER_COLOR )
+		
+		CHOICE_POPMENU_TITLE( "@QUICKMESSAGE_QUICK_MESSAGE" )
+		
+		itemDef
+		{
+			name			"window"
+			visible			1
+			rect			16 20 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 1 1 1
+			textfont		UI_FONT_NORMAL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textaligny		8
+			text			"@QUICKMESSAGE_1_COMMANDS"
+			decoration
+		}
+		execKey "1" { close self; open quickcommands }
+	
+		itemDef
+		{
+			name			"window"
+			visible			1
+			rect			16 36 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 1 1 1
+			textfont		UI_FONT_NORMAL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textaligny		8
+			text			"@QUICKMESSAGE_2_STATEMENTS"
+			decoration
+		}
+		execKey "2" { close self; open quickstatements }
+	
+		itemDef
+		{
+			name			"window"
+			visible			1
+			rect			16 52 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 1 1 1
+			textfont		UI_FONT_NORMAL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textaligny		8
+			text			"@QUICKMESSAGE_3_RESPONSES"
+			decoration
+		}
+		execKey "3" { close self; open quickresponses }
+
+		itemDef
+		{
+			name			"window"
+			visible			1
+			rect			16 84 0 0
+			origin			ORIGIN_QUICKMESSAGEWINDOW
+			forecolor		1 1 1 1
+			textfont		UI_FONT_NORMAL
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textaligny		8
+			text			"@QUICKMESSAGE_ESC_EXIT"
+			decoration
+		}
+	}
+}

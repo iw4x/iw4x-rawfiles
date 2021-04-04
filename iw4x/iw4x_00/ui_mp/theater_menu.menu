@@ -1,0 +1,265 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define MENU_NAME									"pc_theater_menu"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									"@MENU_THEATER_CAPS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#undef MENU_BACKGROUND_PANEL_RIGHT_WIDTH
+#define MENU_BACKGROUND_PANEL_RIGHT_WIDTH			242
+
+#define MENU_BACKGROUND_PANEL_BUTTON(nameArg, yPos, textArg, actionArg) \
+		MENU_BACKGROUND_PANEL_BUTTON_VIS(nameArg, yPos, textArg, actionArg, 1)
+
+#define MENU_BACKGROUND_PANEL_BUTTON_VIS(nameArg, yPos, textArg, actionArg, visArg) \
+	itemDef \
+	{ \
+		name										nameArg \
+		rect										(0 - MENU_BACKGROUND_PANEL_RIGHT_WIDTH) yPos MENU_BACKGROUND_PANEL_RIGHT_WIDTH 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0.6 0.55 0.55 0.2 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									CHOICE_TEXTFONT \
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textAlignX									-30 \
+		textScale									CHOICE_TEXTSIZE \
+		background									"menu_setting_selection_bar" \
+		group										"mw2_button" \
+		type										ITEM_TYPE_BUTTON \
+		text										textArg \
+		visible										visArg \
+		onFocus \
+		{ \
+			play									CHOICE_FOCUS_SOUND; \
+			setItemColor							self backColor 0 0 0 1; \
+		} \
+		leaveFocus \
+		{ \
+			setItemColor							self backColor 0.6 0.55 0.55 0.2; \
+		} \
+		action \
+		{ \
+			play									CHOICE_CLICK_SOUND; \
+			actionArg								\
+		} \
+	}
+
+#undef MENU_BACKGROUND_PANEL_RIGHT
+#define MENU_BACKGROUND_PANEL_RIGHT \
+	itemDef \
+	{ \
+		rect										(0 - MENU_BACKGROUND_PANEL_RIGHT_WIDTH) 28 MENU_BACKGROUND_PANEL_RIGHT_WIDTH MENU_BACKGROUND_PANEL_RIGHT_HEIGHT HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									0 0 0 0.7 \
+		background									"black" \
+		decoration									\
+		textScale									0.55 \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"image" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 50 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 127 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									1 1 1 1 \
+		decoration									\
+		textScale									0.55 \
+		visible										when(dvarString("ui_demo_mapname") != "") \
+		exp											material ("preview_" + dvarString("ui_demo_mapname")) \
+	} \
+	itemDef \
+	{ \
+		name										"image" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 50 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 127 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									1 1 1 1 \
+		decoration									\
+		textScale									0.55 \
+		visible										when(dvarString("ui_demo_mapname") == "") \
+		exp											material ("loadscreen_mp_bonusmaps") \
+	} \
+	itemDef \
+	{ \
+		name										"mapname" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 28 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 22 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									CHOICE_TEXTCOLOR \
+		decoration									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									9 \
+		visible										1 \
+		exp											text (dvarString("ui_demo_mapname_localized")) \
+	} \
+	itemDef \
+	{ \
+		name										"gametype" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 180 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		visible										1 \
+		exp											text (dvarString("ui_demo_gametype")) \
+	} \
+	itemDef \
+	{ \
+		name										"author_label" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 200 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		text										"@MPUI_DEMO_AUTHOR" \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"author" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 200 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		visible										1 \
+		exp											text (" " + dvarString("ui_demo_author")) \
+	} \
+	itemDef \
+	{ \
+		name										"length_label" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 220 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		text										"@MPUI_DEMO_LENGTH" \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"length" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 220 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		visible										1 \
+		exp											text (" " + dvarString("ui_demo_length")) \
+	} \
+	itemDef \
+	{ \
+		name										"date_label" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 240 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		text										"@MPUI_DEMO_DATE" \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"date" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 240 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		visible										1 \
+		exp											text (" " + dvarString("ui_demo_date")) \
+	} \
+	MENU_BACKGROUND_PANEL_BUTTON("play", -68, "@MENU_PLAY", uiScript "launchDemo") \
+	MENU_BACKGROUND_PANEL_BUTTON("delete", -48, "@MENU_DELETE", uiScript "deleteDemo")
+
+#undef MENU_ITEM_TITLE
+#define MENU_ITEM_TITLE(posX) \
+	itemDef \
+	{ \
+		rect 0 4 260 28 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		foreColor CHOICE_TEXTCOLOR \
+		decoration \
+		textAlign ITEM_ALIGN_TOP_RIGHT \
+		textAlignX -60 \
+		textScale 0.5 \
+		textFont 9 \
+		text MENU_TITLE \
+		visible 1 \
+		exp rect x (posX) \
+	}
+
+#define ON_MENU_OPEN \
+	uiScript										"LoadArenas"; \
+	uiScript										"loadDemos"; \
+	setFoucs										"demoList";
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define DISABLE_SIDEBAR
+	#include "ui_mp/bg.inc"
+
+	MENU_ITEM_TITLE(-90)
+	MENU_BACKGROUND_FRAME
+	MENU_BACKGROUND_PANEL_RIGHT
+
+	itemDef
+	{
+		name										"demoList"
+		rect										0 28 260 356 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		style										WINDOW_STYLE_FILLED
+		foreColor									CHOICE_TEXTCOLOR
+		backColor									0 0 0 0.5
+		outLineColor								0 0 0 0.6
+		type										ITEM_TYPE_LISTBOX
+		textFont									UI_FONT_NORMAL
+		textAlignX									6
+		textScale									0.3
+		visible										1
+		feeder										FEEDER_DEMOS
+		elementWidth								260
+		elementHeight								16
+//		numcols			xpos		xwidth		textlen		alignment
+		columns 1		8			260			80			0
+		doubleClick
+		{
+			uiScript								"launchDemo";
+		}
+		execKeyInt 13
+		{
+			uiScript								"launchDemo";
+		}
+	}
+
+	ITEM_BUTTON_BACK(close self;)
+}

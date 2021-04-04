@@ -1,0 +1,177 @@
+/*
+**	spectator radar by banz
+**	thx to NTA for full ui_mp dump
+** 	thx to aerosoul94 for the ps3 ui_mp dump
+*/
+{
+	menuDef
+	{
+		name minimap_fullscreen
+		fullscreen 0
+		rect 3 3 0 0 8 8
+		foreColor 1 1 1 1
+		visible when ( ( ( ! ( ui_active( ) ) ) && ( ! ( flashbanged( ) ) ) && ( ! ( ( ( weaponname( ) == "killstreak_ac130_mp" ) || ( weaponname( ) == "killstreak_helicopter_minigun_mp" ) || ( weaponname( ) == "killstreak_predator_missile_mp" ) || ( ( weaponname( ) == "ac130_105mm_mp" ) || ( weaponname( ) == "ac130_40mm_mp" ) || ( weaponname( ) == "ac130_25mm_mp" ) ) || ( adsjavelin( ) ) || ( weaponname( ) == "heli_remote_mp" ) || missilecam( ) ) || ( getperk( "equipment" ) == "_specialty_blastshield" && ( ( ! ( dvarint( "scr_gameended" ) ) ) || inkillcam( ) ) ) ) ) && ( ! ( scoped( ) ) ) && ( ! ( selecting_location( ) ) ) && ( !isempjammed( ) ) && ( ( ! ( dvarbool( "g_hardcore" ) ) ) || radarisenabled( ) || dvarint( "g_compassShowEnemies" ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) ) && ( ! ( milliseconds( ) - localvarint( "ui_show_killedBy" ) < 4000 || ( inkillcam( ) ) ) ) && ( ! ( selecting_location( ) ) ) && ( ! ( spectatingfree( ) ) ) ) 
+		hiddenDuringFlashbang 
+		hiddenDuringScope 
+		visible 1
+		itemDef
+		{
+			name minimap_border
+			rect 3 3 100 100 8 8
+			border 1
+			borderSize 0.666667
+			foreColor 1 1 1 1
+			borderColor 1 1 1 0.35
+			textScale 0.55
+			visible 1
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 0.89 0.98 0.95 0.05
+			background minimap_scanlines
+			textScale 0.55
+			visible 1
+		}
+		itemDef
+		{
+			name minimap_map
+			rect 3 3 100 100 8 8
+			ownerdraw 159
+			foreColor 1 1 1 1
+			background compass_map_default
+			type 8
+			textScale 0.55
+			visible 1
+		}
+		itemDef
+		{
+			name minimap_friendlies
+			rect 3 3 100 100 8 8
+			ownerdraw 158
+			foreColor 1 1 1 1
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			name minimap_objectives
+			rect 3 3 100 100 8 8
+			ownerdraw 152
+			foreColor 1 1 1 1
+			background objective_line
+			type 8
+			textScale 0.55
+			visible 1
+		}
+		itemDef
+		{
+			name minimap_enemies
+			rect 3 3 100 100 8 8
+			ownerdraw 175
+			foreColor 1 1 1 1
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			name minimap_vehicles
+			rect 3 3 100 100 8 8
+			ownerdraw 155
+			foreColor 1 1 1 1
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			name minimap_planes
+			rect 3 3 100 100 8 8
+			ownerdraw 156
+			foreColor 1 1 1 1
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			name minimap_sentries
+			rect 3 3 100 100 8 8
+			ownerdraw 165
+			foreColor 1 1 1 1
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			name minimap_player
+			rect 3 3 100 100 8 8
+			ownerdraw 150
+			foreColor 1 1 1 1
+			background compassping_player
+			type 8
+			textScale 0.55
+			visible 1
+			exp forecolor a ( 1 - radarjamintensity() )
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 0.64 0.74 0.71 1
+			background white
+			textScale 0.55
+			visible 1
+			visible when ( radarisjammed() )
+			exp forecolor a ( radarjamintensity() )
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 0.89 0.98 0.95 1
+			background ac130_overlay_grain
+			textScale 0.55
+			visible 1
+			visible when ( radarisjammed() )
+			exp forecolor a ( radarjamintensity() )
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 1 1 1 1
+			background stencil_base
+			textScale 0.55
+			visible 1
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 1 1 1 1
+			background scanlines_stencil
+			textScale 0.55
+			visible 1 
+			exp rect y ( ( -100 ) + ( ( 200 ) * ( 1 - ( ( milliseconds( ) % 4000 ) / 4000 ) ) ) )  
+		}
+		itemDef
+		{
+			rect 3 3 100 100 8 8
+			style 3
+			foreColor 0.89 0.98 0.95 1
+			background stencil_fill
+			textScale 0.55
+			visible 1
+		}
+	}
+}

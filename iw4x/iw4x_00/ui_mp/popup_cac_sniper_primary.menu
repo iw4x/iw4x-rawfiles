@@ -1,0 +1,403 @@
+#include "ui_mp/emz_macros.inc"
+{
+	menuDef
+	{
+		name "popup_cac_sniper_primary"
+		rect 0 0 854 184 1 1
+		style 1
+		popup
+		forecolor 1 1 1 0
+		backcolor 1 1 1 0
+		background "white"
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		popup 
+		outOfBoundsClick 
+		visible when ( localvarint( "ui_tabDepth" ) == localvarint( "ui_popup_cac_sniper_primary_tabDepth" ) )
+		exp rect y ( localvarfloat( "ui_popupYPos" ) + localvarint( "ui_tabDepth" ) * 20 )
+		onOpen
+		{
+			setfocus "cac_weapon_cheytac";
+			setLocalVarInt "ui_tabDepth" ( localvarint( "ui_tabDepth" ) + 1 );
+			setLocalVarInt "ui_popup_cac_sniper_primary_tabDepth" ( localvarint( "ui_tabDepth" ) );
+			CLASS_FOCUS("cheytac")
+			CLASS_FOCUS("barrett")
+			CLASS_FOCUS("wa2000")
+			CLASS_FOCUS("m21")
+			CLASS_FOCUS("m40a3")
+			CLASS_FOCUS("dragunov")
+		}
+		onClose
+		{
+			setLocalVarInt "ui_tabDepth" ( localvarint( "ui_tabDepth" ) - 1 );
+		}
+		onEsc
+		{
+			close self;
+		}
+		#define ITEMNUM 9
+		#include "ui_mp/popup_cac_background.inc"
+		
+		CAC_PRIMARY_WEAPON(0,"cheytac")
+		CAC_PRIMARY_WEAPON(1,"barrett")
+		CAC_PRIMARY_WEAPON(2,"wa2000")
+		CAC_PRIMARY_WEAPON(3,"m21")
+		CAC_PRIMARY_WEAPON(4,"m40a3")
+		CAC_PRIMARY_WEAPON(5,"dragunov")
+		
+		itemDef
+		{
+			rect -56 0 200 184 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.5
+			background "small_box_lightfx"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -56 0 200 184 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx 4
+			textscale 0.375
+			exp text ( "@" + tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 3 ) )
+		}
+		itemDef
+		{
+			rect -56 10 200 100 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			exp material ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 6 ) )
+		}
+		itemDef
+		{
+			rect -56 0 200 184 2 1
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 0.65
+			textfont 3
+			textalign 4
+			textalignx 4
+			textaligny 104
+			textscale 0.375
+			visible when ( isitemunlocked( localvarstring( "ui_selected_ref" ) ) )
+			exp text ( "@" + tablelookup( "mp/statstable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 7 ) )
+		}
+		itemDef
+		{
+			rect -56 0 200 184 2 1
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 0.65
+			textfont 3
+			textalign 4
+			textalignx 4
+			textaligny 104
+			textscale 0.375
+			visible when ( !isitemunlocked( localvarstring( "ui_selected_ref" ) ) )
+			exp text ( "@" + tablelookup( "mp/rankTable.csv" , 0 , tablelookup( "mp/unlockTable.csv" , 0 , localvarstring( "ui_selected_ref" ) , 2 ) , 17 ) )
+		}
+		itemDef
+		{
+			rect -56 0 200 184 2 1
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 0.65
+			textfont 3
+			textalign 4
+			textalignx 4
+			textaligny 144
+			textscale 0.375
+			text "@PLATFORM_VIEW_CHALLENGES"
+			visible when ( isitemunlocked( localvarstring( "ui_selected_ref" ) ) && ( tablelookup( "mp/challengeTable.csv" , 6 , localvarstring( "ui_selected_ref" ) , 4 ) ) != "" )
+		}
+		itemDef
+		{
+			rect -128 22 120 4 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			backcolor 0 0 0 1
+			background "gradient_fadein"
+			textfont 3
+			textalign 6
+			textaligny -20
+			textscale 0.375
+			text "@MPUI_ACCURACY"
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 22 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.75 1 0.7 0.85
+			background "white"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 22 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.85 0.85 0.85 1
+			background "gradient_fadein"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 22 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0.25 0.65
+			background "white"
+			textscale 0.55
+			exp rect x ( - 64 + ( 0 - 120 * ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) / 100 ) ) + ( ( 0 - 120 * ( 0 / 100 ) ) * ( 0 < 0 ) ) )
+			exp rect w ( min( 120 * ( 0 / 100 ) , ( 1 - ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) / 100 ) ) * 120 ) )
+			exp forecolor r ( ( 0 < 0 ) * 0.45 + 0.25 )
+			exp forecolor g ( ( 0 > 0 ) * 0.45 + 0.25 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 22 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 48 120 4 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			backcolor 0 0 0 1
+			background "gradient_fadein"
+			textfont 3
+			textalign 6
+			textaligny -20
+			textscale 0.375
+			text "@MPUI_DAMAGE"
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 48 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.75 1 0.7 0.85
+			background "white"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 48 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.85 0.85 0.85 1
+			background "gradient_fadein"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 48 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0.25 0.65
+			background "white"
+			textscale 0.55
+			exp rect x ( - 64 + ( 0 - 120 * ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) / 100 ) ) + ( ( 0 - 120 * ( 0 / 100 ) ) * ( 0 < 0 ) ) )
+			exp rect w ( min( 120 * ( 0 / 100 ) , ( 1 - ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) / 100 ) ) * 120 ) )
+			exp forecolor r ( ( 0 < 0 ) * 0.45 + 0.25 )
+			exp forecolor g ( ( 0 > 0 ) * 0.45 + 0.25 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 23 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 74 120 4 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			backcolor 0 0 0 1
+			background "gradient_fadein"
+			textfont 3
+			textalign 6
+			textaligny -20
+			textscale 0.375
+			text "@MPUI_RANGE"
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 74 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.75 1 0.7 0.85
+			background "white"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 74 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.85 0.85 0.85 1
+			background "gradient_fadein"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 74 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0.25 0.65
+			background "white"
+			textscale 0.55
+			exp rect x ( - 64 + ( 0 - 120 * ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) / 100 ) ) + ( ( 0 - 120 * ( 0 / 100 ) ) * ( 0 < 0 ) ) )
+			exp rect w ( min( 120 * ( 0 / 100 ) , ( 1 - ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) / 100 ) ) * 120 ) )
+			exp forecolor r ( ( 0 < 0 ) * 0.45 + 0.25 )
+			exp forecolor g ( ( 0 > 0 ) * 0.45 + 0.25 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 24 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 100 120 4 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			backcolor 0 0 0 1
+			background "gradient_fadein"
+			textfont 3
+			textalign 6
+			textaligny -20
+			textscale 0.375
+			text "@MPUI_FIRE_RATE"
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 100 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.75 1 0.7 0.85
+			background "white"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 100 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.85 0.85 0.85 1
+			background "gradient_fadein"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 100 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0.25 0.65
+			background "white"
+			textscale 0.55
+			exp rect x ( - 64 + ( 0 - 120 * ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) / 100 ) ) + ( ( 0 - 120 * ( 0 / 100 ) ) * ( 0 < 0 ) ) )
+			exp rect w ( min( 120 * ( 0 / 100 ) , ( 1 - ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) / 100 ) ) * 120 ) )
+			exp forecolor r ( ( 0 < 0 ) * 0.45 + 0.25 )
+			exp forecolor g ( ( 0 > 0 ) * 0.45 + 0.25 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 25 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 126 120 4 3 1
+			style 1
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			backcolor 0 0 0 1
+			background "gradient_fadein"
+			textfont 3
+			textalign 6
+			textaligny -20
+			textscale 0.375
+			text "@MPUI_MOBILITY"
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 126 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.75 1 0.7 0.85
+			background "white"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 126 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 0.85 0.85 0.85 1
+			background "gradient_fadein"
+			textscale 0.55
+			exp rect w ( ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) / 100 ) * 120 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) && 1 )
+		}
+		itemDef
+		{
+			rect -128 126 120 2 3 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 0.25 0.65
+			background "white"
+			textscale 0.55
+			exp rect x ( - 64 + ( 0 - 120 * ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) / 100 ) ) + ( ( 0 - 120 * ( 0 / 100 ) ) * ( 0 < 0 ) ) )
+			exp rect w ( min( 120 * ( 0 / 100 ) , ( 1 - ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) / 100 ) ) * 120 ) )
+			exp forecolor r ( ( 0 < 0 ) * 0.45 + 0.25 )
+			exp forecolor g ( ( 0 > 0 ) * 0.45 + 0.25 )
+			visible when ( tablelookup( "mp/statsTable.csv" , 4 , localvarstring( "ui_selected_ref" ) , 26 ) && 1 )
+		}
+	}
+}

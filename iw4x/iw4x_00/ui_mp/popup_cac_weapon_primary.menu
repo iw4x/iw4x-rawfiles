@@ -1,0 +1,358 @@
+{
+	menuDef
+	{
+		name "popup_cac_weapon_primary"
+		rect 0 0 854 124 1 1
+		style 1
+		popup
+		forecolor 1 1 1 0
+		backcolor 1 1 1 0
+		background "white"
+		focuscolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		visible when ( localvarint( "ui_tabDepth" ) == localvarint( "ui_popup_cac_weapon_primary_tabDepth" ) )
+		exp rect y ( localvarfloat( "ui_popupYPos" ) + localvarint( "ui_tabDepth" ) * 20 )
+		onOpen
+		{
+			setLocalVarInt "ui_tabDepth" ( localvarint( "ui_tabDepth" ) + 1 );
+			setLocalVarInt "ui_popup_cac_weapon_primary_tabDepth" ( localvarint( "ui_tabDepth" ) );
+			if ( tablelookup( "mp/statsTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) , 2 ) == "weapon_assault" )
+			{
+				setfocus "cac_primary_assault";
+			}
+			if ( tablelookup( "mp/statsTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) , 2 ) == "weapon_smg" )
+			{
+				setfocus "cac_primary_smg";
+			}
+			if ( tablelookup( "mp/statsTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) , 2 ) == "weapon_lmg" )
+			{
+				setfocus "cac_primary_lmg";
+			}
+			if ( tablelookup( "mp/statsTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) , 2 ) == "weapon_sniper" )
+			{
+				setfocus "cac_primary_sniper";
+			}
+			if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) == "riotshield" )
+			{
+				setfocus "cac_primary_riotshield";
+			}
+		}
+		onClose
+		{
+			setLocalVarInt "ui_tabDepth" ( localvarint( "ui_tabDepth" ) - 1 );
+		}
+		onEsc
+		{
+			close self;
+		}
+		#define ITEMNUM 6
+		#include "ui_mp/popup_cac_background.inc"
+		
+		#define CLASS_ITEM(itemNum,textArg,classArg,menuArg) \
+		itemDef \
+		{ \
+			name "cac_primary_" ## classArg \
+			rect -64 (4 + (itemNum * 20)) 336 20 1 1 \
+			group "mw2_popup_button" \
+			style 1 \
+			visible 1 \
+			forecolor 1 1 1 1 \
+			disablecolor 0.6 0.55 0.55 1 \
+			background "popup_button_selection_bar_short" \
+			type 1 \
+			textfont 3 \
+			textalign 4 \
+			textalignx 68 \
+			textscale 0.375 \
+			text textArg \
+			action \
+			{ \
+				play "mouse_click"; \
+				if ( localvarint( "ui_tabDepth" ) == 0 ) \
+				{ \
+					setLocalVarString "ui_tab1Name" ( textArg ); \
+				} \
+				if ( localvarint( "ui_tabDepth" ) == 1 ) \
+				{ \
+					setLocalVarString "ui_tab2Name" ( textArg ); \
+				} \
+				if ( localvarint( "ui_tabDepth" ) == 2 ) \
+				{ \
+					setLocalVarString "ui_tab3Name" ( textArg ); \
+				} \
+				if ( localvarint( "ui_tabDepth" ) == 3 ) \
+				{ \
+					setLocalVarString "ui_tab4Name" ( textArg ); \
+				} \
+				if ( localvarint( "ui_tabDepth" ) == 4 ) \
+				{ \
+					setLocalVarString "ui_tab5Name" ( textArg ); \
+				} \
+				if ( localvarint( "ui_tabDepth" ) == 5 ) \
+				{ \
+					setLocalVarString "ui_tab6Name" ( textArg ); \
+				} \
+				open menuArg; \
+			} \
+			onFocus \
+			{ \
+				play "mouse_over"; \
+				if ( dvarstring( "gameMode" ) != "mp" ) \
+				{ \
+					setItemColor "mw2_popup_button" backcolor 0 0 0 0; \
+				} \
+				setItemColor self backcolor 0 0 0 1; \
+				setLocalVarBool "ui_popupAButton" ( 1 ); \
+				setLocalVarString "ui_info_name" ( textArg ); \
+				setLocalVarString "ui_info_desc" ( "@" ); \
+				setLocalVarString "ui_info_icon" ( "" ); \
+			} \
+			leaveFocus \
+			{ \
+				setItemColor self backcolor 1 1 1 0; \
+				setLocalVarBool "ui_popupAButton" ( 0 ); \
+			} \
+		} \
+		itemDef \
+		{ \
+			rect 162 4 40 20 1 1 \
+			style 3 \
+			decoration \
+			visible 1 \
+			forecolor 1 1 1 1 \
+			background "specialty_new" \
+			textscale 0.55 \
+			visible when ( weaponclassnew( classArg ) ) \
+		}
+		
+		CLASS_ITEM(0,"@MENU_ASSAULT_RIFLES_CAPS","assault","popup_cac_assault_primary")
+		CLASS_ITEM(1,"@MENU_SMGS_CAPS","smg","popup_cac_smg_primary")
+		CLASS_ITEM(2,"@MENU_LMGS_CAPS","lmg","popup_cac_lmg_primary")
+		CLASS_ITEM(3,"@MENU_SNIPER_RIFLES_CAPS","sniper","popup_cac_sniper_primary")
+//		4 is the riot.
+//		CLASS_ITEM(5,"@MENU_RIFLES_CAPS","assault","popup_ready")
+
+		itemDef
+		{
+			name "cac_primary_riotshield"
+			rect -64 84 336 20 1 1
+			group "mw2_popup_button"
+			style 1
+			visible 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "popup_button_selection_bar_short"
+			type 1
+			textfont 3
+			textalign 4
+			textalignx 68
+			textscale 0.375
+			text "@MENU_RIOT_SHIELD_CAPS"
+			action
+			{
+				play "mouse_click";
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) != "riotshield" )
+				{
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 , "none" );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "none" );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "camo" , "none" );
+				}
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "weapon" , "riotshield" );
+				setPlayerData( "weaponNew" , "riotshield" , "false" );
+				if ( !( tablelookup( "mp/attachmentTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 ) , 12 ) != "" || tablelookup( "mp/attachmentTable.csv" , 4 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 ) , 12 ) != "" ) && ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_gl" || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_grip" || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_shotgun" ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null_heartbeat" )
+				{
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 0 , "specialty_null" );
+				}
+				setLocalVarString "loadoutPrimary" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) );
+				setLocalVarString "loadoutPrimaryAttachment" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 ) );
+				setLocalVarString "loadoutPrimaryAttachment2" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 ) );
+				if ( localvarstring( "loadoutPrimaryAttachment2" ) == "" )
+				{
+					setLocalVarString "loadoutPrimaryAttachment2" ( "none" );
+				}
+				setLocalVarString "loadoutPrimaryCamo" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "camo" ) );
+				setLocalVarString "loadoutSecondaryCamo" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" ) );
+				setLocalVarString "loadoutSecondary" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) );
+				setLocalVarString "loadoutSecondaryAttachment" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 ) );
+				setLocalVarString "loadoutSecondaryAttachment2" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 ) );
+				if ( localvarstring( "loadoutSecondaryAttachment2" ) == "" )
+				{
+					setLocalVarString "loadoutSecondaryAttachment2" ( "none" );
+				}
+				setLocalVarString "loadoutSecondaryCamo" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" ) );
+				setLocalVarString "loadoutEquipment" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) );
+				setLocalVarString "loadoutPerk1" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) );
+				setLocalVarString "loadoutPerk2" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) );
+				setLocalVarString "loadoutPerk3" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) );
+				setLocalVarString "loadoutStreak1" ( getplayerdata( "killstreaks" , 0 ) );
+				setLocalVarString "loadoutStreak2" ( getplayerdata( "killstreaks" , 1 ) );
+				setLocalVarString "loadoutStreak3" ( getplayerdata( "killstreaks" , 2 ) );
+				setLocalVarString "loadoutDeathStreak" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) );
+				setLocalVarString "loadoutOffhandSecondary" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "specialGrenade" ) );
+				setLocalVarString "loadoutClassName" ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "name" ) );
+				if ( 0 == 0 )
+				{
+					if ( ( tablelookup( "mp/statsTable.csv" , 4 , "riotshield" , 11 ) != "" ) )
+					{
+						if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) == "specialty_bling" )
+						{
+							open "popup_primary_attachments_bling";
+						}
+						else
+						{
+							open "popup_primary_attachments";
+						}
+					}
+					else
+					{
+						open "popup_cac_primary_camo";
+					}
+				}
+				else
+				{
+					if ( ( tablelookup( "mp/statsTable.csv" , 4 , "riotshield" , 11 ) != "" ) )
+					{
+						if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) == "specialty_bling" && isitemunlocked( "specialty_secondarybling" ) )
+						{
+							open "popup_secondary_attachments_bling";
+						}
+						else
+						{
+							open "popup_secondary_attachments";
+						}
+					}
+					else
+					{
+						close "popup_cac_weapon_primary";
+						close "popup_primary_attachments" close "popup_secondary_attachments" close "popup_cac_weapon_secondary";
+						close "popup_cac_handgun_secondary";
+						close "popup_cac_machinePistols_secondary";
+						close "popup_cac_assault_primary";
+						close "popup_cac_SMG_primary";
+						close "popup_cac_LMG_primary";
+						close "popup_cac_sniper_primary";
+						close "popup_cac_shotgun_primary";
+						close "popup_cac_assault_secondary";
+						close "popup_cac_SMG_secondary";
+						close "popup_cac_LMG_secondary";
+						close "popup_cac_sniper_secondary";
+						close "popup_cac_shotgun_secondary";
+						close "popup_cac_template";
+						close "popup_cac_primary_camo";
+						close "popup_cac_secondary_camo";
+						close "popup_cac_bling";
+						close "popup_cac_perk2";
+						close "popup_cac_rocket_secondary";
+						close "popup_primary_attachments_bling";
+						close "popup_secondary_attachments_bling";
+						close "popup_cac_other_primary";
+					}
+				}
+				close self;
+				close "popup_cac_weapon_primary";
+				close "popup_primary_attachments" close "popup_secondary_attachments" close "popup_cac_weapon_secondary";
+				close "popup_cac_handgun_secondary";
+				close "popup_cac_machinePistols_secondary";
+				close "popup_cac_assault_primary";
+				close "popup_cac_SMG_primary";
+				close "popup_cac_LMG_primary";
+				close "popup_cac_sniper_primary";
+				close "popup_cac_shotgun_primary";
+				close "popup_cac_assault_secondary";
+				close "popup_cac_SMG_secondary";
+				close "popup_cac_LMG_secondary";
+				close "popup_cac_sniper_secondary";
+				close "popup_cac_shotgun_secondary";
+				close "popup_cac_template";
+				close "popup_cac_primary_camo";
+				close "popup_cac_secondary_camo";
+				close "popup_cac_bling";
+				close "popup_cac_perk2";
+				close "popup_cac_rocket_secondary";
+				close "popup_primary_attachments_bling";
+				close "popup_secondary_attachments_bling";
+				close "popup_cac_other_primary";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_popup_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_popupAButton" ( 1 );
+				setLocalVarString "ui_info_name" ( "@" + tablelookup( "mp/statsTable.csv" , 4 , "riotshield" , 3 ) );
+				setLocalVarString "ui_info_desc" ( "@" + tablelookup( "mp/statstable.csv" , 4 , "riotshield" , 7 ) );
+				setLocalVarString "ui_info_icon" ( tablelookup( "mp/statsTable.csv" , 4 , "riotshield" , 6 ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 1 1 1 0;
+				setLocalVarBool "ui_popupAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			rect 162 84 40 20 1 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			background "specialty_new"
+			textscale 0.55
+			visible when ( weaponclassnew( "weapon_shield" ) )
+		}
+		
+		itemDef
+		{
+			rect -56 0 200 124 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.5
+			background "small_box_lightfx"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -56 0 200 124 2 1
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textfont 9
+			textalign 4
+			textalignx 4
+			textscale 0.375
+			exp text ( localvarstring( "ui_info_name" ) )
+		}
+		itemDef
+		{
+			rect -56 10 200 100 2 1
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 1
+			textscale 0.55
+			visible when ( localvarstring( "ui_info_icon" ) != "" )
+			exp material ( localvarstring( "ui_info_icon" ) )
+		}
+		itemDef
+		{
+			rect -56 0 200 124 2 1
+			decoration
+			autowrapped
+			visible 1
+			forecolor 1 1 1 0.65
+			textfont 3
+			textalign 4
+			textalignx 4
+			textaligny 84
+			textscale 0.375
+			visible when ( isitemunlocked( "weaponRefString" + " " + "refString" ) )
+			exp text ( localvarstring( "ui_info_desc" ) )
+		}
+	}
+}

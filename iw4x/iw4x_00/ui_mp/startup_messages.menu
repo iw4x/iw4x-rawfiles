@@ -1,0 +1,293 @@
+{
+	menuDef
+	{
+		name "startup_messages"
+		rect -150 -124 300 124 2 2
+		popup
+		legacySplitScreenScale
+		visible 1
+		style 1
+		forecolor 1 1 1 1
+		backcolor 1 1 1 1
+		background "white"
+		focuscolor 1 1 1 1
+		onOpen
+		{
+			//setLocalVarInt "ui_centerPopup" (1);
+			focusfirst;
+		}
+		onClose
+		{
+			//setLocalVarInt "ui_centerPopup" (0);
+		}
+		onEsc
+		{
+			close self;
+		}
+		itemDef
+		{
+			rect -854 -480 1708 960 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0 0 0 0.35
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -854 -480 1708 960 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 1 1 1 1
+			background "xpbar_stencilbase"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 300 124 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			backcolor 0.5 0.5 0.5 1
+			background "white"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect 0 0 1708 480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.75
+			background "mw2_popup_bg_fogstencil"
+			textscale 0.55
+			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0.85 0.85 0.85 1
+			background "mw2_popup_bg_fogscroll"
+			textscale 0.55
+			exp rect x ( 0 - ( ( float( milliseconds( ) % 60000 ) / 60000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 300 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "mockup_popup_bg_stencilfill"
+			textscale 0.55
+			exp rect h ( ( 24 + 5 * 20 ) )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.75
+			background "mw2_popup_bg_fogstencil"
+			textscale 0.55
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 -1708 -480 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0.85 0.85 0.85 1
+			background "mw2_popup_bg_fogscroll"
+			textscale 0.55
+			exp rect x ( ( - 854 ) + ( ( float( milliseconds( ) % 50000 ) / 50000 ) * ( 854 ) ) )
+		}
+		itemDef
+		{
+			rect 0 0 300 0 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0
+			background "small_box_lightfx"
+			textscale 0.55
+			exp rect h ( ( 24 + 5 * 20 ) )
+		}
+		itemDef
+		{
+			rect -64 -64 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_tl"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 0 -64 300 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_t"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 300 -64 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_tr"
+			textscale 0.55
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 300 0 64 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_r"
+			textscale 0.55
+			exp rect h ( ( 24 + 5 * 20 ) )
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 300 0 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_br"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 0 0 300 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_b"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -64 0 64 64 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_bl"
+			textscale 0.55
+			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect -64 0 64 0 2 2
+			decoration
+			visible 1
+			style 3
+			forecolor 0 0 0 1
+			background "drop_shadow_l"
+			textscale 0.55
+			exp rect h ( ( 24 + 5 * 20 ) )
+			visible when ( 1 )
+		}
+		itemDef
+		{
+			rect 0 0 300 24 2 2
+			decoration
+			visible 1
+			style 1
+			forecolor 1 1 1 1
+			background "gradient_fadein"
+			textfont 9
+			textalign 5
+			textscale 0.375
+			exp text ( dvarstring( "ui_startupMessageTitle" ) )
+		}
+		itemDef
+		{
+			rect 4 24 292 20 2 2
+			decoration
+			autowrapped
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 0.65
+			disablecolor 0.6 0.55 0.55 1
+			type 1
+			textfont 3
+			textalign 5
+			textscale 0.375
+			exp text ( dvarstring( "ui_startupMessage" ) )
+			action
+			{
+				play "mouse_click";
+			}
+		}
+		itemDef
+		{
+			rect 4 104 292 20 2 2
+			visible 1
+			group "mw2_popup_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "popup_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -24
+			textscale 0.375
+			exp text dvarstring ("ui_startupNextButtonText")
+			action
+			{
+				play "mouse_click";
+				uiScript "nextStartupMessage";
+				if (dvarstring("ui_startupNextButtonText") == "Close")
+				{
+					close self;
+				}
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_popup_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_popupAButton" ( 1 );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 1 1 1 0;
+				setLocalVarBool "ui_popupAButton" ( 0 );
+			}
+		}
+	}
+}

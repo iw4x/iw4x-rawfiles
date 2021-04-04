@@ -1,0 +1,161 @@
+{
+	menuDef
+	{
+		name "resetclass"
+		rect 0 0 0 0 0 0
+		decoration
+		forecolor 1 1 1 1
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		onOpen
+		{
+			setLocalVarInt "classIndex" ( dvarInt("ui_checkclass") )
+		
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) == "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Weapon " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Primary" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "weapon" , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Primary" + "Attachment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Primary" + "Attachment2" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Primary" + "Camo" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "camo" , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Attachment " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Attachment2 " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "camo" ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Camo " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "camo" ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "camo" , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) == "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Weapon " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "weapon" , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment2" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Camo" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "camo" , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Attachment " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Attachment2 " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" ) ) )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Camo " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "weapon" ) + " " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 1 , "camo" ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( "none" );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "camo" , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) == "specialty_null" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Equipment " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 0 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutEquipment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 0 , "localVarString" ( "dataValue" ) );
+			}
+			if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "specialGrenade" ) == "none" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Secondary offhand " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "specialGrenade" ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutOffhand" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "specialGrenade" , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) ) || tablelookup( "mp/perkTable.csv" , 1 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) , 5 ) != ( "perk1" ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) == "specialty_null" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Perk " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) == "specialty_bling" )
+				{
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "none" ) setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "none" );
+				}
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 1 ) == "specialty_onemanarmy" )
+				{
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "weapon" , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment2" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Camo" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "camo" , "localVarString" ( "dataValue" ) );
+				}
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutPerk" + 1 , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 1 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) ) || tablelookup( "mp/perkTable.csv" , 1 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) , 5 ) != ( "perk2" ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) == "specialty_null" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Perk " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) == "specialty_bling" )
+				{
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "none" ) setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "none" );
+				}
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 2 ) == "specialty_onemanarmy" )
+				{
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "weapon" , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment2" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Camo" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "camo" , "localVarString" ( "dataValue" ) );
+				}
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutPerk" + 2 , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 2 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) ) || tablelookup( "mp/perkTable.csv" , 1 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) , 5 ) != ( "perk3" ) || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) == "specialty_null" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Perk " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) == "specialty_bling" )
+				{
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 0 , "attachment" , 1 , "none" ) setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "none" );
+				}
+				if ( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 3 ) == "specialty_onemanarmy" )
+				{
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "weapon" , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 0 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Attachment2" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "attachment" , 1 , "localVarString" ( "dataValue" ) );
+					setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadout" + "Secondary" + "Camo" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+					setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "weaponSetups" , 1 , "camo" , "localVarString" ( "dataValue" ) );
+				}
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutPerk" + 3 , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 3 , "localVarString" ( "dataValue" ) );
+			}
+			if ( !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) ) || tablelookup( "mp/perkTable.csv" , 1 , getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) , 5 ) != "perk4" || getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) == "specialty_null" )
+			{
+				setLocalVarString "temp" ( debugprint( "Stats" , "Deathstreak " + getplayerdata( "customClasses" , localvarint( "classIndex" ) , "perks" , 4 ) + " locked for class " + localvarint( "classIndex" ) + "; resetting" ) );
+				setLocalVarString "dataValue" ( tablelookup( "mp/classTable.csv" , 0 , "loadoutDeathStreak" , ( localvarint( "classIndex" ) % 5 ) + 6 ) );
+				setPlayerData( "customClasses" , "localVarInt" ( "classIndex" ) , "perks" , 4 , "localVarString" ( "dataValue" ) );
+			}
+
+
+			close self;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/logo.inc"
+
+#define HIDE_MOD
+
+#undef LOGO_X
+#define LOGO_X														-256
+
+#undef LOGO_Y
+#define LOGO_Y														-246
+
+#undef LOGO_WIDTH
+#define LOGO_WIDTH													512
+
+#undef LOGO_HEIGHT
+#define LOGO_HEIGHT													128
+
+#undef LOGO_RECT
+#define LOGO_RECT													LOGO_X LOGO_Y LOGO_WIDTH LOGO_HEIGHT HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+
+#define MENU_NAME													"iw4x_credits"
+#define MENU_MUSIC													"music_mainmenu_mp" // "af_chase_ending_credits"
+#define MENU_TITLE													"@MENU_SP_CREDITS_CAPS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP												MENU_NAME
+
+#define MENU_ITEM_CREDITS_BOX(titleArg, messageArg) \
+	itemDef \
+	{ \
+		name														"box_background" \
+		rect														0 -130 600 320 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER \
+		decoration													\
+		visible														1 \
+		style														WINDOW_STYLE_SHADER \
+		foreColor													0.3 0.3 0.3 0.5 \
+		background													"white" \
+		textScale													0.55 \
+		exp															rect x (0 - 300) \
+	} \
+	itemDef \
+	{ \
+		name														"welcome_box" \
+		rect														0 -130 600 320 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER \
+		decoration													\
+		visible														1 \
+		style														WINDOW_STYLE_FILLED \
+		foreColor													CHOICE_TEXTCOLOR \
+		backColor													0 0 0 0.375 \
+		background													"white" \
+		textFont													9 \
+		textAlign													ITEM_ALIGN_TOP_CENTER \
+		textAlignY													-5 \
+		textScale													FONTSCALE_EXTRABIG \
+		text														titleArg \
+		exp															rect x (0 - 300) \
+	} \
+	itemDef \
+	{ \
+		rect														0 -90 500 280 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER \
+		autoWrapped													\
+		decoration													\
+		visible														1 \
+		style														WINDOW_STYLE_FILLED \
+		foreColor													CHOICE_TEXTCOLOR \
+		textfont													7 \
+		textalign													ITEM_ALIGN_TOP_CENTER \
+		textScale													CHOICE_TEXTSIZE \
+		exp															rect x (0 - 250) \
+		text														"DEVELOPED BY" \
+	} \
+	itemDef \
+	{ \
+		name														"welcome_message" \
+		rect														0 -70 500 250 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER \
+		type														21 \
+		autoWrapped													\
+		decoration													\
+		visible														1 \
+		style														WINDOW_STYLE_FILLED \
+		foreColor													CHOICE_TEXTCOLOR \
+		textfont													7 \
+		textalign													ITEM_ALIGN_TOP_CENTER \
+		textScale													CHOICE_TEXTSIZE \
+		exp															rect x (0 - 250) \
+		text														messageArg \
+	}
+
+#define ON_MENU_ESC \
+	close self;
+
+#define MESSAGE_CREDITS												"@IW4X_CREDITS"
+
+menuDef
+{
+	name															MENU_NAME
+	fullscreen														1
+	rect															0 0 640 480
+	foreColor														CHOICE_TEXTCOLOR
+	focusColor														CHOICE_TEXTCOLOR
+	soundLoop														MENU_MUSIC
+	fadeCycle														1
+	fadeClamp														1
+	fadeAmount														0.1
+
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define DISABLE_SIDEBAR
+	#include "ui_mp/bg.inc"
+
+	LOGO_GAME
+
+	MENU_ITEM_CREDITS_BOX("IW4x", MESSAGE_CREDITS)
+
+	ITEM_BUTTON_BACK(close self;)
+}

@@ -1,0 +1,5151 @@
+{
+"skycolor" "0.823529 0.858824 1"
+"skylight" "0.6"
+"maxbounces" "2"
+"sunRadiosity" "1.3"
+"radiosityScale" "1.5"
+"contrastGain" "0.425"
+"_color" "0.541176 0.552941 1"
+"sunlight" "1.4"
+"sundirection" "-36 87 0"
+"suncolor" "1 0.85098 0.69"
+"ambient" ".1"
+"classname" "worldspawn"
+}
+{
+"ltOrigin" "-406 -3455.58 680.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "-406 -3448 648"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "-24 -3463.58 680.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_slate_destructible"
+"origin" "-24 -3456 648"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_slate"
+"csv_include" "destructible_vehicle_subcompact_slate"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "96.0946 -3457.31 678.166"
+"classname" "script_model"
+"model" "vehicle_coupe_white_destructible"
+"origin" "96 -3448 648"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_white"
+"csv_include" "destructible_vehicle_coupe_white"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 270 0"
+}
+{
+"modelscale" "1.000000"
+"origin" "2244 -1946.8 592"
+"angles" "0 219.945 0"
+"classname" "mp_tdm_spawn"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2330.4 -2364.2 680"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_allies"
+"targetname" "ctf_trig_allies"
+"origin" "-1525.8 -2036.1 686.8"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "-1503.13 -2056.68 720.311"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "-1525.8 -2036.1 670.8"
+"targetname" "ctf_flag_allies"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_allies"
+"origin" "-1525.8 -2036.1 686.8"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_axis"
+"targetname" "ctf_trig_axis"
+"origin" "1868.2 -2810.1 614.8"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 177 0"
+}
+{
+"gndLt" "4440442901"
+"ltOrigin" "1841.82 -2812.28 648.311"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "1868.2 -2810.1 598.8"
+"targetname" "ctf_flag_axis"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 177 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_axis"
+"origin" "1868.2 -2810.1 614.8"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 177 0"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "-1297.7 -1721.1 671"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_a"
+"angles" "0 226 0"
+}
+{
+"modelscale" "1.239520"
+"classname" "mp_tdm_spawn"
+"angles" "0 271.877 0"
+"origin" "1549.5 -1332.9 399"
+}
+{
+"angles" "0 0 0"
+"classname" "mp_global_intermission"
+"origin" "-1012 -3138 806"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 230 0"
+"origin" "1832 -1414 398"
+}
+{
+"classname" "mp_dm_spawn"
+"angles" "0 230 0"
+"origin" "1886 -1384 402"
+}
+{
+"script_gameobjectname" "airdrop_pallet"
+"targetname" "pf14_auto1"
+"classname" "script_brushmodel"
+"origin" "3012 -4068 64"
+"model" "*1"
+}
+{
+"ltOrigin" "3012 -4067.81 78.8886"
+"target" "pf14_auto1"
+"targetname" "airdrop_crate"
+"origin" "3012 -4068 64"
+"classname" "script_model"
+"model" "com_plasticcase_green_big_us_dirt"
+}
+{
+"gndLt" "3a39402d01"
+"ltOrigin" "819.211 -2501.33 1057.45"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "828 -2510 710"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 116 0"
+}
+{
+"gndLt" "3f3c414401"
+"ltOrigin" "971.212 -2497.97 844.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "962 -2504 712"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 62.5 1.65764"
+}
+{
+"gndLt" "423e415401"
+"ltOrigin" "998.695 -2505.35 745.198"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "999.2 -2500.4 714"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "358.117 227.619 -2.06255"
+}
+{
+"gndLt" "39383f2901"
+"ltOrigin" "889.863 -2517.93 742.579"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "890.2 -2518.5 713.7"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "354.952 207.321 3.68842"
+}
+{
+"gndLt" "4b44434a01"
+"ltOrigin" "1002.16 -2521.75 743.355"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1002 -2521.8 714.5"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "355.063 205.619 3.83649"
+}
+{
+"gndLt" "3f3c405201"
+"ltOrigin" "948.919 -2489.29 744.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "952.5 -2492.9 715"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 345.97 0"
+}
+{
+"gndLt" "3f3c404401"
+"ltOrigin" "906.98 -2492.73 749.358"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "903.1 -2491.2 716.9"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "357.929 317.847 1.87379"
+}
+{
+"gndLt" "322f320000"
+"ltOrigin" "1314.22 -2389.77 508.78"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1315.8 -2384.7 476.3"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "359.911 2.90929 1.76012"
+}
+{
+"gndLt" "3733360000"
+"ltOrigin" "1330.58 -2331.95 508.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1330.2 -2333.5 477"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 163.696 0"
+}
+{
+"gndLt" "3430310000"
+"ltOrigin" "1303.8 -2209.98 505.765"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1300.7 -2212.8 476.8"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "355.104 129.056 3.2359"
+}
+{
+"gndLt" "3833350000"
+"ltOrigin" "1300.93 -2259.73 508.579"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1303.3 -2256.9 476"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "3.0579 215.738 2.19826"
+}
+{
+"gndLt" "3a35370000"
+"ltOrigin" "1331.16 -2272.92 509.213"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1336.4 -2267.5 479.2"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "356.653 68.3538 -3.65216"
+}
+{
+"gndLt" "3633350000"
+"ltOrigin" "1280.39 -2338.31 507.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1282.5 -2336.2 478"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 55.0854 0"
+}
+{
+"gndLt" "3531340000"
+"ltOrigin" "1338.32 -2371.01 507.381"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1338.7 -2371.6 477.7"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "1.31034 228.021 -1.17868"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf43_auto1"
+"classname" "script_brushmodel"
+"origin" "1228 -2546 713"
+"model" "*2"
+}
+{
+"gndLt" "4f443c2d01"
+"ltOrigin" "1228.28 -2546.13 695.033"
+"target" "pf43_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "1228 -2546 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 46 0"
+}
+{
+"gndLt" "3a393f3e01"
+"ltOrigin" "798.405 -2516.39 742.579"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "794.2 -2518.5 713.7"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "354.952 282.321 3.68842"
+}
+{
+"gndLt" "403d415a01"
+"ltOrigin" "822.145 -2485.2 749.358"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "823.1 -2483.2 716.9"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "357.929 17.847 1.87379"
+}
+{
+"classname" "script_struct"
+"origin" "1564 -2095.81 503.494"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334 270 -90"
+}
+{
+"classname" "script_struct"
+"origin" "1740 -2096 484.5"
+"targetname" "light_glow_white_bulb_FX_origin"
+}
+{
+"classname" "script_struct"
+"origin" "248 -1980 926.5"
+"targetname" "light_glow_white_bulb_FX_origin"
+"angles" "0 180 0"
+}
+{
+"gndLt" "3b3a414001"
+"ltOrigin" "-301.528 -2618.27 1053.41"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "-318 -2656 706"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "0 151 0"
+}
+{
+"gndLt" "3b3a404b01"
+"ltOrigin" "-332.128 -2582.16 836.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "-348 -2566 704"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 7.5 1.65764"
+}
+{
+"ltOrigin" "-404.098 -1728.77 800.936"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "-405 -1724 797"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "16.6 3.18772e-006 -5.81534e-014"
+}
+{
+"gndLt" "3a393f3301"
+"ltOrigin" "-387.091 -2647.42 740.246"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-386.5 -2644 710.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "2.16368 199.173 0.752109"
+}
+{
+"gndLt" "3b3a402b01"
+"ltOrigin" "-385.411 -2586.71 742.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-384.7 -2584.9 711"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 14.337 0"
+}
+{
+"gndLt" "3d3b416101"
+"ltOrigin" "-306.661 -2591.01 745.096"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-303.5 -2583.8 712.1"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "357.123 356.85 4.02392"
+}
+{
+"gndLt" "39383e5f01"
+"ltOrigin" "-299.619 -2641.27 744.174"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-296.7 -2641 714.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "359.04 108.051 2.94164"
+}
+{
+"gndLt" "39383e4001"
+"ltOrigin" "673.331 -2624.79 1053.45"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "682 -2616 706"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 206 0"
+}
+{
+"gndLt" "36343a5301"
+"ltOrigin" "722.034 -2607.21 840.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "716 -2598 708"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 332.5 1.65764"
+}
+{
+"gndLt" "3b393d4801"
+"ltOrigin" "654.832 -2632.6 744.732"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "659.2 -2633.2 713.9"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.1058 102.178 4.97493"
+}
+{
+"gndLt" "3030364401"
+"ltOrigin" "723.055 -2626.74 742.742"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "722.9 -2632.5 712.6"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.89944 7.04002 0.481193"
+}
+{
+"gndLt" "3b383c5201"
+"ltOrigin" "648.105 -2597.03 744.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "652.2 -2598.4 713"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 132.649 0"
+}
+{
+"gndLt" "3534394b01"
+"ltOrigin" "718.401 -2591.57 744.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "718.3 -2591.6 713"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 202.104 0"
+}
+{
+"angles" "90 270 180"
+"classname" "script_struct"
+"origin" "304 -2092 779.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"gndLt" "413d3f3501"
+"ltOrigin" "-398.164 -2471.87 836.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "-382 -2456 704"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 277.5 1.65764"
+}
+{
+"gndLt" "37373e3b01"
+"ltOrigin" "-373.836 -2128.13 836.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "-390 -2144 704"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 97.5 1.65764"
+}
+{
+"gndLt" "3d393b2a01"
+"ltOrigin" "-392.548 -2505.2 736.933"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-388.3 -2503.2 707.1"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "359.865 86.353 -2.1168"
+}
+{
+"gndLt" "413e412b01"
+"ltOrigin" "-393.1 -2413.35 736.622"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-393.3 -2412.8 706.8"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.27542 140.587 -2.68822"
+}
+{
+"gndLt" "3e3c411a01"
+"ltOrigin" "-397.923 -2376.31 736.265"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-391.6 -2380 707"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "356.088 337.407 1.62627"
+}
+{
+"gndLt" "37373d3c01"
+"ltOrigin" "-388.111 -2102.88 736.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-389.3 -2103.9 707"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 136.23 0"
+}
+{
+"gndLt" "37363c3401"
+"ltOrigin" "-389.425 -2067.2 736.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-385.9 -2070.9 707"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 332.655 0"
+}
+{
+"gndLt" "423e402201"
+"ltOrigin" "-389.03 -2472.93 739.466"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-390.7 -2472.1 707"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "358.814 303.991 1.75853"
+}
+{
+"gndLt" "3f3c412301"
+"ltOrigin" "-385.473 -2428.87 738.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-384.7 -2426.5 707"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 213.212 0"
+}
+{
+"gndLt" "39383e5401"
+"ltOrigin" "-386.32 -2174.3 738.361"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-387.7 -2175.3 707"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "358.254 195.991 -1.60719"
+}
+{
+"gndLt" "3131370000"
+"ltOrigin" "-381.584 -2012.87 739.374"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-385.3 -2011.8 706.8"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "359.641 99.7336 2.09055"
+}
+{
+"gndLt" "39383f4601"
+"ltOrigin" "-394.917 -2216.99 738.26"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-392.6 -2217.4 706.9"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "1.01417 118.553 -1.86303"
+}
+{
+"ltOrigin" "-76.7706 -2371.9 768.936"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "-72 -2371 765"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "16.6 270 -1.95131e-006"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf176_auto1"
+"classname" "script_brushmodel"
+"origin" "-340 -2432 713"
+"model" "*3"
+}
+{
+"gndLt" "413c3d7801"
+"ltOrigin" "-340 -2432 695.033"
+"target" "pf176_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-340 -2432 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf192_auto1"
+"classname" "script_brushmodel"
+"origin" "536 -2355 713"
+"model" "*4"
+}
+{
+"gndLt" "2825280000"
+"ltOrigin" "535.902 -2354.6 695.033"
+"target" "pf192_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "535.9 -2354.6 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 269.972 0"
+}
+{
+"classname" "script_struct"
+"origin" "150 -2425.19 947.994"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334 90 -90"
+}
+{
+"ltOrigin" "1075.9 -2028.77 768.936"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "1075 -2024 765"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "16.6 3.18772e-006 -5.81534e-014"
+}
+{
+"gndLt" "3129210007"
+"ltOrigin" "284.653 -2226 858.244"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_02"
+"csv_include" "destructible_flatscreen_tv_02"
+"origin" "292 -2226 839"
+"model" "ma_flatscreen_tv_on_02"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2a292f5701"
+"ltOrigin" "573.557 -2292.41 809.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "576.2 -2293.3 778"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "1.00179e-005 124.662 8.30738e-013"
+}
+{
+"gndLt" "2e2c270000"
+"ltOrigin" "308.171 -2096.82 798.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "304 -2092 812"
+"model" "me_fanceil1"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"angles" "90 270 180"
+"classname" "script_struct"
+"origin" "112 -2180 899.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"gndLt" "6c60540000"
+"ltOrigin" "116.171 -2184.82 918.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "112 -2180 932"
+"model" "me_fanceil1"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "3d3a3e3c01"
+"ltOrigin" "930.203 -2032.73 920.362"
+"csv_include" "animated_models_parachute_roof_hanging"
+"precache_script" "maps animated_models parachute_roof_hanging"
+"targetname" "animated_model"
+"origin" "928 -2014 1192"
+"model" "parachute_roof_hanging_animated"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2a282c2d01"
+"ltOrigin" "573.815 -2186.06 809.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "576.3 -2187 778"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 281.349 0"
+}
+{
+"angles" "90 270 180"
+"classname" "script_struct"
+"origin" "-248 -1516 779.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"gndLt" "7f6d5e6901"
+"ltOrigin" "655.333 -1345.9 742.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "650.67 -1347.53 713"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 271.208 0"
+}
+{
+"gndLt" "8071627b01"
+"ltOrigin" "712.667 -1350.1 742.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "717.33 -1348.47 713"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 91.208 0"
+}
+{
+"gndLt" "7665587501"
+"ltOrigin" "551.333 -1345.9 742.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "546.67 -1347.53 713"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 271.208 0"
+}
+{
+"gndLt" "2c2a2f4a01"
+"ltOrigin" "567.038 -2218.09 807.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "569.4 -2221.6 778"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 351.475 0"
+}
+{
+"gndLt" "2b2b304f01"
+"ltOrigin" "562.252 -2288.32 807.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "565.9 -2285.1 778"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "1.00179e-005 60.985 -8.11795e-013"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf291_auto1"
+"classname" "script_brushmodel"
+"origin" "-82 -1743 713"
+"model" "*5"
+}
+{
+"gndLt" "211e1e0000"
+"ltOrigin" "-82.0887 -1742.49 695.033"
+"target" "pf291_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-82 -1742.6 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 165.232 0"
+}
+{
+"classname" "script_struct"
+"origin" "-117.192 -1898 947.994"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334 3.18772e-006 -90"
+}
+{
+"classname" "script_struct"
+"origin" "96 -1876 774.5"
+"targetname" "light_glow_white_bulb_FX_origin"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "-1502 -3454 977.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "-1502 -3454 969"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "-1726 -3134 977.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "-1726 -3134 969"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "-1502 -3134 977.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "-1502 -3134 969"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 180 0"
+}
+{
+"gndLt" "6a5c519101"
+"ltOrigin" "-1529.52 -1366.76 759.489"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "-1542.3 -1388.7 411"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "359.252 127.251 0.9839"
+}
+{
+"ltOrigin" "-803.229 -3842.43 962.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "-808 -3842 961"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "544a438901"
+"ltOrigin" "-1702.05 -1446.43 759.518"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "-1686.3 -1456.7 411"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "359.252 217.251 0.9839"
+}
+{
+"gndLt" "433d393801"
+"ltOrigin" "-2069.49 -2800.31 1033.45"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "-2058 -2804 686"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 6.00001 0"
+}
+{
+"gndLt" "433c3b4001"
+"ltOrigin" "-1270.11 -2466 711.462"
+"csv_include" "destructible_vehicle_pickup_destructible_mp"
+"destructible_type" "vehicle_pickup"
+"targetname" "destructible_vehicle"
+"origin" "-1264 -2466 672"
+"model" "vehicle_pickup_destructible_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1262.69 -2585.91 702.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "-1272 -2586 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+}
+{
+"ltOrigin" "-1246.42 -2218 704.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "-1254 -2218 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+}
+{
+"ltOrigin" "-914.539 -3863.34 974.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "-911.2 -3857.7 988"
+"model" "me_fanceil1"
+"classname" "script_model"
+"angles" "0 235 0"
+}
+{
+"gndLt" "5047405e01"
+"ltOrigin" "-1879.59 -1449.09 847.489"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "-1854.3 -1456.7 499"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "359.252 277.251 0.983899"
+}
+{
+"gndLt" "463e3b4401"
+"ltOrigin" "-2032.78 -1474.72 911.518"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "-2006.3 -1456.7 563"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "359.252 337.251 0.983899"
+}
+{
+"ltOrigin" "-1960 -2718.42 704.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "-1960 -2726 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "-1951.92 -2191.79 704.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_slate_destructible"
+"origin" "-1950 -2186 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_slate"
+"csv_include" "destructible_vehicle_subcompact_slate"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 254 0"
+}
+{
+"ltOrigin" "-1824 -3118 833.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "-1824 -3118 825"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "-1600 -3118 833.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "-1600 -3118 825"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 180 0"
+}
+{
+"gndLt" "3836333701"
+"ltOrigin" "-2070.37 -2904.27 742.48"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-2070.1 -2907.4 712.8"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "359.289 18.0686 2.17759"
+}
+{
+"gndLt" "49413c5301"
+"ltOrigin" "-2064.66 -2762.2 740.983"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-2068.2 -2765.7 711.5"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "357.744 260.054 0.39554"
+}
+{
+"gndLt" "403b375a01"
+"ltOrigin" "-2048.82 -2845.44 741.685"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "-2049.1 -2842.9 711.5"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "1.02965 305.756 -5.33593"
+}
+{
+"gndLt" "3c39355201"
+"ltOrigin" "-2051.91 -2893.3 744.442"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-2051.6 -2888.6 713.5"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "4.6974 354.609 -2.73503"
+}
+{
+"gndLt" "47403b5e01"
+"ltOrigin" "-2053.45 -2752.83 742.216"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "-2053.2 -2752.2 711"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "359.349 343.488 -2.1961"
+}
+{
+"ltOrigin" "-2114.43 -2084.77 802.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "-2114 -2080 801"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf551_auto1"
+"classname" "script_brushmodel"
+"origin" "-1984 -2912 721"
+"model" "*6"
+}
+{
+"gndLt" "4847417701"
+"ltOrigin" "-1984.25 -2911.61 703.033"
+"target" "pf551_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-1984 -2912 680"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 189.503 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf552_auto1"
+"classname" "script_brushmodel"
+"origin" "-2220 -2100 721"
+"model" "*7"
+}
+{
+"gndLt" "413c3b000f"
+"ltOrigin" "-2220.17 -2099.9 703.033"
+"target" "pf552_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-2220 -2100 680"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 230 0"
+}
+{
+"gndLt" "302f342101"
+"ltOrigin" "-2107.77 -1904 729"
+"origin" "-2112 -1904 729"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "2f2e332a01"
+"ltOrigin" "-2107.77 -1884 729"
+"origin" "-2112 -1884 729"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf579_auto1"
+"classname" "script_brushmodel"
+"origin" "-1148 -1892 715"
+"model" "*8"
+}
+{
+"gndLt" "3633351c01"
+"ltOrigin" "-1147.87 -1891.99 697.033"
+"target" "pf579_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-1148 -1892 674"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 65 0"
+}
+{
+"ltOrigin" "-1355.23 -2946.43 802.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "-1360 -2946 801"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "-2637.65 -2254.17 702.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "-2628.3 -2254.61 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 179.232 0"
+}
+{
+"ltOrigin" "-3423.25 -2180.56 691.032"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "-3426.4 -2177.9 660.1"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "357.82 327.069 0.684231"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf623_auto1"
+"classname" "script_brushmodel"
+"origin" "-1340 -2988 713"
+"model" "*9"
+}
+{
+"gndLt" "413f3f8001"
+"ltOrigin" "-1340.05 -2987.84 695.033"
+"target" "pf623_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-1340 -2988 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 85 0"
+}
+{
+"ltOrigin" "-1227.62 -3292 814.459"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_single"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent_single"
+"csv_include" "destructible_light_fluorescent_single"
+"modelscale" "1.1"
+"origin" "-1231.38 -3292 802.902"
+"angles" "2.11134e-007 270 -18"
+"model" "me_lightfluohang"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1226 -3276 823.152"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_single"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent_single"
+"csv_include" "destructible_light_fluorescent_single"
+"modelscale" "1.1"
+"origin" "-1226 -3276 811"
+"angles" "0 270 0"
+"model" "me_lightfluohang"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1616.82 -3140.17 962.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "-1612 -3136 976"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"angles" "90 55 180"
+"classname" "script_struct"
+"origin" "-1119.2 -3561.7 943.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"ltOrigin" "-1122.54 -3567.34 962.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "-1119.2 -3561.7 976"
+"model" "me_fanceil1"
+"classname" "script_model"
+"angles" "0 235 0"
+}
+{
+"gndLt" "3d3d390001"
+"ltOrigin" "-1794 -2947.74 928.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "-1794 -2944 910.5"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"gndLt" "2f2e2b0002"
+"ltOrigin" "-1470 -2947.74 928.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "-1470 -2944 910.5"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1574 -3520.26 760.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "-1574 -3524 742.5"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf713_auto1"
+"classname" "script_brushmodel"
+"origin" "-1948 -2964 713"
+"model" "*10"
+}
+{
+"gndLt" "5e69650000"
+"ltOrigin" "-1947.99 -2964.03 695.033"
+"target" "pf713_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-1948 -2964 672"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 179.503 0"
+}
+{
+"gndLt" "6d7b770000"
+"ltOrigin" "-1996.26 -3170 768.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "-2000 -3170 750.5"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"classname" "script_struct"
+"origin" "-1446.81 -3294 827.994"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334 180 -90"
+}
+{
+"ltOrigin" "-1724.82 -3112.17 818.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "-1720 -3108 832"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1888.37 -3106.85 818.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "-1896 -3108 832"
+"model" "me_fanceil1"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"gndLt" "3e3d444a01"
+"ltOrigin" "-996.31 -1918.24 739.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-993.7 -1922.9 667"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.00179e-005 111.127 -1.32918e-012"
+}
+{
+"gndLt" "3e3d454a01"
+"ltOrigin" "-918.045 -1923.37 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-916.6 -1924.3 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0 173.254 0"
+}
+{
+"gndLt" "4241475101"
+"ltOrigin" "-805.165 -1928.97 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-807.5 -1924.5 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0 288.512 0"
+}
+{
+"gndLt" "413f454c01"
+"ltOrigin" "-681.808 -1914.48 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-685.9 -1916.3 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.00179e-005 13.7549 -1.44997e-013"
+}
+{
+"gndLt" "403f455601"
+"ltOrigin" "-591.836 -1927.58 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-588.4 -1925.4 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.00179e-005 230.032 0"
+}
+{
+"gndLt" "3d3b413001"
+"ltOrigin" "-482.067 -1938.28 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-478.3 -1935.3 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0 216.628 0"
+}
+{
+"gndLt" "3e3d432f01"
+"ltOrigin" "-487.716 -2045.98 742.423"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "-489.3 -2048.1 670"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.00179e-005 77.124 0"
+}
+{
+"gndLt" "413d3f0000"
+"ltOrigin" "807.174 -2746.55 633.349"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "800.6 -2748 560.9"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0.381775 31.333 1.87149"
+}
+{
+"gndLt" "423d3f0000"
+"ltOrigin" "836.515 -2706.32 622.15"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "831.9 -2709.4 549.9"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.76559 2.96631 -1.49217"
+}
+{
+"gndLt" "4842430000"
+"ltOrigin" "1000 -2704 612"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "977 -2631.1 523.7"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "357.83 163.696 0.483398"
+"lighttarget" "auto2"
+}
+{
+"gndLt" "403b3e2301"
+"ltOrigin" "1249.04 -2683.94 831.15"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "1252.6 -2650.8 482.2"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "1.93695 314.562 0.92177"
+}
+{
+"gndLt" "413c3f2a01"
+"ltOrigin" "1335.95 -2609.37 804.603"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "1321.3 -2617.1 457.7"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0.406647 158.18 -0.975505"
+}
+{
+"gndLt" "423d3e2701"
+"ltOrigin" "1311.74 -2525.95 521.324"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1318.3 -2523.7 448.8"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.24863 226.626 1.38504"
+}
+{
+"ltOrigin" "620.338 -2844 628.798"
+"csv_include" "destructible_vehicle_policecar_lapd_destructible"
+"destructible_type" "vehicle_policecar"
+"targetname" "destructible_vehicle"
+"origin" "616 -2844 601"
+"model" "vehicle_policecar_lapd_destructible"
+"classname" "script_model"
+"angles" "346.6 180 -3.16576e-006"
+}
+{
+"gndLt" "5a4c416f01"
+"ltOrigin" "1867.42 -2449 490.906"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1863.1 -2450.3 418.6"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "2.03064 357.638 -1.19828"
+}
+{
+"gndLt" "53473e6b01"
+"ltOrigin" "1810.75 -2452.96 491.777"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1805.5 -2448.3 419.3"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "2.46765 335.764 0.122833"
+}
+{
+"gndLt" "3633375901"
+"ltOrigin" "1621.66 -2571.93 515.346"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1620.6 -2569.4 443.8"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "357.689 223.022 -1.95372"
+}
+{
+"gndLt" "3835375101"
+"ltOrigin" "1618.85 -2612.96 523.595"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1621.5 -2612.5 451.9"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "358.498 136.989 -2.15287"
+}
+{
+"gndLt" "3834372301"
+"ltOrigin" "1618.81 -2690.08 540.616"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1618.6 -2689.8 468.5"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "358.863 351.046 -0.383765"
+}
+{
+"gndLt" "3e37365c01"
+"ltOrigin" "1618.43 -2879.59 579.098"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1621.4 -2880.5 507.2"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "358.474 127.046 -1.13372"
+}
+{
+"gndLt" "453e3b2e01"
+"ltOrigin" "1621.74 -2927.35 588.742"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "1623.2 -2924.9 516.4"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0.054779 250.818 -0.487666"
+}
+{
+"ltOrigin" "1655.58 -2369.77 444.525"
+"classname" "script_model"
+"model" "vehicle_subcompact_slate_destructible"
+"origin" "1648 -2374 414"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_slate"
+"csv_include" "destructible_vehicle_subcompact_slate"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 0 -6.00016"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf821_auto1"
+"classname" "script_brushmodel"
+"origin" "2406 -3732 641"
+"model" "*11"
+}
+{
+"gndLt" "5e4f434601"
+"ltOrigin" "2406 -3732 623.033"
+"target" "pf821_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "2406 -3732 600"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+}
+{
+"gndLt" "322c250000"
+"ltOrigin" "1104 -3867.74 685.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "1104 -3864 667.5"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "2516 -2448 827.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"gndLt" "1c19180017"
+"ltOrigin" "564 -4104 636.469"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_pinball_machine_1"
+"destructible_type" "toy_pinball_machine_1"
+"csv_include" "destructible_pinball_machine_1"
+"origin" "564 -4104 600"
+"classname" "script_model"
+"model" "pinball_machine_1"
+"angles" "0 90 0"
+}
+{
+"gndLt" "2a282b0000"
+"ltOrigin" "2839.24 -2704.17 979.453"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "2844 -2698 632"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 100 0"
+}
+{
+"gndLt" "342f2f2901"
+"ltOrigin" "1803.41 -3413.98 979.453"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "1800 -3426 632"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 275 0"
+}
+{
+"gndLt" "3531321701"
+"ltOrigin" "1743.32 -3445.57 766.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "1760 -3436 634"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 265.5 1.65764"
+}
+{
+"gndLt" "2a292d0000"
+"ltOrigin" "2934.4 -3063.26 979.406"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "2926 -3082 632"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "0 184 0"
+}
+{
+"gndLt" "29272a0000"
+"ltOrigin" "2897.35 -2666.32 770.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "2880 -2652 638"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 10.5 1.65764"
+}
+{
+"gndLt" "2e2b2c0b01"
+"ltOrigin" "2925.57 -3688.68 746.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "2916 -3672 614"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 355.5 1.65764"
+}
+{
+"gndLt" "302c2e1201"
+"ltOrigin" "2889.41 -3619.96 979.453"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "2904 -3622 632"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+}
+{
+"gndLt" "302c2d1c01"
+"ltOrigin" "2884.13 -3567.84 772.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "2900 -3584 640"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 187.5 1.65764"
+}
+{
+"gndLt" "2523260000"
+"ltOrigin" "2939.3 -3674.4 672.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2943 -3671 643"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 62 0"
+}
+{
+"gndLt" "2e2a2b2301"
+"ltOrigin" "2869.27 -3582.57 668.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2871 -3587 639"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+}
+{
+"gndLt" "2c282a2501"
+"ltOrigin" "2874.02 -3670.53 674.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2869 -3669 643"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 318 0"
+}
+{
+"gndLt" "2f2b2c0000"
+"ltOrigin" "2952.29 -3579.38 674.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2951 -3583 643"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 40 0"
+}
+{
+"gndLt" "2320220000"
+"ltOrigin" "2955.79 -2660.74 675.725"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2957.7 -2665.5 646.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "357.317 7.05409 3.57324"
+}
+{
+"gndLt" "2b292c0000"
+"ltOrigin" "2818.9 -2674.45 674.032"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2820 -2673 644.2"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "2.00557 205.615 0.961277"
+}
+{
+"gndLt" "2c2a2e0000"
+"ltOrigin" "2946.63 -3084.86 770.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "2964 -3070 638"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 275.5 1.65764"
+}
+{
+"gndLt" "2523260000"
+"ltOrigin" "2879.3 -2701.89 676.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2877.7 -2707.1 645"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 50.625 0"
+}
+{
+"gndLt" "2c2a2c0000"
+"ltOrigin" "2804.1 -2719.83 676.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2805.4 -2717.1 645"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 247.522 0"
+}
+{
+"gndLt" "28272b0000"
+"ltOrigin" "2951.07 -3050.74 676.104"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2958.5 -3048.7 645.6"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "358.088 102.953 -9.22827"
+}
+{
+"gndLt" "28272b0000"
+"ltOrigin" "2914.81 -3113.25 674.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "2919.2 -3112.8 645"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 105.93 0"
+}
+{
+"gndLt" "302d320000"
+"ltOrigin" "2914.73 -3049.33 674.786"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2913.6 -3050.2 644.6"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "356.415 339.783 -4.60971"
+}
+{
+"gndLt" "493b345401"
+"ltOrigin" "2568.36 -3645.83 656.82"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "2569.8 -3646.9 624"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "357.539 126.993 3.26223"
+}
+{
+"ltOrigin" "535.741 -4052.26 705.988"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "532 -4048 688.5"
+"angles" "346.3 90 -5.93143e-007"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"gndLt" "3430301d01"
+"ltOrigin" "1760.17 -3391.33 675.155"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1759.1 -3395.2 644.9"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.279 123.826 2.19498"
+}
+{
+"gndLt" "2f2b2d1d01"
+"ltOrigin" "1764.17 -3462.59 680.087"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1762.9 -3464.7 645.8"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "358.802 121.792 9.34676"
+}
+{
+"gndLt" "342f305501"
+"ltOrigin" "1818.54 -3447.43 674.368"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1813.4 -3451.9 644.3"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "358.356 247.652 -3.99131"
+}
+{
+"gndLt" "3630303d01"
+"ltOrigin" "1808.3 -3396.34 676.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1809.7 -3392.1 645"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 223.484 0"
+}
+{
+"gndLt" "3b393d5401"
+"ltOrigin" "1793.22 -2668.47 961.453"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "1774 -2652 614"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 61 0"
+}
+{
+"gndLt" "3a373b4801"
+"ltOrigin" "1867.73 -2610.47 965.406"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "1830 -2594 618"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "0 61 0"
+}
+{
+"gndLt" "3c393e6401"
+"ltOrigin" "1818.15 -2658.91 752.407"
+"classname" "script_model"
+"model" "foliage_pacific_tropic_shrub01_animated"
+"origin" "1828 -2650 620"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_tropic_shrub01"
+"csv_include" "animated_models_foliage_pacific_tropic_shrub01"
+"angles" "357.135 237.5 1.65764"
+}
+{
+"gndLt" "3a373c4401"
+"ltOrigin" "1769.23 -2667.57 656.518"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1763.8 -2667.6 626.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.79814 275.247 0.348526"
+}
+{
+"gndLt" "3c393e3201"
+"ltOrigin" "1762.2 -2611.82 656.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1761.3 -2611.6 625"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 296.191 0"
+}
+{
+"gndLt" "3533393b01"
+"ltOrigin" "1835.44 -2664.63 656.664"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1832.6 -2662.7 624.2"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "355.255 106.702 2.55035"
+}
+{
+"gndLt" "39363a3d01"
+"ltOrigin" "1834.39 -2581.73 654.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1830.9 -2584 625"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 262.738 0"
+}
+{
+"gndLt" "3935382a01"
+"ltOrigin" "1697.78 -2883.93 660.579"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1700.2 -2883.6 630.8"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "358.295 107.314 5.45104"
+}
+{
+"gndLt" "3835392801"
+"ltOrigin" "1697.76 -2713.18 661.986"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1697.7 -2714.8 632"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "5.12024 322.82 -5.04929"
+}
+{
+"gndLt" "3632342301"
+"ltOrigin" "1716.42 -2545.52 659.974"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1714.9 -2540 629.7"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "1.24535 174.081 -6.32623"
+}
+{
+"gndLt" "39363b2c01"
+"ltOrigin" "1710.25 -2567.07 659.519"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1704.3 -2564 630.7"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "355.361 152.909 4.4819"
+}
+{
+"gndLt" "3a373b2601"
+"ltOrigin" "1707.39 -2641.17 659.696"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1709.5 -2638.3 629.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0.829622 78.8677 4.2083"
+}
+{
+"gndLt" "3533384801"
+"ltOrigin" "1806.66 -2542.31 659.159"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1803 -2545.5 629.1"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "4.06884 251.524 -1.35811"
+}
+{
+"gndLt" "3634394301"
+"ltOrigin" "1764.7 -2539.68 661.023"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "1758.4 -2538.1 630.4"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "7.35291 281.209 -0.461894"
+}
+{
+"gndLt" "3935382001"
+"ltOrigin" "1707.56 -2917.97 662.63"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1704.4 -2921.3 630"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "5.15466 36.51 2.63514"
+}
+{
+"gndLt" "3734381e01"
+"ltOrigin" "1704.53 -2746.13 662.299"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1706.4 -2749.6 631.5"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "353.106 283.514 -2.03393"
+}
+{
+"gndLt" "3835392901"
+"ltOrigin" "1707.07 -2698.93 664.886"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1703.5 -2699.3 631"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "359.43 109.229 7.34533"
+}
+{
+"gndLt" "39363a2301"
+"ltOrigin" "1712.4 -2606.51 662.16"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1712.3 -2607 629.2"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "357.886 119.482 3.73292"
+}
+{
+"gndLt" "38363a2601"
+"ltOrigin" "1710.82 -2662.8 661.679"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1706.3 -2668.8 629.6"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "352.916 178.776 2.03019"
+}
+{
+"gndLt" "35343a3601"
+"ltOrigin" "1778.74 -2546.59 660.721"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1780.6 -2539.8 629.5"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "3.76361 241.294 -2.05869"
+}
+{
+"gndLt" "3834384701"
+"ltOrigin" "1847.39 -2543.37 658.927"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "1849.7 -2541.9 629.6"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "359.37 160.312 -7.34053"
+}
+{
+"gndLt" "4f48476e01"
+"ltOrigin" "331.732 -3240.47 1013.41"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "294 -3224 666"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "0 61 0"
+}
+{
+"gndLt" "3935383101"
+"ltOrigin" "1709.11 -2883.9 673.024"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "1702.9 -2888.7 630.5"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "5.4101 18.7274 1.83075"
+}
+{
+"gndLt" "39363a2701"
+"ltOrigin" "1711.16 -2708.9 673.304"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "1707.1 -2715.6 630.9"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "4.77585 56.033 5.3761"
+}
+{
+"gndLt" "3433393401"
+"ltOrigin" "1731.87 -2535.75 675.328"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "1732 -2538.1 630.5"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "355.618 25.6855 4.73382"
+}
+{
+"gndLt" "55443a4a01"
+"ltOrigin" "2566.57 -3664.54 668.51"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "2567.4 -3668.6 625.1"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "0 118.059 9.21589"
+}
+{
+"gndLt" "3534392c01"
+"ltOrigin" "285.976 -3431.71 1033.45"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "294 -3412 686"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 314 0"
+}
+{
+"gndLt" "5248454d01"
+"ltOrigin" "418.396 -3331.77 724.129"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "423 -3333 692.9"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "1.80588 129.093 -2.22121"
+}
+{
+"gndLt" "4f48475601"
+"ltOrigin" "337.978 -3321.69 724.347"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "337.6 -3319.8 692.7"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "355.762 215.622 -0.22211"
+}
+{
+"gndLt" "5a504c5d01"
+"ltOrigin" "409.582 -3231.58 724.952"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "408.3 -3234 693"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "0 68.258 0"
+}
+{
+"gndLt" "483d392c01"
+"ltOrigin" "536.2 -3331.27 697.522"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "532.3 -3337.6 664.7"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "5.26925 55.3806 3.34472"
+}
+{
+"gndLt" "38312f2201"
+"ltOrigin" "607.823 -3334.14 663.658"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "600.1 -3333.1 633.6"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "3.37872 326.597 -5.32566"
+}
+{
+"gndLt" "35343a3001"
+"ltOrigin" "323.927 -3403.24 723.094"
+"csv_include" "animated_models_foliage_pacific_fern02"
+"precache_script" "maps animated_models foliage_pacific_fern02"
+"targetname" "animated_model"
+"origin" "329 -3405.7 691.2"
+"model" "foliage_pacific_fern02_animated"
+"classname" "script_model"
+"angles" "358.315 269.505 0"
+}
+{
+"gndLt" "4a44454901"
+"ltOrigin" "303.868 -3303.06 722.854"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "302.3 -3297.9 693.6"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "357.393 191.25 1.81539"
+}
+{
+"gndLt" "564d4b5c01"
+"ltOrigin" "354.913 -3250.06 722.805"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "353 -3246.7 692.9"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0.0975043 177.562 2.28853"
+}
+{
+"gndLt" "3e3b403501"
+"ltOrigin" "325.215 -3365.91 724.105"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "321.7 -3367.5 694.3"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "2.26527 261.466 -0.339842"
+}
+{
+"gndLt" "564b475b01"
+"ltOrigin" "423.948 -3313.5 722.819"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "424.7 -3318.5 693"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "2.19967 2.95826 0.113645"
+}
+{
+"gndLt" "4a3f3b3f01"
+"ltOrigin" "531.745 -3330.1 695.838"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "526.6 -3329.6 665.3"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "6.00146 38.8177 1.70695"
+}
+{
+"gndLt" "5348434c01"
+"ltOrigin" "531.723 -3239.91 693.747"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "531.2 -3235.9 664"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "359.368 195.02 2.35335"
+}
+{
+"gndLt" "3c35342c01"
+"ltOrigin" "604.865 -3286.34 662.534"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "609.6 -3290 633"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "0 341.73 0"
+}
+{
+"gndLt" "342e2e1e01"
+"ltOrigin" "614.312 -3338.15 663.179"
+"csv_include" "animated_models_foliage_pacific_fern01"
+"precache_script" "maps animated_models foliage_pacific_fern01"
+"targetname" "animated_model"
+"origin" "615.8 -3342.4 633.1"
+"model" "foliage_pacific_fern01_animated"
+"classname" "script_model"
+"angles" "3.61422 329.166 -5.16898"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "2272 -3880 703.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"ltOrigin" "2267.18 -3884.17 722.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "2272 -3880 736"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1963.18 -3952.17 722.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "1968 -3948 736"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"gndLt" "2724210017"
+"ltOrigin" "564 -4064 636.469"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_pinball_machine_1"
+"destructible_type" "toy_pinball_machine_2"
+"csv_include" "destructible_pinball_machine_2"
+"origin" "564 -4064 600"
+"classname" "script_model"
+"model" "pinball_machine_2"
+"angles" "0 90 0"
+}
+{
+"gndLt" "4041410017"
+"ltOrigin" "549.874 -3981 638.425"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_arcade_machine_1"
+"destructible_type" "toy_arcade_machine_2"
+"csv_include" "destructible_arcade_machine_2"
+"origin" "541 -3981 600"
+"model" "arcade_machine_2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf1121_auto1"
+"classname" "script_brushmodel"
+"origin" "1844 -4005 641"
+"model" "*12"
+}
+{
+"gndLt" "313531000d"
+"ltOrigin" "1844.33 -4005.34 623.033"
+"target" "pf1121_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "1844.4 -4005.2 600"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 323.262 0"
+}
+{
+"gndLt" "2f2e2c0017"
+"ltOrigin" "549.874 -4021 638.425"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_arcade_machine_1"
+"destructible_type" "toy_arcade_machine_1"
+"csv_include" "destructible_arcade_machine_1"
+"origin" "541 -4021 600"
+"model" "arcade_machine_1"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "1307.18 -4136.17 722.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "1312 -4132 736"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "1568 -3956 703.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"ltOrigin" "1563.18 -3960.17 722.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "1568 -3956 736"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf1130_auto1"
+"classname" "script_brushmodel"
+"origin" "1126 -3384 641"
+"model" "*13"
+}
+{
+"gndLt" "201a192701"
+"ltOrigin" "1126 -3384 623.033"
+"target" "pf1130_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "1126 -3384 600"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "2271.23 -2547.57 705.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "2276 -2548 704"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"classname" "script_struct"
+"origin" "2728 -2307 854.5"
+"targetname" "light_glow_white_bulb_FX_origin"
+}
+{
+"ltOrigin" "2172.77 -3728.43 705.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "2168 -3728 704"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "1731.43 -3099.23 706.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "1731 -3104 705"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "2d28230017"
+"ltOrigin" "1121 -4202.13 638.425"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_arcade_machine_1"
+"destructible_type" "toy_arcade_machine_1"
+"csv_include" "destructible_arcade_machine_1"
+"origin" "1121 -4211 600"
+"model" "arcade_machine_1"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "322c240017"
+"ltOrigin" "1077 -4202.13 638.425"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_arcade_machine_1"
+"destructible_type" "toy_arcade_machine_2"
+"csv_include" "destructible_arcade_machine_2"
+"origin" "1077 -4211 600"
+"model" "arcade_machine_2"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "804 -4216.26 689.5"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "804 -4220 671.5"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"gndLt" "4c413d3f01"
+"ltOrigin" "552.106 -3272.35 1005.41"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_a"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_a"
+"targetname" "animated_model"
+"origin" "538 -3312 658"
+"model" "foliage_tree_green_pine_lg_a_animated"
+"classname" "script_model"
+"angles" "0 146 0"
+}
+{
+"gndLt" "19191e0000"
+"ltOrigin" "2958.6 -2987.03 668.044"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "2965.3 -2986.5 624"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "0 129.232 0"
+}
+{
+"gndLt" "4839335701"
+"ltOrigin" "2007.32 -3661.14 668.044"
+"csv_include" "animated_models_foliage_pacific_palms08"
+"precache_script" "maps animated_models foliage_pacific_palms08"
+"targetname" "animated_model"
+"origin" "2005.8 -3662.8 624"
+"model" "foliage_pacific_palms08_animated"
+"classname" "script_model"
+"angles" "0 3.23199 0"
+}
+{
+"ltOrigin" "379.229 -3869.57 953.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "384 -3870 952"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "700.43 -3395.23 709.766"
+"sound_csv_include" "destruct_security_camera"
+"targetname" "destructible_toy"
+"precache_script" "common_scripts _destructible_types_anim_security_camera"
+"destructible_type" "toy_security_camera"
+"csv_include" "destructible_security_camera"
+"origin" "700 -3400 708"
+"model" "com_security_camera_tilt_animated"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf1365_auto1"
+"classname" "script_brushmodel"
+"origin" "1435 -3917 641"
+"model" "*14"
+}
+{
+"gndLt" "342f28000c"
+"ltOrigin" "1434.56 -3916.57 623.033"
+"target" "pf1365_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "1434.7 -3916.7 600"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+"angles" "0 87.647 0"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "520 -3524 951.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"ltOrigin" "515.183 -3528.17 970.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "520 -3524 984"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"classname" "script_struct"
+"origin" "2498 -2669.19 875.994"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334 90 -90"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "2516 -2448 707.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"ltOrigin" "2511.18 -2452.17 726.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "2516 -2448 740"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"gndLt" "41352d001a"
+"ltOrigin" "2511.18 -2452.17 846.846"
+"precache_script" "common_scripts _destructible_types_anim_me_fanceil1_spin"
+"sound_csv_include" "destruct_ceiling_fan"
+"destructible_type" "toy_ceiling_fan"
+"csv_include" "destructible_ceiling_fan"
+"targetname" "destructible_toy"
+"origin" "2516 -2448 860"
+"model" "me_fanceil1"
+"classname" "script_model"
+}
+{
+"gndLt" "2c2b260019"
+"ltOrigin" "2383.35 -2522 638.244"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_02"
+"csv_include" "destructible_flatscreen_tv_02"
+"origin" "2376 -2522 619"
+"model" "ma_flatscreen_tv_on_02"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "3939405301"
+"ltOrigin" "2251.83 -1219.3 507.466"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2248.8 -1219.2 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0.615539 0.845947 0.232849"
+}
+{
+"gndLt" "3b3b422601"
+"ltOrigin" "2100.09 -1273.35 506.972"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2101.8 -1273.1 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "358.299 243.237 -0.386497"
+}
+{
+"gndLt" "3f3d442c01"
+"ltOrigin" "2027.24 -1286.64 507.507"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2030.4 -1293 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "1.297 123.75 0.645599"
+}
+{
+"gndLt" "3f3d432901"
+"ltOrigin" "2032.84 -1420.25 507.395"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2038.4 -1427.2 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "2.42126 122.388 -0.675824"
+}
+{
+"gndLt" "3f3c413801"
+"ltOrigin" "2032.2 -1567.95 506.973"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2031.4 -1568.7 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "358.158 170.442 4.51226e-007"
+}
+{
+"gndLt" "3d3a3f3401"
+"ltOrigin" "2030.89 -1602.36 503.416"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2033.8 -1607.3 431"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "0.504608 108.446 -0.229348"
+}
+{
+"gndLt" "4540421e01"
+"ltOrigin" "2025.63 -1700.26 507.418"
+"classname" "script_model"
+"model" "foliage_pacific_palms06_animated"
+"origin" "2030.2 -1698.4 435"
+"targetname" "animated_model"
+"precache_script" "maps animated_models foliage_pacific_palms06"
+"csv_include" "animated_models_foliage_pacific_palms06"
+"angles" "359.966 223.484 0.974121"
+}
+{
+"origin" "-2197 -2115.1 684"
+"angles" "0 320 0"
+"classname" "mp_dm_spawn"
+}
+{
+"ltOrigin" "1418.59 -1621.91 413.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "1418.5 -1612.6 383"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "1430.04 -1340.57 413.166"
+"classname" "script_model"
+"model" "vehicle_coupe_white_destructible"
+"origin" "1427.76 -1333.08 383"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_white"
+"csv_include" "destructible_vehicle_coupe_white"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 290 0"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 229.232 0"
+"origin" "1829.4 -1437.4 402"
+"modelscale" "1.000000"
+}
+{
+"gndLt" "5549416901"
+"ltOrigin" "-290.203 -4041.27 1104.36"
+"csv_include" "animated_models_parachute_roof_hanging"
+"precache_script" "maps animated_models parachute_roof_hanging"
+"targetname" "animated_model"
+"origin" "-288 -4060 1376"
+"model" "parachute_roof_hanging_animated"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"targetname" "pf1509_auto1"
+"classname" "script_brushmodel"
+"origin" "-794 -4020 889"
+"model" "*15"
+}
+{
+"gndLt" "382f2a0000"
+"ltOrigin" "-794 -4020 871.033"
+"target" "pf1509_auto1"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_usa_gas_station_trash_bin_02"
+"destructible_type" "toy_usa_gas_station_trash_bin_02"
+"targetname" "destructible_toy"
+"origin" "-794 -4020 848"
+"model" "usa_gas_station_trash_bin_02"
+"classname" "script_model"
+}
+{
+"origin" "-1224 -2704 676"
+"angles" "0 285 0"
+"classname" "mp_dd_spawn_attacker_b"
+}
+{
+"ltOrigin" "956.903 -11.6051 416.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "955.3 -17.8 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "0 76.72 0"
+}
+{
+"gndLt" "423e424b01"
+"ltOrigin" "844.258 -22.0476 423.462"
+"csv_include" "destructible_vehicle_pickup_destructible_mp"
+"destructible_type" "vehicle_pickup"
+"targetname" "destructible_vehicle"
+"origin" "844.2 -15.9 384"
+"model" "vehicle_pickup_destructible_mp"
+"classname" "script_model"
+"angles" "0 90.533 0"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 180 0"
+"origin" "1873.1 -2241.8 408"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2310.2 -2453.2 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 230 0"
+"origin" "1716 -1538 398"
+}
+{
+"origin" "-2203.8 -2630.9 688"
+"angles" "0 5.00001 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2291.2 -2272.8 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 215 0"
+"origin" "1863.9 -1476.7 398"
+}
+{
+"modelscale" "0.852332"
+"classname" "mp_tdm_spawn"
+"angles" "0 345.172 0"
+"origin" "-1935.9 -3021.3 672"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2281 -2551.1 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 245 0"
+"origin" "1644.4 -1531.3 398"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2231.8 -2431 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 280 0"
+"origin" "1488 -1478 398"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2218.2 -2346.8 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 230 0"
+"origin" "1792 -1502 398"
+}
+{
+"angles" "0 160 0"
+"classname" "mp_dom_spawn"
+"origin" "1902.2 -2328.9 414.4"
+"modelscale" "1.000000"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2213.9 -2222.7 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 215 0"
+"origin" "1851.9 -1540.7 398"
+}
+{
+"origin" "-1184 -1512 676"
+"angles" "0 0 0"
+"classname" "mp_dd_spawn_attacker_b"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2179.8 -2554.9 680"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 245 0"
+"origin" "1616.4 -1455.3 398"
+}
+{
+"modelscale" "0.755945"
+"origin" "1877.7 -3567.1 608"
+"angles" "0 48.772 0"
+"classname" "mp_tdm_spawn"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 315 0"
+"origin" "-2190.6 -2127.1 684"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 230 0"
+"origin" "-1173.1 -1655.5 680"
+}
+{
+"origin" "-1161.7 -1631.4 676"
+"angles" "0 245 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 188.031 0"
+"origin" "2771.3 -2854.8 604"
+"modelscale" "1.000000"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 359.232 0"
+"origin" "-1944.5 -1864.2 676"
+}
+{
+"origin" "2845.1 -2787.4 604"
+"angles" "0 220 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 1.00179e-005 0"
+"origin" "-2040.9 -1798 684"
+}
+{
+"origin" "2774.8 -3568.8 606"
+"angles" "0 140 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 228.031 0"
+"origin" "2231.3 -1954.8 592"
+"modelscale" "1.000000"
+}
+{
+"origin" "1953.6 -2350.5 416"
+"angles" "0 180 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 183.258 0"
+"origin" "630.6 -3744.8 850"
+"modelscale" "1.000000"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 344.232 0"
+"origin" "-1935.4 -1798.6 676"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 130 0"
+"origin" "2312.4 -3964.8 606"
+}
+{
+"origin" "3152 484 1544"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"origin" "-3056 -5724 1544"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"modelscale" "1.674780"
+"classname" "mp_tdm_spawn"
+"angles" "0 337.601 0"
+"origin" "-1008.2 -1516.7 669"
+}
+{
+"classname" "mp_tdm_spawn"
+"angles" "0 120 0"
+"origin" "1178 -2491.1 676"
+}
+{
+"dmg" "100000"
+"spawnflags" "14"
+"classname" "trigger_hurt"
+"origin" "432 -3624 -656"
+"model" "?0"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 0.0853637 0"
+"origin" "-943.8 -3940.5 850"
+"modelscale" "1.000000"
+}
+{
+"classname" "script_origin"
+"targetname" "airstrikeheight"
+"origin" "-2241.5 -3814.5 2263"
+}
+{
+"modelscale" "1.396265"
+"classname" "mp_tdm_spawn"
+"angles" "0 269.232 0"
+"origin" "1149.4 -1474.4 483"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 344.232 0"
+"origin" "-1832.2 -1855.1 676"
+}
+{
+"gndLt" "2a25200a17"
+"ltOrigin" "947 -3999.19 614.889"
+"spawnflags" "4"
+"targetname" "pf1564_auto1"
+"script_gameobjectname" "hq"
+"origin" "947 -3999 600"
+"angles" "0 179.9 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "29241f0417"
+"ltOrigin" "943.005 -3995.96 637.453"
+"spawnflags" "4"
+"target" "pf1564_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "943.007 -3994.99 630"
+"angles" "0 89.9 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "930.294 -3993.03 630.578"
+"spawnflags" "4"
+"targetname" "pf1564_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 219.9 -89.9997"
+"origin" "928.315 -3990.27 630"
+}
+{
+"targetname" "pf1564_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "948 -3999 616"
+"model" "*16"
+}
+{
+"targetname" "pf1564_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "943 -4002 639"
+"model" "*17"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "854 -4042 628"
+"model" "?1"
+}
+{
+"gndLt" "3836390018"
+"ltOrigin" "2496.75 -3160.42 558.889"
+"spawnflags" "4"
+"targetname" "pf1565_auto1"
+"script_gameobjectname" "hq"
+"origin" "2496.6 -3160.3 544"
+"angles" "0 230 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "3b383c0018"
+"ltOrigin" "2491.7 -3161.41 581.453"
+"spawnflags" "4"
+"target" "pf1565_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "2490.96 -3160.79 574"
+"angles" "0 140 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2481.46 -3169.03 574.578"
+"spawnflags" "4"
+"targetname" "pf1565_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 270 -89.9997"
+"origin" "2477.92 -3169.03 574"
+}
+{
+"targetname" "pf1565_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "2497 -3160 560"
+"model" "*18"
+}
+{
+"targetname" "pf1565_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "2497 -3166 583"
+"model" "*19"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "2325 -3150 570"
+"model" "?2"
+}
+{
+"target" "auto476"
+"origin" "-1644.5 -3529 2312"
+"targetname" "heli_loop_start"
+"_color" ".5 1 1"
+"angles" "0 1.00179e-005 0"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"angles" "0 300 0"
+"_color" ".5 1 1"
+"origin" "-654 -792 2136"
+"script_accel" "20"
+"script_airspeed" "40"
+"targetname" "auto481"
+"target" "auto483"
+"script_delay" "2"
+}
+{
+"classname" "script_origin"
+"angles" "0 335 0"
+"_color" ".5 1 1"
+"origin" "-1836 -1536 2252"
+"script_accel" "15"
+"script_airspeed" "40"
+"targetname" "auto483"
+"script_delay" "3"
+"target" "auto476"
+}
+{
+"classname" "script_origin"
+"angles" "0 175 0"
+"_color" ".5 1 1"
+"origin" "984 -660 2172"
+"script_accel" "20"
+"script_airspeed" "35"
+"targetname" "auto480"
+"target" "auto481"
+}
+{
+"classname" "script_origin"
+"angles" "0 150 0"
+"_color" ".5 1 1"
+"origin" "2080 -3292 1932"
+"script_accel" "20"
+"script_airspeed" "35"
+"targetname" "auto478"
+"target" "auto479"
+}
+{
+"classname" "script_origin"
+"angles" "0 340 0"
+"_color" ".5 1 1"
+"origin" "-1788 -3632 2096"
+"targetname" "auto476"
+"script_accel" "15"
+"script_airspeed" "40"
+"target" "auto477"
+}
+{
+"script_delay" "3"
+"target" "auto480"
+"targetname" "auto479"
+"script_airspeed" "30"
+"script_accel" "15"
+"origin" "2008 -1468 2260"
+"_color" ".5 1 1"
+"angles" "0 205 0"
+"classname" "script_origin"
+}
+{
+"script_delay" "3"
+"target" "auto478"
+"script_airspeed" "30"
+"script_accel" "15"
+"targetname" "auto477"
+"origin" "168 -4396 1976"
+"_color" ".5 1 1"
+"angles" "0 85 0"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"origin" "-2103.7 -734.6 2135"
+"_color" "0 1 .5"
+"angles" "0 335 0"
+"targetname" "auto474"
+"script_accel" "15"
+"script_airspeed" "30"
+"target" "auto475"
+}
+{
+"target" "auto474"
+"script_airspeed" "40"
+"script_accel" "20"
+"targetname" "auto473"
+"angles" "0 335 0"
+"_color" "0 1 .5"
+"origin" "-3628.3 -103.5 2422"
+"classname" "script_origin"
+}
+{
+"target" "auto473"
+"script_airspeed" "60"
+"script_accel" "20"
+"targetname" "auto472"
+"angles" "0 50 0"
+"_color" "0 1 .5"
+"origin" "-6692.9 -3401.1 1644"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "heli_start"
+"origin" "-6718.5 -3447.2 1636"
+"_color" "0 1 .5"
+"angles" "0 60 0"
+"target" "auto472"
+}
+{
+"classname" "script_origin"
+"origin" "-409.7 -4889.5 2151"
+"_color" "0 1 .5"
+"angles" "0 80 0"
+"targetname" "auto469"
+"script_accel" "15"
+"script_airspeed" "30"
+"target" "auto470"
+}
+{
+"target" "auto469"
+"script_airspeed" "40"
+"script_accel" "20"
+"targetname" "auto468"
+"angles" "0 90 0"
+"_color" "0 1 .5"
+"origin" "586.3 -5955.8 2182"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"origin" "-1305.2 -1765.5 2088"
+"_color" "0 1 .5"
+"angles" "0 25 0"
+"script_accel" "15"
+"script_airspeed" "30"
+"targetname" "auto475"
+"target" "auto484"
+}
+{
+"classname" "script_origin"
+"origin" "114.7 -3003.8 2128"
+"_color" "0 1 .5"
+"angles" "0 75 0"
+"script_accel" "15"
+"script_airspeed" "30"
+"targetname" "auto471"
+"target" "auto484"
+}
+{
+"target" "auto468"
+"script_airspeed" "40"
+"script_accel" "20"
+"targetname" "auto466"
+"angles" "0 110 0"
+"_color" "0 1 .5"
+"origin" "4946.7 -8135 1660"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "heli_start"
+"origin" "4956.1 -8188.2 1652"
+"_color" "0 1 .5"
+"angles" "0 90 0"
+"target" "auto466"
+}
+{
+"target" "auto484"
+"script_airspeed" "60"
+"script_accel" "20"
+"angles" "0 255 0"
+"_color" "0 1 .5"
+"origin" "1020.1 -1515.3 2107"
+"targetname" "auto463"
+"classname" "script_origin"
+}
+{
+"script_airspeed" "40"
+"script_accel" "20"
+"target" "auto463"
+"angles" "0 255 0"
+"_color" "0 1 .5"
+"origin" "1553.4 -257.5 1922"
+"targetname" "auto462"
+"classname" "script_origin"
+}
+{
+"script_airspeed" "40"
+"script_accel" "20"
+"target" "auto462"
+"angles" "0 195 0"
+"_color" "0 1 .5"
+"origin" "2840.7 635.4 1872"
+"targetname" "auto461"
+"classname" "script_origin"
+}
+{
+"script_airspeed" "60"
+"script_accel" "20"
+"target" "auto461"
+"angles" "0 255 0"
+"_color" "0 1 .5"
+"origin" "6157.4 1137.8 1452"
+"targetname" "auto460"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "heli_start"
+"origin" "6195.8 1180.3 1444"
+"_color" "0 1 .5"
+"angles" "0 255 0"
+"target" "auto460"
+}
+{
+"classname" "script_origin"
+"origin" "-517.7 -3633 2171.5"
+"_color" "0 1 .5"
+"angles" "0 215 0"
+"targetname" "auto470"
+"script_accel" "15"
+"script_airspeed" "40"
+"target" "auto471"
+}
+{
+"target" "auto484"
+"targetname" "heli_dest"
+"origin" "106.4 -2052 2076"
+"angles" "0 195 0"
+"_color" "0 1 .5"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "auto484"
+"origin" "12.1 -2016.2 2091.5"
+"_color" "0 1 .5"
+"angles" "0 75 0"
+"script_accel" "10"
+"script_airspeed" "30"
+}
+{
+"classname" "script_origin"
+"targetname" "auto42"
+"origin" "1322.8 -925.8 1768"
+"target" "auto44"
+"script_airspeed" "50"
+"script_accel" "30"
+"angles" "0 75 0"
+}
+{
+"angles" "0 75 0"
+"script_accel" "30"
+"script_airspeed" "50"
+"targetname" "auto44"
+"origin" "2226 3255 864"
+"classname" "script_origin"
+}
+{
+"angles" "0 75 0"
+"target" "auto482"
+"origin" "272 -2624 2080"
+"targetname" "heli_crash_start"
+"classname" "script_origin"
+}
+{
+"angles" "0 75 0"
+"script_accel" "20"
+"script_airspeed" "40"
+"target" "auto42"
+"origin" "279.2 -2597 2128"
+"targetname" "auto482"
+"classname" "script_origin"
+}
+{
+"angles" "0 140 0"
+"origin" "1216.7 -1754.8 620"
+"targetname" "remoteMissileTarget5"
+"classname" "script_origin"
+}
+{
+"angles" "0 140 0"
+"script_targetoffset_z" "10000"
+"origin" "2235.3 -985.2 8524"
+"target" "remoteMissileTarget5"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"angles" "0 245 0"
+"origin" "-1722.4 -2165.8 620"
+"targetname" "remoteMissileTarget1"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "remoteMissileSpawn"
+"target" "remoteMissileTarget1"
+"origin" "-2769.6 -1350.2 8524"
+"script_targetoffset_z" "10000"
+"angles" "0 245 0"
+}
+{
+"angles" "0 335 0"
+"origin" "-246.2 -3130.4 620"
+"targetname" "remoteMissileTarget2"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "remoteMissileSpawn"
+"target" "remoteMissileTarget2"
+"origin" "-1093.8 -4145.6 8524"
+"script_targetoffset_z" "10000"
+"angles" "0 335 0"
+}
+{
+"angles" "0 65 0"
+"origin" "2274.4 -3054.2 640"
+"targetname" "remoteMissileTarget3"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "remoteMissileSpawn"
+"target" "remoteMissileTarget3"
+"origin" "3257.6 -3869.8 8524"
+"script_targetoffset_z" "10000"
+"angles" "0 65 0"
+}
+{
+"origin" "-2326.4 -2368.2 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2306.2 -2457.2 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2287.2 -2276.8 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2277 -2555.1 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2227.8 -2435 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2214.2 -2350.8 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2209.9 -2226.7 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"origin" "-2175.8 -2558.9 688"
+"angles" "0 0 0"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 130 0"
+"origin" "2505.2 -3670.5 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 138 0"
+"origin" "2767.7 -3568.1 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 165 0"
+"origin" "2840.5 -3502 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 222 0"
+"origin" "2828.5 -2821.8 604"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 130 0"
+"origin" "2692.3 -3578.2 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 195 0"
+"origin" "2690.4 -2798.3 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 195 0"
+"origin" "2758.5 -2836.6 606"
+}
+{
+"classname" "mp_ctf_spawn_axis_start"
+"angles" "0 180 0"
+"origin" "2824.4 -2931.3 606"
+}
+{
+"origin" "2244 -1944 600"
+"angles" "0 215 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"origin" "1884 -3568 608"
+"angles" "0 45 0"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"classname" "mp_ctf_spawn_axis"
+"angles" "0 139 0"
+"origin" "2790 -3568 606"
+}
+{
+"classname" "mp_ctf_spawn_axis"
+"angles" "0 220 0"
+"origin" "2828 -2816 604"
+}
+{
+"classname" "mp_ctf_spawn_axis"
+"angles" "0 180 0"
+"origin" "1906 -2200 416"
+}
+{
+"origin" "456 -2312 820"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_attacker_a"
+}
+{
+"origin" "-2208 -2116 684"
+"angles" "0 320 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-2200 -2628 688"
+"angles" "0 5.00001 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-1964 -2856 688"
+"angles" "0 30 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-1160 -3168 672"
+"angles" "0 95 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-2060 -1640 684"
+"angles" "0 300 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-2608 -2180 684"
+"angles" "0 355 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"origin" "-1160 -1636 676"
+"angles" "0 245 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 165 0"
+"origin" "2840.6 4004.6 1890"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 165 0"
+"origin" "-274.2 -6793.8 1890"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 165 0"
+"origin" "-5958.5 -1643.6 1890"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"gndLt" "2d2e2b0003"
+"ltOrigin" "-1460.81 -3223 686.889"
+"spawnflags" "4"
+"targetname" "pf1608_auto1"
+"script_gameobjectname" "hq"
+"origin" "-1461 -3223 672"
+"angles" "0 269.9 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "2e2f2d0003"
+"ltOrigin" "-1464.04 -3226.99 709.453"
+"spawnflags" "4"
+"target" "pf1608_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "-1465.01 -3226.99 702"
+"angles" "0 179.9 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-1466.97 -3239.7 702.578"
+"spawnflags" "4"
+"targetname" "pf1608_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 309.9 -89.9997"
+"origin" "-1469.73 -3241.68 702"
+}
+{
+"targetname" "pf1608_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-1461 -3222 688"
+"model" "*20"
+}
+{
+"targetname" "pf1608_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-1458 -3227 711"
+"model" "*21"
+}
+{
+"angles" "0 165 0"
+"origin" "7896.6 3972.6 1890"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 165 0"
+"origin" "-2727.4 3908.6 1890"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"ltOrigin" "1754.34 -11.3117 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "1755.41 -20.6973 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 91.489 0"
+}
+{
+"modelscale" "1.018182"
+"origin" "-943.6 -3557.4 848"
+"angles" "0 270 0"
+"classname" "mp_dd_spawn_attacker"
+}
+{
+"origin" "664 -2180 672"
+"angles" "0 1.00179e-005 0"
+"classname" "mp_dd_spawn_attacker_a"
+}
+{
+"ltOrigin" "1680.79 -866.583 419.474"
+"csv_include" "destructible_vehicle_policecar_lapd_destructible"
+"destructible_type" "vehicle_policecar"
+"targetname" "destructible_vehicle"
+"origin" "1680 -867.1 384"
+"model" "vehicle_policecar_lapd_destructible"
+"classname" "script_model"
+"angles" "0 30.9851 0"
+}
+{
+"ltOrigin" "1495.62 -1187.48 419.474"
+"csv_include" "destructible_vehicle_policecar_lapd_destructible"
+"destructible_type" "vehicle_policecar"
+"targetname" "destructible_vehicle"
+"origin" "1495 -1188.1 384"
+"model" "vehicle_policecar_lapd_destructible"
+"classname" "script_model"
+"angles" "0 14.5851 0"
+}
+{
+"ltOrigin" "1863.82 -25.0505 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "1862.98 -34.3892 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 87.0215 0"
+}
+{
+"gndLt" "3c383b1b01"
+"ltOrigin" "2203.65 -185.899 423.462"
+"csv_include" "destructible_vehicle_pickup_destructible_mp"
+"destructible_type" "vehicle_pickup"
+"targetname" "destructible_vehicle"
+"origin" "2209.8 -186 384"
+"model" "vehicle_pickup_destructible_mp"
+"classname" "script_model"
+"angles" "0 359.401 0"
+}
+{
+"ltOrigin" "2232.44 -511.463 416.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "2226.2 -509.9 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "0 347.056 0"
+}
+{
+"ltOrigin" "508.389 -26.2792 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "509.28 -35.5856 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 93.442 0"
+}
+{
+"ltOrigin" "395.798 -25.6481 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_white_destructible"
+"origin" "395.032 -34.7528 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_white"
+"csv_include" "destructible_vehicle_coupe_white"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 83.772 0"
+}
+{
+"gndLt" "39363a5301"
+"ltOrigin" "279.742 -41.9524 423.462"
+"csv_include" "destructible_vehicle_pickup_destructible_mp"
+"destructible_type" "vehicle_pickup"
+"targetname" "destructible_vehicle"
+"origin" "279.8 -48.1 384"
+"model" "vehicle_pickup_destructible_mp"
+"classname" "script_model"
+"angles" "0 270.533 0"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "-1715 -3234 718"
+"model" "?3"
+}
+{
+"ltOrigin" "-1556.64 -606.28 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "-1565.99 -605.417 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 357.253 0"
+}
+{
+"gndLt" "39383d6101"
+"ltOrigin" "-1560.99 -493.961 423.462"
+"csv_include" "destructible_vehicle_pickup_destructible_mp"
+"destructible_type" "vehicle_pickup"
+"targetname" "destructible_vehicle"
+"origin" "-1567.3 -495.4 384"
+"model" "vehicle_pickup_destructible_mp"
+"classname" "script_model"
+"angles" "0 182.67 0"
+}
+{
+"ltOrigin" "-1246.82 -996.205 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_white_destructible"
+"origin" "-1248.18 -987.638 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_white"
+"csv_include" "destructible_vehicle_coupe_white"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 280.653 0"
+}
+{
+"ltOrigin" "-1132.08 -997.212 416.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_slate_destructible"
+"origin" "-1131.8 -989.6 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_slate"
+"csv_include" "destructible_vehicle_subcompact_slate"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 269.489 0"
+}
+{
+"ltOrigin" "-1604.42 -839.007 416.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_slate_destructible"
+"origin" "-1597.5 -840.1 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_slate"
+"csv_include" "destructible_vehicle_subcompact_slate"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 170.984 0"
+}
+{
+"ltOrigin" "-1104.08 -22.5413 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_blue_destructible"
+"origin" "-1104.63 -31.899 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_blue"
+"csv_include" "destructible_vehicle_coupe_blue"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 89.075 0"
+}
+{
+"ltOrigin" "-1438.74 -20.2164 416.074"
+"classname" "script_model"
+"model" "vehicle_subcompact_black_destructible"
+"origin" "-1440 -26.9 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_black"
+"csv_include" ""
+"sound_csv_include" ""
+"angles" "0 79.617 0"
+}
+{
+"origin" "1908 -3552 608"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"ltOrigin" "-570.457 -25.1119 414.166"
+"classname" "script_model"
+"model" "vehicle_coupe_white_destructible"
+"origin" "-576.903 -21.5912 384"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_white"
+"csv_include" "destructible_vehicle_coupe_white"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 328.258 0"
+}
+{
+"gndLt" "3d32270000"
+"ltOrigin" "129 -2044.81 834.889"
+"spawnflags" "4"
+"targetname" "pf1735_auto1"
+"script_gameobjectname" "hq"
+"origin" "129 -2045 820"
+"angles" "0 359.9 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "3d32270000"
+"ltOrigin" "132.995 -2048.04 857.453"
+"spawnflags" "4"
+"target" "pf1735_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "132.993 -2049.01 850"
+"angles" "0 269.9 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "145.706 -2050.97 850.578"
+"spawnflags" "4"
+"targetname" "pf1735_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 39.9 -89.9997"
+"origin" "147.685 -2053.73 850"
+}
+{
+"targetname" "pf1735_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "129 -2045 836"
+"model" "*22"
+}
+{
+"targetname" "pf1735_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "133 -2042 859"
+"model" "*23"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "120 -2092 874"
+"model" "?4"
+}
+{
+"script_linkto" "flag2"
+"scr_linkto" "flag2"
+"classname" "mp_dom_spawn"
+"angles" "0 248.076 0"
+"origin" "-1616.1 -3111.1 674"
+"modelscale" "1.000000"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 182.074 0"
+"origin" "1589.5 -4122.6 602"
+"modelscale" "1.000000"
+}
+{
+"gndLt" "443a314901"
+"ltOrigin" "-137 -4063.19 862.889"
+"spawnflags" "4"
+"targetname" "pf1736_auto1"
+"script_gameobjectname" "hq"
+"origin" "-137 -4063 848"
+"angles" "0 179.9 0"
+"model" "com_plasticcase_beige_big"
+"classname" "script_model"
+}
+{
+"gndLt" "483d344d01"
+"ltOrigin" "-140.995 -4059.96 885.453"
+"spawnflags" "4"
+"target" "pf1736_auto1"
+"script_gameobjectname" "hq"
+"targetname" "hq_hardpoint"
+"origin" "-140.993 -4058.99 878"
+"angles" "0 89.9 0"
+"model" "com_laptop_2_open"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-153.706 -4057.03 878.578"
+"spawnflags" "4"
+"targetname" "pf1736_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_model"
+"model" "com_cellphone_on"
+"angles" "0 219.9 -89.9997"
+"origin" "-155.685 -4054.27 878"
+}
+{
+"targetname" "pf1736_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-137 -4063 864"
+"model" "*24"
+}
+{
+"targetname" "pf1736_auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+"origin" "-141 -4066 887"
+"model" "*25"
+}
+{
+"targetname" "radiotrigger"
+"classname" "trigger_multiple"
+"origin" "-212 -3906 894"
+"model" "?5"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 44.506 0"
+"origin" "-2189.6 -2618.1 682"
+"modelscale" "1.000000"
+}
+{
+"script_label" "_b"
+"model" "prop_flag_neutral"
+"script_gameobjectname" "dom onslaught"
+"origin" "-211.9 -3773.7 846"
+"targetname" "flag_primary"
+"height" "128"
+"radius" "160"
+"classname" "trigger_radius"
+"angles" "0 316 0"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 344.662 0"
+"origin" "-2040.4 -1646.8 682"
+"modelscale" "1.000000"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 344.232 0"
+"origin" "-1804 -1767.1 676"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 344.232 0"
+"origin" "-1767.4 -1684.5 676"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 359.232 0"
+"origin" "-1727.6 -1859.4 676"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 344.232 0"
+"origin" "-1896.8 -1703.6 676"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_dom_spawn_axis_start"
+"angles" "0 359.232 0"
+"origin" "-1951.4 -1952.4 676"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 281.349 0"
+"origin" "-1561 -1524.1 674"
+"modelscale" "1.000000"
+}
+{
+"script_label" "_c"
+"model" "prop_flag_neutral"
+"script_gameobjectname" "dom onslaught"
+"origin" "1560.1 -2091.7 387"
+"targetname" "flag_primary"
+"height" "128"
+"radius" "160"
+"classname" "trigger_radius"
+"angles" "0 316 0"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "1572 -2095 485"
+"script_linkto" "flag2 flag1"
+"script_linkname" "flag3"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"script_linkname" "flag2"
+"script_linkto" "flag1 flag3"
+"origin" "-212 -3757 940"
+"targetname" "flag_descriptor"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "-1286 -1700 784"
+"script_linkto" "flag2 flag3"
+"script_linkname" "flag1"
+"classname" "script_origin"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 220 0"
+"origin" "1938.5 -1624.8 406"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 228 0"
+"origin" "1828.1 -1428.3 402"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 255 0"
+"origin" "1546 -1373.5 386"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 287 0"
+"origin" "1491 -1499.8 392"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 220 0"
+"origin" "1838.2 -1501.7 402"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 285 0"
+"origin" "1416.3 -1773.6 394"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 285 0"
+"origin" "1506.6 -1645.5 394"
+}
+{
+"classname" "mp_dom_spawn_allies_start"
+"angles" "0 270 0"
+"origin" "1629.3 -1451.6 390"
+}
+{
+"angles" "0 180 0"
+"origin" "2680 -2795 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"script_label" "_a"
+"script_bombmode_original" "1"
+"target" "pf1740_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "966 -3977 608"
+"model" "?6"
+}
+{
+"targetname" "pf1740_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "966 -3977 608"
+"model" "?7"
+}
+{
+"gndLt" "312c270017"
+"ltOrigin" "962.594 -3971.44 617.556"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1740_1"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "966 -3977 600.1"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "967 -3975 628"
+"model" "*26"
+}
+{
+"gndLt" "35302b0017"
+"ltOrigin" "966.121 -3976.42 628.123"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 270 0"
+"origin" "966 -3975 598.1"
+"script_exploder" "pf1740_1"
+"script_gameobjectname" "bombzone"
+"spawnflags" "4"
+"targetname" "pf1740_auto1"
+"target" "pf1740_auto2"
+}
+{
+"script_label" "_b"
+"script_bombmode_original" "1"
+"target" "pf1741_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "1563 -1831 392"
+"model" "?8"
+}
+{
+"targetname" "pf1741_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "1563 -1831 392"
+"model" "?9"
+}
+{
+"gndLt" "3d3b3b9601"
+"ltOrigin" "1563.12 -1829.42 412.123"
+"target" "pf1741_auto2"
+"targetname" "pf1741_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1741_2"
+"origin" "1563 -1828 382.1"
+"angles" "0 270 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3c3c9601"
+"ltOrigin" "1559.59 -1825.44 401.556"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf1741_2"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "1563 -1831 384.1"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "1564 -1828 412"
+"model" "*27"
+}
+{
+"angles" "0 180 0"
+"origin" "2682 -2860 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 180 0"
+"origin" "2796 -3070 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 180 0"
+"origin" "2797 -2983 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 180 0"
+"origin" "2796 -2886 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 180 0"
+"origin" "2796 -2810 604"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2226 -2338 680"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2240 -2422 680"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2222 -2214 680"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2188 -2546 680"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2318 -2446 680"
+}
+{
+"classname" "mp_sd_spawn_attacker"
+"angles" "0 0 0"
+"origin" "-2300 -2264 680"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2091.1 -2459.2 676"
+"angles" "0 0 0"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2261.7 -2282.9 676"
+"angles" "0 0 0"
+}
+{
+"gndLt" "534c4c9201"
+"ltOrigin" "-1905.76 -2366.08 675.503"
+"spawnflags" "4"
+"script_gameobjectname" "sd"
+"origin" "-1906 -2366 672"
+"targetname" "sd_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sd"
+"targetname" "sd_bomb_pickup_trig"
+"classname" "trigger_multiple"
+"origin" "-1906 -2366 672"
+"model" "?10"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2244.1 -2482.9 676"
+"angles" "0 0 0"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2216.7 -2350.5 676"
+"angles" "0 0 0"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2100.1 -2274.9 684"
+"angles" "0 0 0"
+}
+{
+"classname" "mp_dd_spawn_attacker_start"
+"origin" "-2108.1 -2370.9 672"
+"angles" "0 0 0"
+}
+{
+"origin" "2788.4 -3156.4 600"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2790.4 -3060.4 608"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2676.4 -3564.5 600"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2790.4 -3428.5 600"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2756.4 -2828.5 604"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2790.4 -3510.5 600"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_start"
+}
+{
+"origin" "2740 -3528 600"
+"angles" "0 135 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"origin" "2648 -2472 600"
+"angles" "0 180 0"
+"classname" "mp_dd_spawn_defender_a"
+}
+{
+"origin" "828 -4176 600"
+"angles" "0 90 0"
+"classname" "mp_dd_spawn_defender_b"
+}
+{
+"origin" "644 -3448 848"
+"angles" "0 225 0"
+"classname" "mp_dd_spawn_defender_b"
+}
+{
+"origin" "1776 -3868 600"
+"angles" "0 345 0"
+"classname" "mp_dd_spawn_defender"
+}
+{
+"modelscale" "1.000000"
+"origin" "-206.4 -1483.1 674"
+"angles" "0 227.627 0"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "mp_dom_spawn"
+"angles" "0 131.475 0"
+"origin" "1168.4 -2480.3 674"
+"modelscale" "1.000000"
+}
+{
+"modelscale" "1.000000"
+"origin" "-970.3 -4020.3 850"
+"angles" "0 40.985 0"
+"classname" "mp_dm_spawn"
+}
+{
+"classname" "trigger_use_touch"
+"targetname" "sab_bomb_allies"
+"script_gameobjectname" "sab"
+"target" "pf1743_auto1"
+"origin" "2134 -3126 576"
+"model" "?11"
+}
+{
+"targetname" "sab_bomb_defuse_allies"
+"script_gameobjectname" "sab"
+"classname" "trigger_use_touch"
+"origin" "2134 -3126 576"
+"model" "?12"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "2135 -3123 596"
+"model" "*28"
+}
+{
+"gndLt" "4d47479601"
+"ltOrigin" "2134.12 -3124.42 596.023"
+"targetname" "pf1743_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1743_1"
+"origin" "2134 -3123 566"
+"angles" "0 270 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "4d47479501"
+"ltOrigin" "2130.59 -3120.44 585.456"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1743_1"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "2134 -3126 568"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"gndLt" "49464a0000"
+"ltOrigin" "228.237 -2954.08 651.503"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"origin" "228 -2954 648"
+"targetname" "sab_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sab"
+"targetname" "sab_bomb_pickup_trig"
+"classname" "trigger_multiple"
+"origin" "228 -2954 648"
+"model" "?13"
+}
+{
+"classname" "trigger_use_touch"
+"targetname" "sab_bomb_axis"
+"script_gameobjectname" "sab"
+"target" "pf1745_auto1"
+"origin" "-1485 -2055 680"
+"model" "?14"
+}
+{
+"targetname" "sab_bomb_defuse_axis"
+"script_gameobjectname" "sab"
+"classname" "trigger_use_touch"
+"origin" "-1485 -2055 680"
+"model" "?15"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "-1484.88 -2053.42 700.023"
+"targetname" "pf1745_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1745_2"
+"origin" "-1485 -2052 670"
+"angles" "0 270 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "-1488.41 -2049.44 689.456"
+"script_gameobjectname" "sab"
+"script_exploder" "pf1745_2"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "-1485 -2055 672"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "-1484 -2052 700"
+"model" "*29"
+}
+{
+"origin" "2500 -3586 606"
+"angles" "0 142 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2616 -3562 606"
+"angles" "0 142 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2832 -3406 606"
+"angles" "0 142 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2796 -3486 606"
+"angles" "0 142 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2492 -3670 606"
+"angles" "0 132 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "2724 -3526 606"
+"angles" "0 152 0"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"origin" "-1929 -1643 676"
+"angles" "0 320 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-1855 -1631 676"
+"angles" "0 320 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-1973 -1695 676"
+"angles" "0 302 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-2061 -1741 684"
+"angles" "0 318 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-2059 -1829 684"
+"angles" "0 324 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-2047 -1645 684"
+"angles" "0 300 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"origin" "-2176 -2116 684"
+"angles" "0 320 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-2212 -2640 688"
+"angles" "0 5.00001 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-1966 -2856 688"
+"angles" "0 30 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-1148 -3156 672"
+"angles" "0 95 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-2042 -1646 684"
+"angles" "0 300 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"modelscale" "1.000000"
+"origin" "-128.8 -1803.1 672"
+"angles" "0 261.652 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "-1166 -1614 676"
+"angles" "0 245 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"origin" "2250 -1944 592"
+"angles" "0 215 0"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"origin" "1884 -3560 608"
+"angles" "0 45 0"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 139 0"
+"origin" "2762 -3568 606"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 220 0"
+"origin" "2832 -2794 604"
+}
+{
+"classname" "mp_sab_spawn_allies"
+"angles" "0 180 0"
+"origin" "1898 -2208 416"
+}
+{
+"gndLt" "4341473901"
+"ltOrigin" "-284 -2956.47 721.217"
+"csv_include" "destructible_vehicle_moving_truck"
+"destructible_type" "vehicle_moving_truck"
+"targetname" "destructible_vehicle"
+"origin" "-284 -2960 648"
+"model" "vehicle_moving_truck_destructible"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "3a393e0801"
+"ltOrigin" "-368.865 -2733.82 994.453"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "-366 -2745.8 647"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0 121.179 0"
+}
+{
+"modelscale" "1.306934"
+"classname" "mp_tdm_spawn"
+"angles" "0 210.087 0"
+"origin" "1402.5 -3963.8 603"
+}
+{
+"modelscale" "1.615710"
+"classname" "mp_tdm_spawn"
+"angles" "0 267.537 0"
+"origin" "-148 -1795.1 675"
+}
+{
+"modelscale" "1.000000"
+"origin" "1176.4 -2497.8 672"
+"angles" "0 135.154 0"
+"classname" "mp_dm_spawn"
+}
+{
+"modelscale" "1.000000"
+"origin" "-112.8 -1796.3 672"
+"angles" "0 229.105 0"
+"classname" "mp_dm_spawn"
+}
+{
+"modelscale" "1.000000"
+"origin" "-1056.6 -1576 672"
+"angles" "0 358.472 0"
+"classname" "mp_dm_spawn"
+}
+{
+"modelscale" "1.000000"
+"origin" "-1559 -2994.1 672"
+"angles" "0 258.794 0"
+"classname" "mp_dm_spawn"
+}
+{
+"modelscale" "1.000000"
+"origin" "838.9 -4176.8 600"
+"angles" "0 88.385 0"
+"classname" "mp_dm_spawn"
+}
+{
+"modelscale" "1.000000"
+"origin" "-1039.6 -1514.8 672"
+"angles" "0 326.792 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"modelscale" "1.000000"
+"origin" "-1569.2 -3069.3 672"
+"angles" "0 272.462 0"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_ctf_spawn_axis"
+"angles" "0 177.889 0.299772"
+"origin" "2292.7 -3948.8 600.1"
+}
+{
+"origin" "-2043 -1945 684"
+"angles" "0 324 0"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"modelscale" "1.000000"
+"origin" "-950.6 -3982 848"
+"angles" "0 20.82 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"modelscale" "1.000000"
+"origin" "191.3 -3637.3 656"
+"angles" "0 92.1472 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_sab_spawn_allies"
+"angles" "0.242706 184.006 -0.176293"
+"origin" "2291.2 -3950.2 600.1"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_sab_spawn_allies"
+"angles" "0 97.316 0"
+"origin" "828.2 -4149.6 600"
+}
+{
+"modelscale" "1.000000"
+"classname" "mp_sab_spawn_allies"
+"angles" "0 127.689 0"
+"origin" "1105.2 -3327.6 600"
+}
+{
+"modelscale" "1.000000"
+"origin" "1854 -1414.8 400"
+"angles" "0 229.045 0"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"modelscale" "1.000000"
+"origin" "1138.4 -1449.4 480"
+"angles" "0 307.479 0"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"modelscale" "1.000000"
+"origin" "1175.3 -2497.2 672"
+"angles" "0 119.122 0"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"modelscale" "1.000000"
+"origin" "-292.1 -2474.7 672"
+"angles" "0 15.7019 0"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"modelscale" "1.000000"
+"origin" "1882 -4036.7 602"
+"angles" "0 23.584 0"
+"classname" "mp_dm_spawn"
+}
+{
+"gndLt" "322f320000"
+"ltOrigin" "1345.37 -2414.49 802.603"
+"csv_include" "animated_models_foliage_tree_green_pine_lg_b"
+"precache_script" "maps animated_models foliage_tree_green_pine_lg_b"
+"targetname" "animated_model"
+"origin" "1331.3 -2405.1 455.7"
+"model" "foliage_tree_green_pine_lg_b_animated"
+"classname" "script_model"
+"angles" "0.406647 298.18 -0.975505"
+}
+{
+"script_label" "_a"
+"script_bombmode_original" "1"
+"target" "pf1750_auto1"
+"script_gameobjectname" "dd_bombzone"
+"targetname" "dd_bombzone"
+"classname" "trigger_use_touch"
+"origin" "1568 -1864 392"
+"model" "?16"
+}
+{
+"targetname" "pf1750_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "dd_bombzone"
+"origin" "1568 -1864 392"
+"model" "?17"
+}
+{
+"gndLt" "47433f8d01"
+"ltOrigin" "1564.59 -1858.44 401.556"
+"script_gameobjectname" "dd_bombzone"
+"script_exploder" "pf1750_1"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "1568 -1864 384.1"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "dd_bombzone"
+"classname" "script_brushmodel"
+"origin" "1569 -1862 412"
+"model" "*30"
+}
+{
+"gndLt" "4743409101"
+"ltOrigin" "1568.12 -1863.42 412.123"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 270 0"
+"origin" "1568 -1862 382.1"
+"script_exploder" "pf1750_1"
+"script_gameobjectname" "dd_bombzone"
+"spawnflags" "4"
+"targetname" "pf1750_auto1"
+"target" "pf1750_auto2"
+}
+{
+"script_label" "_b"
+"script_bombmode_original" "1"
+"target" "pf1751_auto1"
+"script_gameobjectname" "dd_bombzone"
+"targetname" "dd_bombzone"
+"classname" "trigger_use_touch"
+"origin" "-88 -2550 680"
+"model" "?18"
+}
+{
+"targetname" "pf1751_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "dd_bombzone"
+"origin" "-88 -2550 680"
+"model" "?19"
+}
+{
+"gndLt" "3c3a400000"
+"ltOrigin" "-87.8788 -2548.42 700.123"
+"target" "pf1751_auto2"
+"targetname" "pf1751_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "dd_bombzone"
+"script_exploder" "pf1751_2"
+"origin" "-88 -2547 670.1"
+"angles" "0 270 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3b410000"
+"ltOrigin" "-91.4056 -2544.44 689.556"
+"script_gameobjectname" "dd_bombzone"
+"script_exploder" "pf1751_2"
+"targetname" "exploder"
+"spawnflags" "4"
+"origin" "-88 -2550 672.1"
+"angles" "0 90 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "dd_bombzone"
+"classname" "script_brushmodel"
+"origin" "-87 -2547 700"
+"model" "*31"
+}
+{
+"classname" "mp_tdm_spawn_allies_start"
+"angles" "0 215 0"
+"origin" "1951.9 -1620.7 402"
+}
+{
+"classname" "mp_tdm_spawn_axis_start"
+"angles" "0 0 0"
+"origin" "-2406.2 -2414.8 680"
+}
+{
+"script_gameobjectname" "gtnw"
+"targetname" "gtnw_zone"
+"origin" "286 -3025 646"
+"height" "128"
+"radius" "80"
+"classname" "trigger_radius"
+}
+{
+"script_gameobjectname" "gtnw"
+"classname" "script_brushmodel"
+"origin" "286 -3025 674"
+"angles" "0 90 0"
+"model" "*30"
+}
+{
+"spawnflags" "4"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 0 0"
+"origin" "286 -3025 646"
+"script_exploder" "pf812_1"
+"script_gameobjectname" "gtnw"
+}

@@ -1,0 +1,122 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_controls"
+#define MENU_TITLE									"@MENU_CONTROLS"
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_game"; \
+	close "pc_options_look"; \
+	close "pc_options_movement"; \
+	close "pc_options_multi"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	setLocalVarBool									"ui_hideBack" (1); \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setFocus										"buttonControls";
+
+#define ON_MENU_CLOSE \
+	setLocalVarBool "ui_hideBack" (0);
+
+#define ON_MENU_ESC \
+	close self; \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	{ \
+		execnow										"setfromdvar r_picmip ui_r_picmip"; \
+		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
+		execnow										"setfromdvar r_picmip_spec ui_r_picmip_spec"; \
+		execnow										"setfromdvar r_picmip_manual ui_r_picmip_manual"; \
+		exec										"wait; wait; r_applyPicmip"; \
+		setLocalVarBool								"ui_showPicApply" (0); \
+	} \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	{ \
+		open										"all_restart_popmenu"; \
+	} \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define SIDEBAR_RIGHT
+	#include "ui_mp/bg.inc"
+
+	#include "ui_mp/leftside_options.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_BUTTON_RIGHT(0, "buttonMovement", "@MENU_MOVEMENT", open "pc_options_movement"; close self;)
+	PC_OPTIONS_BUTTON_RIGHT(1, "buttonActions", "@MENU_ACTIONS", open "pc_options_actions"; close self;)
+	PC_OPTIONS_BUTTON_RIGHT(2, "buttonLook", "@MENU_LOOK", open "pc_options_look"; close self;)
+	PC_OPTIONS_BUTTON_RIGHT(3, "buttonChat", "@MENU_CHAT", open "controls_multi"; close self;)
+
+	PC_OPTIONS_SEPERATOR(3)
+
+	itemDef
+	{
+		rect										302 CHOICE_Y(4) 225 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		style										WINDOW_STYLE_FILLED
+		type										ITEM_TYPE_BUTTON
+		foreColor									CHOICE_TEXTCOLOR
+		disableColor								0.6 0.55 0.55 1
+		background									"menu_setting_selection_bar"
+		textFont									UI_FONT_SMALL
+		textAlign									ITEM_ALIGN_TOP_LEFT
+		textAlignX									60
+		textScale									CHOICE_TEXTSIZE
+		text										"@MENU_RESTORE_DEFAULT_CONTROLS"
+		visible										1
+		mouseEnter
+		{
+			play									CHOICE_FOCUS_SOUND;
+		}
+		onFocus
+		{
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						ui_hint_text("@NULL_EMPTY");
+			setLocalVarFloat						ui_popupYPos (getFocusedItemY());
+		}
+		leaveFocus
+		{
+			setItemColor							self backColor 0 0 0 0;
+			setLocalVarString						ui_hint_text("@NULL_EMPTY");
+		}
+		action
+		{
+			play									CHOICE_CLICK_SOUND;
+			open									"options_control_defaults";
+		}
+	}
+}

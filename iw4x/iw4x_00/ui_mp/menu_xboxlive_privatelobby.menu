@@ -1,0 +1,11 @@
+{
+	menuDef
+	{
+		name			menu_xboxlive_privatelobby
+		fullscreen		1
+		rect			0 0 640 480
+		onOpen
+		{
+			open "createserver";
+		}
+}  

@@ -1,0 +1,71 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/popup.inc"
+
+#define MENU_NAME									"popup_customtitle"
+#define	MENU_TITLE									"@MENU_CUSTOM_TITLE"
+
+#define POPMENU_POS_X								-150
+#define POPMENU_POS_Y								-84
+
+#define POPMENU_WIDTH								300
+#define POPMENU_HEIGHT								84
+
+#define POPMENU_RECT								POPMENU_POS_X POPMENU_POS_Y POPMENU_WIDTH POPMENU_HEIGHT HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+
+#define ITEM_NAMEENTRY \
+	itemDef \
+	{ \
+		name										"customtitleEntry" \
+		rect										10 32 (POPMENU_WIDTH - 20) 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER \
+		style										WINDOW_STYLE_FILLED \
+		foreColor									CHOICE_TEXTCOLOR \
+		backColor									0 0 0 0.3 \
+		type										ITEM_TYPE_EDITFIELD \
+		textFont									UI_FONT_SMALL \
+		textAlignX									5 \
+		textAlignY									18 \
+		textScale									CHOICE_TEXTSIZE \
+		visible										1 \
+		text										" " \
+		dvar										"customtitle" \
+		maxChars									15 \
+		maxPaintChars								15 \
+		accept \
+		{ \
+			close									self; \
+		} \
+	}
+
+#define ON_MENU_OPEN \
+	setLocalVarInt									"ui_centerPopup" (1); \
+	setFocus										"customtitleEntry";
+
+#define ON_MENU_CLOSE \
+	setLocalVarInt									"ui_centerPopup" (0);
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	rect											POPMENU_RECT
+	popup
+	legacySplitScreenScale
+	style											WINDOW_STYLE_FILLED
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	backColor										1 1 1 1
+	background										"white"
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	POPUP_BACKGROUND_BASE
+	POPUP_TITLE2(MENU_TITLE)
+
+	ITEM_NAMEENTRY
+
+	POPUP_BUTTON_FOOTER(64, "@MENU_CLOSE", close self;)
+}

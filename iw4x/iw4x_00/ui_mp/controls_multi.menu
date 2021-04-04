@@ -1,0 +1,70 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"controls_multi"
+#define MENU_TITLE									"@MENU_CHAT"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CLOSE_MENUS \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_game"; \
+	close "pc_options_look"; \
+	close "pc_options_movement"; \
+	close "pc_options_multi"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	setLocalVarBool									"ui_hideBack" (1); \
+	setLocalVarBool									ui_hint_display 0;
+
+#define ON_MENU_CLOSE \
+	setLocalVarBool									"ui_hideBack" (0); \
+	open											"pc_options_controls";
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define DISABLE_SIDEBAR
+	#define BACKGROUND_FULL
+	#include "ui_mp/bg.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_KEYBINDING(0, "@MENU_TEXT_CHAT", "chatmodepublic")
+	PC_OPTIONS_KEYBINDING(1, "@MENU_TEXT_TEAM_CHAT", "chatmodeteam")
+	PC_OPTIONS_KEYBINDING(2, "@MENU_QUICK_CHAT", "mp_QuickMessage")
+
+	PC_OPTIONS_KEYBINDSTATUS
+
+	ITEM_BUTTON_BACK(ON_MENU_ESC)
+}

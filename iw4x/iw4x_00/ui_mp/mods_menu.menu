@@ -1,0 +1,127 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define MENU_NAME									"mods_menu"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									"@MENU_MODS_CAPS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CHOICE_Y(i)									(28 + (i * 20))
+#define CHOICE_ORIGIN(i)							-64 CHOICE_Y(i)
+#define CHOICE_RECT(i)								CHOICE_ORIGIN(i) 336 20 ITEM_ALIGN_CENTER ITEM_ALIGN_CENTER
+
+#define HR_ORIGIN(i)								0 (CHOICE_Y(i) - 0.5)
+#define HR_RECT(i)									HR_ORIGIN(i) 216 ITEM_ALIGN_CENTER ITEM_ALIGN_CENTER 1
+
+#define ON_MENU_OPEN \
+	setLocalVarString								ui_info_name ""; \
+	setLocalVarString								ui_info_desc ""; \
+	setLocalVarString								ui_info_icon ""; \
+	uiScript										"LoadMods";
+	setFocus										"modlist";
+
+#define MENU_MODS_BUTTON_VIS(nameArg, yPos, textArg, actionArg, visArg) \
+	itemDef \
+	{ \
+		name										nameArg \
+		rect										-292 yPos 292 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_BOTTOM \
+		style										WINDOW_STYLE_FILLED \
+		backColor									0.6 0.55 0.55 0.2 \
+		foreColor									CHOICE_TEXTCOLOR \
+		textFont									CHOICE_TEXTFONT \
+		textAlign									ITEM_ALIGN_TOP_RIGHT \
+		textAlignX									-40 \
+		textScale									CHOICE_TEXTSIZE \
+		background									"menu_setting_selection_bar" \
+		group										"mw2_button" \
+		type										ITEM_TYPE_BUTTON \
+		text										textArg \
+		visible										visArg \
+		onFocus \
+		{ \
+			play									CHOICE_FOCUS_SOUND; \
+			setItemColor							self backColor 0 0 0 1; \
+		} \
+		leaveFocus \
+		{ \
+			setItemColor							self backColor 0.6 0.55 0.55 0.2; \
+		} \
+		action \
+		{ \
+			play									CHOICE_CLICK_SOUND; \
+			actionArg								\
+		} \
+	}
+
+#undef MENU_ITEM_TITLE
+#define MENU_ITEM_TITLE(posX) \
+	itemDef \
+	{ \
+		rect 0 4 210 28 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		foreColor CHOICE_TEXTCOLOR \
+		decoration \
+		textAlign ITEM_ALIGN_TOP_RIGHT \
+		textAlignX -60 \
+		textScale 0.5 \
+		textFont 9 \
+		text MENU_TITLE \
+		visible 1 \
+		exp rect x (posX) \
+	}
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_ESC(close self;)
+
+	#define DISABLE_SIDEBAR
+	#include "ui_mp/bg.inc"
+
+	MENU_ITEM_TITLE(-80)
+	MENU_BACKGROUND_FRAME
+	MENU_BACKGROUND_PANEL_RIGHT
+
+	itemDef
+	{
+		name										"modlist"
+		rect										0 28 210 356 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		style										WINDOW_STYLE_FILLED
+		foreColor									CHOICE_TEXTCOLOR
+		backColor									0 0 0 0.5
+		outlineColor								0 0 0 0.6
+		type										ITEM_TYPE_LISTBOX
+		textFont									CHOICE_TEXTFONT
+		textAlignX									6
+		textScale									CHOICE_TEXTSIZE
+		feeder										FEEDER_MODS
+		selectBorder								0.8 0.95 1 0
+		elementWidth								120
+		elementHeight								22
+		visible										1
+//		numcols			xpos		xwidth		textlen		alignment
+		columns 1		8			120			25			0
+		doubleClick
+		{
+			uiScript "RunMod";
+		}
+		MENU_EXEC_KEYINT(13, uiScript "RunMod";)
+	}
+
+	MENU_MODS_BUTTON_VIS("loadMod", -48, "@MENU_LAUNCH", uiScript "RunMod", when (dvarstring("fs_game") == ""))
+	MENU_MODS_BUTTON_VIS("loadMod", -68, "@MENU_LAUNCH", uiScript "RunMod", when (dvarstring("fs_game") != ""))
+	MENU_MODS_BUTTON_VIS("unloadMod", -48, "@MENU_LAUNCH_WITHOUT_MODS", uiScript "ClearMods", when (dvarstring("fs_game") != ""))
+
+	ITEM_BUTTON_BACK(close self;)
+}

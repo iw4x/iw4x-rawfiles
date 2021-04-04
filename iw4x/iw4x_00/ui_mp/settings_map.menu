@@ -1,0 +1,124 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+
+#define MENU_NAME									"settings_map"
+#define MENU_MUSIC									"music_mainmenu_mp"
+#define MENU_TITLE									"@MENU_CHOOSE_MAP_CAP"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#undef MENU_BACKGROUND_PANEL_RIGHT
+#define MENU_BACKGROUND_PANEL_RIGHT \
+	itemDef \
+	{ \
+		rect										(0 - MENU_BACKGROUND_PANEL_RIGHT_WIDTH) 28 MENU_BACKGROUND_PANEL_RIGHT_WIDTH MENU_BACKGROUND_PANEL_RIGHT_HEIGHT HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									0 0 0 0.7 \
+		background									"black" \
+		decoration									\
+		textScale									0.55 \
+		visible										1 \
+	} \
+	itemDef \
+	{ \
+		name										"image" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 50 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 127 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		style										WINDOW_STYLE_SHADER \
+		foreColor									1 1 1 1 \
+		decoration									\
+		textScale									0.55 \
+		visible										1 \
+		exp											material ("preview_" + dvarString("ui_map_name")) \
+	} \
+	itemDef \
+	{ \
+		name										"longname" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 28 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 22 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									CHOICE_TEXTCOLOR \
+		decoration									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									9 \
+		visible										1 \
+		exp											text (dvarString("ui_map_long")) \
+	} \
+	itemDef \
+	{ \
+		name										"description" \
+		rect										(0 - (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 10)) 180 (MENU_BACKGROUND_PANEL_RIGHT_WIDTH - 20) 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
+		foreColor									1 1 1 0.65 \
+		decoration									\
+		autoWrapped									\
+		textAlign									ITEM_ALIGN_TOP_LEFT \
+		textScale									CHOICE_TEXTSIZE \
+		textFont									UI_FONT_SMALL \
+		visible										1 \
+		exp											text (dvarString("ui_map_desc")) \
+	}
+
+#define ON_MENU_OPEN \
+	focusFirst;										\
+	uiScript										"ApplyInitialMap";
+
+#define ON_MENU_CLOSE \
+	execNow											"xupdatepartystate";
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	fullscreen										1
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	soundLoop										MENU_MUSIC
+	fadeCycle										1
+	fadeClamp										1
+	fadeAmount										0.1
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define DISABLE_SIDEBAR
+	#include "ui_mp/bg.inc"
+
+	MENU_ITEM_TITLE(10)
+	MENU_BACKGROUND_FRAME
+	MENU_BACKGROUND_PANEL_RIGHT
+
+	itemDef
+	{
+		name										"maplist"
+		rect										62 28 210 356 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		style										WINDOW_STYLE_FILLED
+		foreColor									CHOICE_TEXTCOLOR
+		outLineColor								0 0 0 0.6
+		type										ITEM_TYPE_LISTBOX
+		textFont									UI_FONT_NORMAL
+		textAlignX									6
+		textScale									CHOICE_TEXTSIZE
+		visible										1
+		feeder										60
+		selectBorder								0.8 0.95 1 0
+		elementWidth								120
+		elementHeight								22
+//		numcols			xpos		xwidth		textlen		alignment
+		columns 1		8			120			25			0
+		doubleClick
+		{
+			uiScript								"ApplyMap";
+			close									self;
+		}
+		execkeyint 13
+		{
+			uiScript								"ApplyMap";
+			close									self;
+		}
+	}
+
+	ITEM_BUTTON_BACK(close self;)
+}

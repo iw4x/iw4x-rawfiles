@@ -1,0 +1,73 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/popup.inc"
+
+#define MENU_NAME									"popup_friends"
+#define	MENU_TITLE									"@MENU_FRIENDS"
+
+#define POPMENU_POS_X								-250
+#define POPMENU_POS_Y								-184
+
+#define POPMENU_WIDTH								520
+#define POPMENU_HEIGHT								370
+
+#define POPMENU_RECT								POPMENU_POS_X POPMENU_POS_Y POPMENU_WIDTH POPMENU_HEIGHT HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+
+#define ON_MENU_OPEN \
+	uiScript										"LoadFriends"; \
+	setLocalVarInt									"ui_centerPopup" (1);
+
+#define ON_MENU_CLOSE \
+	setLocalVarInt									"ui_centerPopup" (0);
+
+#define ON_MENU_ESC \
+	close											self;
+
+#define ON_EXEC_KEY_F \
+	escape											self;
+
+menuDef
+{
+	name											MENU_NAME
+	rect											POPMENU_RECT
+	popup
+	legacySplitScreenScale
+	style											WINDOW_STYLE_FILLED
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	backColor										1 1 1 1
+	background										"white"
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+	MENU_EXEC_KEY("f", ON_MENU_ESC)
+
+	POPUP_BACKGROUND_BASE
+	POPUP_TITLE(MENU_TITLE)
+
+	itemDef
+	{
+		name										"friendsList"
+		rect										0 22 POPMENU_WIDTH 326
+		type										ITEM_TYPE_LISTBOX
+		style										WINDOW_STYLE_FILLED
+		elementWidth								120
+		elementHeight								16
+		textFont									UI_FONT_NORMAL
+		foreColor									CHOICE_TEXTCOLOR
+		backColor									0 0 0 0.5
+		outlineColor								0 0 0 0.6
+		textScale									.25
+		feeder										61
+		visible										1
+//		numcols			xpos		xwidth		textlen		alignment
+		columns 3		8			16			4			0
+						42			178			51			0
+						226			263			52			0
+		doubleClick
+		{
+			uiScript								"JoinFriend";
+		}
+	}
+	POPUP_BUTTON_FOOTER(350, "@MENU_CLOSE", close self;)
+}

@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+html,
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: none;
+    text-align: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+	 background-image: url("img/background_default.png");
+    color: #fafafa;
+}
+
+body> h1,
+body> table,
+body thead,
+body tr,
+body th {
+    margin: auto;
+    text-align: center;
+}
+
+body> table {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid rgba(250, 250, 250, 0.6);
+    background-color: rgba(100, 100, 100, 0.4);
+    border: none;
+}
+
+body th,
+body td {
+    width: 33%;
+    border: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+body th {
+    font-size: 20px;
+}
+
+#header {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#connect {
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    color: #fafafa;
+    background-color: rgba(100, 100, 100, 0.4);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 24px;
+}
+
+#connect:hover {
+    color: black;
+    background-color: transparent;
+}
+
+#serverinfo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#serverinfo td {
+    padding-left: 10px;
+    text-align: left;
+}
+
+#playertable {
+    margin-top: 40px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fafafa;
+}
+
+#footer:hover {
+    color: black;
+}

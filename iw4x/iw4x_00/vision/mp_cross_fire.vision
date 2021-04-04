@@ -1,0 +1,13 @@
+r_glow                    "1"
+r_glowRadius0             "7"
+r_glowBloomCutoff         "0.99"
+r_glowBloomDesaturation   "0.64999"
+r_glowBloomIntensity0     "0.36"
+ 
+r_filmEnable              "1"
+r_filmContrast            "1.55798"
+r_filmBrightness          "0.265218"
+r_filmDesaturation        "0.5"
+r_filmInvert              "0"
+r_filmLightTint           "1.2209 1.25 1.31"
+r_filmDarkTint            "1.08003 1.08 1.13691"

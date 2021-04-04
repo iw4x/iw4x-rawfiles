@@ -1,0 +1,92 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_look"
+#define MENU_TITLE									"@MENU_LOOK"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_game"; \
+	close "pc_options_movement"; \
+	close "pc_options_multi"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	setLocalVarBool									"ui_hideBack" (1); \
+	setLocalVarBool									ui_hint_display 0;
+
+#define ON_MENU_CLOSE \
+	setLocalVarBool									"ui_hideBack" (0); \
+	open											"pc_options_controls";
+
+#define ON_MENU_ESC \
+	close											self;
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define DISABLE_SIDEBAR
+	#define BACKGROUND_FULL
+	#include "ui_mp/bg.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	itemDef
+	{
+		rect										422 28 344 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+		decoration
+		visible										1
+		foreColor									CHOICE_TEXTCOLOR
+		disableColor								0.6 0.55 0.55 1
+		textFont									UI_FONT_SMALL
+		textAlign									ITEM_ALIGN_TOP_RIGHT
+		textAlignX									-190
+		textScale									CHOICE_TEXTSIZE
+		exp											text(dvarString("sensitivity"))
+	}
+
+	PC_OPTIONS_DVARSLIDER(0, "@MENU_MOUSE_SENSITIVITY", "sensitivity", 0.01, 100, 5, ;, ;, ;, when(0))
+	PC_OPTIONS_DVARYESNO(1, "@MENU_INVERT_MOUSE", "ui_mousePitch", uiscript updateui_mousePitch;, when(0))
+
+	PC_OPTIONS_SEPERATOR(1)
+
+	PC_OPTIONS_DVARYESNO(2, "@MENU_SMOOTH_MOUSE", "m_filter", ;, when(0))
+	PC_OPTIONS_DVARYESNO(3, "@MENU_FREE_LOOK", "cl_freelook", ;, when(0))
+	PC_OPTIONS_KEYBINDING(4, "@MENU_LOOK_UP", "+lookup")
+	PC_OPTIONS_KEYBINDING(5, "@MENU_LOOK_DOWN", "+lookdown")
+	PC_OPTIONS_KEYBINDING(6, "@MENU_HOLD_MOUSE_LOOK", "+mlook")
+	PC_OPTIONS_KEYBINDING(7, "@MENU_CENTER_VIEW", "centerview")
+
+	PC_OPTIONS_KEYBINDSTATUS
+
+	ITEM_BUTTON_BACK(ON_MENU_ESC)
+}

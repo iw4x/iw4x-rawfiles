@@ -1,0 +1,1646 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//								IW4x playlists_default.info								//
+//////////////////////////////////////////////////////////////////////////////////////////
+//		Note: Deleting gametype scripts may cause broken playlist. Always check			//
+//		and make sure no playlist errors on the console_mp.log once you edit it.		//
+//																						//
+//	--LIMITS--																			//
+//	32 Gametypes																		//
+//	23 playlists																		//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////
+//	Free For All Function Script	//
+//////////////////////////////////////
+
+gametype ffa										//	Function for the playlist rotation.
+name english "Free-for-all"							//	Name of the gametype.
+script dm											//	Real gametype.
+rule scr_dm_scorelimit 10000						//	Score limit to win the game.
+rule scr_dm_timelimit 15							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dm_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dm_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_dm_promode 0
+
+gametype hc_ffa										//	Function for the playlist rotation.
+name english "Hardcore Free-for-all"				//	Name of the gametype.	
+script dm											//	Real gametype.
+hardcore
+rule scr_dm_scorelimit 10000						//	Score limit to win the game.
+rule scr_dm_timelimit 15							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dm_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dm_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_dm_promode 0
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule set scr_dm_playerrespawndelay -1				//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+
+//////////////////////////////////////
+//	Team Deathmatch Function Script	//
+//////////////////////////////////////
+
+gametype tdm										//	Function for the playlist rotation.
+name english "Team Deathmatch"						//	Name of the gametype.
+name french "Match à mort par équipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+script war											//	Real gametype.
+teambased
+rule scr_thirdperson 0								//	3rd person
+rule scr_war_scorelimit 12000						//	Score limit to win the game.
+rule scr_war_timelimit 20							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_war_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_war_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_war_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_war_promode 0
+rule scr_diehard 0									//	Die hard mode.
+rule scr_war_roundlimit 1							//	Rounds per game.
+rule scr_war_winlimit 1								//	Amount of wins needed to win a round-based game
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+
+gametype die_tdm									//	Function for the playlist rotation.
+name english "Die-Hard Team Deathmatch"				//	Name of the gametype.
+script war											//	Real gametype.
+teambased
+rule scr_war_scorelimit 12000						//	Score limit to win the game.
+rule scr_war_timelimit 20							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_war_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_war_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_war_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_war_promode 0
+rule scr_thirdperson 0								//	3rd person
+rule scr_diehard 1									//	Die hard mode.
+rule scr_war_roundlimit 1							//	Rounds per game.
+rule scr_war_winlimit 1								//	Amount of wins needed to win a round-based game
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+
+gametype hc_tdm										//	Function for the playlist rotation.
+name english "Hardcore Team Deathmatch"				//	Name of the gametype.
+script war											//	Real gametype.
+teambased
+hardcore
+rule scr_war_scorelimit 12000						//	Score limit to win the game.
+rule scr_war_timelimit  20							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared				
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_war_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_war_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+
+
+//////////////////////////////////
+//	Domination Function Script	//
+//////////////////////////////////
+
+gametype dom										//	Function for the playlist rotation.
+name english "Domination"							//	Name of the gametype.
+script dom											//	Real gametype.
+teambased
+rule scr_dom_scorelimit 200							//	Score limit to win the game.
+rule scr_dom_timelimit 60							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dom_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dom_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_dom_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_dom_promode 0
+rule scr_dom_roundlimit 1							//	Rounds per game
+rule scr_dom_winlimit 1								//	Amount of wins needed to win a round-based game
+
+gametype die_dom									//	Function for the playlist rotation.
+name english "Die-Hard Domination"					//	Name of the gametype.
+script dom											//	Real gametype.
+teambased
+rule scr_diehard 1									//	Die hard mode.
+rule scr_dom_scorelimit 200							//	Score limit to win the game.
+rule scr_dom_timelimit 60							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dom_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dom_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_dom_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_dom_promode 0
+rule scr_dom_roundlimit 1							//	Rounds per game
+rule scr_dom_winlimit 1								//	Amount of wins needed to win a round-based game
+
+gametype hc_dom										//	Function for the playlist rotation.
+name english "Hardcore Domination"					//	Name of the gametype.
+script dom											//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared				
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_dom_scorelimit 200							//	Score limit to win the game.
+rule scr_dom_timelimit 60							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dom_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dom_waverespawndelay 0						//	Duration is seconds before the first respawn in each round.
+rule scr_dom_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_dom_promode 0
+rule scr_dom_roundlimit 1							//	Rounds per game
+rule scr_dom_winlimit 1								//	Amount of wins needed to win a round-based game
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+
+
+//////////////////////////////////////
+//	Headquarters Function Script	//
+//////////////////////////////////////
+
+gametype hq											//	Function for the playlist rotation.
+name english "Headquarters"							//	Name of the gametype.
+script koth											//	Real gametype.
+teambased
+rule scr_koth_scorelimit 250						//	Score limit to win the game.
+rule scr_koth_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_koth_numlives 0							//	Number of lives per game. 0 for unlimited.
+rule scr_koth_playerrespawndelay "0"				//	Players respawn wait.
+rule scr_koth_roundlimit 1							//	Rounds to be played.
+rule scr_koth_Roundswitch 1							//	Rounds to be played before teams switch sides.
+rule scr_koth_winlimit 1							//	Rounds per game
+rule scr_koth_waverespawndelay 0					//	First respawn delay for each round.
+rule koth_promode 0
+
+gametype die_hq										//	Function for the playlist rotation.
+name english "Die-Hard Headquarters"				//	Name of the gametype.
+script koth											//	Real gametype.
+teambased
+rule scr_diehard 1									//	Die hard mode.
+rule scr_koth_scorelimit 250						//	Score limit to win the game.
+rule scr_koth_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_koth_numlives 0							//	Number of lives per game. 0 for unlimited.
+rule scr_koth_playerrespawndelay 0					//	Players respawn wait.
+rule scr_koth_roundlimit 1							//	Rounds to be played.
+rule scr_koth_Roundswitch 1							//	Rounds to be played before teams switch sides.
+rule scr_koth_winlimit 1							//	Rounds per game
+rule scr_koth_waverespawndelay 0					//	First respawn delay for each round.
+rule koth_promode 0
+
+gametype hq_pro										//	Function for the playlist rotation.
+name english "Headquarters Pro"						//	Name of the gametype.
+script koth											//	Real gametype.
+teambased
+rule koth_spawntime 30
+rule scr_koth_scorelimit 200						//	Score limit to win the game.
+rule scr_koth_timelimit 20							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_koth_numlives 0							//	Number of lives per game. 0 for unlimited.
+rule scr_koth_playerrespawndelay 0					//	Players respawn wait.
+rule scr_koth_roundlimit 1							//	Rounds to be played.
+rule scr_koth_Roundswitch 1							//	Rounds to be played before teams switch sides.
+rule scr_koth_winlimit 1							//	Rounds per game
+rule scr_koth_waverespawndelay 0					//	First respawn delay for each round.
+rule koth_promode 0
+
+gametype hc_hq										//	Function for the playlist rotation.
+name english "Hardcore Headquarters"				//	Name of the gametype.
+script koth											//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared				
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_koth_scorelimit 250						//	Score limit to win the game.
+rule scr_koth_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_koth_numlives 0							//	Number of lives per game. 0 for unlimited.
+rule scr_koth_playerrespawndelay 0					//	Players respawn wait.
+rule scr_koth_roundlimit 1							//	Rounds to be played.
+rule scr_koth_Roundswitch 1							//	Rounds to be played before teams switch sides.
+rule scr_koth_winlimit 1							//	Rounds per game
+rule scr_koth_waverespawndelay 0					//	First respawn delay for each round.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule koth_promode 0
+
+//////////////////////////////////
+//	Sabotage Function Script	//
+//////////////////////////////////
+
+gametype sab										//	Function for the playlist rotation.
+name english "Sabotage"								//	Name of the gametype.
+script sab											//	Real gametype.
+teambased
+rule scr_sab_bombtimer 45							//	Duration in seconds the bomb takes to detonate.
+rule scr_sab_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sab_hotpotato 0							//	One bomb that the teams must fight over. One defending and one have to plant at the site.
+rule scr_sab_numlives 0								//	Number of lives players get.
+rule scr_sab_planttime 2.5							//	Time taken to plant the bomb.
+rule scr_sab_playerrespawndelay 7.5					//	Time before respawn.
+rule scr_sab_roundlimit 1							//	Rounds per game.
+rule scr_sab_Roundswitch 1							//	Rounds needed to be played before the teams switch sides.
+rule scr_sab_scorelimit 0							//	Score limit to win the match.
+rule scr_sab_timelimit 20							//	Duration in minutes the game lasts if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_sab_waverespawndelay 0						//	Time delay for first respawn before the game.
+rule scr_sab_promode 0
+
+gametype die_sab									//	Function for the playlist rotation.
+name english "Die-Hard Sabotage"					//	Name of the gametype.
+script sab											//	Real gametype.
+teambased
+rule scr_diehard 1									//	Die hard mode.
+rule scr_sab_bombtimer 45							//	Duration in seconds the bomb takes to detonate.
+rule scr_sab_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sab_hotpotato 0							//	One bomb that the teams must fight over. One defending and one have to plant at the site.
+rule scr_sab_numlives 0								//	Number of lives players get.
+rule scr_sab_planttime 2.5							//	Time taken to plant the bomb.
+rule scr_sab_playerrespawndelay 7.5					//	Time before respawn.
+rule scr_sab_roundlimit 1							//	Rounds per game.
+rule scr_sab_Roundswitch 1							//	Rounds needed to be played before the teams switch sides.
+rule scr_sab_scorelimit 0							//	Score limit to win the match.
+rule scr_sab_timelimit 20							//	Duration in minutes the game lasts if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_sab_waverespawndelay 0						//	Time delay for first respawn before the game.
+rule scr_sab_promode 0
+
+gametype hc_sab										//	Function for the playlist rotation.
+name english "Hardcore Sabotage"					//	Name of the gametype.
+script sab											//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared				
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_sab_bombtimer 45							//	Duration in seconds the bomb takes to detonate.
+rule scr_sab_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sab_hotpotato 0							//	One bomb that the teams must fight over. One defending and one have to plant at the site.
+rule scr_sab_numlives 0								//	Number of lives players get.
+rule scr_sab_planttime 2.5							//	Time taken to plant the bomb.
+rule scr_sab_playerrespawndelay 7.5					//	Time before respawn.
+rule scr_sab_roundlimit 1							//	Rounds per game.
+rule scr_sab_Roundswitch 1							//	Rounds needed to be played before the teams switch sides.
+rule scr_sab_scorelimit 0							//	Score limit to win the match.
+rule scr_sab_timelimit 20							//	Duration in minutes the game lasts if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_sab_waverespawndelay 0						//	Time delay for first respawn before the game.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_sab_promode 0
+
+//////////////////////////////////////////
+//	Search and Destroy Function Script	//
+//////////////////////////////////////////
+
+gametype sd											//	Function for the playlist rotation.
+name english "Search and Destroy"					//	Name of the gametype.
+script sd											//	Real gametype.
+teambased
+rule scr_sd_scorelimit 1							//	Score limit required to win the game.
+rule scr_sd_timelimit 2.5							//	Time limit if the score limit isn't reached
+rule scr_thirdperson 0								//	3rd person
+rule scr_sd_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_sd_waverespawndelay 0						//	Delay for first respawn.
+rule scr_sd_numlives 1								//	Number of lives per player per game.
+rule scr_sd_roundlimit 0							//	Rounds the game is limited to 0 for unlimited.
+rule scr_sd_winlimit 4								//	Amount of wins needed to win a round-based game
+rule scr_sd_Roundswitch 1							//	After X Rounds, switch sides
+rule scr_sd_bombtimer 45							//	Time taken for the bomb to detonate.
+rule scr_sd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sd_multibomb 0								//	Allow multiple people to 'have the bomb'
+rule scr_sd_planttime 5
+rule scr_sd_promode 0
+
+gametype die_sd										//	Function for the playlist rotation.
+name english "Die Hard Search and Destroy"			//	Name of the gametype.
+script sd											//	Real gametype.
+teambased
+set scr_diehard 1									//	Die Hard
+rule scr_sd_scorelimit 1							//	Score limit required to win the game.
+rule scr_sd_timelimit 2.5							//	Time limit if the score limit isn't reached
+rule scr_thirdperson 0								//	3rd person
+rule scr_sd_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_sd_waverespawndelay 0						//	Delay for first respawn.
+rule scr_sd_numlives 1								//	Number of lives per player per game.
+rule scr_sd_roundlimit 0							//	Rounds the game is limited to 0 for unlimited.
+rule scr_sd_winlimit 4								//	Amount of wins needed to win a round-based game
+rule scr_sd_Roundswitch 1							//	After X Rounds, switch sides
+rule scr_sd_bombtimer 45							//	Time taken for the bomb to detonate.
+rule scr_sd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sd_multibomb 0								//	Allow multiple people to 'have the bomb'
+rule scr_sd_planttime 5
+rule scr_sd_promode 0
+
+gametype hc_sd										//	Function for the playlist rotation.
+name english "Hardcore Search and Destroy"			//	Name of the gametype.
+script sd											//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_sd_scorelimit 1							//	Score limit required to win the game.
+rule scr_sd_timelimit 2.5							//	Time limit if the score limit isn't reached
+rule scr_thirdperson 0								//	3rd person
+rule scr_sd_playerrespawndelay -1					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_sd_waverespawndelay 0						//	Delay for first respawn.
+rule scr_sd_numlives 1								//	Number of lives per player per game.
+rule scr_sd_roundlimit 0							//	Rounds the game is limited to 0 for unlimited.
+rule scr_sd_winlimit 4								//	Amount of wins needed to win a round-based game
+rule scr_sd_Roundswitch 1							//	After X Rounds, switch sides
+rule scr_sd_bombtimer 45							//	Time taken for the bomb to detonate.
+rule scr_sd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_sd_multibomb 0								//	Allow multiple people to 'have the bomb'
+rule scr_sd_planttime 5		
+rule scr_sd_promode 0
+
+//////////////////////////////
+//	Arena Function Script	//
+//////////////////////////////
+
+gametype arena										//	Function for the playlist rotation.
+name english "Arena"								//	Name of the gametype.
+script arena										//	Real gametype.
+teambased
+rule scr_arena_scorelimit 1							//	Score limit to win the game.
+rule scr_arena_timelimit 2.5						//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_arena_numlives 1							//	Number of lives per game 0 for unlimited.
+rule scr_arena_roundlimit 0							//	Rounds to be played.
+rule scr_arena_Roundswitch 3						//	Rounds before the teams switch sides.
+rule scr_arena_winlimit 4							//	Rounds per game
+rule scr_arena_promode 0
+
+gametype die_arena									//	Function for the playlist rotation.
+name english "Die-Hard Arena"						//	Name of the gametype.
+script arena										//	Real gametype.
+teambased
+set scr_diehard 1									//	Die Hard
+rule scr_arena_scorelimit 1							//	Score limit to win the game.
+rule scr_arena_timelimit 2.5						//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_arena_numlives 1							//	Number of lives per game 0 for unlimited.
+rule scr_arena_roundlimit 0							//	Rounds to be played.
+rule scr_arena_Roundswitch 3						//	Rounds before the teams switch sides.
+rule scr_arena_winlimit 4							//	Rounds per game
+rule scr_arena_promode 0
+
+gametype hc_arena									//	Function for the playlist rotation.
+name english "Hardcore Arena"						//	Name of the gametype.
+script arena										//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_arena_scorelimit 1							//	Score limit to win the game.
+rule scr_arena_timelimit 2.5						//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_arena_numlives 1							//	Number of lives per game 0 for unlimited.
+rule scr_arena_roundlimit 0							//	Rounds to be played.
+rule scr_arena_Roundswitch 3						//	Rounds before the teams switch sides.
+rule scr_arena_winlimit 4							//	Rounds per game
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_arena_promode 0
+
+//////////////////////////////////
+//	Demolition Function Script	//
+//////////////////////////////////
+
+gametype dd											//	Function for the playlist rotation.
+name english "Demolition"							//	Name of the gametype.
+script dd											//	Real gametype.
+teambased
+rule scr_dd_Roundswitch 1							//	Rounds before the teams switch the sides.
+rule scr_dd_scorelimit 2							//	Score limit needed to win.
+rule scr_dd_bombtimer 45							//	Time the bomb takes to detonate.
+rule scr_dd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_dd_extratime 3
+rule scr_dd_numlives 0								//	Lives per player 0 for unlimited.
+rule scr_dd_planttime 5								//	Time it takes to plant a bomb in seconds.
+rule scr_dd_roundlimit 3							//	Rounds the game is limited to, if there are no winners.
+rule scr_dd_timelimit 2.5							//	Round time limit.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dd_playerrespawndelay 0					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dd_promode 0
+
+gametype die_dd										//	Function for the playlist rotation.
+name english "Die-hard Demolition"					//	Name of the gametype.
+script dd											//	Real gametype.
+teambased
+set scr_diehard 1									//	Die Hard
+rule scr_dd_Roundswitch 1							//	Rounds before the teams switch the sides.
+rule scr_dd_scorelimit 2							//	Score limit needed to win.
+rule scr_dd_bombtimer 45							//	Time the bomb takes to detonate.
+rule scr_dd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_dd_extratime 3
+rule scr_dd_numlives 0								//	Lives per player 0 for unlimited.
+rule scr_dd_planttime 5								//	Time it takes to plant a bomb in seconds.
+rule scr_dd_roundlimit 3							//	Rounds the game is limited to, if there are no winners.
+rule scr_dd_timelimit 2.5							//	Round time limit.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dd_playerrespawndelay 0					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_dd_promode 0
+
+gametype hc_dd										//	Function for the playlist rotation.
+name english "Hardcore Demolition"					//	Name of the gametype.
+script dd											//	Real gametype.
+teambased
+hardcore
+rule scr_team_fftype 1								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_dd_Roundswitch 1							//	Rounds before the teams switch the sides.
+rule scr_dd_scorelimit 2							//	Score limit needed to win.
+rule scr_dd_bombtimer 45							//	Time the bomb takes to detonate.
+rule scr_dd_defusetime 5							//	Time taken to defuse the bomb.
+rule scr_dd_extratime 3
+rule scr_dd_numlives 0								//	Lives per player 0 for unlimited.
+rule scr_dd_planttime 5								//	Time it takes to plant a bomb in seconds.
+rule scr_dd_roundlimit 3							//	Rounds the game is limited to, if there are no winners.
+rule scr_dd_timelimit 2.5							//	Round time limit.
+rule scr_thirdperson 0								//	3rd person
+rule scr_dd_playerrespawndelay 0					//	-1 is no respawn delay, 0 is automatic, > 0 is X seconds
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_dd_promode 0
+
+//////////////////////////////////////
+// Capture the Flag Function Script	//
+//////////////////////////////////////
+
+gametype ctf										//	Function for the playlist rotation.
+name english "Capture the Flag"						//	Name of the gametype.
+script ctf											//	Real gametype.
+teambased
+set scr_ctf_scorelimit 3							//	Target score before the round ends.
+set scr_ctf_timelimit 10							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+set scr_ctf_numlives 0								//	Number of lives per player 0 for unlimited.
+set scr_ctf_playerrespawndelay 0					//	Respawn wait in seconds.
+set scr_ctf_roundlimit 1							//	How many Rounds match would last.
+set scr_ctf_Roundswitch 1							//	Rounds before the teams switch sides.
+set scr_ctf_waverespawndelay 10
+
+gametype hc_ctf										//	Function for the playlist rotation.
+name english "Hardcore Capture the Flag"			//	Name of the gametype.
+script ctf											//	Real gametype.
+teambased
+hardcore
+rule scr_ctf_scorelimit 3							//	Target score before the round ends.
+rule scr_ctf_timelimit 10							//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_ctf_numlives 0								//	Number of lives per player 0 for unlimited.
+rule scr_ctf_playerrespawndelay 0					//	Respawn wait in seconds.
+rule scr_ctf_roundlimit 1							//	How many Rounds match would last.
+rule scr_ctf_Roundswitch 1							//	Rounds before the teams switch sides.
+rule scr_ctf_waverespawndelay 10
+rule scr_team_fftype 2								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+
+//////////////////////////////////
+//	One Flag Function Script	//
+//////////////////////////////////
+
+gametype one_flag									//	Function for the playlist rotation.
+name english "One-Flag"								//	Name of the gametype.
+script oneflag										//	Real gametype.
+teambased
+rule scr_oneflag_scorelimit 1						//	Target score before the round ends.
+rule scr_oneflag_timelimit 3						//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_oneflag_numlives 0							//	Number of lives per player 0 for unlimited.
+rule scr_oneflag_playerrespawndelay 0				//	Respawn wait in seconds.
+rule scr_oneflag_roundlimit 1						//	How many Rounds match would last.
+rule scr_oneflag_Roundswitch 1						//	Rounds before the teams switch sides.
+rule scr_ctf_waverespawndelay 0
+
+gametype die_oneflag								//	Function for the playlist rotation.
+name english "Die-hard One-Flag"					//	Name of the gametype.
+script oneflag										//	Real gametype.
+teambased
+set scr_diehard 1									//	Die Hard
+rule scr_oneflag_scorelimit 1						//	Target score before the round ends.
+rule scr_oneflag_timelimit 3						//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_oneflag_numlives 0							//	Number of lives per player 0 for unlimited.
+rule scr_oneflag_playerrespawndelay 0				//	Respawn wait in seconds.
+rule scr_oneflag_roundlimit 1						//	How many Rounds match would last.
+rule scr_oneflag_Roundswitch 1						//	Rounds before the teams switch sides.
+rule scr_ctf_waverespawndelay 0
+
+gametype hc_oneflag									//	Function for the playlist rotation.
+name english "Hardcore One-Flag"					//	Name of the gametype.
+script oneflag										//	Real gametype.
+teambased
+rule scr_oneflag_scorelimit 1						//	Target score before the round ends.
+rule scr_oneflag_timelimit 3						//	Duration in minutes for the game to end if the score limit isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_oneflag_numlives 0							//	Number of lives per player 0 for unlimited.
+rule scr_oneflag_playerrespawndelay 0				//	Respawn wait in seconds.
+rule scr_oneflag_roundlimit 1						//	How many Rounds match would last.
+rule scr_oneflag_Roundswitch 1						//	Rounds before the teams switch sides.
+rule scr_team_fftype 2								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_ctf_waverespawndelay 0
+
+//////////////////////////////////////////////////
+//	Global Thermonuclear War Function Script	//
+//////////////////////////////////////////////////
+
+gametype nuke										//	Function for the playlist rotation.
+name english "Global Thermonuclear War"				//	Name of the gametype.
+script gtnw											//	Real gametype.
+teambased
+rule scr_game_hardpoints 0							//	Killstreaks
+rule scr_gtnw_scorelimit 101						//	Score limit to win the game.
+rule scr_gtnw_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_gtnw_numlives 0							//	Number of lives per game 0 for unlimited.
+rule scr_gtnw_playerrespawndelay 0					//	Players respawn wait.
+rule scr_gtnw_roundlimit 1							//	Rounds to be played.
+rule scr_gtnw_Roundswitch 0							//	Rounds before the teams switch sides.
+rule scr_gtnw_waverespawndelay 0					//	First respawn delay for each round.
+rule scr_gtnw_winlimit 1							//	Rounds per game
+rule scr_gtnw_promode 0
+
+gametype die_nuke									//	Function for the playlist rotation.
+name english "Die-Hard Thermonuclear War"			//	Name of the gametype.
+script gtnw											//	Real gametype.
+teambased
+set scr_diehard 1									//	Die Hard
+rule scr_game_hardpoints 0							//	Killstreaks
+rule scr_gtnw_scorelimit 101						//	Score limit to win the game.
+rule scr_gtnw_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_gtnw_numlives 0							//	Number of lives per game 0 for unlimited.
+rule scr_gtnw_playerrespawndelay 0					//	Players respawn wait.
+rule scr_gtnw_roundlimit 1							//	Rounds to be played.
+rule scr_gtnw_Roundswitch 0							//	Rounds before the teams switch sides.
+rule scr_gtnw_waverespawndelay 0					//	First respawn delay for each round.
+rule scr_gtnw_winlimit 1							//	Rounds per game
+rule scr_gtnw_promode 0
+
+
+gametype hc_nuke									//	Function for the playlist rotation.
+name english "Hardcore Thermonuclear War"			//	Name of the gametype.
+script gtnw											//	Real gametype.
+teambased
+hardcore
+rule scr_game_hardpoints 0							//	Killstreaks
+rule scr_gtnw_scorelimit 101						//	Score limit to win the game.
+rule scr_gtnw_timelimit 10							//	Duration in minutes the game will continue if the score isn't reached.
+rule scr_thirdperson 0								//	3rd person
+rule scr_gtnw_numlives 0							//	Number of lives per game 0 for unlimited.
+rule scr_gtnw_playerrespawndelay 0					//	Players respawn wait.
+rule scr_gtnw_roundlimit 1							//	Rounds to be played.
+rule scr_gtnw_Roundswitch 0							//	Rounds before the teams switch sides.
+rule scr_gtnw_waverespawndelay 0					//	First respawn delay for each round.
+rule scr_gtnw_winlimit 1							//	Rounds per game
+rule scr_team_fftype 2								//	Enable or Disable Friendly Fire. 1 = on, 2 = reflect, 3 = shared
+rule scr_player_maxhealth 30						//	Percent of Health players will have on Respawn.
+rule scr_player_healthregentime 0					//	Time it takes you to recover damage.
+rule scr_game_Allowkillcam 1						//	Allow Killcam.
+rule scr_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule ui_hud_hardcore 1								//	Heads up display.
+rule g_hardcore 1									//	Enable or Disable Hardcore Mode.
+rule scr_gtnw_promode 0
+
+//////////////////////////////////////////////////////
+//	Playlist Rotation for IW4X Dedicated Servers	//
+//////////////////////////////////////////////////////
+//													//
+//	mp_afghan		-	Afghan						//
+//	mp_derail		-	Derail						//
+//	mp_estate		-	Estate						//
+//	mp_favela		-	Favela						//
+//	mp_highrise		-	Highrise					//
+//	mp_invasion		-	Invasion					//
+//	mp_checkpoint	-	Karachi						//
+//	mp_quarry		-	Quarry						//
+//	mp_rundown		-	Rundown						//
+//	mp_rust			-	Rust						//
+//	mp_boneyard		-	Scrapyard					//
+//	mp_nightshift	-	Skidrow						//
+//	mp_subbase		-	Sub Base					//
+//	mp_terminal		-	Terminal					//
+//	mp_underpass	-	Underpass					//
+//	mp_brecourt		-	Wasteland					//
+//													//
+// DLC1 Stimulus									//
+//													//
+//	mp_complex		-	Bailout						//
+//	mp_crash		-	Crash						//
+//	mp_overgrown	-	Overgrown					//
+//	mp_compact		-	Salvage						//
+//	mp_storm		-	Storm						//
+//													//
+// DLC2 Resurgence									//
+//													//
+//	mp_abandon		-	Carnival					//
+//	mp_fuel2		-	Fuel						//
+//	mp_strike		-	Strike						//
+//	mp_trailerpark	-	Trailer Park				//
+//	mp_vacant		-	Vacant						//
+//													//
+//	DLC3 SP-Maps									//
+//													//
+//	oilrig			-	Oilrig						//
+//	invasion		-	Burger Town					//
+//	iw4_credits		-	IW4 Testmap					//
+//	gulag			-	Gulag						//
+//	contingency		-	Contingency					//
+//	so_ghillies		-	Pripyat						//
+//													//
+//	Gametype Script Function						//
+//													//
+//	tdm			-	Team Deathmatch					//
+//	ffa			-	Free-for-all					//
+//	dom			-	Domination						//
+//	hq			-	Headquarters					//
+//	sab			-	Sabotage						//
+//	sd			-	Search and Destroy				//
+//	arena		-	Arena							//
+//	dd			-	Demolition						//
+//	ctf			-	Capture the Flag				//
+//	one_flag	-	One-Flag CTF					//
+//	nuke		-	Global Thermo-Nuclear War		//
+//													//
+//	format is										//
+//	<mapname>, <script function>, <weight>			//
+//	Weight (1->1000)								//
+//	Selection is weighted random					//
+//	(higher weights increase selection chance)		//
+//////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////
+//	Global Variables (apply to every gametype)	//
+//////////////////////////////////////////////////
+rule party_gameStartTimerLength 8
+rule scr_xpscale 1
+rule scr_restxp_enable 0
+rule party_minlobbytime 60
+set scr_airdrop_nuke 0
+set scr_airdrop_mega_nuke 0
+
+playlist 1										//	known as +set playlist 0 on your dedicated command line
+name english "Team Deathmatch"
+name french "Match à mort par équipe"
+name italian "Deathmatch a squadre"
+name german "Team-Deathmatch"
+name spanish "Duelo por equipos"
+description english "Straight up Team Deathmatch.  Use teamwork to kill enemy players and reach the score limit.\n\n__________\nPlayers:8-12."
+description french "Un Match à mort par équipe classique. Progressez avec vos coéquipiers pour exterminer vos ennemis et atteindre la limite de score.\n\n__________\nJoueurs : 8-12"
+description italian "Deathmatch a squadre, nudo e crudo. Coordina il lavoro di squadra per eliminare i giocatori nemici e realizzare il punteggio stabilito.\n\n__________\nGiocatori: 8-12"
+description german "Ganz normales Team-Deathmatch. Schalten Sie mit Teamwork gegnerische Spieler aus und erreichen Sie das Punktlimit.\n\n__________\nSpieler: 8-12"
+description spanish "Duelo por equipos clásico. Colabora con tus compañeros para acabar con los enemigos y alcanza el límite de puntos.\n\n__________\nJugadores: 8-12"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+mp_afghan,tdm,4
+mp_boneyard,tdm,4
+mp_brecourt,tdm,4
+mp_checkpoint,tdm,4
+mp_derail,tdm,4
+mp_estate,tdm,4
+mp_favela,tdm,4
+mp_highrise,tdm,4
+mp_invasion,tdm,4
+mp_nightshift,tdm,4
+mp_quarry,tdm,4
+mp_rundown,tdm,4
+mp_rust,tdm,1
+mp_subbase,tdm,4
+mp_terminal,tdm,4
+mp_underpass,tdm,4
+mp_compact,tdm,4
+mp_complex,tdm,4
+mp_crash,tdm,4
+mp_overgrown,tdm,4
+mp_storm,tdm,4
+mp_strike,tdm,4
+mp_vacant,tdm,4
+mp_fuel2,tdm,4
+mp_abandon,tdm,4
+mp_trailerpark,tdm,4
+mp_cargoship_sh,tdm,4
+mp_shipment,tdm,4
+mp_shipment_long,tdm,4
+mp_rust_long,tdm,4
+mp_firingrange,tdm,4
+
+
+playlist 2										//	known as +set playlist 1
+name english "Free-for-all"
+name french "Mêlée générale"
+name italian "Tutti contro tutti"
+name german "Frei für alle"
+name spanish "Duelo a muerte"
+description english "Straight up Deathmatch.  Every man for himself.  Kill everyone.\n\n__________\nPlayers:4-8"
+description french "Match à mort classique. Une règle : chacun pour soi. N'épargnez personne.\n\n__________\nJoueurs : 4-8"
+description italian "Deathmatch, nudo e crudo. Ognuno per sé. Uccidi tutti.\n\n__________\nGiocatori: 4-8"
+description german "Ganz normales Deathmatch. Jeder kämpft hier für sich allein und gegen jeden.\n\n__________\nSpieler: 4-8"
+description spanish "Duelo clásico. Sálvese quien pueda. Mata a todo el mundo.\n\n__________\nJugadores: 4-8"
+
+rule party_minplayers 2
+rule party_maxplayers 8
+rule party_matchedplayercount 1
+rule scr_dm_scorelimit 1500
+rule cg_everyonehearseveryone 1
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 3										//	known as +set playlist 2 and so on...
+name english "Domination"
+name french "Domination"
+name italian "Dominio"
+name german "Herrschaft"
+name spanish "Dominio"
+description english "3 flags in the level must be captured.  Your team gets points for having control of a flag.  The more flags your team holds, the more points you gain.\n__________\nPlayers:8-12"
+description french "3 drapeaux doivent être capturés dans le niveau. Votre équipe gagne des points lorsqu'elle contrôle un drapeau. Plus votre équipe contrôle de drapeaux, plus vous gagnez de points.\n__________\nJoueurs : 8-12"
+description italian "Lo scopo è prendere possesso delle 3 bandiere presenti nel livello. La tua squadra ottiene un punto per ogni bandiera conquistata. Più saranno le bandiere possedute dalla squadra e più punti otterrete.\n__________\nGiocatori: 8-12"
+description german "3 Flaggen im Level müssen erobert werden. Ihr Team punktet für die Kontrolle einer Flagge. Je mehr Flaggen Ihr Team hält, desto mehr Punkte bekommt es.\n__________\nSpieler: 8-12"
+description spanish "Hay que tomar 3 banderas en el nivel. Tu equipo recibirá puntos cada vez que controle una bandera. Cuantas más banderas controléis, más puntos obtendréis.\n__________\nJugadores: 8-12"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+
+mp_afghan,dom,1
+mp_boneyard,dom,1
+mp_brecourt,dom,1
+mp_checkpoint,dom,1
+mp_derail,dom,1
+mp_estate,dom,1
+mp_favela,dom,1
+mp_highrise,dom,1
+mp_invasion,dom,1
+mp_nightshift,dom,1
+mp_quarry,dom,1
+mp_rundown,dom,1
+mp_subbase,dom,1
+mp_terminal,dom,1
+mp_underpass,dom,1
+mp_compact,dom,1
+mp_complex,dom,1
+mp_crash,dom,1
+mp_overgrown,dom,1
+mp_storm,dom,1
+mp_strike,dom,1
+mp_vacant,dom,1
+mp_fuel2,dom,1
+mp_abandon,dom,1
+mp_trailerpark,dom,1
+mp_cargoship_sh,dom,1
+mp_shipment,dom,1
+mp_shipment_long,dom,1
+mp_rust_long,dom,1
+mp_firingrange,dom,1
+
+
+playlist 4
+name english "Demolition"
+name french "Démolition"
+name italian "Demolizione"
+name german "Sprengkommando"
+name spanish "Demolición"
+description english "Attackers must destroy the 2 bomb sites within the time limit.\n\n__________\nPlayers:8-12\nRespawning is ON"
+description french "Les assaillants doivent détruire les 2 sites où se trouvent les bombes dans le temps imparti.\n\n__________\nJoueurs : 8-12\n La réapparition est activée."
+description italian "Gli attaccanti devono distruggere le 2 bombe entro il limite di tempo.\n\n__________\nGiocatori: 8-12\nRientri attivi"
+description german "Die Angreifer müssen die beiden Bombenplätze innerhalb des Zeitlimits zerstören.\n\n__________\nSpieler: 8-12\nWiedereinstieg ist aktiviert."
+description spanish "Los atacantes deben destruir 2 zonas de bombas antes de que acabe el tiempo.\n\n__________\nJugadores: 8-12\nSe permiten las reapariciones"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+mp_afghan,dd,1
+mp_boneyard,dd,1
+mp_checkpoint,dd,1
+mp_derail,dd,1
+mp_estate,dd,1
+mp_favela,dd,1
+mp_highrise,dd,1
+mp_invasion,dd,1
+mp_nightshift,dd,1
+mp_quarry,dd,1
+mp_rundown,dd,1
+mp_subbase,dd,1
+mp_terminal,dd,1
+mp_underpass,dd,1
+mp_compact,dd,1
+mp_complex,dd,1
+mp_crash,dd,1
+mp_overgrown,dd,1
+mp_storm,dd,1
+mp_strike,dd,1
+mp_vacant,dd,1
+mp_fuel2,dd,1
+mp_abandon,dd,1
+mp_trailerpark,dd,1
+mp_cargoship_sh,dd,1
+mp_shipment,dd,1
+mp_shipment_long,dd,1
+mp_rust_long,dd,1
+mp_firingrange,dd,1
+
+
+playlist 5
+name english "Sabotage"
+name french "Sabotage"
+name italian "Sabotaggio"
+name german "Sabotage"
+name spanish "Sabotaje"
+description english "Grab the neutral bomb and plant it on the enemy's bomb site.  First to detonate wins!\n\n__________\nPlayers:8-12"
+description french "Récupérez la bombe neutre et placez-la sur le site ennemi. Le premier à faire exploser la bombe gagne !\n\n__________\nJoueurs : 8-12"
+description italian "Prendi la bomba neutrale e piazzala sulla postazione bomba nemica. Il primo a farla detonare vince!\n\n__________\nGiocatori: 8-12"
+description german "Schnappen Sie sich die neutrale Bombe und platzieren Sie sie auf dem feindlichen Bombenplatz. Das Team, das die Bombe zuerst explodieren lässt, gewinnt.\n\n__________\nSpieler: 8-12"
+description spanish "Coloca la bomba neutral en la zona enemiga. ¡Gana quien detone primero!\n\n__________\nJugadores: 8-12"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+mp_afghan,sab,1
+mp_boneyard,sab,1
+mp_brecourt,sab,1
+mp_checkpoint,sab,1
+mp_derail,sab,1
+mp_estate,sab,1
+mp_favela,sab,1
+mp_highrise,sab,1
+mp_invasion,sab,1
+mp_nightshift,sab,1
+mp_quarry,sab,1
+mp_rundown,sab,1
+mp_subbase,sab,1
+mp_terminal,sab,1
+mp_underpass,sab,1
+mp_compact,sab,1
+mp_complex,sab,1
+mp_crash,sab,1
+mp_overgrown,sab,1
+mp_storm,sab,1
+mp_strike,sab,1
+mp_vacant,sab,1
+mp_fuel2,sab,1
+mp_abandon,sab,1
+mp_trailerpark,sab,1
+mp_cargoship_sh,sab,1
+mp_shipment,sab,1
+mp_shipment_long,sab,1
+mp_rust_long,sab,1
+mp_firingrange,sab,1
+
+
+playlist 6
+name english "Headquarters Pro"
+name french "Quartier général Pro"
+name italian "QG Pro"
+name german "Hauptquartier Pro"
+name spanish "Cuarteles (Pro)"
+description english "A target HQ is marked and activates in 30 seconds.  Capture it and defend it.  You gain points the longer you hold it.\n__________\nPlayers:8-12"
+description french "Capturez et défendez le QG cible indiqué et activé dans les 30 secondes. Plus vous le tenez, plus vous marquez de points.\n__________\nJoueurs :8-12"
+description italian "Un QG bersaglio viene indicato e attivato in 30 secondi. Catturalo e difendilo. Più a lungo lo difendi, più punti ottieni.\n__________\nGiocatori: 8-12"
+description german "Ein Hauptquartier wird als Ziel markiert und nach 30 Sekunden aktiviert. Erobern und halten Sie es. Je länger sie es halten, desto mehr Punkte bekommen Sie.\n__________\nSpieler: 8-12"
+description spanish "Cuarteles marcados y activados en 30 seg. Tomar y defender. Retenlos.\n__________\nJugadores: 8-12"
+
+rule party_minplayers 8
+rule party_maxplayers 12
+rule party_matchedplayercount 4
+
+mp_afghan,hq_pro,1
+mp_boneyard,hq_pro,1
+mp_brecourt,hq_pro,1
+mp_checkpoint,hq_pro,1
+mp_derail,hq_pro,1
+mp_estate,hq_pro,1
+mp_favela,hq_pro,1
+mp_highrise,hq_pro,1
+mp_invasion,hq_pro,1
+mp_nightshift,hq_pro,1
+mp_quarry,hq_pro,1
+mp_rundown,hq_pro,1
+mp_subbase,hq_pro,1
+mp_terminal,hq_pro,1
+mp_underpass,hq_pro,1
+mp_compact,hq_pro,1
+mp_complex,hq_pro,1
+mp_crash,hq_pro,1
+mp_overgrown,hq_pro,1
+mp_storm,hq_pro,1
+mp_strike,hq_pro,1
+mp_vacant,hq_pro,1
+mp_fuel2,hq_pro,1
+mp_abandon,hq_pro,1
+mp_trailerpark,hq_pro,1
+mp_cargoship_sh,hq_pro,1
+mp_shipment,hq_pro,1
+mp_shipment_long,hq_pro,1
+mp_rust_long,hq_pro,1
+mp_firingrange,hq_pro,1
+
+
+playlist 7
+name english "Search and Destroy"
+name french "Recherche et destruction"
+name italian "Cerca e distruggi"
+name german "Suchen und Zerstören"
+name spanish "Buscar y destruir"
+description english "No respawning, defend and destroy the objective.\n\n__________\nPlayers:8-12\nRespawning is OFF"
+description french "Pas de réapparition. Cherchez et détruisez l'objectif.\n\n__________\nJoueurs : 8-12\nLa réapparition est DÉSACTIVÉE."
+description italian "Niente rientri, difendi e distruggi l'obiettivo.\n\n__________\nGiocatori: 8-12\nRientri disattivi"
+description german "Kein Wiedereinstieg; verteidigen oder zerstören Sie das Ziel.\n\n__________\nSpieler: 8-12\nWiedereinstieg ist deaktiviert."
+description spanish "Defiende o destruye el objetivo sin reapariciones.\n\n__________\nJugadores: 8-12\nNo se permiten las reapariciones"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+mp_afghan,sd,1
+mp_boneyard,sd,1
+mp_brecourt,sd,1
+mp_checkpoint,sd,1
+mp_derail,sd,1
+mp_estate,sd,1
+mp_favela,sd,1
+mp_highrise,sd,1
+mp_invasion,sd,1
+mp_nightshift,sd,1
+mp_quarry,sd,1
+mp_rundown,sd,1
+mp_subbase,sd,1
+mp_terminal,sd,1
+mp_underpass,sd,1
+mp_compact,sd,1
+mp_complex,sd,1
+mp_crash,sd,1
+mp_overgrown,sd,1
+mp_storm,sd,1
+mp_strike,sd,1
+mp_vacant,sd,1
+mp_fuel2,sd,1
+mp_abandon,sd,1
+mp_trailerpark,sd,1
+mp_cargoship_sh,sd,1
+mp_shipment,sd,1
+mp_shipment_long,sd,1
+mp_rust_long,sd,1
+mp_firingrange,sd,1
+
+
+playlist 8
+name english "Hardcore Team Deathmatch"
+name french "Match à mort par équipe Hardcore."
+name italian "Deathmatch a squadre - veterano"
+name german "Hardcore-Team-Deathmatch"
+name spanish "Duelo por equipos extremo"
+description english "Team Deathmatch with:\n\n\n__________\nPlayers:8-12\nLimited HUD\nExtra bullet damage\nFriendly Fire is ON"
+description french "Match à mort en équipe.\n\n\n__________\nJoueurs : 8-12\nATH limité.\nDégâts supplémentaires des balles.\nTir allié activé."
+description italian "Deathmatch a squadre con:\n\n\n__________\nGiocatori: 8-12\nInterfaccia ridotta\nDanno proiettili aumentato\nFuoco amico ATTIVO"
+description german "Team-Deathmatch mit:\n\n\n__________\nSpieler: 8-12\nEingeschränktes HUD\nErhöhter Patronenschaden\nTeambeschuss ist aktiviert."
+description spanish "Duelo por equipos con:\n\n\n__________\nJugadores: 8-12\nHUD limitado\nBalas más dañinas\nFuego amigo activado"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+rule party_readypercentrequired 0
+
+mp_afghan,hc_tdm,1
+mp_boneyard,hc_tdm,1
+mp_brecourt,hc_tdm,1
+mp_checkpoint,hc_tdm,1
+mp_derail,hc_tdm,1
+mp_estate,hc_tdm,1
+mp_favela,hc_tdm,1
+mp_highrise,hc_tdm,1
+mp_invasion,hc_tdm,1
+mp_nightshift,hc_tdm,1
+mp_quarry,hc_tdm,1
+mp_rundown,hc_tdm,1
+mp_subbase,hc_tdm,1
+mp_terminal,hc_tdm,1
+mp_underpass,hc_tdm,1
+mp_compact,hc_tdm,1
+mp_complex,hc_tdm,1
+mp_crash,hc_tdm,1
+mp_overgrown,hc_tdm,1
+mp_storm,hc_tdm,1
+mp_strike,hc_tdm,1
+mp_vacant,hc_tdm,1
+mp_fuel2,hc_tdm,1
+mp_abandon,hc_tdm,1
+mp_trailerpark,hc_tdm,1
+mp_cargoship_sh,hc_tdm,1
+mp_shipment,hc_tdm,1
+mp_shipment_long,hc_tdm,1
+mp_rust_long,hc_tdm,1
+mp_firingrange,hc_tdm,1
+
+
+playlist 9
+name english "Capture the Flag"
+name french "Capture du drapeau"
+name italian "Cattura la bandiera"
+name german "Capture the Flag"
+name spanish "Tomar la bandera"
+description english "Bring the enemy flag back to your team's base while your flag is there to score points.\n\n__________\nPlayers:8-12"
+description french "Apportez le drapeau ennemi à votre base alors que le vôtre s'y trouve aussi pour marquer des points.\n__________\nJoueurs : 8-12"
+description italian "Porta alla tua base la bandiera nemica mentre la tua bandiera si trova lì per ottenere punti.\n\n__________\nGiocatori: 8-12"
+description german "Bringen Sie die feindliche Flagge in Ihre Basis zum Punkten, während die eigene Flagge dort ist.\n\n__________\nSpieler: 8-12"
+description spanish "Lleva la bandera enemiga a la base de tu equipo mientras conserváis la vuestra para ganar puntos.\n\n__________\nJugadores: 8-12"
+
+rule party_minplayers 4
+rule party_maxplayers 12
+rule party_matchedplayercount 2
+
+mp_afghan,ctf,1
+mp_boneyard,ctf,1
+mp_brecourt,ctf,1
+mp_checkpoint,ctf,1
+mp_derail,ctf,1
+mp_estate,ctf,1
+mp_favela,ctf,1
+mp_highrise,ctf,1
+mp_invasion,ctf,1
+mp_nightshift,ctf,1
+mp_quarry,ctf,1
+mp_rundown,ctf,1
+mp_subbase,ctf,1
+mp_terminal,ctf,1
+mp_underpass,ctf,1
+mp_compact,ctf,1
+mp_complex,ctf,1
+mp_crash,ctf,1
+mp_overgrown,ctf,1
+mp_storm,ctf,1
+mp_strike,ctf,1
+mp_vacant,ctf,1
+mp_fuel2,ctf,1
+mp_abandon,ctf,1
+mp_trailerpark,ctf,1
+mp_cargoship_sh,ctf,1
+mp_shipment,ctf,1
+mp_shipment_long,ctf,1
+mp_rust_long,ctf,1
+mp_firingrange,ctf,1
+
+
+playlist 10 
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 11
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 12
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 13
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 14
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 15
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 16
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 17
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 18
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 19
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 20
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 21
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 22
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
+
+
+playlist 23
+name english "Empty Slot"
+description english "<insert fancy description here>"
+
+mp_afghan,ffa,4
+mp_boneyard,ffa,4
+mp_brecourt,ffa,4
+mp_checkpoint,ffa,4
+mp_estate,ffa,4
+mp_favela,ffa,4
+mp_highrise,ffa,4
+mp_invasion,ffa,4
+mp_nightshift,ffa,4
+mp_quarry,ffa,4
+mp_rundown,ffa,4
+mp_rust,ffa,1
+mp_subbase,ffa,4
+mp_terminal,ffa,4
+mp_underpass,ffa,4
+mp_compact,ffa,4
+mp_complex,ffa,4
+mp_crash,ffa,4
+mp_overgrown,ffa,4
+mp_storm,ffa,4
+mp_strike,ffa,4
+mp_vacant,ffa,4
+mp_fuel2,ffa,4
+mp_abandon,ffa,4
+mp_trailerpark,ffa,4
+mp_cargoship_sh,ffa,4
+mp_shipment,ffa,4
+mp_shipment_long,ffa,4
+mp_rust_long,ffa,4
+mp_firingrange,ffa,4
