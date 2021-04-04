@@ -1,7 +1,7 @@
-![license](https://img.shields.io/github/license/IW4x/iw4x-client.svg)
-![forks](https://img.shields.io/github/forks/IW4x/iw4x-client.svg)
-![stars](https://img.shields.io/github/stars/IW4x/iw4x-client.svg)
-![issues](https://img.shields.io/github/issues/IW4x/iw4x-client.svg)
+![license](https://img.shields.io/github/license/IW4x/iw4x-rawfiles.svg)
+![forks](https://img.shields.io/github/forks/IW4x/iw4x-rawfiles.svg)
+![stars](https://img.shields.io/github/stars/IW4x/iw4x-rawfiles.svg)
+![issues](https://img.shields.io/github/issues/IW4x/iw4x-rawfiles.svg)
 [![discord](https://img.shields.io/endpoint?url=https://momo5502.com/iw4x/members-badge.php)](https://discord.gg/sKeVmR3)
 [![patreon](https://img.shields.io/badge/patreon-support-blue.svg?logo=patreon)](https://www.patreon.com/xlabsproject)
 
