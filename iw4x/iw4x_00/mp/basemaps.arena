@@ -587,3 +587,64 @@
     axischar    "opforce_composite"
     environment "desert"
 }
+
+
+{
+	map         "mp_backlot"
+	longname    "MPUI_BACKLOT"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+	description "MPUI_DESC_MAP_BACKLOT"
+	mapimage    "preview_mp_backlot"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+	axischar    "opforce_composite"
+	environment "desert"
+}
+
+{
+	map         "mp_farm"
+	longname    "MPUI_FARM"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+	description "MPUI_DESC_MAP_FARM"
+	mapimage    "preview_mp_farm"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+	axischar    "opforce_airborne"
+	environment "forest"
+}
+
+{
+	map         "mp_countdown"
+	longname    "MPUI_COUNTDOWN"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+	description "MPUI_DESC_MAP_COUNTDOWN"
+	mapimage    "preview_mp_countdown"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+	axischar    "opforce_airborne"
+	environment "urban"
+}
+
+{
+	map         "mp_pipeline"
+	longname    "MPUI_PIPELINE"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+	description "MPUI_DESC_MAP_PIPELINE"
+	mapimage    "preview_mp_pipeline"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+	axischar    "opforce_airborne"
+	environment "forest"
+}
+
+{
+    map         "mp_crash_snow"
+    longname    "MPUI_CRASH_SNOW"
+    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    description "MPUI_DESC_MAP_CRASH_SNOW"
+    mapimage    "preview_mp_crash_snow"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "socom_141_arctic"
+    axischar    "opforce_arctic"
+    environment "arctic"
+}
