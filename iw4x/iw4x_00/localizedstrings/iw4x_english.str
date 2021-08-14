@@ -539,7 +539,7 @@ REFERENCE			MENU_NEWCOLORS
 LANG_ENGLISH		"Use new color codes"
 
 REFERENCE			MENU_COLORBLIND_MODE
-LANG_ENGLISH		"Use colorblind-friendly team colors"
+LANG_ENGLISH		"Colorblind mode"
 
 REFERENCE			MENU_CHANGELOG
 LANG_ENGLISH		"Changelog"
