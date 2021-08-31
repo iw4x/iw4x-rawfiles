@@ -985,4 +985,16 @@ LANG_ENGLISH		"Juiced"
 REFERENCE			SPLASHES_COMBATHIGH_DESC
 LANG_ENGLISH		"Move faster for a few seconds after spawning."
 
+REFERENCE           MENU_GAMEPAD
+LANG_ENGLISH        "Gamepad"
+
+REFERENCE           MENU_GAMEPAD_ENABLED
+LANG_ENGLISH        "Gamepad enabled"
+
+REFERENCE           MPUI_DESC_GAMEPAD_ENABLED
+LANG_ENGLISH        "Turn accepting inputs from gamepads on/off"
+
+REFERENCE           MPUI_DESC_LOOK_INVERSION
+LANG_ENGLISH        "Inverts the gamepad pitch axis (up/down)"
+
 ENDMARKER
