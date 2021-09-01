@@ -421,6 +421,7 @@ thermalVision( chopper )
 	self visionSetThermalForPlayer( game["thermal_vision"], 3 );
 
 	self notifyOnPlayerCommand( "switch thermal", "+activate" );
+	self notifyOnPlayerCommand( "switch thermal", "+usereload" );
 
 	for (;;)
 	{
