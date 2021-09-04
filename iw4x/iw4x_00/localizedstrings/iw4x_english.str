@@ -1009,4 +1009,22 @@ LANG_ENGLISH        "Turn slowdown aim assist on/off. Slowdown reduces the stick
 REFERENCE           MPUI_DESC_LOCKON_ENABLED
 LANG_ENGLISH        "Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
 
+REFERENCE           MENU_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH        "Sensitivity Preset"
+
+REFERENCE           MENU_SENSITIVITY_LOW_CAPS
+LANG_ENGLISH        "(Low) 1"
+
+REFERENCE           MENU_SENSITIVITY_MEDIUM_CAPS
+LANG_ENGLISH        "(Medium) 2"
+
+REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
+LANG_ENGLISH        "(High) 4"
+
+REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
+LANG_ENGLISH        "(Very High) 7"
+
+REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
+LANG_ENGLISH        "(Insane) 10"
+
 ENDMARKER
