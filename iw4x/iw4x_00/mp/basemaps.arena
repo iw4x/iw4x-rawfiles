@@ -1,7 +1,7 @@
 {
     map         "mp_invasion"
     longname    "MPUI_INVASION"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_INVASION"
     mapimage    "preview_mp_invasion"
     mapoverlay  "compass_overlay_map_blank"
@@ -13,7 +13,7 @@
 {
     map         "mp_highrise"
     longname    "MPUI_HIGHRISE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_HIGHRISE"
     mapimage    "preview_mp_highrise"
     mapoverlay  "compass_overlay_map_blank"
@@ -25,7 +25,7 @@
 {
     map         "mp_checkpoint"
     longname    "MPUI_CHECKPOINT"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_checkpoint"
     mapimage    "preview_mp_checkpoint"
     mapoverlay  "compass_overlay_map_blank"
@@ -37,7 +37,7 @@
 {
     map         "mp_nightshift"
     longname    "MPUI_RAID"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_nightshift"
     mapimage    "preview_mp_nightshift"
     mapoverlay  "compass_overlay_map_blank"
@@ -49,7 +49,7 @@
 {
     map         "mp_favela"
     longname    "MPUI_FAVELA"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_favela"
     mapimage    "preview_mp_favela"
     mapoverlay  "compass_overlay_map_blank"
@@ -61,7 +61,7 @@
 {
     map         "mp_quarry"
     longname    "MPUI_QUARRY"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_quarry"
     mapimage    "preview_mp_quarry"
     mapoverlay  "compass_overlay_map_blank"
@@ -73,7 +73,7 @@
 {
     map         "mp_brecourt"
     longname    "MPUI_WASTELAND"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_BRECOURT"
     mapimage    "preview_mp_brecourt"
     mapoverlay  "compass_overlay_map_blank"
@@ -85,7 +85,7 @@
 {
     map         "mp_derail"
     longname    "MPUI_DERAIL"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_DERAIL"
     mapimage    "preview_mp_derail"
     mapoverlay  "compass_overlay_map_blank"
@@ -97,7 +97,7 @@
 {
     map         "mp_subbase"
     longname    "MPUI_SUBBASE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_SUBBASE"
     mapimage    "preview_mp_subbase"
     mapoverlay  "compass_overlay_map_blank"
@@ -109,7 +109,7 @@
 {
     map         "mp_underpass"
     longname    "MPUI_UNDERPASS"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_UNDERPASS"
     mapimage    "preview_mp_underpass"
     mapoverlay  "compass_overlay_map_blank"
@@ -121,7 +121,7 @@
 {
     map         "mp_estate"
     longname    "MPUI_ESTATE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_ESTATE"
     mapimage    "preview_mp_estate"
     mapoverlay  "compass_overlay_map_blank"
@@ -133,7 +133,7 @@
 {
     map         "mp_rundown"
     longname    "MPUI_RUNDOWN"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_RUNDOWN"
     mapimage    "preview_mp_rundown"
     mapoverlay  "compass_overlay_map_blank"
@@ -145,7 +145,7 @@
 {
     map         "mp_boneyard"
     longname    "MPUI_BONEYARD"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_BONEYARD"
     mapimage    "preview_mp_boneyard"
     mapoverlay  "compass_overlay_map_blank"
@@ -157,7 +157,7 @@
 {
     map         "mp_afghan"
     longname    "MPUI_AFGHAN"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_AFGHAN"
     mapimage    "preview_mp_afghan"
     mapoverlay  "compass_overlay_map_blank"
@@ -169,7 +169,7 @@
 {
     map         "mp_terminal"
     longname    "MPUI_TERMINAL"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_TERMINAL"
     mapimage    "preview_mp_terminal"
     mapoverlay  "compass_overlay_map_blank"
@@ -181,7 +181,7 @@
 {
     map         "mp_rust"
     longname    "MPUI_RUST"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_RUST"
     mapimage    "preview_mp_rust"
     mapoverlay  "compass_overlay_map_blank"
@@ -193,7 +193,7 @@
 {
     map         "mp_storm"
     longname    "PATCH_STORM"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_STORM"
     mapimage    "preview_mp_storm"
     mapoverlay  "compass_overlay_map_blank"
@@ -205,7 +205,7 @@
 {
     map         "mp_compact"
     longname    "PATCH_COMPACT"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_COMPACT"
     mapimage    "preview_mp_compact"
     mapoverlay  "compass_overlay_map_blank"
@@ -217,7 +217,7 @@
 {
     map         "mp_complex"
     longname    "PATCH_COMPLEX"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_COMPLEX"
     mapimage    "preview_mp_complex"
     mapoverlay  "compass_overlay_map_blank"
@@ -229,7 +229,7 @@
 {
     map         "mp_crash"
     longname    "MPUI_CRASH"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CRASH"
     mapimage    "preview_mp_crash"
     mapoverlay  "compass_overlay_map_blank"
@@ -241,7 +241,7 @@
 {
     map         "mp_overgrown"
     longname    "MPUI_OVERGROWN"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_OVERGROWN"
     mapimage    "preview_mp_overgrown"
     mapoverlay  "compass_overlay_map_blank"
@@ -254,7 +254,7 @@
 {
     map         "mp_abandon"
     longname    "PATCH_ABANDON"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_ABANDON"
     mapimage    "preview_mp_abandon"
     mapoverlay  "compass_overlay_map_blank"
@@ -266,7 +266,7 @@
 {
     map         "mp_fuel2"
     longname    "PATCH_FUEL2"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_FUEL2"
     mapimage    "preview_mp_fuel2"
     mapoverlay  "compass_overlay_map_blank"
@@ -278,7 +278,7 @@
 {
     map         "mp_trailerpark"
     longname    "PATCH_TRAILERPARK"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_TRAILERPARK"
     mapimage    "preview_mp_trailerpark"
     mapoverlay  "compass_overlay_map_blank"
@@ -290,7 +290,7 @@
 {
     map         "mp_vacant"
     longname    "PATCH_VACANT"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_VACANT"
     mapimage    "preview_mp_vacant"
     mapoverlay  "compass_overlay_map_blank"
@@ -302,7 +302,7 @@
 {
     map         "mp_strike"
     longname    "PATCH_STRIKE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "PATCH_DESC_MAP_STRIKE"
     mapimage    "preview_mp_strike"
     mapoverlay  "compass_overlay_map_blank"
@@ -314,7 +314,7 @@
 {
     map         "oilrig"
     longname    "MPUI_OILRIG"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_OILRIG"
     mapimage    "preview_mp_oilrig"
     mapoverlay  "compass_overlay_map_blank"
@@ -326,7 +326,7 @@
 {
     map         "co_hunted"
     longname    "MPUI_CO_HUNTED"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CO_HUNTED"
     mapimage    "preview_co_hunted"
     mapoverlay  "compass_overlay_map_blank"
@@ -338,7 +338,7 @@
 {
     map         "gulag"
     longname    "MPUI_GULAG"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_GULAG"
     mapimage    "preview_mp_gulag"
     mapoverlay  "compass_overlay_map_blank"
@@ -350,7 +350,7 @@
 {
     map         "invasion"
     longname    "BurgerTown"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description ""
     mapimage    "preview_invasion"
     mapoverlay  "compass_overlay_map_blank"
@@ -362,7 +362,7 @@
 {
     map         "iw4_credits"
     longname    "IW4 Test Map"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description ""
     mapimage    "preview_iw4_credits"
     mapoverlay  "compass_overlay_map_blank"
@@ -374,7 +374,7 @@
 {
     map         "so_ghillies"
     longname    "Pripyat"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description ""
     mapimage    "preview_so_ghillies"
     mapoverlay  "compass_overlay_map_blank"
@@ -386,7 +386,7 @@
 {
     map         "contingency"
     longname    "Contingency"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description ""
     mapimage    "preview_mp_contingency"
     mapoverlay  "compass_overlay_map_blank"
@@ -398,7 +398,7 @@
 {
     map         "mp_nuked"
     longname    "MPUI_NUKED"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_NUKED"
     mapimage    "preview_mp_nuked"
     mapoverlay  "compass_overlay_map_blank"
@@ -410,7 +410,7 @@
 {
     map         "mp_cross_fire"
     longname    "MPUI_CROSSFIRE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CROSSFIRE"
     mapimage    "preview_mp_cross_fire"
     mapoverlay  "compass_overlay_map_blank"
@@ -422,7 +422,7 @@
 {
     map         "mp_bloc"
     longname    "MPUI_BLOC"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_BLOC"
     mapimage    "preview_mp_bloc"
     mapoverlay  "compass_overlay_map_blank"
@@ -434,7 +434,7 @@
 {
     map         "mp_killhouse"
     longname    "MPUI_KILLHOUSE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_KILLHOUSE"
     mapimage    "preview_mp_killhouse"
     mapoverlay  "compass_overlay_map_blank"
@@ -446,7 +446,7 @@
 {
     map         "mp_cargoship"
     longname    "MPUI_CARGOSHIP"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CARGOSHIP"
     mapimage    "preview_mp_cargoship"
     mapoverlay  "compass_overlay_map_blank"
@@ -458,7 +458,7 @@
 {
     map         "mp_cargoship_sh"
     longname    "MPUI_CARGOSHIP_SH"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CARGOSHIP_SH"
     mapimage    "preview_mp_cargoship_sh"
     mapoverlay  "compass_overlay_map_blank"
@@ -470,7 +470,7 @@
 {
     map         "mp_bog_sh"
     longname    "MPUI_BOG_SH"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_BOG"
     mapimage    "preview_mp_bog_sh"
     mapoverlay  "compass_overlay_map_blank"
@@ -482,7 +482,7 @@
 {
     map         "mp_estate_tropical"
     longname    "MPUI_ESTATE_TROPICAL"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_ESTATE_TROPICAL"
     mapimage    "preview_mp_estate_tropical"
     mapoverlay  "compass_overlay_map_blank"
@@ -494,7 +494,7 @@
 {
     map         "mp_crash_tropical"
     longname    "MPUI_CRASH_TROPICAL"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_CRASH_TROPICAL"
     mapimage    "preview_mp_crash_tropical"
     mapoverlay  "compass_overlay_map_blank"
@@ -506,7 +506,7 @@
 {
     map         "mp_fav_tropical"
     longname    "MPUI_FAV_TROPICAL"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_FAV_TROPICAL"
     mapimage    "preview_mp_fav_tropical"
     mapoverlay  "compass_overlay_map_blank"
@@ -518,7 +518,7 @@
 {
     map         "mp_storm_spring"
     longname    "MPUI_STORM_SPRING"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_STORM_SPRING"
     mapimage    "preview_mp_storm_spring"
     mapoverlay  "compass_overlay_map_blank"
@@ -530,7 +530,7 @@
 {
     map         "mp_bloc_sh"
     longname    "MPUI_BLOC_SH"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_BLOC_SH"
     mapimage    "preview_mp_bloc_sh"
     mapoverlay  "compass_overlay_map_blank"
@@ -542,7 +542,7 @@
 {
     map         "mp_shipment"
     longname    "MPUI_SHIPMENT"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_SHIPMENT"
     mapimage    "preview_mp_shipment"
     mapoverlay  "compass_overlay_map_blank"
@@ -555,7 +555,7 @@
 {
     map         "mp_shipment_long"
     longname    "MPUI_SHIPMENT_LONG"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_SHIPMENT_LONG"
     mapimage    "preview_mp_shipment_long"
     mapoverlay  "compass_overlay_map_blank"
@@ -567,7 +567,7 @@
 {
     map         "mp_firingrange"
     longname    "MPUI_FIRINGRANGE"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_FIRINGRANGE"
     mapimage    "preview_mp_firingrange"
     mapoverlay  "compass_overlay_map_blank"
@@ -579,7 +579,7 @@
 {
     map         "mp_rust_long"
     longname    "MPUI_RUST_LONG"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    gametype    "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description "MPUI_DESC_MAP_RUST_LONG"
     mapimage    "preview_mp_rust_long"
     mapoverlay  "compass_overlay_map_blank"
@@ -590,57 +590,57 @@
 
 
 {
-	map         "mp_backlot"
-	longname    "MPUI_BACKLOT"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
-	description "MPUI_DESC_MAP_BACKLOT"
-	mapimage    "preview_mp_backlot"
-	mapoverlay  "compass_overlay_map_blank"
-	allieschar  "us_army"
-	axischar    "opforce_composite"
-	environment "desert"
+    map         "mp_backlot"
+    longname    "MPUI_BACKLOT"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
+    description "MPUI_DESC_MAP_BACKLOT"
+    mapimage    "preview_mp_backlot"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_composite"
+    environment "desert"
 }
 
 {
-	map         "mp_farm"
-	longname    "MPUI_FARM"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
-	description "MPUI_DESC_MAP_FARM"
-	mapimage    "preview_mp_farm"
-	mapoverlay  "compass_overlay_map_blank"
-	allieschar  "us_army"
-	axischar    "opforce_airborne"
-	environment "forest"
+    map         "mp_farm"
+    longname    "MPUI_FARM"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
+    description "MPUI_DESC_MAP_FARM"
+    mapimage    "preview_mp_farm"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment "forest"
 }
 
 {
-	map         "mp_countdown"
-	longname    "MPUI_COUNTDOWN"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
-	description "MPUI_DESC_MAP_COUNTDOWN"
-	mapimage    "preview_mp_countdown"
-	mapoverlay  "compass_overlay_map_blank"
-	allieschar  "us_army"
-	axischar    "opforce_airborne"
-	environment "urban"
+    map         "mp_countdown"
+    longname    "MPUI_COUNTDOWN"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
+    description "MPUI_DESC_MAP_COUNTDOWN"
+    mapimage    "preview_mp_countdown"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment "urban"
 }
 
 {
-	map         "mp_pipeline"
-	longname    "MPUI_PIPELINE"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
-	description "MPUI_DESC_MAP_PIPELINE"
-	mapimage    "preview_mp_pipeline"
-	mapoverlay  "compass_overlay_map_blank"
-	allieschar  "us_army"
-	axischar    "opforce_airborne"
-	environment "forest"
+    map         "mp_pipeline"
+    longname    "MPUI_PIPELINE"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
+    description "MPUI_DESC_MAP_PIPELINE"
+    mapimage    "preview_mp_pipeline"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment "forest"
 }
 
 {
     map         "mp_crash_snow"
     longname    "MPUI_CRASH_SNOW"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
     description "MPUI_DESC_MAP_CRASH_SNOW"
     mapimage    "preview_mp_crash_snow"
     mapoverlay  "compass_overlay_map_blank"
@@ -650,13 +650,13 @@
 }
 
 {
-	map         "mp_carentan"
-	longname    "MPUI_CARENTAN"
-	gametype	"dm war sab sab2 dom sd sd2 hc koth"
-	description "MPUI_DESC_MAP_CARENTAN"
-	mapimage    "preview_mp_carentan"
-	mapoverlay  "compass_overlay_map_blank"
-	allieschar  "us_army"
-	axischar    "opforce_airborne"
-	environment "urban"
+    map         "mp_carentan"
+    longname    "MPUI_CARENTAN"
+    gametype    "dm war sab sab2 dom sd sd2 hc koth"
+    description "MPUI_DESC_MAP_CARENTAN"
+    mapimage    "preview_mp_carentan"
+    mapoverlay  "compass_overlay_map_blank"
+    allieschar  "us_army"
+    axischar    "opforce_airborne"
+    environment "urban"
 }
