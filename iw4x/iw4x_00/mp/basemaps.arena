@@ -640,11 +640,23 @@
 {
     map         "mp_crash_snow"
     longname    "MPUI_CRASH_SNOW"
-    gametype	"dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
     description "MPUI_DESC_MAP_CRASH_SNOW"
     mapimage    "preview_mp_crash_snow"
     mapoverlay  "compass_overlay_map_blank"
     allieschar  "socom_141_arctic"
     axischar    "opforce_arctic"
     environment "arctic"
+}
+
+{
+	map         "mp_carentan"
+	longname    "MPUI_CARENTAN"
+	gametype	"dm war sab sab2 dom sd sd2 hc koth"
+	description "MPUI_DESC_MAP_CARENTAN"
+	mapimage    "preview_mp_carentan"
+	mapoverlay  "compass_overlay_map_blank"
+	allieschar  "us_army"
+	axischar    "opforce_airborne"
+	environment "urban"
 }
