@@ -1,5 +1,5 @@
 r_glow                    "1"
-r_glowRadius0             "2.1"
+r_glowRadius0             "1.7"
 r_glowRadius1             "0"
 r_glowBloomCutoff         "0.682"
 r_glowBloomDesaturation   "0"
