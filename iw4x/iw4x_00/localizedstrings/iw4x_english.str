@@ -244,6 +244,18 @@ LANG_ENGLISH		"Chemical Plant"
 REFERENCE			MPUI_DESC_MAP_STORM_SPRING
 LANG_ENGLISH		"A modified version of Storm, snow covered instead of rainy."
 
+REFERENCE			MPUI_CARENTAN
+LANG_ENGLISH		"Chinatown"
+
+REFERENCE			MPUI_DESC_MAP_CARENTAN
+LANG_ENGLISH		"Small city at night. Great for any mode.""
+
+REFERENCE			MPUI_CRASH_SNOW
+LANG_ENGLISH		"Winter Crash"
+
+REFERENCE			MPUI_DESC_MAP_CRASH_SNOW
+LANG_ENGLISH		"Dark and snowy holiday themed Crash. Beware the airstrikes..."
+
 REFERENCE			MPUI_CO_HUNTED
 LANG_ENGLISH		"Village"
 
