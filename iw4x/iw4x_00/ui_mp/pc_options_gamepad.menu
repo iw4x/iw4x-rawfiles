@@ -105,8 +105,20 @@ menuDef
 	PC_OPTIONS_SEPERATOR(0)
 
 	PC_OPTIONS_DVARYESNO_RAW(1, "@MENU_LOOK_INVERSION", "input_invertPitch", ;, "@MPUI_DESC_LOOK_INVERSION", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
-	PC_OPTIONS_STRLIST_RAW(2, "@MENU_THUMBSTICK_LAYOUT", "gpad_sticksConfig", {"@MENU_DEFAULT"; "thumbstick_default"; "@MENU_SOUTHPAW"; "thumbstick_southpaw"; "@MENU_LEGACY"; "thumbstick_legacy"; "@MENU_LEGACY_SOUTHPAW"; "thumbstick_legacysouthpaw"}, execNow "bindgpsticksconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
-	PC_OPTIONS_STRLIST_RAW(3, "@MENU_BUTTON_LAYOUT", "gpad_buttonConfig", {"@MENU_DEFAULT"; "buttons_default"; "@MENU_TACTICAL"; "buttons_tactical"; "@MENU_LEFTY"; "buttons_lefty"; "@MENU_NOMAD"; "buttons_nomad"}, execNow "bindgpbuttonsconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_STRLIST_RAW(2, "@MENU_THUMBSTICK_LAYOUT", "gpad_sticksConfig", 
+		{"@MENU_DEFAULT"; "thumbstick_default"; 
+		"@MENU_SOUTHPAW"; "thumbstick_southpaw"; 
+		"@MENU_LEGACY"; "thumbstick_legacy"; 
+		"@MENU_LEGACY_SOUTHPAW"; "thumbstick_legacysouthpaw"}, execNow "bindgpsticksconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_STRLIST_RAW(3, "@MENU_BUTTON_LAYOUT", "gpad_buttonConfig", 
+		{"@MENU_DEFAULT"; "buttons_default"; 
+		"@MENU_TACTICAL"; "buttons_tactical"; 
+		"@MENU_LEFTY"; "buttons_lefty"; 
+		"@MENU_NOMAD"; "buttons_nomad";
+		"@MENU_DEFAULT_ALT"; "buttons_default_alt"; 
+		"@MENU_TACTICAL_ALT"; "buttons_tactical_alt"; 
+		"@MENU_LEFTY_ALT"; "buttons_lefty_alt"; 
+		"@MENU_NOMAD_ALT"; "buttons_nomad_alt"}, execNow "bindgpbuttonsconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
 	PC_OPTIONS_DVARYESNO_RAW(4, "@MENU_SLOWDOWN_ENABLED", "gpad_slowdown_enabled", ;, "@MPUI_DESC_SLOWDOWN_ENABLED", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
 	PC_OPTIONS_DVARYESNO_RAW(5, "@MENU_LOCKON_ENABLED", "gpad_lockon_enabled", ;, "@MPUI_DESC_LOCKON_ENABLED", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
 	PC_OPTIONS_SEPERATOR(5)
