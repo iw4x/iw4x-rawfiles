@@ -1027,4 +1027,25 @@ LANG_ENGLISH        "(Very High) 7"
 REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
 LANG_ENGLISH        "(Insane) 10"
 
+REFERENCE           FONT_ICON_SEARCH_START_WITH
+LANG_ENGLISH        "Font icons starting with ^2&&1^7:"
+
+REFERENCE           FONT_ICON_HINT_AUTO_COMPLETE
+LANG_ENGLISH        "Press ^3&&1 ^7for autocomplete"
+
+REFERENCE           FONT_ICON_HINT_MODIFIER
+LANG_ENGLISH        "Use ^3&&1 ^7for modifiers"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_HEADER
+LANG_ENGLISH        "The following modifiers are available:"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL
+LANG_ENGLISH        "^2&&1  ^7Flip icon horizontally"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL
+LANG_ENGLISH        "^2&&1  ^7Flip icon vertically"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_BIG
+LANG_ENGLISH        "^2&&1  ^7Bigger icon"
+
 ENDMARKER
