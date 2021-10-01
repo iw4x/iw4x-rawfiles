@@ -390,7 +390,7 @@ heliRide( lifeId, chopper )
 	chopper VehicleTurretControlOn( self );
 	
 	self PlayerLinkWeaponviewToDelta( chopper, "tag_player", 1.0, 180, 180, 0, 180, true );
-	self setPlayerAngles( level.ac130 getTagAngles( "tag_player" ) );													   
+	self setPlayerAngles( level.ac130 getTagAngles( "tag_player" ) );
 	
 	chopper.gunner = self;	
 
@@ -422,6 +422,7 @@ thermalVision( chopper )
 	self visionSetThermalForPlayer( game["thermal_vision"], 3 );
 
 	self notifyOnPlayerCommand( "switch thermal", "+activate" );
+	self notifyOnPlayerCommand( "switch thermal", "+usereload" );
 
 	for (;;)
 	{
@@ -1369,7 +1370,6 @@ heli_explode( altStyle )
 
 	// give "death" notify time to process
 	wait ( 0.05 );
-
 	// g_getplayervieworigin fix
 	// we hide this helicopter then delete it
 
@@ -2058,7 +2058,7 @@ heli_leave()
 	
 	// give "death" notify time to process
 	wait ( 0.05 );
-
+	
 	// g_getplayervieworigin fix
 	// we hide this helicopter then delete it
 	if (isDefined(self))

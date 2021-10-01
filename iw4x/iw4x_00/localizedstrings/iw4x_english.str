@@ -985,4 +985,46 @@ LANG_ENGLISH		"Juiced"
 REFERENCE			SPLASHES_COMBATHIGH_DESC
 LANG_ENGLISH		"Move faster for a few seconds after spawning."
 
+REFERENCE           MENU_GAMEPAD
+LANG_ENGLISH        "Gamepad"
+
+REFERENCE           MENU_GAMEPAD_ENABLED
+LANG_ENGLISH        "Gamepad enabled"
+
+REFERENCE           MPUI_DESC_GAMEPAD_ENABLED
+LANG_ENGLISH        "Turn accepting inputs from gamepads on/off"
+
+REFERENCE           MPUI_DESC_LOOK_INVERSION
+LANG_ENGLISH        "Inverts the gamepad pitch axis (up/down)"
+
+REFERENCE           MENU_SLOWDOWN_ENABLED
+LANG_ENGLISH        "Enable slowdown aim assist"
+
+REFERENCE           MENU_LOCKON_ENABLED
+LANG_ENGLISH        "Enable lockon aim assist"
+
+REFERENCE           MPUI_DESC_SLOWDOWN_ENABLED
+LANG_ENGLISH        "Turn slowdown aim assist on/off. Slowdown reduces the stick turnrate when hovering over a target. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+
+REFERENCE           MPUI_DESC_LOCKON_ENABLED
+LANG_ENGLISH        "Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+
+REFERENCE           MENU_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH        "Sensitivity Preset"
+
+REFERENCE           MENU_SENSITIVITY_LOW_CAPS
+LANG_ENGLISH        "(Low) 1"
+
+REFERENCE           MENU_SENSITIVITY_MEDIUM_CAPS
+LANG_ENGLISH        "(Medium) 2"
+
+REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
+LANG_ENGLISH        "(High) 4"
+
+REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
+LANG_ENGLISH        "(Very High) 7"
+
+REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
+LANG_ENGLISH        "(Insane) 10"
+
 ENDMARKER
