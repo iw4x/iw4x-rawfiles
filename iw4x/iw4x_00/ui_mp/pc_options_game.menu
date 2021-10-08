@@ -82,4 +82,5 @@ menuDef
 
 	PC_OPTIONS_DVARYESNO_RAW(2, "@MENU_AUTORECORD", "cl_autoRecord", ;, "@MPUI_DESC_AUTORECORD", when(0), 1)
 	PC_OPTIONS_EDITFIELD_RAW(3, "@MENU_DEMOS_KEEP", "cl_demosKeep", 3, "@MPUI_DESC_DEMOS_KEEP", 1)
+	PC_OPTIONS_DVARYESNO(4, "@MENU_COLORBLIND_MODE", "r_colorBlindTeams", ;, when(0))
 }
