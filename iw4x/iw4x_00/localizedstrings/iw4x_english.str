@@ -1009,6 +1009,18 @@ LANG_ENGLISH        "Turn accepting inputs from gamepads on/off"
 REFERENCE           MPUI_DESC_LOOK_INVERSION
 LANG_ENGLISH        "Inverts the gamepad pitch axis (up/down)"
 
+REFERENCE           MENU_GPAD_STYLE
+LANG_ENGLISH        "Button Style"
+
+REFERENCE           MPUI_DESC_GPAD_STYLE
+LANG_ENGLISH        "Switch between Xbox and PlayStation HUDs."
+
+REFERENCE           MENU_GPAD_XBOX_CAPS
+LANG_ENGLISH        "Xbox"
+
+REFERENCE           MENU_GPAD_PS_CAPS
+LANG_ENGLISH        "PlayStation"
+
 REFERENCE           MENU_SLOWDOWN_ENABLED
 LANG_ENGLISH        "Enable slowdown aim assist"
 
