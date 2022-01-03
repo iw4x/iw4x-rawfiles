@@ -1,8 +1,8 @@
 name: Release
-'on':
+on:
   push:
-    branches:
-      - master
+    tags:
+      - "*"
 jobs:
   create_release:
     name: Create GitHub Release
