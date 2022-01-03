@@ -1,0 +1,22 @@
+name: Release
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  create_release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - run: 'bash ${GITHUB_WORKSPACE}/.github/release.sh'
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: latest
+          prerelease: false
+          title: Release
+          files: |
+            release.zip
