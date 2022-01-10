@@ -4,14 +4,14 @@ sudo apt update >> /dev/null && sudo apt install zip -y >> /dev/null # Ensure zi
 cd iw4x/
 cd iw4x_00/
 zip -r iw4x_00.iwd *
-find . ! -name 'iw4x_00.iwd' -type d -exec rm -rf {} +
-find . ! -name 'iw4x_00.iwd' -type f -exec rm -rf {} +
-cd ..
+mv iw4x_00.iwd ../
+cd .. 
+rm -rf iw4x_00/
 cd iw4x_01/
 zip -r iw4x_01.iwd *
-find . ! -name 'iw4x_01.iwd' -type d -exec rm -rf {} +
-find . ! -name 'iw4x_01.iwd' -type f -exec rm -rf {} +
+mv iw4x_01.iwd ../
 cd ..
+rm -rf iw4x_01/
 cd ..
 rm LICENSE
 rm README.md
