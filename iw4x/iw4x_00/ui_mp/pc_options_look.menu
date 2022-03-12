@@ -74,7 +74,7 @@ menuDef
 		exp											text(dvarString("sensitivity"))
 	}
 
-	PC_OPTIONS_DVARSLIDER(0, "@MENU_MOUSE_SENSITIVITY", "sensitivity", 0.01, 100, 5, ;, ;, ;, when(0))
+	PC_OPTIONS_DVARSLIDER(0, "@MENU_MOUSE_SENSITIVITY", "sensitivity", 0.1, 10, 5, ;, ;, ;, when(0))
 	PC_OPTIONS_DVARYESNO(1, "@MENU_INVERT_MOUSE", "ui_mousePitch", uiscript updateui_mousePitch;, when(0))
 
 	PC_OPTIONS_SEPERATOR(1)
