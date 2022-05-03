@@ -1,0 +1,132 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define MENU_NAME									"pc_options_gamepad"
+#define MENU_TITLE									"@MENU_GAMEPAD"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define SENSITIVITY_1		0.6		// (Low)
+#define SENSITIVITY_2		1		// (Medium)
+#define SENSITIVITY_3		1.4
+#define SENSITIVITY_4		1.8		// (High)
+#define SENSITIVITY_5		2.0
+#define SENSITIVITY_6		2.2
+#define SENSITIVITY_7		2.6		// (Very High)
+#define SENSITIVITY_8		3.0
+#define SENSITIVITY_9		3.5
+#define SENSITIVITY_10		4.0		// (Insane)
+
+#define CLOSE_MENUS \
+	close "controls_multi"; \
+	close "main_controls"; \
+	close "main_options"; \
+	close "options_control_defaults"; \
+	close "options_graphics"; \
+	close "options_graphics_defaults"; \
+	close "options_graphics_texture"; \
+	close "options_multi"; \
+	close "options_voice"; \
+	close "pc_options_actions"; \
+	close "pc_options_advanced_video"; \
+	close "pc_options_audio"; \
+	close "pc_options_controls"; \
+	close "pc_options_look"; \
+	close "pc_options_movement"; \
+	close "pc_options_multi"; \
+	close "pc_options_video"; \
+	close "pc_options_voice";
+
+#define ON_MENU_OPEN \
+	CLOSE_MENUS										\
+	exec											"setfromdvar ui_name name"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	setLocalVarBool									ui_hint_display 1; \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setFocus										"buttonGamepad";
+
+#define ON_MENU_ESC \
+	close self; \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	{ \
+		execnow										"setfromdvar r_picmip ui_r_picmip"; \
+		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
+		execnow										"setfromdvar r_picmip_spec ui_r_picmip_spec"; \
+		execnow										"setfromdvar r_picmip_manual ui_r_picmip_manual"; \
+		exec										"wait; wait; r_applyPicmip"; \
+		setLocalVarBool								"ui_showPicApply" (0); \
+	} \
+	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	{ \
+		open										"all_restart_popmenu"; \
+	} \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+#define ON_GPAD_ENABLED when(dvarBool("gpad_enabled") == 1)
+#define ON_GPAD_DISABLED when(dvarBool("gpad_enabled") == 0)
+
+#define ON_GAMEPAD_ENABLED_TOGGLE \
+    if (dvarbool("gpad_enabled") && dvarstring("gpad_sticksConfig") == "") \
+    { \
+        setdvar                                     gpad_sticksConfig "thumbstick_default"; \
+        execnow                                     "bindgpsticksconfigs"; \
+    } \
+    if (dvarbool("gpad_enabled") && dvarstring("gpad_buttonConfig") == "") \
+    { \
+        setdvar                                     gpad_buttonConfig "buttons_default"; \
+        execnow                                     "bindgpbuttonsconfigs"; \
+    }
+
+menuDef
+{
+	name											MENU_NAME
+	rect											0 0 640 480
+	foreColor										CHOICE_TEXTCOLOR
+	focusColor										CHOICE_TEXTCOLOR
+	blurWorld										7
+
+	MENU_ON_OPEN(ON_MENU_OPEN)
+	MENU_ON_CLOSE(ON_MENU_CLOSE)
+	MENU_ON_ESC(ON_MENU_ESC)
+
+	#define BACKGROUND_PC_OPTIONS
+	#define BACKGROUND_IW4
+	#define SIDEBAR_RIGHT
+	#include "ui_mp/bg.inc"
+
+	#include "ui_mp/leftside_options.inc"
+
+	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+	PC_OPTIONS_DVARYESNO_RAW(0, "@MENU_GAMEPAD_ENABLED", "gpad_enabled", ON_GAMEPAD_ENABLED_TOGGLE;, "@MPUI_DESC_GAMEPAD_ENABLED", when(0), 1)
+	PC_OPTIONS_SEPERATOR_VIS(0, ON_GPAD_ENABLED)
+
+	PC_OPTIONS_DVARYESNO_RAW(1, "@MENU_LOOK_INVERSION", "input_invertPitch", ;, "@MPUI_DESC_LOOK_INVERSION", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_STRLIST_RAW(2, "@MENU_THUMBSTICK_LAYOUT", "gpad_sticksConfig", 
+		{"@MENU_DEFAULT"; "thumbstick_default"; 
+		"@MENU_SOUTHPAW"; "thumbstick_southpaw"; 
+		"@MENU_LEGACY"; "thumbstick_legacy"; 
+		"@MENU_LEGACY_SOUTHPAW"; "thumbstick_legacysouthpaw"}, execNow "bindgpsticksconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_STRLIST_RAW(3, "@MENU_BUTTON_LAYOUT", "gpad_buttonConfig", 
+		{"@MENU_DEFAULT"; "buttons_default"; 
+		"@MENU_TACTICAL"; "buttons_tactical"; 
+		"@MENU_LEFTY"; "buttons_lefty"; 
+		"@MENU_NOMAD"; "buttons_nomad";
+		"@MENU_DEFAULT_ALT"; "buttons_default_alt"; 
+		"@MENU_TACTICAL_ALT"; "buttons_tactical_alt"; 
+		"@MENU_LEFTY_ALT"; "buttons_lefty_alt"; 
+		"@MENU_NOMAD_ALT"; "buttons_nomad_alt"}, execNow "bindgpbuttonsconfigs";, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_FLOATLIST_RAW(4, "@MENU_GPAD_STYLE", "gpad_style", {"@MENU_GPAD_XBOX_CAPS" 0 "@MENU_GPAD_PS_CAPS" 1}, ;, "@MPUI_DESC_GPAD_STYLE", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_DVARYESNO_RAW(5, "@MENU_SLOWDOWN_ENABLED", "gpad_slowdown_enabled", ;, "@MPUI_DESC_SLOWDOWN_ENABLED", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_DVARYESNO_RAW(6, "@MENU_LOCKON_ENABLED", "gpad_lockon_enabled", ;, "@MPUI_DESC_LOCKON_ENABLED", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_SEPERATOR_VIS(6, ON_GPAD_ENABLED)
+	PC_OPTIONS_DVARSLIDER_RAW(7, "@MENU_LOOK_SENSITIVITY", "input_viewSensitivity", 0.5, 4, 1.0, ;, ;, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED, ON_GPAD_ENABLED)
+	PC_OPTIONS_FLOATLIST_RAW(8, "@MENU_LOOK_SENSITIVITY_PRESET", "input_viewSensitivity", 
+		{"@MENU_SENSITIVITY_LOW_CAPS" SENSITIVITY_1 "@MENU_SENSITIVITY_MEDIUM_CAPS" SENSITIVITY_2 "3" SENSITIVITY_3
+		"@MENU_SENSITIVITY_HIGH_CAPS" SENSITIVITY_4 "5" SENSITIVITY_5 "6" SENSITIVITY_6
+		"@MENU_SENSITIVITY_VERY_HIGH_CAPS" SENSITIVITY_7 "8" SENSITIVITY_8 "9" SENSITIVITY_9 "@MENU_SENSITIVITY_INSANE_CAPS" SENSITIVITY_10}, 
+		;, ;, ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+}

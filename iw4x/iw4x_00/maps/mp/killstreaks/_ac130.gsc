@@ -961,6 +961,7 @@ thermalVision()
 	self visionSetThermalForPlayer( game["thermal_vision"], 1 );
 
 	self notifyOnPlayerCommand( "switch thermal", "+activate" );
+	self notifyOnPlayerCommand( "switch thermal", "+usereload" );
 
 	for (;;)
 	{

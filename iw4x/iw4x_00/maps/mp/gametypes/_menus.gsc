@@ -1,9 +1,21 @@
 #include maps\mp\_utility;
 
+/*
+	Author: Intricate, Diamante
+	Dvars:
+		- scr_player_forceautoassign <bool>
+		false - (default) default game behaviour
+		true - players will be automatically assigned to a team
+
+		Notes: fs_game check was removed as the default value is now false.
+		If a server owner decides to set it to true, its their choice regardless of loaded mods.
+		Mods should replace this file in case of conflicts.
+*/
+
 init()
 {
-	//Intricate - Create DVAR for forcing auto assign, useful for server that would like it.
-	SetDvarIfUninitialized("scr_player_forceautoassign", true);
+	SetDvarIfUninitialized( "scr_player_forceautoassign", false );
+
 	if ( !isDefined( game["gamestarted"] ) )
 	{
 		game["menu_team"] = "team_marinesopfor";
@@ -348,9 +360,8 @@ beginClassChoice( forceNewChoice )
 
 beginTeamChoice()
 {
-	//Intricate - We put the auto assign where the actual team selection is. Also make sure that a mod isn't loaded, mainly to prevent bugs with them.
-	if( GetDvar("scr_player_forceautoassign") && GetDvar("fs_game") == ""  )
-		self notify("menuresponse", game["menu_team"], "autoassign");
+	if ( getDvarInt( "scr_player_forceautoassign" ) != 0 )
+		self notify( "menuresponse", game["menu_team"], "autoassign");		
 	else
 		self openpopupMenu( game["menu_team"] );
 	
@@ -360,7 +371,7 @@ beginTeamChoice()
 showMainMenuForTeam()
 {
 	assert( self.pers["team"] == "axis" || self.pers["team"] == "allies" );
-	
+
 	team = self.pers["team"];
 	
 	// menu_changeclass_team is the one where you choose one of the n classes to play as.
