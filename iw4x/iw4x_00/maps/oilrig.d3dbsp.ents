@@ -9891,3 +9891,24 @@
 	"origin" "-7895 4584 914"
 	"model" "*1"
 }
+// Blockage of the propane tank on the roof
+//Visual Part
+{
+"classname" "script_brushmodel"
+"origin" "1300 315.2 -83.875"
+"angles" "0 0 0"
+"model" "*73"
+}
+{
+"classname" "script_brushmodel"
+"origin" "1063.7 325.2 -83.875"
+"angles" "0 180 0"
+"model" "*77"
+}
+//Collision Part
+{
+"classname" "script_brushmodel"
+"origin" "1250 183 -27"
+"angles" "90 90 270"
+"model" "*1"
+}
