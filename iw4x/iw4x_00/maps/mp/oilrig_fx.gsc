@@ -8,7 +8,7 @@ main()
 
 precacheFX()
 {
-	level._effect[ "pipe_steam" ]		 = LoadFX( "impacts/pipe_steam" );
+	level._effect[ "pipe_steam" ]		= loadfx( "impacts/pipe_steam" );
 	level._effect[ "firelp_small_pm_nolight" ]					= loadfx( "fire/firelp_small_pm_nolight" );
 	level._effect[ "firelp_small_pm" ]							= loadfx( "fire/firelp_small_pm" );
 	level._effect[ "minigun_shell_eject" ] 								= loadfx( "shellejects/20mm_mp" );

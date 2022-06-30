@@ -6,10 +6,13 @@
 /dev/sr0
 /dev/tty0
 /dev/urandom
-RektInator
+Diamante
 Doctor
 Dss0
 Jimbo
+Laupetin
+Louvenarde
 lsb_release -a
 Lunarion
+RektInator
 Snake
