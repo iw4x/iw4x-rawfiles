@@ -8,17 +8,28 @@ main()
 	game[ "attackers" ] = "allies";
 	game[ "defenders" ] = "axis";
 
-	maps\mp\_compass::setupMiniMap( "compass_map_oilrig_lvl_1" );
-	maps\mp\_compass::setupMiniMap( "compass_map_oilrig_lvl_2" );
 	maps\mp\_compass::setupMiniMap( "compass_map_oilrig_lvl_3" );
 
 	setDvar( "compassMaxRange", 4000.0 );
+
+	array_thread( getentarray( "compassTriggers", "targetname" ), ::compass_triggers_think );
 
 	thread level_think();
 
 	thread custom_kill_trigger();
 
 	thread killTrigger( ( 1020, 175, -80 ), 110, 250 );
+}
+
+compass_triggers_think()
+{
+	assertEx( isDefined( self.script_noteworthy ), "compassTrigger at " + self.origin + " needs to have a script_noteworthy with the name of the minimap to use" );
+
+	while ( true )
+	{
+		self waittill( "trigger" );
+		maps\mp\_compass::setupMiniMap( self.script_noteworthy );
+	}
 }
 
 level_think()
