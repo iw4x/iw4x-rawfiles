@@ -6,7 +6,7 @@ main()
 
 	maps\mp\_compass::setupMiniMap("compass_map_mp_farm");
 
-	//setExpFog(300, 1400, 0.5, 0.5, 0.5, 0);
+	//setExpFog(300, 1400, 0.5, 0.5, 0.5, 1.0, 0);
 	ambientPlay("ambient_farm");
 	//VisionSetNaked( "mp_farm" );
 	

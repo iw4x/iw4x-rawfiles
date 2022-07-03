@@ -6,7 +6,7 @@ main()
 
 	maps\mp\_compass::setupMiniMap("compass_map_mp_pipeline");
 
-	//setExpFog(700, 1500, 0.5, 0.5, 0.5, 0);
+	//setExpFog(700, 1500, 0.5, 0.5, 0.5, 1.0, 0);
 	ambientPlay("ambient_pipeline");
 	//VisionSetNaked( "mp_pipeline" );
 	

@@ -27,6 +27,6 @@ main()
 	setdvar("visionstore_filmTweakLightTint", "1.1 1.05 0.85");
 	setdvar("visionstore_filmTweakDarkTint", "0.7 0.85 1");
 
-	setExpFog(0, 8193, 0.169863, 0.168938, 0.244047, 0);
+	setExpFog(0, 8193, 0.169863, 0.168938, 0.244047, 1.0, 0);
 	VisionSetNaked( "launchfacility_a", 0 );
 }

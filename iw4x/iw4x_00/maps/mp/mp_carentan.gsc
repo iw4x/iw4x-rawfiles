@@ -13,12 +13,13 @@ main()
 	// raise up planes to avoid them flying through buildings
 	level.airstrikeHeightScale = 1.4;
 	
-	setExpFog(500, 3500, .5, 0.5, 0.45, 0);
+	setExpFog(500, 3500, .5, 0.5, 0.45, 1.0, 0);
 	ambientPlay("ambient_carentan_ext0");
 
 	
 	game["attackers"] = "axis";
 	game["defenders"] = "allies";
+
 }
 
 

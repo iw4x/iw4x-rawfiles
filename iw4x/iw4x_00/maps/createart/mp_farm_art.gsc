@@ -9,7 +9,7 @@ main()
 
 	setdvar( "scr_fog_disable", "0" );
 
-	setExpFog(300, 1400, 0.5, 0.5, 0.5, 0);
+	setExpFog(300, 1400, 0.35, 0.4, 0.5, 1.0, 0);
 	VisionSetNaked( "mp_farm", 0 );
 
 }
