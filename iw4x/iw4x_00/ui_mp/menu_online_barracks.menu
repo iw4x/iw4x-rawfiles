@@ -161,11 +161,23 @@ menuDef
 		}
 	}
 
-	MENU_CHOICE_HORIZONTAL_LINE(3)
+	itemDef
+	{
+		BUTTON_BASE(3, "button_3", "@MPUI_CLAN_TAG_CAPS", 0)
+		BUTTON_ACTION(open "popup_customclan";)
+		onFocus
+		{
+			play									CHOICE_FOCUS_SOUND;
+			setItemColor							self backColor 0 0 0 1;
+			setLocalVarString						"ui_hint_text" ("@MPUI_DESC_CLANTAG");
+		}
+	}
+
+	MENU_CHOICE_HORIZONTAL_LINE(4)
 
 	itemDef
 	{
-		BUTTON_BASE(3, "button_3", "@MPUI_RESET_STATS_CAPS", 0)
+		BUTTON_BASE(4, "button_4", "@MPUI_RESET_STATS_CAPS", 0)
 		BUTTON_ACTION(open "stats_reset";)
 		onFocus
 		{
@@ -177,7 +189,7 @@ menuDef
 
 	itemDef
 	{
-		BUTTON_BASE(4, "button_4", "@MPUI_UNLOCK_STATS_CAPS", 0)
+		BUTTON_BASE(5, "button_5", "@MPUI_UNLOCK_STATS_CAPS", 0)
 		BUTTON_ACTION(open "stats_unlock";)
 		onFocus
 		{
@@ -191,7 +203,7 @@ menuDef
 
 	itemDef
 	{
-		BUTTON_BASE(5, "button_5", "@MPUI_PRESTIGE_MODE_CAPS", !(getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)), 7))) && !(getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))))
+		BUTTON_BASE(6, "button_6", "@MPUI_PRESTIGE_MODE_CAPS", !(getplayerdata("prestige") < int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1)) && getplayerdata("experience") >= int(tablelookup("mp/rankTable.csv", 0, int(tablelookup("mp/rankTable.csv", 0, "maxrank", 1)), 7))) && !(getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))))
 		visible										when (!(getplayerdata("prestige") == int(tablelookup("mp/rankIconTable.csv", 0, "maxprestige", 1))))
 		BUTTON_ACTION(open "prestige_reset1";)
 		onFocus
