@@ -29,8 +29,8 @@
 		visible										1 \
 		text										" " \
 		dvar										"clanName" \
-		maxChars									15 \
-		maxPaintChars								15 \
+		maxChars									4 \
+		maxPaintChars								4 \
 		accept \
 		{ \
 			close									self; \
