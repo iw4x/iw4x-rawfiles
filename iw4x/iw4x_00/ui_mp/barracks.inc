@@ -6,7 +6,6 @@
 #define MENU_PANEL_STATS_POS_Y						100
 #endif
 
-#ifdef ENABLE_CLANTAG
 #define MENU_ITEM_PLAYERCARD_BOTTOM \
 	itemDef \
 	{ \
@@ -64,65 +63,6 @@
 		exp											rect x ((-140) + 74) \
 		exp											rect y ((PLAYERCARD_POS_Y + 48)) \
 	}
-#else
-#define MENU_ITEM_PLAYERCARD_BOTTOM \
-	itemDef \
-	{ \
-		name										"playercard_clantag" \
-		rect										0 0 208 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
-		decoration									\
-		visible										1 \
-		style										WINDOW_STYLE_FILLED \
-		foreColor									CHOICE_TEXTCOLOR \
-		textFont									UI_FONT_SMALL \
-		textAlign									ITEM_ALIGN_MIDDLE_LEFT \
-		textAlignX									8 \
-		textScale									CHOICE_TEXTSIZE \
-		exp											rect x ((-208)) \
-		exp											rect y ((PLAYERCARD_POS_Y) + 48) \
-		visible										when ((getplayercardinfo(0, 1, 0) != 0) && (getplayercardinfo(9, 1, 0) != "")) \
-		exp											text ("[" + getplayercardinfo(9, 1, 0) + "]") \
-	} \
-	itemDef \
-	{ \
-		name										"playercard_killstreak1" \
-		rect										0 0 20 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
-		style										WINDOW_STYLE_SHADER \
-		foreColor									CHOICE_TEXTCOLOR \
-		decoration									\
-		textScale									0.55 \
-		visible										1 \
-		exp											material (tableLookup("mp/killstreakTable.csv", 1, (getPlayerData("killstreaks", 0)), 16)) \
-		exp											rect x ((-208) + 8) \
-		exp											rect y ((PLAYERCARD_POS_Y + 48)) \
-	} \
-	itemDef \
-	{ \
-		name										"playercard_killstreak2" \
-		rect										0 0 20 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
-		style										WINDOW_STYLE_SHADER \
-		foreColor									CHOICE_TEXTCOLOR \
-		decoration									\
-		textScale									0.55 \
-		visible										1 \
-		exp											material (tableLookup("mp/killstreakTable.csv", 1, (getPlayerData("killstreaks", 1)), 16)) \
-		exp											rect x ((-208) + 29) \
-		exp											rect y ((PLAYERCARD_POS_Y + 48)) \
-	} \
-	itemDef \
-	{ \
-		name										"playercard_killstreak3" \
-		rect										0 0 20 20 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP \
-		style										WINDOW_STYLE_SHADER \
-		foreColor									CHOICE_TEXTCOLOR \
-		decoration									\
-		textScale									0.55 \
-		visible										1 \
-		exp											material (tableLookup("mp/killstreakTable.csv", 1, (getPlayerData("killstreaks", 2)), 16)) \
-		exp											rect x ((-208) + 50) \
-		exp											rect y ((PLAYERCARD_POS_Y + 48)) \
-	}
-#endif
 
 #define MENU_ITEM_PLAYERCARD \
 	itemDef \
