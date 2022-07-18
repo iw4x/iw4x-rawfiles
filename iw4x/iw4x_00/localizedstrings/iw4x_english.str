@@ -281,13 +281,13 @@ REFERENCE			MPUI_DESC_MODS
 LANG_ENGLISH		"Browse your Mods"
 
 REFERENCE			MENU_STORE
-LANG_ENGLISH		"Store"
+LANG_ENGLISH		"Get DLC"
 
 REFERENCE			MENU_STORE_CAPS
-LANG_ENGLISH		"STORE"
+LANG_ENGLISH		"GET DLC"
 
 REFERENCE			MPUI_DESC_STORE
-LANG_ENGLISH		"Browse for available downloadable game content."
+LANG_ENGLISH		"Redirects to the XLabs Site containing download information for DLC"
 
 REFERENCE			MENU_FRIENDS
 LANG_ENGLISH		"Friends"
@@ -708,54 +708,6 @@ LANG_ENGLISH		"XUID doesn't match the certificate!"
 
 REFERENCE			ERR_INVALID_CHALLENGE_SIGNATURE
 LANG_ENGLISH		"Challenge signature was invalid!"
-
-REFERENCE			PATCH_DLC1
-LANG_ENGLISH		"Stimulus Pack"
-
-REFERENCE			PATCH_DESC_DLC1
-LANG_ENGLISH		"The Modern Warfare 2 Stimulus Package delivers additional action-packed multiplayer maps, including brand-new battlegrounds and legendary fan-favorites from Call of Duty 4: Modern Warfare."
-
-REFERENCE			PATCH_DLC2
-LANG_ENGLISH		"Resurgence Pack"
-
-REFERENCE			PATCH_DESC_DLC2
-LANG_ENGLISH		"The Modern Warfare 2 Resurgence Pack delivers five incredible new multiplayer maps. Take the action to exciting new locations, then battle across legendary landscapes from Call of Duty 4: Modern Warfare."
-
-REFERENCE			PATCH_DLC3
-LANG_ENGLISH		"Nuketown"
-
-REFERENCE			PATCH_DESC_DLC3
-LANG_ENGLISH		"Nuketown is an iconic multiplayer map featured in Call of Duty: Black Ops with a heavy emphasis on extremely close-quarters combat."
-
-REFERENCE			PATCH_DLC4
-LANG_ENGLISH		"Classics Pack #1"
-
-REFERENCE			PATCH_DESC_DLC4
-LANG_ENGLISH		"The Modern Warfare 2 Classics Pack delivers three beloved maps from Call of Duty 4: Modern Warfare."
-
-REFERENCE			PATCH_DLC5
-LANG_ENGLISH		"Classics Pack #2"
-
-REFERENCE			PATCH_DESC_DLC5
-LANG_ENGLISH		"The second Modern Warfare 2 Classics Pack adds two more fantastic maps from Call of Duty 4: Modern Warfare to your collection."
-
-REFERENCE			PATCH_DLC6
-LANG_ENGLISH		"Freighter"
-
-REFERENCE			PATCH_DESC_DLC6
-LANG_ENGLISH		"Freighter is a snow covered version of the Call of Duty 4: Modern Warfare map Wet Work."
-
-REFERENCE			PATCH_DLC7
-LANG_ENGLISH		"Resurrection Pack"
-
-REFERENCE			PATCH_DESC_DLC7
-LANG_ENGLISH		"The Modern Warfare 2 Resurrection Pack brings three more maps into your battleground."
-
-REFERENCE			PATCH_DLC8
-LANG_ENGLISH		"Recycled Pack"
-
-REFERENCE			PATCH_DESC_DLC8
-LANG_ENGLISH		"Too much 'pew pew' not enough new new. - R. Bowling"
 
 REFERENCE			MENU_STREAMFRIENDLY_UI
 LANG_ENGLISH		"Stream Friendly UI"

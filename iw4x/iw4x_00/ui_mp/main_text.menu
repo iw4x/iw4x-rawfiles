@@ -94,7 +94,7 @@
 		MENU_CHOICE_BUTTON_VIS(6, button_6, "@MENU_THEATER_CAPS", open pc_theater_menu;, "@MPUI_DESC_THEATER", 1)
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(7, 1)
 		MENU_CHOICE_BUTTON_VIS(7, button_7, "@MENU_MODS_CAPS", open mods_menu;, "@MPUI_DESC_MODS", 1)
-		MENU_CHOICE_BUTTON_VIS(8, button_8, "@MENU_STORE_CAPS", open pc_store, "@MPUI_DESC_STORE", 1)
+		MENU_CHOICE_BUTTON_VIS(8, button_8, "@MENU_STORE_CAPS", uiScript "downloadDLC" 1, "@MPUI_DESC_STORE", 1)
 		MENU_CHOICE_NEWICON_VIS(8, when(!dvarBool(isDlcInstalled_All)))
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(8, 1)
 		MENU_CHOICE_BUTTON_VIS(9, button_9, "@MENU_OPTIONS_CAPS", open pc_options_video;, "@MPUI_DESC_OPTIONS", 1)
