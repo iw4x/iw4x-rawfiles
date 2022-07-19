@@ -12,6 +12,9 @@ main()
 
 	setDvar( "compassMaxRange", 4000.0 );
 
+	setExpFog( 3674.792, 4740, 0.076471, 0.118235, 0.07451, 0.8, 0 );
+	visionSetNaked( "oilrig", 0 );
+
 	array_thread( getentarray( "compassTriggers", "targetname" ), ::compass_triggers_think );
 
 	thread level_think();

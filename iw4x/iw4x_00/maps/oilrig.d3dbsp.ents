@@ -9844,7 +9844,7 @@
 {
 "classname" "script_brushmodel"
 "angles" "0 45 0"
-"origin" "1119 -3045 -1352"
+"origin" "1119 -3045 -2000"
 "model" "*14"
 }
 {
@@ -9902,8 +9902,8 @@
 {
 "classname" "script_brushmodel"
 "origin" "1063.7 325.2 -83.875"
-"angles" "0 180 0"
-"model" "*77"
+"angles" "0 270 0"
+"model" "*5"
 }
 //Collision Part
 {
