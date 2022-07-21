@@ -31,4 +31,5 @@ cd ..
 rm LICENSE
 rm README.md
 rm -rf .github
+rm -rf scripts
 zip -r release.zip *
