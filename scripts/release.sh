@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo apt update >> /dev/null && sudo apt install zip -y >> /dev/null # Ensure zip is up to date.
-cd iw4x/
 
+cd iw4x/
 
 # iw4x_00
 cd iw4x_00/

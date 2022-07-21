@@ -8,10 +8,10 @@ jobs:
     name: Create GitHub Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 1
-      - run: 'bash ${GITHUB_WORKSPACE}/.github/release.sh'
+      - run: 'bash ${GITHUB_WORKSPACE}/scripts/release.sh'
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
