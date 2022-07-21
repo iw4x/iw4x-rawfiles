@@ -70,7 +70,7 @@
 
 		ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
 		
-		MENU_CHOICE_TITLE_VIS(MENU_TITLE, 78, when(!dvarBool(cl_updateavailable)))
+        MENU_CHOICE_TITLE_VIS(MENU_TITLE, 78, when(!dvarBool(cl_updateavailable)))
 		MENU_CHOICE_TITLE_VIS(MENU_TITLE, 58, when(dvarBool(cl_updateavailable)))
 
 		// update buttons
@@ -94,14 +94,14 @@
 		MENU_CHOICE_BUTTON_VIS(6, button_6, "@MENU_THEATER_CAPS", open pc_theater_menu;, "@MPUI_DESC_THEATER", 1)
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(7, 1)
 		MENU_CHOICE_BUTTON_VIS(7, button_7, "@MENU_MODS_CAPS", open mods_menu;, "@MPUI_DESC_MODS", 1)
-		MENU_CHOICE_BUTTON_VIS(8, button_8, "@MENU_STORE_CAPS", uiScript "downloadDLC" 1, "@MPUI_DESC_STORE", 1)
-		MENU_CHOICE_NEWICON_VIS(8, when(!dvarBool(isDlcInstalled_All)))
-		MENU_CHOICE_HORIZONTAL_LINE_VIS(8, 1)
-		MENU_CHOICE_BUTTON_VIS(9, button_9, "@MENU_OPTIONS_CAPS", open pc_options_video;, "@MPUI_DESC_OPTIONS", 1)
+		MENU_CHOICE_BUTTON_VIS(8, button_8, "@MENU_OPTIONS_CAPS", open pc_options_video;, "@MPUI_DESC_OPTIONS", 1)
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(9, 1)
+		MENU_CHOICE_BUTTON_VIS(9, button_9, "@MENU_STORE_CAPS", uiScript "downloadDLC" 1, "@MPUI_DESC_STORE", 1)
+		MENU_CHOICE_NEWICON_VIS(9, when(!dvarBool(isDlcInstalled_All)))
 		MENU_CHOICE_BUTTON_VIS(10, button_10, "@MENU_SP_CREDITS_CAPS", open iw4x_credits;, "@NULL_EMPTY", 1)
-		MENU_CHOICE_HORIZONTAL_LINE_VIS(10, 1)
-		MENU_CHOICE_BUTTON_VIS(11, button_11, "@MENU_QUIT_CAPS", open quit_popmenu;, "@MPUI_DESC_QUIT", 1)
+		MENU_CHOICE_BUTTON_VIS(11, button_11, "@MENU_VISIT_WEBSITE_CAPS", uiScript "visitWebsite", "@NULL_EMPTY", 1)
+		MENU_CHOICE_HORIZONTAL_LINE_VIS(12, 1)
+		MENU_CHOICE_BUTTON_VIS(12, button_12, "@MENU_QUIT_CAPS", open quit_popmenu;, "@MPUI_DESC_QUIT", 1)
 
 		ITEM_BUTTON_FRIENDS(-250)
 
@@ -143,7 +143,7 @@
 		itemDef
 		{
 			name					"hint_area"
-			rect					0 340 215 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			rect					0 400 215 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 			foreColor				1 1 1 0.65
 			textAlign				6
 			textScale				CHOICE_TEXTSIZE

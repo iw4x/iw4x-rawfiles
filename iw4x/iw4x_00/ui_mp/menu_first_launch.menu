@@ -138,7 +138,6 @@
 
 		MENU_ITEM_BUTTON(-300, 326, 106.667, "website", "WEBSITE", uiScript "visitWebsite";)
 		MENU_ITEM_BUTTON(-70, 326, 146.667, "ok", "I UNDERSTAND", ACTION_ACCEPT)
-		MENU_ITEM_BUTTON(193.3333, 326, 106.667, "wiki", "WIKI", uiScript "visitWiki";)
 		MENU_ITEM_BUTTON(-70, 400, 146.667, "quit", "@MENU_QUIT_CAPS", ON_MENU_ESC)
 	}
 }
