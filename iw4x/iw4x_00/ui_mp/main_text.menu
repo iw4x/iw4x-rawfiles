@@ -70,7 +70,7 @@
 
 		ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
 		
-        MENU_CHOICE_TITLE_VIS(MENU_TITLE, 78, when(!dvarBool(cl_updateavailable)))
+		MENU_CHOICE_TITLE_VIS(MENU_TITLE, 78, when(!dvarBool(cl_updateavailable)))
 		MENU_CHOICE_TITLE_VIS(MENU_TITLE, 58, when(dvarBool(cl_updateavailable)))
 
 		// update buttons
