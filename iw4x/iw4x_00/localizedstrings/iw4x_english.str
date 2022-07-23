@@ -151,17 +151,17 @@ LANG_ENGLISH		"AK-74u Extended Mags"
 REFERENCE			WEAPON_AK74U_ACOG
 LANG_ENGLISH		"AK-74u ACOG Sight"
 
-REFERENCE           WEAPON_DESERTEAGLEGOLD_TACTICAL
-LANG_ENGLISH        "Gold Desert Eagle Tactical Knife"
+REFERENCE			WEAPON_DESERTEAGLEGOLD_TACTICAL
+LANG_ENGLISH		"Gold Desert Eagle Tactical Knife"
 
-REFERENCE           WEAPON_DESERTEAGLEGOLD_AKIMBO
-LANG_ENGLISH        "Gold Desert Eagle Akimbo"
+REFERENCE			WEAPON_DESERTEAGLEGOLD_AKIMBO
+LANG_ENGLISH		"Gold Desert Eagle Akimbo"
 
-REFERENCE           WEAPON_DESERTEAGLEGOLD_FMJ
-LANG_ENGLISH        "Gold Desert Eagle FMJ"
+REFERENCE			WEAPON_DESERTEAGLEGOLD_FMJ
+LANG_ENGLISH		"Gold Desert Eagle FMJ"
 
-REFERENCE           WEAPON_DESERTEAGLEGOLD_BLING
-LANG_ENGLISH        "Gold Desert Eagle Bling"
+REFERENCE			WEAPON_DESERTEAGLEGOLD_BLING
+LANG_ENGLISH		"Gold Desert Eagle Bling"
 
 REFERENCE			MENU_RECONNECTING_TO_PARTY
 LANG_ENGLISH		"CONNECTING TO SERVER"
@@ -955,79 +955,79 @@ LANG_ENGLISH		"Juiced"
 REFERENCE			SPLASHES_COMBATHIGH_DESC
 LANG_ENGLISH		"Move faster for a few seconds after spawning."
 
-REFERENCE           MENU_GAMEPAD
-LANG_ENGLISH        "Gamepad"
+REFERENCE			MENU_GAMEPAD
+LANG_ENGLISH		"Gamepad"
 
-REFERENCE           MENU_GAMEPAD_ENABLED
-LANG_ENGLISH        "Gamepad enabled"
+REFERENCE			MENU_GAMEPAD_ENABLED
+LANG_ENGLISH		"Gamepad enabled"
 
-REFERENCE           MPUI_DESC_GAMEPAD_ENABLED
-LANG_ENGLISH        "Turn accepting inputs from gamepads on/off"
+REFERENCE			MPUI_DESC_GAMEPAD_ENABLED
+LANG_ENGLISH		"Turn accepting inputs from gamepads on/off"
 
-REFERENCE           MPUI_DESC_LOOK_INVERSION
-LANG_ENGLISH        "Inverts the gamepad pitch axis (up/down)"
+REFERENCE			MPUI_DESC_LOOK_INVERSION
+LANG_ENGLISH		"Inverts the gamepad pitch axis (up/down)"
 
-REFERENCE           MENU_GPAD_STYLE
-LANG_ENGLISH        "Button Style"
+REFERENCE			MENU_GPAD_STYLE
+LANG_ENGLISH		"Button Style"
 
-REFERENCE           MPUI_DESC_GPAD_STYLE
-LANG_ENGLISH        "Switch between Xbox and PlayStation HUDs."
+REFERENCE			MPUI_DESC_GPAD_STYLE
+LANG_ENGLISH		"Switch between Xbox and PlayStation HUDs."
 
-REFERENCE           MENU_GPAD_XBOX_CAPS
-LANG_ENGLISH        "Xbox"
+REFERENCE			MENU_GPAD_XBOX_CAPS
+LANG_ENGLISH		"Xbox"
 
-REFERENCE           MENU_GPAD_PS_CAPS
-LANG_ENGLISH        "PlayStation"
+REFERENCE			MENU_GPAD_PS_CAPS
+LANG_ENGLISH		"PlayStation"
 
-REFERENCE           MENU_SLOWDOWN_ENABLED
-LANG_ENGLISH        "Enable slowdown aim assist"
+REFERENCE			MENU_SLOWDOWN_ENABLED
+LANG_ENGLISH		"Enable slowdown aim assist"
 
-REFERENCE           MENU_LOCKON_ENABLED
-LANG_ENGLISH        "Enable lockon aim assist"
+REFERENCE			MENU_LOCKON_ENABLED
+LANG_ENGLISH		"Enable lockon aim assist"
 
-REFERENCE           MPUI_DESC_SLOWDOWN_ENABLED
-LANG_ENGLISH        "Turn slowdown aim assist on/off. Slowdown reduces the stick turnrate when hovering over a target. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+REFERENCE			MPUI_DESC_SLOWDOWN_ENABLED
+LANG_ENGLISH		"Turn slowdown aim assist on/off. Slowdown reduces the stick turnrate when hovering over a target. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
 
-REFERENCE           MPUI_DESC_LOCKON_ENABLED
-LANG_ENGLISH        "Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+REFERENCE			MPUI_DESC_LOCKON_ENABLED
+LANG_ENGLISH		"Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
 
-REFERENCE           MENU_LOOK_SENSITIVITY_PRESET
-LANG_ENGLISH        "Sensitivity Preset"
+REFERENCE			MENU_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH		"Sensitivity Preset"
 
-REFERENCE           MENU_SENSITIVITY_LOW_CAPS
-LANG_ENGLISH        "(Low) 1"
+REFERENCE			MENU_SENSITIVITY_LOW_CAPS
+LANG_ENGLISH		"(Low) 1"
 
-REFERENCE           MENU_SENSITIVITY_MEDIUM_CAPS
-LANG_ENGLISH        "(Medium) 2"
+REFERENCE			MENU_SENSITIVITY_MEDIUM_CAPS
+LANG_ENGLISH		"(Medium) 2"
 
-REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
-LANG_ENGLISH        "(High) 4"
+REFERENCE			MENU_SENSITIVITY_HIGH_CAPS
+LANG_ENGLISH		"(High) 4"
 
-REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
-LANG_ENGLISH        "(Very High) 7"
+REFERENCE			MENU_SENSITIVITY_VERY_HIGH_CAPS
+LANG_ENGLISH		"(Very High) 7"
 
-REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
-LANG_ENGLISH        "(Insane) 10"
+REFERENCE			MENU_SENSITIVITY_INSANE_CAPS
+LANG_ENGLISH		"(Insane) 10"
 
-REFERENCE           FONT_ICON_SEARCH_START_WITH
-LANG_ENGLISH        "Font icons starting with ^2&&1^7:"
+REFERENCE			FONT_ICON_SEARCH_START_WITH
+LANG_ENGLISH		"Font icons starting with ^2&&1^7:"
 
-REFERENCE           FONT_ICON_HINT_AUTO_COMPLETE
-LANG_ENGLISH        "Press ^3&&1 ^7for autocomplete"
+REFERENCE			FONT_ICON_HINT_AUTO_COMPLETE
+LANG_ENGLISH		"Press ^3&&1 ^7for autocomplete"
 
-REFERENCE           FONT_ICON_HINT_MODIFIER
-LANG_ENGLISH        "Use ^3&&1 ^7for modifiers"
+REFERENCE			FONT_ICON_HINT_MODIFIER
+LANG_ENGLISH		"Use ^3&&1 ^7for modifiers"
 
-REFERENCE           FONT_ICON_MODIFIER_LIST_HEADER
-LANG_ENGLISH        "The following modifiers are available:"
+REFERENCE			FONT_ICON_MODIFIER_LIST_HEADER
+LANG_ENGLISH		"The following modifiers are available:"
 
-REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL
-LANG_ENGLISH        "^2&&1  ^7Flip icon horizontally"
+REFERENCE			FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL
+LANG_ENGLISH		"^2&&1  ^7Flip icon horizontally"
 
-REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL
-LANG_ENGLISH        "^2&&1  ^7Flip icon vertically"
+REFERENCE			FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL
+LANG_ENGLISH		"^2&&1  ^7Flip icon vertically"
 
-REFERENCE           FONT_ICON_MODIFIER_LIST_BIG
-LANG_ENGLISH        "^2&&1  ^7Bigger icon"
+REFERENCE			FONT_ICON_MODIFIER_LIST_BIG
+LANG_ENGLISH		"^2&&1  ^7Bigger icon"
 
 ENDMARKER
