@@ -65,14 +65,22 @@ ufo()
 god()
 {
 	FL_GODMODE = 1 << 0;
+	msg = &"";
 
 	if ( self.entityflags & FL_GODMODE )
 	{
+		msg = &"GAME_GODMODE_OFF";
 		self.entityflags &= ~FL_GODMODE;
 	}
 	else
 	{
+		msg = &"GAME_GODMODE_ON";
 		self.entityflags |= FL_GODMODE;
+	}
+
+	if ( isPlayer( self ) )
+	{
+		self iprintln( msg );
 	}
 }
 
@@ -91,14 +99,22 @@ god()
 demiGod()
 {
 	FL_DEMI_GODMODE = 1 << 1;
+	msg = &"";
 
 	if ( self.entityflags & FL_DEMI_GODMODE )
 	{
+		msg = &"GAME_DEMI_GODMODE_OFF";
 		self.entityflags &= ~FL_DEMI_GODMODE;
 	}
 	else
 	{
+		msg = &"GAME_DEMI_GODMODE_ON";
 		self.entityflags |= FL_DEMI_GODMODE;
+	}
+
+	if ( isPlayer( self ) )
+	{
+		self iprintln( msg );
 	}
 }
 
@@ -117,13 +133,21 @@ demiGod()
 noTarget()
 {
 	FL_NOTARGET = 1 << 2;
+	msg = &"";
 
 	if ( self.entityflags & FL_NOTARGET )
 	{
+		msg = &"GAME_NOTARGETOFF";
 		self.entityflags &= ~FL_NOTARGET;
 	}
 	else
 	{
+		msg = &"GAME_NOTARGETON";
 		self.entityflags |= FL_NOTARGET;
+	}
+
+	if ( isPlayer( self ) )
+	{
+		self iprintln( msg );
 	}
 }
