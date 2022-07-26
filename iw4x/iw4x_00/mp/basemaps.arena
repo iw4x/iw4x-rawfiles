@@ -320,7 +320,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "seals_udt"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -333,7 +333,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_desert"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 /*
@@ -346,7 +346,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "seals_udt"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -359,20 +359,8 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_composite"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
-}
-
-{
-    map          "iw4_credits"
-    longname     "IW4 Test Map"
-    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
-    description  ""
-    mapimage     "preview_iw4_credits"
-    mapoverlay   "compass_overlay_map_blank"
-    allieschar   "socom_141_desert"
-    axischar     "opforce_composite"
-    environment  "desert"
 }
 
 {
@@ -384,7 +372,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -397,10 +385,24 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "seals_udt"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 */
+{
+    map          "iw4_credits"
+    longname     "IW4 Test Map"
+    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
+    description  ""
+    mapimage     "preview_iw4_credits"
+    mapoverlay   "compass_overlay_map_blank"
+    allieschar   "socom_141_desert"
+    axischar     "opforce_composite"
+    useteamzones "true"
+    environment  "desert"
+}
+
+
 {
     map          "mp_nuked"
     longname     "MPUI_NUKED"
@@ -410,7 +412,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "desert"
 }
 
@@ -423,7 +425,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_composite"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -436,7 +438,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -449,7 +451,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -462,7 +464,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -475,7 +477,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_arctic"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "arctic"
 }
 
@@ -488,7 +490,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_composite"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -501,7 +503,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "militia"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -514,7 +516,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "militia"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -527,7 +529,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "militia"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -540,7 +542,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_arctic"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -553,7 +555,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -567,7 +569,7 @@
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
     environment  "urban"
-	useteamzones "true"
+    useteamzones "true"
     dependency   "mp_shipment_long"
 }
 
@@ -580,7 +582,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_forest"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -593,7 +595,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "militia"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -606,10 +608,9 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_desert"
     axischar     "opforce_composite"
-	useteamzones "true"
+    useteamzones "true"
     environment  "desert"
 }
-
 
 {
     map          "mp_backlot"
@@ -620,7 +621,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_composite"
-	useteamzones "true"
+    useteamzones "true"
     environment  "desert"
 }
 
@@ -633,7 +634,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -646,7 +647,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
 
@@ -659,7 +660,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "forest"
 }
 
@@ -672,7 +673,7 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "socom_141_arctic"
     axischar     "opforce_arctic"
-	useteamzones "true"
+    useteamzones "true"
     environment  "arctic"
 }
 
@@ -685,6 +686,6 @@
     mapoverlay   "compass_overlay_map_blank"
     allieschar   "us_army"
     axischar     "opforce_airborne"
-	useteamzones "true"
+    useteamzones "true"
     environment  "urban"
 }
