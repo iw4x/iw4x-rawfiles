@@ -1,0 +1,7212 @@
+{
+"northyaw" "260"
+"classname" "worldspawn"
+"suncolor" "1 0.917647 0.756863"
+"sunlight" "1.3"
+"sundirection" "-50 45 0"
+"sunradiosity" "1.5"
+"ambient" "2"
+"_color" "0.392157 0.603922 1"
+"skycolor" "0.74902 0.796078 1"
+"skylight" "0.9"
+"maxbounces" "2"
+"origin" "1845 -3072 1300"
+"radiosityScale" "2"
+}
+//MINI-MAP
+{
+"origin" "-2077 -5323 800"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"origin" "4800 2100 800"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+//Global Spectator
+{
+"angles" "0 -126.803 0"
+"origin" "2467.22 -3130.1 1258.89"
+"classname" "mp_global_intermission"
+}
+//SPAWNS
+/////TDM/////
+{
+"angles" "0 -145.738 0"
+"origin" "4268.04 691.54 632.125"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -79.2596 0"
+"origin" "4149.22 777.948 633.478"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -95.838 0"
+"origin" "4018.92 763.631 636.205"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -91.8665 0"
+"origin" "3931 776.659 634.9"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -92.0367 0"
+"origin" "3928.79 674.091 636.977"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -92.0367 0"
+"origin" "3970.89 673.948 637.807"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -92.0367 0"
+"origin" "4043.68 618.846 637.116"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -92.0367 0"
+"origin" "4108.35 552.117 636.017"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 5.17031 0"
+"origin" "-1452.93 -3065.83 758.741"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.44973 0"
+"origin" "-1441.46 -3181.27 762.455"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1374.11 -3311.8 762.762"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1310.53 -3427.06 759.828"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1198.76 -3410.12 753.373"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1216.83 -3309.16 752.136"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1240.86 -3192.34 758.829"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1267.23 -3016.71 750.107"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1285.82 -2911.59 747.583"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1306.77 -2813.22 754.4"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1231.93 -2801.89 750.756"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1198.39 -2886.87 743.157"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1149.07 -2984.4 743.401"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1131.45 -3080.29 750.383"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 8.97158 0"
+"origin" "-1078.97 -3158.83 749.272"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 96.5216 0"
+"origin" "799.18 -3343.67 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 179.391 0"
+"origin" "2840.74 -2688.45 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -63.7195 0"
+"origin" "3201.95 -2053.41 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 102.207 0"
+"origin" "3239.48 -2660.44 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 141.049 0"
+"origin" "4441.86 -3630 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 128.426 0"
+"origin" "1982.88 -775.49 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -2.62447 0"
+"origin" "1009.66 -195.617 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -2.2784 0"
+"origin" "1009.14 -248.312 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -11.2487 0"
+"origin" "3434.63 -84.0051 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 1.18227 0"
+"origin" "3439 12.6064 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 1.18227 0"
+"origin" "3379.18 12.5237 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 1.18227 0"
+"origin" "3379.26 -58.9146 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -59.7699 0"
+"origin" "3461.71 -2023.78 644.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -94.1296 0"
+"origin" "3591.77 -2618.74 640.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -91.0754 0"
+"origin" "3746.81 -1507.27 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -93.6627 0"
+"origin" "4251.95 -1804.28 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 130.662 0"
+"origin" "4458.34 -3628.88 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 149.245 0"
+"origin" "3245.44 -3387.76 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 127.316 0"
+"origin" "2985.18 -2532.33 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 111.194 0"
+"origin" "1968.1 -3958.58 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 48.6872 0"
+"origin" "1001.47 -3412.09 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 19.7931 0"
+"origin" "957.989 -2260.36 656.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 52.5983 0"
+"origin" "1005.17 -1800.16 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -25.2728 0"
+"origin" "1024.66 -217.016 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 20.4853 0"
+"origin" "1131.82 526.06 642.219"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -97.832 0"
+"origin" "4333.44 1251.29 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -88.1366 0"
+"origin" "4448.88 251.469 640.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -171.523 0"
+"origin" "4810.01 643.01 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 174.316 0"
+"origin" "4756.77 780.903 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 174.316 0"
+"origin" "4764.36 863.605 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 174.316 0"
+"origin" "4772.51 945.982 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 174.316 0"
+"origin" "4853.05 959.882 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 174.316 0"
+"origin" "4856.63 869.692 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 -171.699 0"
+"origin" "4833.52 704.825 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 -171.699 0"
+"origin" "4841.95 646.679 632.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 14.4373 0"
+"origin" "-1600.7 -3163.92 767.337"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 14.4373 0"
+"origin" "-1570.05 -3290.81 772.759"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 14.4373 0"
+"origin" "-1541.52 -3411.25 770.17"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 14.7834 0"
+"origin" "-1509.92 -3541.69 772.722"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 15.1294 0"
+"origin" "-1591.56 -3562.74 776.869"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 15.1294 0"
+"origin" "-1615.76 -3468.54 774.768"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 15.1294 0"
+"origin" "-1648.09 -3367.51 780.962"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 15.1294 0"
+"origin" "-1670.26 -3267.87 772.739"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 15.1294 0"
+"origin" "-1691.79 -3186.3 770.578"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 -4.55807 0"
+"origin" "-49.8798 -2521.03 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 12.7124 0"
+"origin" "312.03 -2581.2 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 125.108 0"
+"origin" "252.841 -3597.33 643.384"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 105.08 0"
+"origin" "169.221 -3596.93 650.985"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 88.161 0"
+"origin" "1107.39 -3733.82 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 111.474 0"
+"origin" "1989.74 -3955.52 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 53.285 0"
+"origin" "2162.18 -3345.59 658.157"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 -131.461 0"
+"origin" "2438.33 -2374.92 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 -131.461 0"
+"origin" "2421.52 -2551.5 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 -49.1021 0"
+"origin" "1987.05 -2016.86 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 155.502 0"
+"origin" "2426.09 -2643.44 640.023"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 28.7635 0"
+"origin" "2008.92 -2602.7 640.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 -11.9848 0"
+"origin" "1042.72 -1976.67 656.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 27.555 0"
+"origin" "954.682 -2272.88 656.125"
+"classname" "mp_ctf_spawn_axis"
+}
+{
+"angles" "0 -86.7468 0"
+"origin" "4271.23 328.965 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -91.4105 0"
+"origin" "4249.92 -419.52 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -93.1353 0"
+"origin" "4262.38 -1180.95 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -107.643 0"
+"origin" "4273.05 -1770.44 637.502"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 111.809 0"
+"origin" "3671.67 -1388.53 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 67.2596 0"
+"origin" "3535.13 -891.431 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 18.0518 0"
+"origin" "3368.14 -15.9905 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 15.1184 0"
+"origin" "3391.29 -90.6941 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -152.187 0"
+"origin" "3105.56 1168.87 640.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -58.2592 0"
+"origin" "4032.63 1247.2 663.017"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -52.7331 0"
+"origin" "4100.69 1265.95 664.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -52.7331 0"
+"origin" "4145.74 1262.03 664.125"
+"classname" "mp_ctf_spawn_allies"
+}
+{
+"angles" "0 -126.803 0"
+"origin" "2467.22 -3130.1 1258.89"
+"classname" "mp_global_intermission"
+}
+{
+"angles" "0 176.909 0"
+"origin" "4675.94 626.631 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 179.842 0"
+"origin" "4673.51 706.427 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 178.809 0"
+"origin" "4673.35 793.274 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 173.629 0"
+"origin" "4675.21 900.39 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 178.463 0"
+"origin" "4500.97 909.903 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 -178.087 0"
+"origin" "4501.55 833.938 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 -179.296 0"
+"origin" "4504.38 722.763 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 178.809 0"
+"origin" "4486.38 624.784 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 179.15 0"
+"origin" "4631.22 759.095 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 175.354 0"
+"origin" "4631.46 683.237 632.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 -116.789 0"
+"origin" "4407.28 54.2767 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 128.563 0"
+"origin" "3772.01 -815.659 636.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 51.2085 0"
+"origin" "3373.6 -71.8521 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 51.2085 0"
+"origin" "3340.13 8.11067 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 40.3266 0"
+"origin" "3535.13 -881.269 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -106.786 0"
+"origin" "4300.11 -1054.02 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -74.151 0"
+"origin" "3513.18 -1979.66 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -62.066 0"
+"origin" "4272.66 -1642.94 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 172.58 0"
+"origin" "4509.44 -2096.87 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -154.269 0"
+"origin" "4839.36 -2772.41 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -161.349 0"
+"origin" "5175.21 -2741.82 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 114.391 0"
+"origin" "5190.16 -3360.2 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 103.168 0"
+"origin" "5225.37 -3344.14 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 167.4 0"
+"origin" "4463.96 -3504.68 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 167.23 0"
+"origin" "4446.2 -3581.79 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 109.557 0"
+"origin" "4104.32 -3639.78 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 0.951576 0"
+"origin" "3927.29 -3413.14 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 164.813 0"
+"origin" "3245.45 -3395.68 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 120.302 0"
+"origin" "2683.13 -3412.99 648.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 111.496 0"
+"origin" "3008.88 -2644.96 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -131.093 0"
+"origin" "2990.96 -2051.55 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -44.7625 0"
+"origin" "2530.26 -2085.84 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -48.388 0"
+"origin" "2709.86 -1988.13 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -166.315 0"
+"origin" "3008.88 -2621.79 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 142.747 0"
+"origin" "2438.43 -2622.05 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 83.003 0"
+"origin" "1992.92 -2561.42 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -40.1043 0"
+"origin" "2017.63 -2003.13 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -145.947 0"
+"origin" "2416.88 -2045.12 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -0.273399 0"
+"origin" "1138.32 -771.828 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -165.167 0"
+"origin" "1982.88 -764.93 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -36.0229 0"
+"origin" "979.917 -175.125 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 11.6358 0"
+"origin" "976.663 -304.873 640.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 9.04301 0"
+"origin" "-1655.28 -3600.65 780.059"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.04301 0"
+"origin" "-1672.75 -3504.81 777.97"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.04301 0"
+"origin" "-1696.04 -3402.79 783.851"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1706.97 -3305.52 775.167"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1725.66 -3206.97 772.168"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1626.22 -3191.79 768.919"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1562.84 -3182.17 766.85"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1577.47 -3290.46 770.896"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1540.45 -3396.93 777.535"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 9.21329 0"
+"origin" "-1452.92 -3461.33 767.71"
+"classname" "mp_dom_spawn_axis_start"
+}
+//DOMINATION FLAGS
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "4090.28 -2928.86 638.313"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_b"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "4090.28 -2928.86 638.313"
+"script_linkto" "flag1 flag3"
+"script_linkname" "flag2"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "313.123 -3144.74 636.125"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_c"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "313.123 -3144.74 636.125"
+"script_linkto" "flag2 flag1"
+"script_linkname" "flag3"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "3986.7 706.334 637.228"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_a"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "3986.7 706.334 637.228"
+"script_linkto" "flag2 flag3"
+"script_linkname" "flag1"
+"classname" "script_origin"
+}
+//HELI
+{
+"angles" "0 -11.7376 0"
+"origin" "5153.78 -6204.18 2141.12"
+"targetname" "heli_start"
+"classname" "script_origin"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3983.78 -4090.31 1902.19"
+"targetname" "heli_loop_start"
+"classname" "script_origin"
+"target" "heli_spot_1"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3811.46 -3033.32 2431.06"
+"targetname" "heli_spot_1"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_2"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3656.04 -1996.39 2938.33"
+"targetname" "heli_spot_2"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_3"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3763.28 -1291.51 2841.75"
+"targetname" "heli_spot_3"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_4"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3635.82 829.443 2673.27"
+"targetname" "heli_spot_4"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_5"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "1156.89 -296.196 2536.29"
+"targetname" "heli_spot_5"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_6"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "2007.93 -1197.45 2472.49"
+"targetname" "heli_spot_6"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_7"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "2685.98 -2751.33 2262.68"
+"targetname" "heli_spot_7"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_8"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "2098.83 -1822.43 2301.57"
+"targetname" "heli_spot_8"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_9"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "2341.71 27.5952 2185.11"
+"targetname" "heli_spot_9"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_10"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3448.73 -835.344 2128.22"
+"targetname" "heli_spot_10"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_11"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3502.49 -1965.22 2120.16"
+"targetname" "heli_spot_11"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_12"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "2970.44 -1904.47 2373.9"
+"targetname" "heli_spot_12"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "4057.05 2897.25 2274.29"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "3646.12 295.575 2700.2"
+"targetname" "heli_crash_start"
+"classname" "script_origin"
+"target" "heli_crash_end"
+}
+{
+"angles" "0 -11.7376 0"
+"origin" "4111.72 2074.78 1739.09"
+"targetname" "heli_crash_end"
+"classname" "script_origin"
+}
+{
+"classname" "script_model"
+"targetname" "ac130Origin"
+"model" "c130_zoomrig"
+"origin" "2995.41 -1100 8000.08"
+"angles" "0 115 0"
+}
+{
+"origin" "2861.43 -869.035 7064"
+"targetname" "remoteMissileTarget"
+"classname" "script_origin"
+}
+{
+"script_targetoffset_z" "10000"
+"origin" "2404.51 -360.002 8856"
+"target" "remoteMissileTarget"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+
+{
+"classname" "script_model"
+"targetname" "ac130Origin"
+"model" "c130_zoomrig"
+"origin" "1914.54 -2078.97 3900"
+"angles" "0 115 0"
+}
+
+{
+"classname" "script_origin"
+"targetname" "airstrikeheight"
+"origin" "0 0 3000"
+}
+//GLOBAL TERMONUCLEAR BOMB
+{
+"script_gameobjectname" "gtnw"
+"targetname" "gtnw_zone"
+"origin" "4090.28 -2928.86 638.313"
+"height" "128"
+"radius" "128"
+"classname" "trigger_radius"
+"angles" "0 315 0"
+}
+
+{
+"gndLt" "3c3b3b0000"
+"ltOrigin" "4090.28 -2928.86 638.313"
+"spawnflags" "4"
+"classname" "script_model"
+"model" "com_bomb_objective"
+"angles" "0 90 0"
+"origin" "4090.28 -2928.86 638.313"
+"script_exploder" "pf133_1"
+"script_gameobjectname" "gtnw"
+}
+//CTF FLAGS
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_allies"
+"targetname" "ctf_trig_allies"
+"origin" "3962.1 607.258 638.998"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "3962.1 607.258 638.998"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "3962.1 607.258 638.998"
+"targetname" "ctf_flag_allies"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_allies"
+"origin" "3962.1 607.258 638.998"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_axis"
+"targetname" "ctf_trig_axis"
+"origin" "319.726 -3123.2 636.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "319.726 -3123.2 636.125"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "319.726 -3123.2 636.125"
+"targetname" "ctf_flag_axis"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_axis"
+"origin" "319.726 -3123.2 636.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+
+//XMODELS
+{
+"targetname" "vehicle_coupe_gray_destructible"
+"classname" "script_vehicle_collmap"
+"model" "*86"
+}
+{
+"targetname" "vehicle_coupe_gold_destructible"
+"classname" "script_vehicle_collmap"
+"model" "*87"
+}
+{
+"targetname" "vehicle_luxurysedan_2009_viewmodel"
+"classname" "script_vehicle_collmap"
+"model" "*88"
+}
+{
+"targetname" "vehicle_uaz_van"
+"classname" "script_vehicle_collmap"
+"model" "*89"
+}
+//CAR MODELS ON MAP
+{
+"maxBounces" "2"
+"radiosityScale" "1"
+"skycolor" "0.658824 0.796078 1"
+"skylight" "0.675"
+"_color" "0.5 0.5 .62"
+"ambient" ".116"
+"classname" "worldspawn"
+"sundirection" "-33 -15 0"
+"suncolor" "1 0.98 0.93"
+"sunlight" "1.3"
+"sunradiosity" "1.4"
+"origin" "0 0 0"
+}
+{
+"gndLt" "0e0e100005"
+"ltOrigin" "4916 -1497.33 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "4916 -1488 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 1.00179e-005 0"
+}
+{
+"gndLt" "373b410000"
+"ltOrigin" "4534.67 -1252 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "4544 -1252 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "3439410005"
+"ltOrigin" "4534.67 -1132 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "4544 -1132 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "504a3b0000"
+"ltOrigin" "4916 -934.67 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "4916 -944 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "373a3f0000"
+"ltOrigin" "4509.47 -5420.5 863"
+"origin" "4513.7 -5420.5 863"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "3156 -2572 759.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "3072 -2544 759.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"angles" "90 180 -180"
+"classname" "script_struct"
+"origin" "3184 -2656 759.5"
+"targetname" "light_glow_white_lamp_FX_origin"
+}
+{
+"targetname" "hotel_door_left"
+"classname" "script_brushmodel"
+"origin" "3422 -2381 692"
+"model" "*1"
+}
+{
+"gndLt" "2e2f340002"
+"ltOrigin" "3448 -2712.83 707"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "3448 -2712 690"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3242.18 -1978.68 721.918"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "3238 -1974.5 706"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 45 15"
+}
+{
+"ltOrigin" "3051.03 -2692.97 765.871"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "3044 -2700 752"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 135 30"
+}
+{
+"sundirection" "-34 -20 0"
+"sunradiosity" "1.5"
+"sunlight" "1.5"
+"skylight" "2.5"
+"radiosityScale" "3"
+"classname" "stage"
+"origin" "3296 -2334 717"
+"__smorigin" "3024 -2304 640"
+"__smangles" "0 0 0"
+"__smname" "prefabs/favela/hotel.map"
+"__smid" "1017"
+"model" "?0"
+}
+{
+"ltOrigin" "3424.46 -2339.5 687.624"
+"targetname" "hotel_knob"
+"angles" "0 180 0"
+"origin" "3423 -2339.5 687"
+"model" "dt_doorknob2"
+"classname" "script_model"
+}
+{
+"targetname" "hotel_door_right"
+"classname" "script_brushmodel"
+"origin" "3422 -2291 692"
+"model" "*2"
+}
+{
+"ltOrigin" "3424.46 -2332.5 687.624"
+"targetname" "hotel_knob"
+"angles" "0 180 0"
+"origin" "3423 -2332.5 687"
+"model" "dt_doorknob2"
+"classname" "script_model"
+}
+{
+"gndLt" "2e323a0000"
+"ltOrigin" "2003.67 -84 834"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2013 -84 834"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "30353d0000"
+"ltOrigin" "2003.67 236 834"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2013 236 834"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2e333c0000"
+"ltOrigin" "2003.67 -84 962"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2013 -84 962"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2e333c0000"
+"ltOrigin" "2003.67 236 962"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2013 236 962"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "3152 -3508.67 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3152 -3518 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3088 -3508.67 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3088 -3518 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3088 -3508.67 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3088 -3518 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3152 -3508.67 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3152 -3518 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3088 -3508.67 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3088 -3518 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3152 -3508.67 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3152 -3518 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3088 -3508.67 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3088 -3518 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3152 -3508.67 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3152 -3518 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3088 -3508.67 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3088 -3518 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "3152 -3508.67 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3152 -3518 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2800 -3508.67 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2800 -3518 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2736 -3508.67 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2736 -3518 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2736 -3508.67 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2736 -3518 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2800 -3508.67 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2800 -3518 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2736 -3508.67 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2736 -3518 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2800 -3508.67 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2800 -3518 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2736 -3508.67 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2736 -3518 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2800 -3508.67 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2800 -3518 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2736 -3508.67 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2736 -3518 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "2800 -3508.67 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "2800 -3518 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "4549521a05"
+"ltOrigin" "3807.02 -1680.98 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3807 -1681 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "0d0d0f0000"
+"ltOrigin" "3180 -742.67 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3180 -752 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "3f42471c05"
+"ltOrigin" "3561.33 -988 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3552 -988 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "6e645c8705"
+"ltOrigin" "3561.33 -1108 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3552 -1108 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "68605b8005"
+"ltOrigin" "3561.33 -988 1124"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3552 -988 1124"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "0d0d0f0000"
+"ltOrigin" "3180 -1305.33 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3180 -1296 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+}
+{
+"gndLt" "0d0d0f0000"
+"ltOrigin" "3228 -742.67 1124"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3228 -752 1124"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1024"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1024"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 896"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 896"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1152"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1152"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1280"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1280"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1408"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1408"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1536"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1536"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1664"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1664"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1792"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1792"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "988 -1926.67 1920"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "988 -1936 1920"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"origin" "-20734.9 -8495.54 13791"
+"targetname" "jesus"
+"classname" "script_origin"
+"angles" "0 43.5 0"
+}
+{
+"gndLt" "393b410000"
+"ltOrigin" "3251.77 -3249.73 662.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "3250 -3248 640"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "252b370a05"
+"ltOrigin" "3500.33 -1420 834"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3491 -1420 834"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "383f4c4d05"
+"ltOrigin" "3500.33 -1740 834"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3491 -1740 834"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "2a313c1d05"
+"ltOrigin" "3500.33 -1420 962"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3491 -1420 962"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "555e6e8105"
+"ltOrigin" "3500.33 -1740 962"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "3491 -1740 962"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "393b400000"
+"ltOrigin" "3224.17 -3248.68 662.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "3224 -3248 640"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "282a2d0005"
+"ltOrigin" "5270.67 -3716 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5280 -3716 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2d323b0000"
+"ltOrigin" "5516 -3334.67 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5516 -3344 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "2e333b0000"
+"ltOrigin" "5636 -3334.67 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5636 -3344 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "2f343e0000"
+"ltOrigin" "5516 -3334.67 1124"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5516 -3344 1124"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "79685b8305"
+"ltOrigin" "5833.33 -3716 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5824 -3716 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "36383a0005"
+"ltOrigin" "5270.67 -3668 1124"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "5280 -3668 1124"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "43464d6305"
+"ltOrigin" "2332.23 -2790.27 662.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "2334 -2792 640"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "43464c7805"
+"ltOrigin" "2359.83 -2791.32 662.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "2360 -2792 640"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "4b4c528905"
+"ltOrigin" "3804.02 -1334.98 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3804 -1335 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "171a1f0000"
+"ltOrigin" "5245.26 -3573.05 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "5245.84 -3573.17 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 247 0"
+}
+{
+"gndLt" "171a1e0000"
+"ltOrigin" "5225.24 -3597.99 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "5226.04 -3597.94 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 284 0"
+}
+{
+"gndLt" "22252b0000"
+"ltOrigin" "5177.11 -3388.57 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "5176.92 -3388.16 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 31 0"
+}
+{
+"gndLt" "4d4c511e05"
+"ltOrigin" "3804.02 -1187.98 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3804 -1188 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "4e4d510605"
+"ltOrigin" "3804.02 -963.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3804 -964 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "3639400000"
+"ltOrigin" "4510.58 -1777.14 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "4511.54 -1777.14 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 276 0"
+}
+{
+"gndLt" "35383f0000"
+"ltOrigin" "4513.92 -1806.74 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "4514 -1806.06 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 341 0"
+}
+{
+"ltOrigin" "1119.7 2193.77 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1117.3 2202.78 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1181.52 2210.33 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1179.12 2219.34 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1181.52 2210.33 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1179.12 2219.34 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1119.7 2193.77 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1117.3 2202.78 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1181.52 2210.33 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1179.12 2219.34 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1119.7 2193.77 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1117.3 2202.78 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1181.52 2210.33 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1179.12 2219.34 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1119.7 2193.77 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1117.3 2202.78 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1181.52 2210.33 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1179.12 2219.34 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1119.7 2193.77 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1117.3 2202.78 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1459.7 2284.87 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1457.3 2293.88 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1521.52 2301.43 936"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1519.12 2310.44 936"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1521.52 2301.43 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1519.12 2310.44 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1459.7 2284.87 1064"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1457.3 2293.88 1064"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1521.52 2301.43 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1519.12 2310.44 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1459.7 2284.87 1192"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1457.3 2293.88 1192"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1521.52 2301.43 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1519.12 2310.44 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1459.7 2284.87 1320"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1457.3 2293.88 1320"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1521.52 2301.43 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1519.12 2310.44 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"ltOrigin" "1459.7 2284.87 1448"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1457.3 2293.88 1448"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 15 0"
+}
+{
+"gndLt" "5d544e0005"
+"ltOrigin" "1942.67 -4324 868"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1952 -4324 868"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "5b524b0005"
+"ltOrigin" "1942.67 -4204 996"
+"precache_script" "common_scripts _destructible_types_anim_airconditioner"
+"sound_csv_include" "destruct_airconditioner"
+"destructible_type" "toy_airconditioner"
+"csv_include" "destructible_airconditioner_ex"
+"targetname" "destructible_toy"
+"origin" "1952 -4204 996"
+"model" "com_ex_airconditioner"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "-3833 331.29 734.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3833 336 735"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"classname" "script_struct"
+"origin" "-2760.33 -509.116 763.505"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334.306 176.078 -89.6243"
+}
+{
+"classname" "script_origin"
+"targetname" "pf549_auto1392"
+"origin" "-2796 -784 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf549_auto1393"
+"origin" "-2728.1 -721 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf549_auto1394"
+"origin" "-2689.1 -550 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf549_auto1395"
+"origin" "-2912 -540 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf549_auto1396"
+"origin" "-2877 -672 713"
+}
+{
+"ltOrigin" "-2635 -171.29 732.794"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2635 -176 732"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 0 180"
+}
+{
+"classname" "script_struct"
+"origin" "-2766.83 -100.991 756.505"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "334.306 179.378 -89.6243"
+}
+{
+"classname" "script_origin"
+"targetname" "pf599_auto1396"
+"origin" "-2752 -116 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf599_auto1397"
+"origin" "-2912 -64 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf599_auto1398"
+"origin" "-2852 -16 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf654_auto1403"
+"origin" "-3649 -1215 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf654_auto1404"
+"origin" "-3937 -1175 713"
+}
+{
+"classname" "script_struct"
+"origin" "-3273 -498.5 740.5"
+"targetname" "light_glow_white_bulb_FX_origin"
+"angles" "0 1.00179e-005 90"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1399"
+"origin" "-3128 -608 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1400"
+"origin" "-3072 -552 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1401"
+"origin" "-3072 -400 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1402"
+"origin" "-3112 -224 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1403"
+"origin" "-3284 -144 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf700_auto1404"
+"origin" "-3328 -272 713"
+}
+{
+"classname" "script_struct"
+"origin" "-3891.36 -841.043 753.947"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "299.306 0.511772 -89.95"
+}
+{
+"classname" "script_origin"
+"targetname" "pf781_auto1405"
+"origin" "-3671 -907.5 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf781_auto1406"
+"origin" "-3616 -705 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf781_auto1407"
+"origin" "-3903 -653 713"
+}
+{
+"ltOrigin" "-3476.23 -741 726"
+"origin" "-3472 -741 726"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "-3259.29 -737 730.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3264 -737 731"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf890_auto1390"
+"origin" "-2424 -1104 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf890_auto1391"
+"origin" "-2256 -1068 713"
+}
+{
+"ltOrigin" "-2580.71 -1392 735.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2576 -1392 736"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf890_auto1392"
+"origin" "-2364 -1196 713"
+}
+{
+"ltOrigin" "-3139.29 264 745.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3144 264 746"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"classname" "script_struct"
+"origin" "-3089.5 279.887 764.032"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "335 90 -90"
+}
+{
+"classname" "script_origin"
+"targetname" "pf963_auto1397"
+"origin" "-2784 231 713"
+}
+{
+"classname" "script_struct"
+"origin" "-3115 365.5 736"
+"targetname" "light_glow_white_bulb_FX_origin"
+"angles" "0 1.00179e-005 90"
+}
+{
+"classname" "script_origin"
+"targetname" "pf963_auto1398"
+"origin" "-2850 160 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf963_auto1399"
+"origin" "-3056 224 713"
+}
+{
+"ltOrigin" "-2484.71 -493 739.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2480 -493 740"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "-2100.71 -541 731.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2096 -541 732"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2d2f360000"
+"ltOrigin" "-2891.29 -1659 691.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2896 -1659 692"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1156_auto1403"
+"origin" "-3328 80 713"
+}
+{
+"ltOrigin" "-3605 -308.71 734.794"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3605 -304 734"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 180 180"
+}
+{
+"script_noteworthy" "hiding_door_part_disconnect"
+"script_linkName" "pf1181_1"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-3398 80 700"
+"model" "*3"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"script_linkTo" "pf1181_1"
+"target" "pf1181_auto1"
+"origin" "-3330 108 657"
+"targetname" "hiding_door_guy_org"
+"angles" "0 270 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "38393b4a01"
+"ltOrigin" "-3330 80.06 704"
+"script_noteworthy" "hiding_door_part"
+"target" "pf1181_auto2"
+"origin" "-3331 108 656"
+"targetname" "pf1181_auto1"
+"angles" "0 3.18772e-006 0"
+"model" "com_door_01_handleleft"
+"classname" "script_model"
+}
+{
+"classname" "script_brushmodel"
+"targetname" "pf1181_auto2"
+"spawnflags" "1"
+"target" "pf1181_auto3"
+"script_noteworthy" "hiding_door_part_disconnect"
+"origin" "-3330 108 657"
+"model" "*4"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"targetname" "pf1181_auto3"
+"classname" "script_brushmodel"
+"origin" "-3386 108 657"
+"model" "*5"
+}
+{
+"ltOrigin" "-3148.13 -1206.23 737.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3146.66 -1210.65 738"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 194 0"
+}
+{
+"classname" "script_struct"
+"origin" "-4120 3.88691 759.532"
+"targetname" "fluorescent_glow_FX_origin"
+"angles" "335 90 -90"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1243_auto1404"
+"origin" "-3950 -144 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1243_auto1405"
+"origin" "-4136 158 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1243_auto1406"
+"origin" "-3968 158 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1243_auto1407"
+"origin" "-3889 111 713"
+}
+{
+"ltOrigin" "-4123.29 -593 742.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-4128 -593 743"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "-2709.68 -1131.31 748.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2714 -1133 749"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 107.1 0"
+}
+{
+"ltOrigin" "-2867.29 -1157 740.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-2872 -1157 741"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1380_auto1392"
+"origin" "-2760 -1408 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1380_auto1393"
+"origin" "-2688 -1356 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1380_auto1394"
+"origin" "-2804 -1096 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1574_auto1391"
+"origin" "-2392 -1658 713"
+}
+{
+"classname" "script_struct"
+"origin" "-2562 -1658 754"
+"targetname" "light_glow_white_bulb_FX_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1574_auto1392"
+"origin" "-2656 -1544 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1574_auto1393"
+"origin" "-2764 -1584 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1574_auto1394"
+"origin" "-2796 -1628 713"
+}
+{
+"classname" "script_origin"
+"targetname" "pf1574_auto1395"
+"origin" "-2796 -1700 713"
+}
+{
+"origin" "-3530.95 -817.034 761"
+"angles" "89.5425 327.586 150.084"
+"targetname" "pf1826_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-3482.99 -819.125 761.332"
+"angles" "89.5425 327.586 150.084"
+"targetname" "pf1826_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-3578.9 -814.943 760.668"
+"angles" "89.5425 327.586 150.084"
+"targetname" "pf1826_auto3"
+"classname" "script_origin"
+}
+{
+"gndLt" "3238430301"
+"ltOrigin" "-3291.38 -1145.84 884.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-3295 -1140 859"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 271.3 0"
+}
+{
+"ltOrigin" "-3751 -965.23 739"
+"origin" "-3751 -961 739"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-4011.29 -427 736.794"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-4016 -427 736"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 270 -180"
+}
+{
+"ltOrigin" "-4187.29 1007 742.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-4192 1007 743"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "3f3c3f1d01"
+"ltOrigin" "-4782.23 259.783 769.283"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-4786.12 256.748 747.269"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "8.16386 63.4708 5.29441"
+}
+{
+"origin" "-4012.31 -1187 764.006"
+"angles" "87.8 180 176.1"
+"targetname" "pf2042_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-4060.16 -1190.26 765.844"
+"angles" "87.8 180 176.1"
+"targetname" "pf2042_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-3964.45 -1183.74 762.168"
+"angles" "87.8 180 176.1"
+"targetname" "pf2042_auto3"
+"classname" "script_origin"
+}
+{
+"origin" "-2992 -419 760"
+"angles" "90 183.9 -180"
+"targetname" "pf2045_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-3039.89 -422.265 760"
+"angles" "90 183.9 -180"
+"targetname" "pf2045_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-2944.11 -415.735 760"
+"angles" "90 183.9 -180"
+"targetname" "pf2045_auto3"
+"classname" "script_origin"
+}
+{
+"origin" "-3816.97 -1039.83 760.002"
+"angles" "88.7887 78.3196 170.819"
+"targetname" "pf2048_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-3814.88 -991.89 761.003"
+"angles" "88.7887 78.3196 170.819"
+"targetname" "pf2048_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-3819.06 -1087.78 759"
+"angles" "88.7887 78.3196 170.819"
+"targetname" "pf2048_auto3"
+"classname" "script_origin"
+}
+{
+"origin" "-3971.22 -596.649 764.011"
+"angles" "87.0463 121.69 -30.8317"
+"targetname" "pf2051_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-3928.66 -618.751 761.887"
+"angles" "87.0463 121.69 -30.8317"
+"targetname" "pf2051_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-4013.77 -574.548 766.135"
+"angles" "87.0463 121.69 -30.8317"
+"targetname" "pf2051_auto3"
+"classname" "script_origin"
+}
+{
+"gndLt" "3a3d456d01"
+"ltOrigin" "-3166 390.77 823"
+"origin" "-3166 395 823"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-3146 199.659 854.614"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-3146 202 822"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0.9 270 0"
+}
+{
+"ltOrigin" "-3245 -139.29 746.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-3245 -144 747"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "373e4c0001"
+"ltOrigin" "-2272.46 -499.986 831.614"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-2271 -498 799"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0.9 245 0"
+}
+{
+"gndLt" "3e44518801"
+"ltOrigin" "-2737.04 -435.237 863.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-2740 -431.5 838"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 260.8 0"
+}
+{
+"gndLt" "3b41497801"
+"ltOrigin" "-3908.46 -158.486 816.614"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-3907 -156.5 784"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0.9 245 0"
+}
+{
+"gndLt" "44474c6e01"
+"ltOrigin" "620.226 1009.73 710.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "622 1008 688"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "43464c7901"
+"ltOrigin" "647.825 1008.68 710.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "648 1008 688"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "40434d0000"
+"ltOrigin" "4192.02 -1379.98 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "4192 -1380 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "43464e0000"
+"ltOrigin" "4192.02 -1187.98 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "4192 -1188 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"ltOrigin" "723 -1444.71 793.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "723 -1440 794"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"ltOrigin" "671 -1444.71 793.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "671 -1440 794"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"ltOrigin" "635.77 -1273 761"
+"origin" "640 -1273 761"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "73705f8b05"
+"ltOrigin" "1156.23 -862 863"
+"origin" "1152 -862 863"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "494d577601"
+"ltOrigin" "-4360 -1231.7 910.037"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-4360 -1231.7 888"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 326.975 0"
+}
+{
+"gndLt" "44474d0000"
+"ltOrigin" "4192.02 -963.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "4192 -964 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "56585b0005"
+"ltOrigin" "3804.02 -579.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3804 -580 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "55585a0005"
+"ltOrigin" "3804.02 -355.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "3804 -356 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "44474d0000"
+"ltOrigin" "4192.02 -771.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "4192 -772 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "41454c0000"
+"ltOrigin" "4192.02 -579.983 667.456"
+"sound_csv_include" "destruct_parkingmeter"
+"csv_include" "destructible_parkingmeter"
+"angles" "0 227 0"
+"destructible_type" "toy_parkingmeter"
+"targetname" "destructible_toy"
+"origin" "4192 -580 640"
+"model" "com_parkingmeter_destructible"
+"classname" "script_model"
+}
+{
+"gndLt" "40454e5005"
+"ltOrigin" "3801.81 -1732.76 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "3804 -1735 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "3d424c0000"
+"ltOrigin" "4193.76 -1986.19 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "4196 -1984 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "3a3c430605"
+"ltOrigin" "3562.24 -3241.81 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "3560 -3244 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "35373d0005"
+"ltOrigin" "2533.76 -3246.19 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "2536 -3244 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3e448505"
+"ltOrigin" "4845.81 -2793.76 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "4848 -2796 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "31363f0005"
+"ltOrigin" "4845.76 -3246.19 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "4848 -3244 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "554d497005"
+"ltOrigin" "3390.03 -2733.87 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "3390.06 -2733 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 0.399953 0"
+}
+{
+"gndLt" "58514c8305"
+"ltOrigin" "3421.81 -2735.46 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "3421.27 -2735.33 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 65.4 0"
+}
+{
+"gndLt" "4e4c4e0f05"
+"ltOrigin" "3795.27 -2553.27 662.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "3797 -2551.5 640"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "514f502405"
+"ltOrigin" "3796.32 -2525.67 662.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "3797 -2525.5 640"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"script_noteworthy" "right"
+"targetname" "pf2391_auto9"
+"classname" "script_brushmodel"
+"origin" "-6126 2386 859"
+"model" "*6"
+}
+{
+"script_noteworthy" "left"
+"targetname" "pf2391_auto9"
+"classname" "script_brushmodel"
+"origin" "-6101 2422 859"
+"model" "*7"
+}
+{
+"origin" "-6135.58 2419.4 859"
+"target" "pf2391_auto9"
+"targetname" "window_smash"
+"classname" "script_origin"
+"angles" "0 55 0"
+}
+{
+"gndLt" "4248546a01"
+"ltOrigin" "-6584.68 957.03 1574.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6584.68 957.03 1552"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 43.706 0"
+}
+{
+"gndLt" "3e414b4d01"
+"ltOrigin" "-7010.3 1035.92 1550.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7010.3 1035.92 1528"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 34 0"
+}
+{
+"gndLt" "42464f6d01"
+"ltOrigin" "-7326.51 1159.67 1550.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7326.51 1159.67 1528"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"classname" "script_struct"
+"origin" "-6723.77 1058.08 1344"
+"targetname" "light_glow_white_bulb_FX_origin"
+"angles" "270 235 -2.79748e-006"
+}
+{
+"ltOrigin" "-6818.99 961.201 1344.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6821.23 957.251 1345"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 145 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2511_auto1409"
+"origin" "-6679.96 1190.38 1296"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2511_auto1410"
+"origin" "-7350.43 1181.3 1424"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2511_auto1411"
+"origin" "-7108.3 899.453 1424"
+"angles" "0 55 0"
+}
+{
+"gndLt" "3339440000"
+"ltOrigin" "-6970.47 1457.89 1503.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6970.47 1457.89 1481"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 270.607 0"
+}
+{
+"gndLt" "353c492901"
+"ltOrigin" "-5796.39 286.035 1678.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5796.39 286.035 1656"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 220 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2962_auto1408"
+"origin" "-5991.4 1772.76 1075"
+"angles" "0 55 0"
+}
+{
+"target" "pf2963_auto1"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5731 1888 1075"
+"model" "*8"
+}
+{
+"target" "pf2963_auto2"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5772 1917 1075"
+"model" "*9"
+}
+{
+"target" "pf2963_auto3"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5758 1908 1075"
+"model" "*10"
+}
+{
+"target" "pf2963_auto4"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5744 1898 1075"
+"model" "*11"
+}
+{
+"target" "pf2964_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5764 1916 1103"
+"model" "*12"
+}
+{
+"target" "pf2965_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5735 1896 1103"
+"model" "*13"
+}
+{
+"target" "pf2966_auto1"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5806 1941 1075"
+"model" "*14"
+}
+{
+"target" "pf2966_auto2"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5847 1970 1075"
+"model" "*15"
+}
+{
+"target" "pf2966_auto3"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5834 1961 1075"
+"model" "*16"
+}
+{
+"target" "pf2966_auto4"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5820 1951 1075"
+"model" "*17"
+}
+{
+"target" "pf2967_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5839 1969 1103"
+"model" "*18"
+}
+{
+"target" "pf2968_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5810 1948 1103"
+"model" "*19"
+}
+{
+"target" "pf2969_auto2"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5824 1709 1067"
+"model" "*20"
+}
+{
+"target" "pf2969_auto3"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5824 1709 1084"
+"model" "*21"
+}
+{
+"target" "pf2969_auto4"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5824 1709 1101"
+"model" "*22"
+}
+{
+"target" "pf2970_auto1"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5891 2001 1116"
+"model" "*23"
+}
+{
+"target" "pf2970_auto2"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5891 2001 1099"
+"model" "*24"
+}
+{
+"target" "pf2970_auto3"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5891 2001 1082"
+"model" "*25"
+}
+{
+"target" "pf2976_auto1"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5936 1729 1075"
+"model" "*26"
+}
+{
+"target" "pf2976_auto2"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5895 1700 1075"
+"model" "*27"
+}
+{
+"target" "pf2976_auto3"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5908 1709 1075"
+"model" "*28"
+}
+{
+"target" "pf2976_auto4"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5922 1719 1075"
+"model" "*29"
+}
+{
+"target" "pf2977_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5903 1701 1103"
+"model" "*30"
+}
+{
+"target" "pf2978_auto5"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "-5932 1722 1103"
+"model" "*31"
+}
+{
+"ltOrigin" "-5984.52 1910.69 1114.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-5988.47 1912.93 1115"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"gndLt" "3c3e496401"
+"ltOrigin" "-6146.03 -257.764 1806.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6146.03 -257.764 1784"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 40 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2993_auto1410"
+"origin" "-6209.6 -247.433 1680"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf2993_auto1411"
+"origin" "-5934.82 -217.651 1680"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-6072.49 -108.41 1727.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6074.73 -112.36 1728"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 145 0"
+}
+{
+"script_noteworthy" "right"
+"targetname" "pf3096_auto1"
+"classname" "script_brushmodel"
+"origin" "-6651 1969 1132"
+"model" "*32"
+}
+{
+"script_noteworthy" "left"
+"targetname" "pf3096_auto1"
+"classname" "script_brushmodel"
+"origin" "-6677 1933 1132"
+"model" "*33"
+}
+{
+"origin" "-6641.85 1935.23 1132"
+"target" "pf3096_auto1"
+"targetname" "window_smash"
+"classname" "script_origin"
+"angles" "0 55 0"
+}
+{
+"script_noteworthy" "right"
+"targetname" "pf3096_auto9"
+"classname" "script_brushmodel"
+"origin" "-6651 1969 1252"
+"model" "*34"
+}
+{
+"script_noteworthy" "left"
+"targetname" "pf3096_auto9"
+"classname" "script_brushmodel"
+"origin" "-6677 1933 1252"
+"model" "*35"
+}
+{
+"origin" "-6641.85 1935.23 1252"
+"target" "pf3096_auto9"
+"targetname" "window_smash"
+"classname" "script_origin"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3096_auto1408"
+"origin" "-6451.82 1704.5 1235"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3096_auto1409"
+"origin" "-6663.15 1950.14 1235"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3096_auto1410"
+"origin" "-6715.93 1752.71 1251"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-6546.28 1901.85 1279.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6544.04 1905.8 1280"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 325 0"
+}
+{
+"gndLt" "5568610f01"
+"ltOrigin" "-6473.85 1658.19 1276.71"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6477.8 1660.43 1277.5"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"gndLt" "3d45557801"
+"ltOrigin" "-5062.55 1542.93 1398.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5062.55 1542.93 1376"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 280 0"
+}
+{
+"angles" "90 235 -180"
+"classname" "script_struct"
+"origin" "-5264.17 873.514 1234"
+"targetname" "light_glow_white_bulb_FX_origin"
+}
+{
+"ltOrigin" "-5287.05 816.311 1239.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-5289.29 812.361 1240"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 145 0"
+}
+{
+"script_noteworthy" "right"
+"targetname" "pf3256_auto9"
+"classname" "script_brushmodel"
+"origin" "-5510 1425 1099"
+"model" "*36"
+}
+{
+"script_noteworthy" "left"
+"targetname" "pf3256_auto9"
+"classname" "script_brushmodel"
+"origin" "-5535 1389 1099"
+"model" "*37"
+}
+{
+"classname" "script_origin"
+"targetname" "window_smash"
+"target" "pf3256_auto9"
+"origin" "-5500.49 1391.18 1099"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-5447.29 1187.37 1119.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-5443.34 1185.13 1120"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 235 0"
+}
+{
+"gndLt" "3b404a2f01"
+"ltOrigin" "-5138.25 623.589 1462.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5138.25 623.589 1440"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 66.53 0"
+}
+{
+"gndLt" "3a3f4a3301"
+"ltOrigin" "-5158.56 657.344 1462.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5158.56 657.344 1440"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 186.028 0"
+}
+{
+"gndLt" "393e4a2601"
+"ltOrigin" "-5570.64 946.492 1439.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5570.64 946.492 1417"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 270.607 0"
+}
+{
+"gndLt" "3b44536c01"
+"ltOrigin" "-7234.66 1937.22 1367.17"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7234.73 1934.08 1346"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "1.18938 163.746 4.44379"
+}
+{
+"script_noteworthy" "right"
+"targetname" "pf3329_auto9"
+"classname" "script_brushmodel"
+"origin" "-6522 424 1603"
+"model" "*38"
+}
+{
+"script_noteworthy" "left"
+"targetname" "pf3329_auto9"
+"classname" "script_brushmodel"
+"origin" "-6548 388 1603"
+"model" "*39"
+}
+{
+"classname" "script_origin"
+"targetname" "window_smash"
+"target" "pf3329_auto9"
+"origin" "-6513.2 391.201 1603"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3382_auto1411"
+"origin" "-6854.24 411.483 1676"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3382_auto1412"
+"origin" "-6968.47 244.867 1808"
+"angles" "0 55 0"
+}
+{
+"gndLt" "373f4f5901"
+"ltOrigin" "-6848.35 378.058 1934.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6848.35 378.058 1912"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 304 0"
+}
+{
+"ltOrigin" "-6979.5 262.992 1727.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6981.74 259.042 1728"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 145 0"
+}
+{
+"ltOrigin" "-6911.98 404.827 1855.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6915.93 407.068 1856"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-7445.67 116.859 1831.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-7449.62 119.1 1832"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3529_auto1411"
+"origin" "-7130.85 131.508 1792"
+"angles" "0 55 0"
+}
+{
+"spawnflags" "1"
+"targetname" "faust_appearance_2_door"
+"classname" "script_brushmodel"
+"origin" "-7834 855 1848"
+"model" "*40"
+}
+{
+"gndLt" "4a4e586c01"
+"ltOrigin" "-7437.92 793.441 1814.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7437.92 793.441 1792"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"gndLt" "3a43536f01"
+"ltOrigin" "-5238.89 347.358 1678.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-5238.89 347.358 1656"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"ltOrigin" "-7629.35 297.931 2062.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7629.35 297.931 2040"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 93.2434 0"
+}
+{
+"origin" "-6203.02 1705.91 1202"
+"angles" "89 235 -180"
+"targetname" "pf3746_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-6230.54 1666.6 1202.84"
+"angles" "89 235 -180"
+"targetname" "pf3746_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-6175.49 1745.22 1201.16"
+"angles" "89 235 -180"
+"targetname" "pf3746_auto3"
+"classname" "script_origin"
+}
+{
+"gndLt" "383f4c5801"
+"ltOrigin" "-6086.91 1586.33 1334.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6086.91 1586.33 1312"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 280 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3753_auto1408"
+"origin" "-5899.37 1429.98 1231"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3753_auto1409"
+"origin" "-6245.74 1423.48 1231"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3870_auto1406"
+"origin" "-6371.82 1975.66 1001"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3870_auto1407"
+"origin" "-6093.93 2069.18 1001"
+"angles" "0 55 0"
+}
+{
+"classname" "script_origin"
+"targetname" "pf3870_auto1408"
+"origin" "-6102 1764.75 1059"
+"angles" "0 55 0"
+}
+{
+"gndLt" "3942516f01"
+"ltOrigin" "-6282.05 1898.15 1254.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6282.05 1898.15 1232"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"ltOrigin" "-6278.02 2149.14 1123"
+"origin" "-6274.97 2147.11 1123"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 235 0"
+}
+{
+"ltOrigin" "-6396.26 1980.03 1169.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6392.31 1977.79 1170"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 235 0"
+}
+{
+"gndLt" "46474b0001"
+"ltOrigin" "-6525.24 1563.42 1205.72"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_02"
+"destructible_type" "toy_trashbin_02"
+"targetname" "destructible_toy"
+"origin" "-6525.24 1565.9 1184"
+"model" "com_trashbin02"
+"classname" "script_model"
+"angles" "0 9.99999 0"
+}
+{
+"gndLt" "4f52597901"
+"ltOrigin" "-8210.93 1422.97 1798.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-8210.93 1422.97 1776"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 190 0"
+}
+{
+"gndLt" "2d31380000"
+"ltOrigin" "-5574.1 1565.46 1157.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-5569.85 1560.6 1132"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 86.3 0"
+}
+{
+"gndLt" "4340405b01"
+"ltOrigin" "-6095.62 1651.71 1153.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-6101.61 1648.5 1128"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 3.70002 0"
+}
+{
+"gndLt" "3a37390000"
+"ltOrigin" "-6323.24 -200.818 1651.59"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_02"
+"destructible_type" "toy_trashbin_02"
+"targetname" "destructible_toy"
+"origin" "-6325.11 -206.005 1630.33"
+"model" "com_trashbin02"
+"classname" "script_model"
+"angles" "356.848 184.709 3.78851"
+}
+{
+"gndLt" "363b443901"
+"ltOrigin" "-4679.92 1817.45 801.138"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-4678.63 1818.02 778.838"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "2.19294 244.045 1.15948"
+}
+{
+"gndLt" "2b323d0b01"
+"ltOrigin" "-5541.94 2097.08 803.14"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-5541.19 2095.18 780.872"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "359.231 211.766 3.7884"
+}
+{
+"gndLt" "2c333f2401"
+"ltOrigin" "-5572.12 2116.69 803.019"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-5570.97 2115.09 780.744"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "357.1 248.871 2.55699"
+}
+{
+"gndLt" "343c498501"
+"ltOrigin" "-5383.63 2173.43 793.939"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-5384.53 2171.7 771.654"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "359.01 160.948 3.19749"
+}
+{
+"ltOrigin" "-7724.05 330.058 2188.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7724.05 330.058 2166"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 93.2434 0"
+}
+{
+"gndLt" "4147537801"
+"ltOrigin" "-8100.54 1770.14 1558.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-8100.54 1770.14 1536"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 46.705 0"
+}
+{
+"gndLt" "3d44516b01"
+"ltOrigin" "-7602.76 2471.46 1340.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7602.76 2471.46 1318"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 171.554 0"
+}
+{
+"gndLt" "3e45525a01"
+"ltOrigin" "-6717 2943.35 974.037"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-6717 2943.35 952"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 171.554 0"
+}
+{
+"ltOrigin" "-7846.57 605.067 2184.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-7846.57 605.067 2162"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 46.705 0"
+}
+{
+"gndLt" "3234370000"
+"ltOrigin" "-8011.1 891.637 1781.54"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_02"
+"destructible_type" "toy_trashbin_02"
+"targetname" "destructible_toy"
+"origin" "-8011.35 894.134 1759.6"
+"model" "com_trashbin02"
+"classname" "script_model"
+"angles" "0.235917 185.288 -6.80947"
+}
+{
+"gndLt" "443f433701"
+"ltOrigin" "-8499.63 96.2263 2006.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-8499.63 96.2263 1984"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 46.705 0"
+}
+{
+"gndLt" "39414e0c01"
+"ltOrigin" "-8657.09 634.975 2098.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-8657.09 634.975 2076"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"gndLt" "3741526801"
+"ltOrigin" "-8930.84 346.889 2318.04"
+"sound_csv_include" "destruct_water_collector"
+"csv_include" "destructible_water_collector"
+"destructible_type" "toy_water_collector"
+"targetname" "destructible_toy"
+"origin" "-8930.84 346.889 2296"
+"model" "utility_water_collector"
+"classname" "script_model"
+"angles" "0 310 0"
+}
+{
+"gndLt" "424c50ca01"
+"ltOrigin" "-8810.97 342.83 2015.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-8814.92 345.071 2016"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-9163.59 160.027 2071.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-9167.54 162.268 2072"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"gndLt" "272a2f0000"
+"ltOrigin" "-6439.36 1933.99 1107.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-6435.03 1928.97 1082"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 87.1 0"
+}
+{
+"gndLt" "39404caf01"
+"ltOrigin" "-6046.3 2777.5 1019.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-6042.05 2772.64 994"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 86.3 0"
+}
+{
+"ltOrigin" "-5776.73 2145.75 979"
+"origin" "-5778.76 2142.7 979"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 145 0"
+}
+{
+"gndLt" "3b42508b01"
+"ltOrigin" "-4007.04 2431.18 1011.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-4013.03 2431.07 986"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 41.3 0"
+}
+{
+"gndLt" "615c4fdf01"
+"ltOrigin" "-7090.14 2583.94 1117"
+"origin" "-7088.39 2587.26 1117"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 330.3 0"
+}
+{
+"gndLt" "3b3e471501"
+"ltOrigin" "-6633.62 2669.4 968.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-6634.09 2675.07 943"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 289.1 0"
+}
+{
+"ltOrigin" "-5586.51 1329.63 1232.61"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-5584.88 1328.19 1200"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 145 0"
+}
+{
+"gndLt" "3a3f4b4801"
+"ltOrigin" "-5652.64 1264.68 1276.58"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-5649.48 1262.95 1244"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "4.5306 170.082 2.11746"
+}
+{
+"ltOrigin" "-6562.4 1085.4 1389.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6566.35 1087.64 1390"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-6214.12 690.15 1437.21"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-6218.07 692.391 1438"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 55 0"
+}
+{
+"ltOrigin" "-7255.24 1815.23 1346.55"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-7249.33 1817.34 1320.8"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 190 0"
+}
+{
+"ltOrigin" "-7574.12 1221.37 1498.57"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-7573.17 1218.85 1466"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "358.872 53.806 -5.42658"
+}
+{
+"gndLt" "424347d601"
+"ltOrigin" "-7599.66 993.289 1680.61"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-7600.48 995.044 1648"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "359.025 323.678 1.57307"
+}
+{
+"origin" "-5834.6 1603.67 1168.03"
+"angles" "84.8256 272.253 174.324"
+"targetname" "pf4936_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-5827.98 1556.32 1172.34"
+"angles" "84.8256 272.253 174.324"
+"targetname" "pf4936_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-5841.21 1651.01 1163.72"
+"angles" "84.8256 272.253 174.324"
+"targetname" "pf4936_auto3"
+"classname" "script_origin"
+}
+{
+"gndLt" "2c30380000"
+"ltOrigin" "-7059.71 95.5487 1923.6"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-7060.86 92.8719 1891"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 9.99999 -5.42658"
+}
+{
+"gndLt" "504f528c01"
+"ltOrigin" "-7380.53 313.47 1901.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-7381.51 319.229 1876"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 286.3 0"
+}
+{
+"gndLt" "2e323a0001"
+"ltOrigin" "-7862.13 642.658 1937.57"
+"csv_include" "destructible_transformer_small01"
+"destructible_type" "toy_transformer_small01"
+"targetname" "destructible_toy"
+"origin" "-7860.68 640.705 1905"
+"model" "utility_transformer_small01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "358.872 70.406 -5.42658"
+}
+{
+"gndLt" "34353d4701"
+"ltOrigin" "-8796.22 531.993 2234.75"
+"csv_include" "destructible_transformer_ratnest01"
+"destructible_type" "toy_transformer_ratnest01"
+"targetname" "destructible_toy"
+"origin" "-8797.2 537.752 2209"
+"model" "utility_transformer_ratnest01"
+"classname" "script_model"
+"sound_csv_include" "destruct_transformer"
+"angles" "0 286.3 0"
+}
+{
+"gndLt" "4140420005"
+"ltOrigin" "2115.77 -3249.73 662.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "2114 -3248 640"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "4341420005"
+"ltOrigin" "2088.17 -3248.68 662.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "2088 -3248 640"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "4a47498605"
+"ltOrigin" "3514.24 -2797.81 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "3512 -2800 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"gndLt" "3f3f3f0000"
+"ltOrigin" "1922.13 -1822.03 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "1923 -1822.06 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 270.4 0"
+}
+{
+"gndLt" "403f3f0000"
+"ltOrigin" "1920.54 -1853.81 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "1920.67 -1853.27 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 335.4 0"
+}
+{
+"gndLt" "524d4b0000"
+"ltOrigin" "1814.46 -3600.49 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "1816.7 -3598.3 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "5a534e0000"
+"ltOrigin" "1813.66 -4001.29 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "1815.9 -3999.1 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "564f4c0005"
+"ltOrigin" "1812.36 -4374.19 656.578"
+"sound_csv_include" "destruct_firehydrant"
+"csv_include" "destructible_firehydrant"
+"origin" "1814.6 -4372 640"
+"targetname" "destructible_toy"
+"destructible_type" "toy_firehydrant"
+"model" "com_firehydrant"
+"classname" "script_model"
+}
+{
+"gndLt" "534d490000"
+"ltOrigin" "1819.73 -3866.23 662.269"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_blue"
+"destructible_type" "toy_newspaper_stand_blue"
+"targetname" "destructible_toy"
+"origin" "1818 -3868 640"
+"model" "com_newspaperbox_blue"
+"classname" "script_model"
+"angles" "0 1.00179e-005 0"
+}
+{
+"gndLt" "544e490000"
+"ltOrigin" "1818.68 -3893.83 662.288"
+"sound_csv_include" "destruct_newspaperbox"
+"csv_include" "destructible_newspaperbox_red"
+"targetname" "destructible_toy"
+"destructible_type" "toy_newspaper_stand_red"
+"origin" "1818 -3894 640"
+"model" "com_newspaperbox_red"
+"classname" "script_model"
+"angles" "0 1.00179e-005 0"
+}
+{
+"gndLt" "4039330005"
+"ltOrigin" "1993.97 -3986.13 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "1993.94 -3987 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 180.4 0"
+}
+{
+"gndLt" "453f380d05"
+"ltOrigin" "1962.19 -3984.54 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "1962.73 -3984.67 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 245.4 0"
+}
+{
+"gndLt" "3f3f3c3501"
+"ltOrigin" "588.722 -1466.15 678.59"
+"targetname" "forklift_after"
+"angles" "0 10 -4.60049"
+"classname" "script_model"
+"model" "com_pallet"
+"origin" "588.8 -1466.5 674.1"
+}
+{
+"gndLt" "3938348404"
+"ltOrigin" "-395.979 -974.691 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-396.368 -974.474 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 56 0"
+}
+{
+"gndLt" "292a290000"
+"ltOrigin" "19.4781 -815.511 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "19.4724 -814.552 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 6.26089 0"
+}
+{
+"ltOrigin" "-180 -404.71 759.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-180 -400 760"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"gndLt" "41413e4001"
+"ltOrigin" "602.675 -1479.13 700.87"
+"targetname" "forklift_after"
+"angles" "0 10 -4.60049"
+"origin" "583.8 -1467.1 683.1"
+"model" "ma_electronics_box_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "553.288 -1148.68 702.166"
+"classname" "script_model"
+"model" "vehicle_coupe_gray_destructible"
+"origin" "552 -1140 672"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gray"
+"csv_include" "destructible_vehicle_coupe_gray"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 280 0"
+}
+{
+"gndLt" "292c32000f"
+"ltOrigin" "-1420.05 -1364.77 790.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-1419.12 -1364.79 768"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 262 0"
+}
+{
+"gndLt" "2d3138000f"
+"ltOrigin" "-1391.77 -1348.93 790.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-1391.46 -1349.24 768"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 225 0"
+}
+{
+"gndLt" "32353d000f"
+"ltOrigin" "-1389.97 -1278.49 790.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-1389.95 -1279.4 768"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 189 0"
+}
+{
+"gndLt" "2d323a0000"
+"ltOrigin" "-1633.26 -816.943 790.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-1633.84 -816.826 768"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 67 0"
+}
+{
+"gndLt" "2c30390000"
+"ltOrigin" "-1613.24 -792.011 790.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-1614.04 -792.065 768"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 104 0"
+}
+{
+"gndLt" "4b4a460001"
+"ltOrigin" "445.517 -1579.75 678.59"
+"targetname" "forklift_before"
+"angles" "0 339.5 -4.60049"
+"classname" "script_model"
+"model" "com_pallet"
+"origin" "445.4 -1580.1 674.1"
+}
+{
+"gndLt" "0f0f110010"
+"ltOrigin" "-448 -886.205 712.977"
+"sound_csv_include" "destruct_filecabinet"
+"csv_include" "destructible_filecabinet"
+"targetname" "destructible_toy"
+"destructible_type" "toy_filecabinet"
+"origin" "-448 -886 688"
+"model" "com_filecabinetblackclosed"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "1010120010"
+"ltOrigin" "-468 -886.205 712.977"
+"sound_csv_include" "destruct_filecabinet"
+"csv_include" "destructible_filecabinet"
+"targetname" "destructible_toy"
+"destructible_type" "toy_filecabinet"
+"origin" "-468 -886 688"
+"model" "com_filecabinetblackclosed"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "1011120000"
+"ltOrigin" "-680.279 -1086.43 710.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-681.147 -1086.47 688"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 101 0"
+}
+{
+"gndLt" "171a1b0010"
+"ltOrigin" "-554.07 -888.547 736.203"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "interactive_tv"
+"target" "pf5418_auto1"
+"angles" "0 293.9 0"
+"origin" "-554.7 -888 725"
+"model" "com_tv1"
+"classname" "script_model"
+"targetname" "interactive_tv"
+}
+{
+"ltOrigin" "-411.29 -944 779.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-416 -944 780"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "-411.77 -882.5 902"
+"origin" "-416 -882.5 902"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"targetname" "torture_door"
+"classname" "script_brushmodel"
+"origin" "-420 -1104 688"
+"model" "*41"
+}
+{
+"ltOrigin" "-1037.5 -859.77 902"
+"origin" "-1037.5 -864 902"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 180 0"
+}
+{
+"ltOrigin" "-1380.23 -1069.5 902"
+"origin" "-1376 -1069.5 902"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "-1380.23 -1122.5 1210"
+"origin" "-1376 -1122.5 1210"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 180"
+}
+{
+"ltOrigin" "-152 -404.71 759.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-152 -400 760"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"ltOrigin" "723 -1444.71 793.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "723 -1440 794"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"ltOrigin" "671 -1444.71 793.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "671 -1440 794"
+"model" "me_electricbox4"
+"classname" "script_model"
+}
+{
+"ltOrigin" "635.77 -1273 761"
+"origin" "640 -1273 761"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "73705f8b05"
+"ltOrigin" "1156.23 -862 863"
+"origin" "1152 -862 863"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox2"
+"destructible_type" "toy_electricbox2"
+"targetname" "destructible_toy"
+"model" "me_electricbox2"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "21211f0000"
+"ltOrigin" "-14.9181 -1165.43 662.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-14.8892 -1166.32 640"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 190 0"
+}
+{
+"ltOrigin" "-603.29 -479 851.206"
+"sound_csv_include" "destruct_spark_box"
+"csv_include" "destructible_electricalbox4"
+"destructible_type" "toy_electricbox4"
+"targetname" "destructible_toy"
+"origin" "-608 -479 852"
+"model" "me_electricbox4"
+"classname" "script_model"
+"angles" "0 90 0"
+}
+{
+"gndLt" "43433e0001"
+"ltOrigin" "450.959 -1598.04 700.87"
+"targetname" "forklift_before"
+"angles" "0 339.5 -4.60049"
+"origin" "440.8 -1578.1 683.1"
+"model" "ma_electronics_box_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4443400001"
+"ltOrigin" "431.5 -1571.72 710.964"
+"targetname" "forklift_before"
+"angles" "85.4 249.5 -90.0009"
+"origin" "410.7 -1598.8 685.5"
+"model" "ma_electronics_box_01"
+"classname" "script_model"
+}
+{
+"ltOrigin" "448.362 -1575.12 728.841"
+"targetname" "forklift_before"
+"angles" "273.5 69.4999 90.0007"
+"origin" "446.3 -1563.5 717.7"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "461.122 -1603.75 723.064"
+"targetname" "forklift_before"
+"angles" "0 339.4 -94.6"
+"origin" "458.8 -1594.3 716.9"
+"model" "ma_electronics_box_04"
+"classname" "script_model"
+}
+{
+"gndLt" "4949450001"
+"ltOrigin" "462.849 -1566.39 698.07"
+"targetname" "forklift_before"
+"angles" "355.4 249.5 0"
+"origin" "483.6 -1558 680.3"
+"model" "ma_electronics_box_02"
+"classname" "script_model"
+}
+{
+"gndLt" "5a58530001"
+"ltOrigin" "471.181 -1562.42 720.113"
+"targetname" "forklift_before"
+"angles" "0 339.5 -4.60049"
+"origin" "457.4 -1569.3 715"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"gndLt" "4949440001"
+"ltOrigin" "463.699 -1582.62 721.906"
+"targetname" "forklift_before"
+"angles" "355.4 250.6 -0.0884513"
+"origin" "456.8 -1569.6 715.1"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"gndLt" "4444400001"
+"ltOrigin" "444.859 -1599.15 723.622"
+"targetname" "forklift_before"
+"angles" "0.144517 157.703 4.59824"
+"origin" "458.5 -1593.6 716.8"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "456.023 -1554.45 719.464"
+"targetname" "forklift_before"
+"angles" "0 339.4 -94.6"
+"origin" "453.7 -1545 713.3"
+"model" "ma_electronics_box_04"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3b362101"
+"ltOrigin" "572.478 -1466.31 710.964"
+"targetname" "forklift_after"
+"angles" "85.4 280 -90.0009"
+"origin" "568.3 -1500.2 685.5"
+"model" "ma_electronics_box_01"
+"classname" "script_model"
+}
+{
+"ltOrigin" "461.031 -1556.61 732.05"
+"targetname" "forklift_before"
+"angles" "355.288 250.596 5.51112"
+"origin" "454.7 -1543.9 724.2"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "463.114 -1583.98 734.049"
+"targetname" "forklift_before"
+"angles" "0 159.1 4.60045"
+"origin" "476.6 -1578.1 727.2"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "454.296 -1604.31 735.839"
+"targetname" "forklift_before"
+"angles" "4.60045 69.0993 -6.09499e-007"
+"origin" "460.5 -1618.4 730.7"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"gndLt" "3f3f3c0001"
+"ltOrigin" "423.058 -1640.14 723.234"
+"targetname" "forklift_before"
+"origin" "419.7 -1657.1 672"
+"angles" "0 69.5 0"
+"model" "vehicle_forklift"
+"classname" "script_model"
+}
+{
+"ltOrigin" "588.773 -1460.66 728.841"
+"targetname" "forklift_after"
+"angles" "273.5 99.9999 90.0007"
+"origin" "581.1 -1451.7 717.7"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "614.299 -1478.87 723.064"
+"targetname" "forklift_after"
+"angles" "0 9.90001 -94.6"
+"origin" "607.5 -1471.9 716.9"
+"model" "ma_electronics_box_04"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c390012"
+"ltOrigin" "596.777 -1445.76 698.07"
+"targetname" "forklift_after"
+"angles" "355.4 280 0"
+"origin" "610.4 -1428 680.3"
+"model" "ma_electronics_box_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "601.984 -1438.18 720.113"
+"targetname" "forklift_after"
+"angles" "0 10 -4.60049"
+"origin" "593.6 -1451.1 715"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "605.751 -1459.31 721.906"
+"targetname" "forklift_after"
+"angles" "355.4 281.1 -0.0884691"
+"origin" "593.2 -1451.6 715.1"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "597.961 -1483.1 723.622"
+"targetname" "forklift_after"
+"angles" "0.144517 188.203 4.59824"
+"origin" "606.9 -1471.4 716.8"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "584.899 -1438.97 719.464"
+"targetname" "forklift_after"
+"angles" "0 9.90001 -94.6"
+"origin" "578.1 -1432 713.3"
+"model" "ma_electronics_box_04"
+"classname" "script_model"
+}
+{
+"ltOrigin" "590.308 -1438.24 732.05"
+"targetname" "forklift_after"
+"angles" "355.288 281.096 5.51112"
+"origin" "578.4 -1430.5 724.2"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "605.966 -1460.81 734.049"
+"targetname" "forklift_after"
+"angles" "0 189.6 4.60045"
+"origin" "614.6 -1448.9 727.2"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"ltOrigin" "608.704 -1482.81 735.839"
+"targetname" "forklift_after"
+"angles" "4.60045 99.5993 -5.40157e-007"
+"origin" "621.2 -1491.8 730.7"
+"model" "ma_electronics_box_03"
+"classname" "script_model"
+}
+{
+"gndLt" "40403c0001"
+"ltOrigin" "604.561 -1527.95 723.234"
+"targetname" "forklift_after"
+"origin" "605.7 -1545.8 672"
+"angles" "0 100 0"
+"model" "vehicle_forklift"
+"classname" "script_model"
+}
+{
+"targetname" "forklift_after_clip"
+"spawnflags" "0"
+"classname" "script_brushmodel"
+"origin" "618 -1510 722"
+"model" "*42"
+}
+{
+"targetname" "forklift_before_clip"
+"spawnflags" "0"
+"classname" "script_brushmodel"
+"origin" "431 -1626 722"
+"model" "*43"
+}
+{
+"gndLt" "1e21270000"
+"ltOrigin" "-3922.48 767.511 718.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-3922.47 766.552 696"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 186.261 0"
+}
+{
+"gndLt" "2b2e370001"
+"ltOrigin" "-3716.11 1056.57 726.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-3715.92 1056.16 704"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 211 0"
+}
+{
+"gndLt" "393f490601"
+"ltOrigin" "-3980.71 1470.37 726.317"
+"sound_csv_include" "destruct_trashcan"
+"csv_include" "destructible_trashbin_01"
+"destructible_type" "toy_trashbin_01"
+"targetname" "destructible_toy"
+"origin" "-3980.04 1470.28 704"
+"model" "com_trashbin01"
+"classname" "script_model"
+"angles" "0 250.455 0"
+}
+{
+"ltOrigin" "2093.5 -2976.77 670.337"
+"classname" "script_model"
+"model" "vehicle_subcompact_gold_destructible"
+"origin" "2101 -2977 638.4"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_gold"
+"csv_include" "destructible_vehicle_subcompact_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "359.751 179.999 0.323256"
+}
+{
+"ltOrigin" "2410.7 -2968.2 669.736"
+"csv_include" "destructible_vehicle_taxi"
+"classname" "script_model"
+"model" "vehicle_taxi_yellow_destructible"
+"origin" "2412 -2970 637.7"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_taxi"
+"angles" "0.249829 177.704 0.883966"
+}
+{
+"targetname" "taxi_ad_clip"
+"classname" "script_brushmodel"
+"origin" "2428 -2970 709"
+"model" "*44"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "2821.87 -2874.63 703.899"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "2822 -2878 637.7"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0.319715 180.006 1.14092"
+}
+{
+"ltOrigin" "1725.16 -2420.74 663.917"
+"classname" "script_model"
+"model" "vehicle_coupe_black_destructible"
+"origin" "1724.61 -2429.98 634.474"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_black"
+"csv_include" "destructible_vehicle_coupe_black"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "359.816 94.3776 2.34642"
+"script_noteworthy" "force_explosion_car_2"
+}
+{
+"gndLt" "47484d3905"
+"ltOrigin" "1324.32 -2258.01 700.764"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "1329 -2258 634.9"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 269.993 2.38593"
+}
+{
+"ltOrigin" "2050.65 -2868.58 664.647"
+"classname" "script_model"
+"model" "vehicle_coupe_black_destructible"
+"origin" "2059.99 -2871.4 635.527"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_black"
+"csv_include" "destructible_vehicle_coupe_black"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0.190223 177.1 3.75066"
+"script_noteworthy" "force_explosion_car_1"
+}
+{
+"spawnflags" "2"
+"targetname" "traffic_car_groupA_1"
+"origin" "-1969 -3965.5 829.3"
+"angles" "0 48.7 0"
+"target" "pf0_auto3"
+"model" "vehicle_coupe_gray_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gray"
+}
+{
+"spawnflags" "2"
+"targetname" "traffic_car_groupA_2"
+"origin" "-2134 -4209 842.2"
+"angles" "0 52.2 0"
+"target" "pf0_auto5"
+"model" "vehicle_coupe_gold_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gold"
+}
+{
+"target" "pf0_auto462"
+"targetname" "playerstart_favela"
+"origin" "-341 -1064.5 656"
+"angles" "0 197.8 0"
+"classname" "script_origin"
+}
+{
+"script_linkName" "pf0_7"
+"script_color_allies" "r0"
+"classname" "info_volume"
+"origin" "-2294 -1576 695"
+"model" "?120"
+}
+{
+"script_linkName" "pf0_8"
+"script_color_allies" "b0"
+"classname" "info_volume"
+"origin" "-2386 -804 695"
+"model" "?121"
+}
+{
+"script_color_allies" "r1"
+"script_linkName" "pf0_9"
+"classname" "info_volume"
+"origin" "-2982 -1584 695"
+"model" "?123"
+}
+{
+"targetname" "pf0_auto27"
+"origin" "-2282 -1140 656"
+"angles" "0 350.8 0"
+"classname" "script_origin"
+}
+{
+"script_color_allies" "b1"
+"script_linkName" "pf0_10"
+"classname" "info_volume"
+"origin" "-2516 -412 695"
+"model" "?124"
+}
+{
+"script_color_allies" "r2"
+"script_linkName" "pf0_11"
+"classname" "info_volume"
+"origin" "-3506 -1464 695"
+"model" "?126"
+}
+{
+"gndLt" "363b447401"
+"ltOrigin" "-3173.32 -111.935 671.207"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5926_auto1"
+"origin" "-3173.3 -111.9 649.2"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 0.445872 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5926_auto1"
+"classname" "script_brushmodel"
+"origin" "-3173 -112 672"
+"model" "*45"
+}
+{
+"gndLt" "363b459501"
+"ltOrigin" "-3193.12 -87.356 672.77"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5927_auto1"
+"origin" "-3194.3 -86.9 650.8"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0.272692 65.1283 3.20051"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5927_auto1"
+"classname" "script_brushmodel"
+"origin" "-3193 -87 674"
+"model" "*46"
+}
+{
+"script_goalvolume" "0"
+"classname" "info_volume"
+"origin" "-3205 -674 695"
+"model" "?130"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5928_auto2108"
+"origin" "-4049.5 1484.5 706"
+"classname" "script_origin"
+"angles" "0 53.4 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5929_auto2108"
+"origin" "-5111 -956 1320"
+"classname" "script_origin"
+"angles" "0 270 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5930_auto2108"
+"origin" "-4890 -288 1224"
+"classname" "script_origin"
+"angles" "0 270 0"
+}
+{
+"script_goalvolume" "1"
+"classname" "info_volume"
+"origin" "-4019 3 712"
+"model" "?138"
+}
+{
+"script_goalvolume" "2"
+"classname" "info_volume"
+"origin" "-3702 -725 712"
+"model" "?139"
+}
+{
+"script_goalvolume" "3"
+"classname" "info_volume"
+"origin" "-3790 -1332 712"
+"model" "?140"
+}
+{
+"script_goalvolume" "4"
+"classname" "info_volume"
+"origin" "-2991 312 712"
+"model" "?141"
+}
+{
+"targetname" "playerstart_chase"
+"origin" "3624 -1839.5 656"
+"angles" "0 263.8 0"
+"classname" "script_origin"
+}
+{
+"origin" "2413 -2914 638"
+"script_linkName" "pf0_6"
+"angles" "0 169.6 0"
+"classname" "script_origin"
+}
+{
+"script_noteworthy" "hiding_door_part_disconnect"
+"script_linkName" "pf5931_1"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-3950 -71 700"
+"model" "*47"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"script_linkTo" "pf5931_1"
+"target" "pf5931_auto1"
+"origin" "-3922 -139 657"
+"targetname" "hiding_door_guy_org"
+"angles" "0 180 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "4d4c415401"
+"ltOrigin" "-3949.94 -139 704"
+"script_noteworthy" "hiding_door_part"
+"target" "pf5931_auto2"
+"origin" "-3922 -138 656"
+"targetname" "pf5931_auto1"
+"angles" "0 270 0"
+"model" "com_door_01_handleleft"
+"classname" "script_model"
+}
+{
+"classname" "script_brushmodel"
+"targetname" "pf5931_auto2"
+"spawnflags" "1"
+"target" "pf5931_auto3"
+"script_noteworthy" "hiding_door_part_disconnect"
+"origin" "-3922 -139 657"
+"model" "*48"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"targetname" "pf5931_auto3"
+"classname" "script_brushmodel"
+"origin" "-3922 -83 657"
+"model" "*49"
+}
+{
+"gndLt" "3133390000"
+"ltOrigin" "-3070.78 -1123.57 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5933_auto1"
+"origin" "-3070.8 -1123.6 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 179.835 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5933_auto1"
+"classname" "script_brushmodel"
+"origin" "-3071 -1124 679"
+"model" "*50"
+}
+{
+"targetname" "player_vehicle_exit_point"
+"origin" "3713 -1895.5 642"
+"angles" "0 251 0"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5934_auto2108"
+"origin" "-1664 -1373 772"
+"classname" "script_origin"
+"angles" "0 180 0"
+}
+{
+"targetname" "playerstart_soccer"
+"origin" "-4045 999.5 676"
+"angles" "0 114.4 0"
+"classname" "script_origin"
+}
+{
+"origin" "-6576 2208 992"
+"targetname" "pf0_auto132"
+"classname" "script_origin"
+}
+{
+"origin" "-8428 323 1971"
+"targetname" "mission_objective_location"
+"classname" "script_origin"
+}
+{
+"script_color_allies" "b2"
+"script_linkName" "pf0_12"
+"classname" "info_volume"
+"origin" "-3200 80 695"
+"model" "?171"
+}
+{
+"script_noteworthy" "hiding_door_part_disconnect"
+"script_linkName" "pf5944_1"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-2825 -116 700"
+"model" "*51"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"script_linkTo" "pf5944_1"
+"target" "pf5944_auto1"
+"origin" "-2757 -88 657"
+"targetname" "hiding_door_guy_org"
+"angles" "0 270 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "232322000d"
+"ltOrigin" "-2757 -115.94 704"
+"script_noteworthy" "hiding_door_part"
+"target" "pf5944_auto2"
+"origin" "-2758 -88 656"
+"targetname" "pf5944_auto1"
+"angles" "0 3.18772e-006 0"
+"model" "com_door_01_handleleft"
+"classname" "script_model"
+}
+{
+"classname" "script_brushmodel"
+"targetname" "pf5944_auto2"
+"spawnflags" "1"
+"target" "pf5944_auto3"
+"script_noteworthy" "hiding_door_part_disconnect"
+"origin" "-2757 -88 657"
+"model" "*52"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"targetname" "pf5944_auto3"
+"classname" "script_brushmodel"
+"origin" "-2813 -88 657"
+"model" "*53"
+}
+{
+"targetname" "playerstart_end"
+"origin" "-7710.6 710.4 1773.1"
+"angles" "0 186.1 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "2e2f350000"
+"ltOrigin" "-3063.68 -1155.63 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5946_auto1"
+"origin" "-3063.7 -1155.6 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 65.083 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5946_auto1"
+"classname" "script_brushmodel"
+"origin" "-3064 -1156 679"
+"model" "*54"
+}
+{
+"script_noteworthy" "hiding_door_part_disconnect"
+"script_linkName" "pf5947_1"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-5959 1470 1228"
+"model" "*55"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"script_linkTo" "pf5947_1"
+"target" "pf5947_auto1"
+"origin" "-5886.98 1452.97 1185"
+"targetname" "hiding_door_guy_org"
+"angles" "0 234.5 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "33363e5b01"
+"ltOrigin" "-5903.79 1430.17 1232"
+"script_noteworthy" "hiding_door_part"
+"target" "pf5947_auto2"
+"origin" "-5887.8 1453.55 1184"
+"targetname" "pf5947_auto1"
+"angles" "0 324.5 0"
+"model" "com_door_01_handleleft"
+"classname" "script_model"
+}
+{
+"classname" "script_brushmodel"
+"targetname" "pf5947_auto2"
+"spawnflags" "1"
+"target" "pf5947_auto3"
+"script_noteworthy" "hiding_door_part_disconnect"
+"origin" "-5887 1453 1185"
+"model" "*56"
+}
+{
+"script_noteworthy" "hiding_door_part"
+"targetname" "pf5947_auto3"
+"classname" "script_brushmodel"
+"origin" "-5933 1485 1185"
+"model" "*57"
+}
+{
+"targetname" "pf5948_auto1"
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-3993 -302 678"
+"model" "*58"
+}
+{
+"gndLt" "6568596c01"
+"ltOrigin" "-3993.76 -301.366 681.525"
+"target" "pf5948_auto1"
+"precache_script" "common_scripts _destructible_types_anim_motorcycle_02"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_motorcycle02"
+"destructible_type" "vehicle_motorcycle_02"
+"targetname" "destructible_vehicle"
+"origin" "-3988.2 -300.1 656.6"
+"model" "vehicle_motorcycle_02_destructible"
+"classname" "script_model"
+"angles" "0 280.8 0"
+}
+{
+"targetname" "pf5949_auto1"
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-3382 -925 677"
+"model" "*59"
+}
+{
+"gndLt" "413e458001"
+"ltOrigin" "-3381.48 -922.407 680.925"
+"target" "pf5949_auto1"
+"precache_script" "common_scripts _destructible_types_anim_motorcycle_02"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_motorcycle02"
+"destructible_type" "vehicle_motorcycle_02"
+"targetname" "destructible_vehicle"
+"origin" "-3381 -929.5 656"
+"model" "vehicle_motorcycle_02_destructible"
+"classname" "script_model"
+"angles" "0 183.7 0"
+}
+{
+"targetname" "pf5950_auto2108"
+"origin" "-7817.07 1212.07 1640"
+"classname" "script_origin"
+"angles" "0 145.2 0"
+}
+{
+"gndLt" "514f4f8801"
+"ltOrigin" "-2695.06 -640.318 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5951_auto1"
+"origin" "-2695.1 -640.3 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 96.5039 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5951_auto1"
+"classname" "script_brushmodel"
+"origin" "-2695 -640 679"
+"model" "*60"
+}
+{
+"gndLt" "3338416101"
+"ltOrigin" "-3220.3 -107.897 674.995"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5952_auto1"
+"origin" "-3223 -106.5 653.2"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "7.09736 0.445872 3.60399"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5952_auto1"
+"classname" "script_brushmodel"
+"origin" "-3220 -108 676"
+"model" "*61"
+}
+{
+"gndLt" "48484b7401"
+"ltOrigin" "-2700.84 -668.779 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5953_auto1"
+"origin" "-2700.8 -668.8 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 271.703 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5953_auto1"
+"classname" "script_brushmodel"
+"origin" "-2701 -669 679"
+"model" "*62"
+}
+{
+"script_dontunloadonend" "1"
+"script_vehiclestartmove" "0"
+"script_vehiclespawngroup" "0"
+"target" "pf0_auto506"
+"spawnflags" "2"
+"origin" "2569 813 649.2"
+"angles" "0 180 0"
+"model" "vehicle_coupe_gray_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gray"
+}
+{
+"gndLt" "33363e0001"
+"ltOrigin" "-3833.57 -1100.63 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5954_auto1"
+"origin" "-3833.6 -1100.6 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 74.8389 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5954_auto1"
+"classname" "script_brushmodel"
+"origin" "-3834 -1101 679"
+"model" "*63"
+}
+{
+"gndLt" "33373e0001"
+"ltOrigin" "-3800.12 -1102.64 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5955_auto1"
+"origin" "-3800.1 -1102.6 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 6.58081 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5955_auto1"
+"classname" "script_brushmodel"
+"origin" "-3800 -1103 679"
+"model" "*64"
+}
+{
+"gndLt" "434442a901"
+"ltOrigin" "-4671.9 1294.97 699.302"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5956_auto1"
+"origin" "-4675.2 1299.4 678"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "6.39167 11.4022 13.0218"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5956_auto1"
+"classname" "script_brushmodel"
+"origin" "-4672 1295 700"
+"model" "*65"
+}
+{
+"gndLt" "4243438d01"
+"ltOrigin" "-4657.19 1322.24 701.447"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5957_auto1"
+"origin" "-4659.6 1324.6 679.7"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "4.17341 253.236 -7.8866"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5957_auto1"
+"classname" "script_brushmodel"
+"origin" "-4657 1322 702"
+"model" "*66"
+}
+{
+"gndLt" "3c3e405701"
+"ltOrigin" "-4633.99 1350.88 702.04"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5958_auto1"
+"origin" "-4636.4 1353.3 680.3"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "7.00975 353.919 5.52464"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5958_auto1"
+"classname" "script_brushmodel"
+"origin" "-4634 1351 703"
+"model" "*67"
+}
+{
+"gndLt" "3b3d402d01"
+"ltOrigin" "-4608.33 1381.93 702.539"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5959_auto1"
+"origin" "-4610.8 1384.3 680.8"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "351.676 156.688 -3.20846"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5959_auto1"
+"classname" "script_brushmodel"
+"origin" "-4608 1382 704"
+"model" "*68"
+}
+{
+"gndLt" "4a4b4a8d01"
+"ltOrigin" "-4629.44 1292.92 692.599"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5960_auto1"
+"origin" "-4629.6 1293.5 670.6"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "358.531 116.318 -0.386242"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5960_auto1"
+"classname" "script_brushmodel"
+"origin" "-4629 1293 694"
+"model" "*69"
+}
+{
+"gndLt" "4c4d4b8701"
+"ltOrigin" "-4612.51 1259.29 691.698"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5961_auto1"
+"origin" "-4612.6 1259.9 669.7"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0.337866 358.739 1.48105"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5961_auto1"
+"classname" "script_brushmodel"
+"origin" "-4612 1259 693"
+"model" "*70"
+}
+{
+"gndLt" "3d3f42a401"
+"ltOrigin" "-4600.09 1321.17 693.501"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5962_auto1"
+"origin" "-4603.4 1325.6 672.2"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "4.70627 18.5192 13.7109"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5962_auto1"
+"classname" "script_brushmodel"
+"origin" "-4600 1321 694"
+"model" "*71"
+}
+{
+"gndLt" "3e40437901"
+"ltOrigin" "-4581.79 1354.74 696.547"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5963_auto1"
+"origin" "-4584.2 1357.1 674.8"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "3.80158 250.577 -8.07152"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5963_auto1"
+"classname" "script_brushmodel"
+"origin" "-4582 1355 698"
+"model" "*72"
+}
+{
+"targetname" "pf5964_auto1"
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-4486 1160 688"
+"model" "*73"
+}
+{
+"gndLt" "4244457001"
+"ltOrigin" "-4483.68 1159.49 691.867"
+"target" "pf5964_auto1"
+"precache_script" "common_scripts _destructible_types_anim_motorcycle_02"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_motorcycle02"
+"destructible_type" "vehicle_motorcycle_02"
+"targetname" "destructible_vehicle"
+"origin" "-4488.8 1155.9 666.9"
+"model" "vehicle_motorcycle_02_destructible"
+"classname" "script_model"
+"angles" "359.056 135.696 -0.396367"
+}
+{
+"gndLt" "6566638b01"
+"ltOrigin" "-5573.93 2817.07 810.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5965_auto1"
+"origin" "-5573.9 2817.1 788"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 345.586 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5965_auto1"
+"classname" "script_brushmodel"
+"origin" "-5574 2817 811"
+"model" "*74"
+}
+{
+"gndLt" "4745490001"
+"ltOrigin" "-6556.51 1512.64 1206.01"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5966_auto1"
+"origin" "-6556.5 1512.6 1184"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 229.362 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5966_auto1"
+"classname" "script_brushmodel"
+"origin" "-6556 1513 1207"
+"model" "*75"
+}
+{
+"gndLt" "30333a0000"
+"ltOrigin" "-3097.7 -1144.86 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5967_auto1"
+"origin" "-3097.7 -1144.9 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 217.485 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5967_auto1"
+"classname" "script_brushmodel"
+"origin" "-3098 -1145 679"
+"model" "*76"
+}
+{
+"gndLt" "4142497501"
+"ltOrigin" "-3647.59 -1072.56 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5968_auto1"
+"origin" "-3647.6 -1072.6 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 199.786 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5968_auto1"
+"classname" "script_brushmodel"
+"origin" "-3648 -1073 679"
+"model" "*77"
+}
+{
+"gndLt" "49494c8201"
+"ltOrigin" "-3641.82 -1101.24 678.007"
+"sound_csv_include" "destruct_mtl_barrel"
+"csv_include" "interactive_barrel_benzin"
+"spawnflags" "4"
+"target" "pf5969_auto1"
+"origin" "-3641.8 -1101.2 656"
+"targetname" "explodable_barrel"
+"model" "com_barrel_benzin_dirt"
+"classname" "script_model"
+"angles" "0 5.99854 0"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5969_auto1"
+"classname" "script_brushmodel"
+"origin" "-3642 -1101 679"
+"model" "*78"
+}
+{
+"spawnflags" "1"
+"targetname" "pf5970_auto1"
+"classname" "script_brushmodel"
+"origin" "-3182 -739 679"
+"model" "*79"
+}
+{
+"origin" "-3208 -644 768"
+"targetname" "curtain_pulldown_animpreview"
+"angles" "0 350.7 0"
+"classname" "script_origin"
+}
+{
+"targetname" "pf0_auto31"
+"origin" "-2400 -1734 656"
+"angles" "0 6.39998 0"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5974_auto2108"
+"origin" "-7511 758 1792"
+"classname" "script_origin"
+"angles" "0 145.7 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5975_auto2108"
+"origin" "-7532 728 1792"
+"classname" "script_origin"
+"angles" "0 325.7 0"
+}
+{
+"script_dontunloadonend" "1"
+"script_vehiclestartmove" "1"
+"script_vehiclespawngroup" "1"
+"target" "pf0_auto480"
+"spawnflags" "2"
+"origin" "479 -5017 649.2"
+"angles" "0 0 0"
+"model" "vehicle_coupe_gold_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gold"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5976_auto2108"
+"origin" "-5715 9.5 1764"
+"classname" "script_origin"
+"angles" "0 144.8 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5977_auto2108"
+"origin" "-5670 73.5 1764"
+"classname" "script_origin"
+"angles" "0 144.8 0"
+}
+{
+"origin" "3919 406 694"
+"targetname" "player_vehicle"
+"spawnflags" "2"
+"target" "pf0_auto216"
+"angles" "0 270 0"
+"model" "vehicle_luxurysedan_2009_viewmodel"
+"vehicletype" "luxurysedan"
+"script_team" "allies"
+"classname" "script_vehicle_luxurysedan_viewmodel"
+}
+{
+"classname" "script_vehicle_uaz_van"
+"vehicletype" "van"
+"model" "vehicle_uaz_van"
+"angles" "0 270 0"
+"target" "pf0_auto221"
+"targetname" "van"
+"origin" "3930 -79 678"
+"spawnflags" "2"
+}
+{
+"spawnflags" "2"
+"targetname" "traffic_car_groupB_2"
+"origin" "6334.2 -2387.1 660"
+"angles" "0 267.5 0"
+"target" "pf0_auto231"
+"model" "vehicle_coupe_gray_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gray"
+}
+{
+"spawnflags" "2"
+"targetname" "traffic_car_groupB_1"
+"origin" "6310.2 -2347.9 660"
+"angles" "0 271 0"
+"target" "pf0_auto233"
+"model" "vehicle_coupe_gold_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gold"
+}
+{
+"gndLt" "4a4f536701"
+"ltOrigin" "-8728.21 231.889 1978.76"
+"targetname" "ending_car"
+"origin" "-8728.5 229.5 1950.2"
+"angles" "0.0906766 323.796 -4.44596"
+"model" "vehicle_80s_sedan1_tankcrush"
+"classname" "script_model"
+}
+{
+"gndLt" "4b4b4f0000"
+"ltOrigin" "1792.9 -3239.15 703.899"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "1794 -3237 637.7"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0.319715 49.106 1.14092"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5980_auto2108"
+"origin" "-3128 -1856 768"
+"classname" "script_origin"
+"angles" "0 90 0"
+}
+{
+"origin" "-6056 1526 1240"
+"targetname" "pf0_auto496"
+"classname" "script_origin"
+}
+{
+"origin" "-6837 275 1812"
+"targetname" "pf0_auto497"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5981_auto2108"
+"origin" "-4320 -636 900"
+"classname" "script_origin"
+"angles" "0 180 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5982_auto2108"
+"origin" "-4562 -1368 952"
+"classname" "script_origin"
+"angles" "0 9.99999 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5983_auto2108"
+"origin" "-4964 115 1273"
+"classname" "script_origin"
+"angles" "0 250 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5984_auto2108"
+"origin" "-4960 -531 1217"
+"classname" "script_origin"
+"angles" "0 180 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5985_auto2108"
+"origin" "-5184 -716 1318"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5986_auto2108"
+"origin" "-5328 -1352 1334"
+"classname" "script_origin"
+"angles" "0 210 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5987_auto2108"
+"origin" "-5552 -1557 1336"
+"classname" "script_origin"
+"angles" "0 180 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5988_auto2108"
+"origin" "-4178 -306 776"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5989_auto2108"
+"origin" "-6416 2544 1024"
+"classname" "script_origin"
+"angles" "0 324.7 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5990_auto2108"
+"origin" "-6258 2449 1024"
+"classname" "script_origin"
+"angles" "0 324.7 0"
+}
+{
+"gndLt" "4047558b01"
+"ltOrigin" "-7037.1 735.964 1788.48"
+"target" "pf0_auto512"
+"angles" "0 105.5 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-7037.5 737.5 1760"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5991_auto2108"
+"origin" "-6262 1620.5 1212"
+"classname" "script_origin"
+"angles" "0 236.6 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5992_auto2108"
+"origin" "-6369 811 1553"
+"classname" "script_origin"
+"angles" "0 145 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5993_auto2108"
+"origin" "-6672 940 1552"
+"classname" "script_origin"
+"angles" "0 145 0"
+}
+{
+"targetname" "pf0_auto462"
+"origin" "-497 -1114.5 688"
+"classname" "script_origin"
+}
+{
+"animscript" "window_over_quick"
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5994_auto2108"
+"origin" "-6719 1755 1217"
+"classname" "script_origin"
+"angles" "0 54.2 0"
+}
+{
+"animscript" "window_over_quick"
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5995_auto2108"
+"origin" "-6704 1753 1217"
+"classname" "script_origin"
+"angles" "0 234.2 0"
+}
+{
+"script_linkName" "pf0_5"
+"origin" "-2097 -1302 658.8"
+"angles" "0 1.49997 0"
+"classname" "script_origin"
+}
+{
+"targetname" "pf5996_auto2108"
+"origin" "-7744.93 1286.93 1576"
+"classname" "script_origin"
+"angles" "0 325.2 0"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5997_auto2108"
+"origin" "-6257 636 1480"
+"classname" "script_origin"
+"angles" "0 145 0"
+}
+{
+"spawnflags" "1"
+"targetname" "street_civilian_clip"
+"classname" "script_brushmodel"
+"origin" "3568 -3035 718"
+"model" "*81"
+}
+{
+"script_goalvolume" "8"
+"targetname" "pf0_auto381"
+"classname" "info_volume"
+"origin" "-6773 344 1683"
+"model" "?288"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf5999_auto2108"
+"origin" "-6646 1244.5 1247"
+"classname" "script_origin"
+"angles" "0 54.9 0"
+}
+{
+"ltOrigin" "3219.26 -2959.4 669.389"
+"classname" "script_model"
+"model" "vehicle_subcompact_green_destructible"
+"origin" "3227 -2961 637.7"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_green"
+"csv_include" "destructible_vehicle_subcompact_green"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0.249829 177.704 0.883966"
+}
+{
+"gndLt" "41434a5405"
+"ltOrigin" "863.011 -3088.29 699.392"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "863 -3087 633.4"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "1.00179e-005 359.993 -1.64707"
+}
+{
+"ltOrigin" "1747.65 -3591.34 665.011"
+"classname" "script_model"
+"model" "vehicle_subcompact_green_destructible"
+"origin" "1745 -3599 633.7"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_green"
+"csv_include" "destructible_vehicle_subcompact_green"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0.108944 87.7104 2.7099"
+}
+{
+"ltOrigin" "1657.13 -2049.56 666.973"
+"classname" "script_model"
+"model" "vehicle_coupe_gray_destructible"
+"origin" "1660 -2056 637.6"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gray"
+"csv_include" "destructible_vehicle_coupe_gray"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "359.346 122.589 1.6107"
+"script_noteworthy" "force_explosion_car_3"
+}
+{
+"ltOrigin" "1592.52 -2251.43 669.699"
+"classname" "script_model"
+"model" "vehicle_subcompact_gold_destructible"
+"origin" "1593 -2259 637.9"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_subcompact_gold"
+"csv_include" "destructible_vehicle_subcompact_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "359.937 93.7022 0.977061"
+}
+{
+"ltOrigin" "1720.39 -1828.6 664.997"
+"classname" "script_model"
+"model" "vehicle_coupe_gold_destructible"
+"origin" "1720 -1838 635.5"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gold"
+"csv_include" "destructible_vehicle_coupe_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "359.914 92.08 2.33193"
+}
+{
+"ltOrigin" "1636 -1696.3 666.323"
+"classname" "script_model"
+"model" "vehicle_coupe_black_destructible"
+"origin" "1631.87 -1702.85 636.914"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_black"
+"csv_include" "destructible_vehicle_coupe_black"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0.814669 58.9232 1.35142"
+}
+{
+"ltOrigin" "1469.4 -2446.26 670.586"
+"csv_include" "destructible_vehicle_taxi"
+"classname" "script_model"
+"model" "vehicle_taxi_yellow_destructible"
+"origin" "1471 -2445 638.3"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_taxi"
+"angles" "0 267.099 0.469763"
+}
+{
+"origin" "513 -1476 687.9"
+"targetname" "pf0_auto409"
+"angles" "0 94.6 0"
+"classname" "script_origin"
+}
+{
+"origin" "-6393.5 1961 1242"
+"angles" "0 144.4 0"
+"targetname" "pf0_auto411"
+"classname" "script_origin"
+}
+{
+"origin" "-6403.5 1947 1242"
+"angles" "0 144.4 0"
+"targetname" "pf0_auto411"
+"classname" "script_origin"
+}
+{
+"origin" "-6406 1926.5 1242"
+"angles" "0 234.4 0"
+"targetname" "pf0_auto411"
+"classname" "script_origin"
+}
+{
+"origin" "-6186 1772.5 1213"
+"angles" "0 220.3 0"
+"targetname" "pf0_auto412"
+"classname" "script_origin"
+}
+{
+"origin" "-6172 1762.5 1213"
+"angles" "0 193.2 0"
+"targetname" "pf0_auto412"
+"classname" "script_origin"
+}
+{
+"origin" "-6155.5 1752 1213"
+"angles" "0 266.1 0"
+"targetname" "pf0_auto412"
+"classname" "script_origin"
+}
+{
+"origin" "-6126.5 1591 1331"
+"angles" "0 130.3 0"
+"targetname" "pf0_auto414"
+"classname" "script_origin"
+}
+{
+"origin" "-6136.5 1577 1331"
+"angles" "0 133.7 0"
+"targetname" "pf0_auto414"
+"classname" "script_origin"
+}
+{
+"origin" "-5842.2 1626 1181"
+"angles" "0 178.4 0"
+"targetname" "pf0_auto415"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto415"
+"angles" "0 177.7 0"
+"origin" "-5840.2 1614 1182"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto415"
+"angles" "0 218.3 0"
+"origin" "-5836.9 1603.7 1184"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto415"
+"angles" "0 194.1 0"
+"origin" "-5832.9 1588.7 1188"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto415"
+"angles" "0 183.4 0"
+"origin" "-5831.9 1562.7 1192"
+}
+{
+"origin" "-5911.2 1698.2 1161.9"
+"angles" "0 232.4 0"
+"targetname" "pf0_auto416"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto416"
+"angles" "0 231.7 0"
+"origin" "-5893.3 1684.7 1161.7"
+}
+{
+"classname" "script_origin"
+"targetname" "pf0_auto416"
+"angles" "0 247.4 0"
+"origin" "-5877 1673.4 1162.5"
+}
+{
+"targetname" "pf0_auto418"
+"classname" "info_volume"
+"origin" "-3032 -782 736"
+"model" "?301"
+}
+{
+"targetname" "pf0_auto425"
+"origin" "3350 -2842 640"
+"classname" "script_origin"
+}
+{
+"target" "pf0_auto425"
+"targetname" "bike_path_2"
+"origin" "4803 -2849 640"
+"classname" "script_origin"
+}
+{
+"origin" "-6157.04 -375.67 1895.09"
+"angles" "81.6 325 0"
+"targetname" "pf6016_auto1"
+"classname" "script_origin"
+}
+{
+"origin" "-6195.94 -348.434 1888.07"
+"angles" "81.6 325 0"
+"targetname" "pf6016_auto2"
+"classname" "script_origin"
+}
+{
+"origin" "-6118.15 -402.907 1902.1"
+"angles" "81.6 325 0"
+"targetname" "pf6016_auto3"
+"classname" "script_origin"
+}
+{
+"targetname" "pf0_auto434"
+"origin" "-3170 -968 736"
+"classname" "script_origin"
+}
+{
+"targetname" "pf0_auto435"
+"origin" "3600 -954 640"
+"classname" "script_origin"
+}
+{
+"classname" "script_origin"
+"origin" "3600 -2680 640"
+"targetname" "bike_path_1"
+"target" "pf0_auto435"
+}
+{
+"gndLt" "4a464c7f01"
+"ltOrigin" "-5857.18 1489.92 1236.48"
+"angles" "0 124.3 0"
+"target" "pf0_auto447"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-5857.5 1492.5 1208"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"gndLt" "39404c6801"
+"ltOrigin" "-6189.67 1776.39 1244"
+"angles" "0 237.4 0"
+"target" "pf0_auto446"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6190.5 1777.5 1208"
+"model" "com_potted_plant_large"
+"classname" "script_model"
+}
+{
+"gndLt" "2f363f0e01"
+"ltOrigin" "-6290.58 1652.85 1224.88"
+"angles" "0 57.4 0"
+"target" "pf0_auto448"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6289.5 1653.5 1212"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "2d343e0001"
+"ltOrigin" "-6277.58 1643.85 1224.88"
+"angles" "0 57.4 0"
+"target" "pf0_auto448"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6276.5 1644.5 1212"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "2b313c0001"
+"ltOrigin" "-6230.02 1608.22 1240.48"
+"angles" "0 41.9 0"
+"target" "pf0_auto448"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6227.5 1608.5 1212"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3f4a5501"
+"ltOrigin" "-6408.88 1930.98 1276"
+"angles" "0 150.3 0"
+"target" "pf0_auto449"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6408.5 1931.5 1240"
+"model" "com_potted_plant_large"
+"classname" "script_model"
+}
+{
+"gndLt" "47474f5f01"
+"ltOrigin" "-6392.46 1952.76 1268.48"
+"angles" "0 150.3 0"
+"target" "pf0_auto449"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6392.5 1952.5 1240"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"gndLt" "4147558b01"
+"ltOrigin" "-7107.05 639.982 1788.48"
+"target" "pf0_auto452"
+"angles" "0 143.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-7106.5 640.5 1760"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"gndLt" "4248548201"
+"ltOrigin" "-5884.66 204.647 1678.88"
+"target" "pf0_auto455"
+"angles" "0 143.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-5885.5 205.5 1666"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "4248548301"
+"ltOrigin" "-5894.66 191.647 1678.88"
+"target" "pf0_auto455"
+"angles" "0 143.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-5895.5 192.5 1666"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "4248547801"
+"ltOrigin" "-5869.66 225.647 1678.88"
+"target" "pf0_auto454"
+"angles" "0 143.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-5870.5 226.5 1666"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "4349548b01"
+"ltOrigin" "-5917.66 163.647 1678.88"
+"target" "pf0_auto453"
+"angles" "0 143.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-5918.5 164.5 1666"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "3b42508b01"
+"ltOrigin" "-6427.35 382.663 1788.88"
+"target" "pf0_auto456"
+"angles" "0 53.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6426.5 383.5 1776"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "4648508201"
+"ltOrigin" "-6444.35 392.663 1788.88"
+"target" "pf0_auto456"
+"angles" "0 53.2 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6443.5 393.5 1776"
+"model" "com_potted_plant_small"
+"classname" "script_model"
+}
+{
+"gndLt" "373e4b7201"
+"ltOrigin" "-6391.26 354.217 1804.48"
+"target" "pf0_auto456"
+"angles" "0 40.8 0"
+"spawnflags" "6"
+"targetname" "potted_plant"
+"origin" "-6388.5 354.5 1776"
+"model" "com_potted_plant_medium"
+"classname" "script_model"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf6019_auto2108"
+"origin" "-6862 655 1507"
+"classname" "script_origin"
+"angles" "0 325.4 0"
+}
+{
+"origin" "1856 -2976 688"
+"targetname" "pf0_auto477"
+"classname" "script_origin"
+}
+{
+"script_dontunloadonend" "1"
+"script_vehiclestartmove" "0"
+"script_vehiclespawngroup" "0"
+"target" "pf0_auto492"
+"spawnflags" "2"
+"origin" "2193 801 649.2"
+"angles" "0 180 0"
+"model" "vehicle_coupe_gold_destructible"
+"vehicletype" "coupe"
+"script_team" "allies"
+"classname" "script_vehicle_coupe_gold"
+}
+{
+"targetname" "pf0_auto66"
+"origin" "-3208 -644 768"
+"angles" "0 350.7 0"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf6020_auto2108"
+"origin" "-3552 -1793 888"
+"classname" "script_origin"
+}
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "pf6021_auto2108"
+"origin" "-7899 833 1952"
+"classname" "script_origin"
+"angles" "0 235.7 0"
+}
+{
+"origin" "-7894.49 839.609 1952"
+"targetname" "animref"
+"classname" "script_struct"
+"angles" "0 235.7 0"
+}
+{
+"origin" "-81 -904 650"
+"targetname" "pf0_auto2115"
+"angles" "0 174.4 0"
+"classname" "script_origin"
+}
+{
+"gndLt" "3d3a320000"
+"ltOrigin" "-3811.38 -723.156 699.491"
+"targetname" "pf6022_auto1"
+"origin" "-3811 -723 692"
+"model" "intel_item_laptop"
+"classname" "script_model"
+"angles" "0 20.6 0"
+}
+{
+"gndLt" "292a2c0000"
+"ltOrigin" "-6915.19 1185.7 1274.49"
+"targetname" "pf6023_auto1"
+"origin" "-6915.5 1186 1267"
+"model" "intel_item_laptop"
+"classname" "script_model"
+"angles" "0 139.8 0"
+}
+{
+"gndLt" "1b1b1c0000"
+"ltOrigin" "-6695.79 225.135 1657.99"
+"targetname" "pf6024_auto1"
+"origin" "-6696 225.5 1650.5"
+"model" "intel_item_laptop"
+"classname" "script_model"
+"angles" "0 120.4 0"
+}
+{
+"classname" "stage"
+"origin" "768 -2176 1408"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smid" "3"
+"model" "?3"
+}
+{
+"gndLt" "3436380501"
+"ltOrigin" "-6026.87 1543.38 1227.49"
+"targetname" "pf6025_auto1"
+"origin" "-6027 1543 1220"
+"model" "intel_item_laptop"
+"classname" "script_model"
+"angles" "0 260 0"
+}
+{
+"targetname" "vehicle_coupe_gray_destructible"
+"classname" "script_vehicle_collmap"
+"model" "*86"
+}
+{
+"targetname" "vehicle_coupe_gold_destructible"
+"classname" "script_vehicle_collmap"
+"model" "*87"
+}
+{
+"targetname" "vehicle_luxurysedan_2009_viewmodel"
+"classname" "script_vehicle_collmap"
+"model" "*88"
+}
+{
+"targetname" "vehicle_uaz_van"
+"classname" "script_vehicle_collmap"
+"model" "*89"
+}
+{
+"ltOrigin" "2600 498 642"
+"classname" "script_model"
+"model" "vehicle_coupe_gold_destructible"
+"origin" "2600 498 642"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gold"
+"csv_include" "destructible_vehicle_coupe_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 179 0"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "1760 -4760 639"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "1760 -4760 639"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 183 0"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "1226.1 -4801 639"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "1226.1 -4801 639"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 183 0"
+}
+{
+"ltOrigin" "2413 489 642"
+"classname" "script_model"
+"model" "vehicle_coupe_gold_destructible"
+"origin" "2413 489 642"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gold"
+"csv_include" "destructible_vehicle_coupe_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 179 0"
+}
+{
+"ltOrigin" "1498.7 -4776 640"
+"classname" "script_model"
+"model" "vehicle_coupe_gold_destructible"
+"origin" "1498.7 -4776 640"
+"targetname" "destructible_vehicle"
+"destructible_type" "vehicle_coupe_gold"
+"csv_include" "destructible_vehicle_coupe_gold"
+"sound_csv_include" "vehicle_car_exp"
+"angles" "0 95 0"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "-1629 -3882.3 805"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "-1718 -3860 808"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "-2 200 0"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "-2010 -3927 805"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "-2010 -3927 812"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 145 4"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "-2241 -3716 805"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "-2241 -3716 810"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "2 101 2"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "603 636 682"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "603 636 682"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 89 0"
+}
+{
+"gndLt" "4042484605"
+"ltOrigin" "541 982 682"
+"sound_csv_include" "vehicle_car_exp"
+"csv_include" "destructible_vehicle_bus"
+"destructible_type" "vehicle_bus_destructible"
+"targetname" "destructible_vehicle"
+"origin" "501 982 682"
+"model" "vehicle_bus_destructible_mp"
+"classname" "script_model"
+"angles" "0 120 0"
+}
+//BRUSHMODELS
+{
+"angles" "0 179 0"
+"origin" "677 463 727"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "2600 498 672"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "2413 489 670"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1850.1 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1720 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1627 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 95 0"
+"origin" "1498 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1346 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1252 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1140 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1445 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1252 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1140 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 179 0"
+"origin" "1445 -4751 660"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 89 0"
+"origin" "621 563 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 89 0"
+"origin" "621 632 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 89 0"
+"origin" "621 735 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 120 0"
+"origin" "567 930 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 120 0"
+"origin" "527 1000 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 120 0"
+"origin" "480 1090 700"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "2 284 2"
+"origin" "-2269 -3584 819"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "2 284 2"
+"origin" "-2218 -3692 819"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 326 4"
+"origin" "-2245 -3853 830"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 326 4"
+"origin" "-2128 -3838 829"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "-2 16 0"
+"origin" "-1873 -3915 817"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "-2 16 0"
+"origin" "-1622 -3818 816"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "-2 284 2"
+"origin" "-1635 -3830 816"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "2 283 2"
+"origin" "-1543 -3842 814"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+{
+"angles" "0 321 4"
+"origin" "-1997 -3926 821"
+"model" "*87"
+"classname" "script_brushmodel"
+}
+
+//FIRE FX///
+
+{
+"targetname" "me_dumpster_fire_FX_origin"
+"origin" "1621 -1531 690"
+"angles" "0 0 0"
+"classname" "script_struct"
+}
+{
+"targetname" "me_dumpster_fire_FX_origin"
+"origin" "1662 -1446 690"
+"angles" "0 0 0"
+"classname" "script_struct"
+}
+{
+"targetname" "me_dumpster_fire_FX_origin"
+"origin" "1668 -2713 690"
+"angles" "0 0 0"
+"classname" "script_struct"
+}
+{
+"targetname" "me_dumpster_fire_FX_origin"
+"origin" "1576 -2769 690"
+"angles" "0 0 0"
+"classname" "script_struct"
+}
+{
+"targetname" "me_dumpster_fire_FX_origin"
+"origin" "678 462 699"
+"angles" "0 0 0"
+"classname" "script_struct"
+}

@@ -1,0 +1,5705 @@
+{
+"skycolor" "0.96 0.97 1"
+"skylight" "1"
+"sunRadiosity" "1"
+"MaxBounces" "3"
+"_color" "0.6 0.625 0.7"
+"ambient" ".08"
+"classname" "worldspawn"
+"sundirection" "-40 -67 0"
+"suncolor" "1 0.99 0.97"
+"sunlight" "1.5"
+}
+{
+"gndLt" "4a55430007"
+"ltOrigin" "-3059.56 5270.21 -48.4102"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "interactive_tv"
+"target" "pf107_auto1"
+"targetname" "interactive_tv"
+"classname" "script_model"
+"model" "com_tv2"
+"origin" "-3059.8 5270.2 -60"
+"angles" "0 83.1 0"
+}
+{
+"target" "pf534_auto2"
+"targetname" "pf534_auto1"
+"classname" "script_brushmodel"
+"origin" "120 3787 26"
+"model" "*9"
+}
+{
+"target" "pf534_auto3"
+"targetname" "pf534_auto2"
+"classname" "script_brushmodel"
+"origin" "122 3787 23"
+"model" "*10"
+}
+{
+"target" "pf535_auto2"
+"targetname" "pf535_auto1"
+"classname" "script_brushmodel"
+"origin" "-408 3787 26"
+"model" "*11"
+}
+{
+"target" "pf535_auto3"
+"targetname" "pf535_auto2"
+"classname" "script_brushmodel"
+"origin" "-406 3787 23"
+"model" "*12"
+}
+{
+"target" "pf548_auto2"
+"targetname" "pf548_auto1"
+"classname" "script_brushmodel"
+"origin" "-2928 3867 26"
+"model" "*13"
+}
+{
+"target" "pf548_auto3"
+"targetname" "pf548_auto2"
+"classname" "script_brushmodel"
+"origin" "-2926 3867 23"
+"model" "*14"
+}
+{
+"target" "pf549_auto2"
+"targetname" "pf549_auto1"
+"classname" "script_brushmodel"
+"origin" "-3456 3867 26"
+"model" "*15"
+}
+{
+"target" "pf549_auto3"
+"targetname" "pf549_auto2"
+"classname" "script_brushmodel"
+"origin" "-3454 3867 23"
+"model" "*16"
+}
+{
+"target" "pf563_auto2"
+"targetname" "pf563_auto1"
+"classname" "script_brushmodel"
+"origin" "-1432 3675 26"
+"model" "*17"
+}
+{
+"target" "pf563_auto3"
+"targetname" "pf563_auto2"
+"classname" "script_brushmodel"
+"origin" "-1430 3675 23"
+"model" "*18"
+}
+{
+"target" "pf564_auto2"
+"targetname" "pf564_auto1"
+"classname" "script_brushmodel"
+"origin" "-1960 3675 26"
+"model" "*19"
+}
+{
+"target" "pf564_auto3"
+"targetname" "pf564_auto2"
+"classname" "script_brushmodel"
+"origin" "-1958 3675 23"
+"model" "*20"
+}
+{
+"spawnflags" "4"
+"targetname" "basement_flicker_light"
+"angles" "0 135 0"
+"fov_outer" "100"
+"fov_inner" "40"
+"exponent" "1"
+"target" "pf3_auto337"
+"origin" "2594.5 3885.9 24"
+"def" "light_point_linear"
+"radius" "250"
+"_color" "0.996078 0.847059 0.239216"
+"intensity" "1"
+"classname" "light_SPOT"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "prefabs/airport/airport_exterior.map"
+"__smid" "731"
+"pl#" "20"
+}
+{
+"gndLt" "4647460001"
+"ltOrigin" "1269.5 5000.76 157"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1269.5 5004.5 139"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "5858580001"
+"ltOrigin" "1447.5 5000.76 157"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1447.5 5004.5 139"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4646460001"
+"ltOrigin" "1328.5 5000.76 157"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1328.5 5004.5 139"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1269.5 5000.76 200.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1269.5 5004.5 182.5"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4a4a4a0001"
+"ltOrigin" "1388 5000.76 157"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1388 5004.5 139"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1447.5 5000.76 200.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1447.5 5004.5 182.5"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1388 5000.76 200.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1388 5004.5 182.5"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "1328.5 5000.76 200.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "1328.5 5004.5 182.5"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"targetname" "pf1095_auto1"
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "-328 3633 16"
+"model" "*23"
+}
+{
+"targetname" "pf1095_auto1"
+"spawnflags" "1"
+"script_destruct_collision" "pre"
+"classname" "script_brushmodel"
+"origin" "-328 3512 29"
+"model" "*24"
+}
+{
+"targetname" "pf1095_auto1"
+"spawnflags" "1"
+"script_destruct_collision" "post"
+"classname" "script_brushmodel"
+"origin" "-283 3510 16"
+"model" "*25"
+}
+{
+"gndLt" "5859596e01"
+"ltOrigin" "-32 4892.74 158"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "-32 4889 140"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "5e5e5f8201"
+"ltOrigin" "-32 4883.26 158"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "-32 4887 140"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "5c5d5d0001"
+"ltOrigin" "-635.259 4448 182"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "-639 4448 164"
+"modelscale" "1"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "6060600001"
+"ltOrigin" "-644.741 4448 182"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "-641 4448 164"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"targetname" "pf1561_auto1"
+"script_destruct_collision" "pre"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+"origin" "983 3138 16"
+"model" "*60"
+}
+{
+"targetname" "pf1561_auto1"
+"spawnflags" "1"
+"script_destruct_collision" "pre"
+"classname" "script_brushmodel"
+"origin" "980 3259 29"
+"model" "*61"
+}
+{
+"targetname" "pf1561_auto1"
+"spawnflags" "1"
+"script_destruct_collision" "post"
+"classname" "script_brushmodel"
+"origin" "935 3260 16"
+"model" "*62"
+}
+{
+"gndLt" "514f467602"
+"ltOrigin" "5568.67 2104.41 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf1993_auto2"
+"targetname" "pf1993_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "5565.59 2129.87 64"
+"angles" "0 315 0"
+}
+{
+"ltOrigin" "5553.21 2093.45 79"
+"target" "pf1993_auto5"
+"targetname" "pf1993_auto4"
+"angles" "330 45 90"
+"origin" "5551.44 2095.22 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5554.63 2094.87 84"
+"target" "pf1993_auto4"
+"targetname" "pf1993_auto2"
+"angles" "300 225 -90"
+"origin" "5552.86 2096.64 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "2728290043"
+"ltOrigin" "6667.58 1951.84 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf1997_auto2"
+"targetname" "pf1997_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "6686 1972 64"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6651.5 1955 79"
+"target" "pf1997_auto5"
+"targetname" "pf1997_auto4"
+"angles" "330 3.18772e-006 90"
+"origin" "6651.5 1957.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6653.5 1955 84"
+"target" "pf1997_auto4"
+"targetname" "pf1997_auto2"
+"angles" "300 180 -90"
+"origin" "6653.5 1957.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "2121220000"
+"ltOrigin" "6667.58 1207.84 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf1998_auto2"
+"targetname" "pf1998_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "6686 1228 64"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6651.5 1211 79"
+"target" "pf1998_auto5"
+"targetname" "pf1998_auto4"
+"angles" "330 3.18772e-006 90"
+"origin" "6651.5 1213.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6653.5 1211 84"
+"target" "pf1998_auto4"
+"targetname" "pf1998_auto2"
+"angles" "300 180 -90"
+"origin" "6653.5 1213.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"spawnflags" "1"
+"targetname" "intro_elevator_door_right"
+"classname" "script_brushmodel"
+"origin" "6528 2182 56"
+"model" "*65"
+}
+{
+"spawnflags" "1"
+"targetname" "intro_elevator_door_left"
+"classname" "script_brushmodel"
+"origin" "6528 2182 56"
+"model" "*66"
+}
+{
+"script_noteworthy" "up"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6541 2189 158"
+"model" "*67"
+}
+{
+"script_noteworthy" "l1"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6536 2189 158"
+"model" "*68"
+}
+{
+"script_noteworthy" "m"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6531 2189 158"
+"model" "*69"
+}
+{
+"script_noteworthy" "1"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6526 2189 158"
+"model" "*70"
+}
+{
+"script_noteworthy" "2"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6521 2189 158"
+"model" "*71"
+}
+{
+"script_noteworthy" "down"
+"targetname" "elev_num"
+"classname" "script_brushmodel"
+"origin" "6515 2189 158"
+"model" "*72"
+}
+{
+"target" "pf2014_auto66"
+"targetname" "pf2014_auto65"
+"classname" "script_brushmodel"
+"origin" "4933 2185 263"
+"model" "*83"
+}
+{
+"target" "pf2014_auto70"
+"targetname" "pf2014_auto69"
+"classname" "script_brushmodel"
+"origin" "4905 2213 295"
+"model" "*84"
+}
+{
+"target" "pf2014_auto67"
+"targetname" "pf2014_auto66"
+"classname" "script_brushmodel"
+"origin" "4926 2192 271"
+"model" "*85"
+}
+{
+"target" "pf2014_auto68"
+"targetname" "pf2014_auto67"
+"classname" "script_brushmodel"
+"origin" "4919 2199 279"
+"model" "*86"
+}
+{
+"target" "pf2014_auto64"
+"targetname" "pf2014_auto63"
+"classname" "script_brushmodel"
+"origin" "4947 2171 247"
+"model" "*87"
+}
+{
+"target" "pf2014_auto69"
+"targetname" "pf2014_auto68"
+"classname" "script_brushmodel"
+"origin" "4912 2206 287"
+"model" "*88"
+}
+{
+"target" "pf2014_auto65"
+"targetname" "pf2014_auto64"
+"classname" "script_brushmodel"
+"origin" "4940 2178 255"
+"model" "*89"
+}
+{
+"target" "pf2014_auto71"
+"targetname" "pf2014_auto70"
+"classname" "script_brushmodel"
+"origin" "4898 2220 303"
+"model" "*90"
+}
+{
+"target" "pf2014_auto72"
+"targetname" "pf2014_auto71"
+"classname" "script_brushmodel"
+"origin" "4890 2228 311"
+"model" "*91"
+}
+{
+"target" "pf2014_auto41"
+"targetname" "pf2014_auto40"
+"classname" "script_brushmodel"
+"origin" "5110 2008 63"
+"model" "*92"
+}
+{
+"target" "pf2014_auto42"
+"targetname" "pf2014_auto41"
+"classname" "script_brushmodel"
+"origin" "5103 2015 71"
+"model" "*93"
+}
+{
+"target" "pf2014_auto46"
+"targetname" "pf2014_auto45"
+"classname" "script_brushmodel"
+"origin" "5074 2044 103"
+"model" "*94"
+}
+{
+"target" "pf2014_auto50"
+"targetname" "pf2014_auto49"
+"classname" "script_brushmodel"
+"origin" "5046 2072 135"
+"model" "*95"
+}
+{
+"target" "pf2014_auto54"
+"targetname" "pf2014_auto53"
+"classname" "script_brushmodel"
+"origin" "5018 2100 167"
+"model" "*96"
+}
+{
+"target" "pf2014_auto58"
+"targetname" "pf2014_auto57"
+"classname" "script_brushmodel"
+"origin" "4989 2129 199"
+"model" "*97"
+}
+{
+"target" "pf2014_auto62"
+"targetname" "pf2014_auto61"
+"classname" "script_brushmodel"
+"origin" "4961 2157 231"
+"model" "*98"
+}
+{
+"targetname" "pf2014_auto74"
+"classname" "script_brushmodel"
+"origin" "4869 2249 314"
+"model" "*99"
+}
+{
+"target" "pf2014_auto63"
+"targetname" "pf2014_auto62"
+"classname" "script_brushmodel"
+"origin" "4954 2164 239"
+"model" "*100"
+}
+{
+"target" "pf2014_auto59"
+"targetname" "pf2014_auto58"
+"classname" "script_brushmodel"
+"origin" "4982 2136 207"
+"model" "*101"
+}
+{
+"target" "pf2014_auto55"
+"targetname" "pf2014_auto54"
+"classname" "script_brushmodel"
+"origin" "5011 2107 175"
+"model" "*102"
+}
+{
+"target" "pf2014_auto51"
+"targetname" "pf2014_auto50"
+"classname" "script_brushmodel"
+"origin" "5039 2079 143"
+"model" "*103"
+}
+{
+"target" "pf2014_auto47"
+"targetname" "pf2014_auto46"
+"classname" "script_brushmodel"
+"origin" "5067 2051 111"
+"model" "*104"
+}
+{
+"target" "pf2014_auto60"
+"targetname" "pf2014_auto59"
+"classname" "script_brushmodel"
+"origin" "4975 2143 215"
+"model" "*105"
+}
+{
+"target" "pf2014_auto73"
+"targetname" "pf2014_auto72"
+"classname" "script_brushmodel"
+"origin" "4883 2235 314"
+"model" "*106"
+}
+{
+"target" "pf2014_auto56"
+"targetname" "pf2014_auto55"
+"classname" "script_brushmodel"
+"origin" "5004 2114 183"
+"model" "*107"
+}
+{
+"target" "pf2014_auto52"
+"targetname" "pf2014_auto51"
+"classname" "script_brushmodel"
+"origin" "5032 2086 151"
+"model" "*108"
+}
+{
+"target" "pf2014_auto74"
+"targetname" "pf2014_auto73"
+"classname" "script_brushmodel"
+"origin" "4876 2242 314"
+"model" "*109"
+}
+{
+"target" "pf2014_auto48"
+"targetname" "pf2014_auto47"
+"classname" "script_brushmodel"
+"origin" "5060 2058 119"
+"model" "*110"
+}
+{
+"target" "pf2014_auto61"
+"targetname" "pf2014_auto60"
+"classname" "script_brushmodel"
+"origin" "4968 2150 223"
+"model" "*111"
+}
+{
+"target" "pf2014_auto38"
+"targetname" "escalator"
+"classname" "script_brushmodel"
+"origin" "5131 1987 58"
+"model" "*112"
+}
+{
+"target" "pf2014_auto39"
+"targetname" "pf2014_auto38"
+"classname" "script_brushmodel"
+"origin" "5124 1994 58"
+"model" "*113"
+}
+{
+"target" "pf2014_auto40"
+"targetname" "pf2014_auto39"
+"classname" "script_brushmodel"
+"origin" "5117 2001 58"
+"model" "*114"
+}
+{
+"target" "pf2014_auto43"
+"targetname" "pf2014_auto42"
+"classname" "script_brushmodel"
+"origin" "5096 2022 79"
+"model" "*115"
+}
+{
+"target" "pf2014_auto57"
+"targetname" "pf2014_auto56"
+"classname" "script_brushmodel"
+"origin" "4997 2121 191"
+"model" "*116"
+}
+{
+"target" "pf2014_auto53"
+"targetname" "pf2014_auto52"
+"classname" "script_brushmodel"
+"origin" "5025 2093 159"
+"model" "*117"
+}
+{
+"target" "pf2014_auto49"
+"targetname" "pf2014_auto48"
+"classname" "script_brushmodel"
+"origin" "5053 2065 127"
+"model" "*118"
+}
+{
+"target" "pf2014_auto44"
+"targetname" "pf2014_auto43"
+"classname" "script_brushmodel"
+"origin" "5088 2030 87"
+"model" "*119"
+}
+{
+"target" "pf2014_auto45"
+"targetname" "pf2014_auto44"
+"classname" "script_brushmodel"
+"origin" "5081 2037 95"
+"model" "*120"
+}
+{
+"ltOrigin" "4870.32 1428 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1428 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "4870.32 1644 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1644 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6188 2280.26 152"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "6188 2284 134"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"targetname" "intro_rope"
+"classname" "script_brushmodel"
+"origin" "6301 1870 101"
+"model" "*125"
+}
+{
+"ltOrigin" "5260.44 2936.48 389"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5264.7 2940.7 371"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5302.44 2894.38 389"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5306.7 2898.6 371"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5302.44 2894.38 432.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5306.7 2898.6 414.5"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5260.44 2936.48 432.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5264.7 2940.7 414.5"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5772 2280.26 152"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5772 2284 134"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6208 1968 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 1968 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 2000 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 2000 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 1712 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 1712 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 1744 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 1744 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1712 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6368 1712 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1744 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6368 1744 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1968 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6368 1968 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 2000 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6368 2000 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1456 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6368 1456 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1488 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6368 1488 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 1456 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6528 1456 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 1488 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6528 1488 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 1264 323.436"
+"sound_csv_include" "destruct_fluorescent_light"
+"classname" "script_model"
+"origin" "6208 1264 315"
+"model" "me_lightfluohang_double"
+"modelscale" "1.1"
+"targetname" "destructible_toy"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"csv_include" "destructible_light_fluorescent_on"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 1488 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 1488 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6208 1456 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6208 1456 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6368 1264 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6368 1264 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 1264 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6528 1264 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 1712 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6528 1712 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "42474e0000"
+"ltOrigin" "4870.32 1564 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1564 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6528 1744 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6528 1744 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 1968 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6528 1968 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "6528 2000 323.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6528 2000 315"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"gndLt" "2b32360000"
+"ltOrigin" "4870.32 1700 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1700 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"target" "pf2151_auto47"
+"targetname" "pf2151_auto46"
+"classname" "script_brushmodel"
+"origin" "5288 2349 263"
+"model" "*130"
+}
+{
+"target" "pf2151_auto43"
+"targetname" "pf2151_auto42"
+"classname" "script_brushmodel"
+"origin" "5288 2389 295"
+"model" "*131"
+}
+{
+"target" "pf2151_auto46"
+"targetname" "pf2151_auto45"
+"classname" "script_brushmodel"
+"origin" "5288 2359 271"
+"model" "*132"
+}
+{
+"target" "pf2151_auto45"
+"targetname" "pf2151_auto44"
+"classname" "script_brushmodel"
+"origin" "5288 2369 279"
+"model" "*133"
+}
+{
+"target" "pf2151_auto49"
+"targetname" "pf2151_auto48"
+"classname" "script_brushmodel"
+"origin" "5288 2329 247"
+"model" "*134"
+}
+{
+"target" "pf2151_auto44"
+"targetname" "pf2151_auto43"
+"classname" "script_brushmodel"
+"origin" "5288 2379 287"
+"model" "*135"
+}
+{
+"target" "pf2151_auto48"
+"targetname" "pf2151_auto47"
+"classname" "script_brushmodel"
+"origin" "5288 2339 255"
+"model" "*136"
+}
+{
+"target" "pf2151_auto42"
+"targetname" "pf2151_auto41"
+"classname" "script_brushmodel"
+"origin" "5288 2399 303"
+"model" "*137"
+}
+{
+"target" "pf2151_auto41"
+"targetname" "pf2151_auto40"
+"classname" "script_brushmodel"
+"origin" "5288 2409 311"
+"model" "*138"
+}
+{
+"target" "pf2151_auto72"
+"targetname" "pf2151_auto71"
+"classname" "script_brushmodel"
+"origin" "5288 2099 63"
+"model" "*139"
+}
+{
+"target" "pf2151_auto71"
+"targetname" "pf2151_auto70"
+"classname" "script_brushmodel"
+"origin" "5288 2109 71"
+"model" "*140"
+}
+{
+"target" "pf2151_auto67"
+"targetname" "pf2151_auto66"
+"classname" "script_brushmodel"
+"origin" "5288 2149 103"
+"model" "*141"
+}
+{
+"target" "pf2151_auto63"
+"targetname" "pf2151_auto62"
+"classname" "script_brushmodel"
+"origin" "5288 2189 135"
+"model" "*142"
+}
+{
+"target" "pf2151_auto59"
+"targetname" "pf2151_auto58"
+"classname" "script_brushmodel"
+"origin" "5288 2229 167"
+"model" "*143"
+}
+{
+"target" "pf2151_auto55"
+"targetname" "pf2151_auto54"
+"classname" "script_brushmodel"
+"origin" "5288 2269 199"
+"model" "*144"
+}
+{
+"target" "pf2151_auto51"
+"targetname" "pf2151_auto50"
+"classname" "script_brushmodel"
+"origin" "5288 2309 231"
+"model" "*145"
+}
+{
+"target" "pf2151_auto38"
+"targetname" "escalator"
+"classname" "script_brushmodel"
+"origin" "5288 2439 314"
+"model" "*146"
+}
+{
+"target" "pf2151_auto50"
+"targetname" "pf2151_auto49"
+"classname" "script_brushmodel"
+"origin" "5288 2319 239"
+"model" "*147"
+}
+{
+"target" "pf2151_auto54"
+"targetname" "pf2151_auto53"
+"classname" "script_brushmodel"
+"origin" "5288 2279 207"
+"model" "*148"
+}
+{
+"target" "pf2151_auto58"
+"targetname" "pf2151_auto57"
+"classname" "script_brushmodel"
+"origin" "5288 2239 175"
+"model" "*149"
+}
+{
+"target" "pf2151_auto62"
+"targetname" "pf2151_auto61"
+"classname" "script_brushmodel"
+"origin" "5288 2199 143"
+"model" "*150"
+}
+{
+"target" "pf2151_auto66"
+"targetname" "pf2151_auto65"
+"classname" "script_brushmodel"
+"origin" "5288 2159 111"
+"model" "*151"
+}
+{
+"target" "pf2151_auto53"
+"targetname" "pf2151_auto52"
+"classname" "script_brushmodel"
+"origin" "5288 2289 215"
+"model" "*152"
+}
+{
+"target" "pf2151_auto40"
+"targetname" "pf2151_auto39"
+"classname" "script_brushmodel"
+"origin" "5288 2419 314"
+"model" "*153"
+}
+{
+"target" "pf2151_auto57"
+"targetname" "pf2151_auto56"
+"classname" "script_brushmodel"
+"origin" "5288 2249 183"
+"model" "*154"
+}
+{
+"target" "pf2151_auto61"
+"targetname" "pf2151_auto60"
+"classname" "script_brushmodel"
+"origin" "5288 2209 151"
+"model" "*155"
+}
+{
+"target" "pf2151_auto39"
+"targetname" "pf2151_auto38"
+"classname" "script_brushmodel"
+"origin" "5288 2429 314"
+"model" "*156"
+}
+{
+"target" "pf2151_auto65"
+"targetname" "pf2151_auto64"
+"classname" "script_brushmodel"
+"origin" "5288 2169 119"
+"model" "*157"
+}
+{
+"target" "pf2151_auto52"
+"targetname" "pf2151_auto51"
+"classname" "script_brushmodel"
+"origin" "5288 2299 223"
+"model" "*158"
+}
+{
+"targetname" "pf2151_auto74"
+"classname" "script_brushmodel"
+"origin" "5288 2069 58"
+"model" "*159"
+}
+{
+"target" "pf2151_auto74"
+"targetname" "pf2151_auto73"
+"classname" "script_brushmodel"
+"origin" "5288 2079 58"
+"model" "*160"
+}
+{
+"target" "pf2151_auto73"
+"targetname" "pf2151_auto72"
+"classname" "script_brushmodel"
+"origin" "5288 2089 58"
+"model" "*161"
+}
+{
+"target" "pf2151_auto70"
+"targetname" "pf2151_auto69"
+"classname" "script_brushmodel"
+"origin" "5288 2119 79"
+"model" "*162"
+}
+{
+"target" "pf2151_auto56"
+"targetname" "pf2151_auto55"
+"classname" "script_brushmodel"
+"origin" "5288 2259 191"
+"model" "*163"
+}
+{
+"target" "pf2151_auto60"
+"targetname" "pf2151_auto59"
+"classname" "script_brushmodel"
+"origin" "5288 2219 159"
+"model" "*164"
+}
+{
+"target" "pf2151_auto64"
+"targetname" "pf2151_auto63"
+"classname" "script_brushmodel"
+"origin" "5288 2179 127"
+"model" "*165"
+}
+{
+"target" "pf2151_auto69"
+"targetname" "pf2151_auto68"
+"classname" "script_brushmodel"
+"origin" "5288 2129 87"
+"model" "*166"
+}
+{
+"target" "pf2151_auto68"
+"targetname" "pf2151_auto67"
+"classname" "script_brushmodel"
+"origin" "5288 2139 95"
+"model" "*167"
+}
+{
+"gndLt" "2425290000"
+"ltOrigin" "4716 1259.74 126"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4716 1256 108"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"target" "pf2156_auto47"
+"targetname" "pf2156_auto46"
+"classname" "script_brushmodel"
+"origin" "4806 2064 263"
+"model" "*168"
+}
+{
+"target" "pf2156_auto43"
+"targetname" "pf2156_auto42"
+"classname" "script_brushmodel"
+"origin" "4777 2093 295"
+"model" "*169"
+}
+{
+"target" "pf2156_auto46"
+"targetname" "pf2156_auto45"
+"classname" "script_brushmodel"
+"origin" "4799 2071 271"
+"model" "*170"
+}
+{
+"target" "pf2156_auto45"
+"targetname" "pf2156_auto44"
+"classname" "script_brushmodel"
+"origin" "4792 2078 279"
+"model" "*171"
+}
+{
+"target" "pf2156_auto49"
+"targetname" "pf2156_auto48"
+"classname" "script_brushmodel"
+"origin" "4820 2050 247"
+"model" "*172"
+}
+{
+"target" "pf2156_auto44"
+"targetname" "pf2156_auto43"
+"classname" "script_brushmodel"
+"origin" "4785 2085 287"
+"model" "*173"
+}
+{
+"target" "pf2156_auto48"
+"targetname" "pf2156_auto47"
+"classname" "script_brushmodel"
+"origin" "4813 2057 255"
+"model" "*174"
+}
+{
+"target" "pf2156_auto42"
+"targetname" "pf2156_auto41"
+"classname" "script_brushmodel"
+"origin" "4770 2100 303"
+"model" "*175"
+}
+{
+"target" "pf2156_auto41"
+"targetname" "pf2156_auto40"
+"classname" "script_brushmodel"
+"origin" "4763 2107 311"
+"model" "*176"
+}
+{
+"target" "pf2156_auto72"
+"targetname" "pf2156_auto71"
+"classname" "script_brushmodel"
+"origin" "4983 1887 63"
+"model" "*177"
+}
+{
+"target" "pf2156_auto71"
+"targetname" "pf2156_auto70"
+"classname" "script_brushmodel"
+"origin" "4975 1895 71"
+"model" "*178"
+}
+{
+"target" "pf2156_auto67"
+"targetname" "pf2156_auto66"
+"classname" "script_brushmodel"
+"origin" "4947 1923 103"
+"model" "*179"
+}
+{
+"target" "pf2156_auto63"
+"targetname" "pf2156_auto62"
+"classname" "script_brushmodel"
+"origin" "4919 1951 135"
+"model" "*180"
+}
+{
+"target" "pf2156_auto59"
+"targetname" "pf2156_auto58"
+"classname" "script_brushmodel"
+"origin" "4891 1979 167"
+"model" "*181"
+}
+{
+"target" "pf2156_auto55"
+"targetname" "pf2156_auto54"
+"classname" "script_brushmodel"
+"origin" "4862 2008 199"
+"model" "*182"
+}
+{
+"target" "pf2156_auto51"
+"targetname" "pf2156_auto50"
+"classname" "script_brushmodel"
+"origin" "4834 2036 231"
+"model" "*183"
+}
+{
+"target" "pf2156_auto38"
+"targetname" "escalator"
+"classname" "script_brushmodel"
+"origin" "4742 2128 314"
+"model" "*184"
+}
+{
+"target" "pf2156_auto50"
+"targetname" "pf2156_auto49"
+"classname" "script_brushmodel"
+"origin" "4827 2043 239"
+"model" "*185"
+}
+{
+"target" "pf2156_auto54"
+"targetname" "pf2156_auto53"
+"classname" "script_brushmodel"
+"origin" "4855 2015 207"
+"model" "*186"
+}
+{
+"target" "pf2156_auto58"
+"targetname" "pf2156_auto57"
+"classname" "script_brushmodel"
+"origin" "4884 1986 175"
+"model" "*187"
+}
+{
+"target" "pf2156_auto62"
+"targetname" "pf2156_auto61"
+"classname" "script_brushmodel"
+"origin" "4912 1958 143"
+"model" "*188"
+}
+{
+"target" "pf2156_auto66"
+"targetname" "pf2156_auto65"
+"classname" "script_brushmodel"
+"origin" "4940 1930 111"
+"model" "*189"
+}
+{
+"target" "pf2156_auto53"
+"targetname" "pf2156_auto52"
+"classname" "script_brushmodel"
+"origin" "4848 2022 215"
+"model" "*190"
+}
+{
+"target" "pf2156_auto40"
+"targetname" "pf2156_auto39"
+"classname" "script_brushmodel"
+"origin" "4756 2114 314"
+"model" "*191"
+}
+{
+"target" "pf2156_auto57"
+"targetname" "pf2156_auto56"
+"classname" "script_brushmodel"
+"origin" "4876 1994 183"
+"model" "*192"
+}
+{
+"target" "pf2156_auto61"
+"targetname" "pf2156_auto60"
+"classname" "script_brushmodel"
+"origin" "4905 1965 151"
+"model" "*193"
+}
+{
+"target" "pf2156_auto39"
+"targetname" "pf2156_auto38"
+"classname" "script_brushmodel"
+"origin" "4749 2121 314"
+"model" "*194"
+}
+{
+"target" "pf2156_auto65"
+"targetname" "pf2156_auto64"
+"classname" "script_brushmodel"
+"origin" "4933 1937 119"
+"model" "*195"
+}
+{
+"target" "pf2156_auto52"
+"targetname" "pf2156_auto51"
+"classname" "script_brushmodel"
+"origin" "4841 2029 223"
+"model" "*196"
+}
+{
+"targetname" "pf2156_auto74"
+"classname" "script_brushmodel"
+"origin" "5004 1866 58"
+"model" "*197"
+}
+{
+"target" "pf2156_auto74"
+"targetname" "pf2156_auto73"
+"classname" "script_brushmodel"
+"origin" "4997 1873 58"
+"model" "*198"
+}
+{
+"target" "pf2156_auto73"
+"targetname" "pf2156_auto72"
+"classname" "script_brushmodel"
+"origin" "4990 1880 58"
+"model" "*199"
+}
+{
+"target" "pf2156_auto70"
+"targetname" "pf2156_auto69"
+"classname" "script_brushmodel"
+"origin" "4968 1902 79"
+"model" "*200"
+}
+{
+"target" "pf2156_auto56"
+"targetname" "pf2156_auto55"
+"classname" "script_brushmodel"
+"origin" "4869 2001 191"
+"model" "*201"
+}
+{
+"target" "pf2156_auto60"
+"targetname" "pf2156_auto59"
+"classname" "script_brushmodel"
+"origin" "4898 1972 159"
+"model" "*202"
+}
+{
+"target" "pf2156_auto64"
+"targetname" "pf2156_auto63"
+"classname" "script_brushmodel"
+"origin" "4926 1944 127"
+"model" "*203"
+}
+{
+"target" "pf2156_auto69"
+"targetname" "pf2156_auto68"
+"classname" "script_brushmodel"
+"origin" "4961 1909 87"
+"model" "*204"
+}
+{
+"target" "pf2156_auto68"
+"targetname" "pf2156_auto67"
+"classname" "script_brushmodel"
+"origin" "4954 1916 95"
+"model" "*205"
+}
+{
+"ltOrigin" "5908 2280.26 152"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5908 2284 134"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "3e434a0000"
+"ltOrigin" "4870.32 1372 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1372 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "43484e0000"
+"ltOrigin" "4870.32 1508 186.583"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4863 1508 170"
+"modelscale" "1"
+"angles" "360 90 10"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "26272b0000"
+"ltOrigin" "4812 1259.74 126"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "4812 1256 108"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6240 2224 195.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "6240 2224 187"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "5856 2224 195.415"
+"sound_csv_include" "destruct_fluorescent_light"
+"precache_script" "common_scripts _destructible_types_anim_light_fluo_on"
+"csv_include" "destructible_light_fluorescent_on"
+"destructible_type" "toy_light_ceiling_fluorescent"
+"targetname" "destructible_toy"
+"modelscale" "1.1"
+"model" "me_lightfluohang_double_on"
+"origin" "5856 2224 187"
+"classname" "script_model"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "5176.64 3020.28 389"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5180.9 3024.5 371"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b3a003f"
+"ltOrigin" "5761 2146 115.263"
+"angles" "0 180 0"
+"targetname" "lobby_security_door_model"
+"origin" "5786.5 2147 63.5"
+"classname" "script_model"
+"model" "storefront_door03"
+}
+{
+"ltOrigin" "5218.34 2978.58 389"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5222.6 2982.8 371"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5218.34 2978.58 432.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5222.6 2982.8 414.5"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "6324 2280.26 152"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "6324 2284 134"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "5176.64 3020.28 432.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "5180.9 3024.5 414.5"
+"modelscale" "1"
+"angles" "0 315 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"spawnflags" "1"
+"targetname" "lobby_bathroom_door"
+"classname" "script_brushmodel"
+"origin" "5215 1243 112"
+"model" "*219"
+}
+{
+"gndLt" "4848480043"
+"ltOrigin" "6064.65 1832 208"
+"targetname" "intro_security_sign"
+"origin" "6064 1771 218"
+"angles" "0 270 0"
+"model" "sign_airport_security"
+"classname" "script_model"
+}
+{
+"target" "pf2319_auto66"
+"targetname" "pf2319_auto65"
+"classname" "script_brushmodel"
+"origin" "5464 2344 263"
+"model" "*230"
+}
+{
+"target" "pf2319_auto70"
+"targetname" "pf2319_auto69"
+"classname" "script_brushmodel"
+"origin" "5464 2384 295"
+"model" "*231"
+}
+{
+"target" "pf2319_auto67"
+"targetname" "pf2319_auto66"
+"classname" "script_brushmodel"
+"origin" "5464 2354 271"
+"model" "*232"
+}
+{
+"target" "pf2319_auto68"
+"targetname" "pf2319_auto67"
+"classname" "script_brushmodel"
+"origin" "5464 2364 279"
+"model" "*233"
+}
+{
+"target" "pf2319_auto64"
+"targetname" "pf2319_auto63"
+"classname" "script_brushmodel"
+"origin" "5464 2324 247"
+"model" "*234"
+}
+{
+"target" "pf2319_auto69"
+"targetname" "pf2319_auto68"
+"classname" "script_brushmodel"
+"origin" "5464 2374 287"
+"model" "*235"
+}
+{
+"target" "pf2319_auto65"
+"targetname" "pf2319_auto64"
+"classname" "script_brushmodel"
+"origin" "5464 2334 255"
+"model" "*236"
+}
+{
+"target" "pf2319_auto71"
+"targetname" "pf2319_auto70"
+"classname" "script_brushmodel"
+"origin" "5464 2394 303"
+"model" "*237"
+}
+{
+"target" "pf2319_auto72"
+"targetname" "pf2319_auto71"
+"classname" "script_brushmodel"
+"origin" "5464 2404 311"
+"model" "*238"
+}
+{
+"target" "pf2319_auto41"
+"targetname" "pf2319_auto40"
+"classname" "script_brushmodel"
+"origin" "5464 2094 63"
+"model" "*239"
+}
+{
+"target" "pf2319_auto42"
+"targetname" "pf2319_auto41"
+"classname" "script_brushmodel"
+"origin" "5464 2104 71"
+"model" "*240"
+}
+{
+"target" "pf2319_auto46"
+"targetname" "pf2319_auto45"
+"classname" "script_brushmodel"
+"origin" "5464 2144 103"
+"model" "*241"
+}
+{
+"target" "pf2319_auto50"
+"targetname" "pf2319_auto49"
+"classname" "script_brushmodel"
+"origin" "5464 2184 135"
+"model" "*242"
+}
+{
+"target" "pf2319_auto54"
+"targetname" "pf2319_auto53"
+"classname" "script_brushmodel"
+"origin" "5464 2224 167"
+"model" "*243"
+}
+{
+"target" "pf2319_auto58"
+"targetname" "pf2319_auto57"
+"classname" "script_brushmodel"
+"origin" "5464 2264 199"
+"model" "*244"
+}
+{
+"target" "pf2319_auto62"
+"targetname" "pf2319_auto61"
+"classname" "script_brushmodel"
+"origin" "5464 2304 231"
+"model" "*245"
+}
+{
+"targetname" "pf2319_auto74"
+"classname" "script_brushmodel"
+"origin" "5464 2434 314"
+"model" "*246"
+}
+{
+"target" "pf2319_auto63"
+"targetname" "pf2319_auto62"
+"classname" "script_brushmodel"
+"origin" "5464 2314 239"
+"model" "*247"
+}
+{
+"target" "pf2319_auto59"
+"targetname" "pf2319_auto58"
+"classname" "script_brushmodel"
+"origin" "5464 2274 207"
+"model" "*248"
+}
+{
+"target" "pf2319_auto55"
+"targetname" "pf2319_auto54"
+"classname" "script_brushmodel"
+"origin" "5464 2234 175"
+"model" "*249"
+}
+{
+"target" "pf2319_auto51"
+"targetname" "pf2319_auto50"
+"classname" "script_brushmodel"
+"origin" "5464 2194 143"
+"model" "*250"
+}
+{
+"target" "pf2319_auto47"
+"targetname" "pf2319_auto46"
+"classname" "script_brushmodel"
+"origin" "5464 2154 111"
+"model" "*251"
+}
+{
+"target" "pf2319_auto60"
+"targetname" "pf2319_auto59"
+"classname" "script_brushmodel"
+"origin" "5464 2284 215"
+"model" "*252"
+}
+{
+"target" "pf2319_auto73"
+"targetname" "pf2319_auto72"
+"classname" "script_brushmodel"
+"origin" "5464 2414 314"
+"model" "*253"
+}
+{
+"target" "pf2319_auto56"
+"targetname" "pf2319_auto55"
+"classname" "script_brushmodel"
+"origin" "5464 2244 183"
+"model" "*254"
+}
+{
+"target" "pf2319_auto52"
+"targetname" "pf2319_auto51"
+"classname" "script_brushmodel"
+"origin" "5464 2204 151"
+"model" "*255"
+}
+{
+"target" "pf2319_auto74"
+"targetname" "pf2319_auto73"
+"classname" "script_brushmodel"
+"origin" "5464 2424 314"
+"model" "*256"
+}
+{
+"target" "pf2319_auto48"
+"targetname" "pf2319_auto47"
+"classname" "script_brushmodel"
+"origin" "5464 2164 119"
+"model" "*257"
+}
+{
+"target" "pf2319_auto61"
+"targetname" "pf2319_auto60"
+"classname" "script_brushmodel"
+"origin" "5464 2294 223"
+"model" "*258"
+}
+{
+"target" "pf2319_auto38"
+"targetname" "escalator"
+"classname" "script_brushmodel"
+"origin" "5464 2064 58"
+"model" "*259"
+}
+{
+"target" "pf2319_auto39"
+"targetname" "pf2319_auto38"
+"classname" "script_brushmodel"
+"origin" "5464 2074 58"
+"model" "*260"
+}
+{
+"target" "pf2319_auto40"
+"targetname" "pf2319_auto39"
+"classname" "script_brushmodel"
+"origin" "5464 2084 58"
+"model" "*261"
+}
+{
+"target" "pf2319_auto43"
+"targetname" "pf2319_auto42"
+"classname" "script_brushmodel"
+"origin" "5464 2114 79"
+"model" "*262"
+}
+{
+"target" "pf2319_auto57"
+"targetname" "pf2319_auto56"
+"classname" "script_brushmodel"
+"origin" "5464 2254 191"
+"model" "*263"
+}
+{
+"target" "pf2319_auto53"
+"targetname" "pf2319_auto52"
+"classname" "script_brushmodel"
+"origin" "5464 2214 159"
+"model" "*264"
+}
+{
+"target" "pf2319_auto49"
+"targetname" "pf2319_auto48"
+"classname" "script_brushmodel"
+"origin" "5464 2174 127"
+"model" "*265"
+}
+{
+"target" "pf2319_auto44"
+"targetname" "pf2319_auto43"
+"classname" "script_brushmodel"
+"origin" "5464 2124 87"
+"model" "*266"
+}
+{
+"target" "pf2319_auto45"
+"targetname" "pf2319_auto44"
+"classname" "script_brushmodel"
+"origin" "5464 2134 95"
+"model" "*267"
+}
+{
+"ltOrigin" "4062.2 2048.84 426.218"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "4062.2 2044.4 410.3"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 180 15"
+}
+{
+"ltOrigin" "3760.38 2303.82 442.218"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "3756.2 2308 426.3"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 45 15"
+}
+{
+"gndLt" "3b3c3e001c"
+"ltOrigin" "2900 3796 259.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 260.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001c"
+"ltOrigin" "2899 3796 260.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 260.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001c"
+"ltOrigin" "2901 3796 260.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 260.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001c"
+"ltOrigin" "2900 3796 261.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 260.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001c"
+"ltOrigin" "2900 3796 253.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 254.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001c"
+"ltOrigin" "2899 3796 254.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 254.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001c"
+"ltOrigin" "2901 3796 254.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 254.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001c"
+"ltOrigin" "2900 3796 255.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 254.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 247.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 248.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2899 3796 248.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 248.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2901 3796 248.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 248.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 249.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 248.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3f41001c"
+"ltOrigin" "2900 3796 241.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 242.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3f41001c"
+"ltOrigin" "2899 3796 242.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 242.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3f41001c"
+"ltOrigin" "2901 3796 242.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 242.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3f41001c"
+"ltOrigin" "2900 3796 243.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 242.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3e41001c"
+"ltOrigin" "2900 3796 235.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 236.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3e41001c"
+"ltOrigin" "2899 3796 236.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 236.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3e41001c"
+"ltOrigin" "2901 3796 236.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 236.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3e41001c"
+"ltOrigin" "2900 3796 237.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 236.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f3f42001c"
+"ltOrigin" "2900 3796 229.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 230.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f3f42001c"
+"ltOrigin" "2899 3796 230.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 230.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f3f42001c"
+"ltOrigin" "2901 3796 230.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 230.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f3f42001c"
+"ltOrigin" "2900 3796 231.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 230.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 223.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 224.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2899 3796 224.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 224.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2901 3796 224.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 224.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 225.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 224.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4041001c"
+"ltOrigin" "2900 3796 217.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 218.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4041001c"
+"ltOrigin" "2899 3796 218.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 218.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4041001c"
+"ltOrigin" "2901 3796 218.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 218.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4041001c"
+"ltOrigin" "2900 3796 219.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 218.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2900 3796 211.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 212.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2899 3796 212.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 212.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2901 3796 212.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 212.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2900 3796 213.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 212.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 205.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 206.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2899 3796 206.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 206.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2901 3796 206.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 206.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 207.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 206.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424344001c"
+"ltOrigin" "2900 3796 199.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 200.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2899 3796 200.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 200.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2901 3796 200.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 200.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "414244001c"
+"ltOrigin" "2900 3796 201.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 200.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "414243001c"
+"ltOrigin" "2900 3796 193.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 194.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3e3f3f001c"
+"ltOrigin" "2899 3796 194.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 194.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "414243001c"
+"ltOrigin" "2901 3796 194.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 194.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "404143001c"
+"ltOrigin" "2900 3796 195.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 194.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2900 3796 187.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 188.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4040001c"
+"ltOrigin" "2899 3796 188.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 188.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2901 3796 188.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 188.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "424344001c"
+"ltOrigin" "2900 3796 189.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 188.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 265.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 266.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2899 3796 266.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 266.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2901 3796 266.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 266.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4042001c"
+"ltOrigin" "2900 3796 267.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 266.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424344001c"
+"ltOrigin" "2900 3796 181.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 182.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4040001c"
+"ltOrigin" "2899 3796 182.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 182.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "424344001c"
+"ltOrigin" "2901 3796 182.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 182.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "424344001c"
+"ltOrigin" "2900 3796 183.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 182.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2900 3796 175.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 176.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4040001c"
+"ltOrigin" "2899 3796 176.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 176.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2901 3796 176.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 176.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2900 3796 177.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 176.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424445001c"
+"ltOrigin" "2900 3796 169.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 170.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4041001c"
+"ltOrigin" "2899 3796 170.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 170.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2901 3796 170.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 170.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "424445001c"
+"ltOrigin" "2900 3796 171.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 170.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2900 3796 163.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 164.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3f4040001c"
+"ltOrigin" "2899 3796 164.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 164.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2901 3796 164.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 164.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "424345001c"
+"ltOrigin" "2900 3796 165.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3796 164.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2900 3612 259.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 260.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2899 3612 260.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 260.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2901 3612 260.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 260.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2900 3612 261.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 260.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2900 3612 253.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 254.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2899 3612 254.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 254.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2901 3612 254.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 254.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2900 3612 255.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 254.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2900 3612 247.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 248.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2899 3612 248.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 248.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2901 3612 248.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 248.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2900 3612 249.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 248.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2900 3612 241.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 242.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2899 3612 242.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 242.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2901 3612 242.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 242.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2900 3612 243.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 242.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b3d001b"
+"ltOrigin" "2900 3612 235.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 236.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b3d001b"
+"ltOrigin" "2899 3612 236.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 236.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b3d001b"
+"ltOrigin" "2901 3612 236.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 236.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3b3d001b"
+"ltOrigin" "2900 3612 237.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 236.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001b"
+"ltOrigin" "2900 3612 229.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 230.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001b"
+"ltOrigin" "2899 3612 230.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 230.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001b"
+"ltOrigin" "2901 3612 230.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 230.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3e40001b"
+"ltOrigin" "2900 3612 231.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 230.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 223.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 224.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2899 3612 224.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 224.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2901 3612 224.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 224.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 225.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 224.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 217.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 218.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2899 3612 218.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 218.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2901 3612 218.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 218.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 219.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 218.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 211.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 212.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2899 3612 212.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 212.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2901 3612 212.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 212.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3e001b"
+"ltOrigin" "2900 3612 213.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 212.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2900 3612 205.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 206.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2899 3612 206.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 206.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2901 3612 206.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 206.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3c3c3e001b"
+"ltOrigin" "2900 3612 207.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 206.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2900 3612 199.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 200.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2899 3612 200.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 200.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2901 3612 200.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 200.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3c3d001b"
+"ltOrigin" "2900 3612 201.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 200.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2900 3612 193.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 194.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2899 3612 194.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 194.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2901 3612 194.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 194.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "39393a001b"
+"ltOrigin" "2900 3612 195.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 194.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "393939001b"
+"ltOrigin" "2900 3612 187.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 188.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "393939001b"
+"ltOrigin" "2899 3612 188.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 188.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "393939001b"
+"ltOrigin" "2901 3612 188.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 188.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3a3a3b001b"
+"ltOrigin" "2900 3612 189.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 188.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3d40001b"
+"ltOrigin" "2900 3612 265.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 266.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3d40001b"
+"ltOrigin" "2899 3612 266.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 266.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3d40001b"
+"ltOrigin" "2901 3612 266.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 266.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3d40001b"
+"ltOrigin" "2900 3612 267.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 266.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2900 3612 181.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 182.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2899 3612 182.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 182.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "383838001b"
+"ltOrigin" "2901 3612 182.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 182.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "383839001b"
+"ltOrigin" "2900 3612 183.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 182.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2900 3612 175.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 176.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2899 3612 176.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 176.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "393a3a001b"
+"ltOrigin" "2901 3612 176.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 176.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "393a3a001b"
+"ltOrigin" "2900 3612 177.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 176.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2900 3612 169.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 170.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2899 3612 170.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 170.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "393a3a001b"
+"ltOrigin" "2901 3612 170.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 170.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "39393a001b"
+"ltOrigin" "2900 3612 171.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 170.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2900 3612 163.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 164.5"
+"angles" "0 0 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "383939001b"
+"ltOrigin" "2899 3612 164.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 164.5"
+"angles" "90 153.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "393a3a001b"
+"ltOrigin" "2901 3612 164.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 164.5"
+"angles" "270 26.5649 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "393a3a001b"
+"ltOrigin" "2900 3612 165.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "2900 3612 164.5"
+"angles" "1.00179e-005 180 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "19191a0044"
+"ltOrigin" "2491.26 4800 392"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2495 4800 374"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b1b0044"
+"ltOrigin" "2604.74 4800 392"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2601 4800 374"
+"modelscale" "1"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "0c0c0d0000"
+"ltOrigin" "3480.76 3658.5 133"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3658.5 115"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "0b0c0c0000"
+"ltOrigin" "3480.76 3480.5 133"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3480.5 115"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "0d0d0d0000"
+"ltOrigin" "3480.76 3599.5 133"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3599.5 115"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3480.76 3658.5 176.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3658.5 158.5"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "0b0b0c0000"
+"ltOrigin" "3480.76 3540 133"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3540 115"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3480.76 3480.5 176.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3480.5 158.5"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3480.76 3540 176.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3540 158.5"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3351.5 4428.26 190"
+"sound_csv_include" "destruct_tv_exp"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "3351.5 4432 172"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_on_wallmount_02_static"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3480.76 3599.5 176.5"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "3484.5 3599.5 158.5"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4d4e4c9804"
+"ltOrigin" "3488.16 3187.58 357.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf2813_auto2"
+"targetname" "pf2813_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "3468 3206 320"
+}
+{
+"ltOrigin" "3485 3171.5 335"
+"target" "pf2813_auto5"
+"targetname" "pf2813_auto4"
+"angles" "330 90 90"
+"origin" "3482.5 3171.5 335"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3485 3173.5 340"
+"target" "pf2813_auto4"
+"targetname" "pf2813_auto2"
+"angles" "300 270 -90"
+"origin" "3482.5 3173.5 340"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "2a292b0035"
+"ltOrigin" "2756 3207.74 148"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2756 3204 130"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "2121210035"
+"ltOrigin" "2876 3207.74 148"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2876 3204 130"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2493.5 5240.26 406"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2493.5 5244 388"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2613.5 5240.26 406"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2613.5 5244 388"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "161616001e"
+"ltOrigin" "2368.16 4717.58 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf3155_auto2"
+"targetname" "pf3155_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "2348 4736 64"
+}
+{
+"ltOrigin" "2365 4701.5 79"
+"target" "pf3155_auto5"
+"targetname" "pf3155_auto4"
+"angles" "330 90 90"
+"origin" "2362.5 4701.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2365 4703.5 84"
+"target" "pf3155_auto4"
+"targetname" "pf3155_auto2"
+"angles" "300 270 -90"
+"origin" "2362.5 4703.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "24242a0000"
+"ltOrigin" "3019.67 4645.41 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf3157_auto2"
+"targetname" "pf3157_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "3016.59 4670.87 64"
+"angles" "0 315 0"
+}
+{
+"ltOrigin" "3004.21 4634.45 79"
+"target" "pf3157_auto5"
+"targetname" "pf3157_auto4"
+"angles" "330 45 90"
+"origin" "3002.44 4636.22 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3005.63 4635.87 84"
+"target" "pf3157_auto4"
+"targetname" "pf3157_auto2"
+"angles" "300 225 -90"
+"origin" "3003.86 4637.64 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "3a3b3c0011"
+"ltOrigin" "2075.74 3776 138"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2072 3776 120"
+"modelscale" "1"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "3a3b3d2f03"
+"ltOrigin" "2075.74 3712 138"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2072 3712 120"
+"modelscale" "1"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4343460000"
+"ltOrigin" "2592 3528.74 134"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2592 3525 116"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "4142440000"
+"ltOrigin" "2592 3519.26 134"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2592 3523 116"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "47484a0000"
+"ltOrigin" "2592 3968.74 134"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2592 3965 116"
+"modelscale" "1"
+"angles" "0 180 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "48484b0000"
+"ltOrigin" "2592 3959.26 134"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2592 3963 116"
+"modelscale" "1"
+"angles" "0 3.18772e-006 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "1a1a1a0000"
+"ltOrigin" "2215.26 4800 390"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2219 4800 372"
+"modelscale" "1"
+"angles" "0 270 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "1b1b1b0000"
+"ltOrigin" "2224.74 4800 390"
+"sound_csv_include" "destruct_tv_exp"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"targetname" "destructible_toy"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"origin" "2221 4800 372"
+"modelscale" "1"
+"angles" "0 90 0"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+}
+{
+"gndLt" "141415001e"
+"ltOrigin" "2416.16 4717.58 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf3269_auto2"
+"targetname" "pf3269_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "2396 4736 64"
+}
+{
+"ltOrigin" "2413 4701.5 79"
+"target" "pf3269_auto5"
+"targetname" "pf3269_auto4"
+"angles" "330 90 90"
+"origin" "2410.5 4701.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "2413 4703.5 84"
+"target" "pf3269_auto4"
+"targetname" "pf3269_auto2"
+"angles" "300 270 -90"
+"origin" "2410.5 4703.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "2927270000"
+"ltOrigin" "4013.58 3935.84 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf3290_auto2"
+"targetname" "pf3290_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "4032 3956 64"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "3997.5 3939 79"
+"target" "pf3290_auto5"
+"targetname" "pf3290_auto4"
+"angles" "330 3.18772e-006 90"
+"origin" "3997.5 3941.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3999.5 3939 84"
+"target" "pf3290_auto4"
+"targetname" "pf3290_auto2"
+"angles" "300 180 -90"
+"origin" "3999.5 3941.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"gndLt" "3533330000"
+"ltOrigin" "4013.58 3887.84 101.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf3294_auto2"
+"targetname" "pf3294_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "4032 3908 64"
+"angles" "0 270 0"
+}
+{
+"ltOrigin" "3997.5 3891 79"
+"target" "pf3294_auto5"
+"targetname" "pf3294_auto4"
+"angles" "330 3.18772e-006 90"
+"origin" "3997.5 3893.5 79"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3999.5 3891 84"
+"target" "pf3294_auto4"
+"targetname" "pf3294_auto2"
+"angles" "300 180 -90"
+"origin" "3999.5 3893.5 84"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "3800 4733.11 406.797"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_02"
+"csv_include" "destructible_flatscreen_tv_wallmount_02"
+"origin" "3800 4738.3 389.3"
+"model" "ma_flatscreen_tv_wallmount_02"
+"classname" "script_model"
+"angles" "0 0 3.99995"
+}
+{
+"gndLt" "50504f3b03"
+"ltOrigin" "3622.2 4184.15 366.179"
+"angles" "355.462 346.472 171.258"
+"origin" "3622.1 4184 366.1"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto11"
+}
+{
+"ltOrigin" "3624.67 4183.38 369.074"
+"angles" "19.0404 283.591 -12.2733"
+"origin" "3625.1 4184 369.4"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto11"
+}
+{
+"ltOrigin" "3626.13 4184.88 369.321"
+"angles" "4.53783 28.5279 -8.74163"
+"origin" "3626.1 4184.8 369.4"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto11"
+}
+{
+"ltOrigin" "3622.2 4184.15 386.179"
+"angles" "355.462 346.472 171.258"
+"origin" "3622.1 4184 386.1"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto12"
+}
+{
+"target" "pf3348_auto12"
+"script_noteworthy" "massacre_post_top"
+"targetname" "massacre_post_post_exp"
+"classname" "script_brushmodel"
+"origin" "3618 4184 432"
+"model" "*449"
+}
+{
+"ltOrigin" "3623.67 4184.38 387.074"
+"angles" "19.0408 283.591 -12.273"
+"origin" "3624.1 4185 387.4"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto12"
+}
+{
+"target" "massacre_post_post_exp"
+"targetname" "massacre_post_pre_exp"
+"classname" "script_brushmodel"
+"origin" "3624 4184 376"
+"model" "*450"
+}
+{
+"target" "pf3348_auto11"
+"targetname" "massacre_post_post_exp"
+"classname" "script_brushmodel"
+"origin" "3618 4184 320"
+"model" "*451"
+}
+{
+"ltOrigin" "3626.13 4184.88 385.321"
+"angles" "4.53781 28.5279 -8.7416"
+"origin" "3626.1 4184.8 385.4"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto12"
+}
+{
+"ltOrigin" "3623.6 4184.77 384.426"
+"angles" "340.961 91.4085 167.726"
+"origin" "3624.1 4184 384.1"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto12"
+}
+{
+"script_noteworthy" "massacre_post_roof"
+"classname" "script_brushmodel"
+"origin" "3708 3944 436"
+"model" "*452"
+}
+{
+"gndLt" "5151504303"
+"ltOrigin" "3622.6 4184.77 366.426"
+"angles" "340.961 91.4085 167.726"
+"origin" "3623.1 4184 366.1"
+"model" "fx_wood_piece01"
+"classname" "script_model"
+"targetname" "pf3348_auto11"
+}
+{
+"gndLt" "5151500000"
+"ltOrigin" "3624 4064 464"
+"script_noteworthy" "massacre_sign"
+"origin" "3624 4064 464"
+"angles" "0 90 0"
+"model" "sign_airport_restaurant"
+"classname" "script_model"
+}
+{
+"target" "pf3569_auto179"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "2859 3448 439"
+"model" "*466"
+}
+{
+"target" "pf3569_auto180"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "3152 3448 438"
+"model" "*467"
+}
+{
+"target" "pf3569_auto181"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "3240 3360 438"
+"model" "*468"
+}
+{
+"target" "pf3569_auto182"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "3240 3152 427"
+"model" "*469"
+}
+{
+"target" "pf3569_auto183"
+"targetname" "window_poster"
+"classname" "script_brushmodel"
+"origin" "3240 2912 427"
+"model" "*470"
+}
+{
+"ltOrigin" "4094.44 3232 425.918"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "4090 3232 410"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 90 15"
+}
+{
+"gndLt" "1a17140000"
+"ltOrigin" "3860.11 3168.06 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "3856.93 3171.07 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+"angles" "0 135 0"
+}
+{
+"ltOrigin" "4064 3201.56 425.918"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "4064 3206 410"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 0 15"
+}
+{
+"ltOrigin" "4033.56 3232 425.918"
+"csv_include" "destructible_flatscreen_tv_wallmount_01"
+"targetname" "destructible_toy"
+"sound_csv_include" "destruct_tv_exp"
+"destructible_type" "toy_tv_flatscreen_wallmount_01"
+"origin" "4038 3232 410"
+"model" "ma_flatscreen_tv_wallmount_01"
+"classname" "script_model"
+"angles" "0 270 15"
+}
+{
+"gndLt" "33332f0000"
+"ltOrigin" "3888.89 3138.94 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "3892.07 3135.93 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+"angles" "0 315 0"
+}
+{
+"gndLt" "211f1b0000"
+"ltOrigin" "4097.75 3232 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "4102 3232 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+}
+{
+"gndLt" "2f2b250000"
+"ltOrigin" "3877.75 3392 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "3882 3392 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+}
+{
+"gndLt" "201c180000"
+"ltOrigin" "4240.11 3488.06 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "4236.93 3491.07 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+"angles" "0 135 0"
+}
+{
+"gndLt" "272520002a"
+"ltOrigin" "4247.89 3479.94 345.5"
+"csv_include" "destructible_bookstore_bookstand4_books"
+"destructible_type" "toy_bookstore_bookstand4_books"
+"targetname" "destructible_toy"
+"origin" "4251.07 3476.93 345"
+"model" "bookstore_bookstand4_russian"
+"classname" "script_model"
+"angles" "0 315 0"
+}
+{
+"gndLt" "3a3f400000"
+"ltOrigin" "4466.42 3006.16 357.421"
+"script_noteworthy" "com_vending_can_new2"
+"target" "pf4451_auto2"
+"targetname" "pf4451_auto1"
+"classname" "script_model"
+"model" "com_vending_can_new2_lit"
+"origin" "4448 2986 320"
+"angles" "0 90 0"
+}
+{
+"ltOrigin" "4482.5 3003 335"
+"target" "pf4451_auto5"
+"targetname" "pf4451_auto4"
+"angles" "330 180 90"
+"origin" "4482.5 3000.5 335"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"ltOrigin" "4480.5 3003 340"
+"target" "pf4451_auto4"
+"targetname" "pf4451_auto2"
+"angles" "300 3.18772e-006 -90"
+"origin" "4480.5 3000.5 340"
+"model" "food_soda_single01_physics"
+"classname" "script_model"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4491_auto7"
+"classname" "script_brushmodel"
+"origin" "2400 4398 314"
+"model" "*480"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4491_auto6"
+"target" "pf4491_auto7"
+"classname" "script_brushmodel"
+"origin" "2400 4398 314"
+"model" "*481"
+}
+{
+"targetname" "pf4492_auto14"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*482"
+}
+{
+"ltOrigin" "2448 4394 370"
+"script_noteworthy" "airport_glass_elevator_door"
+"angles" "0 180 0"
+"origin" "2448 4394 320"
+"classname" "script_model"
+"model" "airport_glass_elevator_door"
+}
+{
+"target" "pf4492_auto1"
+"targetname" "elevator_housing"
+"classname" "script_brushmodel"
+"origin" "2400 4332 314"
+"model" "*483"
+}
+{
+"script_noteworthy" "elevator_housing_glass"
+"classname" "script_brushmodel"
+"origin" "2400 4326 386"
+"model" "*484"
+}
+{
+"ltOrigin" "2352 4394 370"
+"script_noteworthy" "airport_glass_elevator_door"
+"angles" "0 0 0"
+"origin" "2352 4394 320"
+"classname" "script_model"
+"model" "airport_glass_elevator_door"
+}
+{
+"script_noteworthy" "elevator_doors"
+"spawnflags" "1"
+"targetname" "pf4492_auto2"
+"target" "pf4492_auto4"
+"classname" "script_brushmodel"
+"origin" "2432 4394 316"
+"model" "*485"
+}
+{
+"script_noteworthy" "elevator_doors"
+"spawnflags" "1"
+"targetname" "pf4492_auto1"
+"target" "pf4492_auto2"
+"classname" "script_brushmodel"
+"origin" "2368 4394 316"
+"model" "*486"
+}
+{
+"target" "pf4492_auto13"
+"targetname" "pf4492_auto12"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*487"
+}
+{
+"target" "pf4492_auto10"
+"targetname" "elevator_cable"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*488"
+}
+{
+"target" "pf4492_auto11"
+"targetname" "pf4492_auto10"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*489"
+}
+{
+"target" "pf4492_auto12"
+"targetname" "pf4492_auto11"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*490"
+}
+{
+"target" "pf4492_auto14"
+"targetname" "pf4492_auto13"
+"classname" "script_brushmodel"
+"origin" "2400 4332 505"
+"model" "*491"
+}
+{
+"ltOrigin" "2400 4329.36 391.325"
+"script_noteworthy" "airport_glass_elevator"
+"origin" "2400 4332 316"
+"classname" "script_model"
+"model" "airport_glass_elevator"
+}
+{
+"targetname" "elevator_casing_glass"
+"classname" "script_brushmodel"
+"origin" "2400 4332 384"
+"model" "*492"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4491_auto8"
+"classname" "script_brushmodel"
+"origin" "2400 4398 58"
+"model" "*493"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4491_auto9"
+"target" "pf4491_auto8"
+"classname" "script_brushmodel"
+"origin" "2400 4398 58"
+"model" "*494"
+}
+{
+"ltOrigin" "2400.01 4332 527"
+"script_noteworthy" "bottom"
+"targetname" "elevator_wheels"
+"classname" "script_model"
+"model" "machinery_727_rim01"
+"angles" "270 0 0"
+"origin" "2406 4332 527"
+}
+{
+"gndLt" "4c4e501c03"
+"ltOrigin" "2399.99 4332 557"
+"script_noteworthy" "top"
+"targetname" "elevator_wheels"
+"origin" "2394 4332 557"
+"angles" "90 153.435 153.435"
+"model" "machinery_727_rim01"
+"classname" "script_model"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4494_auto7"
+"classname" "script_brushmodel"
+"origin" "2592 4398 314"
+"model" "*495"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4494_auto6"
+"target" "pf4494_auto7"
+"classname" "script_brushmodel"
+"origin" "2592 4398 314"
+"model" "*496"
+}
+{
+"targetname" "elevator_casing_glass"
+"classname" "script_brushmodel"
+"origin" "2592 4332 384"
+"model" "*497"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4494_auto8"
+"classname" "script_brushmodel"
+"origin" "2592 4398 58"
+"model" "*498"
+}
+{
+"spawnflags" "1"
+"targetname" "pf4494_auto9"
+"target" "pf4494_auto8"
+"classname" "script_brushmodel"
+"origin" "2592 4398 58"
+"model" "*499"
+}
+{
+"targetname" "pf4495_auto14"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*500"
+}
+{
+"ltOrigin" "2640 4394 370"
+"script_noteworthy" "airport_glass_elevator_door"
+"angles" "0 180 0"
+"origin" "2640 4394 320"
+"classname" "script_model"
+"model" "airport_glass_elevator_door"
+}
+{
+"target" "pf4495_auto1"
+"targetname" "elevator_housing"
+"classname" "script_brushmodel"
+"origin" "2592 4332 314"
+"model" "*501"
+}
+{
+"script_noteworthy" "elevator_housing_glass"
+"classname" "script_brushmodel"
+"origin" "2592 4326 386"
+"model" "*502"
+}
+{
+"ltOrigin" "2544 4394 370"
+"script_noteworthy" "airport_glass_elevator_door"
+"angles" "0 0 0"
+"origin" "2544 4394 320"
+"classname" "script_model"
+"model" "airport_glass_elevator_door"
+}
+{
+"script_noteworthy" "elevator_doors"
+"spawnflags" "1"
+"targetname" "pf4495_auto2"
+"target" "pf4495_auto4"
+"classname" "script_brushmodel"
+"origin" "2624 4394 316"
+"model" "*503"
+}
+{
+"script_noteworthy" "elevator_doors"
+"spawnflags" "1"
+"targetname" "pf4495_auto1"
+"target" "pf4495_auto2"
+"classname" "script_brushmodel"
+"origin" "2560 4394 316"
+"model" "*504"
+}
+{
+"target" "pf4495_auto13"
+"targetname" "pf4495_auto12"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*505"
+}
+{
+"target" "pf4495_auto10"
+"targetname" "elevator_cable"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*506"
+}
+{
+"target" "pf4495_auto11"
+"targetname" "pf4495_auto10"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*507"
+}
+{
+"target" "pf4495_auto12"
+"targetname" "pf4495_auto11"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*508"
+}
+{
+"target" "pf4495_auto14"
+"targetname" "pf4495_auto13"
+"classname" "script_brushmodel"
+"origin" "2592 4332 505"
+"model" "*509"
+}
+{
+"ltOrigin" "2592 4329.36 391.325"
+"script_noteworthy" "airport_glass_elevator"
+"origin" "2592 4332 316"
+"classname" "script_model"
+"model" "airport_glass_elevator"
+}
+{
+"ltOrigin" "2592.01 4332 527"
+"origin" "2598 4332 527"
+"angles" "270 180 180"
+"model" "machinery_727_rim01"
+"classname" "script_model"
+"targetname" "elevator_wheels"
+"script_noteworthy" "bottom"
+}
+{
+"gndLt" "4243451c03"
+"ltOrigin" "2591.99 4332 557"
+"angles" "90 180 -180"
+"script_noteworthy" "top"
+"targetname" "elevator_wheels"
+"origin" "2586 4332 557"
+"model" "machinery_727_rim01"
+"classname" "script_model"
+}
+{
+"_color" "0.800000 0.878431 1.000000"
+"sunlight" "1.7"
+"sundirection" "-30 -110 0"
+"suncolor" "1 .95 .8"
+"skylight" "1"
+"skycolor" ".79 .92 1"
+"ambient" ".05"
+"classname" "stage"
+"origin" "6092 1428 192"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "103"
+"model" "?0"
+}
+{
+"sunlight" "1.6"
+"suncolor" "1 0.99 0.97"
+"skylight" "1"
+"skycolor" "0.96 0.97 1"
+"ambient" ".05"
+"_color" "0.800000 0.878431 1.000000"
+"sundirection" "-40 -67 0"
+"classname" "stage"
+"origin" "3252 4024 348"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "104"
+"model" "?1"
+}
+{
+"sunlight" "1.7"
+"suncolor" "1 .95 .8"
+"skylight" "1"
+"skycolor" ".79 .92 1"
+"ambient" ".05"
+"_color" "0.800000 0.878431 1.000000"
+"sundirection" "-40 -67 0"
+"classname" "stage"
+"origin" "4280 2740 348"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "116"
+"model" "?2"
+}
+{
+"script_noteworthy" "light_1_godray"
+"maxturn" "360"
+"spawnflags" "4"
+"targetname" "gate_emerg_lights"
+"origin" "3736 4272 228"
+"fov_outer" "90"
+"fov_inner" "89"
+"exponent" "1"
+"target" "pf0_auto305"
+"def" "light_point_linear"
+"radius" "200"
+"_color" "0.639216 0.129412 0.129412"
+"intensity" "5"
+"classname" "light_spot"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "121"
+"pl#" "36"
+}
+{
+"sunRadiosity" "2"
+"MaxBounces" "4"
+"sunlight" "1.75"
+"suncolor" "1 0.968627 0.85098"
+"skylight" ".5"
+"skycolor" "0.8 0.894118 1"
+"ambient" ".2"
+"_color" "0.690196 0.839216 1"
+"sundirection" "-30 -155 0"
+"classname" "stage"
+"origin" "-7618 -640 56"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "197"
+"model" "?3"
+}
+{
+"spawnflags" "4"
+"targetname" "basement_door_light"
+"angles" "0 315 0"
+"fov_outer" "90"
+"fov_inner" "75"
+"exponent" "1"
+"target" "pf0_auto294"
+"origin" "2504 3204 -8"
+"def" "light_point_linear"
+"radius" "1000"
+"_color" "0.882353 0.949020 0.984314"
+"intensity" ".75"
+"classname" "light_SPOT"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "521"
+"pl#" "19"
+}
+{
+"script_noteworthy" "light_2_godray"
+"maxturn" "360"
+"spawnflags" "4"
+"angles" "0 180 0"
+"targetname" "gate_emerg_lights"
+"origin" "3736 3856 228"
+"fov_outer" "90"
+"fov_inner" "89"
+"exponent" "1"
+"target" "pf0_auto307"
+"def" "light_point_linear"
+"radius" "200"
+"_color" "0.639216 0.129412 0.129412"
+"intensity" "5"
+"classname" "light_spot"
+"__smorigin" "0 0 0"
+"__smangles" "0 0 0"
+"__smname" "airport_light.map"
+"__smid" "554"
+"pl#" "35"
+}
+{
+"angles" "0 270 0"
+"origin" "6528 2312 56"
+"classname" "info_player_start"
+}
+{
+"targetname" "lobby_blood"
+"classname" "script_brushmodel"
+"origin" "6146 1831 65"
+"model" "*566"
+}
+{
+"gndLt" "3d3e3e0043"
+"ltOrigin" "6198 2014 85.001"
+"script_noteworthy" "7"
+"targetname" "intro_bank_poll"
+"angles" "0 210 0"
+"origin" "6198 2014 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"gndLt" "383a3b0043"
+"ltOrigin" "6341 2014 85.001"
+"script_noteworthy" "5"
+"classname" "script_model"
+"model" "bank_divider_pole"
+"origin" "6341 2014 64"
+"angles" "0 207.9 0"
+"targetname" "intro_bank_poll"
+}
+{
+"gndLt" "3a3b3b0043"
+"ltOrigin" "6270 2014 85.001"
+"script_noteworthy" "6"
+"targetname" "intro_bank_poll"
+"angles" "0 208 0"
+"origin" "6270 2014 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"gndLt" "3b3e3e0043"
+"ltOrigin" "6341 1942 85.001"
+"script_noteworthy" "4"
+"targetname" "intro_bank_poll"
+"angles" "0 8.99999 0"
+"origin" "6341 1942 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"gndLt" "3f45450043"
+"ltOrigin" "6341 1870 85.001"
+"script_noteworthy" "3"
+"targetname" "intro_bank_poll"
+"angles" "0 136 0"
+"origin" "6341 1870 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"gndLt" "474e4d0043"
+"ltOrigin" "6341 1799 85.001"
+"script_noteworthy" "2"
+"targetname" "intro_bank_poll"
+"angles" "0 180 0"
+"origin" "6341 1799 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"gndLt" "4b54530043"
+"ltOrigin" "6403 1725 85.001"
+"script_noteworthy" "1"
+"targetname" "intro_bank_poll"
+"angles" "0 74 0"
+"origin" "6403 1725 64"
+"model" "bank_divider_pole"
+"classname" "script_model"
+}
+{
+"targetname" "gate_gate_closing"
+"classname" "script_brushmodel"
+"origin" "3675 4064 190"
+"model" "*570"
+}
+{
+"spawnflags" "1"
+"targetname" "gate_gate_closing2"
+"classname" "script_brushmodel"
+"origin" "3675 4064 106"
+"model" "*571"
+}
+{
+"angles" "0 152.385 0"
+"origin" "2556.76 3438.76 462.162"
+"classname" "mp_global_intermission"
+}
+{
+"origin" "-5184 8208 464"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"origin" "7568 -4544 464"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"angles" "0 117.684 0"
+"origin" "2542.76 3719.44 64.125"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 123.298 0"
+"origin" "5426.89 1646.43 64.125"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 122.167 0"
+"origin" "6425.78 1308.26 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -151.074 0"
+"origin" "5911.21 2082.39 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -23.9129 0"
+"origin" "4731.24 1910.4 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 70.575 0"
+"origin" "4174.32 2124.89 321.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -175.936 0"
+"origin" "5036.39 3025.81 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -162.516 0"
+"origin" "4444.91 3496.65 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 56.2488 0"
+"origin" "3613.26 2524.88 321.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 33.8092 0"
+"origin" "3067.94 2894.73 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 165.145 0"
+"origin" "3940.61 3699.37 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -150.964 0"
+"origin" "3927.38 4711.11 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -89.2541 0"
+"origin" "3326.2 4989.19 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -73.4118 0"
+"origin" "2390.39 5203.71 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -22.0398 0"
+"origin" "1963.13 4855.72 320.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -69.5941 0"
+"origin" "1937.57 4203.33 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -24.2425 0"
+"origin" "2519.89 4539.99 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 152.198 0"
+"origin" "3433.61 3621.26 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 93.0145 0"
+"origin" "3048.11 3061.9 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 165.228 0"
+"origin" "6143.55 1457.73 64.125"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 122.167 0"
+"origin" "6425.78 1308.26 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -151.074 0"
+"origin" "5911.21 2082.39 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -23.9129 0"
+"origin" "4731.24 1910.4 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 70.575 0"
+"origin" "4174.32 2124.89 321.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -175.936 0"
+"origin" "5036.39 3025.81 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -162.516 0"
+"origin" "4444.91 3496.65 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 56.2488 0"
+"origin" "3613.26 2524.88 321.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 33.8092 0"
+"origin" "3067.94 2894.73 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 165.145 0"
+"origin" "3940.61 3699.37 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -150.964 0"
+"origin" "3927.38 4711.11 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -89.2541 0"
+"origin" "3326.2 4989.19 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -73.4118 0"
+"origin" "2390.39 5203.71 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -22.0398 0"
+"origin" "1963.13 4855.72 320.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -69.5941 0"
+"origin" "1937.57 4203.33 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -24.2425 0"
+"origin" "2519.89 4539.99 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 152.198 0"
+"origin" "3433.61 3621.26 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 93.0145 0"
+"origin" "3048.11 3061.9 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 165.228 0"
+"origin" "6143.55 1457.73 64.125"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 117.684 0"
+"origin" "2542.76 3719.44 64.125"
+"classname" "mp_ctf_spawn_allies_start"
+}
+{
+"angles" "0 123.298 0"
+"origin" "5426.89 1646.43 64.125"
+"classname" "mp_ctf_spawn_axis_start"
+}
+{
+"angles" "0 117.684 0"
+"origin" "2542.76 3719.44 64.125"
+"classname" "mp_dd_spawn_allies_start"
+}
+{
+"angles" "0 123.298 0"
+"origin" "5426.89 1646.43 64.125"
+"classname" "mp_dd_spawn_axis_start"
+}
+{
+"angles" "0 117.684 0"
+"origin" "2542.76 3719.44 64.125"
+"classname" "mp_sab_spawn_allies_start"
+}
+{
+"angles" "0 123.298 0"
+"origin" "5426.89 1646.43 64.125"
+"classname" "mp_sab_spawn_axis_start"
+}
+{
+"angles" "0 117.684 0"
+"origin" "2542.76 3719.44 64.125"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 123.298 0"
+"origin" "5426.89 1646.43 64.125"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 122.167 0"
+"origin" "6425.78 1308.26 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -151.074 0"
+"origin" "5911.21 2082.39 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -23.9129 0"
+"origin" "4731.24 1910.4 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 70.575 0"
+"origin" "4174.32 2124.89 321.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -175.936 0"
+"origin" "5036.39 3025.81 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -162.516 0"
+"origin" "4444.91 3496.65 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 56.2488 0"
+"origin" "3613.26 2524.88 321.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 33.8092 0"
+"origin" "3067.94 2894.73 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 165.145 0"
+"origin" "3940.61 3699.37 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -150.964 0"
+"origin" "3927.38 4711.11 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -89.2541 0"
+"origin" "3326.2 4989.19 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -73.4118 0"
+"origin" "2390.39 5203.71 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -22.0398 0"
+"origin" "1963.13 4855.72 320.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -69.5941 0"
+"origin" "1937.57 4203.33 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -24.2425 0"
+"origin" "2519.89 4539.99 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 152.198 0"
+"origin" "3433.61 3621.26 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 93.0145 0"
+"origin" "3048.11 3061.9 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 165.228 0"
+"origin" "6143.55 1457.73 64.125"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 118.096 0"
+"script_targetoffset_z" "10000"
+"origin" "3444.31 3264.68 2415.86"
+"target" "remoteMissileTarget"
+"targetname" "remoteMissileSpawn"
+"classname" "script_origin"
+}
+{
+"classname" "script_model"
+"targetname" "ac130Origin"
+"model" "c130_zoomrig"
+"origin" "3436.64 3267.07 1711.3"
+"angles" "0 115 0"
+}
+{
+"angles" "0 118.096 0"
+"origin" "3334.34 3472.58 714.706"
+"targetname" "remoteMissileTarget"
+"classname" "script_origin"
+}
+{
+"angles" "0 51.0025 0"
+"origin" "2210.72 3472.27 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 118.876 0"
+"origin" "2957.07 3425.92 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 -143.664 0"
+"origin" "2903.56 4197.76 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 -12.3557 0"
+"origin" "1934.6 4099.38 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 168.188 0"
+"origin" "5746.03 1289.4 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 53.3481 0"
+"origin" "4931.79 1403 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 147.369 0"
+"origin" "6515.11 1330.96 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 -161.369 0"
+"origin" "5208.3 2853.76 320.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 51.0025 0"
+"origin" "2210.72 3472.27 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 118.876 0"
+"origin" "2957.07 3425.92 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 -143.664 0"
+"origin" "2903.56 4197.76 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 -12.3557 0"
+"origin" "1934.6 4099.38 64.125"
+"classname" "mp_sab_spawn_allies"
+}
+{
+"angles" "0 168.188 0"
+"origin" "5746.03 1289.4 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 53.3481 0"
+"origin" "4931.79 1403 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 147.369 0"
+"origin" "6515.11 1330.96 64.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 -161.369 0"
+"origin" "5208.3 2853.76 320.125"
+"classname" "mp_sab_spawn_axis"
+}
+{
+"angles" "0 51.0025 0"
+"origin" "2210.72 3472.27 64.125"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 118.876 0"
+"origin" "2957.07 3425.92 64.125"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 -143.664 0"
+"origin" "2903.56 4197.76 64.125"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 -12.3557 0"
+"origin" "1934.6 4099.38 64.125"
+"classname" "mp_sd_spawn_defender"
+}
+{
+"angles" "0 168.188 0"
+"origin" "5746.03 1289.4 64.125"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"angles" "0 53.3481 0"
+"origin" "4931.79 1403 64.125"
+"classname" "mp_sd_spawn_attackers"
+}
+{
+"angles" "0 147.369 0"
+"origin" "6515.11 1330.96 64.125"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"angles" "0 -161.369 0"
+"origin" "5208.3 2853.76 320.125"
+"classname" "mp_sd_spawn_attacker"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "2126.33 3991.9 64.125"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_a"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "2126.33 3991.9 64.125"
+"script_linkto" "flag2 flag3"
+"script_linkname" "flag1"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "3554.48 3341.36 320.125"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_b"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "3554.48 3341.36 320.125"
+"script_linkto" "flag1 flag3"
+"script_linkname" "flag2"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "5086.12 2326.72 176.125"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_c"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "5086.12 2326.72 176.125"
+"script_linkto" "flag2 flag1"
+"script_linkname" "flag3"
+"classname" "script_origin"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_allies"
+"targetname" "ctf_trig_allies"
+"origin" "2127.53 3979.38 64.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "2127.53 3979.38 64.125"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "2127.53 3979.38 64.125"
+"targetname" "ctf_flag_allies"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_allies"
+"origin" "2127.53 3979.38 64.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"target" "ctf_flag_axis"
+"targetname" "ctf_trig_axis"
+"origin" "5218.69 2001.79 64.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "4543499601"
+"ltOrigin" "5218.69 2001.79 64.125"
+"spawnflags" "4"
+"script_gameobjectname" "ctf"
+"origin" "5218.69 2001.79 64.125"
+"targetname" "ctf_flag_axis"
+"model" "prop_flag_neutral"
+"classname" "script_model"
+"angles" "0 312 0"
+}
+{
+"script_gameobjectname" "ctf"
+"targetname" "ctf_zone_axis"
+"origin" "5218.69 2001.79 64.125"
+"height" "128"
+"radius" "64"
+"classname" "trigger_radius"
+"angles" "0 312 0"
+}
+{
+"gndLt" "374955ba01"
+"ltOrigin" "5160.23 1841.98 64.125"
+"spawnflags" "4"
+"script_gameobjectname" "sd"
+"origin" "5160.23 1841.98 64.125"
+"targetname" "sd_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+"angles" "0 131.961 0"
+}
+{
+"script_gameobjectname" "sd"
+"targetname" "sd_bomb_pickup_trig"
+"classname" "trigger_multiple"
+"origin" "5160.23 1841.98 64.125"
+"model" "?14"
+}
+{
+"script_label" "_a"
+"script_bombmode_original" "1"
+"target" "pf6102_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "4193.9 3398.26 320.125"
+"model" "?17"
+"angles" "0 179.586 0"
+}
+{
+"targetname" "pf6102_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "4193.9 3398.26 320.125"
+"model" "?18"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "4193.9 3398.26 320.125"
+"target" "pf6102_auto2"
+"targetname" "pf6102_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf6102_2"
+"origin" "4193.9 3398.26 320.125"
+"angles" "0 179.586 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "4193.9 3398.26 320.125"
+"targetname" "exploder"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf6102_2"
+"origin" "4193.9 3398.26 320.125"
+"angles" "0 179.586 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "4193.9 3398.26 320.125"
+"model" "*36"
+}
+{
+"script_label" "_b"
+"script_bombmode_original" "1"
+"target" "pf6103_auto1"
+"script_gameobjectname" "bombzone"
+"targetname" "bombzone"
+"classname" "trigger_use_touch"
+"origin" "3890.05 2206.46 321.125"
+"model" "?17"
+"angles" "0 88.7295 0"
+}
+{
+"targetname" "pf6103_auto2"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "bombzone"
+"origin" "3890.05 2206.46 321.125"
+"model" "?18"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "3890.05 2206.46 321.125"
+"target" "pf6103_auto2"
+"targetname" "pf6103_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf6103_2"
+"origin" "3890.05 2206.46 321.125"
+"angles" "0 88.7295 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "3890.05 2206.46 321.125"
+"targetname" "exploder"
+"spawnflags" "4"
+"script_gameobjectname" "bombzone"
+"script_exploder" "pf6103_2"
+"origin" "3890.05 2206.46 321.125"
+"angles" "0 88.7295 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "bombzone"
+"classname" "script_brushmodel"
+"origin" "3890.05 2206.46 321.125"
+"model" "*36"
+}
+{
+"gndLt" "374955ba01"
+"ltOrigin" "3553.35 3232.91 320.125"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"origin" "3553.35 3232.91 320.125"
+"targetname" "sab_bomb"
+"model" "mil_tntbomb_mp"
+"classname" "script_model"
+"angles" "0 176.477 0"
+}
+{
+"target" "pf6105_auto1"
+"script_gameobjectname" "sab"
+"targetname" "sab_bomb_allies"
+"classname" "trigger_use_touch"
+"origin" "2706.64 4814.76 320.125"
+"model" "?17"
+"angles" "0 -93.2095 0"
+}
+{
+"targetname" "sab_bomb_defuse_allies"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "sab"
+"origin" "2706.64 4814.76 320.125"
+"model" "?18"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "2706.64 4814.76 320.125"
+"target" "pf6105_auto2"
+"targetname" "pf6105_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf6105_2"
+"origin" "2706.64 4814.76 320.125"
+"angles" "0 -93.2095 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "2706.64 4814.76 320.125"
+"targetname" "exploder"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf6105_2"
+"origin" "2706.64 4814.76 320.125"
+"angles" "0 -93.2095 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "2706.64 4814.76 320.125"
+"model" "*36"
+}
+{
+"target" "pf6106_auto1"
+"script_gameobjectname" "sab"
+"targetname" "sab_bomb_axis"
+"classname" "trigger_use_touch"
+"origin" "4620.8 3015.1 320.125"
+"model" "?17"
+"angles" "0 177.466 0"
+}
+{
+"targetname" "sab_bomb_defuse_axis"
+"classname" "trigger_use_touch"
+"script_gameobjectname" "sab"
+"origin" "4620.8 3015.1 320.125"
+"model" "?18"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "4620.8 3015.1 320.125"
+"target" "pf6106_auto2"
+"targetname" "pf6106_auto1"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf6106_2"
+"origin" "4620.8 3015.1 320.125"
+"angles" "0 177.466 0"
+"model" "com_bomb_objective"
+"classname" "script_model"
+}
+{
+"gndLt" "2e343db701"
+"ltOrigin" "4620.8 3015.1 320.125"
+"targetname" "exploder"
+"spawnflags" "4"
+"script_gameobjectname" "sab"
+"script_exploder" "pf6106_2"
+"origin" "4620.8 3015.1 320.125"
+"angles" "0 177.466 0"
+"model" "com_bomb_objective_d"
+"classname" "script_model"
+}
+{
+"script_gameobjectname" "sab"
+"classname" "script_brushmodel"
+"origin" "4620.8 3015.1 320.125"
+"model" "*36"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "1463.12 1379.5 392.303"
+"targetname" "heli_start"
+"classname" "script_origin"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "2951.39 3082.43 1730.35"
+"targetname" "heli_spot_1"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_2"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "3840.34 3632.34 2125.71"
+"targetname" "heli_spot_2"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_3"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "4373.68 3239.63 1892.87"
+"targetname" "heli_spot_3"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_4"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "5658.16 2186.24 1456.8"
+"targetname" "heli_spot_4"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_5"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "4683.35 1389.46 1165.61"
+"targetname" "heli_spot_5"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "4210.45 1047.88 1241.4"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "3567.48 636.984 1346.48"
+"targetname" "heli_loop_start"
+"classname" "script_origin"
+"target" "heli_spot_1"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "2751.68 422.839 1423.4"
+"targetname" "heli_crash_start"
+"classname" "script_origin"
+"target" "heli_crash_end"
+}
+{
+"angles" "0 -41.7441 0"
+"origin" "1339.99 307.137 1610.25"
+"targetname" "heli_crash_end"
+"classname" "script_origin"
+}

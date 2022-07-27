@@ -1,0 +1,2042 @@
+{
+"sunradiosity" "2"
+"maxbounces" "3"
+"skycolor" "0.615686 0.74902 1"
+"skylight" "0.2"
+"_color" "0.960784 0.827451 0.647059"
+"ambient" ".01"
+"classname" "worldspawn"
+"sundirection" "-43 -22 0"
+"suncolor" "1 1 1"
+"sunlight" "1.2"
+"origin" "0 0 0"
+}
+{
+"origin" "34560 37632 128"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"origin" "22528 25600 128"
+"targetname" "minimap_corner"
+"classname" "script_origin"
+}
+{
+"angles" "0 152.148 0"
+"origin" "-15011.2 22544.4 -16256"
+"classname" "mp_global_intermission"
+}
+{
+"angles" "0 -172.559 0"
+"origin" "-14129.9 24014.6 -16359.9"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 -166.401 0"
+"origin" "-14241.8 23710.4 -16359.9"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 167.309 0"
+"origin" "-14453.7 23535.6 -16359.9"
+"classname" "mp_tdm_spawn_allies_start"
+}
+{
+"angles" "0 152.379 0"
+"origin" "-14134.6 22540.6 -16359.9"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 -170.993 0"
+"origin" "-14134.7 22814.3 -16359.9"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 -156.914 0"
+"origin" "-14359 22936.4 -16359.9"
+"classname" "mp_tdm_spawn_axis_start"
+}
+{
+"angles" "0 83.4448 0"
+"origin" "-15854.7 22640.8 -16359.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -70.4462 0"
+"origin" "-15879.8 23889.4 -16359.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 81.6815 0"
+"origin" "-15259.6 23809.6 -16354.4"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 166.161 0"
+"origin" "-16101.9 23040.7 -16359.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -81.6687 0"
+"origin" "-16970.3 23604.9 -16358.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 91.4428 0"
+"origin" "-17353.5 22986.9 -16352.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 71.8652 0"
+"origin" "-14808.9 22495.1 -16359.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -107.844 0"
+"origin" "-14295.1 22996.1 -16359.9"
+"classname" "mp_tdm_spawn"
+}
+{
+"angles" "0 -92.666 0"
+"origin" "-15341 23064.4 -16339.5"
+"classname" "mp_tdm_spawn"
+}
+{
+"origin" "-14431.3 22762.5 -16331.7"
+"spawnflags" "1"
+"targetname" "scripted_weapon"
+"angles" "0 319.3 90"
+"model" "weapon_tavor"
+"classname" "weapon_tavor_reflex_mp"
+}
+{
+"origin" "-14395.7 22763 -16316.7"
+"spawnflags" "1"
+"targetname" "scripted_weapon"
+"angles" "0 324.2 90"
+"model" "weapon_mp5k"
+"classname" "weapon_mp5k_mp"
+}
+{
+"origin" "-14398.7 22767.5 -16331.7"
+"spawnflags" "1"
+"targetname" "scripted_weapon"
+"angles" "0 322.5 90"
+"model" "weapon_kriss"
+"classname" "weapon_kriss_mp"
+}
+{
+"origin" "-14517.3 22765.5 -16331.2"
+"spawnflags" "1"
+"targetname" "scripted_weapon"
+"angles" "0 323.8 90"
+"model" "weapon_mp9"
+"classname" "weapon_tmp_mp"
+}
+{
+"origin" "-14517.5 22761 -16316.2"
+"angles" "0 316.9 89.9999"
+"model" "weapon_mini_uzi"
+"targetname" "scripted_weapon"
+"classname" "weapon_uzi_mp"
+}
+{
+"origin" "-14601.5 22765.5 -16331.5"
+"spawnflags" "1"
+"angles" "0 319.6 89.9997"
+"model" "weapon_pp2000"
+"targetname" "scripted_weapon"
+"classname" "weapon_pp2000_mp"
+}
+{
+"origin" "-14560 22762 -16332"
+"spawnflags" "1"
+"angles" "0 328.7 90"
+"model" "weapon_beretta_393"
+"targetname" "scripted_weapon"
+"classname" "weapon_beretta393_mp"
+}
+{
+"origin" "-14578.7 22762.7 -16316.7"
+"spawnflags" "1"
+"angles" "0 333.1 -90"
+"model" "weapon_m79"
+"targetname" "scripted_weapon"
+"classname" "weapon_m79_mp"
+}
+{
+"origin" "-14685.8 22775 -16325"
+"angles" "352.1 180 -1.87755e-006"
+"model" "weapon_stinger"
+"targetname" "scripted_weapon"
+"classname" "weapon_stinger_mp"
+}
+
+{
+"origin" "-14431.5 22763.5 -16316.7"
+"spawnflags" "1"
+"angles" "0 338.3 90"
+"model" "weapon_ump45"
+"targetname" "scripted_weapon"
+"classname" "weapon_ump45_mp"
+}
+{
+"origin" "-14476.2 22759 -16316.5"
+"spawnflags" "1"
+"classname" "weapon_p90_mp"
+"model" "weapon_p90"
+"targetname" "scripted_weapon"
+"angles" "0 321.5 90"
+}
+{
+"classname" "weapon_deserteagle_tactical_mp"
+"model" "weapon_desert_eagle_tactical"
+"angles" "0 180 -90"
+"spawnflags" "1"
+"targetname" "scripted_weapon"
+"origin" "-14376.5 23833 -16332.5"
+}
+{
+"origin" "-14515.5 22739.5 -16316.5"
+"spawnflags" "1"
+"angles" "1.39401 160.647 93.9621"
+"model" "weapon_rpd"
+"targetname" "scripted_weapon"
+"classname" "weapon_rpd_mp"
+}
+{
+"origin" "-14411 23834 -16332.5"
+"spawnflags" "1"
+"angles" "0 180 -90"
+"model" "weapon_m16"
+"targetname" "scripted_weapon"
+"classname" "weapon_m16_shotgun_xmags_mp" //peacekeeper :D
+}
+{
+"origin" "-14408 23825.5 -16316.5"
+"spawnflags" "1"
+"angles" "0 180 -84.1"
+"model" "weapon_colt_anaconda"
+"targetname" "scripted_weapon"
+"classname" "weapon_coltanaconda_mp"
+}
+{
+"origin" "-14476.2 22765.5 -16331.5"
+"spawnflags" "1"
+"angles" "0 321.3 90"
+"model" "weapon_glock_green"
+"targetname" "scripted_weapon"
+"classname" "weapon_glock_mp"
+}
+{
+"origin" "-14375 23824.5 -16316.5"
+"spawnflags" "1"
+"angles" "0 180 -90"
+"model" "weapon_usp"
+"targetname" "scripted_weapon"
+"classname" "weapon_usp_mp"
+}
+{
+"origin" "-14469 23829 -16331"
+"spawnflags" "1"
+"angles" "1.00179e-005 180 -90"
+"model" "weapon_wa2000"
+"targetname" "scripted_weapon"
+"classname" "weapon_wa2000_mp"
+}
+{
+"origin" "-14470 23827 -16316.5"
+"spawnflags" "1"
+"angles" "0 180 -90"
+"model" "weapon_m14ebr_tan"
+"targetname" "scripted_weapon"
+"classname" "weapon_m21_mp"
+}
+{
+"origin" "-14549.5 23830.5 -16326.5"
+"spawnflags" "1"
+"angles" "352.1 180 -1.87755e-006"
+"model" "weapon_cheytac"
+"targetname" "scripted_weapon"
+"classname" "weapon_cheytac_mp"
+}
+{
+"origin" "-14550 23828 -16316"
+"spawnflags" "1"
+"angles" "0 180 -90"
+"model" "weapon_m82"
+"targetname" "scripted_weapon"
+"classname" "weapon_barrett_mp"
+}
+{
+"origin" "-14624 23832 -16329"
+"spawnflags" "1"
+"model" "weapon_at4"
+"targetname" "scripted_weapon"
+"classname" "weapon_at4_mp"
+}
+{
+"origin" "-14655 23824 -16316"
+"spawnflags" "1"
+"angles" "0 180 -76"
+"model" "weapon_rpg7"
+"targetname" "scripted_weapon"
+"classname" "weapon_rpg_mp"
+}
+
+{
+"origin" "-14621.5 23790.5 -16331.5"
+"spawnflags" "1"
+"angles" "0 154.1 90"
+"model" "weapon_scar_h"
+"targetname" "scripted_weapon"
+"classname" "weapon_scar_heartbeat_mp"
+}
+{
+"origin" "-14655 23789.5 -16331.5"
+"spawnflags" "1"
+"angles" "0 151.6 90"
+"model" "weapon_m16"
+"targetname" "scripted_weapon"
+"classname" "weapon_m16_acog_mp"
+}
+{
+"origin" "-14618.7 23795.5 -16316.7"
+"spawnflags" "1"
+"angles" "0 160.6 90"
+"model" "weapon_m4"
+"targetname" "scripted_weapon"
+"classname" "weapon_m4_silencer_mp"
+}
+{
+"origin" "-14657 23795 -16317"
+"spawnflags" "1"
+"angles" "0 160 90"
+"model" "weapon_fn_fal"
+"targetname" "scripted_weapon"
+"classname" "weapon_fal_reflex_mp"
+}
+{
+"origin" "-14537 23793.5 -16331.5"
+"spawnflags" "1"
+"angles" "0 143.3 89.9997"
+"model" "weapon_famas_f1_arctic"
+"targetname" "scripted_weapon"
+"classname" "weapon_famas_mp"
+}
+{
+"origin" "-14576.5 23794 -16331.5"
+"spawnflags" "1"
+"angles" "0 138.4 90"
+"model" "weapon_fn2000"
+"targetname" "scripted_weapon"
+"classname" "weapon_fn2000_mp"
+}
+{
+"origin" "-14539.2 23795.5 -16316.7"
+"spawnflags" "1"
+"angles" "0 155.5 90"
+"targetname" "scripted_weapon"
+"model" "weapon_magpul_masada_dust"
+"classname" "weapon_masada_mp"
+}
+{
+"origin" "-14573 23797 -16316.5"
+"spawnflags" "1"
+"angles" "0 156 90"
+"model" "weapon_ak47_tactical"
+"targetname" "scripted_weapon"
+"classname" "weapon_ak47_thermal_mp"
+}
+{
+"spawnflags" "1"
+"origin" "-14450.5 23791.5 -16331.5"
+"angles" "0 151.1 90"
+"model" "weapon_spas12"
+"targetname" "scripted_weapon"
+"classname" "weapon_spas12_mp"
+}
+{
+"origin" "-14487.5 23791 -16328.5"
+"spawnflags" "1"
+"angles" "10.303 148.321 60.3665"
+"model" "weapon_striker"
+"targetname" "scripted_weapon"
+"classname" "weapon_striker_reflex_mp"
+}
+{
+"origin" "-14486 23796 -16317"
+"spawnflags" "1"
+"angles" "0 167.8 90.0003"
+"model" "weapon_model1887"
+"targetname" "scripted_weapon"
+"classname" "weapon_model1887_mp"
+}
+{
+"origin" "-14449.2 23796 -16316.5"
+"spawnflags" "5"
+"angles" "0 150 90"
+"targetname" "scripted_weapon"
+"model" "weapon_sawed_off_double_barrel"
+"classname" "weapon_ranger_mp"
+}
+{
+"origin" "-14386.2 23795 -16316.7"
+"spawnflags" "1"
+"angles" "0 171.5 90"
+"targetname" "scripted_weapon"
+"model" "weapon_benelli_super_90_arctic"
+"classname" "weapon_m1014_mp"
+}
+{
+"origin" "-14389.5 23792 -16331.7"
+"spawnflags" "1"
+"angles" "0 153.6 89.9999"
+"model" "weapon_aa12"
+"targetname" "scripted_weapon"
+"classname" "weapon_aa12_mp"
+}
+
+{
+"origin" "-14668.5 22734.5 -16324.5"
+"spawnflags" "1"
+"angles" "353.3 180 -1.59377e-006"
+"model" "weapon_sa80_lmg"
+"targetname" "scripted_weapon"
+"classname" "weapon_sa80_mp"
+}
+{
+"origin" "-14584.3 22733.7 -16325"
+"spawnflags" "1"
+"angles" "343.5 180 -3.87976e-006"
+"model" "weapon_mg4"
+"targetname" "scripted_weapon"
+"classname" "weapon_mg4_mp"
+}
+{
+"origin" "-14492.7 22743 -16316.7"
+"spawnflags" "1"
+"angles" "0 159.2 90"
+"model" "weapon_steyr"
+"targetname" "scripted_weapon"
+"classname" "weapon_aug_reflex_mp"
+}
+{
+"origin" "-14402.5 22737.5 -16330"
+"spawnflags" "1"
+"angles" "6.00004 1.00179e-005 -180"
+"model" "weapon_javelin"
+"targetname" "scripted_weapon"
+"classname" "weapon_javelin_mp"
+}
+{
+"origin" "-14500 22730.5 -16326.5"
+"spawnflags" "1"
+"angles" "347.6 180 -2.93337e-006"
+"model" "weapon_m240"
+"targetname" "scripted_weapon"
+"classname" "weapon_m240_mp"
+}
+{
+"angles" "0 158.163 0"
+"origin" "-16649.4 23179.7 -16359.9"
+"targetname" "heli_start"
+"classname" "script_origin"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-14759.8 23856.3 -16146.5"
+"targetname" "heli_spot_1"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_2"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-15179.9 23822.1 -16168.9"
+"targetname" "heli_spot_2"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_3"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-17243.9 23233.9 -15958.1"
+"targetname" "heli_spot_3"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_4"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-16618.6 23254 -16074.6"
+"targetname" "heli_spot_4"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_5"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-14174.7 22733.2 -15953.1"
+"targetname" "heli_spot_5"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_6"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-14988 22768.2 -16055.6"
+"targetname" "heli_spot_6"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+"target" "heli_spot_7"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-15273.4 22622.3 -16153.9"
+"targetname" "heli_spot_7"
+"classname" "script_origin"
+"script_accel" "20"
+"script_airspeed" "60"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-15869.7 23784.5 -16228.3"
+"targetname" "heli_leave"
+"classname" "script_origin"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-15779.6 23927.9 -16220.3"
+"targetname" "heli_loop_start"
+"classname" "script_origin"
+"target" "heli_spot_1"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-15401.1 23735.9 -16260.7"
+"targetname" "heli_crash_start"
+"classname" "script_origin"
+"target" "heli_crash_end"
+}
+{
+"angles" "0 167.732 0"
+"origin" "-14837.2 23789 -16111"
+"targetname" "heli_crash_end"
+"classname" "script_origin"
+}
+{
+"angles" "0 167.232 0"
+"origin" "-14163.1 23595.9 -16359.9"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 -166.917 0"
+"origin" "-14120.5 24000.7 -16359.9"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 -140.413 0"
+"origin" "-14320.5 24056.9 -16359.9"
+"classname" "mp_dom_spawn_axis_start"
+}
+{
+"angles" "0 136.789 0"
+"origin" "-14126.3 22526.6 -16359.9"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 177.048 0"
+"origin" "-14129.3 22763.1 -16359.9"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 -177.783 0"
+"origin" "-14222.2 22970.4 -16359.9"
+"classname" "mp_dom_spawn_allies_start"
+}
+{
+"angles" "0 -83.7122 0"
+"origin" "-14589.2 23143.9 -16329.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -108.382 0"
+"origin" "-15312.9 23185.8 -16324.2"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 149.319 0"
+"origin" "-16089.4 23031.1 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 22.8277 0"
+"origin" "-17570.6 23186.5 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -55.8234 0"
+"origin" "-16858.5 23509.5 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -117.094 0"
+"origin" "-16127.1 23498 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -13.8007 0"
+"origin" "-15560.7 24036.8 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 45.8331 0"
+"origin" "-14748.2 23548.5 -16334.5"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 156.356 0"
+"origin" "-14105 23614.7 -16359.9"
+"classname" "mp_dom_spawn"
+}
+{
+"angles" "0 -161.737 0"
+"origin" "-14154 24027.5 -16343.9"
+"classname" "mp_dom_spawn"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "-14930 23735.4 -16359.9"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_a"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "-14930 23735.4 -16359.9"
+"script_linkto" "flag2 flag3"
+"script_linkname" "flag1"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "-16758.8 23263.3 -16359.9"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_b"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "-16758.8 23263.3 -16359.9"
+"script_linkto" "flag1 flag3"
+"script_linkname" "flag2"
+"classname" "script_origin"
+}
+{
+"classname" "trigger_radius"
+"radius" "160"
+"height" "128"
+"targetname" "flag_primary"
+"origin" "-14951.5 22738.4 -16359.9"
+"script_gameobjectname" "dom onslaught"
+"model" "prop_flag_neutral"
+"script_label" "_c"
+}
+{
+"targetname" "flag_descriptor"
+"origin" "-14951.5 22738.4 -16359.9"
+"script_linkto" "flag2 flag1"
+"script_linkname" "flag3"
+"classname" "script_origin"
+}
+
+{
+"gndLt" "34312d0018"
+"ltOrigin" "-14710.7 22424.6 -16306.4"
+"targetname" "c4_packs"
+"origin" "-14710.7 22424.6 -16306"
+"angles" "84.9 329.5 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14711.2 22411.8 -16285.1"
+"targetname" "c4_packs"
+"origin" "-14711.2 22411.8 -16285.5"
+"angles" "0 13.2 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14705.1 22404.8 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14705.2 22404.8 -16292.5"
+"angles" "349.8 65.4 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14703.4 22415.6 -16298.4"
+"targetname" "c4_packs"
+"origin" "-14703.5 22415.4 -16298"
+"angles" "84.9 282.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14709.9 22425.5 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14709.9 22425.4 -16292.5"
+"angles" "349.8 142.7 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "34302c0018"
+"ltOrigin" "-14705.1 22404.8 -16308.5"
+"targetname" "c4_packs"
+"origin" "-14705.2 22404.8 -16308.5"
+"angles" "349.8 65.4 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "34302c0018"
+"ltOrigin" "-14703.4 22415.6 -16314.4"
+"targetname" "c4_packs"
+"origin" "-14703.5 22415.4 -16314"
+"angles" "84.9 282.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "33312e0018"
+"ltOrigin" "-14743.7 22430.3 -16308"
+"script_noteworthy" "c4_barrel"
+"angles" "0 349.9 0"
+"origin" "-14743.7 22430.3 -16330"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "3533300018"
+"ltOrigin" "-14751.3 22442.4 -16306.4"
+"targetname" "c4_packs"
+"origin" "-14751.2 22442.3 -16306"
+"angles" "84.9 31.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14740.3 22436.1 -16285.1"
+"targetname" "c4_packs"
+"origin" "-14740.2 22435.8 -16285.5"
+"angles" "0 74.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14731.2 22437.7 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14731.2 22437.7 -16292.5"
+"angles" "349.8 127 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14739.8 22444.4 -16298.4"
+"targetname" "c4_packs"
+"origin" "-14739.7 22444.3 -16298"
+"angles" "84.9 343.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14751.5 22443.4 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14751.5 22443.4 -16292.5"
+"angles" "349.8 204.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3533300018"
+"ltOrigin" "-14731.2 22437.7 -16308.5"
+"targetname" "c4_packs"
+"origin" "-14731.2 22437.7 -16308.5"
+"angles" "349.8 127 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3633310018"
+"ltOrigin" "-14739.8 22444.4 -16314.4"
+"targetname" "c4_packs"
+"origin" "-14739.7 22444.3 -16314"
+"angles" "84.9 343.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3b35300018"
+"ltOrigin" "-14676.7 22358.3 -16308"
+"script_noteworthy" "c4_barrel"
+"angles" "0 349.9 0"
+"origin" "-14676.7 22358.3 -16330"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "39342e0018"
+"ltOrigin" "-14684.3 22370.4 -16306.4"
+"targetname" "c4_packs"
+"origin" "-14684.2 22370.3 -16306"
+"angles" "84.9 31.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14673.3 22364.1 -16285.1"
+"targetname" "c4_packs"
+"origin" "-14673.2 22363.8 -16285.5"
+"angles" "0 74.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14664.2 22365.7 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14664.2 22365.7 -16292.5"
+"angles" "349.8 127 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14672.8 22372.4 -16298.4"
+"targetname" "c4_packs"
+"origin" "-14672.7 22372.3 -16298"
+"angles" "84.9 343.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14684.5 22371.4 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14684.5 22371.4 -16292.5"
+"angles" "349.8 204.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3d38320018"
+"ltOrigin" "-14664.2 22365.7 -16308.5"
+"targetname" "c4_packs"
+"origin" "-14664.2 22365.7 -16308.5"
+"angles" "349.8 127 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3c36310018"
+"ltOrigin" "-14672.8 22372.4 -16314.4"
+"targetname" "c4_packs"
+"origin" "-14672.7 22372.3 -16314"
+"angles" "84.9 343.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "423e390018"
+"ltOrigin" "-14497.7 22344.3 -16307.5"
+"angles" "0 9.90001 0"
+"origin" "-14497.7 22344.3 -16329.5"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "433f3a0018"
+"ltOrigin" "-14509 22353.1 -16305.9"
+"targetname" "c4_packs"
+"origin" "-14508.9 22353 -16305.5"
+"angles" "84.9 51.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14496.4 22350.8 -16284.6"
+"targetname" "c4_packs"
+"origin" "-14496.3 22350.6 -16285"
+"angles" "0 94.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14488.5 22355.7 -16292"
+"targetname" "c4_packs"
+"origin" "-14488.5 22355.6 -16292"
+"angles" "349.8 147 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14498.9 22359.1 -16297.9"
+"targetname" "c4_packs"
+"origin" "-14498.7 22358.8 -16297.5"
+"angles" "84.9 3.70001 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14509.5 22353.9 -16292"
+"targetname" "c4_packs"
+"origin" "-14509.5 22353.9 -16292"
+"angles" "349.8 224.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433e390018"
+"ltOrigin" "-14488.5 22355.7 -16308"
+"targetname" "c4_packs"
+"origin" "-14488.5 22355.6 -16308"
+"angles" "349.8 147 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433f3a0018"
+"ltOrigin" "-14498.9 22359.1 -16313.9"
+"targetname" "c4_packs"
+"origin" "-14498.7 22358.8 -16313.5"
+"angles" "84.9 3.70001 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433e390018"
+"ltOrigin" "-14535.7 22344.3 -16307.5"
+"angles" "0 63.9 0"
+"origin" "-14535.7 22344.3 -16329.5"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "433e390018"
+"ltOrigin" "-14549.4 22340.3 -16305.9"
+"targetname" "c4_packs"
+"origin" "-14549.3 22340.4 -16305.5"
+"angles" "84.9 105.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14540 22349.2 -16284.6"
+"targetname" "c4_packs"
+"origin" "-14540 22349.2 -16285"
+"angles" "0 148.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14539.4 22358.4 -16292"
+"targetname" "c4_packs"
+"origin" "-14539.4 22358.4 -16292"
+"angles" "349.8 201 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14548.2 22352 -16297.9"
+"targetname" "c4_packs"
+"origin" "-14548.1 22352 -16297.5"
+"angles" "84.9 57.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14550.6 22340.4 -16292"
+"targetname" "c4_packs"
+"origin" "-14550.4 22340.4 -16292"
+"angles" "349.8 278.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433e380018"
+"ltOrigin" "-14539.4 22358.4 -16308"
+"targetname" "c4_packs"
+"origin" "-14539.4 22358.4 -16308"
+"angles" "349.8 201 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433e380018"
+"ltOrigin" "-14548.2 22352 -16313.9"
+"targetname" "c4_packs"
+"origin" "-14548.1 22352 -16313.5"
+"angles" "84.9 57.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "423d370018"
+"ltOrigin" "-14611.7 22344.3 -16307.5"
+"script_noteworthy" "c4_barrel"
+"angles" "0 339.9 0"
+"origin" "-14611.7 22344.3 -16329.5"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "433e380018"
+"ltOrigin" "-14617.1 22357.5 -16305.9"
+"targetname" "c4_packs"
+"origin" "-14617 22357.4 -16305.5"
+"angles" "84.9 21.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14607.3 22349.3 -16284.6"
+"targetname" "c4_packs"
+"origin" "-14607.3 22349.1 -16285"
+"angles" "0 64.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14598.1 22349.4 -16292"
+"targetname" "c4_packs"
+"origin" "-14598.1 22349.4 -16292"
+"angles" "349.8 117 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14605.4 22357.4 -16297.9"
+"targetname" "c4_packs"
+"origin" "-14605.3 22357.4 -16297.5"
+"angles" "84.9 333.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14617.1 22358.5 -16292"
+"targetname" "c4_packs"
+"origin" "-14617.1 22358.5 -16292"
+"angles" "349.8 194.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433d380018"
+"ltOrigin" "-14598.1 22349.4 -16308"
+"targetname" "c4_packs"
+"origin" "-14598.1 22349.4 -16308"
+"angles" "349.8 117 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "433e380018"
+"ltOrigin" "-14605.4 22357.4 -16313.9"
+"targetname" "c4_packs"
+"origin" "-14605.3 22357.4 -16313.5"
+"angles" "84.9 333.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3d39350018"
+"ltOrigin" "-14414.7 22370.3 -16308"
+"angles" "0 57.9 0"
+"origin" "-14414.7 22370.3 -16330"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "3e3a350018"
+"ltOrigin" "-14428.7 22367.6 -16306.4"
+"targetname" "c4_packs"
+"origin" "-14428.6 22367.8 -16306"
+"angles" "84.9 99.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14418.5 22375.6 -16285.1"
+"targetname" "c4_packs"
+"origin" "-14418.5 22375.6 -16285.5"
+"angles" "0 142.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14416.9 22384.7 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14416.9 22384.7 -16292.5"
+"angles" "349.8 195 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14426.3 22379.4 -16298.4"
+"targetname" "c4_packs"
+"origin" "-14426.2 22379.3 -16298"
+"angles" "84.9 51.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14430.2 22367.9 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14429.8 22367.9 -16292.5"
+"angles" "349.8 272.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "403c370018"
+"ltOrigin" "-14416.9 22384.7 -16308.5"
+"targetname" "c4_packs"
+"origin" "-14416.9 22384.7 -16308.5"
+"angles" "349.8 195 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "403c370018"
+"ltOrigin" "-14426.3 22379.4 -16314.4"
+"targetname" "c4_packs"
+"origin" "-14426.2 22379.3 -16314"
+"angles" "84.9 51.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3834310018"
+"ltOrigin" "-14516.7 22312.3 -16308"
+"angles" "0 163.9 0"
+"origin" "-14516.7 22312.3 -16330"
+"model" "com_barrel_benzin"
+"classname" "script_model"
+"targetname" "c4_barrel"
+}
+{
+"gndLt" "322f2c0018"
+"ltOrigin" "-14510.4 22299.5 -16306.4"
+"targetname" "c4_packs"
+"origin" "-14510.5 22299.6 -16306"
+"angles" "84.9 205.1 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14520.8 22307 -16285.1"
+"targetname" "c4_packs"
+"origin" "-14520.8 22307.2 -16285.5"
+"angles" "0 248.8 0"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14529.9 22306.2 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14529.9 22306.2 -16292.5"
+"angles" "349.8 301 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14522.1 22298.8 -16298.4"
+"targetname" "c4_packs"
+"origin" "-14522.2 22298.8 -16298"
+"angles" "84.9 157.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"ltOrigin" "-14510.3 22298.5 -16292.5"
+"targetname" "c4_packs"
+"origin" "-14510.3 22298.5 -16292.5"
+"angles" "349.8 18.3 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3d3a360018"
+"ltOrigin" "-14529.9 22306.2 -16308.5"
+"targetname" "c4_packs"
+"origin" "-14529.9 22306.2 -16308.5"
+"angles" "349.8 301 90.0005"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+{
+"gndLt" "3c39350018"
+"targetname" "c4_packs"
+"origin" "-14522.2 22298.8 -16314"
+"angles" "84.9 157.7 -90"
+"model" "weapon_c4_mp"
+"classname" "script_model"
+}
+
+{
+"origin" "-14337 23811 -16336"
+"angles" "339.1 0 0"
+"model" "weapon_riot_shield"
+"classname" "weapon_riotshield_mp"
+"spawnflags" "1"
+}
+{
+"gndLt" "22201e0019"
+"ltOrigin" "-14584 23381 -16188.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16187.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "22201e0019"
+"ltOrigin" "-14584 23382 -16187.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16187.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16187.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16187.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "22201e0019"
+"ltOrigin" "-14584 23381 -16186.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16187.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1e1c0019"
+"ltOrigin" "-14584 23381 -16194.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16193.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1e1c0019"
+"ltOrigin" "-14584 23382 -16193.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16193.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16193.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16193.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1e1c0019"
+"ltOrigin" "-14584 23381 -16192.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16193.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23381 -16200.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16199.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23382 -16199.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16199.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16199.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16199.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23381 -16198.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16199.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1d1a0019"
+"ltOrigin" "-14584 23381 -16206.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16205.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1d1a0019"
+"ltOrigin" "-14584 23382 -16205.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16205.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1d1a0019"
+"ltOrigin" "-14584 23380 -16205.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16205.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1d1a0019"
+"ltOrigin" "-14584 23381 -16204.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16205.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1c1a0019"
+"ltOrigin" "-14584 23381 -16212.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16211.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1c1a0019"
+"ltOrigin" "-14584 23382 -16211.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16211.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1c1a0019"
+"ltOrigin" "-14584 23380 -16211.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16211.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1c1a0019"
+"ltOrigin" "-14584 23381 -16210.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16211.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23381 -16218.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16217.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23382 -16217.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16217.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23380 -16217.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16217.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23381 -16216.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16217.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1a18160019"
+"ltOrigin" "-14584 23381 -16224.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16223.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1a18160019"
+"ltOrigin" "-14584 23382 -16223.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16223.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1a18160019"
+"ltOrigin" "-14584 23380 -16223.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16223.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1a18160019"
+"ltOrigin" "-14584 23381 -16222.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16223.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23381 -16230.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16229.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23382 -16229.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16229.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23380 -16229.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16229.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "201e1c0019"
+"ltOrigin" "-14584 23381 -16228.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16229.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1d1c190019"
+"ltOrigin" "-14584 23381 -16236.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16235.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1d1c190019"
+"ltOrigin" "-14584 23382 -16235.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16235.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1d1c190019"
+"ltOrigin" "-14584 23380 -16235.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16235.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1d1c190019"
+"ltOrigin" "-14584 23381 -16234.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16235.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23381 -16242.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16241.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23382 -16241.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16241.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23380 -16241.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16241.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23381 -16240.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16241.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1816140019"
+"ltOrigin" "-14584 23381 -16248.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16247.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1816140019"
+"ltOrigin" "-14584 23382 -16247.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16247.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1816140019"
+"ltOrigin" "-14584 23380 -16247.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16247.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1816140019"
+"ltOrigin" "-14584 23381 -16246.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16247.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16254.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16253.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23382 -16253.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16253.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16253.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16253.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1b180019"
+"ltOrigin" "-14584 23381 -16252.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16253.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16260.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16259.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1e1d1a0019"
+"ltOrigin" "-14584 23382 -16259.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16259.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16259.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16259.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16258.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16259.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23381 -16182.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16181.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23382 -16181.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16181.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23380 -16181.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16181.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "1f1d1b0019"
+"ltOrigin" "-14584 23381 -16180.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16181.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16266.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16265.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1b1a170019"
+"ltOrigin" "-14584 23382 -16265.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16265.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16265.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16265.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16264.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16265.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16272.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16271.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1c1a180019"
+"ltOrigin" "-14584 23382 -16271.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16271.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16271.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16271.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16270.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16271.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16278.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16277.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1b19170019"
+"ltOrigin" "-14584 23382 -16277.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16277.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16277.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16277.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16276.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16277.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16284.5"
+"script_noteworthy" "ontime"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16283.5"
+"angles" "0 270 0"
+"model" "sign_airport_departure_status_ontime"
+"classname" "script_model"
+}
+{
+"gndLt" "1d1b190019"
+"ltOrigin" "-14584 23382 -16283.5"
+"script_noteworthy" "arriving"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16283.5"
+"angles" "90 63.435 153.435"
+"model" "sign_airport_departure_status_arriving"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23380 -16283.5"
+"script_noteworthy" "delayed"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16283.5"
+"angles" "270 296.565 -26.565"
+"model" "sign_airport_departure_status_delayed"
+"classname" "script_model"
+}
+{
+"gndLt" "0000000019"
+"ltOrigin" "-14584 23381 -16282.5"
+"script_noteworthy" "boarding"
+"targetname" "sign_departure_status"
+"origin" "-14584 23381 -16283.5"
+"angles" "1.00179e-005 90 -180"
+"model" "sign_airport_departure_status_boarding"
+"classname" "script_model"
+}
+{
+"angles" "0 270 0"
+"script_soundalias" "char_museum_departure_board_left"
+"origin" "-14458.5 23380.5 -16200"
+"targetname" "snd_departure_board"
+"classname" "script_origin"
+}
+{
+"origin" "-14552 23384 -16224"
+"targetname" "pf1_auto47"
+"classname" "script_origin"
+}
+{
+"angles" "0 270 0"
+"script_soundalias" "char_museum_departure_board_right"
+"origin" "-14642.5 23380.5 -16200"
+"targetname" "snd_departure_board"
+"classname" "script_origin"
+}
+{
+"angles" "0 83.4448 0"
+"origin" "-15854.7 22640.8 -16359.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -70.4462 0"
+"origin" "-15879.8 23889.4 -16359.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 81.6815 0"
+"origin" "-15259.6 23809.6 -16354.4"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 166.161 0"
+"origin" "-16101.9 23040.7 -16359.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -81.6687 0"
+"origin" "-16970.3 23604.9 -16358.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 91.4428 0"
+"origin" "-17353.5 22986.9 -16352.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 71.8652 0"
+"origin" "-14808.9 22495.1 -16359.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -107.844 0"
+"origin" "-14295.1 22996.1 -16359.9"
+"classname" "mp_dm_spawn"
+}
+{
+"angles" "0 -92.666 0"
+"origin" "-15341 23064.4 -16339.5"
+"classname" "mp_dm_spawn"
+}
+
+//scripted
+{
+"targetname" "get_out_door_1"
+"classname" "trigger_use"
+"hintstring" "Press ^3[{+activate}]^7 to get out"
+"origin" "-15863.9 22652 -16273.8"
+}
+{
+"targetname" "get_out_door_2"
+"hintstring" "Press ^3[{+activate}]^7 to get out"
+"origin" "-15863.4 23894.4 -16192.1"
+"classname" "trigger_use"
+}
+{
+"targetname" "get_back_door"
+"origin" "27646.6 35826.9 -9858.33"
+"hintstring" "Press ^3[{+activate}]^7 to get back"
+"classname" "trigger_use"
+}
+{
+"targetname" "ammo_cache_1"
+"angles" "0 359.7 0"
+"origin" "-14738 22752.2 -16353.3"
+"hintstring" "Press ^3[{+activate}]^7 to refill ammo"
+"classname" "trigger_use"
+}
+{
+"targetname" "ammo_cache_2"
+"hintstring" "Press ^3[{+activate}]^7 to refill ammo"
+"origin" "-14706 23808.2 -16353.3"
+"angles" "0 359.7 0"
+"classname" "trigger_use"
+}
+{
+"targetname" "panic_button_model"
+"origin" "-15337 23808 -16322"
+"angles" "270 270 0"
+"model" "com_fire_bell"
+"classname" "script_model"
+}
+{
+"targetname" "panic_button_model"
+"origin" "-15337 22752 -16322"
+"angles" "270 270 0"
+"model" "com_fire_bell"
+"classname" "script_model"
+}
