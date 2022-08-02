@@ -101,7 +101,8 @@
 		MENU_CHOICE_BUTTON_VIS(10, button_10, "@MENU_SP_CREDITS_CAPS", open iw4x_credits;, "@NULL_EMPTY", 1)
 		MENU_CHOICE_BUTTON_VIS(11, button_11, "@MENU_VISIT_WEBSITE_CAPS", uiScript "visitWebsite", "@NULL_EMPTY", 1)
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(12, 1)
-		MENU_CHOICE_BUTTON_VIS(12, button_12, "@MENU_QUIT_CAPS", open quit_popmenu;, "@MPUI_DESC_QUIT", 1)
+		MENU_CHOICE_BUTTON_VIS(12, button_12, "@MENU_MAIN_MENU_CAPS", open single_popmenu;, "@MENU_SP_DESC_SINGLEPLAYER", 1)
+		MENU_CHOICE_BUTTON_VIS(13, button_13, "@MENU_QUIT_CAPS", open quit_popmenu;, "@MPUI_DESC_QUIT", 1)
 
 		ITEM_BUTTON_FRIENDS(-250)
 
@@ -143,7 +144,7 @@
 		itemDef
 		{
 			name					"hint_area"
-			rect					0 400 215 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			rect					0 380 215 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 			foreColor				1 1 1 0.65
 			textAlign				6
 			textScale				CHOICE_TEXTSIZE
