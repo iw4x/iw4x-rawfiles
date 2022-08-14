@@ -206,8 +206,8 @@ menuDef
 	SV_INFO_FIELD(1, "@MPUI_MAX_CLIENTS", dvarString("uiSi_MaxClients"))
 	SV_INFO_FIELD(2, "@MPUI_IS_PRIVATE", dvarString("uiSi_isPrivate"))
 	SV_INFO_FIELD(3, "@MPUI_RULES_HARDCORE", dvarString("uiSi_Hardcore"))
-	SV_INFO_FIELD(4, "@MPUI_RULES_KILLCAM", dvarString("uiSi_KillCam"))
-	SV_INFO_FIELD(5, "@MPUI_RULES_FRIENDLY_FIRE", dvarString("uiSi_ffType"))
+	SV_INFO_FIELD(4, "@MPUI_RULES_AIMASSIST", dvarString("uiSi_aimAssist"))
+	SV_INFO_FIELD(5, "@MPUI_RULES_VOICECHAT", dvarString("uiSi_voiceChat"))
 	SV_INFO_FIELD(6, "@MPUI_MOD", dvarString("uiSi_ModName"))
 
 	SV_INFO_MAP_PREVIEW_VIS(("loadscreen_mp_bonusmaps"), when(dvarString("uiSi_MapName") == ""))

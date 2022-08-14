@@ -245,7 +245,9 @@ itemDef
 #define TAB_BORDER_COLOR											0.1 0.1 0.12 0.5
 
 #define PASSWORD_WIDTH												20
-#define MATCHTYPE_WIDTH												PASSWORD_WIDTH
+#define MATCHTYPE_WIDTH												20
+#define AIMASSIST_WIDTH                                             20
+#define VOICECHAT_WIDTH                                             20
 #define	SERVER_WIDTH												208
 #define MAP_WIDTH													70
 #define PLAYERS_WIDTH												50
@@ -264,7 +266,9 @@ itemDef
 
 #define PASSWORD_POS_X												TABLE_POS_X
 #define MATCHTYPE_POS_X												(TABLE_POS_X + PASSWORD_WIDTH + 2)
-#define SERVER_POS_X												(MATCHTYPE_POS_X + MATCHTYPE_WIDTH + 2)
+#define AIMASSIST_POS_X                                             (MATCHTYPE_POS_X + MATCHTYPE_WIDTH + 2)
+#define VOICECHAT_POS_X                                             (AIMASSIST_POS_X + AIMASSIST_WIDTH + 2)
+#define SERVER_POS_X												(VOICECHAT_POS_X + VOICECHAT_WIDTH + 2)
 #define MAP_POS_X													(SERVER_POS_X + SERVER_WIDTH + 2)
 #define PLAYERS_POS_X												(MAP_POS_X + MAP_WIDTH + 2)
 #define TYPE_POS_X													(PLAYERS_POS_X + PLAYERS_WIDTH + 2)
@@ -319,6 +323,8 @@ itemDef
 
 #define PASSWORD_ORIGIN												PASSWORD_POS_X			(TABLE_POS_Y + 2)
 #define MATCHTYPE_ORIGIN											MATCHTYPE_POS_X			(TABLE_POS_Y + 2)
+#define AIMASSIST_ORIGIN                                            AIMASSIST_POS_X         (TABLE_POS_Y + 2)
+#define VOICECHAT_ORIGIN                                            VOICECHAT_POS_X         (TABLE_POS_Y + 2)
 #define SERVER_ORIGIN												SERVER_POS_X			(TABLE_POS_Y + 2)
 #define MAP_ORIGIN													MAP_POS_X				(TABLE_POS_Y + 2)
 #define PLAYERS_ORIGIN												PLAYERS_POS_X			(TABLE_POS_Y + 2)
@@ -328,6 +334,8 @@ itemDef
 
 #define PASSWORD_RECT												PASSWORD_ORIGIN			PASSWORD_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 #define MATCHTYPE_RECT												MATCHTYPE_ORIGIN		MATCHTYPE_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
+#define AIMASSIST_RECT												AIMASSIST_ORIGIN		AIMASSIST_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
+#define VOICECHAT_RECT												VOICECHAT_ORIGIN		VOICECHAT_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 #define SERVER_RECT													SERVER_ORIGIN			SERVER_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 #define MAP_RECT													MAP_ORIGIN				MAP_WIDTH			TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 #define PLAYERS_RECT												PLAYERS_ORIGIN			PLAYERS_WIDTH		TABLE_HEIGHT		HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
@@ -355,6 +363,8 @@ MENU_BACKGROUND_FRAME_DROP_SHADOW(TABLE_POS_X, (TABLE_POS_Y + TABLE_HEIGHT), TAB
 	}
 
 PREPROC_COLUMN_SEPERATOR_LINE("lineMatchtype", (MATCHTYPE_POS_X - 2) (TABLE_POS_Y + 2))
+PREPROC_COLUMN_SEPERATOR_LINE("lineAimAssist", (AIMASSIST_POS_X - 2) (TABLE_POS_Y + 2))
+PREPROC_COLUMN_SEPERATOR_LINE("lineVoiceChat", (VOICECHAT_POS_X - 2) (TABLE_POS_Y + 2))
 PREPROC_COLUMN_SEPERATOR_LINE("lineServer", (SERVER_POS_X - 2) (TABLE_POS_Y + 2))
 PREPROC_COLUMN_SEPERATOR_LINE("lineMap", (MAP_POS_X - 2) (TABLE_POS_Y + 2))
 PREPROC_COLUMN_SEPERATOR_LINE("linePlayers", (PLAYERS_POS_X - 2) (TABLE_POS_Y + 2))
@@ -378,8 +388,10 @@ itemDef
 	elementWidth													120
 	elementHeight													16
 //	numcols			xpos							xwidth					textlen			alignment
-	columns 8		(PASSWORD_POS_X + 1)			16						20				1
+	columns 10		(PASSWORD_POS_X + 1)			16						20				1
 					(MATCHTYPE_POS_X - 2)			16						10				1
+					(AIMASSIST_POS_X - 2)			16						10				1
+					(VOICECHAT_POS_X - 2)			16						10				1
 					(SERVER_POS_X + 1)				SERVER_WIDTH			38				0
 					(MAP_POS_X + 1)					MAP_WIDTH				25				0
 					(PLAYERS_POS_X + 1)				PLAYERS_WIDTH			10				0
@@ -412,6 +424,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												passwordicon foreColor 1 1.0 0.5 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -441,6 +455,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1.0 0.5 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -450,6 +466,68 @@ itemDef
 	origin															0 2
 	style															WINDOW_STYLE_SHADER
 	background														"server_hardware_header"
+	decoration
+	visible															1
+}
+
+itemDef
+{
+	name															"aimassist"
+	group															grpTabs
+	rect															AIMASSIST_RECT
+	type															ITEM_TYPE_BUTTON
+	style															WINDOW_STYLE_FILLED
+	foreColor														1 0.8 0.4 1
+	visible															1
+	action
+	{
+		play														CHOICE_CLICK_SOUND;
+		uiScript													"ServerSort" 2;
+		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
+		setItemColor												aimassisticon foreColor 1 1.0 0.5 1;
+		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                matchtypeicon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+	}
+}
+itemDef
+{
+	name															"aimassisticon"
+	rect															AIMASSIST_ORIGIN 16 16 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
+	origin															0 2
+	style															WINDOW_STYLE_SHADER
+	background														"crosshair_red"
+	decoration
+	visible															1
+}
+
+itemDef
+{
+	name															"voicechat"
+	group															grpTabs
+	rect															VOICECHAT_RECT
+	type															ITEM_TYPE_BUTTON
+	style															WINDOW_STYLE_FILLED
+	foreColor														1 0.8 0.4 1
+	visible															1
+	action
+	{
+		play														CHOICE_CLICK_SOUND;
+		uiScript													"ServerSort" 3;
+		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
+		setItemColor												voicechaticon foreColor 1 1.0 0.5 1;
+		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                matchtypeicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+	}
+}
+itemDef
+{
+	name															"voicechaticon"
+	rect															VOICECHAT_ORIGIN 16 16 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
+	origin															0 2
+	style															WINDOW_STYLE_SHADER
+	background														"voice_on"
 	decoration
 	visible															1
 }
@@ -470,10 +548,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 2;
+		uiScript													"ServerSort" 4;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -494,10 +574,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 3;
+		uiScript													"ServerSort" 5;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -518,10 +600,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 4;
+		uiScript													"ServerSort" 6;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -542,10 +626,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 5;
+		uiScript													"ServerSort" 7;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -566,10 +652,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 6;
+		uiScript													"ServerSort" 8;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -590,10 +678,12 @@ itemDef
 	action
 	{
 		play														CHOICE_CLICK_SOUND;
-		uiScript													"ServerSort" 7;
+		uiScript													"ServerSort" 9;
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
+		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor                                                voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }

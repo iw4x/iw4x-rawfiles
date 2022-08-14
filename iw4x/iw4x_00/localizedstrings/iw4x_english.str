@@ -475,6 +475,12 @@ LANG_ENGLISH		"FOV: "
 REFERENCE			MENU_FOV_HINT_PC
 LANG_ENGLISH		"An increased Field of View (FOV), may result in poor performance on older computers."
 
+REFERENCE			MPUI_RULES_AIMASSIST
+LANG_ENGLISH		"Aim Assist"
+
+REFERENCE			MPUI_RULES_VOICECHAT
+LANG_ENGLISH		"Voice Chat"
+
 REFERENCE			MENU_8X
 LANG_ENGLISH		"8x"
 
