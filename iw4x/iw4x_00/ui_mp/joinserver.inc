@@ -246,8 +246,8 @@ itemDef
 
 #define PASSWORD_WIDTH												20
 #define MATCHTYPE_WIDTH												20
-#define AIMASSIST_WIDTH                                             20
-#define VOICECHAT_WIDTH                                             20
+#define AIMASSIST_WIDTH												20
+#define VOICECHAT_WIDTH												20
 #define	SERVER_WIDTH												208
 #define MAP_WIDTH													70
 #define PLAYERS_WIDTH												50
@@ -266,8 +266,8 @@ itemDef
 
 #define PASSWORD_POS_X												TABLE_POS_X
 #define MATCHTYPE_POS_X												(TABLE_POS_X + PASSWORD_WIDTH + 2)
-#define AIMASSIST_POS_X                                             (MATCHTYPE_POS_X + MATCHTYPE_WIDTH + 2)
-#define VOICECHAT_POS_X                                             (AIMASSIST_POS_X + AIMASSIST_WIDTH + 2)
+#define AIMASSIST_POS_X												(MATCHTYPE_POS_X + MATCHTYPE_WIDTH + 2)
+#define VOICECHAT_POS_X												(AIMASSIST_POS_X + AIMASSIST_WIDTH + 2)
 #define SERVER_POS_X												(VOICECHAT_POS_X + VOICECHAT_WIDTH + 2)
 #define MAP_POS_X													(SERVER_POS_X + SERVER_WIDTH + 2)
 #define PLAYERS_POS_X												(MAP_POS_X + MAP_WIDTH + 2)
@@ -323,8 +323,8 @@ itemDef
 
 #define PASSWORD_ORIGIN												PASSWORD_POS_X			(TABLE_POS_Y + 2)
 #define MATCHTYPE_ORIGIN											MATCHTYPE_POS_X			(TABLE_POS_Y + 2)
-#define AIMASSIST_ORIGIN                                            AIMASSIST_POS_X         (TABLE_POS_Y + 2)
-#define VOICECHAT_ORIGIN                                            VOICECHAT_POS_X         (TABLE_POS_Y + 2)
+#define AIMASSIST_ORIGIN											AIMASSIST_POS_X			(TABLE_POS_Y + 2)
+#define VOICECHAT_ORIGIN											VOICECHAT_POS_X			(TABLE_POS_Y + 2)
 #define SERVER_ORIGIN												SERVER_POS_X			(TABLE_POS_Y + 2)
 #define MAP_ORIGIN													MAP_POS_X				(TABLE_POS_Y + 2)
 #define PLAYERS_ORIGIN												PLAYERS_POS_X			(TABLE_POS_Y + 2)
@@ -424,8 +424,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												passwordicon foreColor 1 1.0 0.5 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -455,8 +455,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1.0 0.5 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -486,8 +486,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												aimassisticon foreColor 1 1.0 0.5 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                matchtypeicon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												matchtypeicon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -517,8 +517,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												voicechaticon foreColor 1 1.0 0.5 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                matchtypeicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
+		setItemColor												matchtypeicon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
 	}
 }
 itemDef
@@ -552,8 +552,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -578,8 +578,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -604,8 +604,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -630,8 +630,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -656,8 +656,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
@@ -682,8 +682,8 @@ itemDef
 		setItemColor												grpTabs foreColor 1 0.8 0.4 1;
 		setItemColor												matchtypeicon foreColor 1 1 1 1;
 		setItemColor												passwordicon foreColor 1 1 1 1;
-		setItemColor                                                aimassisticon foreColor 1 1 1 1;
-		setItemColor                                                voicechaticon foreColor 1 1 1 1;
+		setItemColor												aimassisticon foreColor 1 1 1 1;
+		setItemColor												voicechaticon foreColor 1 1 1 1;
 		setitemColor												self foreColor 1 1.0 0.5 1;
 	}
 }
