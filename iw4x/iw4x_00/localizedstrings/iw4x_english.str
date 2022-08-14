@@ -322,8 +322,8 @@ LANG_ENGLISH		"When should the friend status notifications be displayed?"
 REFERENCE			MPUI_DESC_OPTIONS
 LANG_ENGLISH		"Set your game options."
 
-REFERENCE           MPUI_ENABLE_VOICE_CHAT
-LANG_ENGLISH        "Enable Voice Chat"
+REFERENCE			MPUI_ENABLE_VOICE_CHAT
+LANG_ENGLISH		"Enable Voice Chat"
 
 REFERENCE			MPUI_DESC_QUIT
 LANG_ENGLISH		"Quit the game."
