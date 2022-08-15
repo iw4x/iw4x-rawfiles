@@ -244,11 +244,11 @@ itemDef
 
 #define TAB_BORDER_COLOR											0.1 0.1 0.12 0.5
 
-#define PASSWORD_WIDTH												20
+#define PASSWORD_WIDTH												30
 #define MATCHTYPE_WIDTH												20
 #define AIMASSIST_WIDTH												20
 #define VOICECHAT_WIDTH												20
-#define	SERVER_WIDTH												208
+#define SERVER_WIDTH												208
 #define MAP_WIDTH													70
 #define PLAYERS_WIDTH												50
 #define TYPE_WIDTH													102
@@ -264,7 +264,7 @@ itemDef
 #define TABLE_POS_X													0
 #define TABLE_POS_Y													42
 
-#define PASSWORD_POS_X												TABLE_POS_X
+#define PASSWORD_POS_X												(TABLE_POS_X + 5)
 #define MATCHTYPE_POS_X												(TABLE_POS_X + PASSWORD_WIDTH + 2)
 #define AIMASSIST_POS_X												(MATCHTYPE_POS_X + MATCHTYPE_WIDTH + 2)
 #define VOICECHAT_POS_X												(AIMASSIST_POS_X + AIMASSIST_WIDTH + 2)
@@ -388,7 +388,7 @@ itemDef
 	elementWidth													120
 	elementHeight													16
 //	numcols			xpos							xwidth					textlen			alignment
-	columns 10		(PASSWORD_POS_X + 1)			16						20				1
+	columns 10		(PASSWORD_POS_X + 1)			16						10				1
 					(MATCHTYPE_POS_X - 2)			16						10				1
 					(AIMASSIST_POS_X - 2)			16						10				1
 					(VOICECHAT_POS_X - 2)			16						10				1
@@ -434,7 +434,7 @@ itemDef
 	rect															PASSWORD_ORIGIN 16 16 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 	origin															2 2
 	style															WINDOW_STYLE_SHADER
-	background														"hud_server_locked"
+	background														"cardicon_locked"
 	decoration
 	visible															1
 }
@@ -496,7 +496,7 @@ itemDef
 	rect															AIMASSIST_ORIGIN 16 16 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 	origin															0 2
 	style															WINDOW_STYLE_SHADER
-	background														"crosshair_red"
+	background														"cardicon_headshot"
 	decoration
 	visible															1
 }
@@ -527,7 +527,7 @@ itemDef
 	rect															VOICECHAT_ORIGIN 16 16 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_TOP
 	origin															0 2
 	style															WINDOW_STYLE_SHADER
-	background														"voice_on"
+	background														"talkingicon"
 	decoration
 	visible															1
 }
