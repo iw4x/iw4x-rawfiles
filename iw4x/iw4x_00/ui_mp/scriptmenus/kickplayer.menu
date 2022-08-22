@@ -60,6 +60,8 @@
 		
         PC_OPTIONS_SECTION_TITLE("@MPUI_KICK_PLAYER")
 
+		ITEM_BUTTON_BACK(close "self")
+
 		itemDef 
 		{
 			name "maplist"

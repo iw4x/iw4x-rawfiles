@@ -51,5 +51,7 @@
 		MENU_CHOICE_BUTTON_VIS(2, "button_3", "@MENU_CHANGE_MAP", open "changemap"; close "changegametype"; close "kickplayer"; close "callvote";, ;, 1)
 		MENU_CHOICE_BUTTON_VIS(3, "button_4", "Change Gametype", open "changegametype"; close "changemap"; close "kickplayer"; close "callvote";, ;, 1)
 		MENU_CHOICE_BUTTON_VIS(4, "button_5", "@MPUI_KICK_PLAYER", open "kickplayer"; close "changemap"; close "changegametype"; close "callvote";, ;, 1)
+	
+		ITEM_BUTTON_BACK(close "self")
 	}
 }

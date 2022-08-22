@@ -59,6 +59,8 @@
         #include "ui_mp/pc_options.inc"
 		
         PC_OPTIONS_SECTION_TITLE("Change Gametype")
+
+		ITEM_BUTTON_BACK(close "self")
 		
 		itemDef 
 		{

@@ -59,6 +59,8 @@
         #include "ui_mp/pc_options.inc"
 
         PC_OPTIONS_SECTION_TITLE("@MENU_CHANGE_MAP")
+
+		ITEM_BUTTON_BACK(close "self")
 		
 		itemDef 
 		{
