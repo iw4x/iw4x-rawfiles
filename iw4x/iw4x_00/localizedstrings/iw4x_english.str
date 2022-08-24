@@ -964,6 +964,9 @@ LANG_ENGLISH		"Juiced"
 REFERENCE			SPLASHES_COMBATHIGH_DESC
 LANG_ENGLISH		"Move faster for a few seconds after spawning."
 
+REFERENCE			MENU_CHANGE_GAMETYPE
+LANG_ENGLISH		"Change Gametype"
+
 REFERENCE			MENU_GAMEPAD
 LANG_ENGLISH		"Gamepad"
 
@@ -1038,5 +1041,8 @@ LANG_ENGLISH		"^2&&1  ^7Flip icon vertically"
 
 REFERENCE			FONT_ICON_MODIFIER_LIST_BIG
 LANG_ENGLISH		"^2&&1  ^7Bigger icon"
+
+REFERENCE			GAME_NOTONROTATION
+LANG_ENGLISH		"This map or gamemode is not part of the server rotation"
 
 ENDMARKER
