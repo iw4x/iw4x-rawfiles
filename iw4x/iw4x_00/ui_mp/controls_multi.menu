@@ -2,11 +2,11 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
-#define MENU_NAME									"controls_multi"
-#define MENU_TITLE									"@MENU_CHAT"
+#define MENU_NAME "controls_multi"
+#define MENU_TITLE "@MENU_CHAT"
 
 #undef CHOICE_GROUP
-#define CHOICE_GROUP								MENU_NAME
+#define CHOICE_GROUP MENU_NAME
 
 #define CLOSE_MENUS \
 	close "main_controls"; \
@@ -29,16 +29,16 @@
 	close "pc_options_voice";
 
 #define ON_MENU_OPEN \
-	CLOSE_MENUS										\
-	setLocalVarBool									"ui_hideBack" (1); \
-	setLocalVarBool									ui_hint_display 0;
+	CLOSE_MENUS \
+	setLocalVarBool "ui_hideBack" (1); \
+	setLocalVarBool ui_hint_display 0;
 
 #define ON_MENU_CLOSE \
-	setLocalVarBool									"ui_hideBack" (0); \
-	open											"pc_options_controls";
+	setLocalVarBool "ui_hideBack" (0); \
+	open "pc_options_controls";
 
 #define ON_MENU_ESC \
-	close											self;
+	close self;
 
 menuDef
 {
@@ -63,6 +63,9 @@ menuDef
 	PC_OPTIONS_KEYBINDING(0, "@MENU_TEXT_CHAT", "chatmodepublic")
 	PC_OPTIONS_KEYBINDING(1, "@MENU_TEXT_TEAM_CHAT", "chatmodeteam")
 	PC_OPTIONS_KEYBINDING(2, "@MENU_QUICK_CHAT", "mp_QuickMessage")
+
+	PC_OPTIONS_KEYBINDING( 4, "@MENU_VOTE_YES", "vote yes")
+	PC_OPTIONS_KEYBINDING( 5, "@MENU_VOTE_NO", "vote no")
 
 	PC_OPTIONS_KEYBINDSTATUS
 

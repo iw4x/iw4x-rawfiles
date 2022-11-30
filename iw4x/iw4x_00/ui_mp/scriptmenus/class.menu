@@ -451,6 +451,16 @@
 		}
 		itemDef
 		{
+			rect 0 68 216 1 1 1
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 0.65
+			background "gradient_fadein"
+			textscale 0.55
+		}
+		itemDef
+		{
 			name "game_options"
 			rect -64 68 336 20 1 1
 			visible 1
@@ -488,16 +498,6 @@
 				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
 				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
-		}
-		itemDef
-		{
-			rect 0 88 216 1 1 1
-			decoration
-			visible 1
-			style 3
-			forecolor 1 1 1 0.65
-			background "gradient_fadein"
-			textscale 0.55
 		}
 		itemDef
 		{
@@ -561,6 +561,7 @@
 			{
 				play "mouse_click";
 				close self;
+				open "muteplayer";
 				uiScript "CreateCurrentServerFavorite";
 			}
 			onFocus
@@ -583,8 +584,49 @@
 		}
 		itemDef
 		{
-			name "game_endgame"
+			name "game_callvote"
 			rect -64 128 336 20 1 1
+			visible 1
+			group "mw2_button"
+			style 1
+			forecolor 1 1 1 1
+			disablecolor 0.6 0.55 0.55 1
+			background "menu_button_selection_bar"
+			type 1
+			textfont 3
+			textalign 6
+			textalignx -60
+			textscale 0.375
+			disabled when(!dvarBool("g_allowvote"))
+			text "@MPUI_CALL_VOTE"
+			action
+			{
+				play "mouse_click";
+				close self;
+				open "callvote";
+			}
+			onFocus
+			{
+				play "mouse_over";
+				if ( dvarstring( "gameMode" ) != "mp" )
+				{
+					setItemColor "mw2_button" backcolor 0 0 0 0;
+				}
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
+				setLocalVarFloat "ui_popupYPos" ( getfocuseditemy( ) );
+			}
+			leaveFocus
+			{
+				setItemColor self backcolor 0 0 0 "0.0";
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
+			}
+		}
+		itemDef
+		{
+			name "game_endgame"
+			rect -64 148 336 20 1 1
 			visible 1
 			group "mw2_button"
 			style 1
@@ -624,7 +666,7 @@
 		itemDef
 		{
 			name "game_leavegame"
-			rect -64 128 336 20 1 1
+			rect -64 148 336 20 1 1
 			visible 1
 			group "mw2_button"
 			style 1
