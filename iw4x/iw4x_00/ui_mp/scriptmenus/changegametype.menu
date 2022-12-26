@@ -1,9 +1,9 @@
 #include "ui/menudef.h"
 #include "ui_mp/main.inc"
 
-#define MENU_NAME                   "changegametype"
-#define MENU_TITLE                  "@MPUI_CALLVOTE"
-#define MENU_SECTION_TITLE          ""
+#define MENU_NAME "changegametype"
+#define MENU_TITLE "@MPUI_CALLVOTE"
+#define MENU_SECTION_TITLE ""
 
 #undef CHOICE_GROUP
 #define CHOICE_GROUP                MENU_NAME
