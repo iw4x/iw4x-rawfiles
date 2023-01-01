@@ -49,9 +49,7 @@
 
 		MENU_CHOICE_BUTTON_VIS(0, "button_1", "@MP_VOTE_MAPRESTART", exec "cmd callvote map_restart"; close self;, ;, 1)
 		MENU_CHOICE_BUTTON_VIS(1, "button_2", "@MP_VOTE_NEXTMAP", exec "cmd callvote map_rotate"; close self;, ;, 1)
-		MENU_CHOICE_BUTTON_VIS(2, "button_3", "@MENU_CHANGE_MAP", open "changemap"; close "changegametype"; close "kickplayer"; close self;, ;, 1)
-		MENU_CHOICE_BUTTON_VIS(3, "button_4", "Change Gametype", open "changegametype"; close "changemap"; close "kickplayer"; close self;, ;, 1)
-		MENU_CHOICE_BUTTON_VIS(4, "button_5", "@MPUI_KICK_PLAYER", open "kickplayer"; close "changemap"; close "changegametype"; close self;, ;, 1)
+		MENU_CHOICE_BUTTON_VIS(2, "button_3", "@MPUI_KICK_PLAYER", open "kickplayer"; close "changemap"; close "changegametype"; close self;, ;, 1)
 
 		#undef CHOICE_Y
 		#undef CHOICE_ORIGIN
