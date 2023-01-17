@@ -10,12 +10,15 @@ main()
 	maps\createfx\mp_firingrange_fx::main();
 	
 	maps\mp\_explosive_barrels::main();
+
+	game[ "attackers" ] = "axis";
+	game[ "defenders" ] = "allies";
 	
 	ambientPlay( "ambient_mp_estate" );
 	
 	maps\mp\_compass::setupMiniMap("compass_map_mp_firingrange");
 	
-	setdvar ( "r_diffusecolorscale", "1.5");
+	setDvar ( "r_diffusecolorscale", "1.5");
 
 	/****** GET ENTITIES ******/
 	//TRIGGERS
@@ -157,13 +160,13 @@ main()
 triggerCheck(target)
 {
 	self endon("game_ended");
-	while(1)
+	while (1)
 	{
 		self waittill("trigger", player);
 
 		//If the target is close enough to the player to cause a possible issue, tell the target to go back the other direction.
 		distance = Distance(target.origin, self.origin);
-		if(distance <= 90)
+		if (distance <= 90)
 		{
 			if( isDefined(target.triggeroff))
 				target.triggeroff = false; //Stop the target.

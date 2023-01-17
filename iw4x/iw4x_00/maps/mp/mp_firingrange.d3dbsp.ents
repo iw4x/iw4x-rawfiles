@@ -934,38 +934,6 @@
 "script_specialopsname" "mp_firingrange"
 "spawnflags" "1"
 }
-// open the metal door
-/*{
-"model" "*23"
-"origin" "993 -30 33"
-"classname" "script_brushmodel"
-"script_specialopsname" "coop_survival_mp_firingrange"
-}
-{
-"model" "*24"
-"origin" "1033 -11 33"
-"classname" "script_brushmodel"
-"script_specialopsname" "mp_firingrange"
-}
-{
-"model" "*25"
-"origin" "906 -60 33"
-"classname" "script_brushmodel"
-"script_specialopsname" "coop_survival_mp_firingrange"
-"spawnflags" "1"
-}
-{
-"model" "*26"
-"origin" "910 -61 33"
-"classname" "script_brushmodel"
-"script_noteworthy" "hdrportal"
-}
-{
-"model" "*27"
-"origin" "1941 2231 18"
-"classname" "script_brushmodel"
-"script_noteworthy" "hdrportal"
-}*/
 {
 "gndLt" "5352548a01"
 "ltOrigin" "1743 2422.5 -20.2041"
@@ -1824,19 +1792,6 @@
 "classname" "script_brushmodel"
 "targetname" "pf506_auto1"
 "spawnflags" "1"
-}
-{
-"gndLt" "1a16150000"
-"ltOrigin" "-420.117 767.141 -32.7392"
-"angles" "0 185.2 0"
-"classname" "script_model"
-"targetname" "destructible_toy"
-"model" "dest_propanetanks_02_d0"
-"origin" "-420.8 766.8 -48"
-"csv_include" "destructible_propane_tanks02"
-"destructible_type" "toy_propane_tanks_02"
-"sound_csv_include" "destruct_oxygen_tank"
-"destructibledef" "dest_propanetanks_02"
 }
 {
 "gndLt" "231f1d0000"
