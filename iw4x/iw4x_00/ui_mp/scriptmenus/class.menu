@@ -561,7 +561,6 @@
 			{
 				play "mouse_click";
 				close self;
-				open "muteplayer";
 				uiScript "CreateCurrentServerFavorite";
 			}
 			onFocus
