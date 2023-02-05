@@ -391,7 +391,7 @@
 */
 {
     map          "iw4_credits"
-    longname     "IW4 Test Map"
+    longname     "MPUI_IW4_TEST_MAP"
     gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
     description  ""
     mapimage     "preview_iw4_credits"

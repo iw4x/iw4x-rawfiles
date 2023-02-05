@@ -196,6 +196,9 @@ LANG_ENGLISH		"The Only Easy Day... Was Yesterday"
 REFERENCE			MPUI_NUKED
 LANG_ENGLISH		"Nuketown"
 
+REFERENCE			MPUI_IW4_TEST_MAP
+LANG_ENGLISH		"IW4 Test Map"
+
 REFERENCE			MPUI_DESC_MAP_NUKED
 LANG_ENGLISH		"A deserted nuke testing facility used in the Cold War."
 
