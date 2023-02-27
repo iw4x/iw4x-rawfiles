@@ -4,8 +4,6 @@
 // Put this file in your scripts folder.
 // ========================================================
 
-#include maps\mp\_utility;
-
 init()
 {
 	aimAssistAllowed = getDvarInt("sv_allowAimAssist");
