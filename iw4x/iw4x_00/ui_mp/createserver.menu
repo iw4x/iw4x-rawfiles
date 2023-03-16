@@ -302,8 +302,9 @@ menuDef
 	MENU_CHOICE_BUTTON(0, button_0, "@MENU_START_GAME_CAPS", ACTION_START, "@NULL_EMPTY")
 
 	MENU_CHOICE_HORIZONTAL_LINE(1)
-
-	MENU_CHOICE_BUTTON(1, button_1, "@MENU_CHANGE_MAP_CAPS", open "settings_map", "@NULL_EMPTY")
+	
+	MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_LOADING_MAPS", "", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") != 0))
+	MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_CHANGE_MAP_CAPS", open "settings_map", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") == 0))
 	MENU_CHOICE_BUTTON(2, button_2, "@MENU_CHANGE_GAME_MODE_CAPS", open "settings_gametype", "@NULL_EMPTY")
 	MENU_CHOICE_BUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", ACTION_RULES, "@NULL_EMPTY", when(dvarString(ui_gametype) != "arena" && dvarString(ui_gametype) != "oneflag"))
 	MENU_CHOICE_DBUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", "@NULL_EMPTY", when(dvarString(ui_gametype) == "arena" || dvarString(ui_gametype) == "oneflag"))

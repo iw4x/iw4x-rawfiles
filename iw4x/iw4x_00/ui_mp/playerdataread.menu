@@ -43,8 +43,6 @@
 			setDvar	"ui_checkclass" 14;
 			open "resetclass";
 
-			exec "checkClasses";
-
 			setLocalVarInt "classIndex" ( localvarint( "oldClassIndex" ) );
 			if ( !isitemunlocked( getplayerdata( "killstreaks" , 0 ) ) && getplayerdata( "killstreaks" , 0 ) != "none" )
 			{

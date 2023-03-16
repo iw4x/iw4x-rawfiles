@@ -336,59 +336,7 @@
     useteamzones "true"
     environment  "urban"
 }
-/*
-{
-    map          "gulag"
-    longname     "MPUI_GULAG"
-    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
-    description  "MPUI_DESC_MAP_GULAG"
-    mapimage     "preview_mp_gulag"
-    mapoverlay   "compass_overlay_map_blank"
-    allieschar   "seals_udt"
-    axischar     "opforce_arctic"
-    useteamzones "true"
-    environment  "urban"
-}
 
-{
-    map          "invasion"
-    longname     "BurgerTown"
-    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
-    description  ""
-    mapimage     "preview_invasion"
-    mapoverlay   "compass_overlay_map_blank"
-    allieschar   "us_army"
-    axischar     "opforce_composite"
-    useteamzones "true"
-    environment  "urban"
-}
-
-{
-    map          "so_ghillies"
-    longname     "Pripyat"
-    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
-    description  ""
-    mapimage     "preview_so_ghillies"
-    mapoverlay   "compass_overlay_map_blank"
-    allieschar   "socom_141_forest"
-    axischar     "opforce_airborne"
-    useteamzones "true"
-    environment  "forest"
-}
-
-{
-    map          "contingency"
-    longname     "Contingency"
-    gametype     "dm dom sd sab war koth oneflag arena dd vip ctf gtnw oitc gg ss conf cranked infected tdef"
-    description  ""
-    mapimage     "preview_mp_contingency"
-    mapoverlay   "compass_overlay_map_blank"
-    allieschar   "seals_udt"
-    axischar     "opforce_arctic"
-    useteamzones "true"
-    environment  "urban"
-}
-*/
 {
     map          "iw4_credits"
     longname     "MPUI_IW4_TEST_MAP"
@@ -730,4 +678,112 @@
     allieschar    "us_army"
     axischar      "opforce_composite"
     environment   "desert"
+}
+
+{
+  map           "mp_alpha"
+  longname      "MPUI_LOCKDOWN"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_LOCKDOWN"
+  mapimage      "preview_mp_alpha"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "us_army"
+  axischar      "socom_141_forest"
+  environment   "urban"
+}
+
+{
+  map           "mp_underground"
+  longname      "MPUI_UNDERGROUND"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_UNDERGROUND"
+  mapimage      "preview_mp_underground"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "us_army"
+  axischar      "opforce_airborne"
+  environment   "urban"
+}
+
+{
+  map           "mp_bravo"
+  longname      "MPUI_MISSION"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_MISSION"
+  mapimage      "preview_mp_bravo"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "socom_141_forest"
+  axischar      "militia"
+  environment   "forest"
+}
+
+{
+  map           "mp_village"
+  longname      "MPUI_VILLAGE"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_VILLAGE"
+  mapimage      "preview_mp_village"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "socom_141_forest"
+  axischar      "militia"
+  environment   "forest"
+}
+
+{
+  map           "mp_seatown"
+  longname      "MPUI_SEATOWN"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_SEATOWN"
+  mapimage      "preview_mp_seatown"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "socom_141_desert"
+  axischar      "militia"
+  environment   "desert"
+}
+
+{
+  map           "mp_plaza2"
+  longname      "MPUI_PLAZA2"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_PLAZA2"
+  mapimage      "preview_mp_plaza2"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "seals_udt"
+  axischar      "opforce_airborne"
+  environment   "urban"
+}
+
+{
+  map           "mp_paris"
+  longname      "MPUI_RESISTANCE"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_RESISTANCE"
+  mapimage      "preview_mp_paris"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "socom_141_forest"
+  axischar      "opforce_airborne"
+  environment   "urban"
+}
+
+{
+  map           "mp_hardhat"
+  longname      "MPUI_HARDHAT"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_HARDHAT"
+  mapimage      "preview_mp_hardhat"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "us_army"
+  axischar      "opforce_airborne"
+  environment   "forest"
+}
+
+{
+  map           "mp_dome"
+  longname      "MPUI_DOME"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_DOME"
+  mapimage      "preview_mp_dome"
+  mapoverlay    "compass_overlay_map_blank "
+  allieschar    "socom_141_desert"
+  axischar      "opforce_composite"
+  environment   "desert"
 }

@@ -1051,4 +1051,97 @@ LANG_ENGLISH		"^2&&1  ^7Bigger icon"
 REFERENCE			GAME_NOTONROTATION
 LANG_ENGLISH		"This map or gamemode is not part of the server rotation"
 
+REFERENCE			MENU_LOADING_MAPS
+LANG_ENGLISH		"Loading map selection..."
+
+REFERENCE			MPUI_SEATOWN
+LANG_ENGLISH		"Seatown"
+
+REFERENCE			MPUI_RESISTANCE
+LANG_ENGLISH		"Resistance"
+
+REFERENCE			MPUI_ARKADEN
+LANG_ENGLISH		"Arkaden"
+
+REFERENCE			MPUI_HARDHAT
+LANG_ENGLISH		"Hardhat"
+
+REFERENCE			MPUI_MISSION
+LANG_ENGLISH		"Mission"
+
+REFERENCE			MPUI_VILLAGE
+LANG_ENGLISH		"Village"
+
+REFERENCE			MPUI_DOME
+LANG_ENGLISH		"Dome"
+
+REFERENCE			MPUI_LOCKDOWN
+LANG_ENGLISH		"Lockdown"
+
+REFERENCE			MPUI_UNDERGROUND
+LANG_ENGLISH		"Underground"
+
+REFERENCE			MPUI_DESC_MAP_UNDERGROUND
+LANG_ENGLISH		"Small subway station. Fast paced action both inside and out."
+
+REFERENCE			MPUI_DESC_MAP_MISSION
+LANG_ENGLISH		"African colonial settlement. Fight to control the center."
+
+REFERENCE			MPUI_DESC_MAP_VILLAGE
+LANG_ENGLISH		"Large African village. Great for all game modes."
+
+REFERENCE			MPUI_DESC_MAP_DOME
+LANG_ENGLISH		"Small outpost in the desert. Fast and frantic action."
+
+REFERENCE			MPUI_DESC_MAP_HARDHAT
+LANG_ENGLISH		"A small construction site. Fast paced, close quarter action."
+
+REFERENCE			MPUI_DESC_MAP_ARKADEN
+LANG_ENGLISH		"Medium sized German mall. Intense Search & Destroy games."
+
+REFERENCE			MPUI_DESC_MAP_RESISTANCE
+LANG_ENGLISH		"Parisian district. Great for Domination and Kill Confirmed."
+
+REFERENCE			MPUI_DESC_MAP_SEATOWN
+LANG_ENGLISH		"A coastal town.  Narrow streets bring hectic, close encounters."
+
+REFERENCE			MPUI_DESC_MAP_LOCKDOWN
+LANG_ENGLISH		"European city center. Great for Team Defender."
+
+REFERENCE			PATCH_DLC1
+LANG_ENGLISH		"Stimulus maps"
+
+REFERENCE			PATCH_DESC_DLC1
+LANG_ENGLISH		"The Modern Warfare 2 Stimulus Package delivers additional action-packed multiplayer maps, including brand-new battlegrounds and legendary fan-favorites from Call of Duty 4: Modern Warfare."
+
+REFERENCE			PATCH_DLC2
+LANG_ENGLISH		"Resurgence maps"
+
+REFERENCE			PATCH_DESC_DLC2
+LANG_ENGLISH		"The best-selling first-person action game of all time gets even bigger with more epic new multiplayer content! The Modern Warfare 2 Resurgence Pack delivers five incredible new multiplayer maps. Take the action to exciting new locations, then battle across legendary landscapes from Call of Duty 4: Modern Warfare."
+
+REFERENCE			PATCH_IW4X_DLC
+LANG_ENGLISH		"IW4x Classics"
+
+REFERENCE			PATCH_DESC_IW4X_DLC
+LANG_ENGLISH		"Original IW4x DLC containing several maps from Call Of Duty: Online"
+
+REFERENCE			PATCH_COD4_DLC
+LANG_ENGLISH		"Call Of Duty 4 Pack"
+
+REFERENCE			PATCH_DESC_COD4_DLC
+LANG_ENGLISH		"Call Of Duty 4 maps ported to IW4x by the team"
+
+REFERENCE			PATCH_MW3_DLC
+LANG_ENGLISH		"Modern Warfare 3 Pack"
+
+REFERENCE			PATCH_DESC_MW3_DLC
+LANG_ENGLISH		"Modern Warfare 3 maps ported to IW4x by the team"
+
+REFERENCE			CUSTOM_MAPS_DLC
+LANG_ENGLISH		"Custom maps"
+
+REFERENCE			DESC_CUSTOM_MAPS_DLC
+LANG_ENGLISH		"Downloaded maps that are placed in the /usermaps subfolder"
+
 ENDMARKER
