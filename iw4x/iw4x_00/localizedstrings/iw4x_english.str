@@ -1109,13 +1109,13 @@ REFERENCE			MPUI_DESC_MAP_LOCKDOWN
 LANG_ENGLISH		"European city center. Great for Team Defender."
 
 REFERENCE			PATCH_DLC1
-LANG_ENGLISH		"Stimulus maps"
+LANG_ENGLISH		"Stimulus Maps"
 
 REFERENCE			PATCH_DESC_DLC1
 LANG_ENGLISH		"The Modern Warfare 2 Stimulus Package delivers additional action-packed multiplayer maps, including brand-new battlegrounds and legendary fan-favorites from Call of Duty 4: Modern Warfare."
 
 REFERENCE			PATCH_DLC2
-LANG_ENGLISH		"Resurgence maps"
+LANG_ENGLISH		"Resurgence Maps"
 
 REFERENCE			PATCH_DESC_DLC2
 LANG_ENGLISH		"The best-selling first-person action game of all time gets even bigger with more epic new multiplayer content! The Modern Warfare 2 Resurgence Pack delivers five incredible new multiplayer maps. Take the action to exciting new locations, then battle across legendary landscapes from Call of Duty 4: Modern Warfare."
@@ -1127,7 +1127,7 @@ REFERENCE			PATCH_DESC_IW4X_DLC
 LANG_ENGLISH		"Original IW4x DLC containing several maps from Call Of Duty: Online"
 
 REFERENCE			PATCH_COD4_DLC
-LANG_ENGLISH		"Call Of Duty 4 Pack"
+LANG_ENGLISH		"Call of Duty 4 Pack"
 
 REFERENCE			PATCH_DESC_COD4_DLC
 LANG_ENGLISH		"Call Of Duty 4 maps ported to IW4x by the team"
@@ -1139,7 +1139,7 @@ REFERENCE			PATCH_DESC_MW3_DLC
 LANG_ENGLISH		"Modern Warfare 3 maps ported to IW4x by the team"
 
 REFERENCE			CUSTOM_MAPS_DLC
-LANG_ENGLISH		"Custom maps"
+LANG_ENGLISH		"Custom Maps"
 
 REFERENCE			DESC_CUSTOM_MAPS_DLC
 LANG_ENGLISH		"Downloaded maps that are placed in the /usermaps subfolder"
