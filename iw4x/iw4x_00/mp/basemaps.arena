@@ -742,9 +742,9 @@
 
 {
   map           "mp_plaza2"
-  longname      "MPUI_PLAZA2"
+  longname      "MPUI_ARKADEN"
   gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
-  description   "MPUI_DESC_MAP_PLAZA2"
+  description   "MPUI_DESC_MAP_ARKADEN"
   mapimage      "preview_mp_plaza2"
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "seals_udt"
