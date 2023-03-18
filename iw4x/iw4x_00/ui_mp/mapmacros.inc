@@ -1,12 +1,12 @@
 #define LOCAL_MAP_ACTION( mapname ) \
 		setdvar ui_mapname mapname; \
 		close "settings_map"; \
-		close "self"; 
+		close "self";
 
 #define LOCAL_MAP_FOCUS( name, desc, icon ) \
 		setLocalVarString "ui_info_name" ( name ); \
 		setLocalVarString "ui_info_desc" ( desc ); \
-		setLocalVarString "ui_info_icon" ( icon ); 
+		setLocalVarString "ui_info_icon" ( icon );
 
 #define LOCAL_MAP_NAME( name ) \
 		"@" + name 

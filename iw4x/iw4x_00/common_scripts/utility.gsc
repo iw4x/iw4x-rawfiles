@@ -1983,7 +1983,7 @@ wait_for_flag_or_time_elapses( flagname, timer )
  ============= 
 ///ScriptDocBegin
 "Name: delayCall( <delay> , <function> , <arg1> , <arg2> , <arg3> )"
-"Summary: delayCall is cool! It saves you from having to write extra script for once off commands. Note you don’t have to thread it off. delaycall is that smart!"
+"Summary: delayCall is cool! It saves you from having to write extra script for once off commands. Note you donï¿½t have to thread it off. delaycall is that smart!"
 "Module: Utility"
 "MandatoryArg: <delay> : The delay before the function occurs"
 "MandatoryArg: <function> : The function to run."
@@ -2859,8 +2859,8 @@ fileprint_launcher_end_file( file_relative_to_game, bIsPerforceEnabled )
 	if( !isdefined( bIsPerforceEnabled ) )
 		bIsPerforceEnabled = false;
 
-	setDevDvarIfUninitialized("LAUNCHER_PRINT_FAIL", "0"); 
-	setDevDvarIfUninitialized("LAUNCHER_PRINT_SUCCESS", "0"); 
+	setDevDvarIfUninitialized("LAUNCHER_PRINT_FAIL", "0");
+	setDevDvarIfUninitialized("LAUNCHER_PRINT_SUCCESS", "0");
 		
 	if( bIsPerforceEnabled )
 		fileprint_launcher( "GAMEPRINTENDFILE:GAMEPRINTP4ENABLED:"+file_relative_to_game );
@@ -2890,7 +2890,7 @@ fileprint_launcher_end_file( file_relative_to_game, bIsPerforceEnabled )
 	}
 		
 	setdevdvar("LAUNCHER_PRINT_FAIL", "0");
-	setdevdvar( "LAUNCHER_PRINT_SUCCESS", "0" ); 
+	setdevdvar( "LAUNCHER_PRINT_SUCCESS", "0" );
 	
 	level.fileprint_launcher = undefined;
 	return true;

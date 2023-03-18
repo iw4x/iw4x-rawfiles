@@ -33,7 +33,7 @@
 #endif
 
 #ifndef CENTER_POPUP_ON_CLOSE
-#define CENTER_POPUP_ON_CLOSE play "mouse_click"; 
+#define CENTER_POPUP_ON_CLOSE play "mouse_click";
 #endif
 
 #ifndef CHOICE_POPUP_BORDER_WIDTH

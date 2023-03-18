@@ -1,4 +1,4 @@
-#include maps\mp\_utility; 
+#include maps\mp\_utility;
 
 // fx used by utility scripts
 precache_util_fx()

@@ -119,7 +119,7 @@
 			}
 			action
 			{
-				close "self"; 
+				close "self";
 				uiScript "voteMap";
 			}
 		}

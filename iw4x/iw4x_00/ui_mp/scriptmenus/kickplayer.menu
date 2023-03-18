@@ -18,7 +18,7 @@
 		blurWorld 7
 		onEsc 
 		{
-			close "self"; 
+			close "self";
 			open "class";
 		}
 
@@ -116,7 +116,7 @@
 			}
 			action
 			{
-				close "self"; 
+				close "self";
 				uiScript "voteKick";
 			}
 		}

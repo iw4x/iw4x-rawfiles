@@ -1,4 +1,4 @@
-#include maps\mp\_utility; 
+#include maps\mp\_utility;
 
 // Scripted effects
 precache_scripted_fx()

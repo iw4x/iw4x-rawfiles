@@ -22,7 +22,7 @@ main()
 		if(isdefined(oilspill) && oilspill.size > 0)
 		{
 			level.breakables_fx["oilspill"]["burn"]		= loadfx ("props/barrel_fire");	
-			level.breakables_fx["oilspill"]["spark"]	= loadfx("impacts/small_metalhit_1"); 
+			level.breakables_fx["oilspill"]["spark"]	= loadfx("impacts/small_metalhit_1");
 		}
 		
 	//------------------

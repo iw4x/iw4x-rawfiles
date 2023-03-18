@@ -5,7 +5,7 @@
 FACTION_REF_COL 					= 0;
 FACTION_NAME_COL 					= 1;
 FACTION_SHORT_NAME_COL 				= 1;
-FACTION_WIN_GAME_COL 				= 3; 
+FACTION_WIN_GAME_COL 				= 3;
 FACTION_WIN_ROUND_COL 				= 4;
 FACTION_MISSION_ACCOMPLISHED_COL 	= 5;
 FACTION_ELIMINATED_COL 				= 6;
@@ -1099,7 +1099,7 @@ timeUntilRoundEnd()
 	timeRemaining = (getTimeLimit() * 60) - timePassed;
 	
 	if ( isDefined( level.timePaused ) )
-		timeRemaining += level.timePaused; 
+		timeRemaining += level.timePaused;
 	
 	return timeRemaining + level.postRoundTime;
 }
@@ -1238,7 +1238,7 @@ Callback_StartGameType()
 	
 	levelFlagInit( "round_over", false );
 	levelFlagInit( "game_over", false );
-	levelFlagInit( "block_notifies", false ); 
+	levelFlagInit( "block_notifies", false );
 
 	level.prematchPeriod = 0;
 	level.prematchPeriodEnd = 0;

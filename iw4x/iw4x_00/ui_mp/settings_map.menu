@@ -165,23 +165,23 @@
 			visible when ( dvarint("iw4x_maps_dlc") == 99 ) 
 			onFocus 
 			{
-				play CHOICE_FOCUS_SOUND; 
-				setItemColor self backcolor 0 0 0 1; 
-				setLocalVarBool "ui_menuAButton" ( 1 ); 
+				play CHOICE_FOCUS_SOUND;
+				setItemColor self backcolor 0 0 0 1;
+				setLocalVarBool "ui_menuAButton" ( 1 );
 			}
 			leaveFocus 
 			{
-				setItemColor self backcolor 0 0 0 0; 
-				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" ); 
-				setLocalVarBool "ui_menuAButton" ( 0 ); 
+				setItemColor self backcolor 0 0 0 0;
+				setLocalVarString "ui_hint_text" ( "@NULL_EMPTY" );
+				setLocalVarBool "ui_menuAButton" ( 0 );
 			}
 			action
 			{
-				play "mouse_click"; 
-				escape "self"; 
-				uiScript "ApplyMap" 
-				close "settings_map"; 
-				close "self"; 
+				play "mouse_click";
+				escape "self";
+				uiScript "ApplyMap";
+				close "settings_map";
+				close "self";
 			}
 		}
 

@@ -813,7 +813,7 @@ makeGunShip()
  	mgTurret makeTurretInoperable();
  	mgTurret.pers["team"] = self.team;
  	mgTurret.killCamEnt = self;
- 	self.mgTurretLeft = mgTurret; 
+ 	self.mgTurretLeft = mgTurret;
  	self.mgTurretLeft SetDefaultDropPitch( 0 );
 
 	mgTurret = spawnTurret( "misc_turret", self.origin, "pavelow_minigun_mp" );
@@ -825,7 +825,7 @@ makeGunShip()
  	mgTurret makeTurretInoperable();
  	mgTurret.pers["team"] = self.team;
  	mgTurret.killCamEnt = self;
- 	self.mgTurretRight = mgTurret; 
+ 	self.mgTurretRight = mgTurret;
  	self.mgTurretRight SetDefaultDropPitch( 0 );
 
 	if ( level.teamBased )

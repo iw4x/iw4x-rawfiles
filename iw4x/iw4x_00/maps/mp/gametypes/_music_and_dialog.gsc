@@ -492,7 +492,7 @@ suspenseMusic()
 	{
 		wait ( randomFloatRange( 60, 120 ) );
 		
-		playSoundOnPlayers( game["music"]["suspense"][randomInt(numTracks)] ); 
+		playSoundOnPlayers( game["music"]["suspense"][randomInt(numTracks)] );
 	}
 }
 

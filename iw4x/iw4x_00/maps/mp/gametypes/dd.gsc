@@ -692,7 +692,7 @@ bombPlanted( destroyedObj, player )
 	if ( level.destroyedObject.label == "_a" )
 		level.aPlanted = true;
 	else
-		level.bPlanted = true; 
+		level.bPlanted = true;
 	
 	level.destroyedObject.bombPlanted = true;
 	
@@ -719,7 +719,7 @@ bombHandler( player, destType )
 	if ( self.label == "_a" )
 		level.aPlanted = false;
 	else
-		level.bPlanted = false; 
+		level.bPlanted = false;
 		
 	self.bombPlanted = 0;
 	

@@ -10,7 +10,7 @@ main()
 
 	setdvar( "compassmaxrange", "2000" );
 	
-    ambientPlay( "ambient_trainer_ext2" ); 
+    ambientPlay( "ambient_trainer_ext2" );
 
 	game["attackers"] = "axis";
 	game["defenders"] = "allies";

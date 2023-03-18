@@ -185,21 +185,21 @@ init_sounds()
 	add_context_sensative_dialog( "ai", "in_sight", 7, "ac130_fco_gonnagethim" );		// You gonna get him?
 	add_context_sensative_dialog( "ai", "in_sight", 8, "ac130_fco_personnelthere" );	// Personnel right there.
 	add_context_sensative_dialog( "ai", "in_sight", 9, "ac130_fco_nailthoseguys" );		// Nail those guys.
-	add_context_sensative_dialog( "ai", "in_sight", 11, "ac130_fco_lightemup" );		// Light ‘em up.
+	add_context_sensative_dialog( "ai", "in_sight", 11, "ac130_fco_lightemup" );		// Light ï¿½em up.
 	add_context_sensative_dialog( "ai", "in_sight", 12, "ac130_fco_takehimout" );		// Yeah take him out.
 	add_context_sensative_dialog( "ai", "in_sight", 14, "ac130_plt_yeahcleared" );		// Yeah, cleared to engage.
-	add_context_sensative_dialog( "ai", "in_sight", 15, "ac130_plt_copysmoke" );		// Copy, smoke ‘em.
+	add_context_sensative_dialog( "ai", "in_sight", 15, "ac130_plt_copysmoke" );		// Copy, smoke ï¿½em.
 	add_context_sensative_dialog( "ai", "in_sight", 16, "ac130_fco_rightthere" );		// Right there...tracking.
 	add_context_sensative_dialog( "ai", "in_sight", 17, "ac130_fco_tracking" );			// Tracking.
 	
-	add_context_sensative_dialog( "ai", "wounded_crawl", 0, "ac130_fco_movingagain" );		// Ok he’s moving again.
+	add_context_sensative_dialog( "ai", "wounded_crawl", 0, "ac130_fco_movingagain" );		// Ok heï¿½s moving again.
 	add_context_sensative_timeout( "ai", "wounded_crawl", undefined, 6 );
 	
 	add_context_sensative_dialog( "ai", "wounded_pain", 0, "ac130_fco_doveonground" );		// Yeah, he just dove on the ground.	
 	add_context_sensative_dialog( "ai", "wounded_pain", 1, "ac130_fco_knockedwind" );		// Probably just knocked the wind out of him.
 	add_context_sensative_dialog( "ai", "wounded_pain", 2, "ac130_fco_downstillmoving" );	// That guy's down but still moving.
 	add_context_sensative_dialog( "ai", "wounded_pain", 3, "ac130_fco_gettinbackup" );		// He's gettin' back up.
-	add_context_sensative_dialog( "ai", "wounded_pain", 4, "ac130_fco_yepstillmoving" );	// Yep, that guy’s still moving.
+	add_context_sensative_dialog( "ai", "wounded_pain", 4, "ac130_fco_yepstillmoving" );	// Yep, that guyï¿½s still moving.
 	add_context_sensative_dialog( "ai", "wounded_pain", 5, "ac130_fco_stillmoving" );		// He's still moving.
 	add_context_sensative_timeout( "ai", "wounded_pain", undefined, 12 );
 	
@@ -594,7 +594,7 @@ removeAC130Player( player, disconnected )
 	{
 		player clearUsingRemote();
 
-		player stopLocalSound( "missile_incoming" ); 
+		player stopLocalSound( "missile_incoming" );
 
 		player show();
 		player unlink();
@@ -1673,7 +1673,7 @@ stingerProximityDetonate( player, missileTeam )
 			missileTarget = newTarget;
 			
 			if ( isDefined( level.ac130player ) )
-				level.ac130player stopLocalSound( "missile_incoming" ); 
+				level.ac130player stopLocalSound( "missile_incoming" );
 		}		
 		
 		if ( curDist < minDist )
@@ -1699,7 +1699,7 @@ stingerProximityDetonate( player, missileTeam )
 				
 			if ( isDefined( level.ac130player ) )
 			{
-				level.ac130player stopLocalSound( "missile_incoming" ); 
+				level.ac130player stopLocalSound( "missile_incoming" );
 				
 				if ( level.ac130player.team != missileTeam )
 					radiusDamage( self.origin, 1000, 1000, 1000, player );

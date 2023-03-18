@@ -417,7 +417,7 @@ airstrikeDamageEntsThread( sWeapon )
 		ent = level.airstrikeDamagedEnts[level.airstrikeDamagedEntsIndex];
 		
 		if ( !isDefined( ent.entity ) )
-			continue; 
+			continue;
 			
 		if ( !ent.isPlayer || isAlive( ent.entity ) )
 		{
@@ -533,7 +533,7 @@ doBomberStrike( lifeId, owner, requiredDeathCount, bombsite, startPoint, endPoin
 
 	plane.angles = direction;
 	forward = anglesToForward( direction );
-	plane moveTo( pathEnd, flyTime, 0, 0 ); 
+	plane moveTo( pathEnd, flyTime, 0, 0 );
 
 	thread stealthBomber_killCam( plane, pathEnd, flyTime, airStrikeType );
 	
@@ -542,7 +542,7 @@ doBomberStrike( lifeId, owner, requiredDeathCount, bombsite, startPoint, endPoin
 	// Delete the plane after its flyby
 	wait ( flyTime );
 	plane notify( "delete" );
-	plane delete(); 
+	plane delete();
 }
 
 
@@ -693,11 +693,11 @@ doPlaneStrike( lifeId, owner, requiredDeathCount, bombsite, startPoint, endPoint
 	plane.angles = direction;
 	forward = anglesToForward( direction );
 	plane thread playPlaneFx();
-	plane moveTo( pathEnd, flyTime, 0, 0 ); 
+	plane moveTo( pathEnd, flyTime, 0, 0 );
 	
 	/#
 	if ( getdvar("scr_airstrikedebug") == "1" )
-		thread airstrikeLine( pathStart, pathEnd, (1,1,1), 20 ); 
+		thread airstrikeLine( pathStart, pathEnd, (1,1,1), 20 );
 	#/
 	
 	//thread callStrike_planeSound( plane, bombsite );
@@ -706,7 +706,7 @@ doPlaneStrike( lifeId, owner, requiredDeathCount, bombsite, startPoint, endPoint
 	// Delete the plane after its flyby
 	wait flyTime;
 	plane notify( "delete" );
-	plane delete(); 
+	plane delete();
 }
 
 callStrike_bombEffect( plane, pathEnd, flyTime, launchTime, owner, requiredDeathCount, typeOfStrike )
@@ -1025,7 +1025,7 @@ targetisinfront(other, target)
 {
 	forwardvec = anglestoforward(flat_angle(other.angles));
 	normalvec = vectorNormalize(flat_origin(target)-other.origin);
-	dot = vectordot(forwardvec,normalvec); 
+	dot = vectordot(forwardvec,normalvec);
 	if(dot > 0)
 		return true;
 	else

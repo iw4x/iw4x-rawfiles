@@ -18,8 +18,8 @@
 		blurWorld 7
 		onEsc 
 		{
-			close "self"; 
-			open "class"; 
+			close "self";
+			open "class";
 		}
 
 		#define BACKGROUND_PC_OPTIONS

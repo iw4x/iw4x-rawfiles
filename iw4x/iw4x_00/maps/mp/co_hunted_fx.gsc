@@ -4,7 +4,7 @@
 main()
 {
 	//level._effect["firelp_vhc_lrg_pm_farview"]		= loadfx ("fire/firelp_vhc_lrg_pm_farview");
-	//level._effect["lighthaze"]						= loadfx ("misc/lighthaze"); 
+	//level._effect["lighthaze"]						= loadfx ("misc/lighthaze");
 	level._effect[ "firelp_med_pm" ]					 = loadfx( "fire/firelp_med_pm" );
 	level._effect[ "firelp_small_pm" ]				 = loadfx( "fire/firelp_small_pm" );
 	level._effect[ "firelp_small_pm_a" ]				 = loadfx( "fire/firelp_small_pm_a" );

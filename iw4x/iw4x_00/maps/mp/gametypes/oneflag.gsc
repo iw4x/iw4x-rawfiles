@@ -519,7 +519,7 @@ flagCaptured( winningTeam, endReasonText )
 onTimeLimit()
 {
 	if ( level.flagCaptured )
-		return; 
+		return;
 
 	// TODO: change to "Flag Defended" or some such
 	maps\mp\gametypes\_gamelogic::endGame( game["defenders"], game["strings"]["time_limit_reached"] );
