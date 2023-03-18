@@ -323,7 +323,7 @@
 			decoration 
 			textScale 0.55
 			exp material ( localvarstring( "ui_info_icon" ) )
-			visible when ( localvarstring( "ui_info_icon") != "" && !dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99	 )
+			visible when ( localvarstring( "ui_info_icon") != "" && !dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99 )
 		}
 
 		itemDef
