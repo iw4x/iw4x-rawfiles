@@ -210,7 +210,7 @@
 			{
 				play "mouse_over";
 				setItemColor "maplist" bordercolor 1 1 1 "1";
-				LOCAL_MAP_FOCUS( "@" + localvarstring( "ui_info_name" ), "Custom usermaps/", "loadscreen_mp_bonusmaps" )
+				LOCAL_MAP_FOCUS( localvarstring( "ui_info_name" ), "Custom usermaps", "loadscreen_mp_bonusmaps" )
 			}
 			leaveFocus
 			{
@@ -236,7 +236,7 @@
 			decoration 
 			textScale 0.55
 			exp material ( localvarstring( "ui_info_icon" ) )
-			visible when(localvarstring( "ui_info_icon") != "" && dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99 )
+			visible when ( localvarstring( "ui_info_icon") != "" && dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99 )
 		}
 		itemDef
 		{
@@ -286,12 +286,12 @@
 			elementtype LISTBOX_TEXT
 			elementWidth 120
 			elementHeight 22
-			visible when (!dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") == 99 )
+			visible when ( !dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") == 99 )
 			onFocus
 			{
 				play "mouse_over";
 				setItemColor "maplist" bordercolor 1 1 1 "1";
-				LOCAL_MAP_FOCUS( "Custom Maps", "Custom usermaps/", "loadscreen_mp_bonusmaps" )
+				LOCAL_MAP_FOCUS( "Custom Maps", "Custom usermaps", "loadscreen_mp_bonusmaps" )
 			}
 			leaveFocus
 			{
@@ -309,6 +309,7 @@
 			textScale 0.55
 			visible when ( !dvarbool( "widescreen" ) )
 		}
+
 		itemDef
 		{
 			name "mapimage"
@@ -318,8 +319,9 @@
 			decoration 
 			textScale 0.55
 			exp material ( localvarstring( "ui_info_icon" ) )
-			visible when( localvarstring( "ui_info_icon") != "" && !dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99	 )
+			visible when ( localvarstring( "ui_info_icon") != "" && !dvarbool( "widescreen" ) && dvarint("iw4x_maps_dlc") != 99	 )
 		}
+
 		itemDef
 		{
 			name "longname"
@@ -333,6 +335,7 @@
 			exp text ( "@" + localvarstring( "ui_info_name" ) )
 			visible when ( !dvarbool( "widescreen" ) )
 		}
+
 		itemDef
 		{
 			name "description"
