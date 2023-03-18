@@ -619,7 +619,6 @@ spawnPlayer()
 	
 	self setClientDvar( "cg_thirdPerson", "0" );
 	self setDepthOfField( 0, 0, 512, 512, 4, 0 );
-	//self setClientDvar( "cg_fov", "65" );
 
 	// Don't do this stuff for TI spawn points	
 	if ( isDefined( spawnPoint ) )
