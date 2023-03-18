@@ -91,7 +91,7 @@
 		LOCAL_MAP_SELECTION(8, 	"mp_rundown",			"MPUI_RUNDOWN", 		"MPUI_DESC_MAP_RUNDOWN", 		"preview_mp_rundown",			dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(9, 	"mp_rust",				"MPUI_RUST", 			"MPUI_DESC_MAP_RUST", 			"preview_mp_rust",				dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(10, "mp_boneyard",			"MPUI_BONEYARD", 		"MPUI_DESC_MAP_BONEYARD", 		"preview_mp_boneyard",			dvarint("iw4x_maps_dlc") == 0)
-		LOCAL_MAP_SELECTION(11, "mp_skidrow",			"MPUI_RAID", 			"MPUI_DESC_MAP_NIGHTSHIFT", 	"preview_mp_nightshift",		dvarint("iw4x_maps_dlc") == 0)
+		LOCAL_MAP_SELECTION(11, "mp_nightshift",		"MPUI_RAID", 			"MPUI_DESC_MAP_NIGHTSHIFT", 	"preview_mp_nightshift",		dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(12, "mp_subbase",			"MPUI_SUBBASE", 		"MPUI_DESC_MAP_SUBBASE", 		"preview_mp_subbase",			dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(13, "mp_terminal",			"MPUI_TERMINAL", 		"MPUI_DESC_MAP_TERMINAL", 		"preview_mp_terminal",			dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(14, "mp_underpass", 		"MPUI_UNDERPASS", 		"MPUI_DESC_MAP_UNDERPASS", 		"preview_mp_underpass",			dvarint("iw4x_maps_dlc") == 0)
