@@ -555,7 +555,7 @@ updateWinLossStats( winner )
 				
 			updateTieStats( player );
 		}		
-	} 
+	}
 	else if ( isPlayer( winner ) )
 	{
 		if ( level.hostForcedEnd && winner isHost() )

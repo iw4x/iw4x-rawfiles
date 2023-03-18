@@ -280,7 +280,7 @@
 				forecolor		CHOICE_POPUP_BACKCOLOR \
 				visible			1 \
 				decoration \
-			} 
+			}
 #else
 	#define CENTER_POPUP_SETUP_RAW( nameArg, itemCount, onEscArg, onOpenArg, extraArgs, shadow_visArg ) \
 			name			nameArg \
@@ -319,7 +319,7 @@
 				forecolor		CHOICE_POPUP_BACKCOLOR \
 				visible			1 \
 				decoration \
-			} 
+			}
 #endif
 		
 #ifdef PUBLIC_BETA

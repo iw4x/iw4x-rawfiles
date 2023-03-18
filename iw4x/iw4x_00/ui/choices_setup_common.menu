@@ -376,7 +376,7 @@
 			forecolor		1 1 1 1 \
 			visible			when( localVarInt( ui_highlight ) == itemIndex && localVarString( ui_choicegroup ) == CHOICE_GROUP && vis ); \
 			decoration \
-		} 
+		}
 #else // #if defined( CONSOLE ) && !defined( SPLITSCREEN )
 #define CHOICE_ACCEPT_HINT( itemIndex, vis )
 #endif // #else // #if defined( CONSOLE ) && !defined( SPLITSCREEN )

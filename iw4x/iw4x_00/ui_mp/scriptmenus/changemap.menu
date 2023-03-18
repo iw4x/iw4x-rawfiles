@@ -85,12 +85,12 @@
 			feeder FEEDER_ALLMAPS
 			columns 1 2 190 25
 			mouseEnter 
-			{ 
+			{
 				setitemcolor "maplist";
 				bordercolor 1 1 1 0.55;
 			}
 			mouseExit 
-			{ 
+			{
 				setitemcolor "maplist";
 				bordercolor 1 1 1 0.15;
 			}
