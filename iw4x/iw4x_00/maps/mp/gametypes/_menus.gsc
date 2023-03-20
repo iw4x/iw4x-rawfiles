@@ -123,9 +123,9 @@ onMenuResponse()
 {
 	self endon("disconnect");
 	
-	for(;;)
+	for (;;)
 	{
-		self waittill("menuresponse", menu, response);
+		self waittill( "menuresponse", menu, response );
 		
 		if ( response == "back" )
 		{
@@ -142,14 +142,14 @@ onMenuResponse()
 			continue;
 		}
 		
-		if(response == "changeteam")
+		if (response == "changeteam")
 		{
 			self closepopupMenu();
 			self closeInGameMenu();
 			self openpopupMenu(game["menu_team"]);
 		}
 	
-		if(response == "changeclass_marines" )
+		if (response == "changeclass_marines")
 		{
 			self closepopupMenu();
 			self closeInGameMenu();
@@ -171,26 +171,11 @@ onMenuResponse()
 			continue;
 		}
 
-		if(response == "changeclass_marines_splitscreen" )
+		if (response == "changeclass_marines_splitscreen" )
 			self openpopupMenu( "changeclass_marines_splitscreen" );
 
-		if(response == "changeclass_opfor_splitscreen" )
+		if (response == "changeclass_opfor_splitscreen" )
 			self openpopupMenu( "changeclass_opfor_splitscreen" );
-		
-		if(response == "endgame")
-		{
-			if(level.splitscreen)
-			{
-				endparty();
-
-				if ( !level.gameEnded )
-				{
-					level thread maps\mp\gametypes\_gamelogic::forceEnd();
-				}
-			}
-				
-			continue;
-		}
 
 		if ( response == "endround" )
 		{
@@ -201,7 +186,7 @@ onMenuResponse()
 			
 			if ( !level.gameEnded )
 			{
-				setDvar("sv_dontrotate", 1);
+				setDvar( "sv_dontRotate", 1 );
 				level thread maps\mp\gametypes\_gamelogic::forceEnd();
 			}
 			else
@@ -213,9 +198,9 @@ onMenuResponse()
 			continue;
 		}
 
-		if(menu == game["menu_team"])
+		if (menu == game["menu_team"])
 		{
-			switch(response)
+			switch (response)
 			{
 			case "allies":
 				self [[level.allies]]();

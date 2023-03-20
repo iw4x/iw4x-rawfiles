@@ -2188,7 +2188,7 @@ endGame( winner, endReasonText, nukeDetonated )
 	foreach ( player in level.players )
 		player.pers["stats"] = player.stats;
 
-	//logString( "game ended" );
+	logString( "game ended" );
 	if( !nukeDetonated && !level.postGameNotifies )
 	{
 		if ( !wasOnlyRound() )
