@@ -135,6 +135,7 @@
 		LOCAL_MAP_SELECTION(6, 	"mp_broadcast",			"MPUI_BROADCAST",		"MPUI_DESC_MAP_BROADCAST",		"preview_mp_broadcast",			dvarint("iw4x_maps_dlc") == 4)
 		LOCAL_MAP_SELECTION(7, 	"mp_showdown",			"MPUI_SHOWDOWN",		"MPUI_DESC_MAP_SHOWDOWN",		"preview_mp_showdown",			dvarint("iw4x_maps_dlc") == 4)
 		LOCAL_MAP_SELECTION(8, 	"mp_convoy",			"MPUI_CONVOY",			"MPUI_DESC_MAP_CONVOY",			"preview_mp_convoy",			dvarint("iw4x_maps_dlc") == 4)
+		LOCAL_MAP_SELECTION(9, 	"mp_citystreets",		"MPUI_CITYSTREETS",		"MPUI_DESC_MAP_CITYSTREETS",	"preview_mp_citystreets",		dvarint("iw4x_maps_dlc") == 4)
 
 		LOCAL_MAP_SELECTION(0,	"mp_alpha", 			"MPUI_LOCKDOWN",		"MPUI_DESC_MAP_LOCKDOWN",		"preview_mp_alpha",				dvarint("iw4x_maps_dlc") == 5)
 		LOCAL_MAP_SELECTION(1,	"mp_bravo", 			"MPUI_MISSION",			"MPUI_DESC_MAP_MISSION",		"preview_mp_bravo",				dvarint("iw4x_maps_dlc") == 5)
