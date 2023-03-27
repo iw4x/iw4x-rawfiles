@@ -13,7 +13,7 @@ main()
 	level._effect[ "battlefield_smokebank_S" ]		 = loadfx( "smoke/battlefield_smokebank_S_tropical" );
 	level._effect[ "hallway_smoke_light" ]			 = loadfx( "smoke/hallway_smoke_light" );
 	//level._effect[ "extraction_smoke" ] = loadfx( "smoke/signal_smoke_green" );
-	
+
 	/*
 	//level._effect[ "airplane_crash_embers" ] 		= LoadFX( "fire/airplane_crash_embers" );
 	//level._effect[ "firelp_small_pm_a_nolight" ] 	= LoadFX( "fire/firelp_small_pm_a_nolight" );
@@ -26,11 +26,4 @@ main()
 	//level._effect[ "player_death_explosion" ]			= loadfx( "explosions/player_death_explosion" );
 	//level._effect[ "green_flare" ] 								= loadfx( "misc/handflare_green" );
 	*/
-	
- /#
-	if ( common_scripts\utility::shouldRunServerSideEffects() )
-		maps\createfx\mp_crash_tropical_fx::main();
- 
-#/
-
 }
