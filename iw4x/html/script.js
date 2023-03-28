@@ -17,16 +17,12 @@ function getFfType (data)
     {
         case 0:
             return "Disabled";
-            break;
         case 1:
             return "Enabled";
-            break;
         case 2:
             return "Reflected";
-            break;
         case 3:
             return "Shared";
-            break;
         default:
             return "Disabled";
     }
@@ -34,7 +30,6 @@ function getFfType (data)
 
 function getServerInfo(status, countPlayers)
 {
-    var friendlyFire = status.scr_team_fftype;
     var mod = status.fs_game;
 
     if (!mod)
@@ -59,6 +54,7 @@ function buildPlayerList(players)
     {
         var row = "<tr>";
         row += "<td>" + players[i].name + "</td>";
+        row += "<td>" + players[i].test_client + "</td>";
         row += "<td>" + players[i].score + "</td>";
         row += "<td>" + players[i].ping + "</td>";
         row += "</tr>";
@@ -80,8 +76,6 @@ function buildPage(data)
     // Set title
     document.title = hostname
     $("#servername").text(document.title);
-
-    //$("#info").text(JSON.stringify(data));
 
     getServerInfo(data["status"], data["players"].length);
     buildPlayerList(data["players"]);
@@ -107,6 +101,6 @@ $(document).ready(function()
 
     $("#footer").click(function()
     {
-        location.replace("https://iw4xcachep26muba.onion.to");
+        location.replace("https://xlabs.dev");
     });
 });
