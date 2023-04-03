@@ -684,7 +684,7 @@ spawnPlayer()
 	
 	prof_end( "spawnPlayer_postUTS" );
 
-	//self logstring( "S " + self.origin[0] + " " + self.origin[1] + " " + self.origin[2] );
+	self logstring( "S " + self.origin[0] + " " + self.origin[1] + " " + self.origin[2] );
 	
 	// give "connected" handlers a chance to start
 	// many of these start onPlayerSpawned handlers which rely on the "spawned_player"

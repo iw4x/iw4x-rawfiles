@@ -566,7 +566,7 @@ onUsePlantObject( player )
 	if ( !self maps\mp\gametypes\_gameobjects::isFriendlyTeam( player.pers["team"] ) )
 	{
 		level thread bombPlanted( self, player );
-		//player logString( "bomb planted: " + self.label );
+		player logString( "bomb planted: " + self.label );
 		
 		// disable all bomb zones except this one
 		for ( index = 0; index < level.bombZones.size; index++ )
@@ -600,7 +600,7 @@ onUsePlantObject( player )
 onUseDefuseObject( player )
 {
 	player notify ( "bomb_defused" );
-	//player logString( "bomb defused: " + self.label );
+	player logString( "bomb defused: " + self.label );
 	level thread bombDefused();
 	
 	// disable this bomb zone

@@ -490,7 +490,7 @@ onUse( player )
 	oldTeam = self maps\mp\gametypes\_gameobjects::getOwnerTeam();
 	label = self maps\mp\gametypes\_gameobjects::getLabel();
 	
-	//player logString( "flag captured: " + self.label );
+	player logString( "flag captured: " + self.label );
 	
 	self.captureTime = getTime();
 	
