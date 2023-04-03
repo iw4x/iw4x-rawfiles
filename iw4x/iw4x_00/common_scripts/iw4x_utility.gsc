@@ -5,7 +5,7 @@
 "Summary: noclip used on a player entity will make them fly and clip through walls."
 "Module: IW4x Utility"
 "CallOn: An entity"
-"Example: level.player noclip();"
+"Example: level.player _noclip();"
 "SPMP: multiplayer"
 ///ScriptDocEnd
 =============
@@ -31,7 +31,7 @@ _noclip()
 "Summary: ufo used on a player entity will make them fly and clip through walls."
 "Module: IW4x Utility"
 "CallOn: An entity"
-"Example: level.player ufo();"
+"Example: level.player _ufo();"
 "SPMP: multiplayer"
 ///ScriptDocEnd
 =============
