@@ -1,7 +1,7 @@
 /*
 =============
 ///ScriptDocBegin
-"Name: noclip()"
+"Name: _noclip()"
 "Summary: noclip used on a player entity will make them fly and clip through walls."
 "Module: IW4x Utility"
 "CallOn: An entity"
@@ -10,7 +10,7 @@
 ///ScriptDocEnd
 =============
 */
-noclip()
+_noclip()
 {
 	if ( self.clientflags & 1 )
 	{
@@ -27,7 +27,7 @@ noclip()
 /*
 =============
 ///ScriptDocBegin
-"Name: ufo()"
+"Name: _ufo()"
 "Summary: ufo used on a player entity will make them fly and clip through walls."
 "Module: IW4x Utility"
 "CallOn: An entity"
@@ -36,7 +36,7 @@ noclip()
 ///ScriptDocEnd
 =============
 */
-ufo()
+_ufo()
 {
 	if ( self.clientflags & 2 )
 	{
