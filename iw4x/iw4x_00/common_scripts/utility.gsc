@@ -3866,7 +3866,7 @@ setPing( ping )
 =============
 ///ScriptDocBegin
 "Name: getPing()"
-"Summary: Returns a fixed number. Added for backward compatibility"
+"Summary: Returns the current ping of the client"
 "Module: Utility"
 "Example: self getPing();"
 "SPMP: multiplayer"
@@ -3875,7 +3875,7 @@ setPing( ping )
 */
 getPing()
 {
-	return 1;
+	return self.ping;
 }
 
 void()
