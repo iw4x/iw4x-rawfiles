@@ -3878,6 +3878,22 @@ getPing()
 	return self.ping;
 }
 
+/*
+=============
+///ScriptDocBegin
+"Name: getIP()"
+"Summary: Returns the current IP Address of the client"
+"Module: Utility"
+"Example: self getIP();"
+"SPMP: multiplayer"
+///ScriptDocEnd
+=============
+*/
+getIP()
+{
+	return self.address;
+}
+
 void()
 {
 }
