@@ -3847,6 +3847,21 @@ create_dvar( var, val )
 	SetDvarIfUninitialized( var, val );
 }
 
+/*
+=============
+///ScriptDocBegin
+"Name: getPing()"
+"Summary: Returns a fixed number for backwards compatibility"
+"Module: Utility"
+"Example: self getPing();"
+"SPMP: multiplayer"
+///ScriptDocEnd
+=============
+*/
+getPing()
+{
+	return 1;
+}
 
 void()
 {
