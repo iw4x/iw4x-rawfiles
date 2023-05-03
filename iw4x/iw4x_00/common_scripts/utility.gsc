@@ -3858,7 +3858,7 @@ create_dvar( var, val )
 ///ScriptDocEnd
 =============
 */
-setPing()
+setPing( ping )
 {
 }
 
