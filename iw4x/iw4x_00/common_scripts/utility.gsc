@@ -3850,8 +3850,23 @@ create_dvar( var, val )
 /*
 =============
 ///ScriptDocBegin
+"Name: setPing()"
+"Summary: Does nothing. Added for backwards compatibility"
+"Module: Utility"
+"Example: self setPing( 100 );"
+"SPMP: multiplayer"
+///ScriptDocEnd
+=============
+*/
+setPing()
+{
+}
+
+/*
+=============
+///ScriptDocBegin
 "Name: getPing()"
-"Summary: Returns a fixed number for backwards compatibility"
+"Summary: Returns a fixed number. Added for backwards compatibility"
 "Module: Utility"
 "Example: self getPing();"
 "SPMP: multiplayer"
