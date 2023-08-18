@@ -116,6 +116,12 @@ maySpawn()
 
 spawnClient()
 {
+    if ( isDefined( self.addtoteam ) )
+    {
+        maps\mp\gametypes\_menus::addToTeam( self.addtoteam );
+        self.addtoteam = undefined;
+    }
+
 	assert(	isDefined( self.team ) );
 	assert(	isValidClass( self.class ) );
 	
@@ -684,7 +690,7 @@ spawnPlayer()
 	
 	prof_end( "spawnPlayer_postUTS" );
 
-	self logstring( "S " + self.origin[0] + " " + self.origin[1] + " " + self.origin[2] );
+	//self logstring( "S " + self.origin[0] + " " + self.origin[1] + " " + self.origin[2] );
 	
 	// give "connected" handlers a chance to start
 	// many of these start onPlayerSpawned handlers which rely on the "spawned_player"
@@ -1122,7 +1128,7 @@ Callback_PlayerConnect()
 
 	logPrint("J;" + self.guid + ";" + self getEntityNumber() + ";" + self.name + "\n");
 
-	if ( matchMakingGame() && game["clientid"] <= 24 && game["clientid"] != getMatchData( "playerCount" ) )
+	if ( game["clientid"] <= 24 && game["clientid"] != getMatchData( "playerCount" ) )
 	{
 		setMatchData( "playerCount", game["clientid"] );
 		setMatchData( "players", self.clientid, "xuid", self getXuid() );
@@ -1132,7 +1138,9 @@ Callback_PlayerConnect()
 		#/		
 		assert( getdvarint( "scr_runlevelandquit" ) == 1 || (level.teamBased && (self.sessionteam == "allies" || self.sessionteam == "axis")) || (!level.teamBased && self.sessionteam == "none" ) );
 		//assert( (level.teamBased && self.sessionteam == self.team) || (!level.teamBased && self.sessionteam == "none") );
-		setMatchData( "players", self.clientid, "team", self.sessionteam );
+		
+		if ( matchMakingGame() && allowTeamChoice() )
+			setMatchData( "players", self.clientid, "team", self.sessionteam );
 	}
 
 	if ( !level.teamBased )
@@ -1236,9 +1244,16 @@ Callback_PlayerConnect()
 			self thread kickIfDontSpawn();
 			return;
 		}
-		
-		self [[level.spectator]]();
-		self maps\mp\gametypes\_menus::beginTeamChoice();
+		else if ( allowTeamChoice() )
+		{
+			self [[level.spectator]]();
+			self maps\mp\gametypes\_menus::beginTeamChoice();
+		}
+		else
+		{
+			self [[ level.spectator ]]();
+			self [[level.autoassign]]();
+		}
 	}
 	else
 	{
@@ -1253,9 +1268,18 @@ Callback_PlayerConnect()
 		self thread spawnSpectator();
 
 		if ( self.pers["team"] == "spectator" )
-			self maps\mp\gametypes\_menus::beginTeamChoice();
-		else
-			self maps\mp\gametypes\_menus::beginClassChoice();
+		{
+			if ( allowTeamChoice() )
+			{
+				self maps\mp\gametypes\_menus::beginTeamChoice();
+				return;
+			}
+			
+			self [[ level.autoassign ]]();
+			return;
+		}
+		
+		self maps\mp\gametypes\_menus::beginClassChoice();
 	}
 
 	/#	

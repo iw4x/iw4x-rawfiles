@@ -123,9 +123,9 @@ onMenuResponse()
 {
 	self endon("disconnect");
 	
-	for (;;)
+	for(;;)
 	{
-		self waittill( "menuresponse", menu, response );
+		self waittill("menuresponse", menu, response);
 		
 		if ( response == "back" )
 		{
@@ -142,21 +142,20 @@ onMenuResponse()
 			continue;
 		}
 		
-		if (response == "changeteam")
+		if(response == "changeteam")
 		{
 			self closepopupMenu();
 			self closeInGameMenu();
 			self openpopupMenu(game["menu_team"]);
 		}
 	
-		if (response == "changeclass_marines")
+		if(response == "changeclass_marines" )
 		{
 			self closepopupMenu();
 			self closeInGameMenu();
-			if ( getDvar( "g_gametype" ) != "oitc" && getDvar( "g_gametype" ) != "gg" && getDvar( "g_gametype" ) != "ss" && !isDefined(level.customClassCB) )
-			{
+			if ( allowClassChoice() )
 				self openpopupMenu( game["menu_changeclass_allies"] );
-			}
+				
 			continue;
 		}
 
@@ -164,18 +163,33 @@ onMenuResponse()
 		{
 			self closepopupMenu();
 			self closeInGameMenu();
-			if ( getDvar( "g_gametype" ) != "oitc" && getDvar( "g_gametype" ) != "gg" && getDvar( "g_gametype" ) != "ss" && !isDefined(level.customClassCB) )
-			{
+			
+			if ( allowClassChoice() )
 				self openpopupMenu( game["menu_changeclass_axis"] );
-			}
+				
 			continue;
 		}
 
-		if (response == "changeclass_marines_splitscreen" )
+		if(response == "changeclass_marines_splitscreen" )
 			self openpopupMenu( "changeclass_marines_splitscreen" );
 
-		if (response == "changeclass_opfor_splitscreen" )
+		if(response == "changeclass_opfor_splitscreen" )
 			self openpopupMenu( "changeclass_opfor_splitscreen" );
+		
+		if(response == "endgame")
+		{
+			if(level.splitscreen)
+			{
+				endparty();
+
+				if ( !level.gameEnded )
+				{
+					level thread maps\mp\gametypes\_gamelogic::forceEnd();
+				}
+			}
+				
+			continue;
+		}
 
 		if ( response == "endround" )
 		{
@@ -186,7 +200,7 @@ onMenuResponse()
 			
 			if ( !level.gameEnded )
 			{
-				setDvar( "sv_dontRotate", 1 );
+				setDvar("sv_dontrotate", 1);
 				level thread maps\mp\gametypes\_gamelogic::forceEnd();
 			}
 			else
@@ -198,9 +212,9 @@ onMenuResponse()
 			continue;
 		}
 
-		if (menu == game["menu_team"])
+		if(menu == game["menu_team"])
 		{
-			switch (response)
+			switch(response)
 			{
 			case "allies":
 				self [[level.allies]]();
@@ -320,26 +334,27 @@ menuAutoAssign()
 beginClassChoice( forceNewChoice )
 {
 	assert( self.pers["team"] == "axis" || self.pers["team"] == "allies" );
-
-	if ( getDvar( "g_gametype" ) == "oitc" || getDvar( "g_gametype" ) == "gg" || getDvar( "g_gametype" ) == "ss" || isDefined(level.customClassCB) )
-	{
-		if ( !isAlive( self ) )
-			self thread maps\mp\gametypes\_playerlogic::predictAboutToSpawnPlayerOverTime( 0.1 );
-		
-		self.selectedClass = true;
-		self menuClass( "assault_mp,0" );
-
-		return;
-	}
 	
 	team = self.pers["team"];
 
 	// menu_changeclass_team is the one where you choose one of the n classes to play as.
 	// menu_class_team is where you can choose to change your team, class, controls, or leave game.
-	self openpopupMenu( game[ "menu_changeclass_" + team ] );
+	
+	//	if game mode allows class choice
+	if ( allowClassChoice() )
+		self openpopupMenu( game[ "menu_changeclass_" + team ] );
+	else
+		self thread bypassClassChoice();
 	
 	if ( !isAlive( self ) )
 		self thread maps\mp\gametypes\_playerlogic::predictAboutToSpawnPlayerOverTime( 0.1 );
+}
+
+
+bypassClassChoice()
+{
+	self.selectedClass = true;
+	self [[level.class]]("class0");	
 }
 
 
@@ -538,7 +553,7 @@ addToTeam( team, firstConnect )
 	self.team = team;
 	
 	// session team is readonly in ranked matches on console
-	if ( !matchMakingGame() || isDefined( self.pers["isBot"] ) )
+	if ( !matchMakingGame() || isDefined( self.pers["isBot"] ) || !allowTeamChoice() )
 	{
 		if ( level.teamBased )
 		{
