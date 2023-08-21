@@ -259,11 +259,7 @@ onUse( player )
 	//	friendly pickup
 	if ( player.pers["team"] == self.victimTeam )
 	{
-		self.trigger playSound( "mp_killconfirm_tags_deny" );
-		
-		player incPlayerStat( "killsdenied", 1 );
-		player incPersStat( "denied", 1 );
-		player maps\mp\gametypes\_persistence::statSetChild( "round", "denied", player.pers["denied"] );
+		self.trigger playSound( "mp_killconfirm_tags_deny" );	
 			
 		if ( self.victim == player )
 		{
@@ -288,10 +284,6 @@ onUse( player )
 		event = "kill_confirmed";
 		splash = &"SPLASHES_KILL_CONFIRMED";
 		
-		player incPlayerStat( "killsconfirmed", 1 );
-		player incPersStat( "confirmed", 1 );
-		player maps\mp\gametypes\_persistence::statSetChild( "round", "confirmed", player.pers["confirmed"] );
-		
 		//	if not us, tell the attacker their kill was confirmed
 		if ( self.attacker != player )
 			self.attacker onPickup( event, splash );
@@ -308,13 +300,13 @@ onUse( player )
 }
 
 
-onPickup( event, splash, stat )
+onPickup( event, splash )
 {
 	level endon( "game_ended" );
 	self  endon( "disconnect" );
 	
 	self thread EventPopup( splash );
-	maps\mp\gametypes\_gamescore::givePlayerScore( event, self, undefined, true );
+	maps\mp\gametypes\_gamescore::givePlayerScore( event, self );
 	self thread maps\mp\gametypes\_rank::giveRankXP( event );
 }
 
@@ -332,7 +324,6 @@ resetTags()
 	self maps\mp\gametypes\_gameobjects::allowUse( "none" );	
 	objective_state( self.objId, "invisible" );	
 }
-
 
 
 bounce()

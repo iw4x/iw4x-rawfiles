@@ -1132,15 +1132,17 @@ Callback_PlayerConnect()
 	{
 		setMatchData( "playerCount", game["clientid"] );
 		setMatchData( "players", self.clientid, "xuid", self getXuid() );
-		/#
-		if ( ( getDvarInt( "scr_forcerankedmatch" ) && level.teamBased ) || ( isDefined( self.pers["isBot"] ) && level.teamBased ) )
-			self.sessionteam = maps\mp\gametypes\_menus::getTeamAssignment();
-		#/		
-		assert( getdvarint( "scr_runlevelandquit" ) == 1 || (level.teamBased && (self.sessionteam == "allies" || self.sessionteam == "axis")) || (!level.teamBased && self.sessionteam == "none" ) );
-		//assert( (level.teamBased && self.sessionteam == self.team) || (!level.teamBased && self.sessionteam == "none") );
 		
-		if ( matchMakingGame() && allowTeamChoice() )
+		if( matchMakingGame() && allowTeamChoice() )
+		{
+			/#
+			if ( ( getDvarInt( "scr_forcerankedmatch" ) && level.teamBased ) || ( isDefined( self.pers["isBot"] ) && level.teamBased ) )
+				self.sessionteam = maps\mp\gametypes\_menus::getTeamAssignment();
+			#/		
+			assert( getdvarint( "scr_runlevelandquit" ) == 1 || (level.teamBased && (self.sessionteam == "allies" || self.sessionteam == "axis")) || (!level.teamBased && self.sessionteam == "none" ) );
+			//assert( (level.teamBased && self.sessionteam == self.team) || (!level.teamBased && self.sessionteam == "none") );
 			setMatchData( "players", self.clientid, "team", self.sessionteam );
+		}	
 	}
 
 	if ( !level.teamBased )
