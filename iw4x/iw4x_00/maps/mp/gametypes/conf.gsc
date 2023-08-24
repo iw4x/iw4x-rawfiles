@@ -46,10 +46,7 @@ main()
 	level.onNormalDeath = ::onNormalDeath;
 	level.onPrecacheGameType = ::onPrecacheGameType;
 
-	//game["dialog"]["gametype"] = "kill_confirmed";
-	
-	//level.conf_vo["axis"] = "RU_1mc_kill_confirmed";	
-	//level.conf_vo["allies"] = "US_1mc_kill_confirmed";
+	game["dialog"]["gametype"] = "kill_confirmed";
 	
 	level.conf_fx["vanish"] = loadFx( "impacts/small_snowhit" );
 }
@@ -244,18 +241,6 @@ showToTeam( gameObject, team )
 
 onUse( player )
 {
-	pos = self.curOrigin;
-	
-	self notify( "reset" );
-	self.visuals[0] hide();
-	self.visuals[1] hide();
-	self.curOrigin = (0,0,1000);
-	self.trigger.origin = (0,0,1000);
-	self.visuals[0].origin = (0,0,1000);
-	self.visuals[1].origin = (0,0,1000);
-	self maps\mp\gametypes\_gameobjects::allowUse( "none" );	
-	objective_state( self.objId, "invisible" );		 
-	
 	//	friendly pickup
 	if ( player.pers["team"] == self.victimTeam )
 	{
@@ -274,7 +259,7 @@ onUse( player )
 		
 		//	tell the attacker their kill was denied
 		if ( isDefined( self.attacker ) )
-			self.attacker thread EventPopup( &"SPLASHES_DENIED_KILL", (1,0.5,0.5) );
+			self.attacker thread EventPopup( &"SPLASHES_DENIED_KILL", ( 1,0.5,0.5) );
 	}
 	//	enemy pickup
 	else
@@ -288,7 +273,7 @@ onUse( player )
 		if ( self.attacker != player )
 			self.attacker onPickup( event, splash );
 		
-		player playLocalSound( game["voice"][player.pers["team"]] + "kill_confirmed" );
+		self.trigger playSoundToPlayer( game["voice"][player.pers["team"]] + "kill_confirmed", player );
 		
 		player maps\mp\gametypes\_gamescore::giveTeamScoreForObjective( player.pers["team"], 1 );			
 	}	
