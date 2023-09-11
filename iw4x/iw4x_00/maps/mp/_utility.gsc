@@ -1415,9 +1415,22 @@ registerWatchDvar( nameString, defaultValue )
 }
 
 
+setOverrideWatchDvar( dvarString, value )
+{
+	dvarString = "scr_" + level.gameType + "_" + dvarString;
+	level.overrideWatchDvars[dvarString] = value;
+}
+
+
 getWatchedDvar( dvarString )
 {
 	dvarString = "scr_" + level.gameType + "_" + dvarString;
+	
+	if ( isDefined( level.overrideWatchDvars ) && isDefined( level.overrideWatchDvars[dvarString] ) )
+	{
+		return level.overrideWatchDvars[dvarString];
+	}	
+	
 	return( level.watchDvars[ dvarString ].value );
 }
 

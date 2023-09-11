@@ -36,15 +36,13 @@ main()
 	setGuns();
 	
 	scoreLimit = level.gun_guns.size;
-	SetDvar( "scr_gun_scorelimit", scoreLimit );
-	registerScoreLimitDvar( level.gameType, scoreLimit );	
-	SetDvar( "scr_gun_winlimit", 1 );
-	registerWinLimitDvar( "gun", 1 );
-	SetDvar( "scr_gun_roundlimit", 1 );
-	registerRoundLimitDvar( "gun", 1 );
-	SetDvar( "scr_gun_halftime", 0 );
-	registerHalfTimeDvar( "gun", 0 );
-	
+	registerTimeLimitDvar( level.gameType, 10, 0, 20 );
+	registerScoreLimitDvar( level.gameType, scoreLimit );
+	registerRoundLimitDvar( level.gameType, 1, 0, 10 );
+	registerWinLimitDvar( level.gameType, 1, 0, 10 );
+	registerNumLivesDvar( level.gameType, 0, 0, 10 );
+	registerHalfTimeDvar( level.gameType, 0, 0, 1 );
+
 	setSpecialLoadout();
 	
 	level.teamBased = false;
@@ -192,7 +190,7 @@ waitLoadoutDone()
 	
 	self waittill( "spawned_player" );
 	
-	self _setPerk( "specialty_bling", false );
+	self _setPerk( "specialty_bling" );
 	self giveNextGun( true );
 }
 

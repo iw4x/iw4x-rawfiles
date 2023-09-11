@@ -8,9 +8,8 @@ main()
     maps\mp\gametypes\_callbacksetup::SetupCallbacks();
     maps\mp\gametypes\_globallogic::SetupCallbacks();
 
-  
 	registerTimeLimitDvar( level.gameType, 10 );
-	setDvar( "scorelimit", 0 );
+	setOverrideWatchDvar( "scorelimit", 0 );
 	registerRoundLimitDvar( level.gameType, 1 );
 	registerWinLimitDvar( level.gameType, 1 );
 	registerNumLivesDvar( level.gameType, 0 );

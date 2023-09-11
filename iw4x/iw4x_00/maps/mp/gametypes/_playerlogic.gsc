@@ -510,12 +510,15 @@ tiValidationCheck()
 	return true;
 }
 
-spawnPlayer()
+spawnPlayer( fauxSpawn )
 {
 	self endon( "disconnect" );
 	self endon( "joined_spectators" );
 	self notify( "spawned" );
 	self notify( "end_respawn" );
+	
+	if ( !isDefined( fauxSpawn ) )
+		fauxSpawn = false;
 	
     if ( isDefined( self.setSpawnPoint ) && self tiValidationCheck() )
 	{
@@ -565,62 +568,69 @@ spawnPlayer()
 
 	self.fauxDead = undefined;
 
-	self.killsThisLife = [];
-	
-	self updateSessionState( "playing", "" );
-	self ClearKillcamState();
-	self.cancelkillcam = 1;
-	self openMenu( "killedby_card_hide" );
+	if ( !fauxSpawn )
+	{
+		self.killsThisLife = [];
+		
+		self updateSessionState( "playing", "" );
+		self ClearKillcamState();
+		self.cancelkillcam = 1;
+		self openMenu( "killedby_card_hide" );
 
-	self.maxhealth = maps\mp\gametypes\_tweakables::getTweakableValue( "player", "maxhealth" );
+		self.maxhealth = maps\mp\gametypes\_tweakables::getTweakableValue( "player", "maxhealth" );
 
-	self.health = self.maxhealth;
-	
-	self.friendlydamage = undefined;
-	self.hasSpawned = true;
-	self.spawnTime = getTime();
-	self.wasTI = !isDefined( spawnPoint );
-	self.afk = false;
-	self.lastStand = undefined;
-	self.infinalStand = undefined;
-	self.inC4Death = undefined;
-	self.damagedPlayers = [];
-	self.moveSpeedScaler = 1;
-	self.killStreakScaler = 1;
-	self.xpScaler = 1;
-	self.objectiveScaler = 1;
-	self.inLastStand = false;
-	self.clampedHealth = undefined;
-	self.shieldDamage = 0;
-	self.shieldBulletHits = 0;
-	self.recentShieldXP = 0;
+		self.health = self.maxhealth;
+		
+		self.friendlydamage = undefined;
+		self.hasSpawned = true;
+		self.spawnTime = getTime();
+		self.wasTI = !isDefined( spawnPoint );
+		self.afk = false;
+		self.lastStand = undefined;
+		self.infinalStand = undefined;
+		self.inC4Death = undefined;
+		self.damagedPlayers = [];
+		self.moveSpeedScaler = 1;
+		self.killStreakScaler = 1;
+		self.xpScaler = 1;
+		self.objectiveScaler = 1;
+		self.inLastStand = false;
+		self.clampedHealth = undefined;
+		self.shieldDamage = 0;
+		self.shieldBulletHits = 0;
+		self.recentShieldXP = 0;
+	}
 	
 	self.disabledWeapon = 0;
 	self.disabledWeaponSwitch = 0;
 	self.disabledOffhandWeapons = 0;
 	self resetUsability();
-
-	if ( self.pers["lives"] == getGametypeNumLives() )
-	{
-		maps\mp\gametypes\_playerlogic::addToLivesCount();
-	}
 	
-	if ( self.pers["lives"] )
-		self.pers["lives"]--;
-
-	self maps\mp\gametypes\_playerlogic::addToAliveCount();
-
-	if ( !hadSpawned || gameHasStarted() || (gameHasStarted() && level.inGracePeriod && self.hasDoneCombat) )
-		self maps\mp\gametypes\_playerlogic::removeFromLivesCount();
-
-	if ( !self.wasAliveAtMatchStart )
+	if ( !fauxSpawn )
 	{
-		acceptablePassedTime = 20;
-		if ( getTimeLimit() > 0 && acceptablePassedTime < getTimeLimit() * 60 / 4 )
-			acceptablePassedTime = getTimeLimit() * 60 / 4;
+
+		if ( self.pers["lives"] == getGametypeNumLives() )
+		{
+			maps\mp\gametypes\_playerlogic::addToLivesCount();
+		}
 		
-		if ( level.inGracePeriod || getTimePassed() < acceptablePassedTime * 1000 )
-			self.wasAliveAtMatchStart = true;
+		if ( self.pers["lives"] )
+			self.pers["lives"]--;
+
+		self maps\mp\gametypes\_playerlogic::addToAliveCount();
+
+		if ( !hadSpawned || gameHasStarted() || (gameHasStarted() && level.inGracePeriod && self.hasDoneCombat) )
+			self maps\mp\gametypes\_playerlogic::removeFromLivesCount();
+
+		if ( !self.wasAliveAtMatchStart )
+		{
+			acceptablePassedTime = 20;
+			if ( getTimeLimit() > 0 && acceptablePassedTime < getTimeLimit() * 60 / 4 )
+				acceptablePassedTime = getTimeLimit() * 60 / 4;
+			
+			if ( level.inGracePeriod || getTimePassed() < acceptablePassedTime * 1000 )
+				self.wasAliveAtMatchStart = true;
+		}
 	}
 	
 	self setClientDvar( "cg_thirdPerson", "0" );
@@ -642,6 +652,14 @@ spawnPlayer()
 	self.spawnPos = spawnOrigin;
 
 	self spawn( spawnOrigin, spawnAngles );
+	
+	//	immediately fix our stance if we were spawned in place so we don't get stuck in geo
+	if ( fauxSpawn && isDefined( self.faux_spawn_stance ) )
+	{
+		self setStance( self.faux_spawn_stance );
+		self.faux_spawn_stance = undefined;
+	}
+	
 	[[level.onSpawnPlayer]]();
 	
 	// Don't do this stuff for TI spawn points	
@@ -1272,16 +1290,12 @@ Callback_PlayerConnect()
 		if ( self.pers["team"] == "spectator" )
 		{
 			if ( allowTeamChoice() )
-			{
 				self maps\mp\gametypes\_menus::beginTeamChoice();
-				return;
-			}
-			
-			self [[ level.autoassign ]]();
-			return;
+			else
+				self [[level.autoassign]]();
 		}
-		
-		self maps\mp\gametypes\_menus::beginClassChoice();
+		else
+			self maps\mp\gametypes\_menus::beginClassChoice();
 	}
 
 	/#	
