@@ -35,9 +35,9 @@ main()
 	//	must be done before scorelimit is set
 	setGuns();
 	
+	registerTimeLimitDvar( level.gameType, 10 );
 	scoreLimit = level.gun_guns.size;
-	registerTimeLimitDvar( level.gameType, 10, 0, 20 );
-	registerScoreLimitDvar( level.gameType, scoreLimit );
+	SetDvar( "scr_gun_scorelimit", scoreLimit );
 	registerRoundLimitDvar( level.gameType, 1, 0, 10 );
 	registerWinLimitDvar( level.gameType, 1, 0, 10 );
 	registerNumLivesDvar( level.gameType, 0, 0, 10 );
@@ -139,8 +139,6 @@ onPlayerConnect()
 		player.gunGamePrevGunIndex = 0;
 		player initGunHUD();
 		
-		player.hud_xpEventPopup = player createXpEventPopup();
-		
 		player thread refillAmmo();
 		player thread refillSingleCountAmmo();
 		
@@ -210,7 +208,7 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 			
 			if ( self.gunGamePrevGunIndex > self.gunGameGunIndex )
 			{
-				self thread xpEventPopup( &"SPLASHES_DROPPED_GUN_RANK" );
+				self thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DROPPED_GUN_RANK" );
 				maps\mp\gametypes\_gamescore::givePlayerScore( "dropped_gun_score", self, undefined, true, true );	
 			}
 			
@@ -218,7 +216,7 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 			{
 				if ( self.gunGamePrevGunIndex )
 				{
-					attacker thread xpEventPopup( &"SPLASHES_DROPPED_ENEMY_GUN_RANK" );
+					attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DROPPED_ENEMY_GUN_RANK" );
 					attacker thread maps\mp\gametypes\_rank::giveRankXP( "dropped_enemy_gun_rank" );	
 				}		
 			}
@@ -251,7 +249,7 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 				
 			if ( attacker.gunGameGunIndex < level.gun_guns.size )
 			{
-				attacker thread xpEventPopup( &"SPLASHES_GAINED_GUN_RANK" );
+				attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_GAINED_GUN_RANK" );
 				attacker playLocalSound( "mp_war_objective_taken" );
 				attacker giveNextGun();
 			}
@@ -288,12 +286,12 @@ giveNextGun( doSetSpawnWeapon )
 	if ( self.gunGamePrevGunIndex > self.gunGameGunIndex )
 	{
 		//	we dropped :(
-		self thread xpEventPopup( &"SPLASHES_DROPPED_GUN_RANK" );		
+		self thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DROPPED_GUN_RANK" );		
 	}
 	else if ( self.gunGamePrevGunIndex < self.gunGameGunIndex )
 	{
 		//	we gained :)
-		self thread xpEventPopup( &"SPLASHES_GAINED_GUN_RANK" );		
+		self thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_GAINED_GUN_RANK" );		
 	}
 	self.gunGamePrevGunIndex = self.gunGameGunIndex;
 	
@@ -575,53 +573,4 @@ setSpecialLoadout()
 	//	FFA games don't have teams, but players are allowed to choose team on the way in
 	//	just for character model and announcer voice variety.  Same loadout for both.	
 	level.gun_loadouts["allies"] = level.gun_loadouts["axis"];
-}
-
-createXpEventPopup()
-{
-	hud_xpEventPopup = newClientHudElem( self );
-	hud_xpEventPopup.children = [];		
-	hud_xpEventPopup.horzAlign = "center";
-	hud_xpEventPopup.vertAlign = "middle";
-	hud_xpEventPopup.alignX = "center";
-	hud_xpEventPopup.alignY = "middle";
-	hud_xpEventPopup.x = 55;
-	hud_xpEventPopup.y = -35;
-	hud_xpEventPopup.font = "hudbig";
-	hud_xpEventPopup.fontscale = 0.65;
-	hud_xpEventPopup.archived = false;
-	hud_xpEventPopup.color = (0.5,0.5,0.5);
-	hud_xpEventPopup.sort = 10000;
-	hud_xpEventPopup.elemType = "msgText";
-	hud_xpEventPopup maps\mp\gametypes\_hud::fontPulseInit( 3.0 );
-	return hud_xpEventPopup;
-}
-
-xpEventPopup( event, hudColor, glowAlpha )
-{
-	self endon( "disconnect" );
-	self endon( "joined_team" );
-	self endon( "joined_spectators" );
-
-	self notify( "xpEventPopup" );
-	self endon( "xpEventPopup" );
-
-	wait ( 0.05 );
-		
-	if ( !isDefined( hudColor ) )
-		hudColor = (1,1,0.5);
-	if ( !isDefined( glowAlpha ) )
-		glowAlpha = 0;
-
-	self.hud_xpEventPopup.color = hudColor;
-	self.hud_xpEventPopup.glowColor = hudColor;
-	self.hud_xpEventPopup.glowAlpha = glowAlpha;
-
-	self.hud_xpEventPopup setText(event);
-	self.hud_xpEventPopup.alpha = 0.85;
-
-	wait ( 1.0 );
-	
-	self.hud_xpEventPopup fadeOverTime( 0.75 );
-	self.hud_xpEventPopup.alpha = 0;	
 }

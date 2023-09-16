@@ -122,7 +122,6 @@ onPlayerConnect()
         player.infect_firstSpawn = true;
 		player.infected_Rejoined = false;
 		player.infect_JoinedAtStart = true;
-		player.hud_EventPopup = player createXpEventPopup();
 
 		if( gameFlag( "prematch_done" ) )
 		{
@@ -300,7 +299,7 @@ setInfectedMsg()
 
 	if ( isDefined( self.isInitialInfected ) )
 	{
-		thread xpEventPopup( &"SPLASHES_FIRST_MERCENARY", ( 1, 0, 0 ), 0.3 );
+		thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_FIRST_MERCENARY", ( 1, 0, 0 ), 0.3 );
 	}	
 	else if ( isDefined( self.changingToRegularInfected ) )
 	{
@@ -308,14 +307,14 @@ setInfectedMsg()
 		if ( isDefined( self.changingToRegularInfectedByKill ) )
 		{
             self.changingToRegularInfectedByKill = undefined;
-            thread xpEventPopup( &"SPLASHES_FIRSTBLOOD" );
+            thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_FIRSTBLOOD" );
             maps\mp\gametypes\_gamescore::givePlayerScore( "first_draft", self );
             thread maps\mp\gametypes\_rank::giveRankXP( "first_draft" );
         }
     }
     else
 	{
-        thread xpEventPopup( &"SPLASHES_DRAFTED", ( 1, 0, 0 ), 0.3 );
+        thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DRAFTED", ( 1, 0, 0 ), 0.3 );
 	}
 }
 
@@ -527,7 +526,7 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 			else
 			{				
 				//	regular attacker reward
-				attacker thread xpEventPopup( &"SPLASHES_DRAFTED" );
+				attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DRAFTED" );
 				maps\mp\gametypes\_gamescore::givePlayerScore( "draft_rogue", attacker, self, true );
 				attacker thread maps\mp\gametypes\_rank::giveRankXP( "draft_rogue" );
 			}
@@ -551,8 +550,8 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 						
                     if ( player.team == "allies" && player != self && distance( player.infect_spawnPos, player.origin ) > 32 )
                     {
-                        player thread xpEventPopup( &"SPLASHES_SURVIVOR" );
-                        maps\mp\gametypes\_gamescore::givePlayerScore( "survivor", player, undefined, 1 );
+                        player thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_SURVIVOR" );
+                        maps\mp\gametypes\_gamescore::givePlayerScore( "survivor", player, undefined, true );
                         player thread maps\mp\gametypes\_rank::giveRankXP( "survivor" );
                     }
                 }
@@ -582,12 +581,12 @@ onFinalSurvivor()
 	
         if ( player.team == "allies" )
         {
-            player thread xpEventPopup( &"SPLASHES_FINAL_ROGUE" );
+            player thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_FINAL_ROGUE" );
             if ( !level.infect_awardedFinalSurvivor )
             {
                 if ( player.gameModeJoinedAtStart && isDefined( player.infect_spawnPos ) && distance( player.infect_spawnPos, player.origin ) > 32 )
                 {
-                    maps\mp\gametypes\_gamescore::givePlayerScore( "final_rogue", player, undefined, 1 );
+                    maps\mp\gametypes\_gamescore::givePlayerScore( "final_rogue", player, undefined, true );
                     player thread maps\mp\gametypes\_rank::giveRankXP( "final_rogue" );
                 }
 
@@ -837,79 +836,4 @@ setSpecialLoadouts()
     level.infect_loadouts["allies"]["loadoutPerk2"] = "specialty_lightweight";
     level.infect_loadouts["allies"]["loadoutPerk3"] = "specialty_heartbreaker";
     level.infect_loadouts["allies"]["loadoutDeathstreak"] = "specialty_null";
-}
-
-createXpEventPopup()
-{
-	hud_xpEventPopup = newClientHudElem( self );
-	hud_xpEventPopup.children = [];		
-	hud_xpEventPopup.horzAlign = "center";
-	hud_xpEventPopup.vertAlign = "middle";
-	hud_xpEventPopup.alignX = "center";
-	hud_xpEventPopup.alignY = "middle";
-	hud_xpEventPopup.x = 55;
-	hud_xpEventPopup.y = -35;
-	hud_xpEventPopup.font = "hudbig";
-	hud_xpEventPopup.fontscale = 0.65;
-	hud_xpEventPopup.archived = false;
-	hud_xpEventPopup.color = (0.5,0.5,0.5);
-	hud_xpEventPopup.sort = 10000;
-	hud_xpEventPopup.elemType = "msgText";
-	hud_xpEventPopup maps\mp\gametypes\_hud::fontPulseInit( 3.0 );
-	return hud_xpEventPopup;
-}
-
-xpEventPopupFinalize( event, hudColor, glowAlpha )
-{
-	self endon( "disconnect" );
-	self endon( "joined_team" );
-	self endon( "joined_spectators" );
-
-	self notify( "xpEventPopup" );
-	self endon( "xpEventPopup" );
-
-    if ( level.hardcoremode )
-        return;
-
-    wait ( 0.05 );
-
-	if ( !isDefined( hudColor ) )
-		hudColor = (1,1,0.5);
-	if ( !isDefined( glowAlpha ) )
-		glowAlpha = 0;
-
-    if ( !isDefined( self ) )
-        return;
-
-	self.hud_xpEventPopup.color = hudColor;
-	self.hud_xpEventPopup.glowColor = hudColor;
-	self.hud_xpEventPopup.glowAlpha = glowAlpha;
-
-	self.hud_xpEventPopup setText(event);
-	self.hud_xpEventPopup.alpha = 0.85;
-
-	wait ( 1.0 );
-
-    if ( !isDefined( self ) )
-        return;
-
-	self.hud_xpEventPopup fadeOverTime( 0.75 );
-	self.hud_xpEventPopup.alpha = 0;	
-    self notify( "PopComplete" );
-}
-
-xpEventPopupTerminate()
-{
-    self endon( "PopComplete" );
-    
-	waittill_any( "joined_team", "joined_spectators" );
-	
-    self.hud_xpEventPopup  fadeOverTime( 0.05 );
-    self.hud_xpEventPopup .alpha = 0;
-}
-
-xpEventPopup( event, hudColor, glowAlpha )
-{
-    thread xpEventPopupFinalize( event, hudColor, glowAlpha );
-    thread xpEventPopupTerminate();
 }

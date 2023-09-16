@@ -103,8 +103,6 @@ onStartGameType()
 	allowed[0] = level.gameType;
 	
 	maps\mp\gametypes\_gameobjects::main(allowed);	
-	
-	level thread onPlayerConnect(); // Needed since we need to draw the hud.
 }
 
 
@@ -126,16 +124,6 @@ getSpawnPoint()
 	}
 	
 	return spawnPoint;
-}
-
-
-onPlayerConnect()
-{
-	for(;;)
-	{
-		level waittill( "connected", player );
-		player.hud_EventPopup = player createEventPopup();
-	}
 }
 
 
@@ -259,7 +247,7 @@ onUse( player )
 		
 		//	tell the attacker their kill was denied
 		if ( isDefined( self.attacker ) )
-			self.attacker thread EventPopup( &"SPLASHES_DENIED_KILL", ( 1,0.5,0.5) );
+			self.attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DENIED_KILL", ( 1,0.5,0.5) );
 	}
 	//	enemy pickup
 	else
@@ -290,8 +278,8 @@ onPickup( event, splash )
 	level endon( "game_ended" );
 	self  endon( "disconnect" );
 	
-	self thread EventPopup( splash );
-	maps\mp\gametypes\_gamescore::givePlayerScore( event, self );
+	self thread maps\mp\gametypes\_rank::xpEventPopup( splash );
+	maps\mp\gametypes\_gamescore::givePlayerScore( event, self, undefined, true );
 	self thread maps\mp\gametypes\_rank::giveRankXP( event );
 }
 
@@ -386,7 +374,7 @@ clearOnVictimDisconnect( victim )
 		
 		//	tell the attacker their kill was denied
 		if ( isDefined( level.dogtags[guid].attacker ) )
-			level.dogtags[guid].attacker thread EventPopup( &"SPLASHES_DENIED_KILL", (1,0.5,0.5) );		
+			level.dogtags[guid].attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DENIED_KILL", (1,0.5,0.5) );		
 		
 		//	play vanish effect, reset, and wait for reset to process
 		PlayFx( level.conf_fx["vanish"], level.dogtags[guid].curOrigin );
@@ -407,53 +395,4 @@ clearOnVictimDisconnect( victim )
 			level.dogtags[guid] = undefined;		
 		}	
 	}	
-}
-
-
-createEventPopup()
-{
-	hud_EventPopup = newClientHudElem( self );
-	hud_EventPopup.children = [];		
-	hud_EventPopup.horzAlign = "center";
-	hud_EventPopup.vertAlign = "middle";
-	hud_EventPopup.alignX = "center";
-	hud_EventPopup.alignY = "middle";
-	hud_EventPopup.x = 50;
-	hud_EventPopup.y = -35;
-	hud_EventPopup.font = "hudbig";
-	hud_EventPopup.fontscale = 0.65;
-	hud_EventPopup.archived = false;
-	hud_EventPopup.color = (0.5,0.5,0.5);
-	hud_EventPopup.sort = 10000;
-	hud_EventPopup.elemType = "msgText";
-	hud_EventPopup maps\mp\gametypes\_hud::fontPulseInit( 3.0 );
-	return hud_EventPopup;
-}
-
-
-EventPopup( event, hudColor, glowAlpha )
-{
-	self endon( "disconnect" );
-
-	self notify( "EventPopup" );
-	self endon( "EventPopup" );
-
-	wait ( 0.05 );
-		
-	if ( !isDefined( hudColor ) )
-		hudColor = (1,1,0.5);
-	if ( !isDefined( glowAlpha ) )
-		glowAlpha = 0;
-
-	self.hud_EventPopup.color = hudColor;
-	self.hud_EventPopup.glowColor = hudColor;
-	self.hud_EventPopup.glowAlpha = glowAlpha;
-
-	self.hud_EventPopup setText(event);
-	self.hud_EventPopup.alpha = 0.85;
-
-	wait ( 1.0 );
-	
-	self.hud_EventPopup fadeOverTime( 0.75 );
-	self.hud_EventPopup.alpha = 0;
 }
