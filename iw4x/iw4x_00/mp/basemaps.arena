@@ -687,8 +687,8 @@
   description   "MPUI_DESC_MAP_LOCKDOWN"
   mapimage      "preview_mp_alpha"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "us_army"
-  axischar      "socom_141_forest"
+  allieschar  "delta_multicam"
+  axischar    "opforce_urban"
   environment   "urban"
 }
 
@@ -699,8 +699,8 @@
   description   "MPUI_DESC_MAP_UNDERGROUND"
   mapimage      "preview_mp_underground"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "us_army"
-  axischar      "opforce_airborne"
+  allieschar    "sas_urban"
+  axischar      "opforce_air"
   environment   "urban"
 }
 
@@ -711,8 +711,8 @@
   description   "MPUI_DESC_MAP_MISSION"
   mapimage      "preview_mp_bravo"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_forest"
-  axischar      "militia"
+  allieschar    "pmc_africa"
+  axischar      "opforce_africa"
   environment   "forest"
 }
 
@@ -723,8 +723,8 @@
   description   "MPUI_DESC_MAP_VILLAGE"
   mapimage      "preview_mp_village"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_forest"
-  axischar      "militia"
+  allieschar    "pmc_africa"
+  axischar      "opforce_africa"
   environment   "forest"
 }
 
@@ -735,8 +735,8 @@
   description   "MPUI_DESC_MAP_SEATOWN"
   mapimage      "preview_mp_seatown"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_desert"
-  axischar      "militia"
+  allieschar    "sas_urban"
+  axischar      "opforce_henchmen"
   environment   "desert"
 }
 
@@ -747,8 +747,8 @@
   description   "MPUI_DESC_MAP_ARKADEN"
   mapimage      "preview_mp_plaza2"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "seals_udt"
-  axischar      "opforce_airborne"
+  allieschar    "sas_urban"
+  axischar      "opforce_urban"
   environment   "urban"
 }
 
@@ -759,8 +759,8 @@
   description   "MPUI_DESC_MAP_RESISTANCE"
   mapimage      "preview_mp_paris"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_forest"
-  axischar      "opforce_airborne"
+  allieschar    "gign_paris"
+  axischar      "opforce_urban"
   environment   "urban"
 }
 
@@ -771,8 +771,8 @@
   description   "MPUI_DESC_MAP_HARDHAT"
   mapimage      "preview_mp_hardhat"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "us_army"
-  axischar      "opforce_airborne"
+  allieschar    "delta_multicam"
+  axischar      "opforce_air"
   environment   "forest"
 }
 
@@ -783,7 +783,7 @@
   description   "MPUI_DESC_MAP_DOME"
   mapimage      "preview_mp_dome"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_desert"
-  axischar      "opforce_composite"
+  allieschar    "delta_multicam"
+  axischar      "opforce_urban"
   environment   "desert"
 }
