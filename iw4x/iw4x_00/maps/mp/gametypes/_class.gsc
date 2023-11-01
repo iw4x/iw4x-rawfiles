@@ -602,27 +602,27 @@ giveLoadout( team, class, allowCopycat )
 	// Primary Offhand was given by givePerk (it's your perk1)
 	
 	// Secondary Offhand
-	offhandSecondaryWeapon = loadoutOffhand;
+	offhandSecondaryWeapon = loadoutOffhand + "_mp";
 	
 	if ( loadoutOffhand == "none" )
 		self SetOffhandSecondaryClass( "none" );
-	else if ( loadoutOffhand == "flash_grenade_mp" )
+	else if ( loadoutOffhand == "flash_grenade" )
 		self SetOffhandSecondaryClass( "flash" );
-	else if ( loadoutOffhand == "smoke_grenade_mp" || loadoutOffhand == "concussion_grenade_mp" )
+	else if ( loadoutOffhand == "smoke_grenade" || loadoutOffhand == "concussion_grenade" )
 		self SetOffhandSecondaryClass( "smoke" );	
 	else 
 		self SetOffhandSecondaryClass( "flash" );
 	
-	switch( offhandSecondaryWeapon )
+	switch( loadoutOffhand )
 	{
 		case "none":
 			break;
 		default:
 			self giveWeapon( offhandSecondaryWeapon );
 	
-			if ( loadOutOffhand == "flash_grenade_mp" )
+			if ( loadOutOffhand == "flash_grenade" )
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
-			else if( loadOutOffhand == "concussion_grenade_mp" )
+			else if( loadOutOffhand == "concussion_grenade" )
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
 			else
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
