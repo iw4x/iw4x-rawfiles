@@ -175,21 +175,6 @@ onMenuResponse()
 
 		if(response == "changeclass_opfor_splitscreen" )
 			self openpopupMenu( "changeclass_opfor_splitscreen" );
-		
-		if(response == "endgame")
-		{
-			if(level.splitscreen)
-			{
-				endparty();
-
-				if ( !level.gameEnded )
-				{
-					level thread maps\mp\gametypes\_gamelogic::forceEnd();
-				}
-			}
-				
-			continue;
-		}
 
 		if ( response == "endround" )
 		{
