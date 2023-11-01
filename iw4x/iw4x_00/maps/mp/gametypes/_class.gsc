@@ -620,11 +620,9 @@ giveLoadout( team, class, allowCopycat )
 		default:
 			self giveWeapon( offhandSecondaryWeapon );
 	
-			if( loadOutOffhand == "smoke_grenade" )
-				self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
-			else if( loadOutOffhand == "flash_grenade" )
+			if ( loadOutOffhand == "flash_grenade_mp" )
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
-			else if( loadOutOffhand == "concussion_grenade" )
+			else if( loadOutOffhand == "concussion_grenade_mp" )
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
 			else
 				self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
