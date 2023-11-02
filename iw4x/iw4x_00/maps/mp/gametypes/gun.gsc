@@ -38,6 +38,7 @@ main()
 	registerTimeLimitDvar( level.gameType, 10 );
 	scoreLimit = level.gun_guns.size;
 	SetDvar( "scr_gun_scorelimit", scoreLimit );
+	registerScoreLimitDvar( level.gametype, level.gun_guns.size );
 	registerRoundLimitDvar( level.gameType, 1, 0, 10 );
 	registerWinLimitDvar( level.gameType, 1, 0, 10 );
 	registerNumLivesDvar( level.gameType, 0, 0, 10 );

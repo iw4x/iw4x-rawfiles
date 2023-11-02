@@ -831,7 +831,7 @@ setSpecialLoadouts()
     level.infect_loadouts["allies"]["loadoutSecondaryAttachment2"] = "xmags";
     level.infect_loadouts["allies"]["loadoutSecondaryCamo"] = "none";
     level.infect_loadouts["allies"]["loadoutEquipment"] = "claymore_mp";
-    level.infect_loadouts["allies"]["loadoutOffhand"] = "flash_grenade_mp";
+    level.infect_loadouts["allies"]["loadoutOffhand"] = "flash_grenade";
     level.infect_loadouts["allies"]["loadoutPerk1"] = "specialty_scavenger";
     level.infect_loadouts["allies"]["loadoutPerk2"] = "specialty_lightweight";
     level.infect_loadouts["allies"]["loadoutPerk3"] = "specialty_heartbreaker";
