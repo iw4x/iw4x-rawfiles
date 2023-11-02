@@ -570,6 +570,9 @@
 		GAMETYPE_BUTTON(10, 1, gtnw)
 		GAMETYPE_BUTTON(11, 1, oneflag)
 		GAMETYPE_BUTTON(12, 1, arena)
+		GAMETYPE_BUTTON(13, 1, conf)
+		GAMETYPE_BUTTON(14, 1, gun)
+		GAMETYPE_BUTTON(15, 1, infect)
 		
 		/*
 		GAMETYPE_BUTTON(1, dm)

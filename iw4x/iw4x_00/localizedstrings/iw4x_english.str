@@ -13,8 +13,8 @@ LANG_ENGLISH		"Gun Game"
 REFERENCE			MPUI_GUNGAME_CAPS
 LANG_ENGLISH		"GUN GAME"
 
-REFERENCE			MENU_GUNGAME_DESC
-LANG_ENGLISH		"Be the first to dominate with every gun."
+REFERENCE			MENU_GUNGAME
+LANG_ENGLISH		"Be the first player to score a kill with each one of the provided weapons."
 
 REFERENCE			SPLASHES_DROPPED_ENEMY_GUN_RANK
 LANG_ENGLISH		"Dropped Enemy Gun Rank!"
