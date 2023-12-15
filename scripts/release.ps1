@@ -60,6 +60,15 @@ Write-Host "Cleaning up iw4x_02 directory..."
 Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_02"
 Write-Host "Finished compressing iw4x_02.iwd`n"
 
+# Create iw4x_02.iwd
+Write-Host "Compressing iw4x_03.zip..."
+Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\iw4x_03\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\iw4x_03.zip"
+Write-Host "Renaming iw4x_03.zip to iw4x_03.iwd..."
+Move-Item -Path "${rawFilesPath}\release\temp\iw4x\iw4x_03.zip" -Destination "${rawFilesPath}\release\temp\iw4x\iw4x_03.iwd"
+Write-Host "Cleaning up iw4x_03 directory..."
+Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_03"
+Write-Host "Finished compressing iw4x_03.iwd`n"
+
 # Create release.zip
 if (Test-Path -Path "${rawFilesPath}\release\release.zip") {
     Write-Host "Cleaning up old release.zip..."
