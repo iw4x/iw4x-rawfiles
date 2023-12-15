@@ -563,6 +563,7 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -575,6 +576,7 @@
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -587,6 +589,7 @@
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -598,8 +601,8 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  useteamzones  "true"
   environment   "forest"
+  useteamzones  "true"
 }
 
 
@@ -613,6 +616,7 @@
   allieschar    "socom_141_arctic"
   axischar      "opforce_arctic"
   environment   "forest"
+  useteamzones  "true"
 }
 
 
@@ -626,6 +630,7 @@
   allieschar    "iw3_sas_urban"
   axischar      "iw3_spetsnaz_urban"
   environment   "forest"
+  useteamzones  "true"
 }
 
 
@@ -639,6 +644,7 @@
   allieschar  "iw3_usmc_desert"
   axischar    "iw3_opfor_desert"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -651,6 +657,7 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -663,6 +670,7 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "forest"
+  useteamzones  "true"
 }
 
 
@@ -676,6 +684,7 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "forest"
+  useteamzones  "true"
 }
 
 
@@ -689,6 +698,7 @@
   allieschar  "delta_multicam"
   axischar    "opforce_urban"
   environment   "urban"
+  useteamzones  "true"
 }
 
 {
@@ -701,6 +711,7 @@
   allieschar    "sas_urban"
   axischar      "opforce_air"
   environment   "urban"
+  useteamzones  "true"
 }
 
 {
@@ -713,6 +724,7 @@
   allieschar    "pmc_africa"
   axischar      "opforce_africa"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -725,6 +737,7 @@
   allieschar    "pmc_africa"
   axischar      "opforce_africa"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -737,6 +750,7 @@
   allieschar    "sas_urban"
   axischar      "opforce_henchmen"
   environment   "desert"
+  useteamzones  "true"
 }
 
 {
@@ -749,6 +763,7 @@
   allieschar    "sas_urban"
   axischar      "opforce_urban"
   environment   "urban"
+  useteamzones  "true"
 }
 
 {
@@ -761,6 +776,7 @@
   allieschar    "gign_paris"
   axischar      "opforce_urban"
   environment   "urban"
+  useteamzones  "true"
 }
 
 {
@@ -773,6 +789,7 @@
   allieschar    "delta_multicam"
   axischar      "opforce_air"
   environment   "forest"
+  useteamzones  "true"
 }
 
 {
@@ -781,8 +798,9 @@
   gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
   description   "MPUI_DESC_MAP_DOME"
   mapimage      "preview_mp_dome"
-  mapoverlay    "compass_overlay_map_blank "
+  mapoverlay    "compass_overlay_map_blank"
   allieschar    "delta_multicam"
   axischar      "opforce_urban"
   environment   "desert"
+  useteamzones  "true"
 }
