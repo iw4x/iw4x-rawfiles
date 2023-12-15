@@ -81,7 +81,7 @@
 			elementtype LISTBOX_TEXT
 			elementwidth 120
 			elementheight 24
-			columns 1 2 190 25
+			columns 1 2 190 25 0
 			mouseEnter 
 			{
 				setitemcolor "maplist2";

@@ -49,25 +49,27 @@
 #define ON_MENU_ESC \
 	close											self;
 
-menuDef
 {
-	name											MENU_NAME
-	rect											POPMENU_RECT
-	popup
-	legacySplitScreenScale
-	style											WINDOW_STYLE_FILLED
-	foreColor										CHOICE_TEXTCOLOR
-	focusColor										CHOICE_TEXTCOLOR
-	backColor										1 1 1 1
-	background										"white"
-	MENU_ON_OPEN(ON_MENU_OPEN)
-	MENU_ON_CLOSE(ON_MENU_CLOSE)
-	MENU_ON_ESC(ON_MENU_ESC)
+	menuDef
+	{
+		name											MENU_NAME
+		rect											POPMENU_RECT
+		popup
+		legacySplitScreenScale
+		style											WINDOW_STYLE_FILLED
+		foreColor										CHOICE_TEXTCOLOR
+		focusColor										CHOICE_TEXTCOLOR
+		backColor										1 1 1 1
+		background										"white"
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
 
-	POPUP_BACKGROUND_BASE
-	POPUP_TITLE2(MENU_TITLE)
+		POPUP_BACKGROUND_BASE
+		POPUP_TITLE2(MENU_TITLE)
 
-	ITEM_NAMEENTRY
+		ITEM_NAMEENTRY
 
-	POPUP_BUTTON_FOOTER(64, "@MENU_CLOSE", exec "setfromdvar name ui_name"; close self;)
+		POPUP_BUTTON_FOOTER(64, "@MENU_CLOSE", exec "setfromdvar name ui_name"; close self;)
+	}
 }

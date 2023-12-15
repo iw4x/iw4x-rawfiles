@@ -92,26 +92,28 @@
 
 #define MESSAGE_CREDITS												"@IW4X_CREDITS"
 
-menuDef
 {
-	name															MENU_NAME
-	fullscreen														1
-	rect															0 0 640 480
-	foreColor														CHOICE_TEXTCOLOR
-	focusColor														CHOICE_TEXTCOLOR
-	soundLoop														MENU_MUSIC
-	fadeCycle														1
-	fadeClamp														1
-	fadeAmount														0.1
+	menuDef
+	{
+		name															MENU_NAME
+		fullscreen														1
+		rect															0 0 640 480
+		foreColor														CHOICE_TEXTCOLOR
+		focusColor														CHOICE_TEXTCOLOR
+		soundLoop														MENU_MUSIC
+		fadeCycle														1
+		fadeClamp														1
+		fadeAmount														0.1
 
-	MENU_ON_ESC(ON_MENU_ESC)
+		MENU_ON_ESC(ON_MENU_ESC)
 
-	#define DISABLE_SIDEBAR
-	#include "ui_mp/bg.inc"
+		#define DISABLE_SIDEBAR
+		#include "ui_mp/bg.inc"
 
-	LOGO_GAME
+		LOGO_GAME
 
-	MENU_ITEM_CREDITS_BOX("IW4x", MESSAGE_CREDITS)
+		MENU_ITEM_CREDITS_BOX("IW4x", MESSAGE_CREDITS)
 
-	ITEM_BUTTON_BACK(close self;)
+		ITEM_BUTTON_BACK(close self;)
+	}
 }

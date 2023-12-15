@@ -34,7 +34,7 @@ itemDef
 	forecolor				0 0 0 0.4
 	background				"white"
 	textscale				0.55
-	visible					when ((dvarBool("cl_ingame") || dvarBool("sv_running")))
+	visible					when ( dvarBool("cl_ingame") || dvarBool("sv_running") )
 }
 itemDef
 {

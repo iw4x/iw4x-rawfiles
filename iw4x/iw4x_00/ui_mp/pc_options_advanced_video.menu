@@ -43,49 +43,51 @@
 #define ON_MENU_ESC \
 	close											self;
 
-menuDef
 {
-	name											MENU_NAME
-	rect											0 0 640 480
-	foreColor										CHOICE_TEXTCOLOR
-	focusColor										CHOICE_TEXTCOLOR
-	blurWorld										7
+	menuDef
+	{
+		name											MENU_NAME
+		rect											0 0 640 480
+		foreColor										CHOICE_TEXTCOLOR
+		focusColor										CHOICE_TEXTCOLOR
+		blurWorld										7
 
-	MENU_ON_OPEN(ON_MENU_OPEN)
-	MENU_ON_CLOSE(ON_MENU_CLOSE)
-	MENU_ON_ESC(ON_MENU_ESC)
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
 
-	#define BACKGROUND_PC_OPTIONS
-	#define BACKGROUND_IW4
-	#define DISABLE_SIDEBAR
-	#define BACKGROUND_FULL
-	#include "ui_mp/bg.inc"
+		#define BACKGROUND_PC_OPTIONS
+		#define BACKGROUND_IW4
+		#define DISABLE_SIDEBAR
+		#define BACKGROUND_FULL
+		#include "ui_mp/bg.inc"
 
-	PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+		PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
 
-	PC_OPTIONS_FLOATLIST_RAW(0, "@MENU_ASPECT_RATIO", "ui_r_aspectratio", {"@MENU_AUTO" 0 "@MENU_STANDARD_4_3" 1 "@MENU_WIDE_16_10" 2 "@MENU_WIDE_16_9" 3}, setDvarInt r_aspectratio dvarInt("ui_r_aspectratio"); setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
-	PC_OPTIONS_FLOATLIST_RAW(1, "@MENU_ANTIALIASING", "ui_r_aasamples", {"@MENU_OFF" 1 "@MENU_2X" 2 "@MENU_4X" 4}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
-	PC_OPTIONS_DVARENUMLIST(2, "@MENU_SCREEN_REFRESH_RATE", "ui_r_displayRefresh", "r_displayRefresh", ACTION_SHOW_APPLY, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())))
-	PC_OPTIONS_DVARYESNO_RAW(3, "@MENU_SYNC_EVERY_FRAME", "ui_r_vsync", ACTION_SHOW_APPLY, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+		PC_OPTIONS_FLOATLIST_RAW(0, "@MENU_ASPECT_RATIO", "ui_r_aspectratio", {"@MENU_AUTO" 0 "@MENU_STANDARD_4_3" 1 "@MENU_WIDE_16_10" 2 "@MENU_WIDE_16_9" 3}, setDvarInt r_aspectratio dvarInt("ui_r_aspectratio"); setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+		PC_OPTIONS_FLOATLIST_RAW(1, "@MENU_ANTIALIASING", "ui_r_aasamples", {"@MENU_OFF" 1 "@MENU_2X" 2 "@MENU_4X" 4}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+		PC_OPTIONS_DVARENUMLIST(2, "@MENU_SCREEN_REFRESH_RATE", "ui_r_displayRefresh", "r_displayRefresh", ACTION_SHOW_APPLY, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())))
+		PC_OPTIONS_DVARYESNO_RAW(3, "@MENU_SYNC_EVERY_FRAME", "ui_r_vsync", ACTION_SHOW_APPLY, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
 
-	PC_OPTIONS_SEPERATOR(3)
+		PC_OPTIONS_SEPERATOR(3)
 
-	PC_OPTIONS_DVARYESNO(4, "@MENU_SHADOWS", "sm_enable", ;, when(0))
-	PC_OPTIONS_DVARYESNO(5, "@MENU_SPECULAR_MAP", "r_specular", ;, when(0))
-	PC_OPTIONS_DVARYESNO(6, "@MENU_DOF", "r_dof_enable", ;, when(0))
+		PC_OPTIONS_DVARYESNO(4, "@MENU_SHADOWS", "sm_enable", ;, when(0))
+		PC_OPTIONS_DVARYESNO(5, "@MENU_SPECULAR_MAP", "r_specular", ;, when(0))
+		PC_OPTIONS_DVARYESNO(6, "@MENU_DOF", "r_dof_enable", ;, when(0))
 
-	PC_OPTIONS_SEPERATOR(6)
+		PC_OPTIONS_SEPERATOR(6)
 
-	PC_OPTIONS_DVARYESNO(7, "@MENU_ZFEATHER_SMOKE", "r_zfeather", ;, when(0))
-	PC_OPTIONS_DVARYESNO(8, "@MENU_RAGDOLL", "ragdoll_enable", ;, when(0))
-	PC_OPTIONS_DVARYESNO(9, "@MENU_BULLET_IMPACTS", "fx_marks", ;, when(0))
+		PC_OPTIONS_DVARYESNO(7, "@MENU_ZFEATHER_SMOKE", "r_zfeather", ;, when(0))
+		PC_OPTIONS_DVARYESNO(8, "@MENU_RAGDOLL", "ragdoll_enable", ;, when(0))
+		PC_OPTIONS_DVARYESNO(9, "@MENU_BULLET_IMPACTS", "fx_marks", ;, when(0))
 
-	PC_OPTIONS_SEPERATOR(9)
+		PC_OPTIONS_SEPERATOR(9)
 
-	PC_OPTIONS_FLOATLIST_RAW(10, "@MENU_TEXTURE_QUALITY", "ui_r_picmip_manual", {"@MENU_AUTOMATIC" 0 "@MENU_MANUAL" 1}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
-	PC_OPTIONS_FLOATLIST_RAW(11, "@MENU_TEXTURE_RESOLUTION", "ui_r_picmip", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
-	PC_OPTIONS_FLOATLIST_RAW(12, "@MENU_NORMAL_MAP_RESOLUTION", "ui_r_picmip_bump", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
-	PC_OPTIONS_FLOATLIST_RAW(13, "@MENU_SPECULAR_MAP_RESOLUTION", "ui_r_picmip_spec", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
+		PC_OPTIONS_FLOATLIST_RAW(10, "@MENU_TEXTURE_QUALITY", "ui_r_picmip_manual", {"@MENU_AUTOMATIC" 0 "@MENU_MANUAL" 1}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), 1)
+		PC_OPTIONS_FLOATLIST_RAW(11, "@MENU_TEXTURE_RESOLUTION", "ui_r_picmip", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
+		PC_OPTIONS_FLOATLIST_RAW(12, "@MENU_NORMAL_MAP_RESOLUTION", "ui_r_picmip_bump", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
+		PC_OPTIONS_FLOATLIST_RAW(13, "@MENU_SPECULAR_MAP_RESOLUTION", "ui_r_picmip_spec", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
 
-	ITEM_BUTTON_BACK(ON_MENU_ESC)
+		ITEM_BUTTON_BACK(ON_MENU_ESC)
+	}
 }
