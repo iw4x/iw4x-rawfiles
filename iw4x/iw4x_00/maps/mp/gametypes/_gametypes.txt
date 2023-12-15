@@ -1,0 +1,14 @@
+dm
+dom
+sd
+sab
+war
+koth
+oneflag
+arena
+dd
+ctf
+gtnw
+conf
+gun
+infect

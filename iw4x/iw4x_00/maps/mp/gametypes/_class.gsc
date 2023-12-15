@@ -60,7 +60,6 @@ init()
 	level thread onPlayerConnecting();
 }
 
-
 getClassChoice( response )
 {
 	assert( isDefined( level.classMap[response] ) );
@@ -77,7 +76,6 @@ getWeaponChoice( response )
 		return 0;
 }
 
-
 logClassChoice( class, primaryWeapon, specialType, perks )
 {
 	if ( class == self.lastClass )
@@ -89,7 +87,6 @@ logClassChoice( class, primaryWeapon, specialType, perks )
 	
 	self.lastClass = class;
 }
-
 
 cac_getWeapon( classIndex, weaponIndex )
 {
@@ -130,8 +127,6 @@ cac_getOffhand( classIndex )
 {
 	return self getPlayerData( "customClasses", classIndex, "specialGrenade" );
 }
-
-
 
 table_getWeapon( tableName, classIndex, weaponIndex )
 {
@@ -303,6 +298,8 @@ giveLoadout( team, class, allowCopycat )
 {
 	self takeAllWeapons();
 	
+	self.changingWeapon = undefined;
+	
 	primaryIndex = 0;
 	
 	// initialize specialty array
@@ -312,7 +309,15 @@ giveLoadout( team, class, allowCopycat )
 		allowCopycat = true;
 
 	primaryWeapon = undefined;
+	
+	clearAmmo = false;
 
+	//	set in game mode custom class
+	loadoutKillstreak1 = undefined;
+	loadoutKillstreak2 = undefined;
+	loadoutKillstreak3 = undefined;	
+	
+	clonedLoadout = [];
 	if ( isDefined( self.pers["copyCatLoadout"] ) && self.pers["copyCatLoadout"]["inUse"] && allowCopycat )
 	{
 		self maps\mp\gametypes\_class::setClass( "copycat" );
@@ -356,6 +361,64 @@ giveLoadout( team, class, allowCopycat )
 		loadoutOffhand = cac_getOffhand( class_num );
 		loadoutDeathStreak = cac_getDeathstreak( class_num );
 	}
+	else if ( class == "gamemode" )
+	{
+		gamemodeLoadout = self.pers["gamemodeLoadout"];
+
+		loadoutPrimary = gamemodeLoadout["loadoutPrimary"];
+		loadoutPrimaryAttachment = gamemodeLoadout["loadoutPrimaryAttachment"];
+		loadoutPrimaryAttachment2 = gamemodeLoadout["loadoutPrimaryAttachment2"] ;
+		loadoutPrimaryCamo = gamemodeLoadout["loadoutPrimaryCamo"];
+		loadoutSecondary = gamemodeLoadout["loadoutSecondary"];		
+		loadoutSecondaryAttachment = gamemodeLoadout["loadoutSecondaryAttachment"];
+		loadoutSecondaryAttachment2 = gamemodeLoadout["loadoutSecondaryAttachment2"];
+		loadoutSecondaryCamo = gamemodeLoadout["loadoutSecondaryCamo"];
+		
+		//	replace the placeholder throwing knife with the valid secondary if there is one
+		if ( loadoutPrimary == "throwingknife" && loadoutSecondary != "none" )
+		{
+			loadoutPrimary = loadoutSecondary;
+			loadoutPrimaryAttachment = loadoutSecondaryAttachment;
+			loadoutPrimaryAttachment2 = loadoutSecondaryAttachment2;
+			loadoutPrimaryCamo = loadoutSecondaryCamo;
+			
+			loadoutSecondary = "none";
+			loadoutSecondaryAttachment = "none";
+			loadoutSecondaryAttachment2 = "none";
+			loadoutSecondaryCamo = "none";			
+		}	
+		//	otherwise replace with normal default for invalid class
+		else if ( loadoutPrimary == "throwingknife" && loadoutSecondary == "none" )
+		{
+			clearAmmo = true;
+			loadoutPrimary = "usp";
+			loadoutPrimaryAttachment = "tactical";
+		}	
+		
+		loadoutEquipment = gamemodeLoadout["loadoutEquipment"];
+		loadoutOffhand = gamemodeLoadout["loadoutOffhand"];
+		//	hack, until game mode default class data can be reset
+		if ( loadoutOffhand == "specialty_null" )
+			loadoutOffhand = "none";	
+		loadoutPerk1 = gamemodeLoadout["loadoutPerk1"];
+		loadoutPerk2 = gamemodeLoadout["loadoutPerk2"];
+		loadoutPerk3 = gamemodeLoadout["loadoutPerk3"];
+		
+		if ( level.killstreakRewards )
+		{
+			loadoutKillstreak1 = gamemodeLoadout["loadoutKillstreak1"];
+			loadoutKillstreak2 = gamemodeLoadout["loadoutKillstreak2"];
+			loadoutKillstreak3 = gamemodeLoadout["loadoutKillstreak3"];			
+		}
+		else 
+		{
+			loadoutKillstreak1 = "none";
+			loadoutKillstreak2 = "none";
+			loadoutKillstreak3 = "none";			
+		}
+		
+		loadoutDeathStreak = gamemodeLoadout["loadoutDeathstreak"];		
+	}
 	else
 	{
 		class_num = getClassIndex( class );
@@ -377,8 +440,10 @@ giveLoadout( team, class, allowCopycat )
 		loadoutOffhand = table_getOffhand( level.classTableName, class_num );
 		loadoutDeathstreak = table_getDeathstreak( level.classTableName, class_num );
 	}
+	
+	isGameModeClass = ( class == "gamemode" );
 
-	if ( !(isDefined( self.pers["copyCatLoadout"] ) && self.pers["copyCatLoadout"]["inUse"] && allowCopycat) )
+	if ( !isGameModeClass && !(isDefined( self.pers["copyCatLoadout"] ) && self.pers["copyCatLoadout"]["inUse"] && allowCopycat) )
 	{
 		isCustomClass = isSubstr( class, "custom" );
 		
@@ -435,8 +500,33 @@ giveLoadout( team, class, allowCopycat )
 		loadoutSecondary = table_getWeapon( level.classTableName, 10, 1 );
 
 	//loadoutSecondaryCamo = "none";
+	
+	self.loadoutPrimaryCamo = int(tableLookup( "mp/camoTable.csv", 1, loadoutPrimaryCamo, 0 ));
+	self.loadoutPrimary = loadoutPrimary;
+	self.loadoutSecondary = loadoutSecondary;
+	self.loadoutSecondaryCamo = int(tableLookup( "mp/camoTable.csv", 1, loadoutSecondaryCamo, 0 ));
 
+	if ( loadoutSecondary == "none" )
+		secondaryName = "none";
+	else
+	{
+	
+		secondaryName = buildWeaponName( loadoutSecondary, loadoutSecondaryAttachment, loadoutSecondaryAttachment2 );
+		self _giveWeapon( secondaryName, int(tableLookup( "mp/camoTable.csv", 1, loadoutSecondaryCamo, 0 ) ) );
+	}
+	
+	self SetOffhandPrimaryClass( "other" );
+	
+	// Action Slots
+	//self _SetActionSlot( 1, "" );
+	self _SetActionSlot( 1, "nightvision" );
+	self _SetActionSlot( 3, "altMode" );
+	self _SetActionSlot( 4, "" );
 
+	// Perks
+	self _clearPerks();
+	self _detachAll();
+	
 	if ( level.killstreakRewards )
 	{
 		if ( getDvarInt( "scr_classic" ) == 1 )
@@ -459,56 +549,39 @@ giveLoadout( team, class, allowCopycat )
 		loadoutKillstreak3 = "none";
 	}
 	
-	secondaryName = buildWeaponName( loadoutSecondary, loadoutSecondaryAttachment, loadoutSecondaryAttachment2 );
-	self _giveWeapon( secondaryName, int(tableLookup( "mp/camoTable.csv", 1, loadoutSecondaryCamo, 0 ) ) );
-
-	self.loadoutPrimaryCamo = int(tableLookup( "mp/camoTable.csv", 1, loadoutPrimaryCamo, 0 ));
-	self.loadoutPrimary = loadoutPrimary;
-	self.loadoutSecondary = loadoutSecondary;
-	self.loadoutSecondaryCamo = int(tableLookup( "mp/camoTable.csv", 1, loadoutSecondaryCamo, 0 ));
-	
-	self SetOffhandPrimaryClass( "other" );
-	
-	// Action Slots
-	//self _SetActionSlot( 1, "" );
-	self _SetActionSlot( 1, "nightvision" );
-	self _SetActionSlot( 3, "altMode" );
-	self _SetActionSlot( 4, "" );
-
-	// Perks
-	self _clearPerks();
-	self _detachAll();
-	
 	// these special case giving pistol death have to come before
 	// perk loadout to ensure player perk icons arent overwritten
 	if ( level.dieHardMode )
 		self maps\mp\perks\_perks::givePerk( "specialty_pistoldeath" );
-	
-	// only give the deathstreak for the initial spawn for this life.
-	if ( loadoutDeathStreak != "specialty_null" && getTime() == self.spawnTime )
-	{
-		deathVal = int( tableLookup( "mp/perkTable.csv", 1, loadoutDeathStreak, 6 ) );
-				
-		if ( self getPerkUpgrade( loadoutPerk1 ) == "specialty_rollover" || self getPerkUpgrade( loadoutPerk2 ) == "specialty_rollover" || self getPerkUpgrade( loadoutPerk3 ) == "specialty_rollover" )
-			deathVal -= 1;
 		
-		if ( self.pers["cur_death_streak"] == deathVal )
-		{
-			self thread maps\mp\perks\_perks::givePerk( loadoutDeathStreak );
-			self thread maps\mp\gametypes\_hud_message::splashNotify( loadoutDeathStreak );
-		}
-		else if ( self.pers["cur_death_streak"] > deathVal )
-		{
-			self thread maps\mp\perks\_perks::givePerk( loadoutDeathStreak );
-		}
-	}
-
 	self loadoutAllPerks( loadoutEquipment, loadoutPerk1, loadoutPerk2, loadoutPerk3 );
 		
 	self setKillstreaks( loadoutKillstreak1, loadoutKillstreak2, loadoutKillstreak3 );
 		
 	if ( self hasPerk( "specialty_extraammo", true ) && getWeaponClass( secondaryName ) != "weapon_projectile" )
-		self giveMaxAmmo( secondaryName );
+		self giveMaxAmmo( secondaryName );	
+	
+	// only give the deathstreak for the initial spawn for this life.
+	if( self.pers["cur_death_streak"] > 0 )
+	{
+		if ( loadoutDeathStreak != "specialty_null" )
+		{
+			deathVal = int( tableLookup( "mp/perkTable.csv", 1, loadoutDeathStreak, 6 ) );
+					
+			if ( self getPerkUpgrade( loadoutPerk1 ) == "specialty_rollover" || self getPerkUpgrade( loadoutPerk2 ) == "specialty_rollover" || self getPerkUpgrade( loadoutPerk3 ) == "specialty_rollover" )
+				deathVal -= 1;
+			
+			if ( self.pers["cur_death_streak"] == deathVal )
+			{
+				self thread maps\mp\perks\_perks::givePerk( loadoutDeathStreak );
+				self thread maps\mp\gametypes\_hud_message::splashNotify( loadoutDeathStreak );
+			}
+			else if ( self.pers["cur_death_streak"] > deathVal )
+			{
+				self thread maps\mp\perks\_perks::givePerk( loadoutDeathStreak );
+			}
+		}
+	}
 
 	// Primary Weapon
 	primaryName = buildWeaponName( loadoutPrimary, loadoutPrimaryAttachment, loadoutPrimaryAttachment2 );
@@ -530,24 +603,42 @@ giveLoadout( team, class, allowCopycat )
 	
 	// Secondary Offhand
 	offhandSecondaryWeapon = loadoutOffhand + "_mp";
-	if ( loadoutOffhand == "flash_grenade" )
-		self SetOffhandSecondaryClass( "flash" );
-	else
-		self SetOffhandSecondaryClass( "smoke" );
 	
-	self giveWeapon( offhandSecondaryWeapon );
-	if( loadOutOffhand == "smoke_grenade" )
-		self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
-	else if( loadOutOffhand == "flash_grenade" )
-		self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
-	else if( loadOutOffhand == "concussion_grenade" )
-		self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
-	else
-		self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
+	if ( loadoutOffhand == "none" )
+		self SetOffhandSecondaryClass( "none" );
+	else if ( loadoutOffhand == "flash_grenade" )
+		self SetOffhandSecondaryClass( "flash" );
+	else if ( loadoutOffhand == "smoke_grenade" || loadoutOffhand == "concussion_grenade" )
+		self SetOffhandSecondaryClass( "smoke" );	
+	else 
+		self SetOffhandSecondaryClass( "flash" );
+	
+	switch( loadoutOffhand )
+	{
+		case "none":
+			break;
+		default:
+			self giveWeapon( offhandSecondaryWeapon );
+	
+			if ( loadOutOffhand == "flash_grenade" )
+				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
+			else if( loadOutOffhand == "concussion_grenade" )
+				self setWeaponAmmoClip( offhandSecondaryWeapon, 2 );
+			else
+				self setWeaponAmmoClip( offhandSecondaryWeapon, 1 );
+			break;
+	}
 	
 	primaryWeapon = primaryName;
 	self.primaryWeapon = primaryWeapon;
 	self.secondaryWeapon = secondaryName;
+	
+	//	clear ammo for created default classes using placeholder gun when primary and secondary was set to none
+	if ( clearAmmo )
+	{
+		self SetWeaponAmmoClip( self.primaryWeapon, 0 );
+		self SetWeaponAmmoStock( self.primaryWeapon, 0 );
+	}
 
 	self maps\mp\gametypes\_teams::playerModelForWeapon( self.pers["primaryWeapon"], getBaseWeaponName( secondaryName ) );
 		
@@ -703,7 +794,6 @@ trackRiotShield()
 	}
 }
 
-
 tryAttach( placement ) // deprecated; hopefully we won't need to bring this defensive function back
 {
 	if ( !isDefined( placement ) || placement != "back" )
@@ -746,8 +836,6 @@ tryDetach( placement ) // deprecated; hopefully we won't need to bring this defe
 	}
 	return;
 }
-
-
 
 buildWeaponName( baseName, attachment1, attachment2 )
 {
@@ -813,7 +901,6 @@ buildWeaponName( baseName, attachment1, attachment2 )
 	else
 		return ( weaponName + "_mp" );
 }
-
 
 makeLettersToNumbers()
 {
@@ -934,7 +1021,6 @@ setKillstreaks( streak1, streak2, streak3 )
 	self.killstreaks = newKillstreaks;
 }
 
-
 replenishLoadout() // used by ammo hardpoint.
 {
 	team = self.pers["team"];
@@ -959,7 +1045,6 @@ replenishLoadout() // used by ammo hardpoint.
  		self SetWeaponAmmoClip( level.classGrenades[class]["secondary"]["type"], level.classGrenades[class]["secondary"]["count"] );	
 }
 
-
 onPlayerConnecting()
 {
 	for(;;)
@@ -970,14 +1055,18 @@ onPlayerConnecting()
 		{
 			player.pers["class"] = "";
 		}
+		if ( !isDefined( player.pers["lastClass"] ) )
+		{
+			player.pers["lastClass"] = "";
+		}
 		player.class = player.pers["class"];
-		player.lastClass = "";
+		player.lastClass = player.pers["lastClass"];
 		player.detectExplosives = false;
 		player.bombSquadIcons = [];
 		player.bombSquadIds = [];
 	}
-}
 
+}
 
 fadeAway( waitDelay, fadeDelay )
 {
@@ -986,7 +1075,6 @@ fadeAway( waitDelay, fadeDelay )
 	self fadeOverTime( fadeDelay );
 	self.alpha = 0;
 }
-
 
 setClass( newClass )
 {
@@ -1002,7 +1090,6 @@ getPerkForClass( perkSlot, className )
     else
         return table_getPerk( level.classTableName, class_num, perkSlot );
 }
-
 
 classHasPerk( className, perkName )
 {
