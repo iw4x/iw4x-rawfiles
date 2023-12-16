@@ -274,49 +274,51 @@
 		open										"settings_quick_gtnw"; \
 	}
 
-menuDef
 {
-	name											MENU_NAME
-	fullscreen										1
-	rect											0 0 640 480
-	foreColor										CHOICE_TEXTCOLOR
-	focusColor										CHOICE_TEXTCOLOR
-	soundLoop										MENU_MUSIC
-	fadeCycle										1
-	fadeClamp										1
-	fadeAmount										0.1
+	menuDef
+	{
+		name											MENU_NAME
+		fullscreen										1
+		rect											0 0 640 480
+		foreColor										CHOICE_TEXTCOLOR
+		focusColor										CHOICE_TEXTCOLOR
+		soundLoop										MENU_MUSIC
+		fadeCycle										1
+		fadeClamp										1
+		fadeAmount										0.1
 
-	MENU_ON_OPEN(ON_MENU_OPEN)
-	MENU_ON_CLOSE(ON_MENU_CLOSE)
-	MENU_ON_ESC(ON_MENU_ESC)
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
 
-	#define BACKGROUND_IW4
-	#include "ui_mp/bg.inc"
+		#define BACKGROUND_IW4
+		#include "ui_mp/bg.inc"
 
-	ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
+		ITEM_NEWSTICKER_VIS("", 1, NEWSTICKER_SPEED)
 
-	MENU_PANEL_SETTINGS
+		MENU_PANEL_SETTINGS
 
-	MENU_CHOICE_TITLE(MENU_TITLE, 18)
+		MENU_CHOICE_TITLE(MENU_TITLE, 18)
 
-	MENU_CHOICE_BUTTON(0, button_0, "@MENU_START_GAME_CAPS", ACTION_START, "@NULL_EMPTY")
+		MENU_CHOICE_BUTTON(0, button_0, "@MENU_START_GAME_CAPS", ACTION_START, "@NULL_EMPTY")
 
-	MENU_CHOICE_HORIZONTAL_LINE(1)
+		MENU_CHOICE_HORIZONTAL_LINE(1)
 	
-	MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_LOADING_MAPS", "", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") != 0))
-	MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_CHANGE_MAP_CAPS", open "settings_map", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") == 0))
-	MENU_CHOICE_BUTTON(2, button_2, "@MENU_CHANGE_GAME_MODE_CAPS", open "settings_gametype", "@NULL_EMPTY")
-	MENU_CHOICE_BUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", ACTION_RULES, "@NULL_EMPTY", when(dvarString(ui_gametype) != "arena" && dvarString(ui_gametype) != "oneflag"))
-	MENU_CHOICE_DBUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", "@NULL_EMPTY", when(dvarString(ui_gametype) == "arena" || dvarString(ui_gametype) == "oneflag"))
+		MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_LOADING_MAPS", "", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") != 0))
+		MENU_CHOICE_BUTTON_VIS(1, button_1, "@MENU_CHANGE_MAP_CAPS", open "settings_map", "@NULL_EMPTY", when(dvarint("g_loadingInitialZones") == 0))
+		MENU_CHOICE_BUTTON(2, button_2, "@MENU_CHANGE_GAME_MODE_CAPS", open "settings_gametype", "@NULL_EMPTY")
+		MENU_CHOICE_BUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", ACTION_RULES, "@NULL_EMPTY", when(dvarString(ui_gametype) != "arena" && dvarString(ui_gametype) != "oneflag"))
+		MENU_CHOICE_DBUTTON_VIS(3, button_3, "@MENU_CHANGE_GAME_RULES_CAPS", "@NULL_EMPTY", when(dvarString(ui_gametype) == "arena" || dvarString(ui_gametype) == "oneflag"))
 
-	MENU_CHOICE_HORIZONTAL_LINE(4)
-	MENU_CHOICE_BUTTON(4, button_4, "@MENU_PASSWORD_CAPS", open "popup_serverpassword", "@NULL_EMPTY")
+		MENU_CHOICE_HORIZONTAL_LINE(4)
+		MENU_CHOICE_BUTTON(4, button_4, "@MENU_PASSWORD_CAPS", open "popup_serverpassword", "@NULL_EMPTY")
 
-	MENU_CHOICE_HORIZONTAL_LINE(5)
-	MENU_CHOICE_BUTTON(5, button_5, "@PLATFORM_BACK_CAPS", close self;, "@NULL_EMPTY")
+		MENU_CHOICE_HORIZONTAL_LINE(5)
+		MENU_CHOICE_BUTTON(5, button_5, "@PLATFORM_BACK_CAPS", close self;, "@NULL_EMPTY")
 
-	MENU_ITEM_NAT_TYPE
-	MENU_PANEL_MAP_PREVIEW
+		MENU_ITEM_NAT_TYPE
+		MENU_PANEL_MAP_PREVIEW
 
-	ITEM_BUTTON_FRIENDS(-120)
+		ITEM_BUTTON_FRIENDS(-120)
+	}
 }

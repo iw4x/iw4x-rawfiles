@@ -10,7 +10,7 @@
 		style 1
 		foreColor 1 1 1 1
 		backColor 1 1 1 1
-		background white
+		background "white"
 		exp rect Y ( localvarfloat( "ui_cac_popup_ypos" )  )
 		exp rect H ( CALCULATED_HEIGHT )
 		fadeCycle 1
@@ -66,7 +66,7 @@
 			background white
 			decoration
 			visible 1
-			exp rect H (  )
+			exp rect H ( CALCULATED_HEIGHT )
 		}
 		itemDef
 		{

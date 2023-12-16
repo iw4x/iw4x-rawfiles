@@ -80,7 +80,7 @@
 			bordercolor 1 1 1 0.15
 			outlinecolor 1 1 1 0.2
 			feeder FEEDER_PLAYER_LIST
-			columns 1 2 190 25
+			columns 1 2 190 25 0
 			mouseEnter 
 			{
 				setitemcolor "maplist";

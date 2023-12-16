@@ -30,35 +30,37 @@
 #define ON_MENU_KEY_ENTER \
 	uiScript														"JoinServer";
 
-menuDef
 {
-	name															MENU_NAME
-	fullscreen														1
-	rect															0 0 640 480
-	foreColor														CHOICE_TEXTCOLOR
-	focusColor														CHOICE_TEXTCOLOR
-	soundLoop														MENU_MUSIC
-	fadeCycle														1
-	fadeClamp														1
-	fadeAmount														0.1
+	menuDef
+	{
+		name															MENU_NAME
+		fullscreen														1
+		rect															0 0 640 480
+		foreColor														CHOICE_TEXTCOLOR
+		focusColor														CHOICE_TEXTCOLOR
+		soundLoop														MENU_MUSIC
+		fadeCycle														1
+		fadeClamp														1
+		fadeAmount														0.1
 
-	MENU_ON_OPEN(ON_MENU_OPEN)
-	MENU_ON_ESC(ON_MENU_ESC)
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_ESC(ON_MENU_ESC)
 
-	MENU_EXEC_KEYINT(KEYINT_F5, ON_MENU_KEY_F5)
-	MENU_EXEC_KEYINT(KEYINT_ENTER, ON_MENU_KEY_ENTER)
+		MENU_EXEC_KEYINT(KEYINT_F5, ON_MENU_KEY_F5)
+		MENU_EXEC_KEYINT(KEYINT_ENTER, ON_MENU_KEY_ENTER)
 
-	#define DISABLE_SIDEBAR
-	#include "ui_mp/bg.inc"
+		#define DISABLE_SIDEBAR
+		#include "ui_mp/bg.inc"
 
-	#include "ui_mp/joinserver.inc"
+		#include "ui_mp/joinserver.inc"
 
-	ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
-	
-	BUTTON_FOOTER(-310, 100, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
-	BUTTON_FOOTER_VIS(-194, 140, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
-	BUTTON_FOOTER_VIS(-194, 140, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
-	BUTTON_FOOTER(-34, 100, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
-	BUTTON_FOOTER(86, 100, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
-	BUTTON_FOOTER(206, 100, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
+		ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
+		
+		BUTTON_FOOTER(-310, 100, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
+		BUTTON_FOOTER_VIS(-194, 140, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
+		BUTTON_FOOTER_VIS(-194, 140, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
+		BUTTON_FOOTER(-34, 100, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
+		BUTTON_FOOTER(86, 100, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
+		BUTTON_FOOTER(206, 100, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
+	}
 }

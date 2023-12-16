@@ -109,58 +109,6 @@
 #define SV_INFO_TABLE_WIDTH							496
 #define SV_INFO_TABLE_HEIGHT						160
 
-#define SV_INFO_TABLE_HEADER \
-	itemDef \
-	{ \
-		name										"num" \
-		rect										(SV_INFO_TABLE_POS_X + 4) (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0 \
-		foreColor									CHOICE_TEXTCOLOR \
-		textFont									UI_FONT_NORMAL \
-		textScale									0.3 \
-		textAlignX									4 \
-		decoration									\
-		visible										1 \
-		text										"#" \
-	} \
-	itemDef \
-	{ \
-		name										"name" \
-		rect										88 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0 \
-		foreColor									CHOICE_TEXTCOLOR \
-		textFont									UI_FONT_NORMAL \
-		textScale									0.3 \
-		textAlignX									4 \
-		decoration									\
-		visible										1 \
-		text										"@MENU_NAME" \
-	} \
-	itemDef \
-	{ \
-		name										"score" \
-		rect										353 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0 \
-		foreColor									CHOICE_TEXTCOLOR \
-		textFont									UI_FONT_NORMAL \
-		textScale									0.3 \
-		textAlignX									4 \
-		decoration									\
-		visible										1 \
-		text										"@MPUI_SCORE" \
-	} \
-	itemDef \
-	{ \
-		name										"ping" \
-		rect										455 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0 \
-		foreColor									CHOICE_TEXTCOLOR \
-		textFont									UI_FONT_NORMAL \
-		textScale									0.3 \
-		textAlignX									4 \
-		decoration									\
-		visible										1 \
-		text										"@MENU_PING" \
-	}
-
-#define MENU_NAME									"serverinfo_popmenu"
-
 #define KEYINT_F5									171
 
 #define POPMENU_POS_X								-250
@@ -184,63 +132,111 @@
 #define ON_KEY_PRESS_F5 \
 	uiScript										"ServerStatus";
 
-menuDef
 {
-	name											MENU_NAME
-	rect											POPMENU_RECT
-	popup
-	legacySplitScreenScale
-	style											WINDOW_STYLE_FILLED
-	foreColor										CHOICE_TEXTCOLOR
-	focusColor										CHOICE_TEXTCOLOR
-	backColor										1 1 1 1
-	background										"white"
-	MENU_ON_OPEN(ON_MENU_OPEN)
-	MENU_ON_CLOSE(ON_MENU_CLOSE)
-	MENU_ON_ESC(ON_MENU_ESC)
-	MENU_EXEC_KEYINT(KEYINT_F5, ON_KEY_PRESS_F5)
-
-	POPUP_BACKGROUND_BASE
-	POPUP_TITLE(dvarString("uiSi_ServerName"))
-
-	SV_INFO_FIELD(1, "@MPUI_MAX_CLIENTS", dvarString("uiSi_MaxClients"))
-	SV_INFO_FIELD(2, "@MPUI_IS_PRIVATE", dvarString("uiSi_isPrivate"))
-	SV_INFO_FIELD(3, "@MPUI_RULES_HARDCORE", dvarString("uiSi_Hardcore"))
-	SV_INFO_FIELD(4, "@MPUI_RULES_AIMASSIST", dvarString("uiSi_aimAssist"))
-	SV_INFO_FIELD(5, "@MPUI_RULES_VOICECHAT", dvarString("uiSi_voiceChat"))
-	SV_INFO_FIELD(6, "@MPUI_MOD", dvarString("uiSi_ModName"))
-
-	SV_INFO_MAP_PREVIEW_VIS(("loadscreen_mp_bonusmaps"), when(dvarString("uiSi_MapName") == ""))
-	SV_INFO_MAP_PREVIEW_VIS(("preview_" + dvarString("uiSi_MapName")), when(dvarString("uiSi_MapName") != ""))
-
-	SV_INFO_SECURITY_LEVEL_VIS(6, 1)
-
-	SV_INFO_TABLE_HEADER
-
-	itemDef
+	menuDef
 	{
-		rect										SV_INFO_TABLE_POS_X SV_INFO_TABLE_POS_Y SV_INFO_TABLE_WIDTH SV_INFO_TABLE_HEIGHT
-		type										ITEM_TYPE_LISTBOX
-		style										WINDOW_STYLE_FILLED
-		foreColor									CHOICE_TEXTCOLOR
-		backColor									0 0 0 0.5
-		textFont									UI_FONT_NORMAL
-		textScale									.25
-		border										1
-		borderSize									1
-		borderColor									1 1 1 0.1
-		feeder										FEEDER_SERVERSTATUS
-		elementWidth								120
-		elementHeight								16
-		notselectable
-		visible										1
-//		numcols					xpos			xwidth			textlen			alignment
-		columns 4				8				2				2				0
-								80				16				16				0
-								345				4				4				0
-								447				4				4				0
-	}
+		name											"serverinfo_popmenu"
+		rect											POPMENU_RECT
+		popup
+		legacySplitScreenScale
+		style											WINDOW_STYLE_FILLED
+		foreColor										CHOICE_TEXTCOLOR
+		focusColor										CHOICE_TEXTCOLOR
+		backColor										1 1 1 1
+		background										"white"
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
+		MENU_EXEC_KEYINT(KEYINT_F5, ON_KEY_PRESS_F5)
 
-	POPUP_BUTTON_FOOTER(330, "@PLATFORM_REFRESH", uiScript "ServerStatus";)
-	POPUP_BUTTON_FOOTER(350, "@MENU_CLOSE", close self;)
+		POPUP_BACKGROUND_BASE
+		POPUP_TITLE(dvarString("uiSi_ServerName"))
+
+		SV_INFO_FIELD(1, "@MPUI_MAX_CLIENTS", dvarString("uiSi_MaxClients"))
+		SV_INFO_FIELD(2, "@MPUI_IS_PRIVATE", dvarString("uiSi_isPrivate"))
+		SV_INFO_FIELD(3, "@MPUI_RULES_HARDCORE", dvarString("uiSi_Hardcore"))
+		SV_INFO_FIELD(4, "@MPUI_RULES_AIMASSIST", dvarString("uiSi_aimAssist"))
+		SV_INFO_FIELD(5, "@MPUI_RULES_VOICECHAT", dvarString("uiSi_voiceChat"))
+		SV_INFO_FIELD(6, "@MPUI_MOD", dvarString("uiSi_ModName"))
+
+		SV_INFO_MAP_PREVIEW_VIS(("loadscreen_mp_bonusmaps"), when(dvarString("uiSi_MapName") == ""))
+		SV_INFO_MAP_PREVIEW_VIS(("preview_" + dvarString("uiSi_MapName")), when(dvarString("uiSi_MapName") != ""))
+
+		SV_INFO_SECURITY_LEVEL_VIS(6, 1)
+
+		itemDef
+		{
+			name										"num"
+			rect										(SV_INFO_TABLE_POS_X + 4) (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0
+			foreColor									CHOICE_TEXTCOLOR
+			textFont									UI_FONT_NORMAL
+			textScale									0.3
+			textAlignX									4
+			visible										1
+			text										"#"
+		}
+
+		itemDef
+		{
+			name										"name"
+			rect										88 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0
+			foreColor									CHOICE_TEXTCOLOR
+			textFont									UI_FONT_NORMAL
+			textScale									0.3
+			textAlignX									4
+			visible										1
+			text										"@MENU_NAME"
+		}
+
+		itemDef
+		{
+			name										"score"
+			rect										353 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0
+			foreColor									CHOICE_TEXTCOLOR
+			textFont									UI_FONT_NORMAL
+			textScale									0.3
+			textAlignX									4
+			visible										1
+			text										"@MPUI_SCORE"
+		}
+
+		itemDef
+		{
+			name										"ping"
+			rect										455 (SV_INFO_TABLE_POS_Y - 2) 30 18 0 0
+			foreColor									CHOICE_TEXTCOLOR
+			textFont									UI_FONT_NORMAL
+			textScale									0.3
+			textAlignX									4
+			visible										1
+			text										"@MENU_PING"
+		}
+
+		itemDef
+		{
+			rect										SV_INFO_TABLE_POS_X SV_INFO_TABLE_POS_Y SV_INFO_TABLE_WIDTH SV_INFO_TABLE_HEIGHT
+			type										ITEM_TYPE_LISTBOX
+			style										WINDOW_STYLE_FILLED
+			foreColor									CHOICE_TEXTCOLOR
+			backColor									0 0 0 0.5
+			textFont									UI_FONT_NORMAL
+			textScale									.25
+			border										1
+			borderSize									1
+			borderColor									1 1 1 0.1
+			feeder										FEEDER_SERVERSTATUS
+			elementWidth								120
+			elementHeight								16
+			notselectable
+			visible										1
+	//		numcols					xpos			xwidth			textlen			alignment
+			columns 4				8				2				2				0
+									80				16				16				0
+									345				4				4				0
+									447				4				4				0
+		}
+
+		POPUP_BUTTON_FOOTER(330, "@PLATFORM_REFRESH", uiScript "ServerStatus";)
+		POPUP_BUTTON_FOOTER(350, "@MENU_CLOSE", close self;)
+	}
 }

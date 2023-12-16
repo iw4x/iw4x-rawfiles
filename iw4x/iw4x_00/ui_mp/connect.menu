@@ -258,7 +258,9 @@
 			text "@MENU_INTEL"
 			visible when ( dvarbool( "wideScreen" ) )
 		}
-		/*itemDef
+
+#ifdef DRAW_IW_LOGO
+		itemDef
 		{
 			//rect -104 -56 128 64 3 3
 			rect -170 -66 128 64 3 3
@@ -280,6 +282,7 @@
 			background "logo_iw"
 			textscale 0.55
 			visible when ( !dvarbool( "wideScreen" ) )
-		}*/
+		}
+#endif
 	}
 }
