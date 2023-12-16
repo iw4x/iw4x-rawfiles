@@ -425,7 +425,7 @@
 			textalignx -60
 			textscale 0.375
 			text "@MPUI_CHANGE_TEAM"
-			disabled when ( !( dvarbool( "ui_allow_teamchange" ) && ( !dvarbool( "onlinegame" ) || dvarbool( "xblive_privatematch" ) ) ) )
+			disabled when ( !( dvarbool( "ui_allow_teamchange" ) && ( dvarbool( "xblive_privatematch" ) ) ) )
 			action
 			{
 				play "mouse_click";
@@ -596,7 +596,7 @@
 			textalign 6
 			textalignx -60
 			textscale 0.375
-			disabled when(!dvarBool("g_allowvote"))
+			disabled when(!dvarBool("g_allowvote") || dvarbool("xblive_privatematch"))
 			text "@MPUI_CALL_VOTE"
 			action
 			{
