@@ -101,6 +101,6 @@ $(document).ready(function()
 
     $("#footer").click(function()
     {
-        location.replace("https://xlabs.dev");
+        location.replace("https://alterware.dev/");
     });
 });

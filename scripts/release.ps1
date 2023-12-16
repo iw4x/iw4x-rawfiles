@@ -34,40 +34,17 @@ Copy-Item -Path "${rawFilesPath}\zone" -Destination "${rawFilesPath}\release\tem
 Write-Host "Done copying zone files.`n"
 
 # Create iw4x_00.iwd
-Write-Host "Compressing iw4x_00.zip..."
-Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\iw4x_00\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\iw4x_00.zip"
-Write-Host "Renaming iw4x_00.zip to iw4x_00.iwd..."
-Move-Item -Path "${rawFilesPath}\release\temp\iw4x\iw4x_00.zip" -Destination "${rawFilesPath}\release\temp\iw4x\iw4x_00.iwd"
-Write-Host "Cleaning up iw4x_00 directory..."
-Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_00"
-Write-Host "Finished compressing iw4x_00.iwd`n"
-
-# Create iw4x_01.iwd
-Write-Host "Compressing iw4x_01.zip..."
-Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\iw4x_01\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\iw4x_01.zip"
-Write-Host "Renaming iw4x_01.zip to iw4x_01.iwd..."
-Move-Item -Path "${rawFilesPath}\release\temp\iw4x\iw4x_01.zip" -Destination "${rawFilesPath}\release\temp\iw4x\iw4x_01.iwd"
-Write-Host "Cleaning up iw4x_01 directory..."
-Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_01"
-Write-Host "Finished compressing iw4x_01.iwd`n"
-
-# Create iw4x_02.iwd
-Write-Host "Compressing iw4x_02.zip..."
-Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\iw4x_02\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\iw4x_02.zip"
-Write-Host "Renaming iw4x_02.zip to iw4x_02.iwd..."
-Move-Item -Path "${rawFilesPath}\release\temp\iw4x\iw4x_02.zip" -Destination "${rawFilesPath}\release\temp\iw4x\iw4x_02.iwd"
-Write-Host "Cleaning up iw4x_02 directory..."
-Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_02"
-Write-Host "Finished compressing iw4x_02.iwd`n"
-
-# Create iw4x_02.iwd
-Write-Host "Compressing iw4x_03.zip..."
-Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\iw4x_03\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\iw4x_03.zip"
-Write-Host "Renaming iw4x_03.zip to iw4x_03.iwd..."
-Move-Item -Path "${rawFilesPath}\release\temp\iw4x\iw4x_03.zip" -Destination "${rawFilesPath}\release\temp\iw4x\iw4x_03.iwd"
-Write-Host "Cleaning up iw4x_03 directory..."
-Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\iw4x_03"
-Write-Host "Finished compressing iw4x_03.iwd`n"
+for ($i = 0; $i -lt 6; $i++)
+{ 
+    ${archName} = ("iw4x_{0:D2}" -f $i)
+    Write-Host "Compressing ${archName}.zip..."
+    Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\${archName}\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\${archName}.zip"
+    Write-Host "Renaming ${archName}.zip to ${archName}.iwd..."
+    Move-Item -Path "${rawFilesPath}\release\temp\iw4x\${archName}.zip" -Destination "${rawFilesPath}\release\temp\iw4x\${archName}.iwd"
+    Write-Host "Cleaning up ${archName} directory..."
+    Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\${archName}"
+    Write-Host "Finished compressing ${archName}.iwd`n"
+}
 
 # Create release.zip
 if (Test-Path -Path "${rawFilesPath}\release\release.zip") {
