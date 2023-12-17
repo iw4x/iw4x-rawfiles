@@ -365,7 +365,7 @@
 }
 
 {
-  map           "mp_crossfire"
+  map           "mp_cross_fire"
   longname      "MPUI_CROSSFIRE"
   gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
   description   "MPUI_DESC_MAP_CROSSFIRE"
@@ -374,6 +374,7 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "forest"
+  useteamzones "true"
 }
 
 {
@@ -386,6 +387,7 @@
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
   environment   "forest"
+  useteamzones "true"
 }
 
 {
@@ -397,6 +399,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
+  useteamzones "true"
   environment   "forest"
 }
 
@@ -410,6 +413,7 @@
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
   environment   "forest"
+  useteamzones "true"
 }
 
 {
