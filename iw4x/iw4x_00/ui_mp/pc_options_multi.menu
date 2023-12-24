@@ -84,18 +84,18 @@
 
 		PC_OPTIONS_SEPERATOR(0)
 
-		PC_OPTIONS_FLOATLIST_RAW(1, "@MENU_MAXPACKETS", "cl_maxpackets", {"30" 30 "100" 100 "125" 125}, ;, ;, when(0), 1)
-		PC_OPTIONS_FLOATLIST_RAW(2, "@MENU_SNAPS", "snaps", {"20" 20 "30" 30}, ;, ;, when(0), 1)
+		PC_OPTIONS_FLOATLIST_RAW(1, "@MENU_MAXPACKETS", "cl_maxpackets", {"30" 30 "100" 100 "125" 125}, ;, "@MENU_DESC_MAXPACKETS", when(0), 1)
+		PC_OPTIONS_FLOATLIST_RAW(2, "@MENU_SNAPS", "snaps", {"20" 20 "30" 30}, ;, "@MENU_DESC_SNAPS", when(0), 1)
 
 		PC_OPTIONS_SEPERATOR(2)
 
 		PC_OPTIONS_DVARYESNO(3, "@MENU_LAGOMETER", "drawLagometer", ;, when(0))
-		PC_OPTIONS_STRLIST_RAW(4, "@MENU_DRAWFPS", "cg_drawFPS", {"Off"; "Off"; "Simple"; "Simple"; "SimpleRanges"; "SimpleRanges"; "Verbose"; "Verbose"; "Verbose+Viewpos"; "Verbose+Viewpos"}, ;, ;, when(0), 1)
-		PC_OPTIONS_DVARYESNO(5, "@MENU_FPSLABELS", "cg_drawFPSLabels", ;, when(0))
+		PC_OPTIONS_STRLIST_RAW(4, "@MENU_DRAWFPS", "cg_drawFPS", {"Off"; "Off"; "Simple"; "Simple"; "SimpleRanges"; "SimpleRanges"; "Verbose"; "Verbose"; "Verbose+Viewpos"; "Verbose+Viewpos"}, ;, "@MENU_DRAWFPS_DESC", when(0), 1)
+		PC_OPTIONS_DVARYESNO(5, "@MENU_FPSLABELS", "cg_drawFPSLabels", "@MENU_DESC_FPSLABELS", when(0))
 
 		PC_OPTIONS_SEPERATOR(5)
 
 		PC_OPTIONS_DVARYESNO_RAW(6, "@MENU_STREAMFRIENDLY_UI", "ui_streamFriendly", ;, "@MPUI_DESC_STREAM_FRIENDLY_UI", when(0), 1)
-		PC_OPTIONS_FLOATLIST_RAW(7, "@MENU_FRIENDNOTIFY", "cl_notifyFriendState", {"Always" -1 "Never" 0 "in Menu" 1}, ;, "@MPUI_DESC_FRIENDNOTIFY", when(dvarBool("ui_streamFriendly")), 1)
+		PC_OPTIONS_DVARYESNO(7, "@MENU_FRIENDNOTIFY", "cl_notifyFriendState", "@MPUI_DESC_FRIENDNOTIFY", when(dvarBool("ui_streamFriendly")))
 	}
 }
