@@ -360,7 +360,7 @@ REFERENCE			MENU_FRIENDNOTIFY
 LANG_ENGLISH		"Friend Notifications"
 
 REFERENCE			MPUI_DESC_FRIENDNOTIFY
-LANG_ENGLISH		"When should the friend status notifications be displayed?"
+LANG_ENGLISH		"Where should the friend status notifications be displayed?"
 
 REFERENCE			MPUI_DESC_OPTIONS
 LANG_ENGLISH		"Set your game options."
