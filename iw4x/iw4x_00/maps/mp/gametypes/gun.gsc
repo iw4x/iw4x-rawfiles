@@ -189,11 +189,10 @@ waitLoadoutDone()
 	
 	self waittill( "spawned_player" );
 	
-	self _setPerk( "specialty_bling" );
 	self giveNextGun( true );
 }
 
-onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )
+onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration, lifeId )
 {
 	if ( sMeansOfDeath == "MOD_FALLING" || ( isDefined( attacker ) && isPlayer( attacker ) ) )
 	{

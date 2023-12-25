@@ -33,10 +33,13 @@ getLosingPlayers()
 }
 
 
-givePlayerScore( event, player, victim, overridePointsPopup )
+givePlayerScore( event, player, victim, overrideCheckPlayerScoreLimitSoon, overridePointsPopup )
 {
 	if ( isDefined( level.nukeIncoming ) )
 		return;
+	
+	if ( !isDefined( overrideCheckPlayerScoreLimitSoon ) )
+		overrideCheckPlayerScoreLimitSoon = false;
 		
 	if ( !isDefined( overridePointsPopup ) )
 		overridePointsPopup = false;	
@@ -58,7 +61,11 @@ givePlayerScore( event, player, victim, overridePointsPopup )
 	if ( !level.teambased )
 		thread sendUpdatedDMScores();
 	
-	player maps\mp\gametypes\_gamelogic::checkPlayerScoreLimitSoon();
+	//	player score and team score aren't always the same values towards winning the match
+	//	checkScoreLimit() checks team score correctly, checkPlayerScoreLimitSoon() uses player score
+	if ( !overrideCheckPlayerScoreLimitSoon )
+		player maps\mp\gametypes\_gamelogic::checkPlayerScoreLimitSoon();
+		
 	scoreEndedMatch = player maps\mp\gametypes\_gamelogic::checkScoreLimit();
 	
 	if ( scoreEndedMatch && event == "kill" )
