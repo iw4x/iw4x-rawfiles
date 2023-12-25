@@ -505,6 +505,9 @@ LANG_ENGLISH        "Use Direct3D 9Ex."
 REFERENCE           MPUI_DESC_DEMOS_KEEP
 LANG_ENGLISH        "Define how many of your recordings should be saved, before the oldest ones get deleted."
 
+REFERENCE           MPUI_DESC_ENABLE_VOICE_CHAT
+LANG_ENGLISH        "Use voice communications"
+
 REFERENCE           MPUI_DESC_FOV
 LANG_ENGLISH        "Adjust your field of view."
 
