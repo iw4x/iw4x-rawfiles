@@ -250,7 +250,7 @@
 			action
 			{
 				play "mouse_click";
-				exec "getautoupdate";
+				uiScript "getAutoUpdate";
 			}
 			onFocus
 			{
