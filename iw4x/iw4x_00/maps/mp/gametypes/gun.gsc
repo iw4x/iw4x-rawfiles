@@ -115,7 +115,7 @@ onStartGameType()
 	allowed = [];
 	maps\mp\gametypes\_gameobjects::main(allowed);
 	
-	// Prevent class and team change
+	// Prevent class and team change. TODO: Must be disabled in _menus.gsc as well
 	setDvar( "ui_allow_classchange", 0 );
 	setdvar( "ui_allow_teamchange", 0 );	
 
@@ -382,6 +382,8 @@ refillSingleCountAmmo()
 
 initGunHUD()
 {
+	if ( self isTestClient() ) return;
+
 	self.gun_progressDisplay[0] = self createFontString( "small", 1.6 );	
 	self.gun_progressDisplay[0] setPoint( "TOP LEFT", "TOP LEFT", 115, 5 );
 	self.gun_progressDisplay[0] setText( &"MP_WEAPON" );
@@ -402,11 +404,14 @@ initGunHUD()
 
 updateGunHUD()
 {
+	if ( self isTestClient() ) return;
 	self.gun_progressDisplay[1] setText( (self.gunGameGunIndex+1) + " / " + level.gun_guns.size );
 }
 
 hideInKillCam()
 {
+    if ( self isTestClient() ) return;
+
     self endon( "disconnect" );
     var_0 = 1;
 
@@ -431,6 +436,8 @@ hideInKillCam()
 
 hideOnGameEnd()
 {
+    if ( self isTestClient() ) return;
+
     self endon( "disconnect" );
     level waittill( "game_ended" );
 	
