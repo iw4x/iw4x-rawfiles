@@ -32,7 +32,11 @@ init()
 	
 		if ( !level.console )
 		{
+			game["menu_callvote"] = "callvote";
+			game["menu_kickplayer"] = "kickplayer";
 			game["menu_muteplayer"] = "muteplayer";
+			precacheMenu(game["menu_callvote"]);
+			precacheMenu(game["menu_kickplayer"]);
 			precacheMenu(game["menu_muteplayer"]);			
 		}
 		else
