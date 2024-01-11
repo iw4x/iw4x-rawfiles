@@ -153,8 +153,7 @@
 	ON_MENU_KEY_K_APAD_RIGHT
 
 #define ON_MENU_KEY_K_F1 \
-	open											"popup_summary"; \
-	play											CHOICE_CLICK_SOUND;
+	open											"popup_summary";
 
 {
 	menuDef

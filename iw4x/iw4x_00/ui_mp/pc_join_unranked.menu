@@ -24,7 +24,6 @@
 	close															self;
 
 #define ON_MENU_KEY_F5 \
-	play															CHOICE_CLICK_SOUND; \
 	uiScript														"RefreshServers";
 
 #define ON_MENU_KEY_ENTER \
