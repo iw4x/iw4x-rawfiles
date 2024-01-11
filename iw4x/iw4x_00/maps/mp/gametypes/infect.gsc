@@ -21,12 +21,13 @@ main()
 	// don't sit there waiting for both teams to contain players,
     // as everyone starts a survivor
     level.prematchWaitForTeams = false;
-	level.onPrecacheGameType = ::onPrecacheGameType;
-	level.onStartGameType = ::onStartGameType;
-	level.onSpawnPlayer = ::onSpawnPlayer;
-	level.getSpawnPoint = ::getSpawnPoint;
-	level.onPlayerKilled = ::onPlayerKilled;
-	level.onTimeLimit = ::onTimeLimit;
+    level.onPrecacheGameType = ::onPrecacheGameType;
+    level.onStartGameType = ::onStartGameType;
+    level.onSpawnPlayer = ::onSpawnPlayer;
+    level.getSpawnPoint = ::getSpawnPoint;
+    level.onPlayerKilled = ::onPlayerKilled;
+    level.onDeadEvent = ::onDeadEvent;
+    level.onTimeLimit = ::onTimeLimit;
 	
 	level.infect_perks = [];
     level.infect_perks[level.infect_perks.size] = "specialty_marathon";
@@ -54,21 +55,22 @@ determineWinningTeam()
 
 onPrecacheGameType()
 {
-    precachestring( &"MP_CONSCRIPTION_STARTS_IN" );
+	precacheString( &"MP_CONSCRIPTION_STARTS_IN" );
 }
 
 onStartGameType()
 {
-    setclientnamemode( "auto_change" );
-    setObjectiveText( "allies", &"OBJECTIVES_INFECT" );
-    setObjectiveText( "axis", &"OBJECTIVES_INFECT" );
+	setClientNameMode("auto_change");
 
-    setObjectiveScoreText( "allies", &"OBJECTIVES_INFECT_SCORE" );
-    setObjectiveScoreText( "axis", &"OBJECTIVES_INFECT_SCORE" );
+	setObjectiveText( "allies", &"OBJECTIVES_INFECT" );
+	setObjectiveText( "axis", &"OBJECTIVES_INFECT" );
 
-    setObjectiveHintText( "allies", &"OBJECTIVES_INFECT_HINT" );
-    setObjectiveHintText( "axis", &"OBJECTIVES_INFECT_HINT" );
-	
+	setObjectiveScoreText( "allies", &"OBJECTIVES_INFECT_SCORE" );
+	setObjectiveScoreText( "axis", &"OBJECTIVES_INFECT_SCORE" );
+
+	setObjectiveHintText( "allies", &"OBJECTIVES_INFECT_HINT" );
+	setObjectiveHintText( "axis", &"OBJECTIVES_INFECT_HINT" );
+
 	level.spawnMins = ( 0, 0, 0 );
 	level.spawnMaxs = ( 0, 0, 0 );	
 	maps\mp\gametypes\_spawnlogic::addSpawnPoints( "allies", "mp_tdm_spawn" );
@@ -85,7 +87,7 @@ onStartGameType()
     maps\mp\gametypes\_rank::registerScoreInfo( "kill", 50 );
     maps\mp\gametypes\_rank::registerScoreInfo( "draft_rogue", 200 );
     maps\mp\gametypes\_rank::registerScoreInfo( "survivor", 50 );
-	
+
 	level.QuickMessageToAll = true;	
 	level.blockWeaponDrops = true;
 	level.infect_allowSuicide = false;
@@ -98,19 +100,18 @@ onStartGameType()
 	level.infect_timerDisplay.label = &"MP_DRAFT_STARTS_IN";
 	level.infect_timerDisplay.alpha = 0;
 	level.infect_timerDisplay.archived = false;
-	level.infect_timerDisplay.hideWhenInMenu = true;
+	level.infect_timerDisplay.hideWhenInMenu = true;	
 	
 	level.infect_choseFirstInfected = false;
 	level.infect_choosingFirstInfected = false;
 	level.infect_awardedFinalSurvivor = false;
-	level.infect_countdownInProgress = false;
 	
- 	level.infect_teamScores["axis"] = 0;
+	level.infect_teamScores["axis"] = 0;
 	level.infect_teamScores["allies"] = 0;	
 	level.infect_players = [];
 	
-    level thread onPlayerConnect();
-    level thread watchInfectForfeit();
+	level thread onPlayerConnect();	
+	level thread watchInfectForfeit();
 }
 
 onPlayerConnect()
@@ -118,50 +119,40 @@ onPlayerConnect()
     for (;;)
     {
         level waittill( "connected", player );
-		
         player.infect_firstSpawn = true;
-		player.infected_Rejoined = false;
-		player.infect_JoinedAtStart = true;
 
-		if( gameFlag( "prematch_done" ) )
-		{
-			player.infect_JoinedAtStart = false;
-		}
-		//	infected who quit and rejoined same game
-		if( IsDefined( level.infect_players[player.name] ) )
-		{
-			player.infected_Rejoined = true;
-		}
+        if ( gameFlag( "prematch_done" ) )
+            player.infect_joinedatstart = false;
+        else
+            player.infect_joinedatstart = true;
+
+        if ( isDefined( level.infect_players[player.name] ) )
+            player.infect_rejoined = true;
     }
 }
 
 getSpawnPoint()
-{
-    //	first time here?
+{	
+	//	first time here?
 	if ( self.infect_firstSpawn )
-    {
+	{
 		self.infect_firstSpawn = false;
 		
 		//	everyone is a gamemode class in infect, no class selection
 		self.pers["class"] = "gamemode";
 		self.pers["lastClass"] = "";
 		self.class = self.pers["class"];
-		self.lastClass = self.pers["lastClass"];	
+		self.lastClass = self.pers["lastClass"];
 
-		// survivors are allies
-		teamChoice = "allies";
-		
-		//	everyone starts as survivors, unless an infected quit and rejoined same game
-		if( self.infected_Rejoined )	
-		{
-			teamChoice = "axis";	
-		}
-		
-		self maps\mp\gametypes\_menus::addToTeam( teamChoice, true );	
+        if ( isDefined( self.infect_rejoined ) )
+            maps\mp\gametypes\_menus::addToTeam( "axis", true );
+        else
+            maps\mp\gametypes\_menus::addToTeam( "allies", true );
 
         thread onPlayerDisconnect();
-    }
-
+	
+	}
+		
 	if ( level.inGracePeriod )
 	{
 		spawnPoints = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_tdm_spawn" );
@@ -172,64 +163,59 @@ getSpawnPoint()
 		spawnPoints = maps\mp\gametypes\_spawnlogic::getTeamSpawnPoints( self.pers["team"] );
 		spawnPoint = maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam( spawnPoints );
 	}
-
-    return spawnPoint;	
+	
+	return spawnPoint;	
 }
+
 
 onSpawnPlayer()
 {
-	self.teamChangedThisFrame = undefined;
-	self.infect_spawnPos = self.origin;
-	
-	//	resynch teams
+	self.teamchangedthisframe = undefined;
+    self.infect_spawnpos = self.origin;
 	updateTeamScores();	
-
+	
 	//	let the first spawned player kick this off
 	if ( !level.infect_choosingFirstInfected )
 	{
 		level.infect_choosingFirstInfected = true;
 		level thread chooseFirstInfected();
-	}	
+	}
 
-	//	infected who quit and rejoined same game?
-	if( self.infected_Rejoined )
+	if ( isDefined( self.infect_rejoined ) )
     {
         self.infect_rejoined = undefined;
 
-		//	stop initial infect countdown (if quit/join player was initial and a new coutdown is underway)
-		if ( !level.infect_allowSuicide ) 
-		{
-			level notify( "infect_stopCountdown" );			
-			level.infect_choseFirstInfected = true;
-			level.infect_allowSuicide = true;
-			foreach( player in level.players )
-			{
-				if ( isDefined( player.infect_isBeingChosen ) )
-					player.infect_isBeingChosen = undefined;
-			}		
-		}
+        if ( !level.infect_allowsuicide )
+        {
+            level notify( "infect_stopCountdown" );
+            level.infect_choseFirstInfected = 1;
+            level.infect_allowsuicide = 1;
 
-		//	if an initial was already chosen while they were gone and they are still initial, set them to normal
-		foreach( player in level.players )
-		{
-			if ( isDefined( player.isInitialInfected ) )
-				player thread setInitialToNormalInfected();
-		}
+            foreach ( player in level.players )
+            {
+                if ( isDefined( player.infect_isBeingChosen ) )
+                    player.infect_isBeingChosen = undefined;
+            }
+        }
 
-		//	if they're the only infected, then set them as initial infected
-		if ( level.infect_teamScores["axis"] == 1 )
-			self.isInitialInfected = true;
+        foreach ( player in level.players )
+        {
+            if ( isDefined( player.isInitialInfected ) )
+                player thread setInitialToNormalInfected();
+        }
+
+        if ( level.infect_teamscores["axis"] == 1 )
+            self.isInitialInfected = 1;
     }
 	
 	//	onSpawnPlayer() is called before giveLoadout()
 	//	set self.pers["gamemodeLoadout"] for giveLoadout() to use
-    if ( isDefined( self.isInitialInfected ) )
-        self.pers["gamemodeLoadout"] = level.infect_loadouts["axis_initial"];
-    else
-        self.pers["gamemodeLoadout"] = level.infect_loadouts[self.pers["team"]];
-
-	self thread onSpawnFinished();
+	if ( isDefined( self.isInitialInfected ) )
+		self.pers["gamemodeLoadout"] = level.infect_loadouts["axis_initial"];	
+	else
+		self.pers["gamemodeLoadout"] = level.infect_loadouts[self.pers["team"]];		
 	
+	thread onSpawnFinished();
 	level notify ( "spawned_player" );
 }
 
@@ -320,63 +306,53 @@ setInfectedMsg()
 
 chooseFirstInfected()
 {
-	level endon( "game_ended" );
-	level endon( "infect_stopCountdown" );
+    level endon( "game_ended" );
+    level endon( "infect_stopCountdown" );
 	
-	level.infect_allowSuicide = false;
-	gameFlagWait( "prematch_done" );
+    level.infect_allowsuicide = false;
 	
-	level.infect_timerDisplay.label = &"MP_DRAFT_STARTS_IN";
-	level.infect_timerDisplay setTimer( 15 );
-	level.infect_timerDisplay.alpha = 1;	
+    gameFlagWait( "prematch_done" );
 	
-    maps\mp\gametypes\_hostmigration::waitLongDurationWithHostMigrationPause( 15.0 );
+    level.infect_timerDisplay.label = &"MP_DRAFT_STARTS_IN";
+    level.infect_timerDisplay settimer( 8 );
+    level.infect_timerDisplay.alpha = 1;
 	
-	level.infect_timerDisplay.alpha = 0;
+    maps\mp\gametypes\_hostmigration::waitLongDurationWithHostMigrationPause( 8.0 );
 	
-	possibleInfected = [];
+    level.infect_timerDisplay.alpha = 0;
 	
-	foreach( player in level.players )
-	{
-		if ( player.team == "spectator" )
-			continue;
-		
-		if ( !player.hasSpawned )
-			continue;
-				
-		possibleInfected[possibleInfected.size] = player;
-	}
-	
-	firstInfectedPlayer = possibleInfected[ randomInt( possibleInfected.size ) ];
-	firstInfectedPlayer setFirstInfected( true );
+    level.players[randomint( level.players.size )] setFirstInfected( true );
 }
 
 setFirstInfected( wasChosen )
-{	
-	self endon( "disconnect" );
-	
-	if ( wasChosen )
-		self.infect_isBeingChosen = true;
+{
+    self endon( "disconnect" );
 
+    if ( wasChosen )
+        self.infect_isBeingChosen = true;
+		
 	//	wait alive
-	while( !isReallyAlive( self ) || self isUsingRemote() )
-		wait( 0.05 );
-	
+    while ( !isReallyAlive( self ) || isUsingRemote() )
+        wait 0.05;
+
 	//	remove placement item if carrying
-	if ( IsDefined( self.isCarrying ) && self.isCarrying == true )
-	{
-		self notify( "force_cancel_placement" );
-		wait( 0.05 );
-	}
-	
+    if ( isDefined( self.isCarrying ) && self.isCarrying == 1 )
+    {
+        self notify( "force_cancel_placement" );
+        wait 0.05;
+    }
+
 	//	not while mantling
 	while ( self IsMantling() )
-		wait( 0.05 );	
-	
+		wait( 0.05 );
+
 	//	not while in air
 	while ( !self isOnGround() && !self IsOnLadder() )
 		wait( 0.05 );
-	
+
+	while ( !isAlive( self ) )
+		waitframe();
+
 	//	move to other team
 	if ( wasChosen )
 	{
@@ -385,22 +361,21 @@ setFirstInfected( wasChosen )
 		self.infect_isBeingChosen = undefined;
 		
 		//	resynch teams
-		level notify( "update_game_time" );
 		updateTeamScores();					
 		
 		//	allow suicides now
 		level.infect_allowSuicide = true;		
 	}
 
-   	//	store initial
-	self.isInitialInfected = true;
+    //	store initial
+	self.isInitialInfected = true;	
 	
-   	//	set the gamemodeloadout for giveLoadout() to use
-	self.pers["gamemodeLoadout"] = level.infect_loadouts["axis_initial"];
-	
+	//	set the gamemodeloadout for giveLoadout() to use
+    self.pers["gamemodeLoadout"] = level.infect_loadouts["axis_initial"];
+
 	//	remove old TI if it exists
-	if ( isDefined ( self.setSpawnpoint ) )
-		self maps\mp\perks\_perkfunctions::deleteTI( self.setSpawnpoint );	
+    if ( isDefined( self.setSpawnpoint ) )
+        maps\mp\perks\_perkfunctions::deleteTI( self.setSpawnpoint );
 
 	//	set faux TI to respawn in place
 	spawnPoint = spawn( "script_model", self.origin );
@@ -412,15 +387,14 @@ setFirstInfected( wasChosen )
 	//	faux spawn
 	self notify( "faux_spawn" );
 	self.faux_spawn_stance = self getStance();
-    thread maps\mp\gametypes\_playerlogic::spawnPlayer( true );
+	self thread maps\mp\gametypes\_playerlogic::spawnPlayer( true );
 
 	//	store infected
 	if ( wasChosen )
 		level.infect_players[self.name] = true;
-		
-	//	tell the world!
+
     thread teamPlayerCardSplash( "callout_first_mercenary", self );
-	playSoundOnPlayers( "mp_enemy_obj_captured" );
+    playSoundOnPlayers( "mp_enemy_obj_captured" );
 }
 
 setInitialToNormalInfected( gotKill )
@@ -441,8 +415,8 @@ setInitialToNormalInfected( gotKill )
 	{
 		self notify( "force_cancel_placement" );
 		wait( 0.05 );
-	}		
-
+	}	
+	
 	//	not while mantling
 	while ( self IsMantling() )
 		wait( 0.05 );	
@@ -450,18 +424,18 @@ setInitialToNormalInfected( gotKill )
 	//	not while in air
 	while ( !self isOnGround() )
 		wait( 0.05 );
-	
+
 	//	Gotta check again, more time has passed, wait till we spawn if we died at the same time
 	while ( !isReallyAlive( self ) )
 		wait( 0.05 );
 
-	//	set the gamemodeloadout for giveLoadout() to use
+    //	set the gamemodeloadout for giveLoadout() to use
 	self.pers["gamemodeLoadout"] = level.infect_loadouts["axis"];
 
 	//	remove old TI if it exists
 	if ( isDefined ( self.setSpawnpoint ) )
 		self maps\mp\perks\_perkfunctions::deleteTI( self.setSpawnpoint );	
-		
+
 	//	set faux TI to respawn in place	
 	spawnPoint = spawn( "script_model", self.origin );
 	spawnPoint.angles = self.angles;
@@ -472,15 +446,15 @@ setInitialToNormalInfected( gotKill )
 	//	faux spawn
 	self notify( "faux_spawn" );
 	self.faux_spawn_stance = self getStance();
-	
     thread maps\mp\gametypes\_playerlogic::spawnPlayer( true );
 }
 
-onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )
+
+onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration, lifeId )
 {
 	processKill = false;
 	wasSuicide = false;
-	
+
 	if ( self.team == "allies" && isDefined( attacker ) )
 	{
 		if ( isPlayer( attacker ) && attacker != self )
@@ -501,10 +475,10 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 		self maps\mp\gametypes\_menus::addToTeam( "axis" );
 		
 		//	resynch teams
-		updateTeamScores();	
+        updateTeamScores();
 		
-		//	store infected
-		level.infect_players[self.name] = true;	
+        //	store infected
+		level.infect_players[self.name] = true;		
 
 		if ( wasSuicide )
 		{
@@ -518,37 +492,31 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
 				}				
 			}
 		}
-		else
-		{
+        else if ( isDefined( attacker.isInitialInfected ) )
 			//	set attacker to regular infected if they were the first infected
-			if ( isDefined( attacker.isInitialInfected ) )
-				attacker thread setInitialToNormalInfected( true );	
-			else
-			{				
-				//	regular attacker reward
-				attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DRAFTED" );
-				maps\mp\gametypes\_gamescore::givePlayerScore( "draft_rogue", attacker, self, true );
-				attacker thread maps\mp\gametypes\_rank::giveRankXP( "draft_rogue" );
-			}
-		}
-
+            attacker thread setInitialToNormalInfected( true );
+        else
+        {
+			//	regular attacker reward
+            attacker thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_DRAFTED" );
+            maps\mp\gametypes\_gamescore::givePlayerScore( "draft_rogue", attacker, self, true );
+            attacker thread maps\mp\gametypes\_rank::giveRankXP( "draft_rogue" );
+        }
+		
 		//	generic messages/sounds, and reward survivors
-		if ( level.infect_teamScores["allies"] > 1 )
-		{
-			playSoundOnPlayers( "mp_enemy_obj_captured", "allies" );
-			playSoundOnPlayers( "mp_war_objective_taken", "axis" );
-			thread teamPlayerCardSplash( "callout_got_drafted", self, "allies" );
+        if ( level.infect_teamScores["allies"] > 1 )
+        {
+            playSoundOnPlayers( "mp_enemy_obj_captured", "allies" );
+            playSoundOnPlayers( "mp_war_objective_taken", "axis" );
+            thread teamPlayerCardSplash( "callout_got_drafted", self, "allies" );
 
-			if ( !wasSuicide )
-			{
-				thread teamPlayerCardSplash( "callout_drafted_rogue", attacker, "axis" );
+            if ( !wasSuicide )
+            {
+                thread teamPlayerCardSplash( "callout_drafted_rogue", attacker, "axis" );
 
-				foreach ( player in level.players )
-				{
-					if( !isReallyAlive( player ) || self.sessionstate == "spectator" )
-						continue;
-						
-                    if ( player.team == "allies" && player != self && distance( player.infect_spawnPos, player.origin ) > 32 )
+                foreach ( player in level.players )
+                {
+                    if ( player.team == "allies" && player != self && distance( player.infect_spawnpos, player.origin ) > 32 )
                     {
                         player thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_SURVIVOR" );
                         maps\mp\gametypes\_gamescore::givePlayerScore( "survivor", player, undefined, true );
@@ -558,23 +526,18 @@ onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHi
             }
         }
 		//	inform/reward last
-		else if ( level.infect_teamScores["allies"] == 1 )
-		{
-			onFinalSurvivor();
-		}
+        else if ( level.infect_teamScores["allies"] == 1 )
+            onFinalSurvivor();
 		//	infected win
-		else if ( level.infect_teamScores["allies"] == 0 )
-		{
-			onSurvivorsEliminated();
-		}
-		
+        else if ( level.infect_teamScores["allies"] == 0 )
+            onSurvivorsEliminated();
     }
 }
 
 onFinalSurvivor()
 {
-	playSoundOnPlayers( "mp_obj_captured" );
-	foreach ( player in level.players )
+    playSoundOnPlayers( "mp_obj_captured" );
+    foreach ( player in level.players )
     {
 		if( !isDefined(player) )
 			continue;
@@ -582,66 +545,63 @@ onFinalSurvivor()
         if ( player.team == "allies" )
         {
             player thread maps\mp\gametypes\_rank::xpEventPopup( &"SPLASHES_FINAL_ROGUE" );
+
             if ( !level.infect_awardedFinalSurvivor )
             {
-                if ( player.gameModeJoinedAtStart && isDefined( player.infect_spawnPos ) && distance( player.infect_spawnPos, player.origin ) > 32 )
+                if ( player.infect_joinedatstart && distance( player.infect_spawnpos, player.origin ) > 32 )
                 {
                     maps\mp\gametypes\_gamescore::givePlayerScore( "final_rogue", player, undefined, true );
                     player thread maps\mp\gametypes\_rank::giveRankXP( "final_rogue" );
                 }
-
                 level.infect_awardedFinalSurvivor = true;
             }
 
-            thread teamplayercardsplash( "callout_final_rogue", player );
+            thread maps\mp\_utility::teamPlayerCardSplash( "callout_final_rogue", player );
 
-            if (matchMakingGame() )
-                level thread finalsurvivoruav( player );
-
+            if ( matchMakingGame() )
+                level thread finalSurvivorUAV( player );
             break;
         }
     }
 }
 
+
 finalSurvivorUAV( finalPlayer )
 {
-	level endon( "game_ended" );
-	finalPlayer endon( "disconnect" );
-	finalPlayer endon( "eliminated" );
-	level endon( "infect_lateJoiner" );
-	level thread endUAVonLateJoiner( finalPlayer );
+    level endon( "game_ended" );
+    finalPlayer endon( "disconnect" );
+    finalPlayer endon( "eliminated" );
+    level endon( "infect_lateJoiner" );
+    level thread endUAVonLateJoiner( finalPlayer );
 	
-	removeUAV = false;
-	level.radarMode["axis"] = "normal_radar";	
-	foreach ( player in level.players )
-	{
-		if ( player.team == "axis" )
-			player.radarMode = "normal_radar";	
-	}
-	
-	//setTeamRadarStrength( "axis", 1 );	
-		
-	while( true )
-	{		
-		prevPos = finalPlayer.origin;
-		
-		wait( 4 );
-		if ( removeUAV )
-		{
-			setTeamRadar( "axis", 0 );		
-			removeUAV = false;
-		}
-		
-		wait( 6 );		
-		if ( distance( prevPos, finalPlayer.origin ) < 200 )
-		{
-			setTeamRadar( "axis", 1 );
-			removeUAV = true;
-			
-			foreach ( player in level.players )
-				player playLocalSound( "recondrone_tag" );
-		}		
-	}
+    removeUAV = false;
+    level.radarmode["axis"] = "normal_radar";
+
+    foreach ( player in level.players )
+    {
+        if ( player.team == "axis" )
+            player.radarmode = "normal_radar";
+    }
+
+    for (;;)
+    {
+        prevPos = finalPlayer.origin;
+        wait 4;
+
+        if ( removeUAV )
+        {
+            setTeamRadar( "axis", 0 );
+            removeUAV = false;
+        }
+
+        wait 6;
+
+        if ( distance( prevPos, finalPlayer.origin ) < 200 )
+        {
+            setTeamRadar( "axis", 1 );
+            removeUAV = true;
+        }
+    }
 }
 
 endUAVonLateJoiner( finalPlayer )
@@ -649,32 +609,32 @@ endUAVonLateJoiner( finalPlayer )
 	level endon( "game_ended" );
 	finalPlayer endon( "disconnect" );
 	finalPlayer endon( "eliminated" );
-	
-	while( true )
-	{
-		if ( level.infect_teamScores["allies"] > 1 )
-		{
-			level notify( "infect_lateJoiner" );
-			wait( 0.05 );
-			setTeamRadar( "axis", 0 );
-			break;
-		}
-		wait( 0.05 );
-	}
+
+    for (;;)
+    {
+        if ( level.infect_teamScores["allies"] > 1 )
+        {
+            level notify( "infect_lateJoiner" );
+            wait 0.05;
+            setTeamRadar( "axis", 0 );
+            break;
+        }
+
+        wait 0.05;
+    }
 }
 
 onPlayerDisconnect()
 {
     level endon( "game_ended" );
     self endon( "eliminated" );
-	
-	self waittill( "disconnect" );
+    self waittill( "disconnect" );
 	
 	//	resynch teams
-	updateTeamScores();
+    updateTeamScores();
 
 	//	team actions or win condition necessary?
-	if ( isDefined( self.infect_isBeingChosen ) || level.infect_choseFirstInfected )
+    if ( isDefined( self.infect_isBeingChosen ) || level.infect_choseFirstInfected )
     {
 		if ( level.infect_teamScores["axis"] && level.infect_teamScores["allies"] )
 		{
@@ -692,12 +652,12 @@ onPlayerDisconnect()
 						player setFirstInfected( false );
 				}
 			}
-		}
+        }
 		else if ( level.infect_teamScores["allies"] == 0 )
 		{
 			//	no more survivors, infected win
 			onSurvivorsEliminated();	
-		}			
+		}	
 		else if ( level.infect_teamScores["axis"] == 0 )
 		{
 			if ( level.infect_teamScores["allies"] == 1 )
@@ -712,11 +672,10 @@ onPlayerDisconnect()
 				level.infect_choseFirstInfected = false;
 				level thread chooseFirstInfected();	
 			}			
-		}	
+		}
     }
-
-    //	clear this regardless on the way out
-	self.isInitialInfected = undefined;	
+	//	clear this regardless on the way out
+    self.isInitialInfected = undefined;
 }
 
 watchInfectForfeit()
@@ -741,9 +700,8 @@ onDeadEvent( team )
 
 onTimeLimit()
 {
-	//	survivors win
 	level.finalKillCam_winner = "allies";
-	level thread maps\mp\gametypes\_gamelogic::endGame( "allies", game[ "end_reason" ][ "time_limit_reached" ] );	
+	level thread maps\mp\gametypes\_gamelogic::endGame( "allies", game["strings"]["time_limit_reached"] );	
 }
 
 onSurvivorsEliminated()
@@ -753,33 +711,37 @@ onSurvivorsEliminated()
 	level thread maps\mp\gametypes\_gamelogic::endGame( "axis", game[ "end_reason" ][ "allies_eliminated" ] );	
 }
 
-getTeamSize( team )
+getNumInfected()
 {
-	size = 0;
-	
-	foreach( player in level.players )
+	numInfected = 0;
+	foreach ( player in level.players )
 	{
-		// Make sure we don't check for spectators
-		// Also need to check for if they are in killcam, because player session states are set to spectator when killcam happens
-		if ( player.sessionstate == "spectator" && !player.spectatekillcam )
-			continue;
-	
-		if( player.team == team )
-			size++;
+		if ( isdefined( player.team ) &&  player.team == "axis" )
+			numInfected++;
 	}
-	
-	return size;	
+	return numInfected;	
+}
+
+getNumSurvivors()
+{
+	numSurvivors = 0;
+	foreach ( player in level.players )
+	{
+		if ( isdefined( player.team ) && player.team == "allies" )
+			numSurvivors++;
+	}
+	return numSurvivors;	
 }
 
 updateTeamScores()
 {
 	// survivors
-	level.infect_teamScores["allies"] = getTeamSize( "allies" );
+	level.infect_teamScores["allies"] = getNumSurvivors();
 	game["teamScores"]["allies"] = level.infect_teamScores["allies"];
 	setTeamScore( "allies", level.infect_teamScores["allies"] );
 	
 	// infected
-	level.infect_teamScores["axis"] = getTeamSize( "axis" );
+	level.infect_teamScores["axis"] = getNumInfected();
 	game["teamScores"]["axis"] = level.infect_teamScores["axis"];
 	setTeamScore( "axis", level.infect_teamScores["axis"] );
 }
@@ -802,11 +764,11 @@ setSpecialLoadouts()
     level.infect_loadouts["axis"]["loadoutKillstreak1"] = "none";
     level.infect_loadouts["axis"]["loadoutKillstreak2"] = "none";
     level.infect_loadouts["axis"]["loadoutKillstreak3"] = "none";
-    level.infect_loadouts["axis"]["loadoutDeathstreak"] = "specialty_grenadepulldeath";
+    level.infect_loadouts["axis"]["loadoutDeathstreak"] = "none";
 
-    level.infect_loadouts["axis_initial"]["loadoutPrimary"] = "scar";
-    level.infect_loadouts["axis_initial"]["loadoutPrimaryAttachment"] = "reflex";
-    level.infect_loadouts["axis_initial"]["loadoutPrimaryAttachment2"] = "xmags";
+    level.infect_loadouts["axis_initial"]["loadoutPrimary"] = "throwingknife";
+    level.infect_loadouts["axis_initial"]["loadoutPrimaryAttachment"] = "none";
+    level.infect_loadouts["axis_initial"]["loadoutPrimaryAttachment2"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutPrimaryCamo"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutSecondary"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutSecondaryAttachment"] = "none";
@@ -820,7 +782,7 @@ setSpecialLoadouts()
     level.infect_loadouts["axis_initial"]["loadoutKillstreak1"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutKillstreak2"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutKillstreak3"] = "none";
-    level.infect_loadouts["axis_initial"]["loadoutDeathstreak"] = "specialty_grenadepulldeath";
+    level.infect_loadouts["axis_initial"]["loadoutDeathstreak"] = "none";
     
     level.infect_loadouts["allies"]["loadoutPrimary"] = "spas12";
     level.infect_loadouts["allies"]["loadoutPrimaryAttachment"] = "xmags";
