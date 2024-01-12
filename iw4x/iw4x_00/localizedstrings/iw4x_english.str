@@ -360,7 +360,7 @@ REFERENCE			MENU_FRIENDNOTIFY
 LANG_ENGLISH		"Friend Notifications"
 
 REFERENCE			MPUI_DESC_FRIENDNOTIFY
-LANG_ENGLISH		"When should the friend status notifications be displayed?"
+LANG_ENGLISH		"Should you send status notifications to your friends?"
 
 REFERENCE			MPUI_DESC_OPTIONS
 LANG_ENGLISH		"Set your game options."
@@ -616,9 +616,6 @@ LANG_ENGLISH		"Changelog"
 
 REFERENCE			MENU_CHANGELOG_CAPS
 LANG_ENGLISH		"CHANGELOG"
-
-REFERENCE			MPUI_DESC_CHANGELOG
-LANG_ENGLISH		"See what's new."
 
 REFERENCE			MPUI_DESC_CHANGELOG
 LANG_ENGLISH		"See what's new."
@@ -1304,6 +1301,25 @@ LANG_ENGLISH		"SAS eliminated"
 REFERENCE			MP_SAS_FORFEITED
 LANG_ENGLISH		"SAS forfeited"
 
+REFERENCE           MENU_DESC_BUTTON_LAYOUT
+LANG_ENGLISH        "Change the button layout for the gamepad"
 
+REFERENCE           MENU_DESC_THUMBSTICK_LAYOUT
+LANG_ENGLISH        "Change the thumbstick layout for the gamepad"
+
+REFERENCE           MENU_DESC_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH        "Choose different sensitivity presets"
+
+REFERENCE           MENU_DESC_MAXPACKETS
+LANG_ENGLISH        "Maximum number of packets sent per frame"
+
+REFERENCE           MENU_DESC_SNAPS
+LANG_ENGLISH        "Snapshot rate"
+
+REFERENCE           MENU_DESC_DRAWFPS
+LANG_ENGLISH        "Draw frames per second"
+
+REFERENCE           MENU_DESC_FPSLABELS
+LANG_ENGLISH        "Draw viewpos"
 
 ENDMARKER

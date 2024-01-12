@@ -15,7 +15,7 @@
 		allowedBinding "+talk"
 		visible when ( localvarint( "ui_tabDepth" ) == localvarint( "ui_popup_cac_primary_camo_tabDepth" ) )
 		exp rect y ( localvarfloat( "ui_popupYPos" ) + localvarint( "ui_tabDepth" ) * 20 )
-		execKey 168
+		execKeyInt 168
 		{
 			if ( localvarstring( "ui_selected_ref" ) != "none" && !isitemunlocked( getplayerdata( "customClasses" , localvarint( "classIndex" ) , "weaponSetups" , 0 , "weapon" ) + " " + localvarstring( "ui_selected_ref" ) ) )
 			{
