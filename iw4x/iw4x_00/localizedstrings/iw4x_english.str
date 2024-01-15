@@ -4,7 +4,13 @@ FILENOTES			"Official IW4x localized strings"
 REFERENCE			MPUI_VIP_CAPS
 LANG_ENGLISH		"VIP"
 
-REFERENCE			MENU_GTNW_DESC
+REFERENCE			MPUI_GTNW
+LANG_ENGLISH		"Global Thermal Nuclear War"
+
+REFERENCE			MPUI_GTNW_CAPS
+LANG_ENGLISH		"GLOBAL THERMAL NUCLEAR WAR"
+
+REFERENCE			MENU_GTNW
 LANG_ENGLISH		"Teams fight for capturing the nuclear payload to activate the nuclear strike."
 
 REFERENCE			MPUI_GUNGAME
