@@ -18,7 +18,7 @@
 	setLocalVarString				ui_hint_text "";
 
 #define CHECK_FOR_UPDATE_ACTION \
-	exec							"checkforupdate"; \
+	uiScript						"checkForUpdate"; \
 	open							"auconfirm";
 
 #define CREATE_GAME_ACTION \
