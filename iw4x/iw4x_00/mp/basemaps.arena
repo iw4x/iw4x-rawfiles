@@ -373,7 +373,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones "true"
 }
 
@@ -386,7 +386,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
   useteamzones "true"
 }
 
@@ -400,7 +400,7 @@
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
   useteamzones "true"
-  environment   "forest"
+  environment   "iw3"
 }
 
 {
@@ -412,7 +412,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
   useteamzones "true"
 }
 
@@ -438,7 +438,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
 }
 
 {
@@ -515,7 +515,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
 }
 
 {
@@ -566,7 +566,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -579,7 +579,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -592,7 +592,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -605,7 +605,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_woodland"
   axischar      "iw3_spetsnaz_woodland"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -633,7 +633,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_sas_urban"
   axischar      "iw3_spetsnaz_urban"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -647,7 +647,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar  "iw3_usmc_desert"
   axischar    "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -660,7 +660,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -673,7 +673,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
@@ -687,7 +687,7 @@
   mapoverlay    "compass_overlay_map_blank "
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
-  environment   "forest"
+  environment   "iw3"
   useteamzones  "true"
 }
 
