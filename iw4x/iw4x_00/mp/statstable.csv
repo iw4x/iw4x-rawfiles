@@ -97,4 +97,4 @@ a0,b1,c2,d3,e4,f5,g6,h7,i8,j9,k10,l11,m12,n13,o14,p15,p16,r17,s18,t19,u20,v21,w2
 96,3096,weapon_smg,WEAPON_PEACEKEEPER,peacekeeper,,weapon_peacekeeper,PERKS_SMG,,weapon_stow_mid,,,,,,,,,,,,,85,85,40,70,100
 97,3097,weapon_sniper,WEAPON_M40A3,m40a3,,weapon_m40a3,PERKS_SNIPER_BOLT,,,,,,,,,,,,,,,88,90,100,20,100
 98,3098,weapon_assault,WEAPON_AK47_CLASSIC,ak47classic,,weapon_ak47_classic,PERKS_AR_FULLAUTO,,weapon_stow_mid_up,,gl,reflex,silencer,acog,fmj,xmags,,,,,,50,75,75,50,66
-99,3099,weapon_sniper,WEAPON_DRAGUNOV,dragunov,,weapon_dragunov,PERKS_SNIPER_SEMIAUTO,,,,,,,,,,,,,,,88,90,100,20,100
+99,3099,weapon_sniper,WEAPON_DRAGUNOV,dragunov,,weapon_dragunov,PERKS_SNIPER_SEMIAUTO,,,,silencer,fmj,heartbeat,thermal,xmags,,,,,,88,90,100,20,100
