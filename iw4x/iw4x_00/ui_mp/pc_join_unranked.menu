@@ -15,6 +15,8 @@
 	uiScript														"LoadArenas"; \
 	uiScript														"UpdateFilter"; \
 	uiScript														"RefreshServers"; \
+	uiScript														"ServerSort" 6; \
+	uiScript														"ServerSort" 6; \
 	setFocus														"serverlist";
 
 #define KEYINT_F5													171
