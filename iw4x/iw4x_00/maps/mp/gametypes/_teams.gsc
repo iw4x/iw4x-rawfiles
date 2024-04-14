@@ -602,8 +602,8 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_axis_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_axis_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_axis_rifleman::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_engineer::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_axis_cqb::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_cqb::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_axis_engineer::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_opforce_comp_riot::main;
 
 			break; 
@@ -620,8 +620,8 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_ally_urban_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_ally_urban_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_ally_urban_assault::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_urban_recon::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_ally_urban_specops::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_urban_specops::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_ally_urban_recon::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_seal_udt_riot::main;
 
 			break; 
@@ -638,8 +638,8 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_ally_woodland_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_ally_woodland_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_ally_woodland_assault::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_woodland_recon::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_ally_woodland_specops::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_woodland_specops::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_ally_woodland_recon::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_tf141_forest_riot::main;
 
 			break; 
@@ -656,8 +656,8 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_axis_urban_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_axis_urban_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_axis_urban_assault::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_urban_engineer::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_axis_urban_cqb::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_urban_cqb::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_axis_urban_engineer::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_opforce_airborne_riot::main;
 
 			break; 
@@ -674,8 +674,8 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_axis_woodland_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_axis_woodland_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_axis_woodland_rifleman::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_woodland_engineer::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_axis_woodland_cqb::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_axis_woodland_cqb::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_axis_woodland_engineer::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_opforce_airborne_riot::main;
 
 			break; 
@@ -692,12 +692,12 @@ setTeamModels( team, charSet )
 			game[team + "_model"]["SNIPER"] = mptype\mptype_ally_sniper::main;
 			game[team + "_model"]["LMG"] = mptype\mptype_ally_support::main;
 			game[team + "_model"]["ASSAULT"] = mptype\mptype_ally_rifleman::main;
-			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_engineer::main;
-			game[team + "_model"]["SMG"] = mptype\mptype_ally_cqb::main;
+			game[team + "_model"]["SHOTGUN"] = mptype\mptype_ally_cqb::main;
+			game[team + "_model"]["SMG"] = mptype\mptype_ally_engineer::main;
 			game[team + "_model"]["RIOT"] = mptype\mptype_us_army_riot::main;
 
 			break; 
-				
+			
 		case "delta_multicam":
             mptype\mptype_delta_multicam_assault::precache();
             mptype\mptype_delta_multicam_lmg::precache();
