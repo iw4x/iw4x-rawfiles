@@ -7,12 +7,6 @@ init()
 {
 	level.scoreInfo = [];
 	level.xpScale = getDvarInt( "scr_xpscale" );
-	
-	if ( level.xpScale > 4 || level.xpScale < 0)
-		exitLevel( false );
-
-	level.xpScale = min( level.xpScale, 4 );
-	level.xpScale = max( level.xpScale, 0 );
 
 	level.rankTable = [];
 
