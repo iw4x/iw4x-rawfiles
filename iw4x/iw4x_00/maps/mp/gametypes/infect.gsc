@@ -8,17 +8,17 @@ main()
     maps\mp\gametypes\_callbacksetup::SetupCallbacks();
     maps\mp\gametypes\_globallogic::SetupCallbacks();
 
-	registerTimeLimitDvar( level.gameType, 10 );
-	setOverrideWatchDvar( "scorelimit", 0 );
-	registerRoundLimitDvar( level.gameType, 1 );
-	registerWinLimitDvar( level.gameType, 1 );
-	registerNumLivesDvar( level.gameType, 0 );
-	registerHalfTimeDvar( level.gameType, 0 ); 
+    registerTimeLimitDvar( level.gameType, 10 );
+    setOverrideWatchDvar( "scorelimit", 0 );
+    registerRoundLimitDvar( level.gameType, 1 );
+    registerWinLimitDvar( level.gameType, 1 );
+    registerNumLivesDvar( level.gameType, 0 );
+    registerHalfTimeDvar( level.gameType, 0 ); 
 	
-	setSpecialLoadouts();
+    setSpecialLoadouts();
 	
-	level.teamBased = true;
-	// don't sit there waiting for both teams to contain players,
+    level.teamBased = true;
+    // don't sit there waiting for both teams to contain players,
     // as everyone starts a survivor
     level.prematchWaitForTeams = false;
     level.onPrecacheGameType = ::onPrecacheGameType;
@@ -29,7 +29,7 @@ main()
     level.onDeadEvent = ::onDeadEvent;
     level.onTimeLimit = ::onTimeLimit;
 	
-	level.infect_perks = [];
+    level.infect_perks = [];
     level.infect_perks[level.infect_perks.size] = "specialty_marathon";
     level.infect_perks[level.infect_perks.size] = "specialty_fastreload";
     level.infect_perks[level.infect_perks.size] = "specialty_scavenger";
@@ -55,7 +55,7 @@ determineWinningTeam()
 
 onPrecacheGameType()
 {
-	precacheString( &"MP_CONSCRIPTION_STARTS_IN" );
+    precacheString( &"MP_CONSCRIPTION_STARTS_IN" );
 }
 
 onStartGameType()
@@ -752,7 +752,7 @@ setSpecialLoadouts()
     level.infect_loadouts["axis"]["loadoutPrimaryAttachment"] = "none";
     level.infect_loadouts["axis"]["loadoutPrimaryAttachment2"] = "none";
     level.infect_loadouts["axis"]["loadoutPrimaryCamo"] = "none";
-	level.infect_loadouts["axis"]["loadoutSecondary"] = "none";
+    level.infect_loadouts["axis"]["loadoutSecondary"] = "none";
     level.infect_loadouts["axis"]["loadoutSecondaryAttachment"] = "none";
     level.infect_loadouts["axis"]["loadoutSecondaryAttachment2"] = "none";
     level.infect_loadouts["axis"]["loadoutSecondaryCamo"] = "none";
@@ -764,7 +764,7 @@ setSpecialLoadouts()
     level.infect_loadouts["axis"]["loadoutKillstreak1"] = "none";
     level.infect_loadouts["axis"]["loadoutKillstreak2"] = "none";
     level.infect_loadouts["axis"]["loadoutKillstreak3"] = "none";
-    level.infect_loadouts["axis"]["loadoutDeathstreak"] = "none";
+    level.infect_loadouts["axis"]["loadoutDeathstreak"] = "specialty_null";
 
     level.infect_loadouts["axis_initial"]["loadoutPrimary"] = "throwingknife";
     level.infect_loadouts["axis_initial"]["loadoutPrimaryAttachment"] = "none";
@@ -782,7 +782,7 @@ setSpecialLoadouts()
     level.infect_loadouts["axis_initial"]["loadoutKillstreak1"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutKillstreak2"] = "none";
     level.infect_loadouts["axis_initial"]["loadoutKillstreak3"] = "none";
-    level.infect_loadouts["axis_initial"]["loadoutDeathstreak"] = "none";
+    level.infect_loadouts["axis_initial"]["loadoutDeathstreak"] = "specialty_null";
     
     level.infect_loadouts["allies"]["loadoutPrimary"] = "spas12";
     level.infect_loadouts["allies"]["loadoutPrimaryAttachment"] = "xmags";

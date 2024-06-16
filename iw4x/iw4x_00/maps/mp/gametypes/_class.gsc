@@ -312,7 +312,7 @@ giveLoadout( team, class, allowCopycat )
 	
 	clearAmmo = false;
 
-	//	set in game mode custom class
+	// set in game mode custom class
 	loadoutKillstreak1 = undefined;
 	loadoutKillstreak2 = undefined;
 	loadoutKillstreak3 = undefined;	
@@ -527,7 +527,7 @@ giveLoadout( team, class, allowCopycat )
 	self _clearPerks();
 	self _detachAll();
 	
-	if ( level.killstreakRewards )
+	if ( level.killstreakRewards && !isDefined( loadoutKillstreak1 ) && !isDefined( loadoutKillstreak2 ) && !isDefined( loadoutKillstreak3 ) )
 	{
 		if ( getDvarInt( "scr_classic" ) == 1 )
 		{
