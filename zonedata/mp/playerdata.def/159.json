@@ -1,0 +1,21 @@
+{
+    "weapons": [
+        "m40a3",
+		"ak47classic",
+		"ak74u",
+		"peacekeeper",
+		"dragunov",
+
+		"onemanarmy"
+    ],
+    "cardicons": [
+        "cardicon_rtrolling"
+    ],
+    "cardtitles": [
+        "cardtitle_evilchicken",
+		"cardtitle_nolaststand"
+    ],
+	"other": {
+		"classes": "15"
+	}
+}
