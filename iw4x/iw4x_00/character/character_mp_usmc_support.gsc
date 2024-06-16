@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_support");
 	self attach("head_mp_usmc_shaved_head", "", true);
+	self.headModel = "head_mp_usmc_shaved_head";
 	self setViewmodel("viewmodel_base_viewhands");
 	self.voice = "american";
 }

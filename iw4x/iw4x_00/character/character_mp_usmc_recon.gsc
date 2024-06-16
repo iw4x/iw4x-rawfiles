@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_recon");
 	self attach("head_mp_usmc_nomex", "", true);
+	self.headModel = "head_mp_usmc_nomex";
 	self setViewmodel("viewmodel_base_viewhands");
 	self.voice = "american";
 }

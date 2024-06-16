@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_opforce_support");
 	self attach("head_mp_opforce_3hole_mask", "", true);
+	self.headModel = "head_mp_opforce_3hole_mask";
 	self setViewmodel("viewhands_op_force");
 	self.voice = "russian";
 }

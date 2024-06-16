@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_woodland_support");
 	self attach("head_mp_usmc_shaved_head", "", true);
+	self.headModel = "head_mp_usmc_shaved_head";
 	self setViewmodel("viewhands_sas_woodland");
 	self.voice = "british";
 }

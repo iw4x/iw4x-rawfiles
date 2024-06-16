@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_woodland_assault");
 	self attach("head_mp_usmc_tactical_mich", "", true);
+	self.headModel = "head_mp_usmc_tactical_mich";
 	self setViewmodel("viewhands_sas_woodland");
 	self.voice = "british";
 }

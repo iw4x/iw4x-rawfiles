@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_arab_regular_assault");
 	self attach("head_mp_arab_regular_suren", "", true);
+	self.headModel = "head_mp_arab_regular_suren";
 	self setViewmodel("viewhands_desert_opfor");
 	self.voice = "arab";
 }

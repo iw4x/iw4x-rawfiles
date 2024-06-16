@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_specops");
 	self attach("head_mp_usmc_tactical_mich_stripes_nomex", "", true);
+	self.headModel = "head_mp_usmc_tactical_mich_stripes_nomex";
 	self setViewmodel("viewmodel_base_viewhands");
 	self.voice = "american";
 }

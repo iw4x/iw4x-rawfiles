@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_opforce_sniper");
 	self attach("head_mp_opforce_ghillie", "", true);
+	self.headModel = "head_mp_opforce_ghillie";
 	self setViewmodel("viewhands_marine_sniper");
 	self.voice = "russian";
 }

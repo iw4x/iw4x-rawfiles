@@ -3,6 +3,7 @@ main()
 {
 	self setModel("body_mp_usmc_sniper");
 	self attach("head_mp_usmc_tactical_baseball_cap", "", true);
+	self.headModel = "head_mp_usmc_tactical_baseball_cap";
 	self setViewmodel("viewmodel_base_viewhands");
 	self.voice = "american";
 }
