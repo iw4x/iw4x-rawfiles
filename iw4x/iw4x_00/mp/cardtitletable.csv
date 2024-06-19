@@ -289,14 +289,12 @@ cardtitle_fullforce,PLAYERCARDS_TITLE_FULLFORCE,cardtitle_dragon_kick,1,1,1,ch_d
 cardtitle_squawkbox,PLAYERCARDS_TITLE_SQUAWK_BOX,cardtitle_chicken,1,1,1,#attackheli,3 - killstreak
 cardtitle_duckhunter,PLAYERCARDS_TITLE_DUCKHUNTER,cardtitle_chicken,1,1,1,ch_hardlanding,7 - Humiliation
 cardtitle_cr1zby,PLAYERCARDS_TITLE_EXTRA_CRISPY,cardtitle_chicken,1,1,1,ch_thespirit_2,11 - Prestige
-cardtitle_evilchicken,PLAYERCARDS_TITLE_EVIL_CHICKEN,cardtitle_chicken,1,0.5,0,,default
 cardtitle_jackinthebox,PLAYERCARDS_TITLE_JACKINTHEBOX,cardtitle_cheese,1,1,1,# jackinthebox - ti,4 - Equipment
 cardtitle_halfbaked,PLAYERCARDS_TITLE_HALFBAKED,cardtitle_cheese,1,1,1,ch_masterchef_2,9 - Elite
 cardtitle_clayback,PLAYERCARDS_TITLE_CLAYBACK,cardtitle_cheese,1,1,1,ch_breakbank,8 - Payback
 cardtitle_60a,PLAYERCARDS_TITLE_60A,cardtitle_schooled,1,1,1,,LEVEL UP
 cardtitle_noobtuber,PLAYERCARDS_TITLE_NOOBTUBER,cardtitle_hotdog,1,1,1,ch_ouch,7 - Humiliation
 cardtitle_endofline,PLAYERCARDS_TITLE_END_OF_LINE,cardtitle_endofline_red,1,1,1,# nuke,3 - killstreak
-cardtitle_nolaststand,PLAYERCARDS_TITLE_NO_LAST_STAND,iw5_cardtitle_lollipop_girl,1,1,1,,default
 cardtitle_flag_united_states,,cardtitle_flag_united_states,1,1,1,,100 - flags
 cardtitle_flag_uk,,cardtitle_flag_uk,1,1,1,,100 - flags
 cardtitle_flag_canada,,cardtitle_flag_canada,1,1,1,,100 - flags
@@ -351,6 +349,128 @@ cardtitle_prestige3,PLAYERCARDS_TITLE_PRESTIGE3,cardtitle_stpatricks_3,1,1,1,car
 cardtitle_prestige8,PLAYERCARDS_TITLE_PRESTIGE8,cardtitle_spiderweb_hispeed,1,1,1,cardtitle_prestige8,LEVEL UP
 cardtitle_prestige9,PLAYERCARDS_TITLE_PRESTIGE9,cardtitle_blackcat,1,1,1,cardtitle_prestige9,LEVEL UP
 cardtitle_prestige10,PLAYERCARDS_TITLE_PRESTIGE10,cardtitle_assault_master,1,1,1,cardtitle_prestige10,LEVEL UP
+cardtitle_evilchicken,PLAYERCARDS_TITLE_EVIL_CHICKEN,cardtitle_chicken,1,0.5,0,,default
+cardtitle_nolaststand,PLAYERCARDS_TITLE_NO_LAST_STAND,iw5_cardtitle_lollipop_girl,1,1,1,,default
+cardtitle_abstract3_a,CHALLENGE_DIDYOUSEETHAT,cardtitle_abstract3,1,1,1,,default
+cardtitle_abstract3_b,CHALLENGE_RADIATIONSICKNESS,cardtitle_abstract3,1,1,1,,default
+cardtitle_glass_hispeed_a,PLAYERCARDS_TITLE_CLOSER,cardtitle_glass_hispeed,1,1,1,,default
+cardtitle_glass_hispeed_b,CHALLENGE_AIRDROP_MEGA,cardtitle_glass_hispeed,1,1,1,,default
+cardtitle_glass_hispeed_c,PLAYERCARDS_TITLE_HEADSTRONG,cardtitle_glass_hispeed,1,1,1,,default
+cardtitle_joint_a,PLAYERCARDS_TITLE_TASKFORCE420,cardtitle_joint,1,1,1,,default
+cardtitle_joint_b,PLAYERCARDS_TITLE_SPARKLEMAGIC,cardtitle_joint,1,1,1,,default
+cardtitle_flames_1_a,CHALLENGE_VANDALISM,cardtitle_flames_1,1,1,1,,default
+cardtitle_flames_1_b,PLAYERCARDS_TITLE_FLAMING,cardtitle_flames_1,1,1,1,,default
+cardtitle_jason_nvg_a,CHALLENGE_FEARLESS,cardtitle_jason_nvg,1,1,1,,default
+cardtitle_jason_nvg_b,CHALLENGE_GOODBYE,cardtitle_jason_nvg,1,1,1,,default
+cardtitle_horsemen_death,CHALLENGE_SLASHER,cardtitle_horsemen_death,1,1,1,,default
+cardtitle_horsemen_famine,CHALLENGE_MISERY_LOVES_COMPANY,cardtitle_horsemen_famine,1,1,1,,default
+cardtitle_horsemen_war,CHALLENGE_EXTREME_CRUELTY,cardtitle_horsemen_war,1,1,1,,default
+cardtitle_pinkscar_a,CHALLENGE_THE_BRINK,cardtitle_pinkscar,1,1,1,,default
+cardtitle_pinkscar_b,CHALLENGE_COLLATERAL_DAMAGE,cardtitle_pinkscar,1,1,1,,default
+cardtitle_pinkscar_c,CHALLENGE_STAR_PLAYER,cardtitle_pinkscar,1,1,1,,default
+cardtitle_pinkscar_d,CHALLENGE_THESUPPLIER,cardtitle_pinkscar,1,1,1,,default
+cardtitle_wolf_a,CHALLENGE_THELONER,iw5_cardtitle_wolf,1,1,1,,default
+cardtitle_wolf_b,CHALLENGE_WARGAMER,iw5_cardtitle_wolf,1,1,1,,default
+cardtitle_sunbather_a,CHALLENGE_SUNBLOCK,cardtitle_sunbather,1,1,1,,default
+cardtitle_sunbather_b,CHALLENGE_BULLSEYE,cardtitle_sunbather,1,1,1,,default
+cardtitle_sunbather_c,CHALLENGE_BACKDRAFT,cardtitle_sunbather,1,1,1,,default
+cardtitle_sword_2,CHALLENGE_POINT_GUARD,cardtitle_sword_2,1,1,1,,default
+cardtitle_sword_3,CHALLENGE_WOPR,cardtitle_sword_3,1,1,1,,default
+cardtitle_graff_a,CHALLENGE_NO,cardtitle_graff,1,1,1,,default
+cardtitle_graff_b,CHALLENGE_BOTHBARRELS,cardtitle_graff,1,1,1,,default
+cardtitle_graffiti_01_a,CHALLENGE_NEVERFORGET,cardtitle_graffiti_01,1,1,1,,default
+cardtitle_graffiti_01_b,CHALLENGE_GROUPHUG,cardtitle_graffiti_01,1,1,1,,default
+cardtitle_graffiti_01_c,PLAYERCARDS_TITLE_CALLOFDUTY,cardtitle_graffiti_01,1,1,1,,default
+cardtitle_bills_a,CHALLENGE_BREAKBANK,cardtitle_bills,1,1,1,,default
+cardtitle_bills_b,CHALLENGE_BANGFORBUCK,cardtitle_bills,1,1,1,,default
+cardtitle_bills_c,CHALLENGE_ATM,cardtitle_bills,1,1,1,,default
+cardtitle_eyes_a,MP_KING_OF_THE_HILL,cardtitle_eyes,1,1,1,,default
+cardtitle_eyes_b,CARDTITLE_SPECTATOR,cardtitle_eyes,1,1,1,,default
+cardtitle_eyes_c,MPUI_EYE_FOR_AN_EYE,cardtitle_eyes,1,1,1,,default
+cardtitle_machinegunner_a,CHALLENGE_LMG_EXPERT,cardtitle_machinegunner,1,1,1,,default
+cardtitle_machinegunner_b,CHALLENGE_SLOW_BUT_SURE,cardtitle_machinegunner,1,1,1,,default
+cardtitle_machinegunner_c,MPUI_SIDE_ARM1,cardtitle_machinegunner,1,1,1,,default
+cardtitle_gungirl_a,CHALLENGE_SMOOTHCRIMINAL,iw5_cardtitle_gungirl,1,1,1,,default
+cardtitle_gungirl_b,CHALLENGE_POOLSHARK,iw5_cardtitle_gungirl,1,1,1,,default
+cardtitle_burgertown_a,CHALLENGE_OVERDRAFT,cardtitle_burgertown,1,1,1,,default
+cardtitle_burgertown_b,CHALLENGE_CARNIE,cardtitle_burgertown,1,1,1,,default
+cardtitle_burgertown_c,CHALLENGE_THEDENIER,cardtitle_burgertown,1,1,1,,default
+cardtitle_burgertown_d,PERKS_LIGHTWEIGHT,cardtitle_burgertown,1,1,1,,default
+cardtitle_naval_a,PERKS_SIEGE,cardtitle_naval,1,1,1,,default
+cardtitle_naval_b,PERKS_BLACKBOX,cardtitle_naval,1,1,1,,default
+cardtitle_blackhawk_a,MPUI_NO_HIGHLIGHTS,cardtitle_blackhawk,1,1,1,,default
+cardtitle_blackhawk_b,MPUI_CROWD_CONTROL,cardtitle_blackhawk,1,1,1,,default
+cardtitle_blackhawk_c,MPUI_THERMAL_KILLER,cardtitle_blackhawk,1,1,1,,default
+cardtitle_feathers_a,MPUI_SCOUTMASTER,cardtitle_feathers,1,1,1,,default
+cardtitle_feathers_b,MPUI_JACK_OF_ALL_TRADES,cardtitle_feathers,1,1,1,,default
+cardtitle_migs_a,MPUI_AIRWOLF,cardtitle_migs,1,1,1,,default
+cardtitle_migs_b,MPUI_WINGMAN,cardtitle_migs,1,1,1,,default
+cardtitle_minigun_a,MPUI_DEVASTATION,cardtitle_minigun,1,1,1,,default
+cardtitle_minigun_b,MPUI_SPRAYER,cardtitle_minigun,1,1,1,,default
+cardtitle_minigun_c,MPUI_ODD_MAN_OUT,cardtitle_minigun,1,1,1,,default
+cardtitle_minigun_d,MPUI_DEAD_MAN_WALKING,cardtitle_minigun,1,1,1,,default
+cardtitle_rainbows_a,PLAYERCARDS_TITLE_UNICORNPRINCESS,cardtitle_rainbows,1,1,1,,default
+cardtitle_rainbows_bb,CHALLENGE_JOLLYGREENGIANT,cardtitle_rainbows,1,1,1,,default
+cardtitle_redrocket_a,CHALLENGE_BASE_JUMP,cardtitle_redrocket,1,1,1,,default
+cardtitle_redrocket_b,CHALLENGE_RETURN_TO_SENDER,cardtitle_redrocket,1,1,1,,default
+cardtitle_redrocket_c,CHALLENGE_HARD_LANDING,cardtitle_redrocket,1,1,1,,default
+cardtitle_tbaga,CHALLENGE_MASTER_CHEF,cardtitle_tbag,1,1,1,,default
+cardtitle_tbag_b,CHALLENGE_OUCH,cardtitle_tbag,1,1,1,,default
+cardtitle_uav_a,CHALLENGE_NO_SECRETS,cardtitle_uav,1,1,1,,default
+cardtitle_uav_b,CHALLENGE_COUNTERMVP,cardtitle_uav,1,1,1,,default
+cardtitle_bandaidnew_a,MENU_SP_FOR_THE_RECORD,cardtitle_bandaidnew,1,1,1,,default
+cardtitle_bandaidnew_b,CGAME_COMPLAINTDISMISSED,cardtitle_bandaidnew,1,1,1,,default
+cardtitle_bandaidnew_c,MENU_QUICK_REFRESH,cardtitle_bandaidnew,1,1,1,,default
+cardtitle_bloodcells_a,CHALLENGE_FAST_SWAP,cardtitle_bloodcells,1,1,1,,default
+cardtitle_bloodcells_b,MPUI_YOUR_CLASSES,cardtitle_bloodcells,1,1,1,,default
+cardtitle_diver_a,MENU_SP_SP_DCBURNING,cardtitle_diver,1,1,1,,default
+cardtitle_diver_b,MENU_SP_SP_AF_CAVES,cardtitle_diver,1,1,1,,default
+cardtitle_girl_a,MPUI_DOUBLE_THREAT,cardtitle_girl,1,1,1,,default
+cardtitle_girl_b,CLASS_CLASS14,cardtitle_girl,1,1,1,,default
+cardtitle_huntknife_a,CLASS_CLASS11,cardtitle_huntknife,1,1,1,,default
+cardtitle_huntknife_b,CLASS_CLASS15,cardtitle_huntknife,1,1,1,,default
+cardtitle_huntknife_c,PLAYERCARDS_TITLE_MERCILESS,cardtitle_huntknife,1,1,1,,default
+cardtitle_pistols_a,PLAYERCARDS_TITLE_SIDEPOCKET,cardtitle_pistols,1,1,1,,default
+cardtitle_pistols_b,PLAYERCARDS_TITLE_FOTM,cardtitle_pistols,1,1,1,,default
+cardtitle_smoke_grenade_a,PLAYERCARDS_TITLE_SIRSMOKEALOT,cardtitle_smoke_grenade,1,1,1,,default
+cardtitle_smoke_grenade_b,WEAPON_SMOKE_GRENADE,cardtitle_smoke_grenade,1,1,1,,default
+cardtitle_smoke_grenade_c,PERKS_LONGSPECIALGRENADES,cardtitle_smoke_grenade,1,1,1,,default
+cardtitle_specops_a,MPUI_CLASSIFIED,cardtitle_specops,1,1,1,,default
+cardtitle_specops_b,PLAYERCARDS_TITLE_KEEPSONTICKIN,cardtitle_specops,1,1,1,,default
+cardtitle_specops_c,PLAYERCARDS_TITLE_GRUNT,cardtitle_specops,1,1,1,,default
+cardtitle_boombox_a,CARDTITLE_WAVE_DEFENSE,cardtitle_boombox,1,1,1,,default
+cardtitle_boombox_b,MPUI_VERDICT,cardtitle_boombox,1,1,1,,default
+cardtitle_boombox_c,MPUI_LOTTERY_TICKET_NORMAL,cardtitle_boombox,1,1,1,,default
+cardtitle_bloodlake_a,SPLASHES_NINJA_DEFUSE_DESC,cardtitle_bloodlake,1,1,1,,default
+cardtitle_bloodlake_b,CHALLENGE_HUMILIATION,cardtitle_bloodlake,1,1,1,,default
+cardtitle_bloodlake_c,MENU_ARCADE_FULL,cardtitle_bloodlake,1,1,1,,default
+cardtitle_skullking_a,MPUI_GOLDEN,cardtitle_skullking,1,1,1,,default
+cardtitle_skullking_b,MENU_SP_SP_ARCADIA,cardtitle_skullking,1,1,1,,default
+cardtitle_skullking_c,MENU_SP_SP_ESTATE,cardtitle_skullking,1,1,1,,default
+cardtitle_comic_a,PLAYERCARDS_TITLE_CLICKCLICK,cardtitle_comic,1,1,1, ,default
+cardtitle_comic_b,PLAYERCARDS_TITLE_UNDEAD,cardtitle_comic,1,1,1,,default
+cardtitle_comic_c,PLAYERCARDS_TITLE_WHY_SO_SERIOUS,cardtitle_comic,1,1,1,,default
+cardtitle_assault_silence_a,MPUI_SILENCER,cardtitle_assault_silence,1,1,1,,default
+cardtitle_assault_silence_b,EXE_SV_INFO_FRIENDLY_FIRE,cardtitle_assault_silence,1,1,1,,default
+cardtitle_assault_silence_c,MPUI_ULTIMATE,cardtitle_assault_silence,1,1,1,,default
+cardtitle_delta_a,WEAPON_RANGER,cardtitle_delta,1,1,1,,default
+cardtitle_delta_b,CHALLENGE_BOOT_CAMP,cardtitle_delta,1,1,1,,default
+cardtitle_lasers_a,CHALLENGE_ELITE,cardtitle_lasers,1,1,1,,default
+cardtitle_lasers_b,CHALLENGE_BOMB_PLANTER,cardtitle_lasers,1,1,1,,default
+cardtitle_makarov,MENU_SP_SP_AIRPORT,cardtitle_makarov,1,1,1,,default
+cardtitle_mw_bros,MENU_SP_SP_BONEYARD,cardtitle_mw_bros,1,1,1,,default
+cardtitle_toonprice_a,MPUI_MAIL_CONTACT_PRICE,cardtitle_toonprice,1,1,1,,default
+cardtitle_toonprice_b,MPUI_HARD_BOILED,cardtitle_toonprice,1,1,1,,default
+cardtitle_flag_pride_a,,cardtitle_flag_pride,1,1,1,,
+cardtitle_flag_transgender_a,,cardtitle_flag_transgender,1,1,1,,
+cardtitle_flag_asexual_a,,cardtitle_flag_asexual,1,1,1,,
+cardtitle_flag_nonbinary_a,,cardtitle_flag_nonbinary,1,1,1,,
+cardtitle_flag_bisexual_a,,cardtitle_flag_bisexual,1,1,1,,
+cardtitle_flag_pride_b,PLAYERCARDS_TITLE_HEART,cardtitle_flag_pride,1,1,1,,
+cardtitle_flag_transgender_b,CARDTITLE_TRANSGENDER,cardtitle_flag_transgender,1,1,1,,
+cardtitle_flag_asexual_b,CARDTITLE_ASEXUAL,cardtitle_flag_asexual,1,1,1,,
+cardtitle_flag_nonbinary_b,CARDTITLE_NONBINARY,cardtitle_flag_nonbinary,1,1,1,,
+cardtitle_flag_bisexual_b,PLAYERCARDS_TITLE_DOUBLEAGENT,cardtitle_flag_bisexual,1,1,1,,
 cardtitle_famas_marksman,WEAPON_FAMAS,cardtitle_assault_marksman,1,1,1,# weapon,
 cardtitle_m4_marksman,WEAPON_M4,cardtitle_assault_marksman,1,1,1,# weapon,
 cardtitle_scar_marksman,WEAPON_SCAR,cardtitle_assault_marksman,1,1,1,# weapon,
