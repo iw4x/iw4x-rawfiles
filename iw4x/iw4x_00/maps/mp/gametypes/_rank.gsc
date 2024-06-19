@@ -8,7 +8,7 @@ init()
 	level.scoreInfo = [];
 	level.xpScale = getDvarInt( "scr_xpscale" );
 
-	level.xpScale = max( level.xpScale, 0 );
+	level.xpScale = clamp( level.xpScale, 0, 4 );
 
 	level.rankTable = [];
 
