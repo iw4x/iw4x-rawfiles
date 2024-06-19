@@ -385,7 +385,7 @@ cardtitle_bills_a,CHALLENGE_BREAKBANK,cardtitle_bills,1,1,1,,default
 cardtitle_bills_b,CHALLENGE_BANGFORBUCK,cardtitle_bills,1,1,1,,default
 cardtitle_bills_c,CHALLENGE_ATM,cardtitle_bills,1,1,1,,default
 cardtitle_eyes_a,MP_KING_OF_THE_HILL,cardtitle_eyes,1,1,1,,default
-cardtitle_eyes_b,CARDTITLE_SPECTATOR,cardtitle_eyes,1,1,1,,default
+cardtitle_eyes_b,MPUI_SPECTATE,cardtitle_eyes,1,1,1,,default
 cardtitle_eyes_c,MPUI_EYE_FOR_AN_EYE,cardtitle_eyes,1,1,1,,default
 cardtitle_machinegunner_a,CHALLENGE_LMG_EXPERT,cardtitle_machinegunner,1,1,1,,default
 cardtitle_machinegunner_b,CHALLENGE_SLOW_BUT_SURE,cardtitle_machinegunner,1,1,1,,default
@@ -438,7 +438,7 @@ cardtitle_smoke_grenade_c,PERKS_LONGSPECIALGRENADES,cardtitle_smoke_grenade,1,1,
 cardtitle_specops_a,MPUI_CLASSIFIED,cardtitle_specops,1,1,1,,default
 cardtitle_specops_b,PLAYERCARDS_TITLE_KEEPSONTICKIN,cardtitle_specops,1,1,1,,default
 cardtitle_specops_c,PLAYERCARDS_TITLE_GRUNT,cardtitle_specops,1,1,1,,default
-cardtitle_boombox_a,CARDTITLE_WAVE_DEFENSE,cardtitle_boombox,1,1,1,,default
+cardtitle_boombox_a,MENU_SP_TYPE_WAVE_DEFENSE,cardtitle_boombox,1,1,1,,default
 cardtitle_boombox_b,MPUI_VERDICT,cardtitle_boombox,1,1,1,,default
 cardtitle_boombox_c,MPUI_LOTTERY_TICKET_NORMAL,cardtitle_boombox,1,1,1,,default
 cardtitle_bloodlake_a,SPLASHES_NINJA_DEFUSE_DESC,cardtitle_bloodlake,1,1,1,,default
