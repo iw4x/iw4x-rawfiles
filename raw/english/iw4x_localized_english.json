@@ -1,0 +1,911 @@
+{
+    "CONF_KILL_CONFIRMED": "KILL CONFIRMED",
+
+    "CUSTOM_MAPS_DLC": "Custom Maps",
+
+    "DESC_CUSTOM_MAPS_DLC": "Downloaded maps that are placed in the /usermaps subfolder",
+
+    "ERR_INVALID_CHALLENGE_SIGNATURE": "Challenge signature was invalid!",
+
+    "ERR_INVALID_CONNECT_DATA": "Invalid connect data!",
+
+    "ERR_INVALID_CONNECT_PACKET": "Invalid connect packet!",
+
+    "ERR_INVALID_CONNECT_STRING": "Invalid connect string!",
+
+    "ERR_INVALID_INFOSTRING_DATA": "Invalid infostring data!",
+
+    "ERR_XUID_CERTIFICATE_MISMATCH": "XUID doesn't match the certificate!",
+
+    "EXE_AWAITINGGAMESTATE": "Awaiting gamestate",
+
+    "EXE_PROGRESS": "Progress:",
+
+    "FONT_ICON_HINT_AUTO_COMPLETE": "Press ^3&&1 ^7for autocomplete",
+
+    "FONT_ICON_HINT_MODIFIER": "Use ^3&&1 ^7for modifiers",
+
+    "FONT_ICON_MODIFIER_LIST_BIG": "^2&&1  ^7Bigger icon",
+
+    "FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL": "^2&&1  ^7Flip icon horizontally",
+
+    "FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL": "^2&&1  ^7Flip icon vertically",
+
+    "FONT_ICON_MODIFIER_LIST_HEADER": "The following modifiers are available:",
+
+    "FONT_ICON_SEARCH_START_WITH": "Font icons starting with ^2&&1^7:",
+
+    "GAME_NOTONROTATION": "This map or gamemode is not part of the server rotation",
+
+    "MENU_16X": "16x",
+
+    "MENU_8X": "8x",
+
+    "MENU_AAALPHA": "Anti-aliasing Alpha",
+
+    "MENU_AAA_DITHER": "Dither (Poor)",
+
+    "MENU_AAA_SUPER": "Super Sampled (Nice)",
+
+    "MENU_AA_MAXQUALITY": "Anti-aliasing Quality",
+
+    "MENU_ADD_TO_FAVORITES_CAPS": "ADD TO FAVORITES",
+
+    "MENU_AUTORECORD": "Auto-Recording",
+
+    "MENU_AUTORECORD_CAPS": "AUTO-RECORDING",
+
+    "MENU_BORDERLESS": "Borderless",
+
+    "MENU_CHANGELOG": "Changelog",
+
+    "MENU_CHANGELOG_CAPS": "CHANGELOG",
+
+    "MENU_CHANGE_GAMETYPE": "Change Gametype",
+
+    "MENU_CHECK_FOR_UPDATES": "^3Update available",
+
+    "MENU_CHECK_FOR_UPDATES_CAPS": "^3UPDATE AVAILABLE",
+
+    "MENU_CLOSE": "Close",
+
+    "MENU_CLOSE_CAPS": "CLOSE",
+
+    "MENU_COLORBLIND_MODE": "Colorblind mode",
+
+    "MENU_CONF": "Recover Dog Tags to score for your team and deny enemy scores.",
+
+    "MENU_CRANKED": "Kills give you extra perks, 2x scoring, and a time limit.  Chain kills to stay alive!",
+
+    "MENU_CUSTOM_TITLE": "Custom Title",
+
+    "MENU_CUSTOM_TITLE_CAPS": "CUSTOM TITLE",
+
+    "MENU_D3D9EX": "Direct3D 9Ex",
+
+    "MENU_DELETE": "Delete",
+
+    "MENU_DELETE_CAPS": "DELETE",
+
+    "MENU_DEL_FAVORITE_CAPS": "DEL. FAVORITE",
+
+    "MENU_DEMOS_KEEP": "Recordings to keep",
+
+    "MENU_DEMOS_KEEP_CAPS": "RECORDINGS TO KEEP",
+
+    "MENU_DESC_BUTTON_LAYOUT": "Change the button layout for the gamepad",
+
+    "MENU_DESC_DRAWFPS": "Draw frames per second",
+
+    "MENU_DESC_FPSLABELS": "Draw viewpos",
+
+    "MENU_DESC_LOOK_SENSITIVITY_PRESET": "Choose different sensitivity presets",
+
+    "MENU_DESC_MAXPACKETS": "Maximum number of packets sent per frame",
+
+    "MENU_DESC_SNAPS": "Snapshot rate",
+
+    "MENU_DESC_THUMBSTICK_LAYOUT": "Change the thumbstick layout for the gamepad",
+
+    "MENU_DRAWFPS": "Show FPS",
+
+    "MENU_FOV": "Field of view",
+
+    "MENU_FOVSCALE": "Field of View Scale",
+
+    "MENU_FOV_CAPS": "FOV: ",
+
+    "MENU_FOV_HINT_PC": "An increased Field of View (FOV), may result in poor performance on older computers.",
+
+    "MENU_FPSLABELS": "Show FPS labels",
+
+    "MENU_FPS_0": "OFF: 0",
+
+    "MENU_FPS_1": "ON: 1",
+
+    "MENU_FPS_2": "ON: 2",
+
+    "MENU_FPS_3": "ON: 3",
+
+    "MENU_FPS_4": "ON: 4",
+
+    "MENU_FPS_CAP": "FPS Frame Cap",
+
+    "MENU_FPS_DRAW": "FPS Drawing",
+
+    "MENU_FPS_LABELS": "FPS Labels",
+
+    "MENU_FRIENDNOTIFY": "Friend Notifications",
+
+    "MENU_FRIENDS": "Friends",
+
+    "MENU_FRIENDS_CAPS": "FRIENDS",
+
+    "MENU_FRIEND_ADD": "Add Friend",
+
+    "MENU_FRIEND_ADD_CAPS": "ADD FRIEND",
+
+    "MENU_FULLSCREEN": "Full Screen",
+
+    "MENU_GAME": "Game",
+
+    "MENU_GAMEPAD": "Gamepad",
+
+    "MENU_GAMEPAD_ENABLED": "Gamepad enabled",
+
+    "MENU_GAME_CAPS": "GAME",
+
+    "MENU_GAME_SETTINGS_CAPS": "GAME SETTINGS",
+
+    "MENU_GPAD_PS_CAPS": "PlayStation",
+
+    "MENU_GPAD_STYLE": "Button Style",
+
+    "MENU_GPAD_XBOX_CAPS": "Xbox",
+
+    "MENU_GTNW_DESC": "Teams fight for capturing the nuclear payload to activate the nuclear strike.",
+
+    "MENU_GUNGAME": "Be the first player to score a kill with each one of the provided weapons.",
+
+    "MENU_INF": "Eliminated Survivors become Infected.  Infect everyone, or survive the game to win.",
+
+    "MENU_JOIN_SERVER_CAPS": "JOIN SERVER",
+
+    "MENU_LAGOMETER": "Show Lagometer",
+
+    "MENU_LOADING_MAPS": "Loading map selection...",
+
+    "MENU_LOCKON_ENABLED": "Enable lockon aim assist",
+
+    "MENU_LOOK_SENSITIVITY_PRESET": "Sensitivity Preset",
+
+    "MENU_MAXFPS": "Maximum FPS",
+
+    "MENU_MAXPACKETS": "Max. packets per frame",
+
+    "MENU_MODS": "Mods",
+
+    "MENU_MODS_CAPS": "MODS",
+
+    "MENU_MOTD": "News",
+
+    "MENU_MOTD_CAPS": "NEWS",
+
+    "MENU_NATIVECURSOR": "Display native cursor",
+
+    "MENU_NEWCOLORS": "Use new color codes",
+
+    "MENU_NOBORDER": "Disable window border",
+
+    "MENU_OITC_DESC": "Gain ammo by eliminating enemies. Highest score wins.",
+
+    "MENU_PASSWORD_CAPS": "PASSWORD",
+
+    "MENU_PLAY": "Play",
+
+    "MENU_PLAY_CAPS": "PLAY",
+
+    "MENU_RECONNECTING_TO_PARTY": "CONNECTING TO SERVER",
+
+    "MENU_RESET_STATS": "Reset your stats?",
+
+    "MENU_RESET_STATS_CAPS": "RESET YOUR STATS?",
+
+    "MENU_SCREEN_OPTIONS": "Screen Options",
+
+    "MENU_SCROLL_DOWN": "^3SCROLL DOWN",
+
+    "MENU_SCROLL_UP": "^3SCROLL UP",
+
+    "MENU_SEARCHINGFORGAMES_100MS": "",
+
+    "MENU_SECURITY_INCREASE": "Increasing Security Level",
+
+    "MENU_SENSITIVITY_HIGH_CAPS": "(High) 4",
+
+    "MENU_SENSITIVITY_INSANE_CAPS": "(Insane) 10",
+
+    "MENU_SENSITIVITY_LOW_CAPS": "(Low) 1",
+
+    "MENU_SENSITIVITY_MEDIUM_CAPS": "(Medium) 2",
+
+    "MENU_SENSITIVITY_VERY_HIGH_CAPS": "(Very High) 7",
+
+    "MENU_SERVER_INFO_CAPS": "SERVERINFO",
+
+    "MENU_SHARPSHOOTER": "All players are given the same weapon, selected randomly. Every 45 seconds, a new weapon is selected at random and used by all.",
+
+    "MENU_SLOWDOWN_ENABLED": "Enable slowdown aim assist",
+
+    "MENU_SNAPS": "Snapshot rate",
+
+    "MENU_STORE": "Get DLC",
+
+    "MENU_STORE_CAPS": "GET DLC",
+
+    "MENU_STREAMFRIENDLY_UI": "Stream Friendly UI",
+
+    "MENU_SYNC_NODES": "Sync Nodes",
+
+    "MENU_SYNC_NODES_CAPS": "SYNC NODES",
+
+    "MENU_TDEF": "Capture and hold the flag for a team double scoring bonus.  Not for the faint of heart.\n \n Created by Intricate.",
+
+    "MENU_THEATER": "Theater",
+
+    "MENU_THEATER_CAPS": "THEATER",
+
+    "MENU_UNLOCK_STATS": "Unlock your Stats?",
+
+    "MENU_UNLOCK_STATS_CAPS": "UNLOCK YOUR STATS?",
+
+    "MENU_VISIT_WEBSITE": "Visit Website",
+
+    "MENU_VISIT_WEBSITE_CAPS": "VISIT WEBSITE",
+
+    "MENU_WAITING_FOR_MORE_PLAYERS_TEAMS": "Waiting for more players to balance teams",
+
+    "MENU_XAXIS": "Window X-Axis Pos",
+
+    "MENU_YAXIS": "Window Y-Axis Pos",
+
+    "MPUI_ARKADEN": "Arkaden",
+
+    "MPUI_AUTORECORD": "Automatic Recording: ",
+
+    "MPUI_AUTORECORD_CAPS": "AUTOMATIC RECORDING: ",
+
+    "MPUI_BLOC": "Bloc",
+
+    "MPUI_BLOC_SH": "Forgotten City",
+
+    "MPUI_BOG_SH": "Bog",
+
+    "MPUI_CARENTAN": "Chinatown",
+
+    "MPUI_CARGOSHIP_SH": "Freighter",
+
+    "MPUI_CONF": "Kill Confirmed",
+
+    "MPUI_CONF_CAPS": "KILL CONFIRMED",
+
+    "MPUI_CO_HUNTED": "Village",
+
+    "MPUI_CRANKED": "Cranked",
+
+    "MPUI_CRANKED_CAPS": "CRANKED",
+
+    "MPUI_CRASH_SNOW": "Winter Crash",
+
+    "MPUI_CRASH_TROPICAL": "Crash: Tropical",
+
+    "MPUI_DEMOS_KEEP": "Demos to keep: ",
+
+    "MPUI_DEMOS_KEEP_CAPS": "DEMOS TO KEEP: ",
+
+    "MPUI_DEMO_AUTHOR": "Author:",
+
+    "MPUI_DEMO_AUTHOR_CAPS": "AUTHOR:",
+
+    "MPUI_DEMO_CREATED": "Created:",
+
+    "MPUI_DEMO_CREATED_CAPS": "CREATED:",
+
+    "MPUI_DEMO_DATE": "Date:",
+
+    "MPUI_DEMO_DATE_CAPS": "DATE:",
+
+    "MPUI_DEMO_LENGTH": "Length:",
+
+    "MPUI_DEMO_LENGTH_CAPS": "LENGTH:",
+
+    "MPUI_DESC_AUTORECORD": "Record your matches automatically.",
+
+    "MPUI_DESC_CHANGELOG": "See what's new.",
+
+    "MPUI_DESC_CHANGE_NAME": "Change your name",
+
+    "MPUI_DESC_CHECK_FOR_UPDATES": "Check if a newer version is available.",
+
+    "MPUI_DESC_CUSTOM_TITLE": "Change the playercard title text",
+
+    "MPUI_DESC_D3D9EX": "Use Direct3D 9Ex.",
+
+    "MPUI_DESC_DEMOS_KEEP": "Define how many of your recordings should be saved, before the oldest ones get deleted.",
+
+    "MPUI_DESC_ENABLE_VOICE_CHAT": "Use voice communications",
+
+    "MPUI_DESC_FOV": "Adjust your field of view.",
+
+    "MPUI_DESC_FOVSCALE": "Adjust your field of view scale, also modifies aim FOV.",
+
+    "MPUI_DESC_FRIENDNOTIFY": "Should you send status notifications to your friends?",
+
+    "MPUI_DESC_FRIENDS": "Check where your friends are playing.",
+
+    "MPUI_DESC_GAMEPAD_ENABLED": "Turn accepting inputs from gamepads on/off",
+
+    "MPUI_DESC_GPAD_STYLE": "Switch between Xbox and PlayStation HUDs.",
+
+    "MPUI_DESC_LOCKON_ENABLED": "Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting.",
+
+    "MPUI_DESC_LOGOUT": "Log yourself out.",
+
+    "MPUI_DESC_LOOK_INVERSION": "Inverts the gamepad pitch axis (up/down)",
+
+    "MPUI_DESC_MAP_ARKADEN": "Medium sized German mall. Intense Search & Destroy games.",
+
+    "MPUI_DESC_MAP_BLOC_SH": "A modified version of Bloc.",
+
+    "MPUI_DESC_MAP_CARENTAN": "Small city at night. Great for any mode.",
+
+    "MPUI_DESC_MAP_CARGOSHIP": "A medium-sized map featured in Call of Duty 4: Modern Warfare. It takes place on a cargo ship during a storm and is based on the campaign mission, Crew Expendable.",
+
+    "MPUI_DESC_MAP_CARGOSHIP_SH": "An snow covered version of, the Call of Duty 4: Modern Warfare map, Wet Work.",
+
+    "MPUI_DESC_MAP_CO_HUNTED": "Russian village in the evening.",
+
+    "MPUI_DESC_MAP_CRASH_SNOW": "Dark and snowy holiday themed Crash. Beware the airstrikes...",
+
+    "MPUI_DESC_MAP_CRASH_TROPICAL": "Crash with a tropical landscape.",
+
+    "MPUI_DESC_MAP_DOME": "Small outpost in the desert. Fast and frantic action.",
+
+    "MPUI_DESC_MAP_ESTATE_TROPICAL": "Estate with a tropical landscape.",
+
+    "MPUI_DESC_MAP_FAV_TROPICAL": "Favela with a tropical landscape.",
+
+    "MPUI_DESC_MAP_FIRINGRANGE": "Close range to medium range combat in a military practice facility in Cuba.",
+
+    "MPUI_DESC_MAP_HARDHAT": "A small construction site. Fast paced, close quarter action.",
+
+    "MPUI_DESC_MAP_KILLHOUSE": "Killhouse is a very small map from the Variety Map Pack of Call of Duty 4: Modern Warfare.  It is the home to very fierce battles as the map is no larger than Shipment.",
+
+    "MPUI_DESC_MAP_LOCKDOWN": "European city center. Great for Team Defender.",
+
+    "MPUI_DESC_MAP_MISSION": "African colonial settlement. Fight to control the center.",
+
+    "MPUI_DESC_MAP_NUKED": "A deserted nuke testing facility used in the Cold War.",
+
+    "MPUI_DESC_MAP_OILRIG": "The Only Easy Day... Was Yesterday",
+
+    "MPUI_DESC_MAP_RESISTANCE": "Parisian district. Great for Domination and Kill Confirmed.",
+
+    "MPUI_DESC_MAP_RUST_LONG": "Fast-paced action in an oil yard in the middle of the desert.",
+
+    "MPUI_DESC_MAP_SEATOWN": "A coastal town.  Narrow streets bring hectic, close encounters.",
+
+    "MPUI_DESC_MAP_SHIPMENT_LONG": "A larger version of the original Call of Duty 4: Modern Warfare map Shipment.",
+
+    "MPUI_DESC_MAP_STORM_SPRING": "A modified version of Storm, snow covered instead of rainy.",
+
+    "MPUI_DESC_MAP_UNDERGROUND": "Small subway station. Fast paced action both inside and out.",
+
+    "MPUI_DESC_MAP_VILLAGE": "Large African village. Great for all game modes.",
+
+    "MPUI_DESC_MAXFPS": "Define your maximum frames per second.",
+
+    "MPUI_DESC_MODS": "Browse your mods.",
+
+    "MPUI_DESC_NATIVECURSOR": "Display your native cursor, instead of the games cursor.",
+
+    "MPUI_DESC_NEWCOLORS": "Use the color code stylesheet from ^2Warfare2.",
+
+    "MPUI_DESC_NOBORDER": "Do not use a border in windowed mode.",
+
+    "MPUI_DESC_OPTIONS": "Set your game options.",
+
+    "MPUI_DESC_QUIT": "Quit the game.",
+
+    "MPUI_DESC_RESET_STATS": "Reset your stats.",
+
+    "MPUI_DESC_SLOWDOWN_ENABLED": "Turn slowdown aim assist on/off. Slowdown reduces the stick turnrate when hovering over a target. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting.",
+
+    "MPUI_DESC_STORE": "Redirects to the XLabs Site containing download information for DLC",
+
+    "MPUI_DESC_STREAM_FRIENDLY_UI": "Hide friend status notifications and server info on scoreboard.",
+
+    "MPUI_DESC_THEATER": "View your played matches.",
+
+    "MPUI_DESC_UNLOCK_STATS": "Unlock your stats.",
+
+    "MPUI_DOME": "Dome",
+
+    "MPUI_DOWNLOADING": "Downloading",
+
+    "MPUI_DOWNLOADING_CAPS": "DOWNLOADING",
+
+    "MPUI_ENABLE_VOICE_CHAT": "Enable Voice Chat",
+
+    "MPUI_ESTATE_TROPICAL": "Estate: Tropical",
+
+    "MPUI_FAV_TROPICAL": "Favela: Tropical",
+
+    "MPUI_GUNGAME": "Gun Game",
+
+    "MPUI_GUNGAME_CAPS": "GUN GAME",
+
+    "MPUI_HARDHAT": "Hardhat",
+
+    "MPUI_INF": "Infected",
+
+    "MPUI_INF_CAPS": "INFECTED",
+
+    "MPUI_IS_PRIVATE": "Password Protected:",
+
+    "MPUI_IS_PRIVATE_CAPS": "PASSWORD PROTECTED:",
+
+    "MPUI_IW4_TEST_MAP": "IW4 Test Map",
+
+    "MPUI_KILLHOUSE": "Killhouse",
+
+    "MPUI_LOCKDOWN": "Lockdown",
+
+    "MPUI_MARINES": "Marine Force Recon",
+
+    "MPUI_MARINES_SHORT": "Marines",
+
+    "MPUI_MAX_CLIENTS": "Max. Clients:",
+
+    "MPUI_MAX_CLIENTS_CAPS": "MAX. CLIENTS:",
+
+    "MPUI_MISSION": "Mission",
+
+    "MPUI_MOD": "Mod:",
+
+    "MPUI_MOD_CAPS": "MOD:",
+
+    "MPUI_NA": "^3Currently unavailable.",
+
+    "MPUI_NUKED": "Nuketown",
+
+    "MPUI_OITC": "One in the Chamber",
+
+    "MPUI_OITC_CAPS": "ONE IN THE CHAMBER",
+
+    "MPUI_OPFOR": "OpFor",
+
+    "MPUI_OPFOR_SHORT": "OpFor",
+
+    "MPUI_PLEASE_WAIT": "Please wait",
+
+    "MPUI_RESET_STATS": "Reset Stats",
+
+    "MPUI_RESET_STATS_CAPS": "RESET STATS",
+
+    "MPUI_RESET_STATS_WARNING": "Do you really want to reset your stats?\n\nEverything you've unlocked including weapons, experience, challenges, titles and emblems will be reset.\n\nYou'll have to rank up again to reacquire them.",
+
+    "MPUI_RESISTANCE": "Resistance",
+
+    "MPUI_RULES_AIMASSIST": "Aim Assist",
+
+    "MPUI_RULES_VOICECHAT": "Voice Chat",
+
+    "MPUI_RUST_LONG": "Rust: Long",
+
+    "MPUI_SAS": "S.A.S.",
+
+    "MPUI_SAS_SHORT": "S.A.S.",
+
+    "MPUI_SEATOWN": "Seatown",
+
+    "MPUI_SECURITY_INCREASE_MESSAGE": "Increasing security level from %d to %d (est. %s)",
+
+    "MPUI_SECURITY_LEVEL": "Security Level:",
+
+    "MPUI_SECURITY_LEVEL_CAPS": "SECURITY LEVEL:",
+
+    "MPUI_SECURITY_LEVEL_MESSAGE": "Your security level is %d",
+
+    "MPUI_SECURITY_NEW_LEVEL_MESSAGE": "Your new security level is %d",
+
+    "MPUI_SHARPSHOOTER": "Sharpshooter",
+
+    "MPUI_SHARPSHOOTER_CAPS": "SHARPSHOOTER",
+
+    "MPUI_SHIPMENT_LONG": "Shipment: Long",
+
+    "MPUI_SPETSNAZ": "Spetsnaz",
+
+    "MPUI_SPETSNAZ_SHORT": "Spetsnaz",
+
+    "MPUI_STORM_SPRING": "Chemical Plant",
+
+    "MPUI_TDEF": "Team Defender",
+
+    "MPUI_TDEF_CAPS": "TEAM DEFENDER",
+
+    "MPUI_UNDERGROUND": "Underground",
+
+    "MPUI_UNLOCK_STATS": "Unlock Stats",
+
+    "MPUI_UNLOCK_STATS_CAPS": "UNLOCK STATS",
+
+    "MPUI_UNLOCK_STATS_WARNING": "Do you really want to unlock your stats?\n\nThis will give you the max. experience, prestige and will unlock all weapons, challenges, titles and emblems.",
+
+    "MPUI_VERSION": "Version:",
+
+    "MPUI_VERSION_CAPS": "VERSION:",
+
+    "MPUI_VILLAGE": "Village",
+
+    "MPUI_VIP_CAPS": "VIP",
+
+    "MP_AFRICA_ELIMINATED": "Militia eliminated",
+
+    "MP_AFRICA_FORFEITED": "Africa Militia forfeited",
+
+    "MP_AFRICA_MILITIA_NAME": "Africa Militia",
+
+    "MP_DELTA_ELIMINATED": "Delta Eliminated",
+
+    "MP_DELTA_FORFEITED": "Delta forfeited",
+
+    "MP_DELTA_NAME": "Delta Force",
+
+    "MP_DELTA_SHORT_NAME": "Delta",
+
+    "MP_DRAFT_STARTS_IN": "Infection countdown: &&1",
+
+    "MP_GIGN": "GIGN",
+
+    "MP_GIGN_ELIMINATED": "GIGN Eliminated",
+
+    "MP_GIGN_FORFEITED": "GIGN Forfeited",
+
+    "MP_GIGN_SHORT_NAME": "GIGN",
+
+    "MP_INNERCIRCLE_ELIMINATED": "Inner Circle eliminated",
+
+    "MP_INNERCIRCLE_FORFEITED": "Inner Circle forfeited",
+
+    "MP_INNERCIRCLE_NAME": "Inner Circle",
+
+    "MP_MARINES_ELIMINATED": "Marines eliminated",
+
+    "MP_MARINES_FORFEITED": "Marines forfeited",
+
+    "MP_NEUTRAL_FLAG_DROPPED_BY": "&&1 dropped the flag!",
+
+    "MP_OPFOR_ELIMINATED": "OpFor eliminated",
+
+    "MP_OPFOR_FORFEITED": "OpFor forfeited",
+
+    "MP_PICKUP_C4": "Press and hold ^3[{+activate}]^7 to pick up C4",
+
+    "MP_PICKUP_CLAYMORE": "Press and hold ^3[{+activate}]^7 to pick up Claymore",
+
+    "MP_PMC": "P.M.C.",
+
+    "MP_PMC_ELIMINATED": "P.M.C. eliminated",
+
+    "MP_PMC_FORFEITED": "P.M.C. Forfeited",
+
+    "MP_PMC_SHORT_NAME": "PMC",
+
+    "MP_SAS": "Special Air Service",
+
+    "MP_SAS_ELIMINATED": "SAS eliminated",
+
+    "MP_SAS_FORFEITED": "SAS forfeited",
+
+    "MP_SAS_SHORT_NAME": "SAS",
+
+    "MP_SEARCHING_FOR_PLAYER": "Waiting",
+
+    "MP_SPETSNAZ_ELIMINATED": "Spetsnaz eliminated",
+
+    "MP_SPETSNAZ_FORFEITED": "Spetsnaz forfeited",
+
+    "MP_SPETSNAZ_NAME": "Spetsnaz",
+
+    "MP_WEAPON": "Weapon:",
+
+    "OBJECTIVES_CONF": "Recover Dog Tags for the win.",
+
+    "OBJECTIVES_CONF_HINT": "Recover Dog Tags for the win.",
+
+    "OBJECTIVES_CONF_SCORE": "Recover Dog Tags to score for your team and deny enemy score.  First team to &&1 wins.",
+
+    "OBJECTIVES_INFECT": "Eliminated Survivors become Infected.  Infect everyone, or survive the game to win.",
+
+    "OBJECTIVES_INFECT_HINT": "Watch your back.",
+
+    "OBJECTIVES_INFECT_SCORE": "Survivors become Infected.  Infect everyone, or survive the game to win.",
+
+    "OBJECTIVES_TDEF": "Capture and hold the flag for a team double scoring bonus.",
+
+    "OBJECTIVES_TDEF_ATTACKER_HINT": "Capture flag for team x2 bonus.",
+
+    "OBJECTIVES_TDEF_DEFENDER_HINT": "Defend flag for team x2 bonus.",
+
+    "OBJECTIVES_TDEF_HINT": "Capture and hold the flag.",
+
+    "OBJECTIVES_TDEF_SCORE": "Capture and hold the flag for team double scoring bonus.  First team to &&1 wins.",
+
+    "PATCH_COD4_DLC": "Call of Duty 4 Pack",
+
+    "PATCH_DESC_COD4_DLC": "Call Of Duty 4 maps ported to IW4x by the team",
+
+    "PATCH_DESC_DLC1": "The Modern Warfare 2 Stimulus Package delivers additional action-packed multiplayer maps, including brand-new battlegrounds and legendary fan-favorites from Call of Duty 4: Modern Warfare.",
+
+    "PATCH_DESC_DLC2": "The best-selling first-person action game of all time gets even bigger with more epic new multiplayer content! The Modern Warfare 2 Resurgence Pack delivers five incredible new multiplayer maps. Take the action to exciting new locations, then battle across legendary landscapes from Call of Duty 4: Modern Warfare.",
+
+    "PATCH_DESC_IW4X_DLC": "Original IW4x DLC containing several maps from Call Of Duty: Online",
+
+    "PATCH_DESC_MW3_DLC": "Modern Warfare 3 maps ported to IW4x by the team",
+
+    "PATCH_DLC1": "Stimulus Maps",
+
+    "PATCH_DLC2": "Resurgence Maps",
+
+    "PATCH_IW4X_DLC": "IW4x Classics",
+
+    "PATCH_MW3_DLC": "Modern Warfare 3 Pack",
+
+    "PERKS_COMBATHIGH": "Juiced",
+
+    "PERKS_DESC_COMBATHIGH": "Move faster for a few seconds after spawning.",
+
+    "PERKS_PAINKILLER": "Juiced",
+
+    "PLATFORM_CHANGE_NAME_CAPS": "^3C^7HANGE NAME",
+
+    "PLATFORM_DYK_IW4_MSG40": "Your matches are being automatically recorded. You can watch them at the theater menu.",
+
+    "PLATFORM_DYK_IW4_MSG41": "Don't want to level up? Check out the unlock stats feature at the barracks menu.",
+
+    "PLATFORM_DYK_IW4_MSG42": "Check out the store menu for the latest downloadable content.",
+
+    "PLATFORM_DYK_IW4_MSG43": "You can adjust your field of view at the video options.",
+
+    "PLATFORM_DYK_IW4_MSG44": "If you like a specific server, you can add it to your favorites.",
+
+    "PLATFORM_FRIENDS": "Friends ^0- ^3F",
+
+    "PLATFORM_FRIENDS_CAPS": "FRIENDS ^0- ^3F",
+
+    "PLATFORM_REFRESH": "Refresh ^0- ^3F5",
+
+    "PLATFORM_REFRESH_CAPS": "REFRESH ^0- ^3F5",
+
+    "PLATFORM_REFRESH_LIST": "Refresh List ^0- ^3F5",
+
+    "PLATFORM_REFRESH_LIST_CAPS": "REFRESH LIST ^0- ^3F5",
+
+    "PLAYERCARDS_TITLE_EVIL_CHICKEN": "Evil Chicken",
+
+    "PLAYERCARDS_TITLE_NO_LAST_STAND": "No Last Stand!",
+
+    "QUICKMESSAGE_1_COMMANDS": "1. Commands",
+
+    "QUICKMESSAGE_1_ENEMY_SPOTTED": "1. Contact!",
+
+    "QUICKMESSAGE_1_FOLLOW_ME": "1. On me!",
+
+    "QUICKMESSAGE_1_YES_SIR": "1. Roger.",
+
+    "QUICKMESSAGE_2_ENEMY_DOWN": "2. Enemy down!",
+
+    "QUICKMESSAGE_2_MOVE_IN": "2. Move in!",
+
+    "QUICKMESSAGE_2_MULTIPLE_CONTACTS": "2. Multiple contacts!",
+
+    "QUICKMESSAGE_2_NO_SIR": "2. Negative.",
+
+    "QUICKMESSAGE_2_STATEMENTS": "2. Statements",
+
+    "QUICKMESSAGE_3_FALL_BACK": "3. Fall back!",
+
+    "QUICKMESSAGE_3_IM_IN_POSITION": "3. In position.",
+
+    "QUICKMESSAGE_3_IM_ON_MY_WAY": "3. Moving.",
+
+    "QUICKMESSAGE_3_ON_MY_WAY": "3. On my way.",
+
+    "QUICKMESSAGE_3_RESPONSES": "3. Responses",
+
+    "QUICKMESSAGE_4_AREA_SECURE": "4. Area secure!",
+
+    "QUICKMESSAGE_4_SORRY": "4. Sorry.",
+
+    "QUICKMESSAGE_4_SUPPRESSING_FIRE": "4. Base of fire!",
+
+    "QUICKMESSAGE_5_ATTACK_LEFT_FLANK": "5. Attack left flank!",
+
+    "QUICKMESSAGE_5_GREAT_SHOT": "5. Nice shot!",
+
+    "QUICKMESSAGE_5_GRENADE": "5. Grenade!",
+
+    "QUICKMESSAGE_5_WATCH_SIX": "5. Watch your six!",
+
+    "QUICKMESSAGE_6_ATTACK_RIGHT_FLANK": "6. Attack right flank!",
+
+    "QUICKMESSAGE_6_SNIPER": "6. Sniper!",
+
+    "QUICKMESSAGE_6_TOOK_LONG_ENOUGH": "6. Come on!",
+
+    "QUICKMESSAGE_7_ARE_YOU_CRAZY": "7. Are you crazy?",
+
+    "QUICKMESSAGE_7_HOLD_THIS_POSITION": "7. Hold this position!",
+
+    "QUICKMESSAGE_7_NEED_REINFORCEMENTS": "7. Need reinforcements!",
+
+    "QUICKMESSAGE_8_HOLD_YOUR_FIRE": "8. Hold your fire!",
+
+    "QUICKMESSAGE_8_REGROUP": "8. Regroup!",
+
+    "QUICKMESSAGE_AREA_SECURE": "Area secure!",
+
+    "QUICKMESSAGE_ARE_YOU_CRAZY": "Are you crazy?",
+
+    "QUICKMESSAGE_ATTACK_LEFT_FLANK": "Attack left flank!",
+
+    "QUICKMESSAGE_ATTACK_RIGHT_FLANK": "Attack right flank!",
+
+    "QUICKMESSAGE_COME_ON": "Come on.",
+
+    "QUICKMESSAGE_ENEMIES_SPOTTED": "Multiple contacts!",
+
+    "QUICKMESSAGE_ENEMY_DOWN": "Enemy down!",
+
+    "QUICKMESSAGE_ENEMY_GRENADE": "Enemy grenade!",
+
+    "QUICKMESSAGE_ENEMY_SPOTTED": "Contact!",
+
+    "QUICKMESSAGE_ESC_EXIT": "Esc. Exit",
+
+    "QUICKMESSAGE_FALL_BACK": "Fall back!",
+
+    "QUICKMESSAGE_FOLLOW_ME": "On me!",
+
+    "QUICKMESSAGE_GREAT_SHOT": "Nice shot!",
+
+    "QUICKMESSAGE_GRENADE": "Grenade!",
+
+    "QUICKMESSAGE_HOLD_THIS_POSITION": "Hold this position!",
+
+    "QUICKMESSAGE_HOLD_YOUR_FIRE": "Hold your fire!",
+
+    "QUICKMESSAGE_IM_IN_POSITION": "In position.",
+
+    "QUICKMESSAGE_IM_ON_MY_WAY": "Moving.",
+
+    "QUICKMESSAGE_MOVE_IN": "Move in!",
+
+    "QUICKMESSAGE_NEED_REINFORCEMENTS": "Need reinforcements!",
+
+    "QUICKMESSAGE_NO_SIR": "Negative.",
+
+    "QUICKMESSAGE_ON_MY_WAY": "On my way.",
+
+    "QUICKMESSAGE_QUICK_MESSAGE": "Quick Message",
+
+    "QUICKMESSAGE_REGROUP": "Regroup!",
+
+    "QUICKMESSAGE_SNIPER": "Sniper!",
+
+    "QUICKMESSAGE_SORRY": "Sorry.",
+
+    "QUICKMESSAGE_SQUAD_ATTACK_LEFT_FLANK": "Squad, attack left flank!",
+
+    "QUICKMESSAGE_SQUAD_ATTACK_RIGHT_FLANK": "Squad, attack right flank!",
+
+    "QUICKMESSAGE_SQUAD_HOLD_THIS_POSITION": "Squad, hold this position!",
+
+    "QUICKMESSAGE_SQUAD_REGROUP": "Squad, regroup!",
+
+    "QUICKMESSAGE_SQUAD_STICK_TOGETHER": "Squad, stick together!",
+
+    "QUICKMESSAGE_STICK_TOGETHER": "Stick together!",
+
+    "QUICKMESSAGE_SUPPRESSING_FIRE": "Base of fire!",
+
+    "QUICKMESSAGE_TOOK_LONG_ENOUGH": "Took long enough!",
+
+    "QUICKMESSAGE_TOOK_YOU_LONG_ENOUGH": "Took you long enough!",
+
+    "QUICKMESSAGE_WATCH_SIX": "Watch your six!",
+
+    "QUICKMESSAGE_YES_SIR": "Roger.",
+
+    "QUICKMESSAGE_YOURE_CRAZY": "You're crazy!",
+
+    "QUICKMESSAGE_YOURE_NUTS": "You're nuts!",
+
+    "QUICKMESSAGE_YOU_OUTTA_YOUR_MIND": "You outta your mind?",
+
+    "SPLASHES_COMBATHIGH_DESC": "Move faster for a few seconds after spawning.",
+
+    "SPLASHES_DENIED_KILL": "Denied Kill!",
+
+    "SPLASHES_DRAFTED": "Infected!",
+
+    "SPLASHES_DRAFTED_ROGUE": "Got Infected!",
+
+    "SPLASHES_DROPPED_ENEMY_GUN_RANK": "Dropped Enemy Gun Rank!",
+
+    "SPLASHES_DROPPED_GUN_RANK": "Dropped Gun Rank!",
+
+    "SPLASHES_FINAL_ROGUE": "Final Survivor!",
+
+    "SPLASHES_FIRST_MERCENARY": "First Infected!",
+
+    "SPLASHES_GAINED_GUN_RANK": "Gained Gun Rank!",
+
+    "SPLASHES_GOT_DRAFTED": "Got Infected!",
+
+    "SPLASHES_KILL_CONFIRMED": "Kill Confirmed!",
+
+    "SPLASHES_KILL_DENIED": "Kill Denied!",
+
+    "SPLASHES_SURVIVOR": "Survivor!",
+
+    "SPLASHES_TAGS_RETRIEVED": "Got Your Tags!",
+
+    "SPLASHES_TEAM_ASSIST": "Team Assist!",
+
+    "SPLASHES_TOP_GUN_RANK": "Top Gun Rank!",
+
+    "SPLASHES_X2_BONUS": "x2 Bonus!",
+
+    "WEAPON_AK47_CLASSIC": "AK-47 Classic",
+
+    "WEAPON_AK47_CLASSIC_ACOG": "AK-47 Classic ACOG Sight",
+
+    "WEAPON_AK47_CLASSIC_BLING": "AK-47 Classic Bling",
+
+    "WEAPON_AK47_CLASSIC_FMJ": "AK-47 Classic FMJ",
+
+    "WEAPON_AK47_CLASSIC_GP25": "AK-47 Classic Grenade Launcher",
+
+    "WEAPON_AK47_CLASSIC_REDDOT": "AK-47 Classic Red Dot Sight",
+
+    "WEAPON_AK47_CLASSIC_SILENCER": "AK-47 Classic Silenced",
+
+    "WEAPON_AK47_CLASSIC_XMAGS": "AK-47 Classic Extended Mags",
+
+    "WEAPON_AK74U_ACOG": "AK-74u ACOG Sight",
+
+    "WEAPON_AK74U_EXTENDED_MAGS": "AK-74u Extended Mags",
+
+    "WEAPON_DESERTEAGLEGOLD_AKIMBO": "Gold Desert Eagle Akimbo",
+
+    "WEAPON_DESERTEAGLEGOLD_BLING": "Gold Desert Eagle Bling",
+
+    "WEAPON_DESERTEAGLEGOLD_FMJ": "Gold Desert Eagle FMJ",
+
+    "WEAPON_DESERTEAGLEGOLD_TACTICAL": "Gold Desert Eagle Tactical Knife",
+
+    "WEAPON_FAL_GL": "FAL Grenade Launcher",
+
+    "WEAPON_PEACEKEEPER": "Peacekeeper",
+
+    "CARDTITLE_TRANSGENDER": "It's Shark Week!",
+
+    "CARDTITLE_NONBINARY": "They Slash Them",
+
+    "CARDTITLE_ASEXUAL": "Ace",
+	
+	"CARDTITLE_WAVE_DEFENSE": "Wave Defense"
+}
