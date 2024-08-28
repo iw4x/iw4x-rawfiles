@@ -449,7 +449,9 @@ sound,iw3_uk_victory_music
 sound,iw3_uk_winning_music
 # Riot : (fallback from IW4)
 xmodel,viewhands_marine_sniper
-xmodel,head_riot_tf141_forest
-xmodel,mp_body_riot_tf141_forest
-xmodel,viewhands_tf141
 xmodel,viewhands_sas_woodland
+xmodel,viewhands_black_kit
+xmodel,head_riot_udt
+xmodel,mp_body_riot_udt
+xmodel,viewhands_udt
+
