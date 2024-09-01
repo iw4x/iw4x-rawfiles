@@ -309,7 +309,3 @@ weapon,m40a3_mp
 weapon,peacekeeper_mp
 weapon,dragunov_mp
 weapon,deserteaglegold_mp
-
-# Fix team icons missing on early ports of IW3 maps
-material,faction_128_sas_external_fade
-material,faction_128_sas_external
