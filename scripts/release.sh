@@ -10,7 +10,7 @@ cd iw4x/
 cd iw4x_00/
 zip -r iw4x_00.iwd *
 mv iw4x_00.iwd ../
-cd .. 
+cd ..
 rm -rf iw4x_00/
 
 # iw4x_01
@@ -49,8 +49,14 @@ mv iw4x_05.iwd ../
 cd ..
 rm -rf iw4x_05/
 
-# Cleanup
 cd ..
+
+# zonebuilder-wrapper
+curl -L https://github.com/mxve/zonebuilder-wrapper/releases/latest/download/zonebuilder-i686-pc-windows-msvc.zip -o zonebuilder.zip
+unzip zonebuilder.zip
+rm zonebuilder.zip
+
+# Cleanup
 rm LICENSE
 rm README.md
 rm -rf .github
