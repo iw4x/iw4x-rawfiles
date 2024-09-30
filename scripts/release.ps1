@@ -35,7 +35,7 @@ Write-Host "Done copying zone files.`n"
 
 # Create iw4x_00.iwd
 for ($i = 0; $i -lt 6; $i++)
-{ 
+{
     ${archName} = ("iw4x_{0:D2}" -f $i)
     Write-Host "Compressing ${archName}.zip..."
     Compress-Archive -Path "${rawFilesPath}\release\temp\iw4x\${archName}\*" -DestinationPath "${rawFilesPath}\release\temp\iw4x\${archName}.zip"
@@ -45,6 +45,13 @@ for ($i = 0; $i -lt 6; $i++)
     Remove-Item -Recurse "${rawFilesPath}\release\temp\iw4x\${archName}"
     Write-Host "Finished compressing ${archName}.iwd`n"
 }
+
+Write-Host "Downloading latest zonebuilder-wrapper"
+Invoke-WebRequest -Uri "https://github.com/mxve/zonebuilder-wrapper/releases/latest/download/zonebuilder-i686-pc-windows-msvc.zip" -OutFile "${rawFilesPath}\release\temp\zonebuilder.zip"
+Write-Host "Unpacking ${rawFilesPath}\release\temp\"
+Expand-Archive -LiteralPath "${rawFilesPath}\release\temp\zonebuilder.zip" -DestinationPath "${rawFilesPath}\release\temp\"
+Write-Host "Removing ${rawFilesPath}\release\temp\zonebuilder.zip"
+Remove-Item "${rawFilesPath}\release\temp\zonebuilder.zip"
 
 # Create release.zip
 if (Test-Path -Path "${rawFilesPath}\release\release.zip") {
