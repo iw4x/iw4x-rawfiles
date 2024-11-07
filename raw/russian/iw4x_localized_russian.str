@@ -1,7 +1,6 @@
-// Dumped from fastfile "iw4x_localized_russian".
 VERSION             "1"
 CONFIG              "C:/trees/cod6/cod6/bin/StringEd.cfg"
-FILENOTES           ""
+FILENOTES           "This file is used to generate iw4x_localized_russian.ff"
 
 REFERENCE           CARDTITLE_ASEXUAL
 LANG_ENGLISH        "Ace"
