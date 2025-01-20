@@ -23,7 +23,7 @@
 #define MENU_MUSIC													"music_opening"
 
 #define WELCOME_TITLE												"Welcome to IW4x"
-#define WELCOME_MESSAGE												"Thank you for participating in the IW4x Beta!\n\nThis mod is in Beta, and will be so for some time. This means you will experience bugs, unfinished features, problematic design decision, and many more things that disrupt your game experience. We will be working with the community to fix these, to help us please visit ^2xlabs.dev ^7for development information.\n\nAbove all, please remember this mod is not finished, and is a work in progress."
+#define WELCOME_MESSAGE												"Thank you for playing IW4x!\n\nTo get help, report bugs or just hang out with the community head over to ^4AlterWare.dev ^7for our Discord and Forums.\n\nAbove all, please remember that while we try to keep the game stable its still a community project without any guarantees. Please help us by reporting bugs and giving feedback!"
 
 #define MENU_ITEM_WELCOME_BOX(titleArg, messageArg) \
 	itemDef \
