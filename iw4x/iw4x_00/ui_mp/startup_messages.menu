@@ -2,7 +2,7 @@
 	menuDef
 	{
 		name "startup_messages"
-		rect -150 -124 300 124 2 2
+		rect -180 -99 360 198 2 2
 		popup
 		legacySplitScreenScale
 		visible 1
@@ -48,7 +48,7 @@
 		}
 		itemDef
 		{
-			rect 0 0 300 124 2 2
+			rect 0 0 360 198 2 2
 			decoration
 			visible 1
 			style 1
@@ -81,14 +81,14 @@
 		}
 		itemDef
 		{
-			rect 0 0 300 0 2 2
+			rect 0 0 360 0 2 2
 			decoration
 			visible 1
 			style 3
 			forecolor 1 1 1 1
 			background "mockup_popup_bg_stencilfill"
 			textscale 0.55
-			exp rect h ( ( 24 + 5 * 20 ) )
+			exp rect h ( 198 )
 		}
 		itemDef
 		{
@@ -114,14 +114,14 @@
 		}
 		itemDef
 		{
-			rect 0 0 300 0 1 1
+			rect 0 0 360 0 1 1
 			decoration
 			visible 1
 			style 3
 			forecolor 1 1 1 0
 			background "small_box_lightfx"
 			textscale 0.55
-			exp rect h ( ( 24 + 5 * 20 ) )
+			exp rect h ( 198 )
 		}
 		itemDef
 		{
@@ -136,7 +136,7 @@
 		}
 		itemDef
 		{
-			rect 0 -64 300 64 2 2
+			rect 0 -64 360 64 2 2
 			decoration
 			visible 1
 			style 3
@@ -147,7 +147,7 @@
 		}
 		itemDef
 		{
-			rect 300 -64 64 64 2 2
+			rect 360 -64 64 64 2 2
 			decoration
 			visible 1
 			style 3
@@ -158,38 +158,38 @@
 		}
 		itemDef
 		{
-			rect 300 0 64 0 2 2
+			rect 360 0 64 0 2 2
 			decoration
 			visible 1
 			style 3
 			forecolor 0 0 0 1
 			background "drop_shadow_r"
 			textscale 0.55
-			exp rect h ( ( 24 + 5 * 20 ) )
+			exp rect h ( 198 )
 			visible when ( 1 )
 		}
 		itemDef
 		{
-			rect 300 0 64 64 2 2
+			rect 360 0 64 64 2 2
 			decoration
 			visible 1
 			style 3
 			forecolor 0 0 0 1
 			background "drop_shadow_br"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			exp rect y ( 198 )
 			visible when ( 1 )
 		}
 		itemDef
 		{
-			rect 0 0 300 64 2 2
+			rect 0 0 360 64 2 2
 			decoration
 			visible 1
 			style 3
 			forecolor 0 0 0 1
 			background "drop_shadow_b"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			exp rect y ( 198 )
 			visible when ( 1 )
 		}
 		itemDef
@@ -201,7 +201,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_bl"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 24 + 5 * 20 ) ) )
+			exp rect y ( 198 )
 			visible when ( 1 )
 		}
 		itemDef
@@ -213,12 +213,12 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_l"
 			textscale 0.55
-			exp rect h ( ( 24 + 5 * 20 ) )
+			exp rect h ( 198 )
 			visible when ( 1 )
 		}
 		itemDef
 		{
-			rect 0 0 300 24 2 2
+			rect 0 0 360 24 2 2
 			decoration
 			visible 1
 			style 1
@@ -231,7 +231,7 @@
 		}
 		itemDef
 		{
-			rect 4 24 292 20 2 2
+			rect 4 24 352 20 2 2
 			decoration
 			autowrapped
 			visible 1
@@ -251,7 +251,7 @@
 		}
 		itemDef
 		{
-			rect 4 104 292 20 2 2
+			rect 4 174 352 20 2 2
 			visible 1
 			group "mw2_popup_button"
 			style 1
