@@ -300,6 +300,9 @@ material,weapon_peacekeeper
 xanim,viewmodel_mg4_ads_up_iw4x
 xanim,viewmodel_mg4_ads_down_iw4x
 
+# For an unknown reason, this dogtag waypoint techset wants to be explicitely referenced
+techset,mc_l_hsm_r0c0n0s0_custom_objective_sat.5x
+
 # All custom weapons
 weapon,ak47classic_mp
 weapon,ak74u_mp
