@@ -59,7 +59,7 @@
 		BUTTON_FOOTER_VIS(-210, 135, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
 		BUTTON_FOOTER_VIS(-210, 135, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
 		BUTTON_FOOTER(-65, 85, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
-		BUTTON_FOOTER(25, 95, "serverinfo", "", open "serverinfo_popmenu";)
+		BUTTON_FOOTER(25, 95, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
 		BUTTON_FOOTER(130, 80, "loadmod", "@MENU_LOAD_MOD_CAPS", uiScript "LoadMod";)
 		BUTTON_FOOTER(215, 95, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
 	}
