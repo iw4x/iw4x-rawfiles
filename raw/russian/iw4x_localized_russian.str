@@ -308,6 +308,9 @@ LANG_ENGLISH        "JOIN SERVER"
 REFERENCE           MENU_LAGOMETER
 LANG_ENGLISH        "Show Lagometer"
 
+REFERENCE           MENU_LOAD_MOD_CAPS
+LANG_ENGLISH        "LOAD MODS"
+
 REFERENCE           MENU_LOADING_MAPS
 LANG_ENGLISH        "Loading map selection..."
 
