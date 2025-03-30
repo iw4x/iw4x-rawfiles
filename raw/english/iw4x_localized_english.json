@@ -185,6 +185,14 @@
 
     "MENU_MAXPACKETS": "Max. packets per frame",
 
+    "MENU_MODDED_STATS_WARNING_TITLE": "Setup stats?",
+
+    "MENU_MODDED_STATS_WARNING": "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button.",
+
+    "MENU_MODDED_STATS_WARNING_NO": "No, continue with default stats",
+
+    "MENU_MODDED_STATS_WARNING_YES": "Yes, take me to the main menu",
+
     "MENU_MODS": "Mods",
 
     "MENU_MODS_CAPS": "MODS",
