@@ -104,7 +104,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_tl"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -115,7 +115,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_t"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -126,7 +126,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_tr"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -138,7 +138,7 @@
 			background "drop_shadow_br"
 			textscale 0.55
 			exp rect y ( 204 )
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -150,7 +150,7 @@
 			background "drop_shadow_b"
 			textscale 0.55
 			exp rect y ( 204 )
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -162,7 +162,7 @@
 			background "drop_shadow_bl"
 			textscale 0.55
 			exp rect y ( 204 )
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -227,7 +227,7 @@
 			textalignx 4
 			textscale 0.375
 			text "@MENU_MODDED_STATS_WARNING_YES"
-			visible when ( 1 )
+			visible 1
 			action
 			{
 				play "mouse_click";
@@ -266,7 +266,7 @@
 			textalignx 4
 			textscale 0.375
 			text "@MENU_MODDED_STATS_WARNING_NO"
-			visible when ( 1 )
+			visible 1
 			action
 			{
 				play "mouse_click";
