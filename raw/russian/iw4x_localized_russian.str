@@ -1,21 +1,23 @@
-VERSION             "1"
+// Dumped from fastfile "iw4x_localized_russian".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "2"
 CONFIG              "C:/trees/cod6/cod6/bin/StringEd.cfg"
-FILENOTES           "This file is used to generate iw4x_localized_russian.ff"
+FILENOTES           "Manually Translated"
 
 REFERENCE           CARDTITLE_ASEXUAL
 LANG_ENGLISH        "Ace"
 
 REFERENCE           CARDTITLE_NONBINARY
-LANG_ENGLISH        "They Slash Them"
+LANG_ENGLISH        "Они режут их"
 
 REFERENCE           CARDTITLE_TRANSGENDER
-LANG_ENGLISH        "It's Shark Week!"
+LANG_ENGLISH        "Неделя акул!"
 
 REFERENCE           CONF_GAME_DESC
 LANG_ENGLISH        "Зарабатывайте очки, убивая противников и собирая их жетоны."
 
 REFERENCE           CONF_KILL_CONFIRMED
-LANG_ENGLISH        "KILL CONFIRMED"
+LANG_ENGLISH        "УБИЙСТВО ПОДТВЕРЖДЕНО"
 
 REFERENCE           CONF_KILL_DENIED
 LANG_ENGLISH        "УБИЙСТВО НЕ ПОДТВЕРЖДЕНО"
@@ -24,58 +26,58 @@ REFERENCE           CONF_PICKEDUP_TAGS
 LANG_ENGLISH        "ЖЕТОН ВОЗВРАЩЕН"
 
 REFERENCE           CUSTOM_MAPS_DLC
-LANG_ENGLISH        "Custom Maps"
+LANG_ENGLISH        "Пользовательские карты"
 
 REFERENCE           DESC_CUSTOM_MAPS_DLC
-LANG_ENGLISH        "Downloaded maps that are placed in the /usermaps subfolder"
+LANG_ENGLISH        "Загруженные карты, расположенные в подпапке /usermaps."
 
 REFERENCE           ERR_INVALID_CHALLENGE_SIGNATURE
-LANG_ENGLISH        "Challenge signature was invalid!"
+LANG_ENGLISH        "Подпись недействительна!"
 
 REFERENCE           ERR_INVALID_CONNECT_DATA
-LANG_ENGLISH        "Invalid connect data!"
+LANG_ENGLISH        "Неверные данные подключения!"
 
 REFERENCE           ERR_INVALID_CONNECT_PACKET
-LANG_ENGLISH        "Invalid connect packet!"
+LANG_ENGLISH        "Недопустимый пакет подключения!"
 
 REFERENCE           ERR_INVALID_CONNECT_STRING
-LANG_ENGLISH        "Invalid connect string!"
+LANG_ENGLISH        "Неверная строка подключения!"
 
 REFERENCE           ERR_INVALID_INFOSTRING_DATA
-LANG_ENGLISH        "Invalid infostring data!"
+LANG_ENGLISH        "Неверные данные инфостроки!"
 
 REFERENCE           ERR_XUID_CERTIFICATE_MISMATCH
-LANG_ENGLISH        "XUID doesn't match the certificate!"
+LANG_ENGLISH        "XUID не соответствует сертификату!"
 
 REFERENCE           EXE_AWAITINGGAMESTATE
-LANG_ENGLISH        "Awaiting gamestate"
+LANG_ENGLISH        "Ожидание состояния игры"
 
 REFERENCE           EXE_PROGRESS
-LANG_ENGLISH        "Progress:"
+LANG_ENGLISH        "Прогресс:"
 
 REFERENCE           FONT_ICON_HINT_AUTO_COMPLETE
-LANG_ENGLISH        "Press ^3&&1 ^7for autocomplete"
+LANG_ENGLISH        "Нажмите ^3&&1 ^7 для автозаполнения"
 
 REFERENCE           FONT_ICON_HINT_MODIFIER
-LANG_ENGLISH        "Use ^3&&1 ^7for modifiers"
+LANG_ENGLISH        "Используйте ^3&&1 ^7 для модификаторов"
 
 REFERENCE           FONT_ICON_MODIFIER_LIST_BIG
-LANG_ENGLISH        "^2&&1  ^7Bigger icon"
+LANG_ENGLISH        "^2&&1 ^7Больший значок"
 
 REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL
-LANG_ENGLISH        "^2&&1  ^7Flip icon horizontally"
+LANG_ENGLISH        "^2&&1  ^7Повернуть значок по горизонтали"
 
 REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL
-LANG_ENGLISH        "^2&&1  ^7Flip icon vertically"
+LANG_ENGLISH        "^2&&1  ^7Повернуть значок по вертикали"
 
 REFERENCE           FONT_ICON_MODIFIER_LIST_HEADER
-LANG_ENGLISH        "The following modifiers are available:"
+LANG_ENGLISH        "Доступны следующие модификаторы:"
 
 REFERENCE           FONT_ICON_SEARCH_START_WITH
-LANG_ENGLISH        "Font icons starting with ^2&&1^7:"
+LANG_ENGLISH        "Значки шрифтов, начинающиеся с ^2&&1^7:"
 
 REFERENCE           GAME_NOTONROTATION
-LANG_ENGLISH        "This map or gamemode is not part of the server rotation"
+LANG_ENGLISH        "Эта карта или игровой режим не участвует в ротации сервера."
 
 REFERENCE           INF_ALLIES_ELIM
 LANG_ENGLISH        "Выжившие уничтожены."
@@ -105,64 +107,64 @@ REFERENCE           MENU_8X
 LANG_ENGLISH        "8x"
 
 REFERENCE           MENU_AA_MAXQUALITY
-LANG_ENGLISH        "Anti-aliasing Quality"
+LANG_ENGLISH        "Качество сглаживания"
 
 REFERENCE           MENU_AAA_DITHER
-LANG_ENGLISH        "Dither (Poor)"
+LANG_ENGLISH        "Сглаживание (Пхоло)"
 
 REFERENCE           MENU_AAA_SUPER
-LANG_ENGLISH        "Super Sampled (Nice)"
+LANG_ENGLISH        "Суперсэмплирование  (Хорошо)"
 
 REFERENCE           MENU_AAALPHA
-LANG_ENGLISH        "Anti-aliasing Alpha"
+LANG_ENGLISH        "Сглаживание Альфа"
 
 REFERENCE           MENU_ADD_TO_FAVORITES_CAPS
-LANG_ENGLISH        "ADD TO FAVORITES"
+LANG_ENGLISH        "ДОБАВИТЬ В ИЗБРАННОЕ"
 
 REFERENCE           MENU_AUTORECORD
-LANG_ENGLISH        "Auto-Recording"
+LANG_ENGLISH        "Автозапись"
 
 REFERENCE           MENU_AUTORECORD_CAPS
-LANG_ENGLISH        "AUTO-RECORDING"
+LANG_ENGLISH        "АВТОЗАПИСЬ"
 
 REFERENCE           MENU_BORDERLESS
-LANG_ENGLISH        "Borderless"
+LANG_ENGLISH        "Безграничный"
 
 REFERENCE           MENU_CHANGE_GAMETYPE
-LANG_ENGLISH        "Change Gametype"
+LANG_ENGLISH        "Изменить тип игры"
 
 REFERENCE           MENU_CHANGELOG
-LANG_ENGLISH        "Changelog"
+LANG_ENGLISH        "Журнал изменений"
 
 REFERENCE           MENU_CHANGELOG_CAPS
-LANG_ENGLISH        "CHANGELOG"
+LANG_ENGLISH        "ЖУРНАЛ ИЗМЕНЕНИЙ"
 
 REFERENCE           MENU_CHECK_FOR_UPDATES
-LANG_ENGLISH        "^3Update available"
+LANG_ENGLISH        "^3Доступно обновление"
 
 REFERENCE           MENU_CHECK_FOR_UPDATES_CAPS
-LANG_ENGLISH        "^3UPDATE AVAILABLE"
+LANG_ENGLISH        "^3ДОСТУПНО ОБНОВЛЕНИЕ"
 
 REFERENCE           MENU_CLOSE
-LANG_ENGLISH        "Close"
+LANG_ENGLISH        "Закрыть"
 
 REFERENCE           MENU_CLOSE_CAPS
-LANG_ENGLISH        "CLOSE"
+LANG_ENGLISH        "ЗАКРЫТЬ"
 
 REFERENCE           MENU_COLORBLIND_MODE
-LANG_ENGLISH        "Colorblind mode"
+LANG_ENGLISH        "Режим дальтонизма"
 
 REFERENCE           MENU_CONF
-LANG_ENGLISH        "Recover Dog Tags to score for your team and deny enemy scores."
+LANG_ENGLISH        "Собирайте жетоны, чтобы набирать очки для своей команды и не допускать попадания очков в руки противника."
 
 REFERENCE           MENU_CRANKED
-LANG_ENGLISH        "Kills give you extra perks, 2x scoring, and a time limit.  Chain kills to stay alive!"
+LANG_ENGLISH        "Убийства дают вам дополнительные преимущества, двукратное увеличение очков и ограничение по времени.  Совершите серию убийств, чтобы остаться в живых!"
 
 REFERENCE           MENU_CUSTOM_TITLE
-LANG_ENGLISH        "Custom Title"
+LANG_ENGLISH        "Пользовательское прозвище"
 
 REFERENCE           MENU_CUSTOM_TITLE_CAPS
-LANG_ENGLISH        "CUSTOM TITLE"
+LANG_ENGLISH        "ПОЛЬЗОВАТЕЛЬСКОЕ ПРОЗВИЩЕ"
 
 REFERENCE           MENU_D3D9EX
 LANG_ENGLISH        "Direct3D 9Ex"
@@ -171,58 +173,58 @@ REFERENCE           MENU_DEL_FAVORITE_CAPS
 LANG_ENGLISH        "DEL. FAVORITE"
 
 REFERENCE           MENU_DELETE
-LANG_ENGLISH        "Delete"
+LANG_ENGLISH        "Удалить"
 
 REFERENCE           MENU_DELETE_CAPS
-LANG_ENGLISH        "DELETE"
+LANG_ENGLISH        "УДАЛИТЬ"
 
 REFERENCE           MENU_DEMOS_KEEP
-LANG_ENGLISH        "Recordings to keep"
+LANG_ENGLISH        "Сохранить записи"
 
 REFERENCE           MENU_DEMOS_KEEP_CAPS
-LANG_ENGLISH        "RECORDINGS TO KEEP"
+LANG_ENGLISH        "СОХРАНИТЬ ЗАПИСИ"
 
 REFERENCE           MENU_DESC_BUTTON_LAYOUT
-LANG_ENGLISH        "Change the button layout for the gamepad"
+LANG_ENGLISH        "Изменить раскладку кнопок геймпада"
 
 REFERENCE           MENU_DESC_DRAWFPS
-LANG_ENGLISH        "Draw frames per second"
+LANG_ENGLISH        "Отображение кадров в секунду"
 
 REFERENCE           MENU_DESC_FPSLABELS
-LANG_ENGLISH        "Draw viewpos"
+LANG_ENGLISH        "Отображение меток кадров в секунду"
 
 REFERENCE           MENU_DESC_LOOK_SENSITIVITY_PRESET
-LANG_ENGLISH        "Choose different sensitivity presets"
+LANG_ENGLISH        "Выбор различных предустановок чувствительности"
 
 REFERENCE           MENU_DESC_MAXPACKETS
-LANG_ENGLISH        "Maximum number of packets sent per frame"
+LANG_ENGLISH        "Максимальное количество пакетов, отправляемых за кадр"
 
 REFERENCE           MENU_DESC_SNAPS
-LANG_ENGLISH        "Snapshot rate"
+LANG_ENGLISH        "Скорость моментального снимка"
 
 REFERENCE           MENU_DESC_THUMBSTICK_LAYOUT
-LANG_ENGLISH        "Change the thumbstick layout for the gamepad"
+LANG_ENGLISH        "Изменить раскладку джойстика для геймпада"
 
 REFERENCE           MENU_DEV_TOGGLE_OFF
-LANG_ENGLISH        "Toggle Devmode Off"
+LANG_ENGLISH        "Выключить режим разработчика"
 
 REFERENCE           MENU_DEV_TOGGLE_ON
-LANG_ENGLISH        "Toggle Devmode On"
+LANG_ENGLISH        "Включить режим разработчика"
 
 REFERENCE           MENU_DRAWFPS
-LANG_ENGLISH        "Show FPS"
+LANG_ENGLISH        "Показать FPS"
 
 REFERENCE           MENU_FOV
-LANG_ENGLISH        "Field of view"
+LANG_ENGLISH        "Поле зрения"
 
 REFERENCE           MENU_FOV_CAPS
-LANG_ENGLISH        "FOV: "
+LANG_ENGLISH        "FOV(Поле зрения): "
 
 REFERENCE           MENU_FOV_HINT_PC
-LANG_ENGLISH        "An increased Field of View (FOV), may result in poor performance on older computers."
+LANG_ENGLISH        "Увеличенное поле зрения (FOV) может привести к снижению производительности на старых компьютерах."
 
 REFERENCE           MENU_FOVSCALE
-LANG_ENGLISH        "Field of View Scale"
+LANG_ENGLISH        "Масштаб поля зрения"
 
 REFERENCE           MENU_FPS_0
 LANG_ENGLISH        "OFF: 0"
@@ -240,49 +242,49 @@ REFERENCE           MENU_FPS_4
 LANG_ENGLISH        "ON: 4"
 
 REFERENCE           MENU_FPS_CAP
-LANG_ENGLISH        "FPS Frame Cap"
+LANG_ENGLISH        "Ограничить кадры FPS"
 
 REFERENCE           MENU_FPS_DRAW
 LANG_ENGLISH        "FPS Drawing"
 
 REFERENCE           MENU_FPS_LABELS
-LANG_ENGLISH        "FPS Labels"
+LANG_ENGLISH        "Метки FPS"
 
 REFERENCE           MENU_FPSLABELS
-LANG_ENGLISH        "Show FPS labels"
+LANG_ENGLISH        "Показать метки FPS"
 
 REFERENCE           MENU_FRIEND_ADD
-LANG_ENGLISH        "Add Friend"
+LANG_ENGLISH        "Добавить друга"
 
 REFERENCE           MENU_FRIEND_ADD_CAPS
-LANG_ENGLISH        "ADD FRIEND"
+LANG_ENGLISH        "ДОБАВИТЬ ДРУГА"
 
 REFERENCE           MENU_FRIENDNOTIFY
-LANG_ENGLISH        "Friend Notifications"
+LANG_ENGLISH        "Уведомления друзей"
 
 REFERENCE           MENU_FRIENDS
-LANG_ENGLISH        "Friends"
+LANG_ENGLISH        "Друзья"
 
 REFERENCE           MENU_FRIENDS_CAPS
-LANG_ENGLISH        "FRIENDS"
+LANG_ENGLISH        "ДРУЗЬЯ"
 
 REFERENCE           MENU_FULLSCREEN
-LANG_ENGLISH        "Full Screen"
+LANG_ENGLISH        "Полной экран"
 
 REFERENCE           MENU_GAME
-LANG_ENGLISH        "Game"
+LANG_ENGLISH        "Игра"
 
 REFERENCE           MENU_GAME_CAPS
-LANG_ENGLISH        "GAME"
+LANG_ENGLISH        "ИГРА"
 
 REFERENCE           MENU_GAME_SETTINGS_CAPS
-LANG_ENGLISH        "GAME SETTINGS"
+LANG_ENGLISH        "НАСТРОЙКИ ИГРЫ"
 
 REFERENCE           MENU_GAMEPAD
-LANG_ENGLISH        "Gamepad"
+LANG_ENGLISH        "Геймпад"
 
 REFERENCE           MENU_GAMEPAD_ENABLED
-LANG_ENGLISH        "Gamepad enabled"
+LANG_ENGLISH        "Геймпад включен"
 
 REFERENCE           MENU_GPAD_PS_CAPS
 LANG_ENGLISH        "PlayStation"
@@ -294,25 +296,25 @@ REFERENCE           MENU_GPAD_XBOX_CAPS
 LANG_ENGLISH        "Xbox"
 
 REFERENCE           MENU_GTNW_DESC
-LANG_ENGLISH        "Teams fight for capturing the nuclear payload to activate the nuclear strike."
+LANG_ENGLISH        "Команды сражаются за захват ядерного боезаряда, чтобы активировать ядерный удар."
 
 REFERENCE           MENU_GUNGAME
-LANG_ENGLISH        "Be the first player to score a kill with each one of the provided weapons."
+LANG_ENGLISH        "Станьте первым игроком, совершившим убийство каждым из имеющихся видов оружия."
 
 REFERENCE           MENU_INF
-LANG_ENGLISH        "Eliminated Survivors become Infected.  Infect everyone, or survive the game to win."
+LANG_ENGLISH        "Уничтоженные Выжившие становятся Зараженными. Заразите всех или выживите в игре, чтобы победить."
 
 REFERENCE           MENU_JOIN_SERVER_CAPS
-LANG_ENGLISH        "JOIN SERVER"
+LANG_ENGLISH        "ПРИСОЕДИНИТЬСЯ К СЕРВЕРУ"
 
 REFERENCE           MENU_LAGOMETER
-LANG_ENGLISH        "Show Lagometer"
+LANG_ENGLISH        "Показать лагометр"
 
 REFERENCE           MENU_LOADING_MAPS
-LANG_ENGLISH        "Loading map selection..."
+LANG_ENGLISH        "Загрузка выбора карты..."
 
 REFERENCE           MENU_LOCKON_ENABLED
-LANG_ENGLISH        "Enable lockon aim assist"
+LANG_ENGLISH        "Включить помощь при прицеливании"
 
 REFERENCE           MENU_LOGIN
 LANG_ENGLISH        "Авторизоваться"
@@ -327,142 +329,142 @@ REFERENCE           MENU_LOGOUT_CAPS
 LANG_ENGLISH        "ОТКЛЮЧИТЬСЯ"
 
 REFERENCE           MENU_LOOK_SENSITIVITY_PRESET
-LANG_ENGLISH        "Sensitivity Preset"
+LANG_ENGLISH        "Предустановка чувствительности"
 
 REFERENCE           MENU_MAXFPS
-LANG_ENGLISH        "Maximum FPS"
+LANG_ENGLISH        "Максимальный FPS"
 
 REFERENCE           MENU_MAXPACKETS
-LANG_ENGLISH        "Max. packets per frame"
+LANG_ENGLISH        "Макс. кол-во пакетов на кадр"
 
 REFERENCE           MENU_MODS
-LANG_ENGLISH        "Mods"
+LANG_ENGLISH        "Моды"
 
 REFERENCE           MENU_MODS_CAPS
-LANG_ENGLISH        "MODS"
+LANG_ENGLISH        "МОДЫ"
 
 REFERENCE           MENU_MOTD
-LANG_ENGLISH        "News"
+LANG_ENGLISH        "Новости"
 
 REFERENCE           MENU_MOTD_CAPS
-LANG_ENGLISH        "NEWS"
+LANG_ENGLISH        "НОВОСТИ"
 
 REFERENCE           MENU_NATIVECURSOR
-LANG_ENGLISH        "Display native cursor"
+LANG_ENGLISH        "Отображение собственного курсора"
 
 REFERENCE           MENU_NEWCOLORS
-LANG_ENGLISH        "Use new color codes"
+LANG_ENGLISH        "Используйте новые цветовые коды"
 
 REFERENCE           MENU_NOBORDER
-LANG_ENGLISH        "Disable window border"
+LANG_ENGLISH        "Отключить рамку окна"
 
 REFERENCE           MENU_OITC
 LANG_ENGLISH        "Получай патроны за уничтожение противников. Набравший большее количество очков побеждает. \n \n Автор NTAuthority @ refint.net"
 
 REFERENCE           MENU_OITC_DESC
-LANG_ENGLISH        "Gain ammo by eliminating enemies. Highest score wins."
+LANG_ENGLISH        "Получай патроны за уничтожение противников. Набравший большее количество очков побеждает."
 
 REFERENCE           MENU_PASSWORD_CAPS
-LANG_ENGLISH        "PASSWORD"
+LANG_ENGLISH        "ПАРОЛЬ"
 
 REFERENCE           MENU_PLAY
-LANG_ENGLISH        "Play"
+LANG_ENGLISH        "Играть"
 
 REFERENCE           MENU_PLAY_CAPS
-LANG_ENGLISH        "PLAY"
+LANG_ENGLISH        "ИГРАТЬ"
 
 REFERENCE           MENU_RECONNECTING_TO_PARTY
-LANG_ENGLISH        "CONNECTING TO SERVER"
+LANG_ENGLISH        "ПОДКЛЮЧЕНИЕ К СЕРВЕРУ"
 
 REFERENCE           MENU_RESET_STATS
-LANG_ENGLISH        "Reset your stats?"
+LANG_ENGLISH        "Сбросить статистику?"
 
 REFERENCE           MENU_RESET_STATS_CAPS
-LANG_ENGLISH        "RESET YOUR STATS?"
+LANG_ENGLISH        "СБРОСИТЬ СТАТИСТИКУ?"
 
 REFERENCE           MENU_SCREEN_OPTIONS
-LANG_ENGLISH        "Screen Options"
+LANG_ENGLISH        "Параметры экрана"
 
 REFERENCE           MENU_SCROLL_DOWN
-LANG_ENGLISH        "^3SCROLL DOWN"
+LANG_ENGLISH        "^3ПРОКРУТИТЬ ВНИЗ"
 
 REFERENCE           MENU_SCROLL_UP
-LANG_ENGLISH        "^3SCROLL UP"
+LANG_ENGLISH        "^3ПРОКРУТИТЬ ВВЕРХ"
 
 REFERENCE           MENU_SEARCHINGFORGAMES_100MS
 LANG_ENGLISH        ""
 
 REFERENCE           MENU_SECURITY_INCREASE
-LANG_ENGLISH        "Increasing Security Level"
+LANG_ENGLISH        "Повышение уровня безопасности"
 
 REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
-LANG_ENGLISH        "(High) 4"
+LANG_ENGLISH        "(Высокая) 4"
 
 REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
 LANG_ENGLISH        "(Insane) 10"
 
 REFERENCE           MENU_SENSITIVITY_LOW_CAPS
-LANG_ENGLISH        "(Low) 1"
+LANG_ENGLISH        "(Низкая) 1"
 
 REFERENCE           MENU_SENSITIVITY_MEDIUM_CAPS
-LANG_ENGLISH        "(Medium) 2"
+LANG_ENGLISH        "(Средняя) 2"
 
 REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
-LANG_ENGLISH        "(Very High) 7"
+LANG_ENGLISH        "(Очень высокая) 7"
 
 REFERENCE           MENU_SERVER_INFO_CAPS
-LANG_ENGLISH        "SERVERINFO"
+LANG_ENGLISH        "ИНФОРМАЦИЯ О СЕРВЕРЕ"
 
 REFERENCE           MENU_SHARPSHOOTER
-LANG_ENGLISH        "All players are given the same weapon, selected randomly. Every 45 seconds, a new weapon is selected at random and used by all."
+LANG_ENGLISH        "Всем игрокам предоставляется одинаковое оружие, выбранное случайным образом. Каждые 45 секунд для всех игроков случайно выбирается новое оружие."
 
 REFERENCE           MENU_SLOWDOWN_ENABLED
-LANG_ENGLISH        "Enable slowdown aim assist"
+LANG_ENGLISH        "Включить замедление помощи при прицеливании"
 
 REFERENCE           MENU_SNAPS
-LANG_ENGLISH        "Snapshot rate"
+LANG_ENGLISH        "Скорость моментального снимка"
 
 REFERENCE           MENU_START_DEVMAP_CAPS
-LANG_ENGLISH        "START DEVMAP"
+LANG_ENGLISH        "ЗАПУСК DEVMAP"
 
 REFERENCE           MENU_STORE
-LANG_ENGLISH        "Get DLC"
+LANG_ENGLISH        "Получить DLC"
 
 REFERENCE           MENU_STORE_CAPS
-LANG_ENGLISH        "GET DLC"
+LANG_ENGLISH        "ПОЛУЧИТЬ DLC"
 
 REFERENCE           MENU_STREAMFRIENDLY_UI
 LANG_ENGLISH        "Stream Friendly UI"
 
 REFERENCE           MENU_SYNC_NODES
-LANG_ENGLISH        "Sync Nodes"
+LANG_ENGLISH        "Синхронизация узлов"
 
 REFERENCE           MENU_SYNC_NODES_CAPS
-LANG_ENGLISH        "SYNC NODES"
+LANG_ENGLISH        "СИНХРОНИЗАЦИЯ УЗЛОВ"
 
 REFERENCE           MENU_TDEF
-LANG_ENGLISH        "Capture and hold the flag for a team double scoring bonus.  Not for the faint of heart.\n \n Created by Intricate."
+LANG_ENGLISH        "Захватите и удерживайте флаг, чтобы получить двойной бонус к очкам команды. Не для слабонервных.\n \n Создано Intricate."
 
 REFERENCE           MENU_THEATER
-LANG_ENGLISH        "Theater"
+LANG_ENGLISH        "Театр"
 
 REFERENCE           MENU_THEATER_CAPS
-LANG_ENGLISH        "THEATER"
+LANG_ENGLISH        "ТЕАТР"
 
 REFERENCE           MENU_UNLOCK_STATS
-LANG_ENGLISH        "Unlock your Stats?"
+LANG_ENGLISH        "Разблокировать статистику?"
 
 REFERENCE           MENU_UNLOCK_STATS_CAPS
-LANG_ENGLISH        "UNLOCK YOUR STATS?"
+LANG_ENGLISH        "РАЗБЛОКИРОВАТЬ СТАТИСТИКУ?"
 
 REFERENCE           MENU_VISIT_WEBSITE
-LANG_ENGLISH        "Visit Website"
+LANG_ENGLISH        "Посетить сайт"
 
 REFERENCE           MENU_VISIT_WEBSITE_CAPS
-LANG_ENGLISH        "VISIT WEBSITE"
+LANG_ENGLISH        "ПОСЕТИТЬ САЙТ"
 
 REFERENCE           MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
-LANG_ENGLISH        "Waiting for more players to balance teams"
+LANG_ENGLISH        "Ждем больше игроков для баланса команд"
 
 REFERENCE           MENU_XAXIS
 LANG_ENGLISH        "Window X-Axis Pos"
@@ -471,142 +473,142 @@ REFERENCE           MENU_YAXIS
 LANG_ENGLISH        "Window Y-Axis Pos"
 
 REFERENCE           MP_AFRICA_ELIMINATED
-LANG_ENGLISH        "Militia eliminated"
+LANG_ENGLISH        "Ополчение ликвидировано"
 
 REFERENCE           MP_AFRICA_FORFEITED
-LANG_ENGLISH        "Africa Militia forfeited"
+LANG_ENGLISH        "Африканское ополчение проиграло"
 
 REFERENCE           MP_AFRICA_MILITIA_NAME
-LANG_ENGLISH        "Africa Militia"
+LANG_ENGLISH        "Африканское ополчение"
 
 REFERENCE           MP_DELTA_ELIMINATED
-LANG_ENGLISH        "Delta Eliminated"
+LANG_ENGLISH        "Отряд Дельта ликвидирован"
 
 REFERENCE           MP_DELTA_FORFEITED
-LANG_ENGLISH        "Delta forfeited"
+LANG_ENGLISH        "Отряд Дельта проиграл"
 
 REFERENCE           MP_DELTA_NAME
-LANG_ENGLISH        "Delta Force"
+LANG_ENGLISH        "Отряд Дельта"
 
 REFERENCE           MP_DELTA_SHORT_NAME
-LANG_ENGLISH        "Delta"
+LANG_ENGLISH        "Дельта"
 
 REFERENCE           MP_DRAFT_STARTS_IN
-LANG_ENGLISH        "Infection countdown: &&1"
+LANG_ENGLISH        "Обратный отсчет заражения: &&1"
 
 REFERENCE           MP_GIGN
-LANG_ENGLISH        "GIGN"
+LANG_ENGLISH        "Отряд GIGN"
 
 REFERENCE           MP_GIGN_ELIMINATED
-LANG_ENGLISH        "GIGN Eliminated"
+LANG_ENGLISH        "Отряд GIGN ликвидирован"
 
 REFERENCE           MP_GIGN_FORFEITED
-LANG_ENGLISH        "GIGN Forfeited"
+LANG_ENGLISH        "Отряд GIGN проиграл"
 
 REFERENCE           MP_GIGN_SHORT_NAME
-LANG_ENGLISH        "GIGN"
+LANG_ENGLISH        "Отряд GIGN"
 
 REFERENCE           MP_INNERCIRCLE_ELIMINATED
-LANG_ENGLISH        "Inner Circle eliminated"
+LANG_ENGLISH        "Внутренний круг ликвидирован"
 
 REFERENCE           MP_INNERCIRCLE_FORFEITED
-LANG_ENGLISH        "Inner Circle forfeited"
+LANG_ENGLISH        "Внутренний круг проиграл"
 
 REFERENCE           MP_INNERCIRCLE_NAME
-LANG_ENGLISH        "Inner Circle"
+LANG_ENGLISH        "Внутренний круг"
 
 REFERENCE           MP_MARINES_ELIMINATED
-LANG_ENGLISH        "Marines eliminated"
+LANG_ENGLISH        "Морские пехотинцы уничтожены"
 
 REFERENCE           MP_MARINES_FORFEITED
-LANG_ENGLISH        "Marines forfeited"
+LANG_ENGLISH        "Морские пехотинцы проиграли"
 
 REFERENCE           MP_NEUTRAL_FLAG_DROPPED_BY
-LANG_ENGLISH        "&&1 dropped the flag!"
+LANG_ENGLISH        "&&1 бросил флаг!"
 
 REFERENCE           MP_OPFOR_ELIMINATED
-LANG_ENGLISH        "OpFor eliminated"
+LANG_ENGLISH        "OpFor уничтожены"
 
 REFERENCE           MP_OPFOR_FORFEITED
-LANG_ENGLISH        "OpFor forfeited"
+LANG_ENGLISH        "OpFor проиграли"
 
 REFERENCE           MP_PICKUP_C4
-LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 to pick up C4"
+LANG_ENGLISH        "Нажмите и удерживайте ^3[{+activate}]^7 чтобы подобрать С4"
 
 REFERENCE           MP_PICKUP_CLAYMORE
-LANG_ENGLISH        "Press and hold ^3[{+activate}]^7 to pick up Claymore"
+LANG_ENGLISH        "Нажмите и удерживайте ^3[{+activate}]^7 чтобы подобрать Claymore"
 
 REFERENCE           MP_PMC
-LANG_ENGLISH        "P.M.C."
+LANG_ENGLISH        "Частная военная компания"
 
 REFERENCE           MP_PMC_ELIMINATED
-LANG_ENGLISH        "P.M.C. eliminated"
+LANG_ENGLISH        "ЧВК уничтожена"
 
 REFERENCE           MP_PMC_FORFEITED
-LANG_ENGLISH        "P.M.C. Forfeited"
+LANG_ENGLISH        "ЧВК проиграла"
 
 REFERENCE           MP_PMC_SHORT_NAME
-LANG_ENGLISH        "PMC"
+LANG_ENGLISH        "ЧВК"
 
 REFERENCE           MP_SAS
-LANG_ENGLISH        "Special Air Service"
+LANG_ENGLISH        "Специальная воздушная служба"
 
 REFERENCE           MP_SAS_ELIMINATED
-LANG_ENGLISH        "SAS eliminated"
+LANG_ENGLISH        "SAS уничтожен"
 
 REFERENCE           MP_SAS_FORFEITED
-LANG_ENGLISH        "SAS forfeited"
+LANG_ENGLISH        "SAS проиграл"
 
 REFERENCE           MP_SAS_SHORT_NAME
 LANG_ENGLISH        "SAS"
 
 REFERENCE           MP_SEARCHING_FOR_PLAYER
-LANG_ENGLISH        "Waiting"
+LANG_ENGLISH        "Ожидание"
 
 REFERENCE           MP_SPETSNAZ_ELIMINATED
-LANG_ENGLISH        "Spetsnaz eliminated"
+LANG_ENGLISH        "Спецназ уничтожен"
 
 REFERENCE           MP_SPETSNAZ_FORFEITED
-LANG_ENGLISH        "Spetsnaz forfeited"
+LANG_ENGLISH        "Спецназ проиграл"
 
 REFERENCE           MP_SPETSNAZ_NAME
-LANG_ENGLISH        "Spetsnaz"
+LANG_ENGLISH        "Спецназ"
 
 REFERENCE           MP_WEAPON
-LANG_ENGLISH        "Weapon:"
+LANG_ENGLISH        "Оружие:"
 
 REFERENCE           MPUI_ARKADEN
 LANG_ENGLISH        "Arkaden"
 
 REFERENCE           MPUI_AUTORECORD
-LANG_ENGLISH        "Automatic Recording: "
+LANG_ENGLISH        "Автоматическая запись: "
 
 REFERENCE           MPUI_AUTORECORD_CAPS
-LANG_ENGLISH        "AUTOMATIC RECORDING: "
+LANG_ENGLISH        "АВТОМАТИЧЕСКАЯ ЗАПИСЬ: "
 
 REFERENCE           MPUI_BLOC
-LANG_ENGLISH        "Bloc"
+LANG_ENGLISH        "Многоквартирный дом"
 
 REFERENCE           MPUI_BLOC_SH
-LANG_ENGLISH        "Forgotten City"
+LANG_ENGLISH        "Забытый Город"
 
 REFERENCE           MPUI_BOG_SH
-LANG_ENGLISH        "Bog"
+LANG_ENGLISH        "Болото"
 
 REFERENCE           MPUI_CARENTAN
-LANG_ENGLISH        "Chinatown"
+LANG_ENGLISH        "Чайнатаун"
 
 REFERENCE           MPUI_CARGOSHIP_SH
-LANG_ENGLISH        "Freighter"
+LANG_ENGLISH        "Грузовое судно"
 
 REFERENCE           MPUI_CO_HUNTED
-LANG_ENGLISH        "Village"
+LANG_ENGLISH        "Деревня"
 
 REFERENCE           MPUI_CONF
-LANG_ENGLISH        "Kill Confirmed"
+LANG_ENGLISH        "Убийство подтверждено"
 
 REFERENCE           MPUI_CONF_CAPS
-LANG_ENGLISH        "KILL CONFIRMED"
+LANG_ENGLISH        "УБИЙСТВО ПОДТВЕРЖДЕНО"
 
 REFERENCE           MPUI_CRANKED
 LANG_ENGLISH        "Cranked"
@@ -615,289 +617,289 @@ REFERENCE           MPUI_CRANKED_CAPS
 LANG_ENGLISH        "CRANKED"
 
 REFERENCE           MPUI_CRASH_SNOW
-LANG_ENGLISH        "Winter Crash"
+LANG_ENGLISH        "Снежное крушение"
 
 REFERENCE           MPUI_CRASH_TROPICAL
-LANG_ENGLISH        "Crash: Tropical"
+LANG_ENGLISH        "Крушение: Тропики"
 
 REFERENCE           MPUI_DEMO_AUTHOR
-LANG_ENGLISH        "Author:"
+LANG_ENGLISH        "Автор:"
 
 REFERENCE           MPUI_DEMO_AUTHOR_CAPS
-LANG_ENGLISH        "AUTHOR:"
+LANG_ENGLISH        "АВТОР:"
 
 REFERENCE           MPUI_DEMO_CREATED
-LANG_ENGLISH        "Created:"
+LANG_ENGLISH        "Создано:"
 
 REFERENCE           MPUI_DEMO_CREATED_CAPS
-LANG_ENGLISH        "CREATED:"
+LANG_ENGLISH        "Создано:"
 
 REFERENCE           MPUI_DEMO_DATE
-LANG_ENGLISH        "Date:"
+LANG_ENGLISH        "Дата:"
 
 REFERENCE           MPUI_DEMO_DATE_CAPS
-LANG_ENGLISH        "DATE:"
+LANG_ENGLISH        "Дата:"
 
 REFERENCE           MPUI_DEMO_LENGTH
-LANG_ENGLISH        "Length:"
+LANG_ENGLISH        "Длина:"
 
 REFERENCE           MPUI_DEMO_LENGTH_CAPS
-LANG_ENGLISH        "LENGTH:"
+LANG_ENGLISH        "Длина:"
 
 REFERENCE           MPUI_DEMOS_KEEP
-LANG_ENGLISH        "Demos to keep: "
+LANG_ENGLISH        "Сохранить демо: "
 
 REFERENCE           MPUI_DEMOS_KEEP_CAPS
-LANG_ENGLISH        "DEMOS TO KEEP: "
+LANG_ENGLISH        "СОХРАНИТЬ ДЕМО: "
 
 REFERENCE           MPUI_DESC_AUTORECORD
-LANG_ENGLISH        "Record your matches automatically."
+LANG_ENGLISH        "Автоматически записывайте свои матчи."
 
 REFERENCE           MPUI_DESC_CHANGE_NAME
-LANG_ENGLISH        "Change your name"
+LANG_ENGLISH        "Изменить имя"
 
 REFERENCE           MPUI_DESC_CHANGELOG
-LANG_ENGLISH        "See what's new."
+LANG_ENGLISH        "Посмотрите, что нового."
 
 REFERENCE           MPUI_DESC_CHECK_FOR_UPDATES
-LANG_ENGLISH        "Check if a newer version is available."
+LANG_ENGLISH        "Проверьте доступность новой версии."
 
 REFERENCE           MPUI_DESC_CUSTOM_TITLE
-LANG_ENGLISH        "Change the playercard title text"
+LANG_ENGLISH        "Изменить прозвище на карточке игрока."
 
 REFERENCE           MPUI_DESC_D3D9EX
-LANG_ENGLISH        "Use Direct3D 9Ex."
+LANG_ENGLISH        "Использовать Direct3D 9Ex."
 
 REFERENCE           MPUI_DESC_DEMOS_KEEP
-LANG_ENGLISH        "Define how many of your recordings should be saved, before the oldest ones get deleted."
+LANG_ENGLISH        "Определите, сколько записей следует сохранить, прежде чем самые старые будут удалены."
 
 REFERENCE           MPUI_DESC_ENABLE_VOICE_CHAT
-LANG_ENGLISH        "Use voice communications"
+LANG_ENGLISH        "Использовать голосовую связь"
 
 REFERENCE           MPUI_DESC_FOV
-LANG_ENGLISH        "Adjust your field of view."
+LANG_ENGLISH        "Отрегулируйте поле зрения."
 
 REFERENCE           MPUI_DESC_FOVSCALE
-LANG_ENGLISH        "Adjust your field of view scale, also modifies aim FOV."
+LANG_ENGLISH        "Отрегулируйте масштаб поля зрения, а также измените поле зрения прицела."
 
 REFERENCE           MPUI_DESC_FRIENDNOTIFY
-LANG_ENGLISH        "Should you send status notifications to your friends?"
+LANG_ENGLISH        "Нужно ли отправлять уведомления о статусе своим друзьям?"
 
 REFERENCE           MPUI_DESC_FRIENDS
-LANG_ENGLISH        "Check where your friends are playing."
+LANG_ENGLISH        "Проверьте, где играют ваши друзья."
 
 REFERENCE           MPUI_DESC_GAMEPAD_ENABLED
-LANG_ENGLISH        "Turn accepting inputs from gamepads on/off"
+LANG_ENGLISH        "Включить/выключить прием ввода с геймпадов"
 
 REFERENCE           MPUI_DESC_GPAD_STYLE
-LANG_ENGLISH        "Switch between Xbox and PlayStation HUDs."
+LANG_ENGLISH        "Переключение между Xbox и PlayStation HUD."
 
 REFERENCE           MPUI_DESC_LOCKON_ENABLED
-LANG_ENGLISH        "Turn lockon aim assist on/off. Lockon helps with keeping your crosshair on targets when moving. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+LANG_ENGLISH        "Включить/выключить помощь при прицеливании Lockon. Lockon помогает удерживать перекрестие прицела на цели при движении. Серверы могут отключить помощь при прицеливании с помощью sv_allowAimAssist независимо от этой настройки."
 
 REFERENCE           MPUI_DESC_LOGIN
 LANG_ENGLISH        "Войти в учетную запись."
 
 REFERENCE           MPUI_DESC_LOGOUT
-LANG_ENGLISH        "Log yourself out."
+LANG_ENGLISH        "Выйдите из аккаунта"
 
 REFERENCE           MPUI_DESC_LOOK_INVERSION
-LANG_ENGLISH        "Inverts the gamepad pitch axis (up/down)"
+LANG_ENGLISH        "Инвертирует ось наклона геймпада (вверх/вниз)"
 
 REFERENCE           MPUI_DESC_MAP_ARKADEN
-LANG_ENGLISH        "Medium sized German mall. Intense Search & Destroy games."
+LANG_ENGLISH        "Немецкий торговый центр среднего размера. Режим «Найти и уничтожить»."
 
 REFERENCE           MPUI_DESC_MAP_BLOC_SH
-LANG_ENGLISH        "A modified version of Bloc."
+LANG_ENGLISH        "Модифицированная версия карты \"Многоквартирный дом\"."
 
 REFERENCE           MPUI_DESC_MAP_CARENTAN
-LANG_ENGLISH        "Small city at night. Great for any mode."
+LANG_ENGLISH        "Маленький ночной город. Отлично подходит для любого режима."
 
 REFERENCE           MPUI_DESC_MAP_CARGOSHIP
-LANG_ENGLISH        "A medium-sized map featured in Call of Duty 4: Modern Warfare. It takes place on a cargo ship during a storm and is based on the campaign mission, Crew Expendable."
+LANG_ENGLISH        "Карта среднего размера из Call of Duty 4: Modern Warfare. Действие происходит на грузовом судне во время шторма и основано на миссии кампании на корабле(Crew Expendable)."
 
 REFERENCE           MPUI_DESC_MAP_CARGOSHIP_SH
-LANG_ENGLISH        "An snow covered version of, the Call of Duty 4: Modern Warfare map, Wet Work."
+LANG_ENGLISH        "Заснеженная версия карты Call of Duty 4: Modern Warfare \"Мокрое дело\"."
 
 REFERENCE           MPUI_DESC_MAP_CO_HUNTED
-LANG_ENGLISH        "Russian village in the evening."
+LANG_ENGLISH        "Русская деревня вечером."
 
 REFERENCE           MPUI_DESC_MAP_CRASH_SNOW
-LANG_ENGLISH        "Dark and snowy holiday themed Crash. Beware the airstrikes..."
+LANG_ENGLISH        "Темное и заснеженное праздничное крушение. Берегитесь авиаударов..."
 
 REFERENCE           MPUI_DESC_MAP_CRASH_TROPICAL
-LANG_ENGLISH        "Crash with a tropical landscape."
+LANG_ENGLISH        "Крушение с тропическим пейзажем."
 
 REFERENCE           MPUI_DESC_MAP_DOME
-LANG_ENGLISH        "Small outpost in the desert. Fast and frantic action."
+LANG_ENGLISH        "Небольшой аванпост в пустыне. Быстрый и безумный экшен."
 
 REFERENCE           MPUI_DESC_MAP_ESTATE_TROPICAL
-LANG_ENGLISH        "Estate with a tropical landscape."
+LANG_ENGLISH        "Усадьба с тропическим ландшафтом."
 
 REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
-LANG_ENGLISH        "Favela with a tropical landscape."
+LANG_ENGLISH        "Фавела с тропическим ландшафтом."
 
 REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
-LANG_ENGLISH        "Close range to medium range combat in a military practice facility in Cuba."
+LANG_ENGLISH        "Бой на ближней и средней дистанции на военной базе на Кубе."
 
 REFERENCE           MPUI_DESC_MAP_HARDHAT
-LANG_ENGLISH        "A small construction site. Fast paced, close quarter action."
+LANG_ENGLISH        "Небольшая строительная площадка. Быстрый темп, ближний бой."
 
 REFERENCE           MPUI_DESC_MAP_KILLHOUSE
-LANG_ENGLISH        "Killhouse is a very small map from the Variety Map Pack of Call of Duty 4: Modern Warfare.  It is the home to very fierce battles as the map is no larger than Shipment."
+LANG_ENGLISH        "Killhouse — очень маленькая карта из Variety Map Pack игры Call of Duty 4: Modern Warfare. Она является местом очень ожесточённых сражений, поскольку сама карта не больше Shipment."
 
 REFERENCE           MPUI_DESC_MAP_LOCKDOWN
-LANG_ENGLISH        "European city center. Great for Team Defender."
+LANG_ENGLISH        "Европейский городской центр. Отлично подходит для командной защиты."
 
 REFERENCE           MPUI_DESC_MAP_MISSION
-LANG_ENGLISH        "African colonial settlement. Fight to control the center."
+LANG_ENGLISH        "Колониальное поселение в Африке. Борьба за контроль над центром."
 
 REFERENCE           MPUI_DESC_MAP_NUKED
-LANG_ENGLISH        "A deserted nuke testing facility used in the Cold War."
+LANG_ENGLISH        "Заброшенный ядерный испытательный полигон, использовавшийся во времена Холодной войны."
 
 REFERENCE           MPUI_DESC_MAP_OILRIG
-LANG_ENGLISH        "The Only Easy Day... Was Yesterday"
+LANG_ENGLISH        "Единственный легкий день... был вчера"
 
 REFERENCE           MPUI_DESC_MAP_RESISTANCE
-LANG_ENGLISH        "Parisian district. Great for Domination and Kill Confirmed."
+LANG_ENGLISH        "Парижский квартал. Отлично подходит для «Доминирования» и «Подтвержденного убийства»."
 
 REFERENCE           MPUI_DESC_MAP_RUST_LONG
-LANG_ENGLISH        "Fast-paced action in an oil yard in the middle of the desert."
+LANG_ENGLISH        "Динамичные действия на нефтяной станции посреди пустыни."
 
 REFERENCE           MPUI_DESC_MAP_SEATOWN
-LANG_ENGLISH        "A coastal town.  Narrow streets bring hectic, close encounters."
+LANG_ENGLISH        "Прибрежный город. Узкие улочки приносят суетливые, близкие встречи."
 
 REFERENCE           MPUI_DESC_MAP_SHIPMENT_LONG
-LANG_ENGLISH        "A larger version of the original Call of Duty 4: Modern Warfare map Shipment."
+LANG_ENGLISH        "Увеличенная версия оригинальной карты Call of Duty 4: Modern Warfare Shipment."
 
 REFERENCE           MPUI_DESC_MAP_STORM_SPRING
-LANG_ENGLISH        "A modified version of Storm, snow covered instead of rainy."
+LANG_ENGLISH        "Модифицированная версия Шторма, вместо дождя — снег."
 
 REFERENCE           MPUI_DESC_MAP_UNDERGROUND
-LANG_ENGLISH        "Small subway station. Fast paced action both inside and out."
+LANG_ENGLISH        "Маленькая станция метро. Быстрое развитие событий как внутри, так и снаружи."
 
 REFERENCE           MPUI_DESC_MAP_VILLAGE
-LANG_ENGLISH        "Large African village. Great for all game modes."
+LANG_ENGLISH        "Большая африканская деревня. Отлично подходит для всех режимов игры."
 
 REFERENCE           MPUI_DESC_MAXFPS
-LANG_ENGLISH        "Define your maximum frames per second."
+LANG_ENGLISH        "Определите максимальное количество кадров в секунду."
 
 REFERENCE           MPUI_DESC_MODS
-LANG_ENGLISH        "Browse your mods."
+LANG_ENGLISH        "Просматривайте свои моды."
 
 REFERENCE           MPUI_DESC_NATIVECURSOR
-LANG_ENGLISH        "Display your native cursor, instead of the games cursor."
+LANG_ENGLISH        "Отображайте свой родной курсор вместо игрового."
 
 REFERENCE           MPUI_DESC_NEWCOLORS
-LANG_ENGLISH        "Use the color code stylesheet from ^2Warfare2."
+LANG_ENGLISH        "Используйте таблицу стилей цветовых кодов из ^2Warfare2."
 
 REFERENCE           MPUI_DESC_NOBORDER
-LANG_ENGLISH        "Do not use a border in windowed mode."
+LANG_ENGLISH        "Не использовать рамку в оконном режиме."
 
 REFERENCE           MPUI_DESC_OPTIONS
-LANG_ENGLISH        "Set your game options."
+LANG_ENGLISH        "Настройте параметры игры."
 
 REFERENCE           MPUI_DESC_QUIT
-LANG_ENGLISH        "Quit the game."
+LANG_ENGLISH        "Выйти из игры."
 
 REFERENCE           MPUI_DESC_RESET_STATS
-LANG_ENGLISH        "Reset your stats."
+LANG_ENGLISH        "Сбросьте статистику."
 
 REFERENCE           MPUI_DESC_SLOWDOWN_ENABLED
-LANG_ENGLISH        "Turn slowdown aim assist on/off. Slowdown reduces the stick turnrate when hovering over a target. Servers can turn off aim assist with sv_allowAimAssist regardless of this setting."
+LANG_ENGLISH        "Включить/выключить помощь при прицеливании замедления. Замедление уменьшает скорость поворота джойстика при наведении на цель. Серверы могут отключить помощь при прицеливании с помощью sv_allowAimAssist независимо от этой настройки."
 
 REFERENCE           MPUI_DESC_STORE
-LANG_ENGLISH        "Redirects to the XLabs Site containing download information for DLC"
+LANG_ENGLISH        "Перенаправляет на сайт XLabs, содержащий информацию о загрузке DLC"
 
 REFERENCE           MPUI_DESC_STREAM_FRIENDLY_UI
-LANG_ENGLISH        "Hide friend status notifications and server info on scoreboard."
+LANG_ENGLISH        "Скрыть уведомления о статусе друзей и информацию о сервере на табло."
 
 REFERENCE           MPUI_DESC_THEATER
-LANG_ENGLISH        "View your played matches."
+LANG_ENGLISH        "Просмотр сыгранных вами матчей."
 
 REFERENCE           MPUI_DESC_UNLOCK_STATS
-LANG_ENGLISH        "Unlock your stats."
+LANG_ENGLISH        "Разблокируйте свою статистику."
 
 REFERENCE           MPUI_DOME
-LANG_ENGLISH        "Dome"
+LANG_ENGLISH        "Купол"
 
 REFERENCE           MPUI_DOWNLOADING
-LANG_ENGLISH        "Downloading"
+LANG_ENGLISH        "Скачивание"
 
 REFERENCE           MPUI_DOWNLOADING_CAPS
-LANG_ENGLISH        "DOWNLOADING"
+LANG_ENGLISH        "СКАЧИВАНИЕ"
 
 REFERENCE           MPUI_ENABLE_VOICE_CHAT
-LANG_ENGLISH        "Enable Voice Chat"
+LANG_ENGLISH        "Включить голосовой чат"
 
 REFERENCE           MPUI_ESTATE_TROPICAL
-LANG_ENGLISH        "Estate: Tropical"
+LANG_ENGLISH        "Усадьба: Тропики"
 
 REFERENCE           MPUI_FAV_TROPICAL
-LANG_ENGLISH        "Favela: Tropical"
+LANG_ENGLISH        "Фавела: Тропики"
 
 REFERENCE           MPUI_GUNGAME
-LANG_ENGLISH        "Gun Game"
+LANG_ENGLISH        "Игра с оружием"
 
 REFERENCE           MPUI_GUNGAME_CAPS
-LANG_ENGLISH        "GUN GAME"
+LANG_ENGLISH        "ИГРА С ОРУЖИЕМ"
 
 REFERENCE           MPUI_HARDHAT
-LANG_ENGLISH        "Hardhat"
+LANG_ENGLISH        "Стройка"
 
 REFERENCE           MPUI_INF
-LANG_ENGLISH        "Infected"
+LANG_ENGLISH        "Зараженный"
 
 REFERENCE           MPUI_INF_CAPS
-LANG_ENGLISH        "INFECTED"
+LANG_ENGLISH        "ЗАРАЖЕННЫЙ"
 
 REFERENCE           MPUI_IS_PRIVATE
-LANG_ENGLISH        "Password Protected:"
+LANG_ENGLISH        "Защищено паролем:"
 
 REFERENCE           MPUI_IS_PRIVATE_CAPS
-LANG_ENGLISH        "PASSWORD PROTECTED:"
+LANG_ENGLISH        "ЗАЩИЩЕНО ПАРОЛЕМ:"
 
 REFERENCE           MPUI_IW4_TEST_MAP
-LANG_ENGLISH        "IW4 Test Map"
+LANG_ENGLISH        "IW4 Тестовая карта"
 
 REFERENCE           MPUI_KILLHOUSE
-LANG_ENGLISH        "Killhouse"
+LANG_ENGLISH        "Дом убийств"
 
 REFERENCE           MPUI_LOCKDOWN
-LANG_ENGLISH        "Lockdown"
+LANG_ENGLISH        "Карантин"
 
 REFERENCE           MPUI_MARINES
-LANG_ENGLISH        "Marine Force Recon"
+LANG_ENGLISH        "Разведка морской пехоты"
 
 REFERENCE           MPUI_MARINES_SHORT
-LANG_ENGLISH        "Marines"
+LANG_ENGLISH        "Морские пехотинцы"
 
 REFERENCE           MPUI_MAX_CLIENTS
-LANG_ENGLISH        "Max. Clients:"
+LANG_ENGLISH        "Макс. количество клиентов:"
 
 REFERENCE           MPUI_MAX_CLIENTS_CAPS
-LANG_ENGLISH        "MAX. CLIENTS:"
+LANG_ENGLISH        "МАКС. КОЛИЧЕСТВО КЛИЕНТОВ:"
 
 REFERENCE           MPUI_MISSION
-LANG_ENGLISH        "Mission"
+LANG_ENGLISH        "Миссия"
 
 REFERENCE           MPUI_MOD
-LANG_ENGLISH        "Mod:"
+LANG_ENGLISH        "Мод:"
 
 REFERENCE           MPUI_MOD_CAPS
-LANG_ENGLISH        "MOD:"
+LANG_ENGLISH        "МОД:"
 
 REFERENCE           MPUI_NA
-LANG_ENGLISH        "^3Currently unavailable."
+LANG_ENGLISH        "^3В настоящее время недоступно."
 
 REFERENCE           MPUI_NUKED
-LANG_ENGLISH        "Nuketown"
+LANG_ENGLISH        "Ядерный городок"
 
 REFERENCE           MPUI_OITC
-LANG_ENGLISH        "One in the Chamber"
+LANG_ENGLISH        "Один патрон"
 
 REFERENCE           MPUI_OITC_CAPS
-LANG_ENGLISH        "ONE IN THE CHAMBER"
+LANG_ENGLISH        "ОДИН ПАТРОН"
 
 REFERENCE           MPUI_OPFOR
 LANG_ENGLISH        "OpFor"
@@ -906,25 +908,25 @@ REFERENCE           MPUI_OPFOR_SHORT
 LANG_ENGLISH        "OpFor"
 
 REFERENCE           MPUI_PLEASE_WAIT
-LANG_ENGLISH        "Please wait"
+LANG_ENGLISH        "Пожалуйста подождите"
 
 REFERENCE           MPUI_RESET_STATS
-LANG_ENGLISH        "Reset Stats"
+LANG_ENGLISH        "Сбросить статистику"
 
 REFERENCE           MPUI_RESET_STATS_CAPS
-LANG_ENGLISH        "RESET STATS"
+LANG_ENGLISH        "СБРОСИТЬ СТАТИСТИКУ"
 
 REFERENCE           MPUI_RESET_STATS_WARNING
-LANG_ENGLISH        "Do you really want to reset your stats?\n\nEverything you've unlocked including weapons, experience, challenges, titles and emblems will be reset.\n\nYou'll have to rank up again to reacquire them."
+LANG_ENGLISH        "Вы действительно хотите сбросить свою статистику?\in\Все, что вы разблокировали, включая оружие, опыт, испытания, титулы и эмблемы, будет сброшено.\an\Вам придется снова повышать свой ранг, чтобы получить их снова."
 
 REFERENCE           MPUI_RESISTANCE
-LANG_ENGLISH        "Resistance"
+LANG_ENGLISH        "Сопротивление"
 
 REFERENCE           MPUI_RULES_AIMASSIST
-LANG_ENGLISH        "Aim Assist"
+LANG_ENGLISH        "Помощь при прицеливании"
 
 REFERENCE           MPUI_RULES_VOICECHAT
-LANG_ENGLISH        "Voice Chat"
+LANG_ENGLISH        "Голосовой чат"
 
 REFERENCE           MPUI_RUST_LONG
 LANG_ENGLISH        "Rust: Long"
@@ -936,127 +938,127 @@ REFERENCE           MPUI_SAS_SHORT
 LANG_ENGLISH        "S.A.S."
 
 REFERENCE           MPUI_SEATOWN
-LANG_ENGLISH        "Seatown"
+LANG_ENGLISH        "Морской город"
 
 REFERENCE           MPUI_SECURITY_INCREASE_MESSAGE
-LANG_ENGLISH        "Increasing security level from %d to %d (est. %s)"
+LANG_ENGLISH        "Повышение уровня безопасности с %d до %d (est. %s))"
 
 REFERENCE           MPUI_SECURITY_LEVEL
-LANG_ENGLISH        "Security Level:"
+LANG_ENGLISH        "Уровень безопасности:"
 
 REFERENCE           MPUI_SECURITY_LEVEL_CAPS
 LANG_ENGLISH        "SECURITY LEVEL:"
 
 REFERENCE           MPUI_SECURITY_LEVEL_MESSAGE
-LANG_ENGLISH        "Your security level is %d"
+LANG_ENGLISH        "Ваш уровень безопасности %d"
 
 REFERENCE           MPUI_SECURITY_NEW_LEVEL_MESSAGE
-LANG_ENGLISH        "Your new security level is %d"
+LANG_ENGLISH        "Ваш новый уровень безопасности %d"
 
 REFERENCE           MPUI_SHARPSHOOTER
-LANG_ENGLISH        "Sharpshooter"
+LANG_ENGLISH        "Меткий стрелок"
 
 REFERENCE           MPUI_SHARPSHOOTER_CAPS
-LANG_ENGLISH        "SHARPSHOOTER"
+LANG_ENGLISH        "МЕТКИЙ СТРЕЛОК"
 
 REFERENCE           MPUI_SHIPMENT_LONG
 LANG_ENGLISH        "Shipment: Long"
 
 REFERENCE           MPUI_SPETSNAZ
-LANG_ENGLISH        "Spetsnaz"
+LANG_ENGLISH        "Спецназ"
 
 REFERENCE           MPUI_SPETSNAZ_SHORT
-LANG_ENGLISH        "Spetsnaz"
+LANG_ENGLISH        "Спецназ"
 
 REFERENCE           MPUI_STORM_SPRING
-LANG_ENGLISH        "Chemical Plant"
+LANG_ENGLISH        "Химический завод"
 
 REFERENCE           MPUI_TDEF
-LANG_ENGLISH        "Team Defender"
+LANG_ENGLISH        "Командная защита"
 
 REFERENCE           MPUI_TDEF_CAPS
-LANG_ENGLISH        "TEAM DEFENDER"
+LANG_ENGLISH        "КОМАНДНАЯ ЗАЩИТА"
 
 REFERENCE           MPUI_UNDERGROUND
-LANG_ENGLISH        "Underground"
+LANG_ENGLISH        "Под землей"
 
 REFERENCE           MPUI_UNLOCK_STATS
-LANG_ENGLISH        "Unlock Stats"
+LANG_ENGLISH        "Разблокировать статистику"
 
 REFERENCE           MPUI_UNLOCK_STATS_CAPS
-LANG_ENGLISH        "UNLOCK STATS"
+LANG_ENGLISH        "РАЗБЛОКИРОВАТЬ СТАТИСТИКУ"
 
 REFERENCE           MPUI_UNLOCK_STATS_WARNING
-LANG_ENGLISH        "Do you really want to unlock your stats?\n\nThis will give you the max. experience, prestige and will unlock all weapons, challenges, titles and emblems."
+LANG_ENGLISH        "Вы действительно хотите разблокировать свою статистику?\in\Это даст вам максимальный опыт, престиж и откроет все оружие, испытания, титулы и эмблемы."
 
 REFERENCE           MPUI_VERSION
-LANG_ENGLISH        "Version:"
+LANG_ENGLISH        "Версия:"
 
 REFERENCE           MPUI_VERSION_CAPS
-LANG_ENGLISH        "VERSION:"
+LANG_ENGLISH        "ВЕРСИЯ:"
 
 REFERENCE           MPUI_VILLAGE
-LANG_ENGLISH        "Village"
+LANG_ENGLISH        "Деревня"
 
 REFERENCE           MPUI_VIP_CAPS
 LANG_ENGLISH        "VIP"
 
 REFERENCE           OBJECTIVES_CONF
-LANG_ENGLISH        "Recover Dog Tags for the win."
+LANG_ENGLISH        "Соберите жетоны для победы."
 
 REFERENCE           OBJECTIVES_CONF_HINT
-LANG_ENGLISH        "Recover Dog Tags for the win."
+LANG_ENGLISH        "Соберите жетоны для победы."
 
 REFERENCE           OBJECTIVES_CONF_SCORE
-LANG_ENGLISH        "Recover Dog Tags to score for your team and deny enemy score.  First team to &&1 wins."
+LANG_ENGLISH        "Соберите жетоны, чтобы набрать очки для своей команды и не дать набрать очки противнику. Первая команда, которая наберет &&1, побеждает."
 
 REFERENCE           OBJECTIVES_INFECT
-LANG_ENGLISH        "Eliminated Survivors become Infected.  Infect everyone, or survive the game to win."
+LANG_ENGLISH        "Уничтоженные Выжившие становятся Зараженными. Заразите всех или выживите в игре, чтобы победить."
 
 REFERENCE           OBJECTIVES_INFECT_HINT
-LANG_ENGLISH        "Watch your back."
+LANG_ENGLISH        "Следите за тылом."
 
 REFERENCE           OBJECTIVES_INFECT_SCORE
-LANG_ENGLISH        "Survivors become Infected.  Infect everyone, or survive the game to win."
+LANG_ENGLISH        "Выжившие становятся инфицированными. Заразите всех или выживите в игре, чтобы победить."
 
 REFERENCE           OBJECTIVES_TDEF
-LANG_ENGLISH        "Capture and hold the flag for a team double scoring bonus."
+LANG_ENGLISH        "Захватите и удерживайте флаг, чтобы получить двойной командный бонус."
 
 REFERENCE           OBJECTIVES_TDEF_ATTACKER_HINT
-LANG_ENGLISH        "Capture flag for team x2 bonus."
+LANG_ENGLISH        "Захват флага для команды с бонусом x2."
 
 REFERENCE           OBJECTIVES_TDEF_DEFENDER_HINT
-LANG_ENGLISH        "Defend flag for team x2 bonus."
+LANG_ENGLISH        "Защитите флаг и получите бонус x2 для команды."
 
 REFERENCE           OBJECTIVES_TDEF_HINT
-LANG_ENGLISH        "Capture and hold the flag."
+LANG_ENGLISH        "Захватите и удерживайте флаг."
 
 REFERENCE           OBJECTIVES_TDEF_SCORE
-LANG_ENGLISH        "Capture and hold the flag for team double scoring bonus.  First team to &&1 wins."
+LANG_ENGLISH        "Захватите и удерживайте флаг, чтобы получить двойной бонус к очкам. Первая команда, которая наберет &&1, побеждает."
 
 REFERENCE           PATCH_COD4_DLC
 LANG_ENGLISH        "Call of Duty 4 Pack"
 
 REFERENCE           PATCH_DESC_COD4_DLC
-LANG_ENGLISH        "Call Of Duty 4 maps ported to IW4x by the team"
+LANG_ENGLISH        "Call Of Duty 4 карты, портированные командой на IW4x"
 
 REFERENCE           PATCH_DESC_DLC1
-LANG_ENGLISH        "The Modern Warfare 2 Stimulus Package delivers additional action-packed multiplayer maps, including brand-new battlegrounds and legendary fan-favorites from Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "Modern Warfare 2 Stimulus Package содержит дополнительные многопользовательские карты, в том числе совершенно новые поля сражений и легендарные любимые фанатами карты из Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_DLC2
-LANG_ENGLISH        "The best-selling first-person action game of all time gets even bigger with more epic new multiplayer content! The Modern Warfare 2 Resurgence Pack delivers five incredible new multiplayer maps. Take the action to exciting new locations, then battle across legendary landscapes from Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "Самая продаваемая игра-экшен от первого лица всех времен становится еще больше с еще большим количеством нового эпического многопользовательского контента! Modern Warfare 2 Resurgence Pack предлагает пять невероятных новых многопользовательских карт. Отправляйтесь в бой в захватывающих новых локациях, а затем сражайтесь на легендарных ландшафтах из Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_IW4X_DLC
-LANG_ENGLISH        "Original IW4x DLC containing several maps from Call Of Duty: Online"
+LANG_ENGLISH        "Оригинальный IW4x DLC, содержащий несколько карт из Call Of Duty: Online"
 
 REFERENCE           PATCH_DESC_MW3_DLC
-LANG_ENGLISH        "Modern Warfare 3 maps ported to IW4x by the team"
+LANG_ENGLISH        "Карты Modern Warfare 3, портированные командой IW4x"
 
 REFERENCE           PATCH_DLC1
 LANG_ENGLISH        "Stimulus Maps"
 
 REFERENCE           PATCH_DLC2
-LANG_ENGLISH        "Resurgence Maps"
+LANG_ENGLISH        "Карты возрождения"
 
 REFERENCE           PATCH_DLC_MAPS_MORE
 LANG_ENGLISH        "Больше бонусных карт"
@@ -1074,37 +1076,37 @@ REFERENCE           PATCH_MW3_DLC
 LANG_ENGLISH        "Modern Warfare 3 Pack"
 
 REFERENCE           PERKS_COMBATHIGH
-LANG_ENGLISH        "Juiced"
+LANG_ENGLISH        "Сок"
 
 REFERENCE           PERKS_DESC_COMBATHIGH
-LANG_ENGLISH        "Move faster for a few seconds after spawning."
+LANG_ENGLISH        "Двигайтесь быстрее в течение нескольких секунд после появления."
 
 REFERENCE           PERKS_PAINKILLER
-LANG_ENGLISH        "Juiced"
+LANG_ENGLISH        "Сок"
 
 REFERENCE           PLATFORM_CHANGE_NAME_CAPS
-LANG_ENGLISH        "^3C^7HANGE NAME"
+LANG_ENGLISH        "^3И^7ЗМЕНИТЬ ИМЯ"
 
 REFERENCE           PLATFORM_DYK_IW4_MSG40
-LANG_ENGLISH        "Your matches are being automatically recorded. You can watch them at the theater menu."
+LANG_ENGLISH        "Ваши матчи автоматически записываются. Вы можете посмотреть их в меню театра."
 
 REFERENCE           PLATFORM_DYK_IW4_MSG41
-LANG_ENGLISH        "Don't want to level up? Check out the unlock stats feature at the barracks menu."
+LANG_ENGLISH        "Не хотите повышать уровень? Проверьте функцию разблокировки статистики в меню казармы."
 
 REFERENCE           PLATFORM_DYK_IW4_MSG42
-LANG_ENGLISH        "Check out the store menu for the latest downloadable content."
+LANG_ENGLISH        "Ознакомьтесь с меню магазина для получения новейшего загружаемого контента."
 
 REFERENCE           PLATFORM_DYK_IW4_MSG43
-LANG_ENGLISH        "You can adjust your field of view at the video options."
+LANG_ENGLISH        "Вы можете настроить поле зрения в параметрах видео."
 
 REFERENCE           PLATFORM_DYK_IW4_MSG44
-LANG_ENGLISH        "If you like a specific server, you can add it to your favorites."
+LANG_ENGLISH        "Если вам понравился определенный сервер, вы можете добавить его в избранное."
 
 REFERENCE           PLATFORM_FRIENDS
-LANG_ENGLISH        "Friends ^0- ^3F"
+LANG_ENGLISH        "Друзья ^0- ^3F"
 
 REFERENCE           PLATFORM_FRIENDS_CAPS
-LANG_ENGLISH        "FRIENDS ^0- ^3F"
+LANG_ENGLISH        "ДРУЗЬЯ ^0- ^3F"
 
 REFERENCE           PLATFORM_LOGIN
 LANG_ENGLISH        "^3А^7вторизоваться"
@@ -1119,277 +1121,277 @@ REFERENCE           PLATFORM_LOGOUT_CAPS
 LANG_ENGLISH        "^3О^7ТКЛЮЧИТЬСЯ"
 
 REFERENCE           PLATFORM_REFRESH
-LANG_ENGLISH        "Refresh ^0- ^3F5"
+LANG_ENGLISH        "Обновить ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_CAPS
-LANG_ENGLISH        "REFRESH ^0- ^3F5"
+LANG_ENGLISH        "Обновить ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_LIST
-LANG_ENGLISH        "Refresh List ^0- ^3F5"
+LANG_ENGLISH        "Обновить список ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_LIST_CAPS
-LANG_ENGLISH        "REFRESH LIST ^0- ^3F5"
+LANG_ENGLISH        "Обновить список ^0- ^3F5"
 
 REFERENCE           PLAYERCARDS_TITLE_EVIL_CHICKEN
-LANG_ENGLISH        "Evil Chicken"
+LANG_ENGLISH        "Злая курица"
 
 REFERENCE           PLAYERCARDS_TITLE_NO_LAST_STAND
-LANG_ENGLISH        "No Last Stand!"
+LANG_ENGLISH        "Нет последнего боя!"
 
 REFERENCE           QUICKMESSAGE_1_COMMANDS
-LANG_ENGLISH        "1. Commands"
+LANG_ENGLISH        "1. Команды"
 
 REFERENCE           QUICKMESSAGE_1_ENEMY_SPOTTED
-LANG_ENGLISH        "1. Contact!"
+LANG_ENGLISH        "1. Вижу врага!"
 
 REFERENCE           QUICKMESSAGE_1_FOLLOW_ME
-LANG_ENGLISH        "1. On me!"
+LANG_ENGLISH        "1. Ко мне!"
 
 REFERENCE           QUICKMESSAGE_1_YES_SIR
-LANG_ENGLISH        "1. Roger."
+LANG_ENGLISH        "1. Понял."
 
 REFERENCE           QUICKMESSAGE_2_ENEMY_DOWN
-LANG_ENGLISH        "2. Enemy down!"
+LANG_ENGLISH        "2. Враг убит!"
 
 REFERENCE           QUICKMESSAGE_2_MOVE_IN
-LANG_ENGLISH        "2. Move in!"
+LANG_ENGLISH        "2. Вперед!"
 
 REFERENCE           QUICKMESSAGE_2_MULTIPLE_CONTACTS
-LANG_ENGLISH        "2. Multiple contacts!"
+LANG_ENGLISH        "2. Несколько врагов!"
 
 REFERENCE           QUICKMESSAGE_2_NO_SIR
-LANG_ENGLISH        "2. Negative."
+LANG_ENGLISH        "2. Нет."
 
 REFERENCE           QUICKMESSAGE_2_STATEMENTS
-LANG_ENGLISH        "2. Statements"
+LANG_ENGLISH        "2. Сообщения"
 
 REFERENCE           QUICKMESSAGE_3_FALL_BACK
-LANG_ENGLISH        "3. Fall back!"
+LANG_ENGLISH        "3. Назад!"
 
 REFERENCE           QUICKMESSAGE_3_IM_IN_POSITION
-LANG_ENGLISH        "3. In position."
+LANG_ENGLISH        "3. На позиции."
 
 REFERENCE           QUICKMESSAGE_3_IM_ON_MY_WAY
-LANG_ENGLISH        "3. Moving."
+LANG_ENGLISH        "3. Выдвигаюсь."
 
 REFERENCE           QUICKMESSAGE_3_ON_MY_WAY
-LANG_ENGLISH        "3. On my way."
+LANG_ENGLISH        "3. Уже иду."
 
 REFERENCE           QUICKMESSAGE_3_RESPONSES
-LANG_ENGLISH        "3. Responses"
+LANG_ENGLISH        "3. Ответы"
 
 REFERENCE           QUICKMESSAGE_4_AREA_SECURE
-LANG_ENGLISH        "4. Area secure!"
+LANG_ENGLISH        "4. Зона безопасна!"
 
 REFERENCE           QUICKMESSAGE_4_SORRY
-LANG_ENGLISH        "4. Sorry."
+LANG_ENGLISH        "4. Извини."
 
 REFERENCE           QUICKMESSAGE_4_SUPPRESSING_FIRE
-LANG_ENGLISH        "4. Base of fire!"
+LANG_ENGLISH        "4. База под обстрелом!"
 
 REFERENCE           QUICKMESSAGE_5_ATTACK_LEFT_FLANK
-LANG_ENGLISH        "5. Attack left flank!"
+LANG_ENGLISH        "5. Атакуем слева!"
 
 REFERENCE           QUICKMESSAGE_5_GREAT_SHOT
-LANG_ENGLISH        "5. Nice shot!"
+LANG_ENGLISH        "5. Хороший выстрел!"
 
 REFERENCE           QUICKMESSAGE_5_GRENADE
-LANG_ENGLISH        "5. Grenade!"
+LANG_ENGLISH        "5. Своя!"
 
 REFERENCE           QUICKMESSAGE_5_WATCH_SIX
-LANG_ENGLISH        "5. Watch your six!"
+LANG_ENGLISH        "5. На шесть часов!"
 
 REFERENCE           QUICKMESSAGE_6_ATTACK_RIGHT_FLANK
-LANG_ENGLISH        "6. Attack right flank!"
+LANG_ENGLISH        "6. Атакуем справа!"
 
 REFERENCE           QUICKMESSAGE_6_SNIPER
-LANG_ENGLISH        "6. Sniper!"
+LANG_ENGLISH        "6. Снайпер!"
 
 REFERENCE           QUICKMESSAGE_6_TOOK_LONG_ENOUGH
-LANG_ENGLISH        "6. Come on!"
+LANG_ENGLISH        "6. Да ладно!"
 
 REFERENCE           QUICKMESSAGE_7_ARE_YOU_CRAZY
-LANG_ENGLISH        "7. Are you crazy?"
+LANG_ENGLISH        "7. Ты сумасшедший?"
 
 REFERENCE           QUICKMESSAGE_7_HOLD_THIS_POSITION
-LANG_ENGLISH        "7. Hold this position!"
+LANG_ENGLISH        "7. Держать эту позицию!"
 
 REFERENCE           QUICKMESSAGE_7_NEED_REINFORCEMENTS
-LANG_ENGLISH        "7. Need reinforcements!"
+LANG_ENGLISH        "7. Нужно подкрепление!"
 
 REFERENCE           QUICKMESSAGE_8_HOLD_YOUR_FIRE
-LANG_ENGLISH        "8. Hold your fire!"
+LANG_ENGLISH        "8. Не стрелять!"
 
 REFERENCE           QUICKMESSAGE_8_REGROUP
-LANG_ENGLISH        "8. Regroup!"
+LANG_ENGLISH        "8. Перегруппироваться!"
 
 REFERENCE           QUICKMESSAGE_ARE_YOU_CRAZY
-LANG_ENGLISH        "Are you crazy?"
+LANG_ENGLISH        "Ты сумасшедший?"
 
 REFERENCE           QUICKMESSAGE_AREA_SECURE
-LANG_ENGLISH        "Area secure!"
+LANG_ENGLISH        "Зона безопасна!"
 
 REFERENCE           QUICKMESSAGE_ATTACK_LEFT_FLANK
-LANG_ENGLISH        "Attack left flank!"
+LANG_ENGLISH        "Атакуем слева!"
 
 REFERENCE           QUICKMESSAGE_ATTACK_RIGHT_FLANK
-LANG_ENGLISH        "Attack right flank!"
+LANG_ENGLISH        "Атакуем справа!"
 
 REFERENCE           QUICKMESSAGE_COME_ON
-LANG_ENGLISH        "Come on."
+LANG_ENGLISH        "Да ладно!"
 
 REFERENCE           QUICKMESSAGE_ENEMIES_SPOTTED
-LANG_ENGLISH        "Multiple contacts!"
+LANG_ENGLISH        "Несколько врагов!"
 
 REFERENCE           QUICKMESSAGE_ENEMY_DOWN
-LANG_ENGLISH        "Enemy down!"
+LANG_ENGLISH        "Враг убит!"
 
 REFERENCE           QUICKMESSAGE_ENEMY_GRENADE
-LANG_ENGLISH        "Enemy grenade!"
+LANG_ENGLISH        "Граната!"
 
 REFERENCE           QUICKMESSAGE_ENEMY_SPOTTED
-LANG_ENGLISH        "Contact!"
+LANG_ENGLISH        "Вижу врага!"
 
 REFERENCE           QUICKMESSAGE_ESC_EXIT
-LANG_ENGLISH        "Esc. Exit"
+LANG_ENGLISH        "Esc. Выход"
 
 REFERENCE           QUICKMESSAGE_FALL_BACK
-LANG_ENGLISH        "Fall back!"
+LANG_ENGLISH        "Назад!"
 
 REFERENCE           QUICKMESSAGE_FOLLOW_ME
-LANG_ENGLISH        "On me!"
+LANG_ENGLISH        "Ко мне!"
 
 REFERENCE           QUICKMESSAGE_GREAT_SHOT
-LANG_ENGLISH        "Nice shot!"
+LANG_ENGLISH        "Хороший выстрел!"
 
 REFERENCE           QUICKMESSAGE_GRENADE
-LANG_ENGLISH        "Grenade!"
+LANG_ENGLISH        "Своя!"
 
 REFERENCE           QUICKMESSAGE_HOLD_THIS_POSITION
-LANG_ENGLISH        "Hold this position!"
+LANG_ENGLISH        "Держать эту позицию!"
 
 REFERENCE           QUICKMESSAGE_HOLD_YOUR_FIRE
-LANG_ENGLISH        "Hold your fire!"
+LANG_ENGLISH        "Не стрелять!"
 
 REFERENCE           QUICKMESSAGE_IM_IN_POSITION
-LANG_ENGLISH        "In position."
+LANG_ENGLISH        "На позиции."
 
 REFERENCE           QUICKMESSAGE_IM_ON_MY_WAY
-LANG_ENGLISH        "Moving."
+LANG_ENGLISH        "Выдвигаюсь."
 
 REFERENCE           QUICKMESSAGE_MOVE_IN
-LANG_ENGLISH        "Move in!"
+LANG_ENGLISH        "Вперед!"
 
 REFERENCE           QUICKMESSAGE_NEED_REINFORCEMENTS
-LANG_ENGLISH        "Need reinforcements!"
+LANG_ENGLISH        "Нужно подкрепление!"
 
 REFERENCE           QUICKMESSAGE_NO_SIR
-LANG_ENGLISH        "Negative."
+LANG_ENGLISH        "Нет."
 
 REFERENCE           QUICKMESSAGE_ON_MY_WAY
-LANG_ENGLISH        "On my way."
+LANG_ENGLISH        "Уже иду."
 
 REFERENCE           QUICKMESSAGE_QUICK_MESSAGE
 LANG_ENGLISH        "Quick Message"
 
 REFERENCE           QUICKMESSAGE_REGROUP
-LANG_ENGLISH        "Regroup!"
+LANG_ENGLISH        "Перегруппироваться!"
 
 REFERENCE           QUICKMESSAGE_SNIPER
-LANG_ENGLISH        "Sniper!"
+LANG_ENGLISH        "Снайпер!"
 
 REFERENCE           QUICKMESSAGE_SORRY
-LANG_ENGLISH        "Sorry."
+LANG_ENGLISH        "Извини."
 
 REFERENCE           QUICKMESSAGE_SQUAD_ATTACK_LEFT_FLANK
-LANG_ENGLISH        "Squad, attack left flank!"
+LANG_ENGLISH        "Отделение, атакуйте левый фланг!"
 
 REFERENCE           QUICKMESSAGE_SQUAD_ATTACK_RIGHT_FLANK
-LANG_ENGLISH        "Squad, attack right flank!"
+LANG_ENGLISH        "Отделение, атакуйте правый фланг!"
 
 REFERENCE           QUICKMESSAGE_SQUAD_HOLD_THIS_POSITION
-LANG_ENGLISH        "Squad, hold this position!"
+LANG_ENGLISH        "Отряд, удерживать эту позицию!"
 
 REFERENCE           QUICKMESSAGE_SQUAD_REGROUP
-LANG_ENGLISH        "Squad, regroup!"
+LANG_ENGLISH        "Отряд, перегруппировывайся!"
 
 REFERENCE           QUICKMESSAGE_SQUAD_STICK_TOGETHER
-LANG_ENGLISH        "Squad, stick together!"
+LANG_ENGLISH        "Отряд, держитесь вместе!"
 
 REFERENCE           QUICKMESSAGE_STICK_TOGETHER
-LANG_ENGLISH        "Stick together!"
+LANG_ENGLISH        "Держитесь вместе!"
 
 REFERENCE           QUICKMESSAGE_SUPPRESSING_FIRE
-LANG_ENGLISH        "Base of fire!"
+LANG_ENGLISH        "База под обстрелом!"
 
 REFERENCE           QUICKMESSAGE_TOOK_LONG_ENOUGH
-LANG_ENGLISH        "Took long enough!"
+LANG_ENGLISH        "Слишком долго!"
 
 REFERENCE           QUICKMESSAGE_TOOK_YOU_LONG_ENOUGH
-LANG_ENGLISH        "Took you long enough!"
+LANG_ENGLISH        "Долго же ты шёл"
 
 REFERENCE           QUICKMESSAGE_WATCH_SIX
-LANG_ENGLISH        "Watch your six!"
+LANG_ENGLISH        "На шесть часов!"
 
 REFERENCE           QUICKMESSAGE_YES_SIR
-LANG_ENGLISH        "Roger."
+LANG_ENGLISH        "Понял."
 
 REFERENCE           QUICKMESSAGE_YOU_OUTTA_YOUR_MIND
-LANG_ENGLISH        "You outta your mind?"
+LANG_ENGLISH        "Ты сошел с ума?"
 
 REFERENCE           QUICKMESSAGE_YOURE_CRAZY
-LANG_ENGLISH        "You're crazy!"
+LANG_ENGLISH        "Ты сумасшедший!"
 
 REFERENCE           QUICKMESSAGE_YOURE_NUTS
-LANG_ENGLISH        "You're nuts!"
+LANG_ENGLISH        "Ты чокнутый!"
 
 REFERENCE           SPLASHES_COMBATHIGH_DESC
-LANG_ENGLISH        "Move faster for a few seconds after spawning."
+LANG_ENGLISH        "Двигайтесь быстрее в течение нескольких секунд после появления."
 
 REFERENCE           SPLASHES_DENIED_KILL
-LANG_ENGLISH        "Denied Kill!"
+LANG_ENGLISH        "Запрещено убивать!"
 
 REFERENCE           SPLASHES_DRAFTED
-LANG_ENGLISH        "Infected!"
+LANG_ENGLISH        "Зараженный!"
 
 REFERENCE           SPLASHES_DRAFTED_ROGUE
-LANG_ENGLISH        "Got Infected!"
+LANG_ENGLISH        "Заразился!"
 
 REFERENCE           SPLASHES_DROPPED_ENEMY_GUN_RANK
-LANG_ENGLISH        "Dropped Enemy Gun Rank!"
+LANG_ENGLISH        "Уменьшен ранг вражеского оружия!"
 
 REFERENCE           SPLASHES_DROPPED_GUN_RANK
-LANG_ENGLISH        "Dropped Gun Rank!"
+LANG_ENGLISH        "Уменьшен ранг оружия!"
 
 REFERENCE           SPLASHES_FINAL_ROGUE
-LANG_ENGLISH        "Final Survivor!"
+LANG_ENGLISH        "Последний выживший!"
 
 REFERENCE           SPLASHES_FIRST_MERCENARY
-LANG_ENGLISH        "First Infected!"
+LANG_ENGLISH        "Первый зараженный!"
 
 REFERENCE           SPLASHES_GAINED_GUN_RANK
-LANG_ENGLISH        "Gained Gun Rank!"
+LANG_ENGLISH        "Получил ранг оружия!"
 
 REFERENCE           SPLASHES_GOT_DRAFTED
-LANG_ENGLISH        "Got Infected!"
+LANG_ENGLISH        "Заразился!"
 
 REFERENCE           SPLASHES_KILL_CONFIRMED
-LANG_ENGLISH        "Kill Confirmed!"
+LANG_ENGLISH        "Убийство подтверждено!"
 
 REFERENCE           SPLASHES_KILL_DENIED
-LANG_ENGLISH        "Kill Denied!"
+LANG_ENGLISH        "Запрещено убивать!"
 
 REFERENCE           SPLASHES_SURVIVOR
-LANG_ENGLISH        "Survivor!"
+LANG_ENGLISH        "Выживший!"
 
 REFERENCE           SPLASHES_TAGS_RETRIEVED
-LANG_ENGLISH        "Got Your Tags!"
+LANG_ENGLISH        "Получил ваши теги!"
 
 REFERENCE           SPLASHES_TEAM_ASSIST
-LANG_ENGLISH        "Team Assist!"
+LANG_ENGLISH        "Помощь команде!"
 
 REFERENCE           SPLASHES_TOP_GUN_RANK
-LANG_ENGLISH        "Top Gun Rank!"
+LANG_ENGLISH        "Лучший рейтинг оружия!"
 
 REFERENCE           SPLASHES_X2_BONUS
 LANG_ENGLISH        "x2 Bonus!"
