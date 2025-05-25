@@ -1,6 +1,6 @@
 // Dumped from fastfile "iw4x_localized_russian".
 // In their original format the strings might have been separated in multiple files.
-VERSION             "2"
+VERSION             "1"
 CONFIG              "C:/trees/cod6/cod6/bin/StringEd.cfg"
 FILENOTES           "Manually Translated"
 
@@ -923,7 +923,7 @@ REFERENCE           MPUI_RESET_STATS_CAPS
 LANG_ENGLISH        "СБРОСИТЬ СТАТИСТИКУ"
 
 REFERENCE           MPUI_RESET_STATS_WARNING
-LANG_ENGLISH        "Вы действительно хотите сбросить свою статистику?\in\Все, что вы разблокировали, включая оружие, опыт, испытания, титулы и эмблемы, будет сброшено.\an\Вам придется снова повышать свой ранг, чтобы получить их снова."
+LANG_ENGLISH        "Вы действительно хотите сбросить свою статистику?\n\nВсе, что вы разблокировали, включая оружие, опыт, испытания, титулы и эмблемы, будет сброшено.\n\nВам придется снова повышать свой ранг, чтобы получить их снова."
 
 REFERENCE           MPUI_RESISTANCE
 LANG_ENGLISH        "Сопротивление"
@@ -995,7 +995,7 @@ REFERENCE           MPUI_UNLOCK_STATS_CAPS
 LANG_ENGLISH        "РАЗБЛОКИРОВАТЬ СТАТИСТИКУ"
 
 REFERENCE           MPUI_UNLOCK_STATS_WARNING
-LANG_ENGLISH        "Вы действительно хотите разблокировать свою статистику?\in\Это даст вам максимальный опыт, престиж и откроет все оружие, испытания, титулы и эмблемы."
+LANG_ENGLISH        "Вы действительно хотите разблокировать свою статистику?\n\nЭто даст вам максимальный опыт, престиж и откроет все оружие, испытания, титулы и эмблемы."
 
 REFERENCE           MPUI_VERSION
 LANG_ENGLISH        "Версия:"
