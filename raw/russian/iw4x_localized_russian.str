@@ -286,8 +286,14 @@ LANG_ENGLISH        "Геймпад"
 REFERENCE           MENU_GAMEPAD_ENABLED
 LANG_ENGLISH        "Геймпад включен"
 
+REFERENCE           MENU_GPAD_FORCE_FEEDBACK
+LANG_ENGLISH        "Enable haptic feedback"
+
 REFERENCE           MENU_GPAD_PS_CAPS
 LANG_ENGLISH        "PlayStation"
+
+REFERENCE           MENU_GPAD_RUMBLE
+LANG_ENGLISH        "Enable rumble"
 
 REFERENCE           MENU_GPAD_STYLE
 LANG_ENGLISH        "Button Style"
