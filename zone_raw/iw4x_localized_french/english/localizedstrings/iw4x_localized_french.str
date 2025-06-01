@@ -1,0 +1,736 @@
+// Dumped from fastfile "iw4x_localized_french".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           CONF_GAME_DESC
+LANG_ENGLISH        "Récupérez les plaques des ennemis."
+
+REFERENCE           CONF_KILL_CONFIRMED
+LANG_ENGLISH        "ELIMINATION CONFIRMEE"
+
+REFERENCE           CONF_KILL_DENIED
+LANG_ENGLISH        "ELIMINATION REFUSEE"
+
+REFERENCE           CONF_PICKEDUP_TAGS
+LANG_ENGLISH        "MEDAILLE RECUPEREE"
+
+REFERENCE           ERR_INVALID_CHALLENGE_SIGNATURE
+LANG_ENGLISH        "Signature de challenge non valide!"
+
+REFERENCE           ERR_INVALID_CONNECT_DATA
+LANG_ENGLISH        "Données de connection non valides!"
+
+REFERENCE           ERR_INVALID_CONNECT_PACKET
+LANG_ENGLISH        "Paquet de connection invalide!"
+
+REFERENCE           ERR_INVALID_CONNECT_STRING
+LANG_ENGLISH        "Connect string non valide!"
+
+REFERENCE           ERR_INVALID_INFOSTRING_DATA
+LANG_ENGLISH        "Infostring non valide!"
+
+REFERENCE           ERR_XUID_CERTIFICATE_MISMATCH
+LANG_ENGLISH        "Votre XUID ne correspond pas au certificat de protection!"
+
+REFERENCE           EXE_AWAITINGGAMESTATE
+LANG_ENGLISH        "Installation du jeu"
+
+REFERENCE           EXE_PROGRESS
+LANG_ENGLISH        "Etat:"
+
+REFERENCE           INF_ALLIES_ELIM
+LANG_ENGLISH        "Surivants éliminés."
+
+REFERENCE           INF_COUNTDOWN
+LANG_ENGLISH        "Infection dans: "
+
+REFERENCE           INF_GAME_DESC
+LANG_ENGLISH        "Les survivants tués deviennent infectés. Infectez ou survivez pour gagner."
+
+REFERENCE           INF_GOT_INFECTED
+LANG_ENGLISH        "Infecté!"
+
+REFERENCE           INF_LAST_ALIVE
+LANG_ENGLISH        "Dernier en vie!"
+
+REFERENCE           INF_SURVIVOR
+LANG_ENGLISH        "Survivant!"
+
+REFERENCE           INF_WAIT_FOR_PLAYERS
+LANG_ENGLISH        "En attente de joueurs"
+
+REFERENCE           MENU_16X
+LANG_ENGLISH        "16x"
+
+REFERENCE           MENU_8X
+LANG_ENGLISH        "8x"
+
+REFERENCE           MENU_AA_MAXQUALITY
+LANG_ENGLISH        "Anticrénelage:"
+
+REFERENCE           MENU_AAA_DITHER
+LANG_ENGLISH        "Dither (Bas)"
+
+REFERENCE           MENU_AAA_SUPER
+LANG_ENGLISH        "Super Sampled (Elevé)"
+
+REFERENCE           MENU_AAALPHA
+LANG_ENGLISH        "Anti-aliasing Alpha"
+
+REFERENCE           MENU_ADD_TO_FAVORITES_CAPS
+LANG_ENGLISH        "AJOUTER AUX FAV."
+
+REFERENCE           MENU_AUTORECORD
+LANG_ENGLISH        "Enregistrement auto."
+
+REFERENCE           MENU_AUTORECORD_CAPS
+LANG_ENGLISH        "ENREGISTREMENT AUTO."
+
+REFERENCE           MENU_BORDERLESS
+LANG_ENGLISH        "Sans bordures"
+
+REFERENCE           MENU_CHANGELOG
+LANG_ENGLISH        "Changements"
+
+REFERENCE           MENU_CHANGELOG_CAPS
+LANG_ENGLISH        "CHANGEMENTS"
+
+REFERENCE           MENU_CHECK_FOR_UPDATES
+LANG_ENGLISH        "^3Mise à jour disponible"
+
+REFERENCE           MENU_CHECK_FOR_UPDATES_CAPS
+LANG_ENGLISH        "^3MISE A JOUR DISPONIBLE"
+
+REFERENCE           MENU_CLOSE
+LANG_ENGLISH        "Fermer"
+
+REFERENCE           MENU_CLOSE_CAPS
+LANG_ENGLISH        "FERMER"
+
+REFERENCE           MENU_CONF
+LANG_ENGLISH        "Variante du MME. Récupérez les plaques des ennemis pour marquer des points.\nCréé par Intricate."
+
+REFERENCE           MENU_CRANKED
+LANG_ENGLISH        "Chaque élimination vous donne des atouts et des points contre une limite de temps. Tuez pour rester en vie!\nCréé by Intricate."
+
+REFERENCE           MENU_D3D9EX
+LANG_ENGLISH        "Direct3D9Ex"
+
+REFERENCE           MENU_DEL_FAVORITE_CAPS
+LANG_ENGLISH        "SUPPR. FAVORI"
+
+REFERENCE           MENU_DELETE
+LANG_ENGLISH        "Supprimer"
+
+REFERENCE           MENU_DELETE_CAPS
+LANG_ENGLISH        "SUPPRIMER"
+
+REFERENCE           MENU_DEMOS_KEEP
+LANG_ENGLISH        "Enregistrements max."
+
+REFERENCE           MENU_DEMOS_KEEP_CAPS
+LANG_ENGLISH        "ENREGISTREMENTS MAX"
+
+REFERENCE           MENU_DEV_TOGGLE_OFF
+LANG_ENGLISH        "Desactiver mode developpeur"
+
+REFERENCE           MENU_DEV_TOGGLE_ON
+LANG_ENGLISH        "Activer mode developpeur"
+
+REFERENCE           MENU_DRAWFPS
+LANG_ENGLISH        "Afficher FPS"
+
+REFERENCE           MENU_FOV
+LANG_ENGLISH        "Champ de vision"
+
+REFERENCE           MENU_FOV_CAPS
+LANG_ENGLISH        "CHAMP DE VISION: "
+
+REFERENCE           MENU_FOV_HINT_PC
+LANG_ENGLISH        "^1Un champ de vision trop élevé peut provoquer un taux de rafraichissement plus bas."
+
+REFERENCE           MENU_FPS_0
+LANG_ENGLISH        "Désact.: 0"
+
+REFERENCE           MENU_FPS_1
+LANG_ENGLISH        "Act.: 1"
+
+REFERENCE           MENU_FPS_2
+LANG_ENGLISH        "Act.: 2"
+
+REFERENCE           MENU_FPS_3
+LANG_ENGLISH        "Act.: 3"
+
+REFERENCE           MENU_FPS_4
+LANG_ENGLISH        "Act.: 4"
+
+REFERENCE           MENU_FPS_CAP
+LANG_ENGLISH        "Images max/s"
+
+REFERENCE           MENU_FPSLABELS
+LANG_ENGLISH        "Afficher les labels FPS"
+
+REFERENCE           MENU_FRIEND_ADD
+LANG_ENGLISH        "Ajouter un ami"
+
+REFERENCE           MENU_FRIEND_ADD_CAPS
+LANG_ENGLISH        "AJOUTER UN AMI"
+
+REFERENCE           MENU_FRIENDS
+LANG_ENGLISH        "Amis"
+
+REFERENCE           MENU_FRIENDS_CAPS
+LANG_ENGLISH        "AMIS"
+
+REFERENCE           MENU_FULLSCREEN
+LANG_ENGLISH        "Plein écran"
+
+REFERENCE           MENU_GAME
+LANG_ENGLISH        "Partie"
+
+REFERENCE           MENU_GAME_CAPS
+LANG_ENGLISH        "PARTIE"
+
+REFERENCE           MENU_GAME_SETTINGS_CAPS
+LANG_ENGLISH        "OPTIONS DE JEU"
+
+REFERENCE           MENU_GTNW_DESC
+LANG_ENGLISH        "Chaque équipe doit capturer et défendre l'objectif central pour activer la frappe nucléaire."
+
+REFERENCE           MENU_GUNGAME
+LANG_ENGLISH        "Tuez des joueurs avec votre arme pour passer à la suivante. Le premier à faire une élimination avec chaque arme l'emporte.\nCréé par NTAuthority"
+
+REFERENCE           MENU_INF
+LANG_ENGLISH        "Les survivants tués deviennent infectés. Infectez tout le monde ou survivez pour gagner.\nCréé par Intricate."
+
+REFERENCE           MENU_JOIN_SERVER_CAPS
+LANG_ENGLISH        "REJOINDRE SERVEUR"
+
+REFERENCE           MENU_LAGOMETER
+LANG_ENGLISH        "Afficher le lag-o-mètre"
+
+REFERENCE           MENU_LOGIN
+LANG_ENGLISH        "Connection"
+
+REFERENCE           MENU_LOGIN_CAPS
+LANG_ENGLISH        "CONNECTION"
+
+REFERENCE           MENU_LOGOUT
+LANG_ENGLISH        "Deconnection"
+
+REFERENCE           MENU_LOGOUT_CAPS
+LANG_ENGLISH        "DECONNECTION"
+
+REFERENCE           MENU_MAXPACKETS
+LANG_ENGLISH        "Paquets max. par image"
+
+REFERENCE           MENU_MODS
+LANG_ENGLISH        "Mods"
+
+REFERENCE           MENU_MODS_CAPS
+LANG_ENGLISH        "MODS"
+
+REFERENCE           MENU_MOTD
+LANG_ENGLISH        "Infos"
+
+REFERENCE           MENU_MOTD_CAPS
+LANG_ENGLISH        "INFOS"
+
+REFERENCE           MENU_NATIVECURSOR
+LANG_ENGLISH        "Curseur par défaut"
+
+REFERENCE           MENU_NEWCOLORS
+LANG_ENGLISH        "Couleur du texte"
+
+REFERENCE           MENU_NOBORDER
+LANG_ENGLISH        "Désactiv. la bordure de fenêtre"
+
+REFERENCE           MENU_OITC
+LANG_ENGLISH        "Une balle, un couteau, trois vies. Les joueurs recoivent une balle pour chaque élimination.\nCréé par NTAuthority."
+
+REFERENCE           MENU_PASSWORD_CAPS
+LANG_ENGLISH        "MOT DE PASSE"
+
+REFERENCE           MENU_PLAY
+LANG_ENGLISH        "Jouer"
+
+REFERENCE           MENU_PLAY_CAPS
+LANG_ENGLISH        "JOUER"
+
+REFERENCE           MENU_RECONNECTING_TO_PARTY
+LANG_ENGLISH        "CONNECTION AU SERVEUR"
+
+REFERENCE           MENU_RESET_STATS
+LANG_ENGLISH        "Réinitialiser ?"
+
+REFERENCE           MENU_RESET_STATS_CAPS
+LANG_ENGLISH        "REINITIALISER ?"
+
+REFERENCE           MENU_SCREEN_OPTIONS
+LANG_ENGLISH        "Options d'affichage"
+
+REFERENCE           MENU_SCROLL_DOWN
+LANG_ENGLISH        "^3MONTER"
+
+REFERENCE           MENU_SCROLL_UP
+LANG_ENGLISH        "^3DESCENDRE"
+
+REFERENCE           MENU_SEARCHINGFORGAMES_100MS
+LANG_ENGLISH        ""
+
+REFERENCE           MENU_SECURITY_INCREASE
+LANG_ENGLISH        "AUGMENTATION DU NIV. DE SECURITE"
+
+REFERENCE           MENU_SERVER_INFO_CAPS
+LANG_ENGLISH        "INFOS SERVEUR"
+
+REFERENCE           MENU_SHARPSHOOTER
+LANG_ENGLISH        "Les armes changent toutes les 45 secondes. Tuez pour marquer des points.\nCréé par NTAuthority."
+
+REFERENCE           MENU_SNAPS
+LANG_ENGLISH        "Fréquence de snapshots"
+
+REFERENCE           MENU_START_DEVMAP_CAPS
+LANG_ENGLISH        "Lancer Devmap"
+
+REFERENCE           MENU_STORE
+LANG_ENGLISH        "Magasin"
+
+REFERENCE           MENU_STORE_CAPS
+LANG_ENGLISH        "MAGASIN"
+
+REFERENCE           MENU_STREAMFIRENDLY_UI
+LANG_ENGLISH        "Interface stream"
+
+REFERENCE           MENU_TDEF
+LANG_ENGLISH        "Capturez et defendez le drapeau pour obtenir un bonus.\nCréé par Intricate."
+
+REFERENCE           MENU_THEATER
+LANG_ENGLISH        "Studio"
+
+REFERENCE           MENU_THEATER_CAPS
+LANG_ENGLISH        "STUDIO"
+
+REFERENCE           MENU_UNLOCK_STATS
+LANG_ENGLISH        "Tout débloquer ?"
+
+REFERENCE           MENU_UNLOCK_STATS_CAPS
+LANG_ENGLISH        "TOUT DEBLOQUER ?"
+
+REFERENCE           MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
+LANG_ENGLISH        "En attente d'autres joueurs"
+
+REFERENCE           MENU_XAXIS
+LANG_ENGLISH        "Position écran (X)"
+
+REFERENCE           MENU_YAXIS
+LANG_ENGLISH        "Position écran (Y)"
+
+REFERENCE           MP_NEUTRAL_FLAG_DROPPED_BY
+LANG_ENGLISH        "&&1 à perdu le drapeau!"
+
+REFERENCE           MP_PICKUP_C4
+LANG_ENGLISH        "Maintenez ^3[{+activate}]^7 pour prendre: C4"
+
+REFERENCE           MP_PICKUP_CLAYMORE
+LANG_ENGLISH        "Maintenez ^3[{+activate}]^7 pour prendre: Claymore"
+
+REFERENCE           MP_SEARCHING_FOR_PLAYER
+LANG_ENGLISH        "Recherche en cours"
+
+REFERENCE           MPUI_BLOC
+LANG_ENGLISH        "Bloc"
+
+REFERENCE           MPUI_BLOC_SH
+LANG_ENGLISH        "Quartier oublié"
+
+REFERENCE           MPUI_BOG_SH
+LANG_ENGLISH        "Bog"
+
+REFERENCE           MPUI_CARGOSHIP_SH
+LANG_ENGLISH        "Freighter"
+
+REFERENCE           MPUI_CO_HUNTED
+LANG_ENGLISH        "Village"
+
+REFERENCE           MPUI_CONF
+LANG_ENGLISH        "Elimination confirmée"
+
+REFERENCE           MPUI_CONF_CAPS
+LANG_ENGLISH        "ELIMINATION CONFIRMEE"
+
+REFERENCE           MPUI_CRANKED
+LANG_ENGLISH        "Enragé"
+
+REFERENCE           MPUI_CRANKED_CAPS
+LANG_ENGLISH        "ENRAGE"
+
+REFERENCE           MPUI_CRASH_TROPICAL
+LANG_ENGLISH        "Crash tropical"
+
+REFERENCE           MPUI_DEMO_AUTHOR
+LANG_ENGLISH        "Par:"
+
+REFERENCE           MPUI_DEMO_AUTHOR_CAPS
+LANG_ENGLISH        "PAR:"
+
+REFERENCE           MPUI_DEMO_CREATED
+LANG_ENGLISH        "Créée:"
+
+REFERENCE           MPUI_DEMO_CREATED_CAPS
+LANG_ENGLISH        "Créée:"
+
+REFERENCE           MPUI_DEMO_DATE
+LANG_ENGLISH        "Créée le:"
+
+REFERENCE           MPUI_DEMO_DATE_CAPS
+LANG_ENGLISH        "CREEE LE:"
+
+REFERENCE           MPUI_DEMO_LENGTH
+LANG_ENGLISH        "Durée:"
+
+REFERENCE           MPUI_DEMO_LENGTH_CAPS
+LANG_ENGLISH        "DUREE:"
+
+REFERENCE           MPUI_DESC_AUTORECORD
+LANG_ENGLISH        "Enregistrement automatique de vos parties."
+
+REFERENCE           MPUI_DESC_CHANGE_NAME
+LANG_ENGLISH        "^3C^7hangez votre nom"
+
+REFERENCE           MPUI_DESC_CHANGELOG
+LANG_ENGLISH        "Quoi de neuf ?"
+
+REFERENCE           MPUI_DESC_CHECK_FOR_UPDATES
+LANG_ENGLISH        "Vérifie la version du jeu"
+
+REFERENCE           MPUI_DESC_D3D9EX
+LANG_ENGLISH        "Utilise la technologie Direct3D9Ex"
+
+REFERENCE           MPUI_DESC_DEMOS_KEEP
+LANG_ENGLISH        "Definit combien de parties seront sauvegardées avant que la plus vieille soit suprimée."
+
+REFERENCE           MPUI_DESC_FOV
+LANG_ENGLISH        "Regler votre champ de vision."
+
+REFERENCE           MPUI_DESC_LOGIN
+LANG_ENGLISH        "Connectez-vous"
+
+REFERENCE           MPUI_DESC_LOGOUT
+LANG_ENGLISH        "Deconnectez-vous"
+
+REFERENCE           MPUI_DESC_MAP_BLOC_SH
+LANG_ENGLISH        "Grand bloc d'appartements ukrainiens. Véritable refuge à snipers et combats rapprochés dans les couloirs."
+
+REFERENCE           MPUI_DESC_MAP_CARGOSHIP_SH
+LANG_ENGLISH        "Une version enneigée de la carte 'Wetwork' de Call of Duty 4: Modern Warfare"
+
+REFERENCE           MPUI_DESC_MAP_CO_HUNTED
+LANG_ENGLISH        "Village campagnard russe en pleine nuit."
+
+REFERENCE           MPUI_DESC_MAP_CRASH_TROPICAL
+LANG_ENGLISH        "Site d'un crash d'hélicoptère récouvert par la végétation. Parfait pour les combats en équipes"
+
+REFERENCE           MPUI_DESC_MAP_ESTATE_TROPICAL
+LANG_ENGLISH        "Résidence paisible sur une île tropicale. Battez vous pour prendre le contrôle de la résidence."
+
+REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
+LANG_ENGLISH        "Allées abandonnées de favelas brésiliennes. Parfait pour tous les modes de jeu."
+
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
+LANG_ENGLISH        "Centre d'entraînement au tir situé à Cuba. Combats rapprochés et à moyenne distance."
+
+REFERENCE           MPUI_DESC_MAP_KILLHOUSE
+LANG_ENGLISH        "La map boucherie de Call of Duty 4 ! La rapidité et l'efficacité sont de rigueur ici, rangez le sniper et partez à l'assaut."
+
+REFERENCE           MPUI_DESC_MAP_NUKED
+LANG_ENGLISH        "Fausse ville en carton pâte située en plein désert utilisée pour des essais nucléaires."
+
+REFERENCE           MPUI_DESC_MAP_OILRIG
+LANG_ENGLISH        "La seule journée paisible, c'était hier..."
+
+REFERENCE           MPUI_DESC_MAP_RUST_LONG
+LANG_ENGLISH        "Site d'extraction de pétrole en plein désert. Affrontements à la fois à longue et courte distances."
+
+REFERENCE           MPUI_DESC_MAP_SHIPMENT_LONG
+LANG_ENGLISH        "Site de stockage de containers russe. Affrontements à courte et moyenne distances."
+
+REFERENCE           MPUI_DESC_MAP_STORM_SPRING
+LANG_ENGLISH        "Centrale chimique enneigée. Battailes en équipes intenses."
+
+REFERENCE           MPUI_DESC_MODS
+LANG_ENGLISH        "Recherchez dans vos mods"
+
+REFERENCE           MPUI_DESC_NATIVECURSOR
+LANG_ENGLISH        "Affiche le curseur par défaut / curseur du jeu."
+
+REFERENCE           MPUI_DESC_NEWCOLORS
+LANG_ENGLISH        "Utilise la palette de couleurs de ^2Warfare2."
+
+REFERENCE           MPUI_DESC_NOBORDER
+LANG_ENGLISH        "Pas de bordure en mode fenêtré"
+
+REFERENCE           MPUI_DESC_OPTIONS
+LANG_ENGLISH        "Changer vos options de jeu"
+
+REFERENCE           MPUI_DESC_QUIT
+LANG_ENGLISH        "Quitter le jeu"
+
+REFERENCE           MPUI_DESC_RESET_STATS
+LANG_ENGLISH        "Réinitialiser vos stats."
+
+REFERENCE           MPUI_DESC_STORE
+LANG_ENGLISH        "Rechercher du contenu téléchargeable"
+
+REFERENCE           MPUI_DESC_STREAM_FRIENDLY_UI
+LANG_ENGLISH        "Cache le nom et l'adresse IP du serveur sur le tableau des scores."
+
+REFERENCE           MPUI_DESC_THEATER
+LANG_ENGLISH        "Regardez vos dernières parties"
+
+REFERENCE           MPUI_DESC_UNLOCK_STATS
+LANG_ENGLISH        "Débloquer tous vos stats."
+
+REFERENCE           MPUI_DOWNLOADING
+LANG_ENGLISH        "Téléchargement"
+
+REFERENCE           MPUI_DOWNLOADING_CAPS
+LANG_ENGLISH        "TELECHARGEMENT"
+
+REFERENCE           MPUI_ESTATE_TROPICAL
+LANG_ENGLISH        "Estate tropical"
+
+REFERENCE           MPUI_FAV_TROPICAL
+LANG_ENGLISH        "Favela tropical"
+
+REFERENCE           MPUI_GUNGAME
+LANG_ENGLISH        "Jeu d'armes"
+
+REFERENCE           MPUI_GUNGAME_CAPS
+LANG_ENGLISH        "JEU D'ARMES"
+
+REFERENCE           MPUI_INF
+LANG_ENGLISH        "Infecté"
+
+REFERENCE           MPUI_INF_CAPS
+LANG_ENGLISH        "INFECTE"
+
+REFERENCE           MPUI_IS_PRIVATE
+LANG_ENGLISH        "Protégé par MDP:"
+
+REFERENCE           MPUI_IS_PRIVATE_CAPS
+LANG_ENGLISH        "PROTEGE PAR MDP:"
+
+REFERENCE           MPUI_KILLHOUSE
+LANG_ENGLISH        "Killhouse"
+
+REFERENCE           MPUI_MAX_CLIENTS
+LANG_ENGLISH        "Clients max.:"
+
+REFERENCE           MPUI_MAX_CLIENTS_CAPS
+LANG_ENGLISH        "CLIENTS MAX.:"
+
+REFERENCE           MPUI_MOD
+LANG_ENGLISH        "Mod:"
+
+REFERENCE           MPUI_MOD_CAPS
+LANG_ENGLISH        "MOD:"
+
+REFERENCE           MPUI_NA
+LANG_ENGLISH        "^3Indisponible."
+
+REFERENCE           MPUI_NUKED
+LANG_ENGLISH        "Nuketown"
+
+REFERENCE           MPUI_OITC
+LANG_ENGLISH        "Une balle chargée"
+
+REFERENCE           MPUI_OITC_CAPS
+LANG_ENGLISH        "UNE BALLE CHARGEE"
+
+REFERENCE           MPUI_PLEASE_WAIT
+LANG_ENGLISH        "Veuillez patienter"
+
+REFERENCE           MPUI_RESET_STATS
+LANG_ENGLISH        "Réinit. vos stats"
+
+REFERENCE           MPUI_RESET_STATS_CAPS
+LANG_ENGLISH        "REINIT. VOS STATS"
+
+REFERENCE           MPUI_RESET_STATS_WARNING
+LANG_ENGLISH        "Voulez vous vraiment réinitialier vos stats ? \n\nToutes les armes, bonus d'experience, challenges, titres et emblèmes auront disparus.\nVous devrez alors recommencer pour tout débloquer à nouveau."
+
+REFERENCE           MPUI_RUST_LONG
+LANG_ENGLISH        "Rust long"
+
+REFERENCE           MPUI_SECURITY_INCREASE_MESSAGE
+LANG_ENGLISH        "Augm. du niv. de securité de %d à %d (temps restant: %s)"
+
+REFERENCE           MPUI_SECURITY_LEVEL
+LANG_ENGLISH        "Niveau de sécurité:"
+
+REFERENCE           MPUI_SECURITY_LEVEL_CAPS
+LANG_ENGLISH        "NIV. DE SECURITE:"
+
+REFERENCE           MPUI_SECURITY_LEVEL_MESSAGE
+LANG_ENGLISH        "Votre niveau de securité %d"
+
+REFERENCE           MPUI_SECURITY_NEW_LEVEL_MESSAGE
+LANG_ENGLISH        "Votre nouveau niveau de securité est %d"
+
+REFERENCE           MPUI_SHARPSHOOTER
+LANG_ENGLISH        "Tireur d'élite"
+
+REFERENCE           MPUI_SHARPSHOOTER_CAPS
+LANG_ENGLISH        "TIREUR D'ELITE"
+
+REFERENCE           MPUI_SHIPMENT_LONG
+LANG_ENGLISH        "Shipment long"
+
+REFERENCE           MPUI_STORM_SPRING
+LANG_ENGLISH        "Centrale Chimique"
+
+REFERENCE           MPUI_TDEF
+LANG_ENGLISH        "Défense en Equipe"
+
+REFERENCE           MPUI_TDEF_CAPS
+LANG_ENGLISH        "DEFENSE EN EQUIPE"
+
+REFERENCE           MPUI_UNLOCK_STATS
+LANG_ENGLISH        "Débloquer stats"
+
+REFERENCE           MPUI_UNLOCK_STATS_CAPS
+LANG_ENGLISH        "DEBLOQUER STATS"
+
+REFERENCE           MPUI_UNLOCK_STATS_WARNING
+LANG_ENGLISH        "Voulez vous vraiment débloquer vos stats ?\n\nCeci vous donnera toutes les armes/titres/emblemes disponibles et vous décernera automatiquement les niveaux maximum d'expérience et de prestige."
+
+REFERENCE           MPUI_VERSION
+LANG_ENGLISH        "Version:"
+
+REFERENCE           MPUI_VERSION_CAPS
+LANG_ENGLISH        "VERSION:"
+
+REFERENCE           MPUI_VIP_CAPS
+LANG_ENGLISH        "VIP"
+
+REFERENCE           OBJECTIVES_TDEF
+LANG_ENGLISH        "Capturez et defendez le drapeau pour obtenir un bonus."
+
+REFERENCE           OBJECTIVES_TDEF_ATTACKER_HINT
+LANG_ENGLISH        "Capturez le drapeau pour x2 points."
+
+REFERENCE           OBJECTIVES_TDEF_DEFENDER_HINT
+LANG_ENGLISH        "Defendez le drapeau pour x2 points."
+
+REFERENCE           OBJECTIVES_TDEF_SCORE
+LANG_ENGLISH        "Capturez et defendez le drapeau."
+
+REFERENCE           PATCH_DESC_DLC1
+LANG_ENGLISH        "Le contenu téléchargeable Modern Warfare 2 Stimulus Package vous apporte un ensemble de cartes multijoueurs avec de tout nouveaux terrains et les environnements favoris des fans du premier opus Call of Duty 4: Modern Warfare."
+
+REFERENCE           PATCH_DESC_DLC2
+LANG_ENGLISH        "Le pack Resurgence pour Modern Warfare 2 vous offre cinq nouvelles cartes multijoueurs incroyables. Prenez part à l'action dans de nouveaux lieux incroyables, et combattez sur les cartes du désormais légendaire Call of Duty 4: Modern Warfare."
+
+REFERENCE           PATCH_DESC_DLC3
+LANG_ENGLISH        "Nuketown est une carte iconique présente dans Call of Duty: Black Ops, reposant sur des combats rapides et nerveux à courtes distances."
+
+REFERENCE           PATCH_DESC_DLC4
+LANG_ENGLISH        "Le pack Classiques no1 pour Modern Warfare 2 vous offre quelques-unes des cartes préférées de la communauté de Call of Duty 4: Modern Warfare, ajoutant les cartes Crossfire, Bloc, et Wetwork à votre collection."
+
+REFERENCE           PATCH_DESC_DLC5
+LANG_ENGLISH        "Ce second pack de maps classiques vous offre 2 cartes supplémentaires venue de Call of Duty 4: Modern Warfare, à savoir les légendaires Killhouse et Bog"
+
+REFERENCE           PATCH_DESC_DLC6
+LANG_ENGLISH        "Freighter est une carte remasterisée à l'ambiance glaciale de Wet Work, présente sur Call of Duty 4 : Modern Warfare."
+
+REFERENCE           PATCH_DESC_DLC7
+LANG_ENGLISH        "Le pack Resurrection pour Modern Warfare 2 vous offre trois nouveaux champs de batailles, tirés des cartes iconiques Rust et Shipment."
+
+REFERENCE           PATCH_DESC_DLC8
+LANG_ENGLISH        "Trop de 'pew pew', pas assez de 'new new'. - R. Bowling"
+
+REFERENCE           PATCH_DLC1
+LANG_ENGLISH        "Stimulus Package"
+
+REFERENCE           PATCH_DLC2
+LANG_ENGLISH        "Resurgence Pack"
+
+REFERENCE           PATCH_DLC3
+LANG_ENGLISH        "Nuketown"
+
+REFERENCE           PATCH_DLC4
+LANG_ENGLISH        "Pack Classiques no1"
+
+REFERENCE           PATCH_DLC5
+LANG_ENGLISH        "Pack Classiques no2"
+
+REFERENCE           PATCH_DLC6
+LANG_ENGLISH        "Freighter"
+
+REFERENCE           PATCH_DLC7
+LANG_ENGLISH        "Resurrection Pack"
+
+REFERENCE           PATCH_DLC8
+LANG_ENGLISH        "Recycled Pack"
+
+REFERENCE           PATCH_DLC_MAPS_MORE
+LANG_ENGLISH        "Conetenu téléchargeable"
+
+REFERENCE           PATCH_DLC_MAPS_MORE_DESC
+LANG_ENGLISH        "Lus de cartes téléchargeables."
+
+REFERENCE           PATCH_MORE
+LANG_ENGLISH        "^3Plus..."
+
+REFERENCE           PLATFORM_CHANGE_NAME_CAPS
+LANG_ENGLISH        "^3C^7HANGER DE NOM"
+
+REFERENCE           PLATFORM_FRIENDS
+LANG_ENGLISH        "^3A^7mis"
+
+REFERENCE           PLATFORM_FRIENDS_CAPS
+LANG_ENGLISH        "^3A^7MIS"
+
+REFERENCE           PLATFORM_LOGIN
+LANG_ENGLISH        "^3S^7e connecter"
+
+REFERENCE           PLATFORM_LOGIN_CAPS
+LANG_ENGLISH        "^3S^7E CONNECTER"
+
+REFERENCE           PLATFORM_LOGOUT
+LANG_ENGLISH        "^3S^7e deconnecter"
+
+REFERENCE           PLATFORM_LOGOUT_CAPS
+LANG_ENGLISH        "^3S^7E DECONNECTER"
+
+REFERENCE           PLATFORM_REFRESH_LIST
+LANG_ENGLISH        "Rafraîchir ^0- ^3F5"
+
+REFERENCE           PLATFORM_REFRESH_LIST_CAPS
+LANG_ENGLISH        "RAFRAICHIR ^0- ^3F5"
+
+REFERENCE           SPLASHES_TEAM_ASSIST
+LANG_ENGLISH        "Assistance!"
+
+REFERENCE           SPLASHES_X2_BONUS
+LANG_ENGLISH        "x2 Bonus!"
+
+REFERENCE           WEAPON_AK47_CLASSIC
+LANG_ENGLISH        "AK-47 Classique"
+
+REFERENCE           WEAPON_AK74U_EXTENDED_MAGS
+LANG_ENGLISH        "AK-74u + Chargeur grande capacité"
+
+REFERENCE           WEAPON_FAL_GL
+LANG_ENGLISH        "FAL + LG"
+
+REFERENCE           WEAPON_PEACEKEEPER
+LANG_ENGLISH        "Peacekeeper"
+
+REFERENCE           WEAPON_TYPE99
+LANG_ENGLISH        "Type 99"
+
+ENDMARKER
