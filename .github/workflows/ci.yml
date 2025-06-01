@@ -1,6 +1,6 @@
 name: link
 
-on: [pull_request]
+on: [push, pull_request]
 
 env:
   OAT_VERSION: "0.21.2"
