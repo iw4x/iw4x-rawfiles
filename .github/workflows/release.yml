@@ -30,6 +30,7 @@ jobs:
       - name: Link assets
         run: |
           Linker -v iw4x_localized_english
+          Linker -v iw4x_localized_russian
 
       - name: Create ZIP archive
         run: ./scripts/release.sh
