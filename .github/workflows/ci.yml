@@ -1,18 +1,17 @@
-name: Release
-on:
-  push:
-    tags:
-      - "*"
+name: link
+
+on: [push, pull_request]
 
 env:
   OAT_VERSION: "0.21.2"
 
 jobs:
-  create_release:
-    name: Create GitHub Release
+  link-linux:
+    name: Link assets on Linux
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out files
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
@@ -31,13 +30,9 @@ jobs:
         run: |
           Linker -v iw4x_localized_english
 
-      - name: Create ZIP archive
-        run: ./scripts/release.sh
- 
-      - uses: marvinpinto/action-automatic-releases@latest
+      - name: Upload linked assets
+        uses: actions/upload-artifact@v4
         with:
-          repo_token: '${{ secrets.GITHUB_TOKEN }}'
-          prerelease: false
-          draft: true
-          files: |
-            release.zip
+          name: assets
+          path: |
+            zone_out/**/*.ff
