@@ -5,7 +5,7 @@ CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
 FILENOTES           ""
 
 REFERENCE           CONF_GAME_DESC
-LANG_ENGLISH        "Recupera chapas de identificaciÛn para ganar."
+LANG_ENGLISH        "Recupera chapas de identificaci√≥n para ganar."
 
 REFERENCE           CONF_KILL_CONFIRMED
 LANG_ENGLISH        "BAJA CONFIRMADA"
@@ -17,19 +17,19 @@ REFERENCE           CONF_PICKEDUP_TAGS
 LANG_ENGLISH        "Chapas recuperadas"
 
 REFERENCE           ERR_INVALID_CHALLENGE_SIGNATURE
-LANG_ENGLISH        "La firma del desafÌo es inv·lida!"
+LANG_ENGLISH        "La firma del desaf√≠o es inv√°lida!"
 
 REFERENCE           ERR_INVALID_CONNECT_DATA
-LANG_ENGLISH        "ConexiÛn de datos inv·lida!"
+LANG_ENGLISH        "Conexi√≥n de datos inv√°lida!"
 
 REFERENCE           ERR_INVALID_CONNECT_PACKET
-LANG_ENGLISH        "Paquete de conexiÛn inv·lido!"
+LANG_ENGLISH        "Paquete de conexi√≥n inv√°lido!"
 
 REFERENCE           ERR_INVALID_CONNECT_STRING
-LANG_ENGLISH        "Cadena de conexiÛn inv·lida!"
+LANG_ENGLISH        "Cadena de conexi√≥n inv√°lida!"
 
 REFERENCE           ERR_INVALID_INFOSTRING_DATA
-LANG_ENGLISH        "Datos de informaciÛn inv·lidos!"
+LANG_ENGLISH        "Datos de informaci√≥n inv√°lidos!"
 
 REFERENCE           ERR_XUID_CERTIFICATE_MISMATCH
 LANG_ENGLISH        "XUID no puede emparejar el certificado!"
@@ -44,7 +44,7 @@ REFERENCE           INF_ALLIES_ELIM
 LANG_ENGLISH        "Supervivientes eliminados."
 
 REFERENCE           INF_COUNTDOWN
-LANG_ENGLISH        "Cuenta atr·s para infectado: "
+LANG_ENGLISH        "Cuenta atr√°s para infectado: "
 
 REFERENCE           INF_GAME_DESC
 LANG_ENGLISH        "Los supervivientes eliminados se convierten en Infectados. Infecta a todos, o sobrevive para ganar."
@@ -53,13 +53,13 @@ REFERENCE           INF_GOT_INFECTED
 LANG_ENGLISH        "Has sido infectado!"
 
 REFERENCE           INF_LAST_ALIVE
-LANG_ENGLISH        "El ˙ltimo en piÈ!"
+LANG_ENGLISH        "El √∫ltimo en pi√©!"
 
 REFERENCE           INF_SURVIVOR
 LANG_ENGLISH        "Superviviente!"
 
 REFERENCE           INF_WAIT_FOR_PLAYERS
-LANG_ENGLISH        "Esperando a m·s jugadores..."
+LANG_ENGLISH        "Esperando a m√°s jugadores..."
 
 REFERENCE           MENU_16X
 LANG_ENGLISH        "16x"
@@ -71,10 +71,10 @@ REFERENCE           MENU_AA_MAXQUALITY
 LANG_ENGLISH        "Calidad del Anti-aliasing"
 
 REFERENCE           MENU_AAA_DITHER
-LANG_ENGLISH        "VacilÛn (Pobre)"
+LANG_ENGLISH        "Vacil√≥n (Pobre)"
 
 REFERENCE           MENU_AAA_SUPER
-LANG_ENGLISH        "S˙per Muestras (Bueno)"
+LANG_ENGLISH        "S√∫per Muestras (Bueno)"
 
 REFERENCE           MENU_AAALPHA
 LANG_ENGLISH        "Alpha de Anti-aliasing"
@@ -98,10 +98,10 @@ REFERENCE           MENU_CHANGELOG_CAPS
 LANG_ENGLISH        "REGISTRO DE CAMBIOS"
 
 REFERENCE           MENU_CHECK_FOR_UPDATES
-LANG_ENGLISH        "^3ActualizaciÛn disponible"
+LANG_ENGLISH        "^3Actualizaci√≥n disponible"
 
 REFERENCE           MENU_CHECK_FOR_UPDATES_CAPS
-LANG_ENGLISH        "^3ACTUALIZACIÛN DISPONIBLE"
+LANG_ENGLISH        "^3ACTUALIZACI√≥N DISPONIBLE"
 
 REFERENCE           MENU_CLOSE
 LANG_ENGLISH        "Cerrar"
@@ -110,10 +110,10 @@ REFERENCE           MENU_CLOSE_CAPS
 LANG_ENGLISH        "CERRAR"
 
 REFERENCE           MENU_CONF
-LANG_ENGLISH        "Recupera chapas de identificaciÛn para ganar puntos para tu equipo y no dejar que los enemigos consigan puntuaciÛn.\n \n Creado por Intricate."
+LANG_ENGLISH        "Recupera chapas de identificaci√≥n para ganar puntos para tu equipo y no dejar que los enemigos consigan puntuaci√≥n.\n \n Creado por Intricate."
 
 REFERENCE           MENU_CRANKED
-LANG_ENGLISH        "Las bajas te dan ventajas extra, el doble de puntuaciÛn, y un tiempo lÌmite. Encadena bajas para sobrevivir!\n \n Creado por Intricate."
+LANG_ENGLISH        "Las bajas te dan ventajas extra, el doble de puntuaci√≥n, y un tiempo l√≠mite. Encadena bajas para sobrevivir!\n \n Creado por Intricate."
 
 REFERENCE           MENU_D3D9EX
 LANG_ENGLISH        "Direct3D 9Ex"
@@ -143,31 +143,31 @@ REFERENCE           MENU_DRAWFPS
 LANG_ENGLISH        "Mostrar FPS"
 
 REFERENCE           MENU_FOV
-LANG_ENGLISH        "Campo de visiÛn"
+LANG_ENGLISH        "Campo de visi√≥n"
 
 REFERENCE           MENU_FOV_CAPS
 LANG_ENGLISH        "FOV: "
 
 REFERENCE           MENU_FOV_HINT_PC
-LANG_ENGLISH        "Un Campo de VisiÛn (FOV) incrementado puede afectar el rendimiento en ordenadores viejos."
+LANG_ENGLISH        "Un Campo de Visi√≥n (FOV) incrementado puede afectar el rendimiento en ordenadores viejos."
 
 REFERENCE           MENU_FPS_0
 LANG_ENGLISH        "NO: 0"
 
 REFERENCE           MENU_FPS_1
-LANG_ENGLISH        "SÕ: 1"
+LANG_ENGLISH        "S√ç: 1"
 
 REFERENCE           MENU_FPS_2
-LANG_ENGLISH        "SÕ: 2"
+LANG_ENGLISH        "S√ç: 2"
 
 REFERENCE           MENU_FPS_3
-LANG_ENGLISH        "SÕ: 3"
+LANG_ENGLISH        "S√ç: 3"
 
 REFERENCE           MENU_FPS_4
-LANG_ENGLISH        "SÕ: 4"
+LANG_ENGLISH        "S√ç: 4"
 
 REFERENCE           MENU_FPS_CAP
-LANG_ENGLISH        "LÌmite de FPS"
+LANG_ENGLISH        "L√≠mite de FPS"
 
 REFERENCE           MENU_FPS_DRAW
 LANG_ENGLISH        "Dibujar FPS"
@@ -179,10 +179,10 @@ REFERENCE           MENU_FPSLABELS
 LANG_ENGLISH        "Mostrar etiquetas de FPS"
 
 REFERENCE           MENU_FRIEND_ADD
-LANG_ENGLISH        "AÒadir Amigo"
+LANG_ENGLISH        "A√±adir Amigo"
 
 REFERENCE           MENU_FRIEND_ADD_CAPS
-LANG_ENGLISH        "A—ADIR AMIGO"
+LANG_ENGLISH        "A√ëADIR AMIGO"
 
 REFERENCE           MENU_FRIENDS
 LANG_ENGLISH        "Amigos"
@@ -206,7 +206,7 @@ REFERENCE           MENU_GTNW_DESC
 LANG_ENGLISH        "Batalla en equipos para capturar la carga explosiva y activar el ataque nuclear."
 
 REFERENCE           MENU_GUNGAME
-LANG_ENGLISH        "SÈ el primero en dominar con todas las armas.\n \n Creado por NTAuthority @ refint.net"
+LANG_ENGLISH        "S√© el primero en dominar con todas las armas.\n \n Creado por NTAuthority @ refint.net"
 
 REFERENCE           MENU_INF
 LANG_ENGLISH        "Los supervivientes eliminados se convierten en Infectados. Infecta a todos, o sobrevive para ganar.\n \n Creado por Intricate."
@@ -215,22 +215,22 @@ REFERENCE           MENU_JOIN_SERVER_CAPS
 LANG_ENGLISH        "ENTRAR AL SERVIDOR"
 
 REFERENCE           MENU_LAGOMETER
-LANG_ENGLISH        "Mostrar LagÛmetro"
+LANG_ENGLISH        "Mostrar Lag√≥metro"
 
 REFERENCE           MENU_LOGIN
-LANG_ENGLISH        "Iniciar SesiÛn"
+LANG_ENGLISH        "Iniciar Sesi√≥n"
 
 REFERENCE           MENU_LOGIN_CAPS
-LANG_ENGLISH        "INICIAR SESI”N"
+LANG_ENGLISH        "INICIAR SESI√ìN"
 
 REFERENCE           MENU_LOGOUT
-LANG_ENGLISH        "Cerrar SesiÛn"
+LANG_ENGLISH        "Cerrar Sesi√≥n"
 
 REFERENCE           MENU_LOGOUT_CAPS
-LANG_ENGLISH        "CERRAR SESI”N"
+LANG_ENGLISH        "CERRAR SESI√ìN"
 
 REFERENCE           MENU_MAXFPS
-LANG_ENGLISH        "FPS M·ximos"
+LANG_ENGLISH        "FPS M√°ximos"
 
 REFERENCE           MENU_MAXPACKETS
 LANG_ENGLISH        "Maximo de paquetes por fotograma."
@@ -257,10 +257,10 @@ REFERENCE           MENU_NOBORDER
 LANG_ENGLISH        "Desactivar el borde de la ventana"
 
 REFERENCE           MENU_OITC
-LANG_ENGLISH        "Consigue municiÛn eliminando a los enemigos. El jugador con la puntuaciÛn m·s alta gana.\n \n Creado por NTAuthority @ refint.net"
+LANG_ENGLISH        "Consigue munici√≥n eliminando a los enemigos. El jugador con la puntuaci√≥n m√°s alta gana.\n \n Creado por NTAuthority @ refint.net"
 
 REFERENCE           MENU_PASSWORD_CAPS
-LANG_ENGLISH        "CONTRASE—A"
+LANG_ENGLISH        "CONTRASE√ëA"
 
 REFERENCE           MENU_PLAY
 LANG_ENGLISH        "Jugar"
@@ -293,7 +293,7 @@ REFERENCE           MENU_SECURITY_INCREASE
 LANG_ENGLISH        "Incrementando el nivel de seguridad."
 
 REFERENCE           MENU_SERVER_INFO_CAPS
-LANG_ENGLISH        "INFORMACI”N DEL SERVIDOR"
+LANG_ENGLISH        "INFORMACI√ìN DEL SERVIDOR"
 
 REFERENCE           MENU_SHARPSHOOTER
 LANG_ENGLISH        "Todos los jugadores reciben la misma arma, seleccionada aleatoriamente. Cada 45 segundos, una nueva arma es seleccionada aleatoriamente y usada por todos.\n \n Creado por NTAuthority @ refint.net"
@@ -314,7 +314,7 @@ REFERENCE           MENU_STREAMFIRENDLY_UI
 LANG_ENGLISH        "UI Compatible para Directos"
 
 REFERENCE           MENU_TDEF
-LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaciÛn. No recomendados para gente con corazÛn dÈbil.\n \n Creado por Intricate."
+LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaci√≥n. No recomendados para gente con coraz√≥n d√©bil.\n \n Creado por Intricate."
 
 REFERENCE           MENU_THEATER
 LANG_ENGLISH        "Teatro"
@@ -323,19 +323,19 @@ REFERENCE           MENU_THEATER_CAPS
 LANG_ENGLISH        "TEATRO"
 
 REFERENCE           MENU_UNLOCK_STATS
-LANG_ENGLISH        "Desbloquear estadÌsticas?"
+LANG_ENGLISH        "Desbloquear estad√≠sticas?"
 
 REFERENCE           MENU_UNLOCK_STATS_CAPS
-LANG_ENGLISH        "DESBLOQUEAR ESTADÕSTICAS?"
+LANG_ENGLISH        "DESBLOQUEAR ESTAD√çSTICAS?"
 
 REFERENCE           MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
 LANG_ENGLISH        "Esperando a mas jugadores para balancear los equipos"
 
 REFERENCE           MENU_XAXIS
-LANG_ENGLISH        "PosiciÛn de la ventana el en Axis X"
+LANG_ENGLISH        "Posici√≥n de la ventana el en Axis X"
 
 REFERENCE           MENU_YAXIS
-LANG_ENGLISH        "PosiciÛn de la ventana el en Axis Y"
+LANG_ENGLISH        "Posici√≥n de la ventana el en Axis Y"
 
 REFERENCE           MP_NEUTRAL_FLAG_DROPPED_BY
 LANG_ENGLISH        "&&1 ha soltado la bandera!"
@@ -350,10 +350,10 @@ REFERENCE           MP_SEARCHING_FOR_PLAYER
 LANG_ENGLISH        "Esperando a jugador"
 
 REFERENCE           MPUI_AUTORECORD
-LANG_ENGLISH        "GrabaciÛn Autom·tica: "
+LANG_ENGLISH        "Grabaci√≥n Autom√°tica: "
 
 REFERENCE           MPUI_AUTORECORD_CAPS
-LANG_ENGLISH        "GRABACI”N AUTOM¡TICA: "
+LANG_ENGLISH        "GRABACI√ìN AUTOM√ÅTICA: "
 
 REFERENCE           MPUI_BLOC
 LANG_ENGLISH        "Bloc"
@@ -377,10 +377,10 @@ REFERENCE           MPUI_CONF_CAPS
 LANG_ENGLISH        "BAJA CONFIRMADA"
 
 REFERENCE           MPUI_CRANKED
-LANG_ENGLISH        "FrenÈtico"
+LANG_ENGLISH        "Fren√©tico"
 
 REFERENCE           MPUI_CRANKED_CAPS
-LANG_ENGLISH        "FREN…TICO"
+LANG_ENGLISH        "FREN√âTICO"
 
 REFERENCE           MPUI_CRASH_TROPICAL
 LANG_ENGLISH        "Crash: Tropical"
@@ -425,7 +425,7 @@ REFERENCE           MPUI_DESC_CHANGELOG
 LANG_ENGLISH        "Mira lo nuevo."
 
 REFERENCE           MPUI_DESC_CHECK_FOR_UPDATES
-LANG_ENGLISH        "Verificar si hay una nueva versiÛn disponible."
+LANG_ENGLISH        "Verificar si hay una nueva versi√≥n disponible."
 
 REFERENCE           MPUI_DESC_D3D9EX
 LANG_ENGLISH        "Usar Direct3D 9Ex."
@@ -434,22 +434,22 @@ REFERENCE           MPUI_DESC_DEMOS_KEEP
 LANG_ENGLISH        "Define cuantas grabaciones van a ser guardadas, antes de que las viejas sean borradas."
 
 REFERENCE           MPUI_DESC_FOV
-LANG_ENGLISH        "Ajustar campo de visiÛn."
+LANG_ENGLISH        "Ajustar campo de visi√≥n."
 
 REFERENCE           MPUI_DESC_LOGIN
-LANG_ENGLISH        "Inicia tu sesiÛn."
+LANG_ENGLISH        "Inicia tu sesi√≥n."
 
 REFERENCE           MPUI_DESC_LOGOUT
-LANG_ENGLISH        "Cierra tu sesiÛn."
+LANG_ENGLISH        "Cierra tu sesi√≥n."
 
 REFERENCE           MPUI_DESC_MAP_BLOC_SH
-LANG_ENGLISH        "Una versiÛn modificada de Bloc."
+LANG_ENGLISH        "Una versi√≥n modificada de Bloc."
 
 REFERENCE           MPUI_DESC_MAP_CARGOSHIP
-LANG_ENGLISH        "Un mapa de tamaÒo medio que hizo su debut en Call of Duty: Modern Warfare. toma lugar en un buque de carga durante una tormenta y est· basado en la misiÛn de la campaÒa TripulaciÛn prescindible."
+LANG_ENGLISH        "Un mapa de tama√±o medio que hizo su debut en Call of Duty: Modern Warfare. toma lugar en un buque de carga durante una tormenta y est√° basado en la misi√≥n de la campa√±a Tripulaci√≥n prescindible."
 
 REFERENCE           MPUI_DESC_MAP_CARGOSHIP_SH
-LANG_ENGLISH        "Una versiÛn cubierta de nieve de el mapa de Call of Duty 4: Modern Warfare, Wet Work."
+LANG_ENGLISH        "Una versi√≥n cubierta de nieve de el mapa de Call of Duty 4: Modern Warfare, Wet Work."
 
 REFERENCE           MPUI_DESC_MAP_CO_HUNTED
 LANG_ENGLISH        "Pueblo Ruso por el anochecer."
@@ -464,28 +464,28 @@ REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
 LANG_ENGLISH        "Favela con un ambiente tropical."
 
 REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
-LANG_ENGLISH        "Enfrentamientos de corta a media distancia en una estaciÛn de entrenamiento militar en Cuba."
+LANG_ENGLISH        "Enfrentamientos de corta a media distancia en una estaci√≥n de entrenamiento militar en Cuba."
 
 REFERENCE           MPUI_DESC_MAP_KILLHOUSE
-LANG_ENGLISH        "Killhouse es un mapa muy pequeÒo del paquete de mapas de Variedad de Call of Duty 4: Modern Warfare. Da lugar a batallas muy feroces ya que el mapa no es m·s grande que Shipment."
+LANG_ENGLISH        "Killhouse es un mapa muy peque√±o del paquete de mapas de Variedad de Call of Duty 4: Modern Warfare. Da lugar a batallas muy feroces ya que el mapa no es m√°s grande que Shipment."
 
 REFERENCE           MPUI_DESC_MAP_NUKED
-LANG_ENGLISH        "Una estaciÛn de pruebas nucleares desierta, usada en la Guerra FrÌa."
+LANG_ENGLISH        "Una estaci√≥n de pruebas nucleares desierta, usada en la Guerra Fr√≠a."
 
 REFERENCE           MPUI_DESC_MAP_OILRIG
-LANG_ENGLISH        "El ˙nico dÌa f·cil... Fue ayer."
+LANG_ENGLISH        "El √∫nico d√≠a f√°cil... Fue ayer."
 
 REFERENCE           MPUI_DESC_MAP_RUST_LONG
-LANG_ENGLISH        "AcciÛn frenÈtica en una estaciÛn de petrÛleo en mitad del desierto."
+LANG_ENGLISH        "Acci√≥n fren√©tica en una estaci√≥n de petr√≥leo en mitad del desierto."
 
 REFERENCE           MPUI_DESC_MAP_SHIPMENT_LONG
-LANG_ENGLISH        "Una versiÛn m·s larga de el mapa Shipment de Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "Una versi√≥n m√°s larga de el mapa Shipment de Call of Duty 4: Modern Warfare."
 
 REFERENCE           MPUI_DESC_MAP_STORM_SPRING
-LANG_ENGLISH        "Una versiÛn modificada de Storm, con nieve en vez de lluvia."
+LANG_ENGLISH        "Una versi√≥n modificada de Storm, con nieve en vez de lluvia."
 
 REFERENCE           MPUI_DESC_MAXFPS
-LANG_ENGLISH        "Define tus FPS M·ximos."
+LANG_ENGLISH        "Define tus FPS M√°ximos."
 
 REFERENCE           MPUI_DESC_MODS
 LANG_ENGLISH        "Busca tus mods."
@@ -512,7 +512,7 @@ REFERENCE           MPUI_DESC_STORE
 LANG_ENGLISH        "Busca en la tienda por contenido descargable."
 
 REFERENCE           MPUI_DESC_STREAM_FRIENDLY_UI
-LANG_ENGLISH        "Esconde el nombre del servidor y el IP en la tabla de puntuaciÛn."
+LANG_ENGLISH        "Esconde el nombre del servidor y el IP en la tabla de puntuaci√≥n."
 
 REFERENCE           MPUI_DESC_THEATER
 LANG_ENGLISH        "Mira tus partidas guardadas."
@@ -545,10 +545,10 @@ REFERENCE           MPUI_INF_CAPS
 LANG_ENGLISH        "INFECTADO"
 
 REFERENCE           MPUI_IS_PRIVATE
-LANG_ENGLISH        "Protegido con contraseÒa:"
+LANG_ENGLISH        "Protegido con contrase√±a:"
 
 REFERENCE           MPUI_IS_PRIVATE_CAPS
-LANG_ENGLISH        "PROTEGIDO CON CONTRASE—A:"
+LANG_ENGLISH        "PROTEGIDO CON CONTRASE√ëA:"
 
 REFERENCE           MPUI_KILLHOUSE
 LANG_ENGLISH        "Killhouse"
@@ -572,10 +572,10 @@ REFERENCE           MPUI_NUKED
 LANG_ENGLISH        "Nuketown"
 
 REFERENCE           MPUI_OITC
-LANG_ENGLISH        "Uno en la Rec·mara"
+LANG_ENGLISH        "Uno en la Rec√°mara"
 
 REFERENCE           MPUI_OITC_CAPS
-LANG_ENGLISH        "UNO EN LA REC¡MARA"
+LANG_ENGLISH        "UNO EN LA REC√ÅMARA"
 
 REFERENCE           MPUI_PLEASE_WAIT
 LANG_ENGLISH        "Por favor, Espere."
@@ -617,7 +617,7 @@ REFERENCE           MPUI_SHIPMENT_LONG
 LANG_ENGLISH        "Shipment: Largo"
 
 REFERENCE           MPUI_STORM_SPRING
-LANG_ENGLISH        "Planta QuÌmica"
+LANG_ENGLISH        "Planta Qu√≠mica"
 
 REFERENCE           MPUI_TDEF
 LANG_ENGLISH        "Defensor por equipos"
@@ -632,49 +632,49 @@ REFERENCE           MPUI_UNLOCK_STATS_CAPS
 LANG_ENGLISH        "DESBLOQUEAR ESTADISTICAS"
 
 REFERENCE           MPUI_UNLOCK_STATS_WARNING
-LANG_ENGLISH        "Realmente quieres desbloquear tus estadisticas?\n\nEsto te dar· la max. experiencia, prestigio y desbloqueara todas las armas, desafios, titulos y emblemas."
+LANG_ENGLISH        "Realmente quieres desbloquear tus estadisticas?\n\nEsto te dar√° la max. experiencia, prestigio y desbloqueara todas las armas, desafios, titulos y emblemas."
 
 REFERENCE           MPUI_VERSION
-LANG_ENGLISH        "VersiÛn:"
+LANG_ENGLISH        "Versi√≥n:"
 
 REFERENCE           MPUI_VERSION_CAPS
-LANG_ENGLISH        "VERSI”N:"
+LANG_ENGLISH        "VERSI√ìN:"
 
 REFERENCE           MPUI_VIP_CAPS
 LANG_ENGLISH        "VIP"
 
 REFERENCE           OBJECTIVES_TDEF
-LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaciÛn."
+LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaci√≥n."
 
 REFERENCE           OBJECTIVES_TDEF_ATTACKER_HINT
-LANG_ENGLISH        "Captura la bandera para que tu equipo consiga el doble de puntuaciÛn."
+LANG_ENGLISH        "Captura la bandera para que tu equipo consiga el doble de puntuaci√≥n."
 
 REFERENCE           OBJECTIVES_TDEF_DEFENDER_HINT
-LANG_ENGLISH        "Defiende la bandera para que tu equipo consiga el doble de puntuaciÛn."
+LANG_ENGLISH        "Defiende la bandera para que tu equipo consiga el doble de puntuaci√≥n."
 
 REFERENCE           OBJECTIVES_TDEF_HINT
 LANG_ENGLISH        "Captura y defiende la bandera."
 
 REFERENCE           OBJECTIVES_TDEF_SCORE
-LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaciÛn. El primer equipo a &&1 gana."
+LANG_ENGLISH        "Captura y defiende la bandera para que tu equipo consiga el doble de puntuaci√≥n. El primer equipo a &&1 gana."
 
 REFERENCE           PATCH_DESC_DLC1
-LANG_ENGLISH        "El paquete de mapas Stimulus de Modern Warfare 2 trae m·pas llenos de acciÛn incluyendo campos de batalla nunca vistos y mapas legendarios de Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "El paquete de mapas Stimulus de Modern Warfare 2 trae m√°pas llenos de acci√≥n incluyendo campos de batalla nunca vistos y mapas legendarios de Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_DLC2
-LANG_ENGLISH        "El paquete de mapas Resurgence de Modern Warfare 2 trae cinco mapas multijugador increÌbles. Toma la acciÛn a nuevos frentes y lucha en los legendarios mapas de Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "El paquete de mapas Resurgence de Modern Warfare 2 trae cinco mapas multijugador incre√≠bles. Toma la acci√≥n a nuevos frentes y lucha en los legendarios mapas de Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_DLC3
-LANG_ENGLISH        "Nuketown es un mapa icÛnico de Call of Duty: Black Ops con un muy fuerte Ènfasis en combates a muy corta distancia."
+LANG_ENGLISH        "Nuketown es un mapa ic√≥nico de Call of Duty: Black Ops con un muy fuerte √©nfasis en combates a muy corta distancia."
 
 REFERENCE           PATCH_DESC_DLC4
-LANG_ENGLISH        "Este paquete de mapas Cl·sicos de Modern Warfare 2 trae tres nuevos y queridos mapas de Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "Este paquete de mapas Cl√°sicos de Modern Warfare 2 trae tres nuevos y queridos mapas de Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_DLC5
-LANG_ENGLISH        "El segundo paquete de mapas Cl·sicos de Modern Warfare 2 aÒade dos mapas fant·sticos de Call of Duty 4: Modern Warfare."
+LANG_ENGLISH        "El segundo paquete de mapas Cl√°sicos de Modern Warfare 2 a√±ade dos mapas fant√°sticos de Call of Duty 4: Modern Warfare."
 
 REFERENCE           PATCH_DESC_DLC6
-LANG_ENGLISH        "Freighter es una versiÛn con nieve del mapa de Call of Duty 4: Modern Warfare, Wet Work."
+LANG_ENGLISH        "Freighter es una versi√≥n con nieve del mapa de Call of Duty 4: Modern Warfare, Wet Work."
 
 REFERENCE           PATCH_DESC_DLC7
 LANG_ENGLISH        "El paquete de mapas Ressurection para Modern Warfare 2 trae tres nuevos mapas a tu frente de batalla."
@@ -692,10 +692,10 @@ REFERENCE           PATCH_DLC3
 LANG_ENGLISH        "Nuketown"
 
 REFERENCE           PATCH_DLC4
-LANG_ENGLISH        "Pack de Mapas Cl·sicos #1"
+LANG_ENGLISH        "Pack de Mapas Cl√°sicos #1"
 
 REFERENCE           PATCH_DLC5
-LANG_ENGLISH        "Pack de Mapas Cl·sicos #2"
+LANG_ENGLISH        "Pack de Mapas Cl√°sicos #2"
 
 REFERENCE           PATCH_DLC6
 LANG_ENGLISH        "Freighter"
@@ -707,13 +707,13 @@ REFERENCE           PATCH_DLC8
 LANG_ENGLISH        "Pack Reciclado"
 
 REFERENCE           PATCH_DLC_MAPS_MORE
-LANG_ENGLISH        "M·s mapas de bonificaciÛn."
+LANG_ENGLISH        "M√°s mapas de bonificaci√≥n."
 
 REFERENCE           PATCH_DLC_MAPS_MORE_DESC
-LANG_ENGLISH        "M·s mapas multijugador."
+LANG_ENGLISH        "M√°s mapas multijugador."
 
 REFERENCE           PATCH_MORE
-LANG_ENGLISH        "^3M·s"
+LANG_ENGLISH        "^3M√°s"
 
 REFERENCE           PLATFORM_CHANGE_NAME_CAPS
 LANG_ENGLISH        "^3C^7AMBIAR NOMBRE"
@@ -725,16 +725,16 @@ REFERENCE           PLATFORM_FRIENDS_CAPS
 LANG_ENGLISH        "^3A^7MIGOS"
 
 REFERENCE           PLATFORM_LOGIN
-LANG_ENGLISH        "^3I^7niciar SesiÛn"
+LANG_ENGLISH        "^3I^7niciar Sesi√≥n"
 
 REFERENCE           PLATFORM_LOGIN_CAPS
-LANG_ENGLISH        "^3I^7NICIAR SESI”N"
+LANG_ENGLISH        "^3I^7NICIAR SESI√ìN"
 
 REFERENCE           PLATFORM_LOGOUT
-LANG_ENGLISH        "^3C^7errar SesiÛn"
+LANG_ENGLISH        "^3C^7errar Sesi√≥n"
 
 REFERENCE           PLATFORM_LOGOUT_CAPS
-LANG_ENGLISH        "^3C^7ERRAR SESI”N"
+LANG_ENGLISH        "^3C^7ERRAR SESI√ìN"
 
 REFERENCE           PLATFORM_REFRESH
 LANG_ENGLISH        "Refrescar ^0- ^3F5"
@@ -752,7 +752,7 @@ REFERENCE           PLAYERCARDS_TITLE_EVIL_CHICKEN
 LANG_ENGLISH        "Gallina Malvada"
 
 REFERENCE           PLAYERCARDS_TITLE_NO_LAST_STAND
-LANG_ENGLISH        "No ⁄ltima Batalla!"
+LANG_ENGLISH        "No √öltima Batalla!"
 
 REFERENCE           SPLASHES_TEAM_ASSIST
 LANG_ENGLISH        "Asistencia de equipo!"
@@ -761,7 +761,7 @@ REFERENCE           SPLASHES_X2_BONUS
 LANG_ENGLISH        "Bonus x2!"
 
 REFERENCE           WEAPON_AK47_CLASSIC
-LANG_ENGLISH        "AK-47 Cl·sica"
+LANG_ENGLISH        "AK-47 Cl√°sica"
 
 REFERENCE           WEAPON_AK74U_ACOG
 LANG_ENGLISH        "AK-74u mira ACOG"
