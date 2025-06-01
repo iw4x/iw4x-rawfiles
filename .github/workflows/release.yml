@@ -29,8 +29,10 @@ jobs:
 
       - name: Link assets
         run: |
-          Linker -v iw4x_localized_english
-          Linker -v iw4x_localized_russian
+          for dir in zone_raw/*/; do
+            folder=$(basename "$dir")
+            Linker -v "$folder"
+          done
 
       - name: Create ZIP archive
         run: ./scripts/release.sh

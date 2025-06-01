@@ -1,13 +1,13 @@
 {
     "weapons": [
         "m40a3",
-		"ak47classic"
+        "ak47classic"
     ],
     "cardicons": [
         "cardicon_rtrolling"
     ],
     "cardtitles": [
         "cardtitle_evilchicken",
-		"cardtitle_nolaststand"
+        "cardtitle_nolaststand"
     ]
 }

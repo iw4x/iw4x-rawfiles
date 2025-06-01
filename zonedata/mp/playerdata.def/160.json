@@ -1,15 +1,12 @@
 {
-    "weapons": [
-        "m40a3",
+	"weapons": [
+		"m40a3",
 		"ak47classic",
 		"ak74u",
 		"peacekeeper",
 		"dragunov",
-		
 		"onemanarmy",
-		
-
-        "iw3_skorpion",
+		"iw3_skorpion",
 		"iw3_g36c",
 		"iw3_mp44",
 		"iw3_mp5",
@@ -28,10 +25,9 @@
 		"iw3_m16",
 		"iw3_g3",
 		"iw3_colt45"
-    ],
-    "cardicons": [
-        "cardicon_rtrolling",
-		
+	],
+	"cardicons": [
+		"cardicon_rtrolling",
 		"cardicon_burn",
 		"cardicon_burningrunner",
 		"cardicon_capsule",
@@ -87,11 +83,10 @@
 		"cardicon_iw5_horseshoe",
 		"cardicon_iw5_medkit",
 		"cardicon_iw5_skullguns"
-    ],
-    "cardtitles": [
-        "cardtitle_evilchicken",
+	],
+	"cardtitles": [
+		"cardtitle_evilchicken",
 		"cardtitle_nolaststand",
-		
 		"cardtitle_abstract3_a",
 		"cardtitle_abstract3_b",
 		"cardtitle_glass_hispeed_a",
@@ -212,8 +207,7 @@
 		"cardtitle_flag_asexual_b",
 		"cardtitle_flag_nonbinary_b",
 		"cardtitle_flag_bisexual_b"
-
-    ],
+	],
 	"other": {
 		"classes": "15"
 	}
