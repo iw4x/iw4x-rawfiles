@@ -28,7 +28,7 @@ jobs:
         run: |
           Linker -v iw4x_localized_english
 
-      - name: Upload mod.ff
+      - name: Upload linked assets
         uses: actions/upload-artifact@v4
         with:
           name: assets
