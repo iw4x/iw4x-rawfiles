@@ -17,7 +17,7 @@ cp -r $work_dir/zone/ $work_dir/release/
 cp -r $work_dir/iw4x/ $work_dir/release/
 # copy language fast files
 mkdir -p $work_dir/release/zone/patch
-find $work_dir/zone_out/ -type f -name "*.ff" -exec cp {} $work_dir/release/zone/patch/ \;
+cp $work_dir/zone_out/*/*.ff $work_dir/release/zone/patch/
 
 # zip iwd_files
 for iwd in "${iwd_files[@]}"; do
