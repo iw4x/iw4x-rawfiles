@@ -17,9 +17,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          dpkg --add-architecture i386
-          apt-get update
-          apt-get -y install libstdc++-13-dev:i386
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get -y install libstdc++-13-dev:i386
 
       - name: Setup OAT
         uses: diamante0018/setup-oat@main
