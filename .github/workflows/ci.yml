@@ -9,8 +9,6 @@ jobs:
   link-linux:
     name: Link assets on Linux
     runs-on: ubuntu-latest
-    container: ubuntu:noble
-
     steps:
       - name: Check out files
         uses: actions/checkout@v4
