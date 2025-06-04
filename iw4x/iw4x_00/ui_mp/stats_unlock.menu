@@ -13,7 +13,6 @@
 		onOpen
 		{
 			setLocalVarInt "ui_centerPopup" ( 1 );
-			setfocus "passwordEntry";
 		}
 		onClose
 		{
