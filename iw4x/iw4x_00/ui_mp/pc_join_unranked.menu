@@ -54,12 +54,13 @@
 		#include "ui_mp/joinserver.inc"
 
 		ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
-		
-		BUTTON_FOOTER(-310, 100, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
-		BUTTON_FOOTER_VIS(-194, 140, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
-		BUTTON_FOOTER_VIS(-194, 140, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
-		BUTTON_FOOTER(-34, 100, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
-		BUTTON_FOOTER(86, 100, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
-		BUTTON_FOOTER(206, 100, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
+
+		BUTTON_FOOTER(-310, 95, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
+		BUTTON_FOOTER_VIS(-210, 135, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
+		BUTTON_FOOTER_VIS(-210, 135, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
+		BUTTON_FOOTER(-65, 85, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
+		BUTTON_FOOTER(25, 95, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
+		BUTTON_FOOTER(130, 80, "loadmod", "@MENU_LOAD_MOD_CAPS", uiScript "DownloadServerMod";)
+		BUTTON_FOOTER(215, 95, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
 	}
 }
