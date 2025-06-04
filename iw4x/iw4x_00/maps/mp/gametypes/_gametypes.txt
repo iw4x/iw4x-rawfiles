@@ -8,6 +8,7 @@ oneflag
 arena
 dd
 ctf
+vip
 gtnw
 conf
 gun
