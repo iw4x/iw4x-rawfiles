@@ -406,6 +406,9 @@ LANG_ENGLISH        "Играть"
 REFERENCE           MENU_PLAY_CAPS
 LANG_ENGLISH        "ИГРАТЬ"
 
+REFERENCE           MENU_RAW_MOUSE
+LANG_ENGLISH         "Raw Mouse Input"
+
 REFERENCE           MENU_RECONNECTING_TO_PARTY
 LANG_ENGLISH        "ПОДКЛЮЧЕНИЕ К СЕРВЕРУ"
 
