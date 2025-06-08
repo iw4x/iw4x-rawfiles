@@ -268,6 +268,9 @@ LANG_ENGLISH        "Jugar"
 REFERENCE           MENU_PLAY_CAPS
 LANG_ENGLISH        "JUGAR"
 
+REFERENCE           MENU_RAW_MOUSE
+LANG_ENGLISH        "Raw Mouse Input"
+
 REFERENCE           MENU_RECONNECTING_TO_PARTY
 LANG_ENGLISH        "CONECTANDO AL SERVIDOR"
 
@@ -519,6 +522,18 @@ LANG_ENGLISH        "Mira tus partidas guardadas."
 
 REFERENCE           MPUI_DESC_UNLOCK_STATS
 LANG_ENGLISH        "Desbloquear tus estadisticas."
+
+REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
+LANG_ENGLISH        "Setup stats?"
+
+REFERENCE           MENU_MODDED_STATS_WARNING
+LANG_ENGLISH        "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button."
+
+REFERENCE           MENU_MODDED_STATS_WARNING_NO
+LANG_ENGLISH        "No, continue with default stats"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_YES
+LANG_ENGLISH        "Yes, take me to the main menu"
 
 REFERENCE           MPUI_DOWNLOADING
 LANG_ENGLISH        "Descargando"
