@@ -1,7 +1,7 @@
 {
 	menuDef
 	{
-		name "stats_unlock"
+		name "stats_mod_warning"
 		rect -430 -102 860 204 2 2
 		popup
 		legacySplitScreenScale
@@ -10,10 +10,6 @@
 		backcolor 1 1 1 1
 		background "white"
 		focuscolor 1 1 1 1
-		onOpen
-		{
-			setLocalVarInt "ui_centerPopup" ( 1 );
-		}
 		onClose
 		{
 			setLocalVarInt "ui_centerPopup" ( 0 );
@@ -108,7 +104,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_tl"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -119,7 +115,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_t"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -130,7 +126,7 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_tr"
 			textscale 0.55
-			visible when ( 1 )
+			visible 1
 		}
 		itemDef
 		{
@@ -141,8 +137,8 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_br"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 84 + 2 * 60 ) ) )
-			visible when ( 1 )
+			exp rect y ( 204 )
+			visible 1
 		}
 		itemDef
 		{
@@ -153,8 +149,8 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_b"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 84 + 2 * 60 ) ) )
-			visible when ( 1 )
+			exp rect y ( 204 )
+			visible 1
 		}
 		itemDef
 		{
@@ -165,8 +161,8 @@
 			forecolor 0 0 0 1
 			background "drop_shadow_bl"
 			textscale 0.55
-			exp rect y ( ( 0 - 0 ) + ( ( 84 + 2 * 60 ) ) )
-			visible when ( 1 )
+			exp rect y ( 204 )
+			visible 1
 		}
 		itemDef
 		{
@@ -180,7 +176,7 @@
 			textalign 5
 			textalignx -4
 			textscale 0.375
-			text "@MENU_UNLOCK_STATS"
+			text "@MENU_MODDED_STATS_WARNING_TITLE"
 		}
 		itemDef
 		{
@@ -196,7 +192,7 @@
 			textFont 3
 			textAlign 4
 			textScale 0.375
-			exp text("@MPUI_UNLOCK_STATS_WARNING")
+			exp text("@MENU_MODDED_STATS_WARNING")
 			action
 			{
 				play "mouse_click";
@@ -230,12 +226,12 @@
 			textalign 4
 			textalignx 4
 			textscale 0.375
-			text "@MENU_UNLOCK"
-			visible when ( 1 )
+			text "@MENU_MODDED_STATS_WARNING_YES"
+			visible 1
 			action
 			{
 				play "mouse_click";
-				exec "unlockStats";
+				exec "vid_restart";
 				close self;
 			}
 			onFocus
@@ -269,11 +265,12 @@
 			textalign 4
 			textalignx 4
 			textscale 0.375
-			text "@MENU_CANCEL"
-			visible when ( 1 )
+			text "@MENU_MODDED_STATS_WARNING_NO"
+			visible 1
 			action
 			{
 				play "mouse_click";
+				exec "vid_restart; reconnect";
 				close self;
 			}
 			onFocus

@@ -81,11 +81,12 @@
 		PC_OPTIONS_SEPERATOR(1)
 
 		PC_OPTIONS_DVARYESNO(2, "@MENU_SMOOTH_MOUSE", "m_filter", ;, when(0))
-		PC_OPTIONS_DVARYESNO(3, "@MENU_FREE_LOOK", "cl_freelook", ;, when(0))
-		PC_OPTIONS_KEYBINDING(4, "@MENU_LOOK_UP", "+lookup")
-		PC_OPTIONS_KEYBINDING(5, "@MENU_LOOK_DOWN", "+lookdown")
-		PC_OPTIONS_KEYBINDING(6, "@MENU_HOLD_MOUSE_LOOK", "+mlook")
-		PC_OPTIONS_KEYBINDING(7, "@MENU_CENTER_VIEW", "centerview")
+		PC_OPTIONS_DVARYESNO(3, "@MENU_RAW_MOUSE", "m_rawinput", ACTION_SHOW_APPLY, when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())))
+		PC_OPTIONS_DVARYESNO(4, "@MENU_FREE_LOOK", "cl_freelook", ;, when(0))
+		PC_OPTIONS_KEYBINDING(5, "@MENU_LOOK_UP", "+lookup")
+		PC_OPTIONS_KEYBINDING(6, "@MENU_LOOK_DOWN", "+lookdown")
+		PC_OPTIONS_KEYBINDING(7, "@MENU_HOLD_MOUSE_LOOK", "+mlook")
+		PC_OPTIONS_KEYBINDING(8, "@MENU_CENTER_VIEW", "centerview")
 
 		PC_OPTIONS_KEYBINDSTATUS
 

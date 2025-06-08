@@ -22,7 +22,10 @@ cp $work_dir/zone_out/*/*.ff $work_dir/release/zone/patch/
 # zip iwd_files
 for iwd in "${iwd_files[@]}"; do
     pushd $work_dir/release/iw4x/$iwd
-    zip -r $iwd.zip *
+    # Set consistent timestamps for all files
+    find . -exec touch -t 200001010000.00 {} +
+    # Sort files for zipping, -X for deterministic zip
+    find . -name '*' -print0 | LC_ALL=C sort -z | xargs -0 zip -X $iwd.zip
     mv $iwd.zip $work_dir/release/iw4x/$iwd.iwd
     popd
     rm -r $work_dir/release/iw4x/$iwd
@@ -37,7 +40,7 @@ popd
 
 # create release.zip from release dir
 pushd $work_dir/release/
-zip -r release.zip *
+zip -r -X release.zip *
 mv release.zip $work_dir
 popd
 

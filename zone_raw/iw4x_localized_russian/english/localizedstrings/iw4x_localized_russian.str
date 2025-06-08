@@ -199,6 +199,18 @@ LANG_ENGLISH        "Выбор различных предустановок ч
 REFERENCE           MENU_DESC_MAXPACKETS
 LANG_ENGLISH        "Максимальное количество пакетов, отправляемых за кадр"
 
+REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
+LANG_ENGLISH        "Setup stats?"
+
+REFERENCE           MENU_MODDED_STATS_WARNING
+LANG_ENGLISH        "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button."
+
+REFERENCE           MENU_MODDED_STATS_WARNING_NO
+LANG_ENGLISH        "No, continue with default stats"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_YES
+LANG_ENGLISH        "Yes, take me to the main menu"
+
 REFERENCE           MENU_DESC_SNAPS
 LANG_ENGLISH        "Скорость моментального снимка"
 
@@ -316,6 +328,9 @@ LANG_ENGLISH        "ПРИСОЕДИНИТЬСЯ К СЕРВЕРУ"
 REFERENCE           MENU_LAGOMETER
 LANG_ENGLISH        "Показать лагометр"
 
+REFERENCE           MENU_LOAD_MOD_CAPS
+LANG_ENGLISH        "LOAD MOD"
+
 REFERENCE           MENU_LOADING_MAPS
 LANG_ENGLISH        "Загрузка выбора карты..."
 
@@ -342,6 +357,18 @@ LANG_ENGLISH        "Максимальный FPS"
 
 REFERENCE           MENU_MAXPACKETS
 LANG_ENGLISH        "Макс. кол-во пакетов на кадр"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
+LANG_ENGLISH        "Setup stats?"
+
+REFERENCE           MENU_MODDED_STATS_WARNING
+LANG_ENGLISH        "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button."
+
+REFERENCE           MENU_MODDED_STATS_WARNING_NO
+LANG_ENGLISH        "No, continue with default stats"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_YES
+LANG_ENGLISH        "Yes, take me to the main menu"
 
 REFERENCE           MENU_MODS
 LANG_ENGLISH        "Моды"
@@ -378,6 +405,9 @@ LANG_ENGLISH        "Играть"
 
 REFERENCE           MENU_PLAY_CAPS
 LANG_ENGLISH        "ИГРАТЬ"
+
+REFERENCE           MENU_RAW_MOUSE
+LANG_ENGLISH         "Raw Mouse Input"
 
 REFERENCE           MENU_RECONNECTING_TO_PARTY
 LANG_ENGLISH        "ПОДКЛЮЧЕНИЕ К СЕРВЕРУ"
