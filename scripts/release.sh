@@ -33,7 +33,7 @@ done
 
 # add zonebuilder-wrapper
 pushd $work_dir/release/
-curl -L https://github.com/mxve/zonebuilder-wrapper/releases/latest/download/zonebuilder-i686-pc-windows-msvc.zip -o zonebuilder.zip
+curl -L https://github.com/iw4x/zonebuilder-wrapper/releases/latest/download/zonebuilder-i686-pc-windows-msvc.zip -o zonebuilder.zip
 unzip zonebuilder.zip
 rm zonebuilder.zip
 popd
