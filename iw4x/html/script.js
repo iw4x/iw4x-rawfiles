@@ -101,6 +101,6 @@ $(document).ready(function()
 
     $("#footer").click(function()
     {
-        location.replace("https://alterware.dev/");
+        location.replace("https://iw4x.dev/");
     });
 });
