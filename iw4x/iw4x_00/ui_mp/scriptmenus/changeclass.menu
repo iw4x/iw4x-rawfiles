@@ -540,7 +540,7 @@
 			textalign 6 \
 			textalignx -60 \
 			textscale 0.375 \
-			visible 1 \
+			visible when ( getplayerdata( "customClasses" , index , "inUse" ) ) \
 			exp text ( getplayerdata( "customClasses" , index , "name" ) ) \
 			action \
 			{ \
