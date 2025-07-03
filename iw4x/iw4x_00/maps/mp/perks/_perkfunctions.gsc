@@ -695,11 +695,13 @@ giveOneManArmyClass( className )
 
 	weaponNameSize = self getCurrentWeapon().size;
 	
-	if( getSubStr( self getCurrentWeapon(), weaponNameSize - 6, weaponNameSize ) == "_gl_mp" )
-	{	
-		weaponName = "gl_" + getSubStr( self getCurrentWeapon(), 0, weaponNameSize - 6 ) + "_mp";
-		self setWeaponAmmoClip( weaponName, 0 );
-		self setWeaponAmmoStock( weaponName, 0 );
+	if (!GetDvarInt( "bg_vanilla_onemanarmy" )) {
+		if( getSubStr( self getCurrentWeapon(), weaponNameSize - 6, weaponNameSize ) == "_gl_mp" )
+		{	
+			weaponName = "gl_" + getSubStr( self getCurrentWeapon(), 0, weaponNameSize - 6 ) + "_mp";
+			self setWeaponAmmoClip( weaponName, 0 );
+			self setWeaponAmmoStock( weaponName, 0 );
+		}
 	}
 }
 
