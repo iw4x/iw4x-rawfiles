@@ -121,8 +121,10 @@ setCombatHigh()
 	level endon( "end_game" );
 	
 	self.damageBlockedTotal = 0;
-	self.moveSpeedScaler = 1.25;
-	self maps\mp\gametypes\_weapons::updateMoveSpeedScale( "primary" );
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		self.moveSpeedScaler = 1.25;
+		self maps\mp\gametypes\_weapons::updateMoveSpeedScale( "primary" );
+	}
 	//self visionSetNakedForPlayer( "end_game", 1 );
 
 	if ( level.splitscreen )
@@ -149,7 +151,13 @@ setCombatHigh()
 	
 	self.combatHighTimer = createTimer( "hudsmall", 1.0 );
 	self.combatHighTimer setPoint( "CENTER", "CENTER", 0, yOffset );
-	self.combatHighTimer setTimer( 7.0 );
+
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		self.combatHighTimer setTimer( 10.0 );
+	} else {
+		self.combatHighTimer setTimer( 7.0 );
+	}
+
 	self.combatHighTimer.color = (.8,.8,0);
 	self.combatHighTimer.archived = false;
 	self.combatHighTimer.foreground = true;
@@ -170,7 +178,11 @@ setCombatHigh()
 
 	self thread unsetCombatHighOnDeath();
 	
-	wait( 5 );
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		wait( 5 );
+	} else {
+		wait( 8 );
+	}
 
 	self.combatHighIcon	fadeOverTime( 2.0 );
 	self.combatHighIcon.alpha = 0.0;
@@ -184,14 +196,16 @@ setCombatHigh()
 	wait( 2 );
 	self.damageBlockedTotal = undefined;
 
-	self.moveSpeedScaler = 1;
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		self.moveSpeedScaler = 1;
 
-	if (self _hasperk( "specialty_lightweight" ))
-	{
-		self.moveSpeedScaler = 1.07;
+		if (self _hasperk( "specialty_lightweight" ))
+		{
+			self.moveSpeedScaler = 1.07;
+		}
+
+		self maps\mp\gametypes\_weapons::updateMoveSpeedScale( "primary" );
 	}
-
-	self maps\mp\gametypes\_weapons::updateMoveSpeedScale( "primary" );
 
 	self _unsetPerk( "specialty_combathigh" );
 }
@@ -203,13 +217,15 @@ unsetCombatHighOnDeath()
 	
 	self waittill ( "death" );
 
-	self.moveSpeedScaler = 1;
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		self.moveSpeedScaler = 1;
 
-	if (self _hasperk( "specialty_lightweight" ))
-	{
-		self.moveSpeedScaler = 1.07;
+		if (self _hasperk( "specialty_lightweight" ))
+		{
+			self.moveSpeedScaler = 1.07;
+		}
 	}
-	
+
 	self thread _unsetPerk( "specialty_combathigh" );
 }
 
@@ -220,11 +236,12 @@ unsetCombatHigh()
 	self.combatHighIcon destroy();
 	self.combatHighTimer destroy();
 
-	self.moveSpeedScaler = 1;
-
-	if (self _hasperk( "specialty_lightweight" ))
-	{
-		self.moveSpeedScaler = 1.07;
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
+		self.moveSpeedScaler = 1;
+		if (self _hasperk( "specialty_lightweight" ))
+		{
+			self.moveSpeedScaler = 1.07;
+		}
 	}
 }
 
@@ -366,7 +383,7 @@ setLightWeight()
 {
 	self.moveSpeedScaler = 1.07;
 
-	if (self _hasperk( "specialty_combathigh" ))
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline") && self _hasperk( "specialty_combathigh" ))
 	{
 		self.moveSpeedScaler = 1.4;
 	}
@@ -695,7 +712,7 @@ giveOneManArmyClass( className )
 
 	weaponNameSize = self getCurrentWeapon().size;
 	
-	if (!GetDvarInt( "bg_vanilla_onemanarmy" )) {
+	if (!GetDvarInt( "bg_refill_grenade_launcher_with_onemanarmy" )) {
 		if( getSubStr( self getCurrentWeapon(), weaponNameSize - 6, weaponNameSize ) == "_gl_mp" )
 		{	
 			weaponName = "gl_" + getSubStr( self getCurrentWeapon(), 0, weaponNameSize - 6 ) + "_mp";
