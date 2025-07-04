@@ -121,7 +121,7 @@ setCombatHigh()
 	level endon( "end_game" );
 	
 	self.damageBlockedTotal = 0;
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		self.moveSpeedScaler = 1.25;
 		self maps\mp\gametypes\_weapons::updateMoveSpeedScale( "primary" );
 	}
@@ -152,7 +152,7 @@ setCombatHigh()
 	self.combatHighTimer = createTimer( "hudsmall", 1.0 );
 	self.combatHighTimer setPoint( "CENTER", "CENTER", 0, yOffset );
 
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		self.combatHighTimer setTimer( 10.0 );
 	} else {
 		self.combatHighTimer setTimer( 7.0 );
@@ -178,7 +178,7 @@ setCombatHigh()
 
 	self thread unsetCombatHighOnDeath();
 	
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		wait( 5 );
 	} else {
 		wait( 8 );
@@ -196,7 +196,7 @@ setCombatHigh()
 	wait( 2 );
 	self.damageBlockedTotal = undefined;
 
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		self.moveSpeedScaler = 1;
 
 		if (self _hasperk( "specialty_lightweight" ))
@@ -217,7 +217,7 @@ unsetCombatHighOnDeath()
 	
 	self waittill ( "death" );
 
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		self.moveSpeedScaler = 1;
 
 		if (self _hasperk( "specialty_lightweight" ))
@@ -236,7 +236,7 @@ unsetCombatHigh()
 	self.combatHighIcon destroy();
 	self.combatHighTimer destroy();
 
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
 		self.moveSpeedScaler = 1;
 		if (self _hasperk( "specialty_lightweight" ))
 		{
@@ -383,7 +383,7 @@ setLightWeight()
 {
 	self.moveSpeedScaler = 1.07;
 
-	if (GetDvarInt("bg_replace_painkiller_with_adrenalin") && self _hasperk( "specialty_combathigh" ))
+	if (GetDvarInt("bg_replace_painkiller_with_adrenaline") && self _hasperk( "specialty_combathigh" ))
 	{
 		self.moveSpeedScaler = 1.4;
 	}
