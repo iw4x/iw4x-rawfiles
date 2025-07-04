@@ -179,9 +179,9 @@ setCombatHigh()
 	self thread unsetCombatHighOnDeath();
 	
 	if (GetDvarInt("bg_replace_painkiller_with_adrenalin")) {
-		wait( 8 );
+		wait( 5 );
 	} else {
-		wait ( 5 );
+		wait( 8 );
 	}
 
 	self.combatHighIcon	fadeOverTime( 2.0 );
