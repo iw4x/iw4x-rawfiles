@@ -153,9 +153,9 @@ setCombatHigh()
 	self.combatHighTimer setPoint( "CENTER", "CENTER", 0, yOffset );
 
 	if (GetDvarInt("bg_replace_painkiller_with_adrenaline")) {
-		self.combatHighTimer setTimer( 10.0 );
-	} else {
 		self.combatHighTimer setTimer( 7.0 );
+	} else {
+		self.combatHighTimer setTimer( 10.0 );
 	}
 
 	self.combatHighTimer.color = (.8,.8,0);
