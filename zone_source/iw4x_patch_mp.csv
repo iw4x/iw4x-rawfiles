@@ -286,6 +286,16 @@ material,cardicon_unicorn
 material,cardicon_xrayhand
 material,cardicon_zhunt_consumable_tough_icon
 
+# Emojis
+material,angry_joy
+material,nerd
+material,slight_frown
+material,sob
+material,thumbsdown
+material,thumbsup
+material,heart
+material,clown
+
 material,hud_akd74u
 material,hud_icon_desert_eagle_gold
 
