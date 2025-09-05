@@ -106,9 +106,6 @@
 		
 		MENU_CHOICE_HORIZONTAL_LINE_VIS(12, 1)
 		MENU_CHOICE_BUTTON_VIS(12, button_12, "@MENU_QUIT_CAPS", open quit_popmenu;, "@MPUI_DESC_QUIT", 1)
-		
-		// friends menu
-		//ITEM_BUTTON_FRIENDS(-250)
 
 		// hint text
 		itemDef
