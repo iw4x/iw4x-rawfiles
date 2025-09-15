@@ -101,6 +101,6 @@ $(document).ready(function()
 
     $("#footer").click(function()
     {
-        location.replace("https://iw4x.dev/");
+        location.replace("https://iw4x.io/");
     });
 });
