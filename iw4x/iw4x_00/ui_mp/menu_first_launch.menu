@@ -23,7 +23,7 @@
 #define MENU_MUSIC													"music_opening"
 
 #define WELCOME_TITLE												"Welcome to IW4x"
-#define WELCOME_MESSAGE												"Thank you for playing IW4x!\n\nTo get help, report bugs or just hang out with the community head over to ^4iw4x.dev ^7for our Discord and other resources.\n\nAbove all, please remember that while we try to keep the game stable its still a community project without any guarantees. Please help us by reporting bugs and giving feedback!"
+#define WELCOME_MESSAGE												"Thank you for playing IW4x!\n\nTo get help, report bugs or just hang out with the community head over to ^4iw4x.io ^7for our Discord and other resources.\n\nAbove all, please remember that while we try to keep the game stable its still a community project without any guarantees. Please help us by reporting bugs and giving feedback!"
 
 #define MENU_ITEM_WELCOME_BOX(titleArg, messageArg) \
 	itemDef \
