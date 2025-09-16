@@ -272,7 +272,7 @@
 				close "menu_xboxlive_privatelobby";
 				close "menu_xboxlive_teams";
 				exec "xblive_privatematch 0";
-				open "pc_join_unranked"
+				open "main_text";
 				close self;
 			}
 			onFocus
