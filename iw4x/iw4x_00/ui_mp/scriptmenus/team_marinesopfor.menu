@@ -362,8 +362,8 @@
 			textalignx -60
 			textscale 0.375
 			text "@MPUI_SPECTATOR"
-			visible when ( team( "name" ) != "TEAM_SPECTATOR" )
-			disabled when ( team( "name" ) == "TEAM_SPECTATOR" || !dvarbool( "scr_game_spectatetype" ) )
+			visible when ( dvarbool( "scr_game_spectatetype" ) )
+			disabled when ( team( "name" ) == "TEAM_SPECTATOR" || localvarstring( "ui_team" ) == "" )
 			action
 			{
 				play "mouse_click";
