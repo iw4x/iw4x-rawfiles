@@ -495,6 +495,17 @@ bombs()
 	{
 		trigger = bombZones[index];
 		visuals = getEntArray( bombZones[index].target, "targetname" );
+		label = bombZones[index].script_label;
+		collision = getEnt( "dd_bombzone_clip" + label, "targetname" );
+
+		// remove C site from MW3 maps.
+		if ( label == "_c" )
+		{
+			trigger delete();
+			visuals[0] delete();
+			collision delete();
+			continue;
+		}	
 		
 		bombZone = maps\mp\gametypes\_gameobjects::createUseObject( game["defenders"], trigger, visuals, (0,0,64) );
 		bombZone maps\mp\gametypes\_gameobjects::allowUse( "enemy" );
