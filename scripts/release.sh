@@ -18,7 +18,7 @@ $SUDO apt-get install zip curl -y
 mkdir -p $work_dir/{zip-files,launcher-files}
 
 # copy artifacts to zip-files dir
-cp iw4x.exe $work_dir/zip-files/
+cp iw4x.exe $work_dir/launcher-files/
 cp -r $work_dir/{iw4x,zone} $work_dir/zip-files/
 
 # copy language fast files
@@ -39,7 +39,7 @@ for iwd in "${iwd_files[@]}"; do
 done
 
 # add zonebuilder-wrapper
-pushd $work_dir/zip-files/
+pushd $work_dir/launcher-files/
 curl -L https://github.com/iw4x/zonebuilder-wrapper/releases/latest/download/zonebuilder-i686-pc-windows-msvc.zip -o zonebuilder.zip
 unzip zonebuilder.zip
 rm zonebuilder.zip
