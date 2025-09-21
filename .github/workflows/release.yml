@@ -79,7 +79,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          artifacts: "launcher-files/*.zip,launcher-files/**/*.iwd,launcher-files/update.json"
+          artifacts: "launcher-files/**/*.*"
           artifactErrorsFailBuild: true
           allowUpdates: true
           draft: true
