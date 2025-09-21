@@ -8,8 +8,19 @@ env:
   OAT_VERSION: "0.21.2"
 
 jobs:
-  create_release:
-    name: Create GitHub Release
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ncipollo/release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          draft: true
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+
+  build-artifacts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,13 +45,42 @@ jobs:
             Linker -v "$folder"
           done
 
-      - name: Create ZIP archive
+      - name: Create release artifacts
         run: ./scripts/release.sh
- 
-      - uses: marvinpinto/action-automatic-releases@latest
+
+      - name: Upload release binaries
+        uses: actions/upload-artifact@v4
         with:
-          repo_token: '${{ secrets.GITHUB_TOKEN }}'
-          prerelease: false
+          name: rawfiles-release
+          path: launcher-files
+
+  release:
+    needs:
+      - create-release
+      - build-artifacts
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: rawfiles-release
+          path: launcher-files
+      - name: Prepare release tool
+        run: |
+          wget -O release-tool.tar.gz https://github.com/iw4x/launcher/releases/latest/download/release-tool-x86_64-unknown-linux-gnu.tar.gz
+          tar -xvf release-tool.tar.gz
+          chmod +x release-tool
+      - name: Create release information
+        run: ./release-tool ./launcher-files
+      - uses: ncipollo/release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          artifacts: "launcher-files/*"
+          artifactErrorsFailBuild: true
+          allowUpdates: true
           draft: true
-          files: |
-            release.zip
+          omitBodyDuringUpdate: true
+          omitDraftDuringUpdate: true
