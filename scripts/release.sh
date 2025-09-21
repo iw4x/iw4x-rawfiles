@@ -3,15 +3,19 @@
 # Exit and fail on first failing command
 set -e
 
+# Check for sudo
+if command -v sudo >/dev/null 2>&1; then SUDO='sudo'; else SUDO=''; fi
+
 # set work_dir to the parent of this scripts location
 work_dir=$(dirname `cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd`)
 iwd_files=( "iw4x_00" "iw4x_01" "iw4x_02" "iw4x_03" "iw4x_04" "iw4x_05" )
 
 # ensure dependencies are installed
-sudo apt update >> /dev/null && sudo apt install zip curl -y >> /dev/null
+$SUDO apt-get update
+$SUDO apt-get install zip curl -y
 
 # create dirs
-mkdir $work_dir/{zip-files,launcher-files}
+mkdir -p $work_dir/{zip-files,launcher-files}
 
 # copy artifacts to zip-files dir
 cp iw4x.exe $work_dir/zip-files/
@@ -48,4 +52,4 @@ mv release.zip $work_dir/launcher-files/
 popd
 
 # cleanup
-rm -r release
+rm -r {zip-files,zone_out}
