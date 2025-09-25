@@ -74,8 +74,8 @@ mv -v $work_dir/temp/zip-files/{iw4x.exe,zonebuilder.exe} $work_dir/temp/launche
 
 # Create launcher zip in launcher-folder with all smaller rawfiles
 pushd $work_dir/temp/zip-files/
-zip -r -X __launcher_archive.zip *
-mv -v $work_dir/temp/zip-files/__launcher_archive.zip $work_dir/temp/launcher-files/__launcher_archive.zip
+zip -r -X archive.zip *
+mv -v $work_dir/temp/zip-files/archive.zip $work_dir/temp/launcher-files/archive.zip
 popd
 
 ###############################################
