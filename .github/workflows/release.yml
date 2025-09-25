@@ -74,7 +74,7 @@ jobs:
           tar -xvf release-tool.tar.gz
           chmod +x release-tool
       - name: Create release information
-        run: ./release-tool ./temp/launcher-files
+        run: ./release-tool --rename-files ./temp/launcher-files
       - uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
