@@ -173,6 +173,12 @@ LANG_ENGLISH        "Maximum number of packets sent per frame"
 REFERENCE           MENU_DESC_SNAPS
 LANG_ENGLISH        "Snapshot rate"
 
+REFERENCE           MENU_ALWAYS_USE_NODES
+LANG_ENGLISH        "Always use node system"
+
+REFERENCE           MENU_DESC_ALWAYS_USE_NODES
+LANG_ENGLISH        "Always use node system instead of master server (useful for regions with connection restrictions)"
+
 REFERENCE           MENU_DESC_THUMBSTICK_LAYOUT
 LANG_ENGLISH        "Change the thumbstick layout for the gamepad"
 
