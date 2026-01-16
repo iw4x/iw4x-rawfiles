@@ -1,0 +1,296 @@
+
+/*
+	XBOX360/PS3 UI reload button fix by angxlzj
+*/
+
+{
+	menuDef
+	{
+		name "weaponbar_hd"
+		rect 0 0 640 480 4 4
+		visible 1
+		forecolor 1 1 1 1
+		visible when ( ( ( ! ( ui_active( ) ) ) && ( ! ( dvarbool( "g_hardcore" ) ) ) && ( ! ( flashbanged( ) ) ) && ( ! ( ( weaponname( ) == "killstreak_ac130_mp" ) || ( weaponname( ) == "killstreak_helicopter_minigun_mp" ) || ( weaponname( ) == "killstreak_predator_missile_mp" ) || ( ( weaponname( ) == "ac130_105mm_mp" ) || ( weaponname( ) == "ac130_40mm_mp" ) || ( weaponname( ) == "ac130_25mm_mp" ) ) || ( adsjavelin( ) ) || ( weaponname( ) == "heli_remote_mp" ) || missilecam( ) ) ) && ( !isempjammed( ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) ) && ! ( selecting_location( ) ) && ( ! ( spectatingfree( ) ) ) )
+		itemDef
+		{
+			rect -349.333 -76 349.333 56 10 10
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			background "hud_weaponbar"
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -68.6667 -59.3333 42.6667 42.6667 10 10
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			background "hud_dpad_xbox360"
+			textscale 0.55
+			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && !dvarint( "gpad_style" ) )
+		}
+		itemDef
+		{
+			rect -68.6667 -59.3333 42.6667 42.6667 10 10
+			style 3
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			background "hud_dpad_ps3"
+			textscale 0.55
+			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_style" ) )
+		}
+		itemDef
+		{
+			rect -136 -32.6667 37.3333 0.666667 10 10
+			decoration
+			visible 1
+			ownerdraw 119
+			forecolor 1 1 1 1
+			type 8
+			textfont 9
+			textscale 0.5833
+			textstyle 6
+			visible when ( ( player( "stockAmmo" ) ) < 100 )
+		}
+		itemDef
+		{
+			rect -128 -32.6667 37.3333 0.666667 10 10
+			decoration
+			visible 1
+			ownerdraw 119
+			forecolor 1 1 1 1
+			type 8
+			textfont 9
+			textscale 0.437475
+			textstyle 6
+			visible when ( ( player( "stockAmmo" ) ) >= 100 )
+		}
+		itemDef
+		{
+			name "offhandFragIcon"
+			rect -108 -31.3333 18.6667 18.6667 10 10
+			decoration
+			visible 1
+			ownerdraw 103
+			forecolor 0.75 0.75 0.75 1
+			type 8
+			textscale 0.55
+			visible when ( ( player( "fragAmmo" ) ) > 1 )
+		}
+		itemDef
+		{
+			name "offhandFragIcon"
+			rect -104 -32 18.6667 18.6667 10 10
+			decoration
+			visible 1
+			ownerdraw 103
+			forecolor 1 1 1 1
+			type 8
+			textscale 0.55
+			visible when ( ( player( "fragAmmo" ) ) )
+		}
+		itemDef
+		{
+			name "offhandSmokeIcon"
+			rect -133.333 -32 18.6667 18.6667 10 10
+			decoration
+			visible 1
+			ownerdraw 104
+			forecolor 0.5 0.5 0.5 1
+			type 8
+			textscale 0.55
+			visible when ( ( player( "smokeAmmo" ) ) > 2 )
+		}
+		itemDef
+		{
+			name "offhandSmokeIcon"
+			rect -129.333 -32 18.6667 18.6667 10 10
+			decoration
+			visible 1
+			ownerdraw 104
+			forecolor 0.75 0.75 0.75 1
+			type 8
+			textscale 0.55
+			visible when ( ( player( "smokeAmmo" ) ) > 1 )
+		}
+		itemDef
+		{
+			name "offhandSmokeIcon"
+			rect -125.333 -32 18.6667 18.6667 10 10
+			decoration
+			visible 1
+			ownerdraw 104
+			forecolor 1 1 1 1
+			type 8
+			textscale 0.55
+			visible when ( ( player( "smokeAmmo" ) ) )
+		}
+		itemDef
+		{
+			name "clipGraphic"
+			rect -130 -42.6667 0 0 10 10
+			decoration
+			visible 1
+			ownerdraw 117
+			forecolor 1 1 1 0.65
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "clipGraphic"
+			rect -130 -25.3333 0 0 10 10
+			decoration
+			visible 1
+			ownerdraw 121
+			forecolor 1 1 1 0.65
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -102.667 -52.6667 37.3333 0.666667 10 10
+			decoration
+			visible 1
+			ownerdraw 83
+			forecolor 1 1 1 1
+			type 8
+			textfont 10
+			textalign 2
+			textscale 0.3333
+			textstyle 3
+			visible when ( inkillcam( ) || spectatingclient( ) )
+		}
+		itemDef
+		{
+			rect -102.667 -52.6667 37.3333 0.666667 10 10
+			decoration
+			visible 1
+			ownerdraw 81
+			forecolor 1 1 1 1
+			type 8
+			textfont 10
+			textalign 2
+			textscale 0.3333
+			textstyle 3
+			visible when ( ( ! ( inkillcam( ) ) ) && ( ! ( spectatingclient( ) ) ) )
+		}
+		itemDef
+		{
+			name "lowammowarning"
+			rect -50 -20 100 100 2 2
+			decoration
+			visible 1
+			ownerdraw 120
+			forecolor 1 1 1 0.65
+			type 8
+			textfont 9
+			textalign 9
+			textscale 0.3333
+			textstyle 3
+			visible when ( ( ! ( inkillcam( ) ) ) && ( ! ( spectatingclient( ) ) ) )
+		}
+		itemDef
+		{
+			name "Shadow_Pass1"
+			rect -108 -97 126 126 10 10
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "hud_compass_alpha"
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "Shadow_Pass2"
+			rect -108 -97 126 126 10 10
+			decoration
+			visible 1
+			ownerdraw 166
+			forecolor 1 1 1 0.75
+			background "hud_compass_letters_shadow_step2"
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "Shadow_Pass3"
+			rect -108 -97 126 126 10 10
+			decoration
+			visible 1
+			ownerdraw 166
+			forecolor 1 1 1 1
+			background "hud_compass_letters_shadow_step3"
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "Pass1"
+			rect -109 -98 126 126 10 10
+			decoration
+			visible 1
+			style 3
+			forecolor 1 1 1 1
+			background "hud_compass_alpha"
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "Pass2"
+			rect -109 -98 126 126 10 10
+			decoration
+			visible 1
+			ownerdraw 166
+			forecolor 1 1 1 0.75
+			background "hud_compass_letters_step2"
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			name "Pass3"
+			rect -109 -98 126 126 10 10
+			decoration
+			visible 1
+			ownerdraw 166
+			forecolor 1 1 1 1
+			background "hud_compass_letters_step3"
+			type 8
+			textscale 0.55
+		}
+		itemDef
+		{
+			rect -48.5 20 17.5 17.5 2 2
+			ownerdraw 120
+			decoration
+			forecolor 1 1 1 1
+			type 8
+			textfont 0
+			textalign 0
+			textscale 0
+			textstyle 0
+			background "button_x"
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && !dvarbool( "gpad_style" ) && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
+		}
+		itemDef
+		{
+			rect -48.5 20 17.5 17.5 2 2
+			ownerdraw 120
+			decoration
+			forecolor 1 1 1 1
+			type 8
+			textfont 0
+			textalign 0
+			textscale 0
+			textstyle 0
+			background "button_ps3_square"
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarbool( "gpad_style" ) && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
+		}
+	}
+}
