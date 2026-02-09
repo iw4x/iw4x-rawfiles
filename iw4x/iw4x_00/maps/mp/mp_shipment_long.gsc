@@ -2,7 +2,6 @@ main()
 {
 	maps\mp\mp_shipment_long_fx::main();
 	maps\createart\mp_shipment_long_art::main();
-	maps\createfx\mp_shipment_long_fx::main();
 	maps\mp\_load::main();
 	
 	maps\mp\_compass::setupMiniMap("compass_map_mp_shipment");

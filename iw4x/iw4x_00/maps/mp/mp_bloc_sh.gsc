@@ -2,7 +2,6 @@ main()
 {
 	maps\createart\mp_bloc_sh_art::main();
 	maps\mp\mp_bloc_sh_precache::main();
-	maps\createfx\mp_bloc_sh_fx::main();
 	maps\mp\mp_bloc_sh_fx::main();
 	maps\mp\_load::main();
 

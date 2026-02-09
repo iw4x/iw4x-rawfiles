@@ -5,7 +5,6 @@ main()
 	maps\mp\mp_cross_fire_fx::main();
 	maps\mp\mp_cross_fire_precache::main();
 	
-	maps\createfx\mp_cross_fire_fx::main();
 	maps\createart\mp_cross_fire_art::main();
 	
 	maps\mp\_compass::setupMiniMap( "compass_map_mp_cross_fire" );

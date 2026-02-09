@@ -2,9 +2,7 @@ main()
 {
 	maps\mp\_load::main();
 	maps\mp\mp_cargoship_sh_fx::main();
-	
 	maps\createart\mp_cargoship_sh_art::main();
-	maps\createfx\mp_cargoship_sh_fx::main();
 	
 	ambientPlay( "ambient_mp_snow" );
 	

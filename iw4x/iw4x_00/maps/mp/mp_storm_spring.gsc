@@ -3,7 +3,6 @@ main()
 	maps\mp\mp_storm_spring_precache::main();
 	maps\mp\mp_storm_spring_fx::main();
 	maps\createart\mp_storm_spring_art::main();
-	maps\createfx\mp_storm_spring_fx::main();
 	maps\createfx\mp_storm_spring_ex_fx::main();
 	maps\mp\_load::main();
 
