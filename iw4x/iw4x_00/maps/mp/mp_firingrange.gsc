@@ -6,9 +6,7 @@ main()
 	maps\mp\_load::main();
 	
 	maps\mp\mp_firingrange_fx::main();
-	maps\createart\mp_firingrange_art::main();
-	maps\createfx\mp_firingrange_fx::main();
-	
+	maps\createart\mp_firingrange_art::main();	
 	maps\mp\_explosive_barrels::main();
 
 	game[ "attackers" ] = "axis";

@@ -1,7 +1,6 @@
 main()
 {
 	maps\mp\mp_crash_tropical_fx::main();
-	maps\createfx\mp_crash_tropical_fx::main();
 	maps\mp\mp_crash_tropical_precache::main();
 	maps\createart\mp_crash_tropical_art::main();
 	
