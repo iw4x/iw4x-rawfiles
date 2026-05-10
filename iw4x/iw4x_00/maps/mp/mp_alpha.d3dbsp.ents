@@ -1,0 +1,6598 @@
+{
+    sundirection "-49 105 0"
+    maxbounces "32"
+    radiosityscale "1"
+    skycolor "212 229 255"
+    skylight "1"
+    _color "227 237 255"
+    ambient "0.116"
+    classname "worldspawn"
+    suncolor "255 247 213"
+    sunlight "1.3"
+    sunradiosity "1"
+    origin "0 0 0"
+}
+{
+    script_gameobjectname "bombzone"
+    classname "trigger_use_touch"
+    targetname "bombtrigger"
+    origin "-8256 9088 24"
+    model "?0"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf1_auto1"
+    classname "script_brushmodel"
+    origin "-8256 9088 2"
+    model "*1"
+}
+{
+    ltorigin "-8256 9088.19 16.8886"
+    target "pf1_auto1"
+    targetname "airdrop_crate"
+    origin "-8256 9088 2"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf2_auto1"
+    classname "script_brushmodel"
+    origin "-8384 9088 15"
+    model "*2"
+}
+{
+    ltorigin "-8384 9088.19 14.8886"
+    target "pf2_auto1"
+    targetname "care_package"
+    origin "-8384 9088 0"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    angles "0 189.9 0"
+    target "auto601"
+    origin "-1898.7 2225.9 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    origin "-288 -288 256"
+    angles "0 45 0"
+    classname "info_player_start"
+}
+{
+    angles "0 180 0"
+    origin "832 -176 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+
+{
+    targetname "pf3_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "-256 1280 0"
+    model "?2"
+}
+{
+    gndlt "5b5e630000"
+    ltorigin "-255.879 1281.58 20.0227"
+    target "pf3_auto2"
+    targetname "pf3_auto1"
+    spawnflags "4"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3_2"
+    origin "-256 1283 -10"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "5b5e630000"
+    ltorigin "-259.406 1285.56 9.45589"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-256 1280 -8"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+
+{
+    script_gameobjectname "ctf"
+    target "ctf_flag_allies"
+    targetname "ctf_trig_allies"
+    origin "-1387.9 -245.9 8"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+}
+{
+    gndlt "5b5c5d0000"
+    ltorigin "-1361.59 -241.488 41.5115"
+    spawnflags "4"
+    script_gameobjectname "ctf"
+    origin "-1387.9 -245.9 -8"
+    targetname "ctf_flag_allies"
+    model "prop_flag_neutral"
+    classname "script_model"
+}
+{
+    script_gameobjectname "ctf"
+    targetname "ctf_zone_allies"
+    origin "-1387.9 -245.9 8"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+}
+{
+    origin "-66 -558 32"
+    angles "0 90 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-62 -562 40"
+    angles "0 90 0"
+    classname "mp_tdm_spawn"
+}
+{
+    classname "trigger_radius"
+    radius "160"
+    height "128"
+    targetname "flag_primary"
+    origin "-1555 2430 119"
+    script_gameobjectname "dom onslaught"
+    model "prop_flag_neutral"
+    script_label "_a"
+}
+{
+    script_label "_b"
+    model "prop_flag_neutral"
+    script_gameobjectname "dom onslaught"
+    origin "-366 1290 -11"
+    targetname "flag_primary"
+    height "128"
+    radius "160"
+    classname "trigger_radius"
+    angles "0 270 0"
+}
+{
+    script_label "_c"
+    model "prop_flag_neutral"
+    script_gameobjectname "dom onslaught"
+    origin "-280 -270 -11"
+    targetname "flag_primary"
+    height "128"
+    radius "160"
+    classname "trigger_radius"
+    angles "0 180 0"
+}
+{
+    angles "0 180 0"
+    origin "832 -240 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    modelscale "1.246716"
+    angles "0 0 0"
+    _color "1 .5 .5"
+    origin "-598 2000 146"
+    classname "mp_sab_spawn_axis"
+}
+{
+    script_label "_a"
+    script_bombmode_original "1"
+    target "pf8_auto1"
+    script_gameobjectname "bombzone"
+    targetname "bombzone"
+    classname "trigger_use_touch"
+    origin "-34 1762 0"
+    model "?3"
+}
+{
+    targetname "pf8_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "bombzone"
+    origin "-34 1762 0"
+    model "?4"
+}
+{
+    gndlt "55595ec001"
+    ltorigin "-37.4056 1767.56 9.55589"
+    script_gameobjectname "bombzone"
+    script_exploder "pf8_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-34 1762 -7.9"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "bombzone"
+    classname "script_brushmodel"
+    origin "-33 1764 20"
+    model "*4"
+}
+{
+    gndlt "55595ec001"
+    ltorigin "-33.8788 1762.58 20.1227"
+    classname "script_model"
+    model "com_bomb_objective"
+    angles "0 270 0"
+    origin "-34 1764 -9.9"
+    script_exploder "pf8_1"
+    script_gameobjectname "bombzone"
+    spawnflags "4"
+    targetname "pf8_auto1"
+    target "pf8_auto2"
+}
+{
+    gndlt "5d5d5fc001"
+    ltorigin "546.237 -250.083 -4.49667"
+    spawnflags "4"
+    script_gameobjectname "sd"
+    origin "546 -250 -8"
+    targetname "sd_bomb"
+    model "mil_tntbomb_mp"
+    classname "script_model"
+}
+{
+    script_gameobjectname "sd"
+    targetname "sd_bomb_pickup_trig"
+    classname "trigger_multiple"
+    origin "546 -250 -8"
+    model "?5"
+}
+{
+    gndlt "5c5f640000"
+    ltorigin "-235.263 1239.92 -4.49667"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    origin "-235.5 1240 -8"
+    targetname "sab_bomb"
+    model "mil_tntbomb_mp"
+    classname "script_model"
+}
+{
+    script_gameobjectname "sab"
+    targetname "sab_bomb_pickup_trig"
+    classname "trigger_multiple"
+    origin "-235 1240 -8"
+    model "?6"
+}
+{
+    script_gameobjectname "ctf"
+    target "ctf_flag_axis"
+    targetname "ctf_trig_axis"
+    origin "-575.6 2397 152"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 180 0"
+}
+{
+    gndlt "4c4e530000"
+    ltorigin "-601.914 2392.59 185.511"
+    spawnflags "4"
+    script_gameobjectname "ctf"
+    origin "-575.6 2397 136"
+    targetname "ctf_flag_axis"
+    model "prop_flag_neutral"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    script_gameobjectname "ctf"
+    targetname "ctf_zone_axis"
+    origin "-575.6 2397 152"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 180 0"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "525 1456 100"
+    model "?7"
+}
+{
+    angles "0 239.2 0"
+    classname "mp_global_intermission"
+    origin "142 2036 312"
+}
+{
+    script_label "_b"
+    script_bombmode_original "1"
+    target "pf12_auto1"
+    script_gameobjectname "bombzone"
+    targetname "bombzone"
+    classname "trigger_use_touch"
+    origin "-1648 1105 0"
+    model "?8"
+}
+{
+    targetname "pf12_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "bombzone"
+    origin "-1648 1105 0"
+    model "?9"
+}
+{
+    gndlt "4f5254c001"
+    ltorigin "-1647.88 1106.58 20.1227"
+    target "pf12_auto2"
+    targetname "pf12_auto1"
+    spawnflags "4"
+    script_gameobjectname "bombzone"
+    script_exploder "pf12_2"
+    origin "-1648 1108 -9.9"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "4f5254c001"
+    ltorigin "-1651.41 1110.56 9.55589"
+    script_gameobjectname "bombzone"
+    script_exploder "pf12_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-1648 1105 -7.9"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "bombzone"
+    classname "script_brushmodel"
+    origin "-1647 1108 20"
+    model "*5"
+}
+{
+    gndlt "3631290025"
+    ltorigin "664 1591.69 38.8886"
+    spawnflags "4"
+    targetname "pf13_auto1"
+    script_gameobjectname "hq"
+    origin "664 1591.5 24"
+    angles "0 0 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "3732290025"
+    ltorigin "668 1588.48 61.453"
+    spawnflags "4"
+    target "pf13_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "668 1587.5 54"
+    angles "0 270 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "680.717 1585.56 54.5784"
+    spawnflags "4"
+    targetname "pf13_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 40 -89.9997"
+    origin "682.7 1582.8 54"
+}
+{
+    spawnflags "1"
+    targetname "pf13_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "664 1592 39"
+    model "*6"
+}
+{
+    spawnflags "1"
+    targetname "pf13_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "668 1595 62"
+    model "*7"
+}
+{
+    classname "trigger_use_touch"
+    targetname "sab_bomb_allies"
+    script_gameobjectname "sab"
+    target "pf14_auto1"
+    origin "-328 -236 0"
+    model "?10"
+}
+{
+    targetname "sab_bomb_defuse_allies"
+    script_gameobjectname "sab"
+    classname "trigger_use_touch"
+    origin "-328 -236 0"
+    model "?11"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "sab"
+    classname "script_brushmodel"
+    origin "-327 -233 20"
+    model "*8"
+}
+{
+    gndlt "59595b0000"
+    ltorigin "-327.879 -234.42 20.0227"
+    targetname "pf14_auto1"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    script_exploder "pf14_1"
+    origin "-328 -233 -10"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "58585a0000"
+    ltorigin "-331.406 -230.437 9.45589"
+    script_gameobjectname "sab"
+    script_exploder "pf14_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-328 -236 -8"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1504 2800 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    angles "0 230 0"
+    targetname "auto598"
+    classname "script_origin"
+    origin "106 1134 320"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf15_auto1"
+    classname "script_brushmodel"
+    origin "-8512 9088 2"
+    model "*9"
+}
+{
+    ltorigin "-8512 9088.19 16.8886"
+    target "pf15_auto1"
+    targetname "airdrop_crate"
+    origin "-8512 9088 2"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    angles "0 230 0"
+    target "auto598"
+    script_targetoffset_z "55"
+    origin "980 1115.1 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 84.8 0"
+    target "auto600"
+    origin "-26.1 2014 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 84.8 0"
+    targetname "auto600"
+    origin "656.2 2824.3 2440.5"
+    classname "script_origin"
+}
+{
+    origin "1768 -904 128"
+    targetname "minimap_corner"
+    classname "script_origin"
+}
+{
+    classname "script_origin"
+    targetname "minimap_corner"
+    origin "-3032 3896 192"
+}
+{
+    angles "0 189.9 0"
+    targetname "auto601"
+    origin "-2485.6 2988.1 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 227.9 0"
+    target "auto602"
+    origin "-1690.7 717.6 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 227.9 0"
+    targetname "auto602"
+    origin "-2168.7 722.6 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 274 0"
+    target "auto603"
+    origin "-1673.9 -60.7 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 274 0"
+    targetname "auto603"
+    origin "-1654.2 -724.1 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 334 0"
+    target "auto604"
+    origin "-272.9 161.4 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 334 0"
+    targetname "auto604"
+    origin "196.7 -748.1 2440.5"
+    classname "script_origin"
+}
+{
+    origin "-3540 3392 2744"
+    targetname "heli_leave"
+    classname "script_origin"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "-3544 -3760 2744"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "-3540 3392 2744"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "6792 1324 1760"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "5132 -2976 2744"
+}
+{
+    classname "script_origin"
+    angles "0 300 0"
+    _color ".5 1 1"
+    origin "-2318 3536 2352"
+    script_accel "20"
+    script_airspeed "40"
+    targetname "auto481"
+    target "auto483"
+    script_delay "2"
+}
+{
+    classname "script_origin"
+    angles "0 335 0"
+    _color ".5 1 1"
+    origin "-3264 1756 2292"
+    script_accel "15"
+    script_airspeed "40"
+    targetname "auto483"
+    script_delay "3"
+    target "auto476"
+}
+{
+    classname "script_origin"
+    angles "0 175 0"
+    _color ".5 1 1"
+    origin "108 3656 2192"
+    script_accel "20"
+    script_airspeed "35"
+    targetname "auto480"
+    target "auto481"
+}
+{
+    classname "script_origin"
+    angles "0 205 0"
+    _color ".5 1 1"
+    origin "1340 1952 2164"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto479"
+    target "auto480"
+    script_delay "3"
+}
+{
+    classname "script_origin"
+    angles "0 150 0"
+    _color ".5 1 1"
+    origin "1320 -12 2120"
+    script_accel "20"
+    script_airspeed "35"
+    targetname "auto478"
+    target "auto479"
+}
+{
+    classname "script_origin"
+    angles "0 85 0"
+    _color ".5 1 1"
+    origin "-812 -1052 2192"
+    targetname "auto477"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto478"
+    script_delay "3"
+}
+{
+    classname "script_origin"
+    angles "0 340 0"
+    _color ".5 1 1"
+    origin "-2768 -288 2312"
+    targetname "auto476"
+    script_accel "15"
+    script_airspeed "40"
+    target "auto477"
+}
+{
+    target "auto476"
+    classname "script_origin"
+    angles "0 1.00179e-005 0"
+    _color ".5 1 1"
+    targetname "heli_loop_start"
+    origin "-2640.5 -185 2304"
+}
+{
+    classname "script_origin"
+    origin "1599.8 372.5 2459"
+    _color "0 1 .5"
+    angles "0 170 0"
+    targetname "auto474"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto475"
+}
+{
+    classname "script_origin"
+    origin "3235.8 157.5 2746"
+    _color "0 1 .5"
+    angles "0 170 0"
+    targetname "auto473"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto474"
+}
+{
+    classname "script_origin"
+    origin "4928 2194.9 1656"
+    _color "0 1 .5"
+    angles "0 245 0"
+    targetname "auto472"
+    script_accel "20"
+    script_airspeed "60"
+    target "auto473"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "4940.8 2246.1 1648"
+    _color "0 1 .5"
+    angles "0 255 0"
+    target "auto472"
+}
+{
+    classname "script_origin"
+    origin "-1111.9 3947.4 2475"
+    _color "0 1 .5"
+    angles "0 275 0"
+    targetname "auto469"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto470"
+}
+{
+    classname "script_origin"
+    origin "-1949.9 4607.6 2506"
+    _color "0 1 .5"
+    angles "0 285 0"
+    targetname "auto468"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto469"
+}
+{
+    classname "script_origin"
+    origin "561.7 1161.6 2412"
+    _color "0 1 .5"
+    angles "0 220 0"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto475"
+    target "auto467"
+}
+{
+    target "auto467"
+    classname "script_origin"
+    origin "-1130.4 1990.2 2452"
+    _color "0 1 .5"
+    angles "0 270 0"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto471"
+}
+{
+    classname "script_origin"
+    origin "-4374.3 5252.1 2656"
+    _color "0 1 .5"
+    angles "0 305 0"
+    targetname "auto466"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto468"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "-4397.2 5301 2648"
+    _color "0 1 .5"
+    angles "0 285 0"
+    target "auto466"
+}
+{
+    target "auto467"
+    classname "script_origin"
+    targetname "auto463"
+    origin "-1619.6 318.1 2431"
+    _color "0 1 .5"
+    angles "0 90 0"
+    script_accel "20"
+    script_airspeed "60"
+}
+{
+    classname "script_origin"
+    targetname "auto462"
+    origin "-1809.2 -1034.8 2246"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto463"
+    script_accel "20"
+    script_airspeed "40"
+}
+{
+    classname "script_origin"
+    targetname "auto461"
+    origin "-2405.6 -1750.5 2196"
+    _color "0 1 .5"
+    angles "0 30 0"
+    target "auto462"
+    script_accel "20"
+    script_airspeed "40"
+}
+{
+    classname "script_origin"
+    targetname "auto460"
+    origin "-4200.8 -2438 2448"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto461"
+    script_accel "20"
+    script_airspeed "60"
+}
+{
+    classname "script_origin"
+    targetname "auto42"
+    origin "2834.2 -1322.8 2548"
+    target "auto44"
+    script_airspeed "50"
+    script_accel "30"
+    angles "0 345 0"
+}
+{
+    classname "script_origin"
+    origin "5255 -2082 1864"
+    targetname "auto44"
+    script_airspeed "50"
+    script_accel "30"
+    angles "0 345 0"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "-4226.9 -2489 2440"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto460"
+}
+{
+    target "auto471"
+    script_airspeed "40"
+    script_accel "15"
+    targetname "auto470"
+    angles "0 50 0"
+    _color "0 1 .5"
+    origin "-682.4 2761.7 2495.5"
+    classname "script_origin"
+}
+{
+    target "auto467"
+    targetname "heli_dest"
+    origin "-876 1073 2400"
+    angles "0 30 0"
+    _color "0 1 .5"
+    classname "script_origin"
+}
+{
+    script_airspeed "30"
+    script_accel "10"
+    angles "0 270 0"
+    _color "0 1 .5"
+    origin "-775.6 1062.8 2415.5"
+    targetname "auto467"
+    classname "script_origin"
+}
+{
+    angles "0 345 0"
+    target "auto482"
+    origin "1136 -272 2608"
+    targetname "heli_crash_start"
+    classname "script_origin"
+}
+{
+    angles "0 345 0"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto42"
+    origin "1163 -279.2 2608"
+    targetname "auto482"
+    classname "script_origin"
+}
+{
+    angles "0 9.00001 0"
+    target "auto605"
+    origin "248.3 927.2 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 9.00001 0"
+    targetname "auto605"
+    origin "1292.5 479 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 1.2 0"
+    targetname "auto606"
+    classname "script_origin"
+    origin "-1585.2 1210.1 320"
+}
+{
+    angles "0 1.2 0"
+    target "auto606"
+    script_targetoffset_z "55"
+    origin "-2818.5 1235 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 60.7 0"
+    targetname "auto607"
+    classname "script_origin"
+    origin "-1556.5 -143.1 320"
+}
+{
+    angles "0 60.7 0"
+    target "auto607"
+    script_targetoffset_z "55"
+    origin "-2159.5 -938 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 156.6 0"
+    targetname "auto608"
+    classname "script_origin"
+    origin "55.3 -183.3 320"
+}
+{
+    angles "0 156.6 0"
+    target "auto608"
+    script_targetoffset_z "55"
+    origin "-631.2 769.9 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    origin "-806 1066 2682"
+    targetname "airstrikeheight"
+    classname "script_origin"
+}
+{
+    dmg "10000"
+    classname "trigger_hurt"
+    origin "0 0 -160"
+    model "?12"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 270 180"
+    origin "-931.5 2329.5 287"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 1.50269e-005 -180"
+    origin "-1830 2095.5 263"
+}
+{
+    spawnflags "1"
+    script_destruct_collision "pre"
+    targetname "pf201_auto1"
+    classname "script_brushmodel"
+    origin "362 558 28"
+    model "*10"
+}
+{
+    gndlt "29241c0024"
+    ltorigin "361.688 558 27.8719"
+    target "pf201_auto1"
+    classname "script_model"
+    model "usa_gas_station_trash_bin_01"
+    origin "362 558 8"
+    destructible_type "toy_usa_gas_station_trash_bin_01"
+    targetname "destructible_toy"
+    sound_csv_include "destruct_trashcan"
+    csv_include "destructible_usa_gas_station_trash_bin_01"
+    angles "0 78 0"
+}
+{
+    spawnflags "1"
+    script_destruct_collision "post"
+    targetname "pf201_auto2"
+    classname "script_brushmodel"
+    origin "362 558 22"
+    model "*11"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 270 -180"
+    origin "-115.5 1052 210.5"
+}
+{
+    script_type "dumpster"
+    classname "trigger_multiple_softlanding"
+    origin "-812 -816 172"
+    model "?13"
+}
+{
+    gndlt "3b3b3b2701"
+    ltorigin "-928.3 -872.7 154.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-928.3 -872.7 136"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "1.00179e-005 228.076 0"
+}
+{
+    gndlt "484747a501"
+    ltorigin "-801 -645.4 154.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-801 -645.4 136"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 55.0854 0"
+}
+{
+    gndlt "3b3a390000"
+    ltorigin "-934.6 -1082.3 154.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-934.6 -1082.3 136"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "1.00179e-005 327.074 0"
+}
+{
+    gndlt "595a5d0000"
+    ltorigin "-38.6759 -268.435 52.4412"
+    csv_include "destructible_vehicle_bm21_cover"
+    destructible_type "vehicle_bm21_cover"
+    targetname "destructible_vehicle"
+    origin "-47.1 -270 -6.1"
+    model "vehicle_bm21_cover_destructible_dusty"
+    classname "script_model"
+    angles "359.794 180.9 -0.0800434"
+}
+{
+    ltorigin "-1755.2 918.941 24.0741"
+    classname "script_model"
+    model "vehicle_subcompact_blue_destructible"
+    origin "-1756.1 911.4 -8"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_subcompact_blue"
+    csv_include "destructible_vehicle_subcompact_blue"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 85.883 0"
+}
+{
+    gndlt "4f51520201"
+    ltorigin "-1478.57 1522.4 31.1907"
+    target "pf375_auto1"
+    csv_include "destructible_vehicle_pickup_destructible_mp"
+    destructible_type "vehicle_pickup"
+    targetname "destructible_vehicle"
+    origin "-1471.4 1527.1 -8.1"
+    model "vehicle_pickup_destructible_mp"
+    classname "script_model"
+    angles "359.794 14.9 -0.0800434"
+}
+{
+    targetname "pf375_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-1571 1497 24"
+    model "*12"
+}
+{
+    ltorigin "-384.691 1548.09 22.1663"
+    classname "script_model"
+    model "vehicle_coupe_green_destructible"
+    origin "-394 1548 -8"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_coupe_green"
+    csv_include "destructible_vehicle_coupe_green"
+    sound_csv_include "vehicle_car_exp"
+}
+{
+    gndlt "4d51510005"
+    ltorigin "-1939.98 950.785 9.46072"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    origin "-1942 950 8"
+    model "brokenglass_pile01"
+    classname "script_model"
+    angles "0 171 0"
+}
+{
+    gndlt "3c3d3d3901"
+    ltorigin "-1902 1010 8.62748"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    origin "-1902 1010 8"
+    model "brokenglass_pile03"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "3e40400000"
+    ltorigin "-1896 926 9.46072"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    origin "-1896 926 8"
+    model "brokenglass_pile01"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "575b5c0000"
+    ltorigin "-1915.82 961.056 8.5"
+    targetname "shop_junk"
+    origin "-1910.9 957.8 8.5"
+    angles "0 60.1 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "4345460000"
+    ltorigin "-1894.52 947.352 8.5"
+    targetname "shop_junk"
+    origin "-1898.5 942.2 8.5"
+    angles "0 322.4 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "3334340000"
+    ltorigin "-1911.46 893.283 8.5"
+    targetname "shop_junk"
+    origin "-1908 894.1 8.5"
+    angles "0 97 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "3c3d3d0000"
+    ltorigin "-1917.59 909.295 8.50008"
+    targetname "shop_junk"
+    origin "-1912.2 905.4 8.5"
+    angles "0 54.4 90"
+    model "hanging_hanger03"
+    classname "script_model"
+}
+{
+    gndlt "2f2d2b0000"
+    ltorigin "-1919.52 586.352 8.5"
+    targetname "shop_junk"
+    origin "-1923.5 581.2 8.5"
+    angles "0 322.4 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "2927260000"
+    ltorigin "-1936.46 532.283 8.5"
+    targetname "shop_junk"
+    origin "-1933 533.1 8.5"
+    angles "0 97 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "2d2a280000"
+    ltorigin "-1939.91 546.222 8.5"
+    targetname "shop_junk"
+    origin "-1937.2 544.4 8.5"
+    angles "0 54.4 90"
+    model "hanging_hanger02"
+    classname "script_model"
+}
+{
+    gndlt "2e2c2a0005"
+    ltorigin "-1997.23 841.08 8.5"
+    targetname "shop_junk"
+    origin "-1995.8 837.2 8.5"
+    angles "0 12.5 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "2826240005"
+    ltorigin "-1995.72 818.061 8.5"
+    targetname "shop_junk"
+    origin "-1999 817.5 8.5"
+    angles "0 274.8 90"
+    model "hanging_hanger01"
+    classname "script_model"
+}
+{
+    gndlt "4e51520000"
+    ltorigin "-1902.5 969.3 9.76073"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    origin "-1902.5 969.3 8.3"
+    classname "script_model"
+    model "brokenglass_pile01"
+    angles "0 90 0"
+}
+{
+    gndlt "4c4f500005"
+    ltorigin "-1961.65 998.809 8.82492"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    angles "0 49.4 0"
+    classname "script_model"
+    model "brokenglass_pile07"
+    origin "-1965 1000 8"
+}
+{
+    gndlt "3839390000"
+    ltorigin "-1923.49 1066.9 8.82492"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    angles "0 256.4 0"
+    classname "script_model"
+    model "brokenglass_pile07"
+    origin "-1919 1063 8"
+}
+{
+    gndlt "2b2a2a0000"
+    ltorigin "-1936.76 856.355 8.82492"
+    _id_164F "not_rotate"
+    targetname "shop_junk"
+    angles "0 347.7 0"
+    classname "script_model"
+    model "brokenglass_pile07"
+    origin "-1933 861 8"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 270 -180"
+    origin "-2304 1178 148"
+}
+{
+    gndlt "6364650000"
+    ltorigin "-1727.77 2439.73 160.269"
+    sound_csv_include "destruct_newspaperbox"
+    csv_include "destructible_newspaperbox_blue"
+    destructible_type "toy_newspaper_stand_blue"
+    targetname "destructible_toy"
+    origin "-1726 2438 138"
+    model "com_newspaperbox_blue"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    ltorigin "-1846.4 2367.15 160.166"
+    classname "script_model"
+    model "vehicle_coupe_white_destructible"
+    origin "-1838.21 2368.8 130"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_coupe_white"
+    csv_include "destructible_vehicle_coupe_white"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 193 0"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 5.00896e-006 180"
+    origin "-1234.4 1749.1 312"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 5.00896e-006 180"
+    origin "-1294.4 1749.1 312"
+}
+{
+    gndlt "5254550000"
+    ltorigin "61.7349 2642.58 52.4412"
+    csv_include "destructible_vehicle_bm21_cover"
+    destructible_type "vehicle_bm21_cover"
+    targetname "destructible_vehicle"
+    origin "61 2651.1 -6.1"
+    model "vehicle_bm21_cover_destructible_dusty"
+    classname "script_model"
+    angles "359.794 90.4 -0.0800435"
+}
+{
+    gndlt "525459a101"
+    ltorigin "-85.448 1540.22 35.4732"
+    destructible_type "vehicle_uaz_hardtop"
+    targetname "destructible_vehicle"
+    origin "-82 1544 -8"
+    model "vehicle_uaz_hardtop_dest_mp_castle_wet"
+    classname "script_model"
+    csv_include "destructible_uaz_hardtop"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 242 0"
+}
+{
+    ltorigin "155.548 1390.03 22.1663"
+    classname "script_model"
+    model "vehicle_coupe_white_destructible"
+    origin "153.264 1397.52 -8"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_coupe_white"
+    csv_include "destructible_vehicle_coupe_white"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 290 0"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 5.00896e-006 180"
+    origin "-1872.9 1750.1 312"
+}
+{
+    classname "script_struct"
+    targetname "com_wall_streetlamp_on"
+    angles "90 5.00896e-006 180"
+    origin "-1932.9 1750.1 312"
+}
+{
+    gndlt "5b5b5d1801"
+    ltorigin "414.086 -114.242 35.4732"
+    destructible_type "vehicle_uaz_hardtop"
+    targetname "destructible_vehicle"
+    origin "418 -118 -8"
+    model "vehicle_uaz_hardtop_dest_mp_castle_wet"
+    classname "script_model"
+    csv_include "destructible_uaz_hardtop"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 150 0"
+}
+{
+    gndlt "4a4a484601"
+    ltorigin "-23.4 -601.7 18.3345"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-23.4 -601.7 0"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 286 0"
+}
+{
+    gndlt "4f4f500000"
+    ltorigin "-2056.4 1288.9 18.3345"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-2056.4 1288.9 0"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 186 0"
+}
+{
+    gndlt "3132330016"
+    ltorigin "-946.3 2473.3 154.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-946.3 2473.3 136"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "1.00179e-005 228.076 0"
+}
+{
+    script_type "dumpster"
+    classname "trigger_multiple_softlanding"
+    origin "1150 -349 33"
+    model "?14"
+}
+{
+    gndlt "3435360000"
+    ltorigin "980.6 -505.7 18.3345"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "980.6 -505.7 0"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 286 0"
+}
+{
+    spawnflags "1"
+    script_destruct_collision "pre"
+    targetname "pf1552_auto1"
+    classname "script_brushmodel"
+    origin "381 -583 19"
+    model "*13"
+}
+{
+    gndlt "5d5b564f01"
+    ltorigin "381.4 -582.608 18.8719"
+    target "pf1552_auto1"
+    classname "script_model"
+    model "usa_gas_station_trash_bin_01"
+    origin "381.4 -582.9 -1"
+    destructible_type "toy_usa_gas_station_trash_bin_01"
+    targetname "destructible_toy"
+    sound_csv_include "destruct_trashcan"
+    csv_include "destructible_usa_gas_station_trash_bin_01"
+    angles "0 330.7 0"
+}
+{
+    spawnflags "1"
+    script_destruct_collision "post"
+    targetname "pf1552_auto2"
+    classname "script_brushmodel"
+    origin "381 -583 13"
+    model "*14"
+}
+{
+    targetname "tunnel_door_right"
+    classname "script_brushmodel"
+    origin "529 -700 72"
+    model "*15"
+}
+{
+    targetname "tunnel_door_left"
+    classname "script_brushmodel"
+    origin "759 -700 71"
+    model "*16"
+}
+{
+    ltorigin "-1539.37 2912.44 144.666"
+    classname "script_model"
+    model "vehicle_coupe_white_destructible"
+    origin "-1537.89 2920.84 114.5"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_coupe_white"
+    csv_include "destructible_vehicle_coupe_white"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 258.4 0"
+}
+{
+    ltorigin "-1748.44 2872.1 146.074"
+    classname "script_model"
+    model "vehicle_subcompact_blue_destructible"
+    origin "-1745 2868.9 114"
+    targetname "destructible_vehicle"
+    destructible_type "vehicle_subcompact_blue"
+    csv_include "destructible_vehicle_subcompact_blue"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 141 0"
+}
+{
+    gndlt "4245491a01"
+    ltorigin "-1461.12 3064.09 278.124"
+    origin "-1457 3067 359"
+    targetname "animated_model"
+    precache_script "maps animated_models alpha_hanging_civs_animated"
+    csv_include "animated_models_alpha_hanging_civs_animated"
+    model "alpha_hanging_civs"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-1300.1 2854.7 129"
+    angles "0 241.4 0"
+}
+{
+    classname "trigger_use_touch"
+    targetname "sab_bomb_axis"
+    script_gameobjectname "sab"
+    target "pf1698_auto1"
+    origin "-1482 2516 137"
+    model "?15"
+}
+{
+    targetname "sab_bomb_defuse_axis"
+    script_gameobjectname "sab"
+    classname "trigger_use_touch"
+    origin "-1482 2516 137"
+    model "?16"
+}
+{
+    gndlt "616466cf01"
+    ltorigin "-1481.88 2517.58 157.023"
+    targetname "pf1698_auto1"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    script_exploder "pf1698_2"
+    origin "-1482 2519 127"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "606265c001"
+    ltorigin "-1485.41 2521.56 146.456"
+    script_gameobjectname "sab"
+    script_exploder "pf1698_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-1482 2516 129"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "sab"
+    classname "script_brushmodel"
+    origin "-1481 2519 157"
+    model "*17"
+}
+{
+    origin "-256 -584 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    script_label "_b"
+    script_bombmode_original "1"
+    target "pf1699_auto1"
+    script_gameobjectname "dd_bombzone"
+    targetname "dd_bombzone"
+    classname "trigger_use_touch"
+    origin "-1648 1105 0"
+    model "?17"
+}
+{
+    targetname "pf1699_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "-1648 1105 0"
+    model "?18"
+}
+{
+    gndlt "4f5254c001"
+    ltorigin "-1647.88 1106.58 20.1227"
+    target "pf1699_auto2"
+    targetname "pf1699_auto1"
+    spawnflags "4"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf1699_2"
+    origin "-1648 1108 -9.9"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "4f5254c001"
+    ltorigin "-1651.41 1110.56 9.55589"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf1699_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-1648 1105 -7.9"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    targetname "dd_bombzone_clip_b"
+    spawnflags "1"
+    script_gameobjectname "dd_bombzone"
+    classname "script_brushmodel"
+    origin "-1647 1108 20"
+    model "*18"
+}
+{
+    script_label "_a"
+    script_bombmode_original "1"
+    target "pf1700_auto1"
+    script_gameobjectname "dd_bombzone"
+    targetname "dd_bombzone"
+    classname "trigger_use_touch"
+    origin "-34 1762 0"
+    model "?19"
+}
+{
+    targetname "pf1700_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "-34 1762 0"
+    model "?20"
+}
+{
+    gndlt "55595ec001"
+    ltorigin "-37.4056 1767.56 9.55589"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf1700_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-34 1762 -7.9"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    targetname "dd_bombzone_clip_a"
+    spawnflags "1"
+    script_gameobjectname "dd_bombzone"
+    classname "script_brushmodel"
+    origin "-33 1764 20"
+    model "*19"
+}
+{
+    gndlt "55595ec001"
+    ltorigin "-33.8788 1762.58 20.1227"
+    classname "script_model"
+    model "com_bomb_objective"
+    angles "0 270 0"
+    origin "-34 1764 -9.9"
+    script_exploder "pf1700_1"
+    script_gameobjectname "dd_bombzone"
+    spawnflags "4"
+    targetname "pf1700_auto1"
+    target "pf1700_auto2"
+}
+{
+    origin "-1280 2800 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-716 -442 24"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 90 0"
+}
+{
+    origin "-200 -584 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-1536 -400 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    targetname "remote_uav_range"
+    classname "trigger_multiple"
+    origin "-512 944 2080"
+    model "?21"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-1021 -406.8 8"
+    angles "0 180 0"
+}
+{
+    angles "0 0 0"
+    targetname "flag_descriptor"
+    origin "-1555 2430 234"
+    script_linkto "2"
+    script_linkname "1"
+    classname "script_origin"
+}
+{
+    angles "0 180 0"
+    targetname "flag_descriptor"
+    origin "-280 -270 102"
+    script_linkto "2"
+    script_linkname "3"
+    classname "script_origin"
+}
+{
+    angles "0 180 0"
+    targetname "flag_descriptor"
+    origin "-366 1290 102"
+    script_linkto "1 3"
+    script_linkname "2"
+    classname "script_origin"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-2108 2300 160"
+    angles "0 0 0"
+    classname "mp_dom_spawn"
+}
+{
+    angles "0 180 0"
+    origin "832 -304 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 155 0"
+    origin "807.8 -423 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-597.1 2001.3 149"
+    angles "0 0 0"
+    classname "mp_dom_spawn"
+}
+{
+    angles "0 270 0"
+    _color "0.501961 0.501961 1.000000"
+    origin "-1420 1872 16"
+    classname "mp_dom_spawn"
+}
+{
+    angles "0 155 0"
+    origin "780.7 -481 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "768 -208 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "768 -272 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 155 0"
+    origin "763.3 -367 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 155 0"
+    origin "736.2 -425 32"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 270 0"
+    origin "-1480 2736 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1424 2736 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1324 2800 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1388 2800 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1292 2736 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1452 2800 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1500 2800 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    origin "-1020.6 -405.5 12"
+    angles "0 126 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-1015.1 -406.4 15"
+    angles "0 126 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "808 -102 32"
+    angles "0 180 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "810 -98 40"
+    angles "0 180 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "602 1068 11"
+    angles "0 180 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "600 1071 17"
+    angles "0 180 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "200 2432 32"
+    angles "0 256.5 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "200 2432 40"
+    angles "0 256.5 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-2070 2482 158"
+    angles "0 270 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-2112 2304 168"
+    angles "0 0 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-2298 1227 18"
+    angles "0 0 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-2290 1225 18"
+    angles "0 0 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-1229.5 2666.7 152"
+    angles "0 225 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-1231.3 2679 155"
+    angles "0 225 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-1782.9 -386.6 32"
+    angles "0 70 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-1780.5 -391.7 40"
+    angles "0 70 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-1864.7 1675.4 32"
+    angles "0 330 0"
+    classname "mp_dm_spawn"
+}
+{
+    angles "0 0 0"
+    origin "-2154 1870 182"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-53 -571.5 32"
+    angles "0 90 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-1778.1 -405.4 32"
+    angles "0 70 0"
+    classname "mp_dom_spawn"
+}
+{
+    angles "0 270 0"
+    origin "-1352 2736 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-1276 2800 160"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    origin "-735 727 28"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-735 695 20"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-735.5 553 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-735.5 585 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-989 553 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-989 585 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-989 727 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-989 695 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1360 784 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1360 752 28"
+}
+{
+    origin "-1584 528 31.1"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1620 528 30.7"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1641 -20 28"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1673 -20 21.1"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1815 -20 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1783 -20 21.1"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1527 1885 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1495 1885 28"
+}
+{
+    origin "-1815 221.5 28"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1783 221.5 20"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-976 -347 28"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-976 -315 21.1"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-976 -173 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-976 -205 21"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-748 -173 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-748 -205 21.6"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-748 -347 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-748 -315 21.1"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1611.5 -395 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1579.5 -395 28"
+}
+{
+    origin "-552 543 28"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-584 543 20"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-553 291 28"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    origin "-585 291 20"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    origin "-727 291 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "-695 291 20"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    origin "-792 118 32"
+    angles "0 0 0"
+    classname "node_cover_right"
+}
+{
+    origin "-792 72.5 32"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1104 302 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1104 334 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1358.5 274 32"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1326.5 274 32"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1348 142 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1348 176.5 32"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1162 64 32.3"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1162 96 32.3"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1520 475 32"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1488 475 32"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1146 -18 174"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1094 -18 174"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1042 -19.5 174"
+}
+{
+    classname "node_cover_crouch_window"
+    angles "0 90 0"
+    origin "-1268 488 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-910 488 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-864 488 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-818 488 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-818 528 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-864 528 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-910 528 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-910 1648 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-864 1648 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-818 1648 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-818 1692 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-864 1692 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-910 1692 164"
+}
+{
+    origin "-1046 1870 164"
+    angles "0 0 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1046 1824 164"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1046 1778 164"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1000 1778 164"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1000 1824 164"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1000 1870 164"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1710 820.5 20"
+    angles "0 85.7 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1742 822.5 20"
+    angles "0 85.7 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1707.5 852.5 20"
+    angles "0 175.7 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1728 1012.5 20"
+    angles "0 265.7 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1698 978 20"
+    angles "0 175.7 0"
+    classname "node_cover_right"
+}
+{
+    origin "-434 1942 164"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1696 1010 20"
+    angles "0 175.7 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1804 985.5 20"
+    angles "0 355.7 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1769.5 1015.5 20"
+    angles "0 265.7 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1801.5 1017.5 20"
+    angles "0 265.7 0"
+    classname "node_pathnode"
+}
+{
+    origin "-434 1894 164"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    origin "-466 1942 164"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-466 1894 164"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-408 2376 164"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-408 2344 164"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-612 2292 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-612 2324 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-810 2412 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-810 2444 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1080 2428 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1080 2460 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1136 2424 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1128 2292 168"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 90 0"
+    origin "-1755.5 2495 158"
+}
+{
+    origin "-1128 2324 168"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1096 2292 168"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1096 2324 168"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    origin "-874 2292 168"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-874 2324 168"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1168 2460 168"
+}
+{
+    origin "-1168 2428 168"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1783.5 825.5 20"
+    angles "0 85.7 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1813.5 860 27.5"
+    angles "0 355.7 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1815.5 828 24.5"
+    angles "0 355.7 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1474 1126 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1442 1126 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1474 866 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1506 866 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1442 1010 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1442 1042 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1645 1670 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-1677 1670 28"
+}
+{
+    origin "-1488 528 30.2"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1520 528 29.5"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1360 1424 28"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1360 1392 28"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1328 1424 28"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-746 1616 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-746 1584 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1768.5 1800 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-1768.5 1768 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1614 1848 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1614 1880 164"
+}
+{
+    origin "-746 1456 28"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    origin "-746 1488 28"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-992 1456 28"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-992 1488 20"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-992 1617 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-992 1585 20"
+}
+{
+    origin "-1583.5 1439 20"
+    angles "0 15 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1592 1470.5 20"
+    angles "0 15 0"
+    classname "node_cover_right"
+}
+{
+    script_linkname "pf1701_21"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-2010 2904 1133.5"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    script_linkto "pf1701_22"
+    angles "0 315 0"
+}
+{
+    script_linkto "pf1701_27"
+    angles "0 0 0"
+    script_linkname "pf1701_19"
+    script_noteworthy "so_chopper_boss_path_struct"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "-472.5 2550 1160"
+    radius "256"
+    classname "script_struct_heli"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1378 1707 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1346 1707 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1378 1739 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-1641 221.5 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1673 221.5 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1616 1885 28"
+}
+{
+    origin "-1134 1710 28"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1166 1710 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1134 1742 28"
+}
+{
+    origin "-1548 1448.5 20"
+    angles "0 105 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1350.5 1535.5 20"
+    angles "0 195.9 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1046 1938 28"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-1014 1938 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-1046 1906 28"
+}
+{
+    origin "-774 2030 28"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-806 2030 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-774 2062 28"
+}
+{
+    origin "-682 2090 28"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-650 2090 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-682 2058 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 281.7 0"
+    origin "-164 1958 28"
+}
+{
+    spawnflags "4"
+    origin "-132.5 1964.5 28"
+    angles "0 282 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_pathnode"
+    angles "0 83.5 0"
+    origin "43.7 1856.4 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 264.2 0"
+    origin "54 1948 28"
+}
+{
+    spawnflags "4"
+    origin "11.3 1859.6 28"
+    angles "0 83.8 0"
+    classname "node_cover_right"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 263.7 0"
+    origin "21.5 1951.5 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 101.4 0"
+    origin "-145.3 1867.5 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 101.3 0"
+    origin "-113.7 1873.5 28"
+}
+{
+    origin "-62.2 1867.1 28"
+    angles "0 65.5 0"
+    classname "node_cover_stand"
+}
+{
+    origin "-37.8 1957.4 20"
+    angles "0 245.5 0"
+    classname "node_cover_stand"
+}
+{
+    origin "-1372.5 1495.5 20"
+    angles "0 105.9 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1341.5 1504.5 20"
+    angles "0 105.9 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 242.5 0"
+    origin "-45 1647 20"
+}
+{
+    origin "-80 1665 20"
+    angles "0 242.5 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_left"
+    angles "0 241.7 0"
+    origin "-13 1626 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 241.7 0"
+    origin "15 1610 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 151.6 0"
+    origin "0 1582 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 151.7 0"
+    origin "-72 1446 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 151.7 0"
+    origin "-88 1418 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 61.6 0"
+    origin "-116 1433 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 62.2 0"
+    origin "-155 1454 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 62.4 0"
+    origin "-183 1469 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 332.5 0"
+    origin "-168 1498 20"
+}
+{
+    origin "-1402.5 1601 28"
+    angles "0 285.9 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1362.5 1579 20"
+    angles "0 195.9 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1371.5 1610 28"
+    angles "0 195.9 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1603 1514 20"
+    angles "0 15.2 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1576.5 1554.5 20"
+    angles "0 285.2 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1611.5 1545 20"
+    angles "0 285.2 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-165.5 914 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 1.00179e-005 0"
+    origin "-197.5 914 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1648 1885 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1839.5 280 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1839.5 312 25.5"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1834 458 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-2168 426 26"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1866 426 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-1620 496 30.5"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1834 426 26"
+}
+{
+    classname "node_pathnode"
+    origin "342 770 144"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-2200 426 26"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "908 -336 28"
+}
+{
+    classname "node_pathnode"
+    origin "72 -350 20"
+}
+{
+    origin "-1891 986 28"
+    angles "0 0 0"
+    classname "node_cover_stand"
+}
+{
+    origin "-1988 1004 28"
+    angles "0 90 0"
+    classname "node_cover_stand"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "948 -336 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1673 13 21.1"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-658 -348 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-658 -316 21"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-624 -394 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-658 -394 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-368 -468 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-400 -468 28"
+}
+{
+    origin "-2039 1118 36"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "-2007 1118 36"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1954 1178 28"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1997.5 1178 28"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    origin "-2038 1178 28"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    origin "-2167.5 1269 28"
+    angles "0 0 0"
+    classname "node_cover_right"
+}
+{
+    origin "-2167.5 1237 28"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1837 1752 164"
+    angles "0 270 0"
+    classname "node_concealment_crouch"
+}
+{
+    origin "-2072.5 1574 164"
+    angles "0 0 0"
+    classname "node_concealment_crouch"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-1474 1302 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1506 1302 28"
+}
+{
+    origin "-1667 -348 28"
+    angles "0 0 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1667 -316 20.2"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-557 1840.5 165"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-557 1808.5 167.8"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-722.5 1744 170.3"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    origin "-722.5 1776 167.1"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-663.5 1696 169.2"
+    angles "0 270 0"
+    classname "node_cover_right"
+}
+{
+    origin "-695.5 1696 169.2"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "538 1378 52"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "538 1410 52"
+}
+{
+    origin "-95 1635 20"
+    angles "0 331.6 0"
+    classname "node_cover_left"
+}
+{
+    classname "node_cover_right"
+    angles "0 290.5 0"
+    origin "106 1485 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 289.7 0"
+    origin "139.5 1497 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 289.7 0"
+    origin "170 1508 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 199.6 0"
+    origin "181.5 1475.5 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 199.7 0"
+    origin "226 1353 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 199.7 0"
+    origin "240.5 1314 28"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 132.4 0"
+    origin "177 1211.5 20"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 214.8 0"
+    origin "168 1148 20"
+}
+{
+    angles "0 270 0"
+    classname "node_cover_stand"
+    origin "405.5 1307 28"
+}
+{
+    angles "0 180 0"
+    classname "node_cover_stand"
+    origin "438 1257 28"
+}
+{
+    origin "82.5 1438.5 20"
+    angles "0 19.6 0"
+    classname "node_cover_left"
+}
+{
+    origin "71 1470.5 20"
+    angles "0 290.5 0"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    classname "node_cover_stand"
+    origin "326 1306 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-234 1642 28"
+}
+{
+    origin "432 1047 28"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    origin "464 1047 28"
+    angles "0 270 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "560 1046 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "592 1046 28"
+}
+{
+    origin "432 812 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "464 812 20"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "560 812 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "592 812 28"
+}
+{
+    origin "428.5 574 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "460.5 574 28"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "450 718.5 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "418 718.5 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "398 300 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "398 332 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "615 -70 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "648 -70 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "615 -38 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "366 300 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "90 124 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "58 124 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "90 284 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "58 284 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "46.5 -94 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "46.5 -62 28"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 312.4 0"
+    origin "142 1251 20"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 34.8 0"
+    origin "125 1117 20"
+}
+{
+    classname "node_pathnode"
+    origin "22 1186 23.7"
+}
+{
+    angles "0 22.5 0"
+    classname "node_cover_stand"
+    origin "126.5 1315.5 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 359.7 0"
+    origin "-491.3 1495.5 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 359.7 0"
+    origin "-491.6 1527.6 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-502 -98 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 179.7 0"
+    origin "-277 1526.8 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 89.7 0"
+    origin "-309.4 1494.5 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 89.7 0"
+    origin "-277.3 1494.7 20"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 269.7 0"
+    origin "-309.3 1600.8 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 179.7 0"
+    origin "-276.9 1568.4 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 179.7 0"
+    origin "-277.2 1600.5 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 359.7 0"
+    origin "-491.5 1569.2 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 269.7 0"
+    origin "-459.1 1601.5 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 269.7 0"
+    origin "-491.2 1601.3 28"
+}
+{
+    origin "-317.8 827.4 20"
+    angles "0 273.7 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-280.8 829.9 20"
+    angles "0 273.7 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_pathnode"
+    angles "0 39.1 0"
+    origin "-351 1020 20"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 93.7 0"
+    origin "-272 607 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 39 0"
+    origin "-372 1046 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 3.7 0"
+    origin "-304 605 20"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 183.7 0"
+    origin "-197 645 20"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 93.7 0"
+    origin "-227 610 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 93.7 0"
+    origin "-194 612 28"
+}
+{
+    spawnflags "4"
+    origin "-244.3 832.7 20"
+    angles "0 273.7 0"
+    classname "node_cover_left"
+}
+{
+    spawnflags "4"
+    origin "-204.4 798.1 20"
+    angles "0 183.7 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_pathnode"
+    angles "0 183.7 0"
+    origin "-209.3 833.7 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 49.6 0"
+    origin "-496 1162.5 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 49.5 0"
+    origin "-471 1141 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 239.1 0"
+    origin "-444.3 1227.6 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 239.1 0"
+    origin "-411.8 1208.1 20"
+}
+{
+    origin "-309 1043.7 20"
+    angles "0 191.7 0"
+    classname "node_pathnode"
+}
+{
+    origin "-315 1075.8 20"
+    angles "0 191.6 0"
+    classname "node_cover_left"
+}
+{
+    origin "-418 853 20"
+    angles "0 274.5 0"
+    classname "node_cover_stand"
+}
+{
+    origin "-415 785.5 20"
+    angles "0 94.5 0"
+    classname "node_cover_stand"
+}
+{
+    classname "node_cover_stand"
+    angles "0 285.5 0"
+    origin "-590 857 20"
+}
+{
+    origin "-573.5 792 20"
+    angles "0 105.5 0"
+    classname "node_cover_stand"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-538 -98 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-781 -205 21.1"
+}
+{
+    classname "node_pathnode"
+    angles "0 50.7 0"
+    origin "-658.6 1100.8 20"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 50.7 0"
+    origin "-686.7 1123.7 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-538 -66 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 231.7 0"
+    origin "-536.5 1289.5 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 141.7 0"
+    origin "-531 1239 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 141.7 0"
+    origin "-508.4 1267.5 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 315.5 0"
+    origin "-616 1316 28"
+}
+{
+    origin "-2073 1411 164"
+    angles "0 0 0"
+    classname "node_concealment_crouch"
+}
+{
+    classname "node_pathnode"
+    angles "0 315.5 0"
+    origin "-593 1339 28"
+}
+{
+    origin "-1568 1752 164"
+    angles "0 270 0"
+    classname "node_concealment_crouch"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 320.7 0"
+    origin "-716.7 1204.5 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 320.7 0"
+    origin "-742.7 1173.4 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-304 -436 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-304 -468 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-459.5 -350 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-459.5 -318 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-154 -436 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-154 -468 28"
+}
+{
+    classname "node_cover_prone"
+    angles "0 72 0"
+    origin "136.5 -322 20"
+}
+{
+    classname "node_cover_stand"
+    angles "0 82 0"
+    origin "114.5 -540 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-58 -436 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-58 -468 28"
+}
+{
+    origin "223.494 -547.754 24"
+    targetname "pf1702_auto2108"
+    angles "0 359.1 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 359.1 0"
+    animscript "wall_over_40"
+    origin "77.0723 -573.457 24"
+    target "pf1702_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf1702_auto2108"
+    origin "175.5 -547 24"
+    classname "script_origin"
+    angles "0 359.1 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "179 -549 4"
+    model "?22"
+}
+{
+    animation "traverse40"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "175.5 -547 -16"
+    angles "0 359.1 0"
+    classname "script_struct"
+}
+{
+    origin "83.671 -564.618 23"
+    targetname "pf1703_auto2108"
+    angles "0 318 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 318 0"
+    animscript "wall_over_40"
+    origin "-43.5639 -487.733 23"
+    target "pf1703_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf1703_auto2108"
+    origin "48 -532.5 23"
+    classname "script_origin"
+    angles "0 318 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "50 -537 3"
+    model "?23"
+}
+{
+    animation "traverse40"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "48 -532.5 -17"
+    angles "0 318 0"
+    classname "script_struct"
+}
+{
+    classname "node_pathnode"
+    origin "111 -619.5 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "134.5 -226 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "134.5 -194 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "102.5 -194 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-189.5 -198 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-221.5 -198 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-221.5 -230 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-220.5 -314.5 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-220.5 -346.5 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-188.5 -346.5 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "544 -604 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "544 -567 28.3"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "90 28 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "58 28 28"
+}
+{
+    origin "-8 -98.5 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+    spawnflags "4"
+}
+{
+    classname "node_cover_right"
+    angles "0 329.5 0"
+    origin "311.5 -73.5 22.6"
+}
+{
+    origin "292 -108 20"
+    angles "0 330.8 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_left"
+    angles "0 328.7 0"
+    origin "330 -42 23.3"
+}
+{
+    classname "node_pathnode"
+    angles "0 328.7 0"
+    origin "347 -13.5 23.9"
+}
+{
+    classname "node_cover_right"
+    angles "0 239.7 0"
+    origin "380.5 -33.5 22.6"
+}
+{
+    classname "node_cover_left"
+    angles "0 240 0"
+    origin "498.5 -101.5 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 240 0"
+    origin "536 -123.5 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 149.9 0"
+    origin "518.5 -155 20"
+}
+{
+    classname "node_cover_left"
+    angles "0 150.5 0"
+    origin "499 -187 20"
+}
+{
+    classname "node_pathnode"
+    angles "0 150.7 0"
+    origin "481.5 -217 20"
+}
+{
+    classname "node_cover_right"
+    angles "0 60.8 0"
+    origin "446 -197 20"
+}
+{
+    origin "323 -126 20"
+    angles "0 59.9 0"
+    classname "node_cover_left"
+}
+{
+    classname "node_cover_crouch_window"
+    angles "0 0 0"
+    origin "-794 -37 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-794 -148 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-794 -116 164"
+}
+{
+    classname "node_cover_crouch_window"
+    angles "0 0 0"
+    origin "-794 -262.5 164"
+}
+{
+    origin "-795 -480 164"
+    angles "0 0 0"
+    classname "node_cover_right"
+}
+{
+    origin "-795 -518 164"
+    angles "0 0 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-400 -404 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-400 -372 28"
+}
+{
+    origin "-748 26 32"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    origin "-748 72.5 32"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-748 118 32"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-102 951 190"
+    angles "0 180 0"
+    classname "node_cover_crouch_window"
+}
+{
+    origin "-102 839 190"
+    angles "0 180 0"
+    classname "node_cover_crouch_window"
+}
+{
+    origin "-478 148 28"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-478 116 28"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-542 148 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-542 116 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-542 -12 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-542 20 28"
+}
+{
+    origin "-56 998 190"
+    angles "0 90 0"
+    classname "node_cover_crouch_window"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-120 -44 32"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-170 -44 32"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-68 -101 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-120 -101 32"
+}
+{
+    origin "-173 -102 32"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1520 1849 164"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1519 1882 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1674 1801 166.4"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-1674 1769 165.3"
+}
+{
+    origin "-1442 1358 28"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1442 1390 28"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "-1644 1592 20"
+    angles "0 180 0"
+    classname "node_pathnode"
+}
+{
+    origin "-1644 1624 28"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1328 752 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1854 1877.5 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 90 0"
+    origin "-1822 1877.5 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1946 1877.5 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1978 1877.5 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1980 2256.5 158"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-2012 2256.5 158"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1820.5 2256.5 158"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-1788.5 2256.5 158"
+}
+{
+    classname "node_pathnode"
+    angles "0 15 0"
+    origin "-1967 2393 160"
+}
+{
+    classname "node_cover_left"
+    angles "0 15 0"
+    origin "-1955 2353 160"
+}
+{
+    classname "node_pathnode"
+    angles "0 103.3 0"
+    origin "-1734.4 2339.2 158"
+}
+{
+    classname "node_cover_right"
+    angles "0 103.3 0"
+    origin "-1776.6 2328.8 158"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-1821.5 2224 158"
+}
+{
+    classname "node_pathnode"
+    angles "0 52 0"
+    origin "-1551 2352 158"
+}
+{
+    classname "node_cover_left"
+    angles "0 52 0"
+    origin "-1525 2332 158"
+}
+{
+    classname "node_pathnode"
+    angles "0 232.8 0"
+    origin "-1484 2437 158"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 232.8 0"
+    origin "-1458 2417 158"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 144 0"
+    origin "-1656 2778 142"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 168 0"
+    origin "-1498.8 2835.6 142"
+}
+{
+    classname "node_pathnode"
+    angles "0 74.4 0"
+    origin "-1509.2 2799.9 142.4"
+}
+{
+    angles "0 180 0"
+    classname "node_pathnode"
+    origin "-1804 2647 160.5"
+}
+{
+    angles "0 180 0"
+    origin "-1804 2679 157.8"
+    classname "node_cover_left"
+}
+{
+    classname "node_pathnode"
+    angles "0 50.4 0"
+    origin "-1680 2749.5 142.4"
+}
+{
+    classname "node_cover_crouch_window"
+    angles "0 180 0"
+    origin "-930 -262 164"
+}
+{
+    script_linkto "pf1701_23"
+    script_linkname "pf1701_22"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-2399.5 2392 852.5"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 1.00179e-005 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_20 pf1701_21 pf1701_23"
+    angles "0 270 0"
+    script_noteworthy "so_chopper_boss_path_struct"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "-1497 3242.5 896"
+    radius "256"
+    classname "script_struct_heli"
+}
+{
+    script_linkto "pf1701_37"
+    script_linkname "pf1701_20"
+    angles "0 210 0"
+    script_noteworthy "so_chopper_boss_path_struct"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "-976 3184 980.5"
+    radius "256"
+    classname "script_struct_heli"
+}
+{
+    script_linkto "pf1701_22"
+    targetname "chopper_boss_path_start"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-5776 3440 1608"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 330 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_24"
+    script_linkname "pf1701_23"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1531.5 2513.5 776"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 315 0"
+}
+{
+    script_linkname "pf1701_24"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1944 2080 871"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 300 0"
+    script_linkto "pf1701_1 pf1701_2 pf1701_3 pf1701_25 pf1701_26"
+}
+{
+    _id_164F "pickupNode"
+    script_linkname "pf1701_25"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-2136 1488 1016"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 0 0"
+    script_linkto "pf1701_4 pf1701_5 pf1701_6 pf1701_22"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_25 pf1701_27"
+    script_linkname "pf1701_26"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1688 1568 639"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 300 0"
+}
+{
+    script_linkto "pf1701_28"
+    script_linkname "pf1701_27"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-887 1597 840"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 1.00179e-005 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_31"
+    script_linkname "pf1701_28"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-352 1336 600"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 240 0"
+}
+{
+    script_linkname "pf1701_31"
+    script_linkto "pf1701_29 pf1701_35"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-624.5 646.5 956.5"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 240 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_7 pf1701_35"
+    script_linkname "pf1701_29"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-616 -288 872"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 150 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_30 pf1701_29 pf1701_35"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1712 -232 808"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 60 0"
+}
+{
+    script_linkto "pf1701_25 pf1701_26 pf1701_31 pf1701_35"
+    script_linkname "pf1701_30"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1769 629.5 808"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 90 0"
+}
+{
+    script_linkto "pf1701_8"
+    script_linkname "pf1701_7"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-72 -320 488"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 1.00179e-005 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_32"
+    script_linkname "pf1701_8"
+    classname "script_struct_heli"
+    radius "256"
+    origin "455.5 -221 616"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 90 0"
+}
+{
+    script_linkto "pf1701_31 pf1701_33"
+    script_linkname "pf1701_32"
+    classname "script_struct_heli"
+    radius "256"
+    origin "527 667 1080"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 90 0"
+}
+{
+    script_linkname "pf1701_33"
+    script_linkto "pf1701_10 pf1701_34 pf1701_36"
+    classname "script_struct_heli"
+    radius "256"
+    origin "496 1344 1080"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 180 0"
+}
+{
+    script_linkname "pf1701_34"
+    script_linkto "pf1701_11 pf1701_19 pf1701_9"
+    classname "script_struct_heli"
+    radius "256"
+    origin "334 2590 1880"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 210 0"
+}
+{
+    script_linkname "pf1701_35"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1216 248 1032"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 60 0"
+}
+{
+    _id_164F "pickupNode"
+    script_linkto "pf1701_28"
+    script_linkname "pf1701_36"
+    classname "script_struct_heli"
+    radius "256"
+    origin "32 1352 600"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 210 0"
+}
+{
+    script_linkto "pf1701_19 pf1701_23"
+    script_linkname "pf1701_37"
+    angles "0 210 0"
+    script_noteworthy "so_chopper_boss_path_struct"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "-1040 2720 1064"
+    radius "256"
+    classname "script_struct_heli"
+}
+{
+    _id_164F "pickupNode"
+    script_linkname "pf1701_9"
+    script_linkto "pf1701_12 pf1701_13 pf1701_36 pf1701_19"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-48 2112 704"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 270 0"
+}
+{
+    script_linkto "pf1701_29"
+    targetname "chopper_boss_path_start"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-224 -5392 1608"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 90 0"
+}
+{
+    script_linkto "pf1701_33"
+    targetname "chopper_boss_path_start"
+    classname "script_struct_heli"
+    radius "256"
+    origin "5344 1808 1608"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 180 0"
+}
+{
+    script_linkto "pf1701_19"
+    targetname "chopper_boss_path_start"
+    classname "script_struct_heli"
+    radius "256"
+    origin "2064 8576 1608"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_noteworthy "so_chopper_boss_path_struct"
+    angles "0 240 0"
+}
+{
+    spawnflags "4"
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-234 1674 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-266 1642 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90.1 0"
+    origin "-1676 2494 158"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 90.1 0"
+    origin "-1708 2494 158"
+}
+{
+    spawnflags "0"
+    classname "node_pathnode"
+    angles "0 90.1 0"
+    origin "-1804 2494 158"
+}
+{
+    spawnflags "0"
+    classname "node_cover_right"
+    angles "0 90.1 0"
+    origin "-1836 2494 158"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1946 1974.5 164"
+}
+{
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-1978 1974.5 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-1854 1974.5 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-1822 1974.5 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1854.5 1910 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-506 20 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "196 300 28"
+}
+{
+    spawnflags "4"
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "164 300 28"
+}
+{
+    origin "464 1015 28"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    classname "node_cover_stand"
+    origin "332.5 1225 20"
+}
+{
+    angles "0 90 0"
+    classname "node_cover_stand"
+    origin "405 1211 20"
+}
+{
+    angles "0 199.6 0"
+    classname "node_cover_stand"
+    origin "202 1419 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "597 1314 52"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "636 1314 52"
+}
+{
+    angles "0 180 0"
+    classname "node_pathnode"
+    origin "-366 2090 28"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "-366 2058 28.3"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    classname "node_pathnode"
+    origin "-366 2182 28"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "-366 2214 28"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    classname "node_pathnode"
+    origin "-1676.5 2551.5 158"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    classname "node_cover_right"
+    origin "-1708.5 2551.5 158"
+}
+{
+    classname "node_cover_left"
+    angles "0 322 0"
+    origin "-1505 2412.5 158"
+}
+{
+    angles "0 270 0"
+    classname "node_pathnode"
+    origin "-1612 2280 158"
+}
+{
+    angles "0 270 0"
+    classname "node_cover_left"
+    origin "-1644 2280 158"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1506 786 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1506 754 27.6"
+}
+{
+    origin "-2016 587 36"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "-1984 587 36"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-2208.5 757.5 36"
+    angles "0 44.9 0"
+    classname "node_cover_left"
+}
+{
+    origin "-2231.5 780.5 36"
+    angles "0 44.9 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-2200 458 26"
+}
+{
+    classname "node_cover_left"
+    angles "0 0 0"
+    origin "-1931.5 281 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1931.5 313 28"
+}
+{
+    classname "node_cover_left"
+    angles "0 180 0"
+    origin "-1442 898 28"
+}
+{
+    classname "node_pathnode"
+    angles "0 180 0"
+    origin "-1442 866 28"
+}
+{
+    origin "-2064 1260 28"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    origin "-2032 1260 28"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-1752 1705 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-1790.5 1705 28"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1358.5 306 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-1192 274.5 32"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-1192 306.5 32"
+}
+{
+    classname "node_pathnode"
+    angles "0 0 0"
+    origin "-990 156 32"
+}
+{
+    classname "node_cover_right"
+    angles "0 0 0"
+    origin "-990 188 32"
+}
+{
+    spawnflags "4"
+    origin "-589 1808.5 166.9"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    classname "node_pathnode"
+    origin "576 608 21.5"
+}
+{
+    classname "node_pathnode"
+    origin "432 432 21.5"
+}
+{
+    classname "node_pathnode"
+    origin "576 384 21.5"
+}
+{
+    classname "node_pathnode"
+    origin "576 160 21.5"
+}
+{
+    classname "node_pathnode"
+    origin "448 96 21.5"
+}
+{
+    classname "node_pathnode"
+    origin "256 240 28"
+}
+{
+    classname "node_pathnode"
+    origin "224 64 28"
+}
+{
+    classname "node_pathnode"
+    origin "320 -336 28"
+}
+{
+    classname "node_pathnode"
+    origin "320 -544 28"
+}
+{
+    classname "node_pathnode"
+    origin "464 -416 28"
+}
+{
+    classname "node_pathnode"
+    origin "704 -592 28"
+}
+{
+    classname "node_pathnode"
+    origin "800 -544 28"
+}
+{
+    classname "node_pathnode"
+    origin "1096 -376 28"
+}
+{
+    classname "node_pathnode"
+    origin "848 -224 28"
+}
+{
+    classname "node_pathnode"
+    origin "864 -96 28"
+}
+{
+    classname "node_pathnode"
+    origin "704 -192 28"
+}
+{
+    classname "node_pathnode"
+    origin "688 -368 28"
+}
+{
+    classname "node_pathnode"
+    origin "912 -432 32"
+}
+{
+    classname "node_pathnode"
+    origin "242 478 28"
+}
+{
+    classname "node_pathnode"
+    origin "192 576 28"
+}
+{
+    classname "node_pathnode"
+    origin "176 752 28"
+}
+{
+    classname "node_pathnode"
+    origin "338 594 36"
+}
+{
+    classname "node_pathnode"
+    origin "346 718 110.7"
+}
+{
+    classname "node_pathnode"
+    origin "284 768 144"
+}
+{
+    classname "node_pathnode"
+    origin "184 768 196"
+}
+{
+    classname "node_pathnode"
+    origin "176 616 196"
+}
+{
+    classname "node_pathnode"
+    origin "136 464 196"
+}
+{
+    classname "node_pathnode"
+    origin "272 456 196"
+}
+{
+    classname "node_pathnode"
+    origin "-72 464 196"
+}
+{
+    classname "node_pathnode"
+    origin "-240 464 108"
+}
+{
+    classname "node_pathnode"
+    origin "-240 328 48"
+}
+{
+    classname "node_pathnode"
+    origin "-128 224 28"
+}
+{
+    classname "node_pathnode"
+    origin "-120 392 28"
+}
+{
+    classname "node_pathnode"
+    origin "-648 184 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-224 112 28"
+}
+{
+    classname "node_pathnode"
+    origin "-640 -168 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-432 -224 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-296 -120 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-856 -256 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1168 -168 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1168 -304 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1168 -432 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1360 -168 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1360 -304 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1360 -376.5 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1560 -200 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1800 -160 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1808 -424 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1536 -64 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1400 -64 109.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1304 -64 164"
+}
+{
+    classname "node_pathnode"
+    origin "-930 -70.5 164"
+}
+{
+    classname "node_pathnode"
+    origin "-912 -576 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 180 0"
+    origin "-930 -129.5 164"
+}
+{
+    classname "node_pathnode"
+    origin "-704 -560 164"
+}
+{
+    classname "node_pathnode"
+    origin "-512 -560 36"
+}
+{
+    classname "node_pathnode"
+    origin "-256 -576 36"
+}
+{
+    classname "node_pathnode"
+    origin "-1720 376 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1800 664 22"
+}
+{
+    classname "node_pathnode"
+    origin "-2184 296 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1560 648 22"
+}
+{
+    classname "node_pathnode"
+    origin "-1352 584 22"
+}
+{
+    classname "node_pathnode"
+    origin "-1160 584 22"
+}
+{
+    classname "node_pathnode"
+    origin "-1160 712 22"
+}
+{
+    classname "node_pathnode"
+    origin "-856 632 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-568 680 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-376 712 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-520 1000 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-104 1128 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-104 1304 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-280 1368 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "-616 1560 23.7"
+}
+{
+    classname "node_pathnode"
+    origin "320 1536 52"
+}
+{
+    classname "node_pathnode"
+    origin "496 1536 52"
+}
+{
+    classname "node_pathnode"
+    origin "656 1576 52"
+}
+{
+    classname "node_pathnode"
+    origin "616 1456 52"
+}
+{
+    classname "node_pathnode"
+    origin "592 1224 28"
+}
+{
+    classname "node_pathnode"
+    origin "368 1128 28"
+}
+{
+    classname "node_pathnode"
+    origin "512 920 28"
+}
+{
+    classname "node_pathnode"
+    origin "208 1056 28"
+}
+{
+    classname "node_pathnode"
+    origin "136 1728 28"
+}
+{
+    classname "node_pathnode"
+    origin "-184 1768 20"
+}
+{
+    classname "node_pathnode"
+    origin "180 2068 28"
+}
+{
+    classname "node_pathnode"
+    origin "320 2192 20"
+}
+{
+    classname "node_pathnode"
+    origin "256 2344 20"
+}
+{
+    classname "node_pathnode"
+    origin "176 2456 20"
+}
+{
+    classname "node_pathnode"
+    origin "32 2408 20"
+}
+{
+    classname "node_pathnode"
+    origin "-160 2424 20"
+}
+{
+    classname "node_pathnode"
+    origin "96 2272 20"
+}
+{
+    classname "node_pathnode"
+    origin "-56 2192 20"
+}
+{
+    classname "node_pathnode"
+    origin "-248 2144 20"
+}
+{
+    classname "node_pathnode"
+    origin "-350 1970 28"
+}
+{
+    classname "node_pathnode"
+    origin "-350 2322 28"
+}
+{
+    classname "node_pathnode"
+    origin "-158 2322 28"
+}
+{
+    classname "node_pathnode"
+    origin "-512 2152 20"
+}
+{
+    classname "node_pathnode"
+    origin "-920 1984 26"
+}
+{
+    classname "node_pathnode"
+    origin "-1128 1592 26"
+}
+{
+    classname "node_pathnode"
+    origin "-1128 1464 26"
+}
+{
+    classname "node_pathnode"
+    origin "-1272 1648 26"
+}
+{
+    classname "node_pathnode"
+    origin "-1528 1704 26"
+}
+{
+    classname "node_pathnode"
+    origin "-392 2424 164"
+}
+{
+    classname "node_pathnode"
+    origin "-280 2424 94.3"
+}
+{
+    classname "node_pathnode"
+    origin "-687 2420 164"
+}
+{
+    classname "node_pathnode"
+    origin "-504 2160 164"
+}
+{
+    classname "node_pathnode"
+    origin "-600 1960 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1296 2552 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1296 2352 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1200 2696 142"
+}
+{
+    classname "node_pathnode"
+    origin "-1216 2816 142"
+}
+{
+    classname "node_pathnode"
+    origin "-1368 2696 142"
+}
+{
+    classname "node_pathnode"
+    origin "-1376 2848 144"
+}
+{
+    classname "node_pathnode"
+    origin "-1512 2696 145.4"
+}
+{
+    classname "node_pathnode"
+    origin "-1672 2656 158.1"
+}
+{
+    classname "node_pathnode"
+    origin "-1928 2600 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2152 2600 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2309.5 2624.5 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2152 2480 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1886 2456 166"
+}
+{
+    classname "node_pathnode"
+    origin "-1904 2104 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2160 1864 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1984 1736 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2168 1336 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2168 1496 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2168 1656 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2072 1760 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1984 1536 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1960 1376 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1900 1498 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1896 1704 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1781 1395 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1878 1202 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1616 1232 20"
+}
+{
+    classname "node_pathnode"
+    origin "-1560 1024 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-648 48 22.3"
+}
+{
+    classname "node_pathnode"
+    origin "-720 920 28"
+}
+{
+    classname "node_pathnode"
+    origin "-640 408 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1712 1128 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1568 2056 26"
+}
+{
+    classname "node_pathnode"
+    origin "-1560 2200 120.7"
+}
+{
+    classname "node_pathnode"
+    origin "-858 1435 164"
+}
+{
+    classname "node_pathnode"
+    origin "-899 1207 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-832 1103 164"
+}
+{
+    spawnflags "8"
+    classname "node_cover_left"
+    angles "0 270 0"
+    origin "-905 1103 164"
+}
+{
+    spawnflags "8"
+    classname "node_cover_right"
+    angles "0 90 0"
+    origin "-888 1019.5 164"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 0 0"
+    origin "-804 1221.5 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 270 0"
+    origin "-851 1321 164"
+}
+{
+    classname "node_cover_right"
+    angles "0 270 0"
+    origin "-819 1321 164"
+}
+{
+    classname "node_pathnode"
+    angles "0 90 0"
+    origin "-833 1019.5 164"
+}
+{
+    classname "node_cover_crouch"
+    angles "0 0 0"
+    origin "-804 962 164"
+}
+{
+    classname "node_pathnode"
+    origin "-848 848 168"
+}
+{
+    classname "node_pathnode"
+    origin "-856 680 168"
+}
+{
+    classname "node_pathnode"
+    origin "-992 416 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1024 328 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1216 424 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1216 280 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1088 160 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1264 144 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1376 104 168"
+}
+{
+    classname "node_pathnode"
+    origin "-1480 104 113.6"
+}
+{
+    classname "node_pathnode"
+    origin "-1536 176 88.1"
+}
+{
+    classname "node_pathnode"
+    origin "-1536 280 32"
+}
+{
+    classname "node_pathnode"
+    origin "-1352 432 32"
+}
+{
+    classname "node_pathnode"
+    origin "-1096 424 32"
+}
+{
+    classname "node_pathnode"
+    origin "-872 328 104.1"
+}
+{
+    classname "node_pathnode"
+    origin "-824 272 104.1"
+}
+{
+    classname "node_pathnode"
+    origin "-840 152 32"
+}
+{
+    classname "node_pathnode"
+    origin "-936 72 32"
+}
+{
+    classname "node_pathnode"
+    origin "-2344 1232 28"
+}
+{
+    classname "node_pathnode"
+    origin "-608 -560 100"
+}
+{
+    classname "node_pathnode"
+    origin "-880 -384 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2182 692 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2072 824 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1960 824 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1944 680 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2168 900 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2184 1048 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1368 1816 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1199 1816 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1825 1115 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "395 193 28"
+}
+{
+    classname "node_pathnode"
+    origin "-498.5 2436 164"
+}
+{
+    classname "node_pathnode"
+    origin "-602.5 2384.5 164"
+}
+{
+    classname "node_pathnode"
+    origin "-2310 2556.5 164"
+}
+{
+    classname "node_pathnode"
+    origin "-1769.5 1532 35.3"
+}
+{
+    classname "node_pathnode"
+    origin "-1936 1082 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2200 492 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2074 540 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2228 840 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2056 352 28"
+}
+{
+    classname "node_pathnode"
+    origin "82 776 198"
+}
+{
+    classname "node_pathnode"
+    origin "-34 894 196"
+}
+{
+    classname "node_pathnode"
+    origin "448 1298 36"
+}
+{
+    classname "node_pathnode"
+    origin "-266 1224 20"
+}
+{
+    origin "-765.5 1828 164"
+    classname "node_pathnode"
+}
+{
+    origin "-909.5 1780 164"
+    classname "node_pathnode"
+}
+{
+    classname "node_pathnode"
+    origin "-1946 2470 166"
+}
+{
+    classname "node_pathnode"
+    origin "-2096 2306 166"
+}
+{
+    classname "node_pathnode"
+    origin "418 1358 28"
+}
+{
+    classname "node_pathnode"
+    origin "54 2134 28"
+}
+{
+    classname "node_pathnode"
+    origin "-2076 718 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1222 416 32"
+}
+{
+    classname "node_pathnode"
+    origin "-1858 2422 166"
+}
+{
+    classname "node_pathnode"
+    origin "-1388 1290 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1386 1156 28"
+}
+{
+    classname "node_pathnode"
+    origin "-1376 932 28"
+}
+{
+    classname "node_pathnode"
+    origin "250 -218 28"
+}
+{
+    classname "node_pathnode"
+    origin "94 -428 28"
+}
+{
+    classname "node_pathnode"
+    origin "-100 -540 28"
+}
+{
+    classname "node_pathnode"
+    origin "-80 -350 28"
+}
+{
+    origin "-433.9 1716.6 145"
+    angles "0 145 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-2298.6 1224.5 21"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-1272 2800 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1324 2800 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1388 2800 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1452 2800 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1496 2800 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1292 2736 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-707.2 2143.7 10.8"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-1356 2736 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1424 2736 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-1476 2736 156"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "-997.7 443.2 9"
+    angles "0 211.6 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-86.4 371.5 15"
+    angles "0 237 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "195.8 707 24"
+    angles "0 280.5 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-997.3 443.2 10"
+    angles "0 211.9 0"
+}
+{
+    origin "-144 -584 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-595.3 2003 155"
+    angles "0 0 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-200 -480 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-256 -480 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-1418 1872.3 17"
+    angles "0 270 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "208.7 705.9 31"
+    angles "0 277.1 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-176 -528 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-232 -528 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-280 -528 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-312 -584 24"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "815.5 -101 32"
+    angles "0 180 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "208.6 707.8 25"
+    angles "0 277.1 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-1018.5 -403.3 12"
+    angles "0 126 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-705.4 2142.1 8.8"
+    angles "0 0 0"
+    classname "mp_dm_spawn"
+}
+{
+    angles "0 0 0"
+    _color "0.501961 0.501961 1.000000"
+    origin "-2150 1868 174"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-2294 1225 18"
+    angles "0 0 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "603.5 1067 8"
+    angles "0 180 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "192 2432 32"
+    angles "0 256.5 0"
+    classname "mp_dom_spawn"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-511 2205 200"
+    model "?24"
+}
+{
+    origin "-703.4 2139.1 9.8"
+    angles "0 0 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-1229.7 2667.5 152"
+    angles "0 225 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-1296 2736 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1360 2736 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-706.9 2143.1 7.8"
+    angles "0 0 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-1428 2736 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1480 2736 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1272 2800 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    gndlt "4b4d4f0000"
+    ltorigin "-613.686 2165 150.889"
+    spawnflags "4"
+    targetname "pf1704_auto1"
+    script_gameobjectname "hq"
+    origin "-613.5 2165 136"
+    angles "0 90 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "4b4d500000"
+    ltorigin "-610.48 2169 173.453"
+    spawnflags "4"
+    target "pf1704_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-609.5 2169 166"
+    angles "0 3.18772e-006 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-607.557 2181.72 166.578"
+    spawnflags "4"
+    targetname "pf1704_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 130 -89.9997"
+    origin "-604.8 2183.7 166"
+}
+{
+    spawnflags "1"
+    targetname "pf1704_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-613 2165 151"
+    model "*20"
+}
+{
+    spawnflags "1"
+    targetname "pf1704_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-617 2169 174"
+    model "*21"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-1570 1820 64"
+    model "?25"
+}
+{
+    origin "-1324 2800 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1384 2800 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    gndlt "32302a000b"
+    ltorigin "-1463 1888.69 14.8886"
+    spawnflags "4"
+    targetname "pf1705_auto1"
+    script_gameobjectname "hq"
+    origin "-1463 1888.5 0"
+    angles "0 0 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "312e29000b"
+    ltorigin "-1459 1885.48 37.453"
+    spawnflags "4"
+    target "pf1705_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-1459 1884.5 30"
+    angles "0 270 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-1446.28 1882.56 30.5784"
+    spawnflags "4"
+    targetname "pf1705_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 40 -89.9997"
+    origin "-1444.3 1879.8 30"
+}
+{
+    spawnflags "1"
+    targetname "pf1705_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1463 1889 15"
+    model "*22"
+}
+{
+    spawnflags "1"
+    targetname "pf1705_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1459 1892 38"
+    model "*23"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-1235 -288 64"
+    model "?26"
+}
+{
+    gndlt "6c6a62c001"
+    ltorigin "-1267 -440.686 14.8886"
+    spawnflags "4"
+    targetname "pf1706_auto1"
+    script_gameobjectname "hq"
+    origin "-1267 -440.5 0"
+    angles "0 180 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "6b6a62c001"
+    ltorigin "-1271 -437.48 37.453"
+    spawnflags "4"
+    target "pf1706_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-1271 -436.5 30"
+    angles "0 90 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-1283.72 -434.557 30.5784"
+    spawnflags "4"
+    targetname "pf1706_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 220 -89.9997"
+    origin "-1285.7 -431.8 30"
+}
+{
+    spawnflags "1"
+    targetname "pf1706_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1267 -440 15"
+    model "*24"
+}
+{
+    spawnflags "1"
+    targetname "pf1706_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1271 -444 38"
+    model "*25"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-245 224 64"
+    model "?27"
+}
+{
+    origin "-1452 2800 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1007.2 1445.9 31"
+    angles "0 160.9 0"
+    classname "mp_dm_spawn"
+}
+{
+    gndlt "24211b0021"
+    ltorigin "-324.943 -12.683 14.8886"
+    spawnflags "4"
+    targetname "pf1707_auto1"
+    script_gameobjectname "hq"
+    origin "-325 -12.5 0"
+    angles "0 199 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "25221c0021"
+    ltorigin "-329.77 -10.8793 37.453"
+    spawnflags "4"
+    target "pf1707_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-330.084 -10.0202 30"
+    angles "0 109 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-342.847 -12.23 30.5784"
+    spawnflags "4"
+    targetname "pf1707_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 239 -89.9997"
+    origin "-345.514 -10.3621 30"
+}
+{
+    spawnflags "1"
+    targetname "pf1707_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-325 -13 15"
+    model "*26"
+}
+{
+    spawnflags "1"
+    targetname "pf1707_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-328 -17 38"
+    model "*27"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-1152 328 204"
+    model "?28"
+}
+{
+    gndlt "201d1a001c"
+    ltorigin "-1122 486.686 150.889"
+    spawnflags "4"
+    targetname "pf1708_auto1"
+    script_gameobjectname "hq"
+    origin "-1122 486.5 136"
+    angles "0 0 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "201d1a001c"
+    ltorigin "-1118 483.48 173.453"
+    spawnflags "4"
+    target "pf1708_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-1118 482.5 166"
+    angles "0 270 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-1105.28 480.557 166.578"
+    spawnflags "4"
+    targetname "pf1708_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 40 -89.9997"
+    origin "-1103.3 477.8 166"
+}
+{
+    spawnflags "1"
+    targetname "pf1708_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1122 487 151"
+    model "*28"
+}
+{
+    spawnflags "1"
+    targetname "pf1708_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-1118 490 174"
+    model "*29"
+}
+{
+    origin "-1504 2800 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1448 2800 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1392 2800 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1328 2800 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1296 2736 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1484 2736 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1428 2736 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1008.2 1449.4 30"
+    angles "0 160.9 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-1352 2736 156"
+    angles "0 270 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-1006.2 1444.5 28"
+    angles "0 160.9 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "199.4 702.5 27"
+    angles "0 279.4 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-99.3 371.1 21"
+    angles "0 235.6 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-90.5 368.7 17"
+    angles "0 237.9 0"
+    classname "mp_dm_spawn"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "680.6 -459.3 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "700.6 -424.6 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "740.6 -355.4 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "760.6 -320.7 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "739.3 -487.3 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "759.3 -452.6 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "779.3 -418 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "799.3 -383.4 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "819.3 -348.7 4"
+    angles "0 150 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    origin "-1496 -400 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1456 -400 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1416 -400 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1376 -400 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1496 -348 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1456 -348 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1416 -348 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1376 -348 24"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "484 -536 24"
+    angles "0 90 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "58 162 24"
+    angles "0 0 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "600 788 24"
+    angles "0 180 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "812 -96 24"
+    angles "0 180 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-736 288 24"
+    angles "0 0 0"
+}
+{
+    origin "157.1 2296.8 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "122.4 2316.8 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "87.8 2336.8 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "46.2 2360.8 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "11.6 2380.8 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "18.2 2312.3 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "-16.4 2332.3 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "127.6 2253.7 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "93 2273.7 40"
+    angles "0 240 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    angles "0 0 0"
+    classname "mp_ctf_spawn_axis"
+    origin "-2152 1872 168"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-2292 1226 16"
+    angles "0 1.00179e-005 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-1388 1864 16"
+    angles "0 270 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "200 2432 24"
+    angles "0 256.5 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-72 2452 16"
+    angles "0 270 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "601 1069 14"
+    angles "0 180 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-1102 1944 3"
+    angles "0 270 0"
+}
+{
+    origin "-1504 2800 160"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-724 1624 24"
+    angles "0 280 0"
+}
+{
+    modelscale "0.908008"
+    origin "688 -432 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "688 -240 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "688 -304 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "688 -368 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "752 -464 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "752 -208 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "752 -272 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "752 -336 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "752 -400 32"
+    angles "0 180 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1280 2800 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1300 2736 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1428 2736 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1484 2736 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1392 2800 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-1024 -410 14"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 90 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-1772 -394 34"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 90 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-730 280 34"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 0 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "602 780 34"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 180 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "202.1 703.7 28"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 280 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-64 -562 34"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 90 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "604 -82 34"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 140 0"
+}
+{
+    modelscale "1.246716"
+    angles "0 225 0"
+    _color "1 .5 .5"
+    origin "-1232.2 2673.6 152"
+    classname "mp_sab_spawn_axis"
+}
+{
+    angles "0 0 0"
+    modelscale "1.246716"
+    _color "1 .5 .5"
+    origin "-2156 1874 158"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 0 0"
+    _color "1 .5 .5"
+    origin "-2232 1232 30"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 330 0"
+    _color "1 .5 .5"
+    origin "-1862 1668 30"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 160 0"
+    _color "1 .5 .5"
+    origin "-1006 1444 30"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 256.5 0"
+    _color "1 .5 .5"
+    origin "200 2424 32"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 270 0"
+    _color "1 .5 .5"
+    origin "-83 2452 30"
+    classname "mp_sab_spawn_axis"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1328 2800 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1356 2736 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "-1456 2800 160"
+    angles "0 270 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    origin "-2104 2296 148"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-1231.8 2666.4 148"
+    angles "0 225 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-804 2444 148"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "-1596 2780 148"
+    angles "0 270 0"
+    classname "mp_dd_spawn_defender"
+}
+{
+    origin "658 -446 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "682 -406 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "726 -334 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "746 -298 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "798 -326 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "778 -362 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "754 -398 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "730 -434 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "710 -470 18"
+    angles "0 150 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "66 166 32"
+    angles "0 0 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "478 -526 32"
+    angles "0 90 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "-714 -442 32"
+    angles "0 90 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "-1774 -402 32"
+    angles "0 90 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "-1014 -162 32"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "196.2 704.6 20"
+    angles "0 281.2 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    origin "-85.4 368.6 10"
+    angles "0 237.1 0"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    angles "0 151.3 0"
+    target "auto627"
+    origin "-789.5 2645.2 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 151.3 0"
+    targetname "auto627"
+    origin "-772.7 3607 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 104.7 0"
+    targetname "auto628"
+    classname "script_origin"
+    origin "7.6 2445.4 320"
+}
+{
+    angles "0 104.7 0"
+    target "auto628"
+    script_targetoffset_z "55"
+    origin "-635.6 1403.5 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 165.2 0"
+    targetname "auto629"
+    classname "script_origin"
+    origin "-1687.7 2484.8 320"
+}
+{
+    angles "0 165.2 0"
+    target "auto629"
+    script_targetoffset_z "55"
+    origin "-1097.6 1411.9 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}

@@ -1,0 +1,7952 @@
+{
+    skycolor "0.87 0.94 1"
+    skylight "0.56"
+    _color "0.5 0.5 .62 1"
+    ambient ".116"
+    classname "worldspawn"
+    sundirection "-65 72 0"
+    suncolor "0.88 0.93 1"
+    sunlight "1.2"
+    origin "0 0 0"
+}
+{
+    script_gameobjectname "bombzone"
+    classname "trigger_use_touch"
+    targetname "bombtrigger"
+    origin "-8256 9088 24"
+    model "?0"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf1_auto1"
+    classname "script_brushmodel"
+    origin "-8256 9088 2"
+    model "*1"
+}
+{
+    ltorigin "-8256 9088.19 16.8886"
+    target "pf1_auto1"
+    targetname "airdrop_crate"
+    origin "-8256 9088 2"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf2_auto1"
+    classname "script_brushmodel"
+    origin "-8384 9088 15"
+    model "*2"
+}
+{
+    ltorigin "-8384 9088.19 14.8886"
+    target "pf2_auto1"
+    targetname "care_package"
+    origin "-8384 9088 0"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    angles "0 155 0"
+    target "auto601"
+    origin "199.5 617 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    origin "1188.7 -1574.5 597.8"
+    angles "0 87.2 0"
+    classname "info_player_start"
+}
+{
+    angles "0 90 0"
+    origin "1936 -1600 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 300 0"
+    origin "-136 1208 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    script_gameobjectname "ctf"
+    target "ctf_flag_allies"
+    targetname "ctf_trig_allies"
+    origin "31.6 1014.6 391"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 270 0"
+}
+{
+    gndlt "383c3fe701"
+    ltorigin "36.0119 988.286 424.511"
+    spawnflags "4"
+    script_gameobjectname "ctf"
+    origin "31.6 1014.6 375"
+    targetname "ctf_flag_allies"
+    model "prop_flag_neutral"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    script_gameobjectname "ctf"
+    targetname "ctf_zone_allies"
+    origin "31.6 1014.6 391"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 270 0"
+}
+{
+    origin "-126.3 1216 404"
+    angles "0 300.4 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-127.2 1215 405"
+    angles "0 300.4 0"
+    classname "mp_tdm_spawn"
+}
+{
+    classname "trigger_radius"
+    radius "160"
+    height "128"
+    targetname "flag_primary"
+    origin "-896 -191.9 162.7"
+    script_gameobjectname "dom onslaught"
+    model "prop_flag_neutral"
+    script_label "_a"
+}
+{
+    modelscale "0.748779"
+    classname "mp_dd_spawn_defender"
+    angles "0 37.3 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "-962.4 -1037.7 320"
+}
+{
+    script_label "_b"
+    model "prop_flag_neutral"
+    script_gameobjectname "dom onslaught"
+    origin "870 -1510 271.5"
+    targetname "flag_primary"
+    height "128"
+    radius "160"
+    classname "trigger_radius"
+    angles "0 270 0"
+}
+{
+    script_label "_c"
+    model "prop_flag_neutral"
+    script_gameobjectname "dom onslaught"
+    origin "1499.9 511.9 183.2"
+    targetname "flag_primary"
+    height "128"
+    radius "160"
+    classname "trigger_radius"
+    angles "0 180 0"
+}
+{
+    modelscale "1.246716"
+    angles "0 180 0"
+    _color "1 .5 .5"
+    origin "2210 -1154 313"
+    classname "mp_sab_spawn_axis"
+}
+{
+    script_label "_a"
+    script_bombmode_original "1"
+    target "pf7_auto1"
+    script_gameobjectname "bombzone"
+    targetname "bombzone"
+    classname "trigger_use_touch"
+    origin "602 -449 296"
+    model "?1"
+}
+{
+    targetname "pf7_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "bombzone"
+    origin "602 -449 296"
+    model "?2"
+}
+{
+    gndlt "3736360005"
+    ltorigin "596.837 -452.706 305.556"
+    script_gameobjectname "bombzone"
+    script_exploder "pf7_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "602.4 -449.3 288.1"
+    angles "0 180 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "bombzone"
+    classname "script_brushmodel"
+    origin "601 -449 316"
+    model "*3"
+}
+{
+    gndlt "3635350005"
+    ltorigin "601.82 -449.179 316.123"
+    classname "script_model"
+    model "com_bomb_objective"
+    angles "0 3.18772e-006 0"
+    origin "600.4 -449.3 286.1"
+    script_exploder "pf7_1"
+    script_gameobjectname "bombzone"
+    spawnflags "4"
+    targetname "pf7_auto1"
+    target "pf7_auto2"
+}
+{
+    gndlt "3b3d3ee601"
+    ltorigin "2133.64 -157.583 181.503"
+    spawnflags "4"
+    script_gameobjectname "sd"
+    origin "2133.4 -157.5 178"
+    targetname "sd_bomb"
+    model "mil_tntbomb_mp"
+    classname "script_model"
+}
+{
+    script_gameobjectname "sd"
+    targetname "sd_bomb_pickup_trig"
+    classname "trigger_multiple"
+    origin "2133 -157 178"
+    model "?3"
+}
+{
+    gndlt "363535ae01"
+    ltorigin "1255.92 -328.237 157.503"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    origin "1256 -328 154"
+    targetname "sab_bomb"
+    model "mil_tntbomb_mp"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    script_gameobjectname "sab"
+    targetname "sab_bomb_pickup_trig"
+    classname "trigger_multiple"
+    origin "1256 -328 154"
+    model "?4"
+}
+{
+    script_gameobjectname "ctf"
+    target "ctf_flag_axis"
+    targetname "ctf_trig_axis"
+    origin "1932.9 -1440 310.7"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 307.2 0"
+}
+{
+    gndlt "34373ae701"
+    ltorigin "1954.29 -1461.88 344.211"
+    spawnflags "4"
+    script_gameobjectname "ctf"
+    origin "1932.9 -1440 294.7"
+    targetname "ctf_flag_axis"
+    model "prop_flag_neutral"
+    classname "script_model"
+    angles "0 307.2 0"
+}
+{
+    script_gameobjectname "ctf"
+    targetname "ctf_zone_axis"
+    origin "1932.9 -1440 310.7"
+    height "128"
+    radius "64"
+    classname "trigger_radius"
+    angles "0 307.2 0"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "166 -244 360"
+    model "?5"
+}
+{
+    origin "1714 1327 586"
+    angles "0 228 0"
+    classname "mp_global_intermission"
+}
+{
+    script_label "_b"
+    script_bombmode_original "1"
+    target "pf11_auto1"
+    script_gameobjectname "bombzone"
+    targetname "bombzone"
+    classname "trigger_use_touch"
+    origin "64 978 384"
+    model "?6"
+}
+{
+    targetname "pf11_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "bombzone"
+    origin "64 978 384"
+    model "?7"
+}
+{
+    gndlt "393c3fe701"
+    ltorigin "63.8788 975.92 403.623"
+    target "pf11_auto2"
+    targetname "pf11_auto1"
+    spawnflags "4"
+    script_gameobjectname "bombzone"
+    script_exploder "pf11_2"
+    origin "64 974.5 373.6"
+    angles "0 90 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "383c3fe701"
+    ltorigin "67.4056 971.937 393.056"
+    script_gameobjectname "bombzone"
+    script_exploder "pf11_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "64 977.5 375.6"
+    angles "0 270 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "bombzone"
+    classname "script_brushmodel"
+    origin "64 975 404"
+    model "*4"
+}
+{
+    gndlt "3d40430000"
+    ltorigin "191 -414.686 302.889"
+    spawnflags "4"
+    targetname "pf12_auto1"
+    script_gameobjectname "hq"
+    origin "191 -414.5 288"
+    angles "0 180 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "3c3f420000"
+    ltorigin "187 -411.48 325.453"
+    spawnflags "4"
+    target "pf12_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "187 -410.5 318"
+    angles "0 90 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "174.283 -408.557 318.578"
+    spawnflags "4"
+    targetname "pf12_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 220 -89.9997"
+    origin "172.3 -405.8 318"
+}
+{
+    spawnflags "1"
+    targetname "pf12_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "191 -414 303"
+    model "*5"
+}
+{
+    spawnflags "1"
+    targetname "pf12_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "187 -418 326"
+    model "*6"
+}
+{
+    classname "trigger_use_touch"
+    targetname "sab_bomb_allies"
+    script_gameobjectname "sab"
+    target "pf13_auto1"
+    origin "-900 -189 169"
+    model "?8"
+}
+{
+    targetname "sab_bomb_defuse_allies"
+    script_gameobjectname "sab"
+    classname "trigger_use_touch"
+    origin "-900 -189 169"
+    model "?9"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "sab"
+    classname "script_brushmodel"
+    origin "-897 -189 189"
+    model "*7"
+}
+{
+    gndlt "3b3c3ddd01"
+    ltorigin "-898.22 -188.721 189.123"
+    targetname "pf13_auto1"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    script_exploder "pf13_1"
+    origin "-896.8 -188.6 159.1"
+    angles "0 180 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "393a3bd201"
+    ltorigin "-894.237 -185.194 178.556"
+    script_gameobjectname "sab"
+    script_exploder "pf13_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "-899.8 -188.6 161.1"
+    angles "0 3.18772e-006 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "2150 -1342 318"
+    angles "0 180 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    angles "0 50 0"
+    targetname "auto598"
+    classname "script_origin"
+    origin "2427 754 320"
+}
+{
+    script_gameobjectname "airdrop_pallet"
+    targetname "pf14_auto1"
+    classname "script_brushmodel"
+    origin "-8512 9088 2"
+    model "*8"
+}
+{
+    ltorigin "-8512 9088.19 16.8886"
+    target "pf14_auto1"
+    targetname "airdrop_crate"
+    origin "-8512 9088 2"
+    classname "script_model"
+    model "com_plasticcase_green_big_us_dirt"
+}
+{
+    angles "0 50 0"
+    target "auto598"
+    script_targetoffset_z "55"
+    origin "1559 274.4 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 95 0"
+    target "auto600"
+    origin "1168 672 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 95 0"
+    targetname "auto600"
+    origin "1455.6 1694.8 2440.5"
+    classname "script_origin"
+}
+{
+    origin "3248 -2976 128"
+    targetname "minimap_corner"
+    classname "script_origin"
+}
+{
+    classname "script_origin"
+    targetname "minimap_corner"
+    origin "-2256 2528 192"
+}
+{
+    angles "0 155 0"
+    targetname "auto601"
+    origin "-535.8 1670 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 215 0"
+    target "auto602"
+    origin "-283.7 -403.5 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 215 0"
+    targetname "auto602"
+    origin "-1556.7 -221.3 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 274 0"
+    target "auto603"
+    origin "353.1 -981.7 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 274 0"
+    targetname "auto603"
+    origin "-449.7 -1691.1 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 334 0"
+    target "auto604"
+    origin "1410.1 -1045.6 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 334 0"
+    targetname "auto604"
+    origin "1629.7 -1803.1 2440.5"
+    classname "script_origin"
+}
+{
+    origin "-8982 4028 4056"
+    targetname "heli_leave"
+    classname "script_origin"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "-8546 -4632 3848"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "5786 -8164 2616"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "7454 1476 1760"
+}
+{
+    classname "script_origin"
+    targetname "heli_leave"
+    origin "8770 -5256 2744"
+}
+{
+    classname "script_origin"
+    angles "0 300 0"
+    _color ".5 1 1"
+    origin "-928 2020 2352"
+    script_accel "20"
+    script_airspeed "40"
+    targetname "auto481"
+    target "auto483"
+    script_delay "2"
+}
+{
+    classname "script_origin"
+    angles "0 335 0"
+    _color ".5 1 1"
+    origin "-1874 240 2292"
+    script_accel "15"
+    script_airspeed "40"
+    targetname "auto483"
+    script_delay "3"
+    target "auto476"
+}
+{
+    classname "script_origin"
+    angles "0 175 0"
+    _color ".5 1 1"
+    origin "1498 2140 2192"
+    script_accel "20"
+    script_airspeed "35"
+    targetname "auto480"
+    target "auto481"
+}
+{
+    classname "script_origin"
+    angles "0 205 0"
+    _color ".5 1 1"
+    origin "2730 436 2164"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto479"
+    target "auto480"
+    script_delay "3"
+}
+{
+    classname "script_origin"
+    angles "0 150 0"
+    _color ".5 1 1"
+    origin "2710 -1528 2120"
+    script_accel "20"
+    script_airspeed "35"
+    targetname "auto478"
+    target "auto479"
+}
+{
+    classname "script_origin"
+    angles "0 85 0"
+    _color ".5 1 1"
+    origin "578 -2568 2192"
+    targetname "auto477"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto478"
+    script_delay "3"
+}
+{
+    classname "script_origin"
+    angles "0 340 0"
+    _color ".5 1 1"
+    origin "-1378 -1804 2312"
+    targetname "auto476"
+    script_accel "15"
+    script_airspeed "40"
+    target "auto477"
+}
+{
+    target "auto476"
+    classname "script_origin"
+    angles "0 1.00179e-005 0"
+    _color ".5 1 1"
+    targetname "heli_loop_start"
+    origin "-1250.5 -1701 2304"
+}
+{
+    classname "script_origin"
+    origin "3913.8 -836.5 2459"
+    _color "0 1 .5"
+    angles "0 170 0"
+    targetname "auto474"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto475"
+}
+{
+    classname "script_origin"
+    origin "5549.8 -1163.5 2522"
+    _color "0 1 .5"
+    angles "0 170 0"
+    targetname "auto473"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto474"
+}
+{
+    classname "script_origin"
+    origin "12410 -1494.1 2600"
+    _color "0 1 .5"
+    angles "0 245 0"
+    targetname "auto472"
+    script_accel "20"
+    script_airspeed "60"
+    target "auto473"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "12422.8 -1442.9 2592"
+    _color "0 1 .5"
+    angles "0 255 0"
+    target "auto472"
+}
+{
+    classname "script_origin"
+    origin "322.1 3586.4 2475"
+    _color "0 1 .5"
+    angles "0 275 0"
+    targetname "auto469"
+    script_accel "15"
+    script_airspeed "30"
+    target "auto470"
+}
+{
+    classname "script_origin"
+    origin "-2243.9 4278.6 2506"
+    _color "0 1 .5"
+    angles "0 285 0"
+    targetname "auto468"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto469"
+}
+{
+    classname "script_origin"
+    origin "2875.7 -47.4 2412"
+    _color "0 1 .5"
+    angles "0 220 0"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto475"
+    target "auto467"
+}
+{
+    target "auto467"
+    classname "script_origin"
+    origin "1375.6 797.2 2452"
+    _color "0 1 .5"
+    angles "0 270 0"
+    script_accel "15"
+    script_airspeed "30"
+    targetname "auto471"
+}
+{
+    classname "script_origin"
+    origin "-8000 4416 2864"
+    _color "0 1 .5"
+    angles "0 0 0"
+    targetname "auto466"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto468"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "-8130 4416 2864"
+    _color "0 1 .5"
+    angles "0 0 0"
+    target "auto466"
+}
+{
+    target "auto467"
+    classname "script_origin"
+    targetname "auto463"
+    origin "694.4 -890.9 2431"
+    _color "0 1 .5"
+    angles "0 90 0"
+    script_accel "20"
+    script_airspeed "60"
+}
+{
+    classname "script_origin"
+    targetname "auto462"
+    origin "504.8 -2243.8 2246"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto463"
+    script_accel "20"
+    script_airspeed "40"
+}
+{
+    classname "script_origin"
+    targetname "auto461"
+    origin "-107.6 -3631.5 2260"
+    _color "0 1 .5"
+    angles "0 30 0"
+    target "auto462"
+    script_accel "20"
+    script_airspeed "40"
+}
+{
+    classname "script_origin"
+    targetname "auto460"
+    origin "-206.8 -8495 2752"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto461"
+    script_accel "20"
+    script_airspeed "60"
+}
+{
+    classname "script_origin"
+    targetname "auto42"
+    origin "3496.2 -1170.8 2548"
+    target "auto44"
+    script_airspeed "50"
+    script_accel "30"
+    angles "0 345 0"
+}
+{
+    classname "script_origin"
+    origin "7133 -2890 2280"
+    targetname "auto44"
+    script_airspeed "50"
+    script_accel "30"
+    angles "0 345 0"
+}
+{
+    classname "script_origin"
+    targetname "heli_start"
+    origin "-232.9 -8546 2744"
+    _color "0 1 .5"
+    angles "0 90 0"
+    target "auto460"
+}
+{
+    target "auto471"
+    script_airspeed "40"
+    script_accel "15"
+    targetname "auto470"
+    angles "0 50 0"
+    _color "0 1 .5"
+    origin "751.6 2400.7 2495.5"
+    classname "script_origin"
+}
+{
+    target "auto467"
+    targetname "heli_dest"
+    origin "1438 -136 2400"
+    angles "0 30 0"
+    _color "0 1 .5"
+    classname "script_origin"
+}
+{
+    script_airspeed "30"
+    script_accel "10"
+    angles "0 270 0"
+    _color "0 1 .5"
+    origin "1538.4 -146.2 2415.5"
+    targetname "auto467"
+    classname "script_origin"
+}
+{
+    angles "0 345 0"
+    target "auto482"
+    origin "1798 -120 2608"
+    targetname "heli_crash_start"
+    classname "script_origin"
+}
+{
+    angles "0 345 0"
+    script_accel "20"
+    script_airspeed "40"
+    target "auto42"
+    origin "1825 -127.2 2608"
+    targetname "auto482"
+    classname "script_origin"
+}
+{
+    angles "0 36.9 0"
+    target "auto605"
+    origin "1885.1 -158 320"
+    targetname "heli_attack_area"
+    classname "script_origin"
+}
+{
+    angles "0 36.9 0"
+    targetname "auto605"
+    origin "2658.7 -2.3 2440.5"
+    classname "script_origin"
+}
+{
+    angles "0 181.2 0"
+    targetname "auto606"
+    classname "script_origin"
+    origin "-1087.3 449.9 320"
+}
+{
+    angles "0 181.2 0"
+    target "auto606"
+    script_targetoffset_z "55"
+    origin "-168 112 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 240.7 0"
+    targetname "auto607"
+    classname "script_origin"
+    origin "-835 -1426.9 320"
+}
+{
+    angles "0 240.7 0"
+    target "auto607"
+    script_targetoffset_z "55"
+    origin "-56 -776 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    angles "0 336.6 0"
+    targetname "auto608"
+    classname "script_origin"
+    origin "2506.7 -1363.2 320"
+}
+{
+    angles "0 336.6 0"
+    target "auto608"
+    script_targetoffset_z "55"
+    origin "1799.2 -668.4 3704"
+    targetname "remoteMissileSpawn"
+    classname "script_origin"
+}
+{
+    origin "766 -328 3840"
+    targetname "airstrikeheight"
+    classname "script_origin"
+}
+{
+    dmg "10000"
+    classname "trigger_hurt"
+    origin "424 56 -160"
+    model "?10"
+}
+{
+    gndlt "3131320001"
+    ltorigin "-96.4691 -1500.77 310.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf20_auto1"
+    origin "-96.5 -1500.8 288"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "1.00179e-005 163.726 0"
+}
+{
+    spawnflags "1"
+    targetname "pf20_auto1"
+    classname "script_brushmodel"
+    origin "-97 -1501 310"
+    model "*9"
+}
+{
+    gndlt "1b1b1c0001"
+    ltorigin "-41.5 -1711 315.126"
+    target "pf40_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "-41.5 -1711 288"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf40_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-41 -1711 315"
+    model "*10"
+}
+{
+    gndlt "1a1a1b0001"
+    ltorigin "-25.8337 -1702.21 292"
+    target "pf41_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "-51.9 -1697.9 292"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "90 168.232 180"
+}
+{
+    spawnflags "1"
+    targetname "pf41_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-25 -1703 292"
+    model "*11"
+}
+{
+    gndlt "1717180001"
+    ltorigin "-92.5 -1755 315.126"
+    target "pf42_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "-92.5 -1755 288"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf42_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-92 -1755 315"
+    model "*12"
+}
+{
+    gndlt "1717180001"
+    ltorigin "-103 -1742.5 315.126"
+    target "pf43_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "-103 -1742.5 288"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 258.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf43_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-103 -1742 315"
+    model "*13"
+}
+{
+    gndlt "3232321e01"
+    ltorigin "-154.5 -1521.6 315.126"
+    target "pf44_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "-154.5 -1521.6 288"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf44_auto1"
+    classname "script_brushmodel"
+    origin "-154 -1522 315"
+    model "*14"
+}
+{
+    gndlt "3d3f418a01"
+    ltorigin "-573.278 -1104.27 310.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf51_auto1"
+    origin "-573.3 -1104.3 288"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    spawnflags "1"
+    targetname "pf51_auto1"
+    classname "script_brushmodel"
+    origin "-573 -1104 310"
+    model "*15"
+}
+{
+    gndlt "2121220001"
+    ltorigin "-93.4691 -1644.27 310.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf78_auto1"
+    origin "-93.5 -1644.3 288"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "1.00179e-005 163.726 0"
+}
+{
+    spawnflags "1"
+    targetname "pf78_auto1"
+    classname "script_brushmodel"
+    origin "-94 -1644 310"
+    model "*16"
+}
+{
+    gndlt "39393cab01"
+    ltorigin "-680.278 -1199.77 573.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf173_auto1"
+    origin "-680.3 -1199.8 551"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    spawnflags "1"
+    targetname "pf173_auto1"
+    classname "script_brushmodel"
+    origin "-680 -1200 573"
+    model "*17"
+}
+{
+    gndlt "4242424f01"
+    ltorigin "-291 -1635.3 298.077"
+    precache_script "common_scripts _destructible_types_anim_generator"
+    sound_csv_include "destruct_generator"
+    classname "script_model"
+    model "machinery_generator"
+    origin "-291 -1635.3 287.8"
+    targetname "destructible_toy"
+    destructible_type "toy_generator_on"
+    csv_include "destructible_generator"
+    angles "0 83.2 0"
+}
+{
+    gndlt "2e2e2fe201"
+    ltorigin "-815.978 -1146.87 449.469"
+    origin "-816 -1147 449.5"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_208x42_med_01"
+    csv_include "animated_models_fence_tarp_208x42_med_01"
+    model "fence_tarp_208x42"
+    classname "script_model"
+}
+{
+    gndlt "3537399f01"
+    ltorigin "-121.458 -1283.18 712.235"
+    origin "-124 -1263 591"
+    targetname "animated_model"
+    precache_script "maps animated_models hanging_dead_paratrooper01_animated"
+    csv_include "animated_models_hanging_dead_paratrooper01_animated"
+    model "hanging_dead_paratrooper01"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "1c1b1c0001"
+    ltorigin "-78.1742 -1666.84 315.126"
+    target "pf277_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "-78.1742 -1666.84 288"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 302.156 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf277_auto1"
+    classname "script_brushmodel"
+    origin "-78 -1667 315"
+    model "*18"
+}
+{
+    gndlt "1e1e1f0001"
+    ltorigin "947.673 1642.73 406.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf546_auto1"
+    origin "947.7 1642.7 384"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf546_auto1"
+    classname "script_brushmodel"
+    origin "948 1643 406"
+    model "*19"
+}
+{
+    gndlt "3e4141ca01"
+    ltorigin "1373.8 1637.5 402.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "1373.8 1637.5 384"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 269.813 0"
+}
+{
+    gndlt "2121220001"
+    ltorigin "978.591 1697.2 411.126"
+    target "pf559_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "978.591 1697.2 384"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 175.356 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf559_auto1"
+    classname "script_brushmodel"
+    origin "979 1697 411"
+    model "*20"
+}
+{
+    gndlt "35383a9d01"
+    ltorigin "2198.07 159.973 342.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf699_auto1"
+    origin "2198.1 160 320"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 343.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf699_auto1"
+    classname "script_brushmodel"
+    origin "2198 160 342"
+    model "*21"
+}
+{
+    gndlt "3e4043ce01"
+    ltorigin "2164.87 143.431 342.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf700_auto1"
+    origin "2164.9 143.4 320"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf700_auto1"
+    classname "script_brushmodel"
+    origin "2165 143 342"
+    model "*22"
+}
+{
+    gndlt "2526250000"
+    ltorigin "2228.57 532.731 342.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf701_auto1"
+    origin "2228.6 532.7 320"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf701_auto1"
+    classname "script_brushmodel"
+    origin "2229 533 342"
+    model "*23"
+}
+{
+    gndlt "2f2f2c0000"
+    ltorigin "1696.2 730.9 347.126"
+    target "pf705_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1696.2 730.9 320"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 168.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf705_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1696 731 347"
+    model "*24"
+}
+{
+    gndlt "1f21226401"
+    ltorigin "1966 685.9 483.126"
+    target "pf709_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1966 685.9 456"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf709_auto1"
+    classname "script_brushmodel"
+    origin "1966 686 483"
+    model "*25"
+}
+{
+    gndlt "1f20227e01"
+    ltorigin "1966.6 672.6 483.126"
+    target "pf712_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1966.6 672.6 456"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf712_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1967 673 483"
+    model "*26"
+}
+{
+    gndlt "3032348301"
+    ltorigin "2002.5 148.2 363.077"
+    precache_script "common_scripts _destructible_types_anim_generator"
+    sound_csv_include "destruct_generator"
+    classname "script_model"
+    model "machinery_generator"
+    origin "2002.5 148.2 352.8"
+    targetname "destructible_toy"
+    destructible_type "toy_generator_on"
+    csv_include "destructible_generator"
+    angles "0 102.9 0"
+}
+{
+    gndlt "1e1e1c0001"
+    ltorigin "2013.57 825.231 342.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf717_auto1"
+    origin "2013.6 825.2 320"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf717_auto1"
+    classname "script_brushmodel"
+    origin "2014 825 342"
+    model "*27"
+}
+{
+    gndlt "2b2c2c0000"
+    ltorigin "1708.16 436.974 346.626"
+    target "pf730_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1708.16 436.974 319.5"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 212.156 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf730_auto1"
+    classname "script_brushmodel"
+    origin "1708 437 347"
+    model "*28"
+}
+{
+    gndlt "3133340000"
+    ltorigin "1701.8 378.1 346.626"
+    target "pf732_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1701.8 378.1 319.5"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf732_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1702 378 347"
+    model "*29"
+}
+{
+    gndlt "3234350000"
+    ltorigin "1702 365.9 346.626"
+    target "pf733_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1702 365.9 319.5"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf733_auto1"
+    classname "script_brushmodel"
+    origin "1702 366 347"
+    model "*30"
+}
+{
+    gndlt "3538380000"
+    ltorigin "1699.5 326.7 330.077"
+    precache_script "common_scripts _destructible_types_anim_generator"
+    sound_csv_include "destruct_generator"
+    classname "script_model"
+    model "machinery_generator"
+    origin "1699.5 326.7 319.8"
+    targetname "destructible_toy"
+    destructible_type "toy_generator_on"
+    csv_include "destructible_generator"
+    angles "0 353.4 0"
+}
+{
+    gndlt "2d2d2a0000"
+    ltorigin "1711 813.2 380.077"
+    precache_script "common_scripts _destructible_types_anim_generator"
+    sound_csv_include "destruct_generator"
+    classname "script_model"
+    model "machinery_generator"
+    origin "1711 813.2 369.8"
+    targetname "destructible_toy"
+    destructible_type "toy_generator_on"
+    csv_include "destructible_generator"
+    angles "0 125.7 0"
+}
+{
+    angles "90 349.689 169.689"
+    origin "1900.8 273.3 279.5"
+    targetname "lighthaze_oilrig_FX_origin"
+    classname "script_struct"
+}
+{
+    gndlt "33363a1401"
+    ltorigin "1018.81 -1176.83 392.873"
+    origin "1017.68 -1178.81 387.866"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0.748752 179.906 81.4"
+}
+{
+    ltorigin "1933 -1810.67 529.5"
+    precache_script "common_scripts _destructible_types_anim_airconditioner"
+    sound_csv_include "destruct_airconditioner"
+    destructible_type "toy_airconditioner"
+    csv_include "destructible_airconditioner_ex"
+    targetname "destructible_toy"
+    origin "1933 -1820 529.5"
+    model "com_ex_airconditioner"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35393c6201"
+    ltorigin "1017.29 -1334 361.416"
+    origin "1019.3 -1334 356.1"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "5.75608 0 90"
+}
+{
+    gndlt "2d2f312001"
+    ltorigin "572.5 -1292.49 402.4"
+    origin "572.5 -1292.5 402.5"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_196x56_med_01"
+    csv_include "animated_models_fence_tarp_196x56_med_01"
+    model "fence_tarp_196x56"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "373a3e9801"
+    ltorigin "1183 -1777.49 458.8"
+    origin "1183 -1777.5 458.8"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x84_a_med_01"
+    csv_include "animated_models_fence_tarp_192x84_a_med_01"
+    model "fence_tarp_192x84_a"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3235382f01"
+    ltorigin "1375 -1777.49 458.8"
+    origin "1375 -1777.5 458.8"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x84_a_med_01"
+    csv_include "animated_models_fence_tarp_192x84_a_med_01"
+    model "fence_tarp_192x84_a"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3336396001"
+    ltorigin "1759 -1777.49 458.8"
+    origin "1759 -1777.5 458.8"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x84_a_med_01"
+    csv_include "animated_models_fence_tarp_192x84_a_med_01"
+    model "fence_tarp_192x84_a"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "2223231501"
+    ltorigin "282.588 -1334.2 336.858"
+    origin "288.5 -1334.2 330.5"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "282a2d0000"
+    ltorigin "1015.77 768 392.066"
+    origin "1043.5 768 450"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_draping_224x116_01"
+    csv_include "animated_models_fence_tarp_draping_224x116_01"
+    model "fence_tarp_draping_224x116"
+    classname "script_model"
+}
+{
+    ltorigin "-381.33 1037 521.5"
+    precache_script "common_scripts _destructible_types_anim_airconditioner"
+    sound_csv_include "destruct_airconditioner"
+    destructible_type "toy_airconditioner"
+    csv_include "destructible_airconditioner_ex"
+    targetname "destructible_toy"
+    origin "-372 1037 521.5"
+    model "com_ex_airconditioner"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "35383a0000"
+    ltorigin "-345.8 3922.8 104"
+    origin "-345.8 3928.7 104"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35383a0000"
+    ltorigin "-185.8 3928.2 104"
+    origin "-185.8 3934.1 104"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35383a0000"
+    ltorigin "-30.2 3915.9 104"
+    origin "-30.2 3921.8 104"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "363a3cd601"
+    ltorigin "148.41 3931.99 104"
+    origin "150.4 3926.9 104"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 352.134 0"
+}
+{
+    gndlt "373a3dce01"
+    ltorigin "-546.217 3926.33 104"
+    origin "-548 3922.8 104"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 20.9839 0"
+}
+{
+    gndlt "333638a401"
+    ltorigin "2301 3920.7 456"
+    origin "2301 3926.6 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35393a7b01"
+    ltorigin "2159.7 3925.4 456"
+    origin "2159.7 3931.3 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "363a3c5801"
+    ltorigin "2005.2 3919.4 456"
+    origin "2005.2 3925.3 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35393b6301"
+    ltorigin "1866 3920.7 456"
+    origin "1866 3926.6 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "323537a501"
+    ltorigin "2312.7 3705.4 456"
+    origin "2312.7 3711.3 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3538397801"
+    ltorigin "2151.4 3707.6 456"
+    origin "2151.4 3713.5 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "35383a6201"
+    ltorigin "1989.9 3692.9 456"
+    origin "1989.9 3698.8 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "36383aac01"
+    ltorigin "1597.98 2578.53 439"
+    origin "1593.4 2576.6 439"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 257.6 0"
+}
+{
+    gndlt "35383b8f01"
+    ltorigin "1703.9 3924.5 456"
+    origin "1703.9 3930.4 456"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    ltorigin "1934.38 -172.19 400.616"
+    origin "1935 -172.5 448"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_draping_98x94_med_01"
+    csv_include "animated_models_fence_tarp_draping_98x94_med_01"
+    model "fence_tarp_draping_98x94_01"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "2121223f01"
+    ltorigin "1258 -509.9 210"
+    origin "1258 -504 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "303234b401"
+    ltorigin "760.588 -956.195 324.358"
+    origin "766.5 -956.2 318"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "3233356c01"
+    ltorigin "573.01 -1154.17 415.874"
+    origin "573 -1148 414.5"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_196x36_med_01"
+    csv_include "animated_models_fence_tarp_196x36_med_01"
+    model "fence_tarp_196x36"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    ltorigin "-89.3297 1384 521.6"
+    precache_script "common_scripts _destructible_types_anim_airconditioner"
+    sound_csv_include "destruct_airconditioner"
+    destructible_type "toy_airconditioner"
+    csv_include "destructible_airconditioner_ex"
+    targetname "destructible_toy"
+    origin "-80 1384 521.6"
+    model "com_ex_airconditioner"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "26292b8301"
+    ltorigin "455.94 374.961 619"
+    origin "466.5 381 575"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_528x88_med_01"
+    csv_include "animated_models_plastic_fence_528x88_med_01"
+    model "plastic_fence_528x88"
+    classname "script_model"
+}
+{
+    gndlt "3134375d01"
+    ltorigin "742.294 510.5 420.25"
+    origin "748.5 516.5 376.5"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_232x88_med_01"
+    csv_include "animated_models_plastic_fence_232x88_med_01"
+    model "plastic_fence_232x88"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "2b2c2d7701"
+    ltorigin "892.145 365.568 596.684"
+    origin "884.9 366.9 576.3"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_264x40_med_01"
+    csv_include "animated_models_plastic_fence_264x40_med_01"
+    model "plastic_fence_264x40"
+    classname "script_model"
+}
+{
+    gndlt "2325265001"
+    ltorigin "-98.004 60.0082 420.053"
+    origin "-98 60 420"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_234x88_med_01"
+    csv_include "animated_models_plastic_fence_234x88_med_01"
+    model "plastic_fence_234x88"
+    classname "script_model"
+    angles "0 225.7 0"
+}
+{
+    gndlt "292b240000"
+    ltorigin "117.699 -698.918 315.126"
+    target "pf2113_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "117.699 -698.918 288"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 89.556 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf2113_auto1"
+    classname "script_brushmodel"
+    origin "118 -699 315"
+    model "*31"
+}
+{
+    gndlt "1b1b1d5e01"
+    ltorigin "164 -483.8 459.126"
+    target "pf2114_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "164 -483.8 432"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 309.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2114_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "164 -484 459"
+    model "*32"
+}
+{
+    gndlt "1b1c1d7201"
+    ltorigin "150.9 -484.6 459.126"
+    target "pf2115_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "150.9 -484.6 432"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 35.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf2115_auto1"
+    classname "script_brushmodel"
+    origin "151 -485 459"
+    model "*33"
+}
+{
+    gndlt "1c1d1e5b01"
+    ltorigin "84.0249 -484.565 459.126"
+    target "pf2145_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "84.0249 -484.565 432"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 277.556 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf2145_auto1"
+    classname "script_brushmodel"
+    origin "84 -485 459"
+    model "*34"
+}
+{
+    gndlt "3c3e3fec01"
+    ltorigin "520.1 656.06 420.224"
+    origin "512.1 656 376.2"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_400x88_med_01"
+    csv_include "animated_models_plastic_fence_400x88_med_01"
+    model "plastic_fence_400x88"
+    classname "script_model"
+}
+{
+    gndlt "26282a8701"
+    ltorigin "68.1425 267.843 420"
+    origin "64.2 259.8 376"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_300x88_med_01"
+    csv_include "animated_models_plastic_fence_300x88_med_01"
+    model "plastic_fence_300x88"
+    classname "script_model"
+    angles "0 54.8 0"
+}
+{
+    gndlt "333536b201"
+    ltorigin "1036.81 -24.8193 455.864"
+    origin "1038 -18.2 432"
+    targetname "animated_model"
+    precache_script "maps animated_models plastic_fence_256x48_med_01"
+    csv_include "animated_models_plastic_fence_256x48_med_01"
+    model "plastic_fence_256x48"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "2d2f32b901"
+    ltorigin "1050.01 -592 456"
+    origin "1050 -592 456"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x50_med_01"
+    csv_include "animated_models_fence_tarp_192x50_med_01"
+    model "fence_tarp_192x50"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    angles "90 349.689 169.689"
+    origin "393.3 -247.2 529.5"
+    targetname "lighthaze_oilrig_FX_origin"
+    classname "script_struct"
+}
+{
+    angles "90 349.689 169.689"
+    origin "292.3 -247.7 529.5"
+    targetname "lighthaze_oilrig_FX_origin"
+    classname "script_struct"
+}
+{
+    gndlt "383b3fe101"
+    ltorigin "-88 978.5 377.5"
+    targetname "intro_misc_hide"
+    origin "-88 978.5 377.5"
+    angles "270 285 0"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "383b3fd401"
+    ltorigin "-122.5 1018 377"
+    targetname "intro_misc_hide"
+    modelscale ".75"
+    angles "0 11.7 0"
+    origin "-122.5 1018 377"
+    model "payback_sstorm_debris_wood_5"
+    classname "script_model"
+}
+{
+    gndlt "383c3fd801"
+    ltorigin "-120.501 962 377"
+    targetname "intro_misc_hide"
+    modelscale ".75"
+    angles "0 347.7 0"
+    origin "-120.5 962 377"
+    model "payback_sstorm_debris_wood_5"
+    classname "script_model"
+}
+{
+    gndlt "383b3e9201"
+    ltorigin "-8.5 848 377.5"
+    targetname "intro_misc_hide"
+    origin "-8.5 848 377.5"
+    angles "270 270 0"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "3e41447f01"
+    ltorigin "1951 -1777.49 458.8"
+    origin "1951 -1777.5 458.8"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x84_a_med_01"
+    csv_include "animated_models_fence_tarp_192x84_a_med_01"
+    model "fence_tarp_192x84_a"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    ltorigin "-836.5 -794 278.8"
+    targetname "intro_misc_hide"
+    modelscale ".75"
+    angles "2.64367 11.7129 0.547878"
+    origin "-836.5 -794 278.8"
+    model "payback_sstorm_debris_wood_5"
+    classname "script_model"
+}
+{
+    gndlt "3c3d3ea901"
+    ltorigin "-899.5 72.5 152.5"
+    targetname "intro_misc_hide"
+    origin "-899.5 72.5 152.5"
+    angles "270.7 90 -180"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "3536384401"
+    ltorigin "573 -1219.5 425.976"
+    origin "573 -1219.5 432.5"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_196x146_med_01"
+    csv_include "animated_models_fence_tarp_196x146_med_01"
+    model "fence_tarp_196x146"
+    classname "script_model"
+    angles "1.00179e-005 180 90"
+}
+{
+    gndlt "2e30326001"
+    ltorigin "-366.996 340.009 461"
+    origin "-367 340 461"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_352x88_med_01"
+    csv_include "animated_models_fence_tarp_352x88_med_01"
+    model "fence_tarp_352x88"
+    classname "script_model"
+    angles "0 154.6 0"
+}
+{
+    gndlt "2e2f322001"
+    ltorigin "520.805 -1284.59 325.358"
+    origin "520.8 -1290.5 319"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+}
+{
+    gndlt "383c3f5701"
+    ltorigin "1147.1 -1231.09 371.616"
+    origin "1147.1 -1233.1 366.3"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "5.75608 270 90"
+}
+{
+    gndlt "2f31333f01"
+    ltorigin "649.805 -1284.59 325.358"
+    origin "649.8 -1290.5 319"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+}
+{
+    gndlt "323437ce01"
+    ltorigin "760.588 -1085.2 324.358"
+    origin "766.5 -1085.2 318"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "3738389d01"
+    ltorigin "293 -1677.5 310.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "293 -1677.5 292"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "1.00179e-005 269.118 0"
+}
+{
+    gndlt "33373a4d01"
+    ltorigin "1554.64 -1230.58 343.792"
+    origin "1549.69 -1228.59 345.802"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "354.025 276.883 5.30973"
+}
+{
+    gndlt "3435356001"
+    ltorigin "292 -1722.5 310.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "292 -1722.5 292"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "1.00179e-005 269.118 0"
+}
+{
+    gndlt "2c2e310000"
+    ltorigin "520.522 -896 381.407"
+    origin "518.5 -896 376"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "355.1 0 89.9998"
+}
+{
+    gndlt "4347498001"
+    ltorigin "1065.85 -1656.1 330.1"
+    target "pf2555_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1042.5 -1666.6 330.1"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "348.232 296.4 -90"
+}
+{
+    spawnflags "1"
+    targetname "pf2555_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1067 -1655 330"
+    model "*35"
+}
+{
+    gndlt "4a4e4f4101"
+    ltorigin "1086.1 -1706.1 359.126"
+    target "pf2556_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1086.1 -1706.1 332"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2556_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1086 -1706 359"
+    model "*36"
+}
+{
+    gndlt "494d4e2601"
+    ltorigin "1077.9 -1698.9 359.126"
+    target "pf2557_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1077.9 -1698.9 332"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf2557_auto1"
+    classname "script_brushmodel"
+    origin "1078 -1699 359"
+    model "*37"
+}
+{
+    gndlt "28292b9501"
+    ltorigin "1551.9 -1588.8 316.626"
+    target "pf2568_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1551.9 -1588.8 289.5"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 229.132 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2568_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1552 -1589 317"
+    model "*38"
+}
+{
+    gndlt "303235af01"
+    ltorigin "1566.85 -1555.71 295.31"
+    target "pf2569_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1561.1 -1581.2 294.5"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "289.711 170.52 83.4669"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf2569_auto1"
+    classname "script_brushmodel"
+    origin "1568 -1555 296"
+    model "*39"
+}
+{
+    gndlt "3537380005"
+    ltorigin "760.588 -827.695 324.358"
+    origin "766.5 -827.7 318"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "2828290000"
+    ltorigin "392.805 -1284.59 325.358"
+    origin "392.8 -1290.5 319"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_128x84_med_01"
+    csv_include "animated_models_fence_tarp_128x84_med_01"
+    model "fence_tarp_128x84"
+    classname "script_model"
+}
+{
+    gndlt "484b4bcb01"
+    ltorigin "-194.5 607 377"
+    targetname "intro_misc_hide"
+    origin "-194.5 607 377"
+    angles "270 347.4 2.73195e-005"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "4b4d4dbd01"
+    ltorigin "-235.5 605 377"
+    targetname "intro_misc_hide"
+    origin "-235.5 605 377"
+    angles "270 158.1 1.23641e-005"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "4c4e4dc301"
+    ltorigin "-225.5 600 380"
+    targetname "intro_misc_hide"
+    origin "-225.5 600 380"
+    angles "270 333.6 0"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "2d2f301101"
+    ltorigin "1261.5 278 152.7"
+    targetname "intro_misc_hide"
+    origin "1261.5 278 152.7"
+    angles "272.4 270 -5.19999"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "3535350000"
+    ltorigin "2343.63 -205.855 198.999"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2664_auto1"
+    origin "2330.3 -188.4 197.6"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "76.1257 22.6695 74.775"
+}
+{
+    spawnflags "1"
+    targetname "pf2664_auto1"
+    classname "script_brushmodel"
+    origin "2344 -206 199"
+    model "*40"
+}
+{
+    gndlt "404245a101"
+    ltorigin "-599.4 -1090.4 306.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "-599.4 -1090.4 288"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 269.813 0"
+}
+{
+    gndlt "2526278301"
+    ltorigin "-201.3 1160.1 403.126"
+    target "pf2698_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "-201.3 1160.1 376"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2698_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "-201 1160 403"
+    model "*41"
+}
+{
+    gndlt "2f31330000"
+    ltorigin "660.169 874.19 376.068"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "657.3 876.5 358"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "5.25031 269.153 -7.17249"
+}
+{
+    gndlt "3437399501"
+    ltorigin "1586.57 1382.37 334.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2738_auto1"
+    origin "1586.6 1382.4 312"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 343.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2738_auto1"
+    classname "script_brushmodel"
+    origin "1587 1382 334"
+    model "*42"
+}
+{
+    gndlt "3235384901"
+    ltorigin "266.673 1185.23 398.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2740_auto1"
+    origin "266.7 1185.2 376"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2740_auto1"
+    classname "script_brushmodel"
+    origin "267 1185 398"
+    model "*43"
+}
+{
+    gndlt "383a3e2c01"
+    ltorigin "17.5727 740.931 446.007"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2741_auto1"
+    origin "17.6 740.9 424"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 253.721 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2741_auto1"
+    classname "script_brushmodel"
+    origin "18 741 446"
+    model "*44"
+}
+{
+    gndlt "313233c601"
+    ltorigin "-1117.05 -255.902 205.603"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2742_auto1"
+    origin "-1117.3 -255.6 183.6"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0.627857 253.71 -0.942747"
+}
+{
+    spawnflags "1"
+    targetname "pf2742_auto1"
+    classname "script_brushmodel"
+    origin "-1117 -256 206"
+    model "*45"
+}
+{
+    gndlt "343436c101"
+    ltorigin "-1111.23 -389.985 205.202"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2743_auto1"
+    origin "-1111.7 -390.1 183.2"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "358.974 163.726 0.538691"
+}
+{
+    spawnflags "1"
+    targetname "pf2743_auto1"
+    classname "script_brushmodel"
+    origin "-1111 -390 205"
+    model "*46"
+}
+{
+    gndlt "3334350000"
+    ltorigin "2337.68 -166.035 204.607"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2745_auto1"
+    origin "2337.7 -166 182.6"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    targetname "pf2745_auto1"
+    classname "script_brushmodel"
+    origin "2338 -166 205"
+    model "*47"
+}
+{
+    gndlt "3b3e3f6201"
+    ltorigin "942.42 -1651.82 300.68"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2747_auto1"
+    origin "942.3 -1652.9 278.7"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "358.474 207.731 2.24592"
+}
+{
+    spawnflags "1"
+    targetname "pf2747_auto1"
+    classname "script_brushmodel"
+    origin "942 -1652 301"
+    model "*48"
+}
+{
+    gndlt "2a2a2c9401"
+    ltorigin "1566.66 -1600.9 313.307"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf2757_auto1"
+    origin "1566.7 -1600.9 291.3"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 300 0"
+}
+{
+    spawnflags "1"
+    targetname "pf2757_auto1"
+    classname "script_brushmodel"
+    origin "1567 -1601 313"
+    model "*49"
+}
+{
+    gndlt "2f31321701"
+    ltorigin "1629.9 -599.5 210"
+    origin "1624 -599.5 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "3033350000"
+    ltorigin "1445.9 -599.5 210"
+    origin "1440 -599.5 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    ltorigin "1077.9 -599.5 210"
+    origin "1072 -599.5 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 270 0"
+}
+{
+    gndlt "36393c8d01"
+    ltorigin "-673.5 950 390"
+    targetname "intro_misc_hide"
+    origin "-673.5 950 390"
+    angles "296.5 333.6 0"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    ltorigin "-991 908 480"
+    targetname "intro_misc_hide"
+    origin "-991 908 480"
+    angles "295.39 352.666 115.601"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    ltorigin "-770.5 918 414"
+    targetname "intro_misc_hide"
+    origin "-770.5 918 414"
+    angles "298.117 342.293 64.0727"
+    model "fx_wood_beam"
+    classname "script_model"
+}
+{
+    gndlt "35383b8c01"
+    ltorigin "416.5 -1777.49 458.8"
+    origin "416.5 -1777.5 458.8"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_192x84_a_med_01"
+    csv_include "animated_models_fence_tarp_192x84_a_med_01"
+    model "fence_tarp_192x84_a"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "36393ca901"
+    ltorigin "1400.84 2699.01 439"
+    origin "1399.9 2698.6 439"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 229.8 0"
+}
+{
+    ltorigin "2110.38 -172.19 400.616"
+    origin "2111 -172.5 448"
+    targetname "animated_model"
+    precache_script "maps animated_models fence_tarp_draping_98x94_med_02"
+    csv_include "animated_models_fence_tarp_draping_98x94_med_02"
+    model "fence_tarp_draping_98x94_02"
+    classname "script_model"
+    angles "0 90 0"
+}
+{
+    gndlt "34373ada01"
+    ltorigin "1454.76 1208.03 340.641"
+    destructible_type "vehicle_jeep"
+    targetname "destructible_vehicle"
+    origin "1451 1213 301"
+    model "vehicle_jeep_destructible"
+    classname "script_model"
+    csv_include "destructible_jeep"
+    sound_csv_include "vehicle_car_exp"
+    angles "0 338.4 0"
+}
+{
+    gndlt "2525261501"
+    ltorigin "1258 -162.9 210"
+    origin "1258 -157 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "2e2f311801"
+    ltorigin "1258 28.0996 210"
+    origin "1258 34 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "292a2c0000"
+    ltorigin "1258 219.1 210"
+    origin "1258 225 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3132334001"
+    ltorigin "1745.46 -567.498 361.807"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf3016_auto1"
+    origin "1745.5 -567.5 339.8"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 300 0"
+}
+{
+    spawnflags "1"
+    targetname "pf3016_auto1"
+    classname "script_brushmodel"
+    origin "1746 -567 362"
+    model "*50"
+}
+{
+    gndlt "3333346901"
+    ltorigin "1744.46 -528.498 317.807"
+    sound_csv_include "destruct_mtl_barrel"
+    csv_include "interactive_barrel_benzin"
+    spawnflags "4"
+    target "pf3017_auto1"
+    origin "1744.5 -528.5 295.8"
+    targetname "explodable_barrel"
+    model "com_barrel_benzin"
+    classname "script_model"
+    angles "0 300 0"
+}
+{
+    spawnflags "1"
+    targetname "pf3017_auto1"
+    classname "script_brushmodel"
+    origin "1745 -528 318"
+    model "*51"
+}
+{
+    gndlt "3334368001"
+    ltorigin "1805.66 -528.026 323.126"
+    target "pf3019_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1805.66 -528.026 296"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 212.156 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3019_auto1"
+    classname "script_brushmodel"
+    origin "1806 -528 323"
+    model "*52"
+}
+{
+    gndlt "3536374e01"
+    ltorigin "1845.3 -567.9 323.126"
+    target "pf3021_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1845.3 -567.9 296"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf3021_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1845 -568 323"
+    model "*53"
+}
+{
+    gndlt "363636af01"
+    ltorigin "1862.2 -569.5 323.126"
+    target "pf3022_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "1862.2 -569.5 296"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf3022_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "1862 -569 323"
+    model "*54"
+}
+{
+    gndlt "353536a701"
+    ltorigin "1859.5 -558.1 323.126"
+    target "pf3023_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "1859.5 -558.1 296"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3023_auto1"
+    classname "script_brushmodel"
+    origin "1860 -558 323"
+    model "*55"
+}
+{
+    gndlt "37393c9501"
+    ltorigin "1258 410.1 210"
+    origin "1258 416 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3031330e01"
+    ltorigin "1258 983.1 210"
+    origin "1258 989 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3032341f01"
+    ltorigin "1258 792.1 210"
+    origin "1258 798 210"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "0 180 0"
+}
+{
+    gndlt "3436375101"
+    ltorigin "1443.1 212.5 275.3"
+    origin "1443.1 212.5 269.4"
+    model "concrete_sewer_pipe_large"
+    classname "script_model"
+    angles "1.00179e-005 180 90"
+}
+{
+    gndlt "2b2c2eb701"
+    ltorigin "-187.1 1169.9 403.126"
+    target "pf3104_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "-187.1 1169.9 376"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3104_auto1"
+    classname "script_brushmodel"
+    origin "-187 1170 403"
+    model "*56"
+}
+{
+    gndlt "18181a0000"
+    ltorigin "294 1369.7 403.126"
+    target "pf3105_auto1"
+    sound_csv_include "destruct_oxygen_tank"
+    classname "script_model"
+    model "machinery_oxygen_tank02"
+    origin "294 1369.7 376"
+    targetname "destructible_toy"
+    destructible_type "toy_oxygen_tank_02"
+    csv_include "destructible_oxygen_tank"
+    angles "0 348.232 0"
+}
+{
+    spawnflags "1"
+    targetname "pf3105_auto1"
+    script_destruct_collision "pre"
+    classname "script_brushmodel"
+    origin "294 1370 403"
+    model "*57"
+}
+{
+    gndlt "1718190000"
+    ltorigin "306.2 1400.5 403.126"
+    target "pf3106_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "306.2 1400.5 376"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 74.607 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3106_auto1"
+    classname "script_brushmodel"
+    origin "306 1401 403"
+    model "*58"
+}
+{
+    gndlt "35383bd701"
+    ltorigin "150.596 713.942 403.126"
+    target "pf3118_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "150.596 713.942 376"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 29.356 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3118_auto1"
+    classname "script_brushmodel"
+    origin "151 714 403"
+    model "*59"
+}
+{
+    gndlt "35383ca501"
+    ltorigin "193.3 1156.5 394.334"
+    sound_csv_include "destruct_trashcan"
+    targetname "destructible_toy"
+    destructible_type "toy_trashcan_metal_closed"
+    csv_include "destructible_trashcan_metal_closed"
+    origin "193.3 1156.5 376"
+    model "com_trashcan_metal_closed"
+    classname "script_model"
+    angles "0 269.813 0"
+}
+{
+    gndlt "3336398c01"
+    ltorigin "101.699 775.451 440"
+    target "pf3141_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "77.5 766.6 440"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "90 22.607 4.46548e-006"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3141_auto1"
+    classname "script_brushmodel"
+    origin "102 777 440"
+    model "*60"
+}
+{
+    gndlt "292b2e0000"
+    ltorigin "297.591 1239.7 403.126"
+    target "pf3144_auto1"
+    csv_include "destructible_oxygen_tank"
+    destructible_type "toy_oxygen_tank_01"
+    targetname "destructible_toy"
+    origin "297.591 1239.7 376"
+    model "machinery_oxygen_tank01"
+    classname "script_model"
+    sound_csv_include "destruct_oxygen_tank"
+    angles "0 175.356 0"
+}
+{
+    script_destruct_collision "pre"
+    spawnflags "1"
+    targetname "pf3144_auto1"
+    classname "script_brushmodel"
+    origin "298 1240 403"
+    model "*61"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "1728.1 -1618.6 325.5"
+    angles "0 90 0"
+}
+{
+    classname "trigger_use_touch"
+    targetname "sab_bomb_axis"
+    script_gameobjectname "sab"
+    target "pf3155_auto1"
+    origin "2143 -219 184"
+    model "?11"
+}
+{
+    targetname "sab_bomb_defuse_axis"
+    script_gameobjectname "sab"
+    classname "trigger_use_touch"
+    origin "2143 -219 184"
+    model "?12"
+}
+{
+    gndlt "3b3d3ed701"
+    ltorigin "2143.42 -217.42 204.323"
+    targetname "pf3155_auto1"
+    spawnflags "4"
+    script_gameobjectname "sab"
+    script_exploder "pf3155_2"
+    origin "2143.3 -216 174.3"
+    angles "0 270 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "3f4041cf01"
+    ltorigin "2139.89 -213.437 193.756"
+    script_gameobjectname "sab"
+    script_exploder "pf3155_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "2143.3 -219 176.3"
+    angles "0 90 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    spawnflags "1"
+    script_gameobjectname "sab"
+    classname "script_brushmodel"
+    origin "2144 -216 204"
+    model "*62"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2340 -35 220"
+    angles "0 180 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    origin "2316 64 216"
+    angles "0 205 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "1892 -1599 317"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "2337 -35 213"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "456 1406 382"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 315 0"
+}
+{
+    origin "-950.8 -1099.3 316"
+    angles "0 59.3 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-124 1092 387"
+    angles "0 0 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-1102.1 29.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    angles "0 128.1 0"
+    origin "1238.5 -1703.4 304.8"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-130 1215.8 404"
+    angles "0 300.4 0"
+    classname "mp_dom_spawn"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "1776 1424 326"
+    angles "0 270 0"
+}
+{
+    angles "0 0 0"
+    targetname "flag_descriptor"
+    origin "-896 -191.9 275.7"
+    script_linkto "2"
+    script_linkname "1"
+    classname "script_origin"
+}
+{
+    angles "0 180 0"
+    targetname "flag_descriptor"
+    origin "1499.9 511.9 296.2"
+    script_linkto "2"
+    script_linkname "3"
+    classname "script_origin"
+}
+{
+    angles "0 180 0"
+    targetname "flag_descriptor"
+    origin "870 -1510 384.5"
+    script_linkto "1 3"
+    script_linkname "2"
+    classname "script_origin"
+}
+{
+    modelscale "0.908008"
+    origin "-122 1090 388"
+    angles "0 0 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    origin "-994.3 -1045.8 316"
+    angles "0 35.2 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-995.3 -981.3 316"
+    angles "0 19.6 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-994.3 -925.8 316"
+    angles "0 20.8 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-874.3 -1103.8 316"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-1003.8 -859.3 316"
+    angles "0 0 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-831.8 -1007.8 316"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-1087.5 -189.6 205.1"
+    angles "0 0 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-1087.3 -190.9 206.1"
+    angles "0 0 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-993.6 358 209.2"
+    angles "0 317.6 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-969.3 -1025.8 316.1"
+    angles "0 34.6 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-968.2 -1026.6 317.1"
+    angles "0 34.6 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-968.8 -1029.5 316.1"
+    angles "0 34.6 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "2324.9 63 212.1"
+    angles "0 215 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "2315.6 59 213.1"
+    angles "0 215 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "2314.5 61.8 212.1"
+    angles "0 215 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "1733.1 -1616.6 327.3"
+    angles "0 90 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "1734.4 -1616.3 328.3"
+    angles "0 90 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "1736.4 -1618.5 327.3"
+    angles "0 90 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "1772 1422 328"
+    angles "0 270 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "1772 1424 328"
+    angles "0 270 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "1770 1426 326"
+    angles "0 270 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "456 1404 396"
+    angles "0 315 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "454 1404 396"
+    angles "0 315 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "452 1404 396"
+    angles "0 315 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "2213 -1153 311"
+    angles "0 180 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "2212 -1153 312"
+    angles "0 180 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "2212 -1157 311"
+    angles "0 180 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "482 -1727.3 329"
+    angles "0 90 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "483.3 -1727 330"
+    angles "0 90 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "485.3 -1729.2 329"
+    angles "0 90 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-776.8 -1007.8 316"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "-720.3 -1007.8 316"
+    angles "0 90 0"
+    classname "mp_dom_spawn_allies_start"
+}
+{
+    origin "2338 16 216"
+    angles "0 180 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "2338 -32 216"
+    angles "0 180 0"
+    classname "mp_dom_spawn_axis_start"
+}
+
+{
+    targetname "pf3156_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "856 -1528 282"
+    model "?14"
+}
+{
+    gndlt "3c4043ea01"
+    ltorigin "855.879 -1529.58 302.023"
+    target "pf3156_auto2"
+    targetname "pf3156_auto1"
+    spawnflags "4"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3156_2"
+    origin "856 -1531 272"
+    angles "0 90 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "3c3f43e801"
+    ltorigin "859.406 -1533.56 291.456"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3156_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "856 -1528 274"
+    angles "0 270 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+
+{
+    angles "0 90 0"
+    origin "1888 -1600 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 90 0"
+    origin "1840 -1600 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "2152 -1342 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "2108 -1438 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "2104 -1488 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 120 0"
+    origin "2008 -1588 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 180 0"
+    origin "2112 -1388 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    angles "0 90 0"
+    origin "1792 -1600 320"
+    classname "mp_tdm_spawn_axis_start"
+}
+{
+    origin "2248 68 216"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    angles "0 0 0"
+    origin "-120 1088 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "64 1152 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "8 1152 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "-48 1152 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 0 0"
+    origin "-120 1040 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 0 0"
+    origin "-120 992 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 0 0"
+    origin "-184 944 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    angles "0 270 0"
+    origin "112 1152 388"
+    classname "mp_tdm_spawn_allies_start"
+}
+{
+    origin "2338 -80 216"
+    angles "0 180 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "2152 76 216"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "2200 76 216"
+    angles "0 270 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "2340 -126 216"
+    angles "0 180 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    origin "2288 -56 216"
+    angles "0 180 0"
+    classname "mp_dom_spawn_axis_start"
+}
+{
+    modelscale "0.748779"
+    classname "mp_dd_spawn_defender"
+    angles "0 90 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "331 -431 299"
+}
+{
+    angles "0 90 0"
+    origin "1778 176 192"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "-31 -383 307"
+    angles "0 90 0"
+    classname "mp_dom_spawn"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "-349 -1472 360"
+    model "?15"
+}
+{
+    gndlt "38393ada01"
+    ltorigin "-417.786 -1516.5 302.889"
+    spawnflags "4"
+    targetname "pf3157_auto1"
+    script_gameobjectname "hq"
+    origin "-417.6 -1516.5 288"
+    angles "0 90 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "38393be501"
+    ltorigin "-414.58 -1512.5 325.453"
+    spawnflags "4"
+    target "pf3157_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "-413.6 -1512.5 318"
+    angles "0 3.18772e-006 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "-411.657 -1499.78 318.578"
+    spawnflags "4"
+    targetname "pf3157_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 130 -89.9997"
+    origin "-408.9 -1497.8 318"
+}
+{
+    spawnflags "1"
+    targetname "pf3157_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-418 -1516 303"
+    model "*64"
+}
+{
+    spawnflags "1"
+    targetname "pf3157_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "-421 -1512 326"
+    model "*65"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "721 1176 440"
+    model "?16"
+}
+{
+    gndlt "323538b301"
+    ltorigin "659.214 1191.5 382.889"
+    spawnflags "4"
+    targetname "pf3158_auto1"
+    script_gameobjectname "hq"
+    origin "659.4 1191.5 368"
+    angles "0 90 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "323538a401"
+    ltorigin "662.42 1195.5 405.453"
+    spawnflags "4"
+    target "pf3158_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "663.4 1195.5 398"
+    angles "0 3.18772e-006 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "665.343 1208.22 398.578"
+    spawnflags "4"
+    targetname "pf3158_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 130 -89.9997"
+    origin "668.1 1210.2 398"
+}
+{
+    spawnflags "1"
+    targetname "pf3158_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "659 1192 383"
+    model "*66"
+}
+{
+    spawnflags "1"
+    targetname "pf3158_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "656 1196 406"
+    model "*67"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "1820 672 378"
+    model "?17"
+}
+{
+    gndlt "2e2e2b0000"
+    ltorigin "1827.39 642.9 334.889"
+    spawnflags "4"
+    targetname "pf3159_auto1"
+    script_gameobjectname "hq"
+    origin "1827.2 642.9 320"
+    angles "0 270 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "2e2e2b0000"
+    ltorigin "1824.18 638.9 357.453"
+    spawnflags "4"
+    target "pf3159_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "1823.2 638.9 350"
+    angles "0 180 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "1821.26 626.183 350.578"
+    spawnflags "4"
+    targetname "pf3159_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 310 -89.9997"
+    origin "1818.5 624.2 350"
+}
+{
+    spawnflags "1"
+    targetname "pf3159_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "1827 643 335"
+    model "*68"
+}
+{
+    spawnflags "1"
+    targetname "pf3159_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "1831 639 358"
+    model "*69"
+}
+{
+    targetname "radiotrigger"
+    classname "trigger_multiple"
+    origin "2018 -1460 346"
+    model "?18"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2340 13 220"
+    angles "0 180 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    gndlt "2a2c2db201"
+    ltorigin "2025.07 -1533.39 313.189"
+    spawnflags "4"
+    targetname "pf3160_auto1"
+    script_gameobjectname "hq"
+    origin "2024.9 -1533.3 298.3"
+    angles "0 242 0"
+    model "com_plasticcase_beige_big"
+    classname "script_model"
+}
+{
+    gndlt "2b2c2eb901"
+    ltorigin "2020.31 -1535.4 335.753"
+    spawnflags "4"
+    target "pf3160_auto1"
+    script_gameobjectname "hq"
+    targetname "hq_hardpoint"
+    origin "2019.49 -1534.95 328.3"
+    angles "0 152 0"
+    model "com_laptop_2_open"
+    classname "script_model"
+}
+{
+    ltorigin "2011.94 -1545.04 328.878"
+    spawnflags "4"
+    targetname "pf3160_auto1"
+    script_gameobjectname "hq"
+    classname "script_model"
+    model "com_cellphone_on"
+    angles "0 282 -89.9997"
+    origin "2008.44 -1545.73 328.3"
+}
+{
+    spawnflags "1"
+    targetname "pf3160_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "2025 -1533 314"
+    model "*70"
+}
+{
+    spawnflags "1"
+    targetname "pf3160_auto1"
+    script_gameobjectname "hq"
+    classname "script_brushmodel"
+    origin "2026 -1539 336"
+    model "*71"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2340 -83 220"
+    angles "0 180 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2342 -129 220"
+    angles "0 180 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2326.1 67.1 220"
+    angles "0 216 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2250.1 67.1 220"
+    angles "0 270 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2202.1 73.1 220"
+    angles "0 270 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2154.1 73.1 220"
+    angles "0 270 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    origin "328.1 -427.9 302"
+    angles "0 90 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "0.000000 0.501961 0.000000"
+    origin "2234.1 13.1 220"
+    angles "0 270 0"
+    classname "mp_sd_spawn_attacker"
+}
+{
+    origin "329.1 -428.9 301"
+    angles "0 90 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-996.4 358.5 224.7"
+    angles "0 314.8 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-997.1 357.4 225.7"
+    angles "0 314.8 0"
+    classname "mp_tdm_spawn"
+}
+{
+    origin "-1094 260 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1104 152 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1104 90 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1104 32 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1048 366 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1010 290 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "1121.3 916.7 205.7"
+    angles "0 270 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "-1028 128 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1026 62 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    origin "-1028 0 210"
+    angles "0 0 0"
+    classname "mp_sd_spawn_defender"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "2048 -1408 864"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_15"
+    script_linkto "pf3161_4 pf3161_9 pf3161_14"
+}
+{
+    angles "0 0 0"
+    origin "1320 600 208"
+    classname "node_pathnode"
+}
+{
+    origin "1392 632 208"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "1392 600 208"
+    classname "node_pathnode"
+}
+{
+    origin "1466 492 214"
+    classname "node_pathnode"
+}
+{
+    origin "1616 893 302"
+    classname "node_pathnode"
+}
+{
+    origin "1444 893 302"
+    classname "node_pathnode"
+}
+{
+    origin "1427 755 260"
+    classname "node_pathnode"
+}
+{
+    origin "1599 755 260"
+    classname "node_pathnode"
+}
+{
+    origin "972 922 399.5"
+    angles "0 270 0"
+    classname "node_cover_stand"
+}
+{
+    origin "1582 468 214"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1350 527 205"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1320 632 208"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1350 495 206"
+    classname "node_cover_right"
+}
+{
+    origin "1660 307 212"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1660 339 213"
+    classname "node_cover_right"
+}
+{
+    origin "1507 303 214"
+    classname "node_pathnode"
+}
+{
+    origin "1608 183 215"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1860 348 209"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1828 348 210"
+    classname "node_cover_right"
+}
+{
+    origin "1700 339 208"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "1700 307 208"
+    classname "node_pathnode"
+}
+{
+    origin "1872 160 208"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "1904 160 208"
+    classname "node_pathnode"
+}
+{
+    origin "2000 348 212"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    origin "1968 348 212"
+    classname "node_pathnode"
+}
+{
+    origin "1800 241 207"
+    classname "node_pathnode"
+}
+{
+    origin "1982 240 207"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1975 123 207"
+    classname "node_pathnode"
+}
+{
+    angles "0 225 0"
+    spawnflags "4"
+    origin "734 -1463.5 321"
+    classname "node_cover_left"
+}
+{
+    angles "0 152.1 0"
+    origin "2156 -81 204.2"
+    classname "node_cover_right"
+}
+{
+    origin "2138 58 207"
+    classname "node_pathnode"
+}
+{
+    origin "2277 -18 207"
+    classname "node_pathnode"
+}
+{
+    origin "2229 -146 216"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "632 1340 396"
+    classname "node_cover_right"
+}
+{
+    origin "2253 -289 222"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "1833 -649 319"
+    classname "node_cover_right"
+}
+{
+    origin "2097 -354 249"
+    classname "node_pathnode"
+}
+{
+    origin "2051 -484 305"
+    classname "node_pathnode"
+}
+{
+    origin "2055 -601 323"
+    classname "node_pathnode"
+}
+{
+    origin "2168 -565 305"
+    classname "node_pathnode"
+}
+{
+    origin "2144 -730 323"
+    classname "node_pathnode"
+}
+{
+    origin "1890 -32 221"
+    classname "node_pathnode"
+}
+{
+    origin "1910 -149 234"
+    classname "node_pathnode"
+}
+{
+    origin "1898 -339 300.2"
+    classname "node_pathnode"
+}
+{
+    origin "1763 -144 257"
+    classname "node_pathnode"
+}
+{
+    origin "1782 -311 296"
+    classname "node_pathnode"
+}
+{
+    origin "1953 -398 305"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "1985 -398 305"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "2208 -440 267"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "2240 -440 267"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "1985 -689 323.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1953 -689 323.7"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "1857 344 345"
+    classname "node_cover_left"
+}
+{
+    origin "1892 -766 319"
+    classname "node_pathnode"
+}
+{
+    origin "2011 -831 319"
+    classname "node_pathnode"
+}
+{
+    origin "1905 -938 319"
+    classname "node_pathnode"
+}
+{
+    origin "2016 -1005 319"
+    classname "node_pathnode"
+}
+{
+    origin "1913 -450 319"
+    classname "node_pathnode"
+}
+{
+    origin "1790 -863 325"
+    classname "node_pathnode"
+}
+{
+    origin "1891 -441 319"
+    angles "0 90 0"
+    classname "node_concealment_crouch"
+}
+{
+    origin "2095 -948.5 318"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    origin "2157.5 -1130 320"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "2125.5 -1130 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 105.7 0"
+    origin "2077.5 -1245 327.6"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 105.7 0"
+    origin "2045.5 -1254 328"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1756 -1172 326"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1724 -1172 326"
+    classname "node_cover_right"
+}
+{
+    origin "1825 -1027 332"
+    classname "node_pathnode"
+}
+{
+    origin "2003 -1124 319"
+    classname "node_pathnode"
+}
+{
+    origin "2153 -1251 319"
+    classname "node_pathnode"
+}
+{
+    origin "1756 -1140 326"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "1886.5 -1354 320"
+    angles "0 164.5 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 164.5 0"
+    origin "1878 -1389.5 320"
+    classname "node_pathnode"
+}
+{
+    origin "2038 -1379 323"
+    classname "node_pathnode"
+}
+{
+    origin "2099 -1480 325"
+    classname "node_pathnode"
+}
+{
+    origin "1953 -1532 323"
+    classname "node_pathnode"
+}
+{
+    origin "1816 -1589 319"
+    classname "node_pathnode"
+}
+{
+    origin "1777 -1454 319"
+    classname "node_pathnode"
+}
+{
+    origin "1755 -1268 319"
+    classname "node_pathnode"
+}
+{
+    origin "1664 -1477 319"
+    classname "node_pathnode"
+}
+{
+    origin "1629 -1396 319"
+    classname "node_pathnode"
+}
+{
+    origin "1480 -1500 319"
+    classname "node_pathnode"
+}
+{
+    origin "1473 -1391 319"
+    classname "node_pathnode"
+}
+{
+    origin "1655 -1213 336"
+    classname "node_pathnode"
+}
+{
+    origin "1541 -1225.5 336"
+    classname "node_pathnode"
+}
+{
+    angles "0 250.1 0"
+    origin "1855 -1118.5 320"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    angles "0 250.1 0"
+    origin "1890.5 -1131 320"
+    classname "node_cover_right"
+}
+{
+    origin "2063 -948.5 318"
+    angles "0 90 0"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "181.5 722.5 402"
+    classname "node_cover_left"
+}
+{
+    origin "1346 -1498 319"
+    classname "node_pathnode"
+}
+{
+    origin "1341 -1376 319"
+    classname "node_pathnode"
+}
+{
+    origin "1338 -1249 319"
+    classname "node_pathnode"
+}
+{
+    origin "1240 -1388 319"
+    classname "node_pathnode"
+}
+{
+    origin "1137 -1571 319"
+    classname "node_pathnode"
+}
+{
+    origin "1197 -1672 319"
+    classname "node_pathnode"
+}
+{
+    origin "1181 -1469 319"
+    classname "node_pathnode"
+}
+{
+    origin "1048 -1489 319"
+    classname "node_pathnode"
+}
+{
+    origin "909 -1529 319"
+    classname "node_pathnode"
+}
+{
+    origin "835 -1608 319"
+    classname "node_pathnode"
+}
+{
+    origin "897 -1263 319"
+    classname "node_pathnode"
+}
+{
+    origin "863 -1161 319"
+    classname "node_pathnode"
+}
+{
+    origin "807 -1039 319"
+    classname "node_pathnode"
+}
+{
+    origin "806 -884 319"
+    classname "node_pathnode"
+}
+{
+    origin "805 -727 319"
+    classname "node_pathnode"
+}
+{
+    origin "935 -1036 326"
+    classname "node_pathnode"
+}
+{
+    origin "936 -881 322"
+    classname "node_pathnode"
+}
+{
+    origin "932 -723 325"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "1680.5 -1297.5 319.3"
+    angles "0.29653 187.495 7.23994e-008"
+    classname "node_cover_left"
+}
+{
+    angles "0 187.491 -0.296531"
+    origin "1685 -1331.5 318.2"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1256 -1564.5 320"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "1256 -1524 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "4"
+    origin "46 -1615 308"
+    classname "node_cover_left"
+}
+{
+    origin "1134 -1385 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1026 -1587.5 305.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "1026 -1619.5 305.9"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "46 -1583 308"
+    classname "node_pathnode"
+}
+{
+    origin "947 -1435 320"
+    classname "node_pathnode"
+}
+{
+    origin "826 -1451 319"
+    classname "node_pathnode"
+}
+{
+    origin "872 -1358 311"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "-880 -788 312"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "778 -1288 310"
+    classname "node_cover_left"
+}
+{
+    spawnflags "4"
+    origin "648 -1425.5 308.2"
+    angles "0 316.2 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    origin "-912 -788 312"
+    classname "node_cover_left"
+}
+{
+    angles "0 225 0"
+    origin "758.5 -1488 326.5"
+    classname "node_pathnode"
+}
+{
+    origin "1185.5 527.5 202.8"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    origin "526 -1368 319"
+    classname "node_pathnode"
+}
+{
+    origin "431 -1416 319"
+    classname "node_pathnode"
+}
+{
+    origin "472 -1503 319"
+    classname "node_pathnode"
+}
+{
+    origin "467 -1703 331"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "330 -1640 318"
+    classname "node_pathnode"
+}
+{
+    origin "379 -1584 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 133.3 0"
+    spawnflags "4"
+    origin "633.5 -1624.5 321.1"
+    classname "node_cover_left"
+}
+{
+    origin "685 -1671 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 226.2 0"
+    origin "670 -1402.5 307.7"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 226.2 0"
+    origin "693.5 -1424.5 305.4"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "778 -1320 310"
+    classname "node_pathnode"
+}
+{
+    origin "1217.5 527.5 193.8"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "48.5 -161 316"
+    classname "node_cover_left"
+}
+{
+    angles "0 133.3 0"
+    origin "610 -1646.5 326.3"
+    classname "node_pathnode"
+}
+{
+    angles "0 43.3 0"
+    spawnflags "4"
+    origin "588 -1623 337.7"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "330 -1672 318"
+    classname "node_cover_right"
+}
+{
+    _id_295D "1"
+    script_linkto "pf3161_16"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-2051.1 4051.3 1720"
+    angles "0 318 0"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    targetname "chopper_boss_path_start"
+}
+{
+    origin "275 -1559 319"
+    classname "node_pathnode"
+}
+{
+    origin "112 -1515 319"
+    classname "node_pathnode"
+}
+{
+    origin "136 -1437 319"
+    classname "node_pathnode"
+}
+{
+    origin "198 -1345 319"
+    classname "node_pathnode"
+}
+{
+    origin "20 -1529 319"
+    classname "node_pathnode"
+}
+{
+    origin "-124 -1579 319"
+    classname "node_pathnode"
+}
+{
+    origin "-18 -1404 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "-4 -1280 320"
+    classname "node_pathnode"
+}
+{
+    origin "274 -1443 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "208 -1570 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "208 -1602 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "32 -1256 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    origin "64 -1256 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "32 -1312 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "64 -1312 320"
+    classname "node_cover_left"
+}
+{
+    origin "-301 -1597 319"
+    classname "node_pathnode"
+}
+{
+    origin "-390 -1610 319"
+    classname "node_pathnode"
+}
+{
+    origin "-356 -1505 319"
+    classname "node_pathnode"
+}
+{
+    origin "-316 -1227 310"
+    classname "node_pathnode"
+}
+{
+    origin "-308 -1408 319"
+    classname "node_pathnode"
+}
+{
+    origin "-417 -1392 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "-361 -1279 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "-246 -1552 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-246 -1520 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "-312 -1312 320"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "-280 -1312 320"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "-356 -376 314"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "-416 -1256 312"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "-448 -1256 312"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "-40 -1256 312"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    origin "-72 -1256 312"
+    classname "node_cover_left"
+}
+{
+    origin "112 -1208 310"
+    classname "node_pathnode"
+}
+{
+    origin "77 -1111 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 285.7 0"
+    origin "2059.5 -1180 323.3"
+    classname "node_pathnode"
+}
+{
+    origin "-43 -1152 310"
+    classname "node_pathnode"
+}
+{
+    origin "-128 -1110 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "-851.5 -1014 328"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "-402 -978 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    origin "-370 -978 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "-402 -1081.5 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "-402 -1049 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "-246 -942 315"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "-278 -942 312"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "-370 -1081.5 320"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "-246 -1070 313.6"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "-278 -1070 314.6"
+    classname "node_cover_right"
+}
+{
+    origin "-214 -1174 310"
+    classname "node_pathnode"
+}
+{
+    origin "-332 -1146 310"
+    classname "node_pathnode"
+}
+{
+    origin "-458 -1154 310"
+    classname "node_pathnode"
+}
+{
+    origin "-513 -1014 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "-184 -1016 315.5"
+    classname "node_pathnode"
+}
+{
+    origin "-909 -95 203"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-851.5 -1046 328"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "-752 -840 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "-720 -840 316"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "-880 -836 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "-912 -836 316"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "-607.5 -913.5 317.5"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-607.5 -881.5 317.5"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "-452.5 -816 312"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "-484.5 -816 312"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    origin "-386 -906 310"
+    classname "node_pathnode"
+}
+{
+    origin "-275 -853 310"
+    classname "node_pathnode"
+}
+{
+    origin "-251 -741 310"
+    classname "node_pathnode"
+}
+{
+    origin "-367 -762 310"
+    classname "node_pathnode"
+}
+{
+    origin "-615 -956 310"
+    classname "node_pathnode"
+}
+{
+    origin "-719 -988 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "-820 -812 310"
+    classname "node_pathnode"
+}
+{
+    origin "-812 -914 310"
+    classname "node_pathnode"
+}
+{
+    origin "-973 -1052 342"
+    classname "node_pathnode"
+}
+{
+    origin "-941 -931 313"
+    classname "node_pathnode"
+}
+{
+    angles "0 132 0"
+    spawnflags "32"
+    origin "-446 -724 310"
+    classname "node_pathnode"
+}
+{
+    origin "-476 -548 240"
+    classname "node_pathnode"
+}
+{
+    origin "-474 -664 288"
+    classname "node_pathnode"
+}
+{
+    origin "-587 -550 228"
+    classname "node_pathnode"
+}
+{
+    origin "-583 -690 267"
+    classname "node_pathnode"
+}
+{
+    origin "-704 -554 212"
+    classname "node_pathnode"
+}
+{
+    origin "-710 -696 266"
+    classname "node_pathnode"
+}
+{
+    origin "-842 -702 274"
+    classname "node_pathnode"
+}
+{
+    origin "-940 -689 262.5"
+    classname "node_pathnode"
+}
+{
+    origin "-1052 -704 266"
+    classname "node_pathnode"
+}
+{
+    origin "-1053 -571 220"
+    classname "node_pathnode"
+}
+{
+    origin "-1059 -456 203"
+    classname "node_pathnode"
+}
+{
+    origin "-958 -458 203"
+    classname "node_pathnode"
+}
+{
+    origin "-848 -565 216"
+    classname "node_pathnode"
+}
+{
+    origin "-855 -453 203"
+    classname "node_pathnode"
+}
+{
+    origin "-850 -323 203"
+    classname "node_pathnode"
+}
+{
+    origin "-1028 -322 203"
+    classname "node_pathnode"
+}
+{
+    origin "-968 -192 203"
+    classname "node_pathnode"
+}
+{
+    origin "-1069 -191 203"
+    classname "node_pathnode"
+}
+{
+    origin "-855 -188 203"
+    classname "node_pathnode"
+}
+{
+    origin "1241.5 557.5 187"
+    targetname "pf3162_auto2108"
+    angles "0 270 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 270 0"
+    animscript "jumpdown_130"
+    origin "1255.5 802.5 317"
+    target "pf3162_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf3162_auto2108"
+    origin "1255.5 691.5 281"
+    classname "script_origin"
+    angles "0 270 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1256 756 216"
+    model "?19"
+}
+{
+    animation "traverse_jumpdown_130"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1255.5 699.5 281"
+    angles "0 270 0"
+    classname "script_struct"
+}
+{
+    origin "-1009 -52 203"
+    classname "node_pathnode"
+}
+{
+    origin "-732 -269 201"
+    classname "node_pathnode"
+}
+{
+    origin "-973 272 217"
+    classname "node_pathnode"
+}
+{
+    origin "-724 -122 217"
+    classname "node_pathnode"
+}
+{
+    origin "-593 -116 241"
+    classname "node_pathnode"
+}
+{
+    origin "-599 -263 241"
+    classname "node_pathnode"
+}
+{
+    origin "-596 -401 241"
+    classname "node_pathnode"
+}
+{
+    origin "-479 -114 288"
+    classname "node_pathnode"
+}
+{
+    origin "-481 -267 294"
+    classname "node_pathnode"
+}
+{
+    origin "-476 -402 288"
+    classname "node_pathnode"
+}
+{
+    origin "-967 72 203"
+    classname "node_pathnode"
+}
+{
+    origin "-1071 70 203"
+    classname "node_pathnode"
+}
+{
+    origin "-1075 187 217"
+    classname "node_pathnode"
+}
+{
+    origin "-1072 366 217"
+    classname "node_pathnode"
+}
+{
+    origin "-967 366 217"
+    classname "node_pathnode"
+}
+{
+    origin "-838 329 221"
+    classname "node_pathnode"
+}
+{
+    origin "-838 195 207"
+    classname "node_pathnode"
+}
+{
+    origin "-706 196 221"
+    classname "node_pathnode"
+}
+{
+    origin "-711 349 248"
+    classname "node_pathnode"
+}
+{
+    origin "-709 52 221"
+    classname "node_pathnode"
+}
+{
+    origin "-578 51 221"
+    classname "node_pathnode"
+}
+{
+    origin "-575 195 221"
+    classname "node_pathnode"
+}
+{
+    origin "-575 342 256"
+    classname "node_pathnode"
+}
+{
+    origin "-442 196 246"
+    classname "node_pathnode"
+}
+{
+    origin "-441 54 246"
+    classname "node_pathnode"
+}
+{
+    origin "-287 50 268"
+    classname "node_pathnode"
+}
+{
+    origin "-287 187 268"
+    classname "node_pathnode"
+}
+{
+    origin "-442 301 258"
+    classname "node_pathnode"
+}
+{
+    origin "-179 111 291"
+    classname "node_pathnode"
+}
+{
+    origin "-58 185 302"
+    classname "node_pathnode"
+}
+{
+    origin "-124 259 322"
+    classname "node_pathnode"
+}
+{
+    origin "12 294 339"
+    classname "node_pathnode"
+}
+{
+    origin "-93 371 351"
+    classname "node_pathnode"
+}
+{
+    origin "-573 485 310"
+    classname "node_pathnode"
+}
+{
+    origin "-499 576 345"
+    classname "node_pathnode"
+}
+{
+    origin "-602 601 343"
+    classname "node_pathnode"
+}
+{
+    origin "-399 -104 307"
+    classname "node_pathnode"
+}
+{
+    origin "-343 -243 317"
+    classname "node_pathnode"
+}
+{
+    origin "1925 -607 319"
+    classname "node_pathnode"
+}
+{
+    origin "-267 -169 311"
+    classname "node_pathnode"
+}
+{
+    origin "-279 -313 317"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 285.7 0"
+    origin "2027 -1189 322.8"
+    classname "node_cover_left"
+}
+{
+    origin "-804 -512 203"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "-768 -512 203"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "-804 -440 202.1"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "-768 -440 203.4"
+    classname "node_cover_right"
+}
+{
+    angles "0 304.1 0"
+    origin "-873 61 193.5"
+    classname "node_pathnode"
+}
+{
+    angles "0 34.1 0"
+    origin "-855 34.5 189.6"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "43 648 401"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "-1039 -102.5 208"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 90 0"
+    origin "-1071 -102.5 209"
+    classname "node_cover_right"
+}
+{
+    origin "-1071 -262 210.8"
+    angles "0 252.4 0"
+    classname "node_cover_stand"
+}
+{
+    spawnflags "0"
+    origin "-1026.5 -836 307"
+    angles "0 90 0"
+    classname "node_cover_stand"
+}
+{
+    origin "1740 848 348"
+    angles "0 270 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "-428 -208 307"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-428 -172 307"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "-192 -144 310"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-192 -112 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "-192.5 -240 307"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-192.5 -272 307"
+    classname "node_cover_left"
+}
+{
+    origin "-45 -142 311"
+    classname "node_pathnode"
+}
+{
+    origin "-33 -309 315"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-74 735 402"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-356 -340 314"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "80.5 -291.5 316"
+    classname "node_cover_left"
+}
+{
+    origin "44 -400 311"
+    classname "node_pathnode"
+}
+{
+    origin "309 -94 311"
+    classname "node_pathnode"
+}
+{
+    origin "346 -228 311"
+    classname "node_pathnode"
+}
+{
+    origin "311 -408 311"
+    classname "node_pathnode"
+}
+{
+    origin "430 -91 311"
+    classname "node_pathnode"
+}
+{
+    origin "387 -316 311"
+    classname "node_pathnode"
+}
+{
+    origin "432 -405 311"
+    classname "node_pathnode"
+}
+{
+    origin "131.5 1219.5 435"
+    classname "node_pathnode"
+}
+{
+    origin "130 -334 311"
+    classname "node_pathnode"
+}
+{
+    origin "245 -330 311"
+    classname "node_pathnode"
+}
+{
+    origin "165 -93 311"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "-144 -144 306"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-144 -112 306"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "-110 -238.5 326"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    angles "0 180 0"
+    origin "-110 -279 326"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "48.5 -129 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "80.5 -129 316"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "464 -200 307"
+    classname "node_pathnode"
+}
+{
+    origin "160.5 -297.5 310"
+    angles "0 21.7 0"
+    classname "node_cover_stand"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "464 -232 307"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "528 -97 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "528 -61.5 316"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "-356 -136 307"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-356 -171 307"
+    classname "node_cover_right"
+}
+{
+    origin "812 -625 319"
+    classname "node_pathnode"
+}
+{
+    origin "811 -470 319"
+    classname "node_pathnode"
+}
+{
+    origin "839 -338 319"
+    classname "node_pathnode"
+}
+{
+    origin "940 -622 326"
+    classname "node_pathnode"
+}
+{
+    origin "921 -531 322"
+    classname "node_pathnode"
+}
+{
+    origin "969 -334 304"
+    classname "node_pathnode"
+}
+{
+    origin "826 -203 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "784 -26 307.1"
+    classname "node_cover_left"
+}
+{
+    origin "915 -172 301"
+    classname "node_pathnode"
+}
+{
+    origin "955 -42 304"
+    classname "node_pathnode"
+}
+{
+    origin "692 -398 319"
+    classname "node_pathnode"
+}
+{
+    origin "696 -269 319"
+    classname "node_pathnode"
+}
+{
+    origin "695 -126 319"
+    classname "node_pathnode"
+}
+{
+    origin "592 -165 319"
+    classname "node_pathnode"
+}
+{
+    origin "609 -352 319"
+    classname "node_pathnode"
+}
+{
+    origin "678 -494 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "1000 -464 303.5"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "1000 -432 296.2"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1000 -216 291.2"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "1000 -178 291.5"
+    classname "node_cover_right"
+}
+{
+    origin "1106 -260 253"
+    classname "node_pathnode"
+}
+{
+    origin "1115 -372 253"
+    classname "node_pathnode"
+}
+{
+    origin "-816.5 -23.5 190.5"
+    angles "0 33.2 0"
+    classname "node_cover_stand"
+}
+{
+    origin "1773 -448 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "1772 848 348"
+    classname "node_pathnode"
+}
+{
+    origin "872 922 397.9"
+    angles "0 270 0"
+    classname "node_cover_stand"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "1259 -247 181"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1250 -152 181"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1272 -35 181"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1254 84 181"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1274 215 181"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1250 353 181"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "32"
+    origin "1259 495 187"
+    classname "node_pathnode"
+}
+{
+    origin "1706.5 688 348"
+    angles "0 180 0"
+    classname "node_cover_stand"
+}
+{
+    origin "1538 618 226"
+    targetname "pf3163_auto2108"
+    angles "0 180 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 180 0"
+    animscript "jumpdown_130"
+    origin "1783 604 356"
+    target "pf3163_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf3163_auto2108"
+    origin "1672 604 320"
+    classname "script_origin"
+    angles "0 180 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1736 604 255"
+    model "?20"
+}
+{
+    animation "traverse_jumpdown_130"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1680 604 320"
+    angles "0 180 0"
+    classname "script_struct"
+}
+{
+    origin "1022 1004 392"
+    angles "0 0 0"
+    classname "node_cover_stand"
+}
+{
+    origin "-1076 274 217"
+    classname "node_pathnode"
+}
+{
+    origin "1242 619 208"
+    classname "node_pathnode"
+}
+{
+    origin "1147 617 216"
+    classname "node_pathnode"
+}
+{
+    origin "1147 739 212"
+    classname "node_pathnode"
+}
+{
+    origin "1147 861 208"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "194 1218.5 435"
+    classname "node_cover_crouch"
+}
+{
+    origin "1145 510 229"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "408 928 401"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1088 680 231"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1088 648 231"
+    classname "node_cover_right"
+}
+{
+    origin "1088 888 230.2"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "1088 856 231"
+    classname "node_pathnode"
+}
+{
+    origin "1082 562 278"
+    classname "node_pathnode"
+}
+{
+    origin "1075 439 278"
+    classname "node_pathnode"
+}
+{
+    origin "1050 772 253"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1026 531.5 285.6"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1026 484 292.9"
+    classname "node_cover_right"
+}
+{
+    origin "940 549 304"
+    classname "node_pathnode"
+}
+{
+    origin "826 549 304"
+    classname "node_pathnode"
+}
+{
+    origin "861 637 336"
+    classname "node_pathnode"
+}
+{
+    origin "822 765 336"
+    classname "node_pathnode"
+}
+{
+    origin "822 861 336"
+    classname "node_pathnode"
+}
+{
+    origin "955 865 304"
+    classname "node_pathnode"
+}
+{
+    origin "951 766 304"
+    classname "node_pathnode"
+}
+{
+    origin "947 656 304"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "776 672 347.1"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "776 640 340.8"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "1000 592 279"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1000 624 273"
+    classname "node_cover_right"
+}
+{
+    origin "658 813 381"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "658 781 381"
+    classname "node_pathnode"
+}
+{
+    origin "725 862 369"
+    classname "node_pathnode"
+}
+{
+    origin "729 756 368"
+    classname "node_pathnode"
+}
+{
+    origin "657 691 375"
+    classname "node_pathnode"
+}
+{
+    origin "546 688 388"
+    classname "node_pathnode"
+}
+{
+    origin "544 772 388"
+    classname "node_pathnode"
+}
+{
+    origin "-186 1119.5 435"
+    classname "node_pathnode"
+}
+{
+    origin "403 695 396"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "400 781 387"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "400 813 387"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "1360 600 208"
+    classname "node_cover_right"
+}
+{
+    origin "1422 381 214"
+    classname "node_pathnode"
+}
+{
+    origin "1479 653 230"
+    classname "node_pathnode"
+}
+{
+    origin "1518 830 259"
+    classname "node_pathnode"
+}
+{
+    origin "1411 997 302"
+    classname "node_pathnode"
+}
+{
+    origin "1538 996 302"
+    classname "node_pathnode"
+}
+{
+    origin "1470 1079 336"
+    classname "node_pathnode"
+}
+{
+    origin "1624 1078 336"
+    classname "node_pathnode"
+}
+{
+    origin "1777 1079 336"
+    classname "node_pathnode"
+}
+{
+    origin "1809 1175 336"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "432 781 387"
+    classname "node_cover_left"
+}
+{
+    origin "1784 1277 336"
+    classname "node_pathnode"
+}
+{
+    origin "1790 1399 344"
+    classname "node_pathnode"
+}
+{
+    origin "1670 1293 336"
+    classname "node_pathnode"
+}
+{
+    origin "1554 1288 336"
+    classname "node_pathnode"
+}
+{
+    origin "1480 1352 336"
+    classname "node_pathnode"
+}
+{
+    origin "1334 1353 336"
+    classname "node_pathnode"
+}
+{
+    origin "1225 1388 350"
+    classname "node_pathnode"
+}
+{
+    origin "1263 1277 345"
+    classname "node_pathnode"
+}
+{
+    origin "1289 1150 342"
+    classname "node_pathnode"
+}
+{
+    origin "1173 1143 361"
+    classname "node_pathnode"
+}
+{
+    origin "1146 1264 371"
+    classname "node_pathnode"
+}
+{
+    origin "1045 1380 392"
+    classname "node_pathnode"
+}
+{
+    origin "1127 1396 370"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 180 0"
+    origin "-208.5 963.5 400"
+    classname "node_cover_left"
+}
+{
+    origin "946 1392 400"
+    classname "node_pathnode"
+}
+{
+    origin "820 1392 392"
+    classname "node_pathnode"
+}
+{
+    origin "662 1399 392"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "792 1340 401"
+    classname "node_pathnode"
+}
+{
+    origin "487 1392 392"
+    classname "node_pathnode"
+}
+{
+    origin "885 1302 400"
+    classname "node_pathnode"
+}
+{
+    origin "888 1178 392"
+    classname "node_pathnode"
+}
+{
+    origin "926 1023 392"
+    classname "node_pathnode"
+}
+{
+    origin "938 1246 400"
+    classname "node_pathnode"
+}
+{
+    origin "960 1114 392"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "-208.5 925.5 400"
+    classname "node_pathnode"
+}
+{
+    origin "821 984 392"
+    classname "node_pathnode"
+}
+{
+    origin "742 959 392"
+    classname "node_pathnode"
+}
+{
+    origin "609 953 392"
+    classname "node_pathnode"
+}
+{
+    origin "469 956 395"
+    classname "node_pathnode"
+}
+{
+    origin "740 1082 392"
+    classname "node_pathnode"
+}
+{
+    origin "676 1163 392"
+    classname "node_pathnode"
+}
+{
+    origin "480 1308 392"
+    classname "node_pathnode"
+}
+{
+    origin "531 1060 395"
+    classname "node_pathnode"
+}
+{
+    origin "566 1144 392"
+    classname "node_pathnode"
+}
+{
+    script_linkname "pf3161_18"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "524.9 1603.3 1080"
+    angles "0 258 0"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    targetname "pf3161_auto1084"
+    _id_295D "1"
+    script_linkto "pf3161_2 pf3161_3 pf3161_8"
+}
+{
+    origin "334 989 400"
+    classname "node_pathnode"
+}
+{
+    origin "308 1129 400"
+    classname "node_pathnode"
+}
+{
+    origin "242 1053 400"
+    classname "node_pathnode"
+}
+{
+    origin "143 1077 400"
+    classname "node_pathnode"
+}
+{
+    angles "0 333.8 0"
+    origin "250.5 648.5 400"
+    classname "node_cover_left"
+}
+{
+    origin "215 964 400"
+    classname "node_pathnode"
+}
+{
+    origin "91 967 400"
+    classname "node_pathnode"
+}
+{
+    origin "16 1047 400"
+    classname "node_pathnode"
+}
+{
+    origin "23.5 1202 400"
+    classname "node_pathnode"
+}
+{
+    origin "-177 1238 400"
+    classname "node_pathnode"
+}
+{
+    origin "-108 963 400"
+    classname "node_pathnode"
+}
+{
+    origin "289 858 400"
+    classname "node_pathnode"
+}
+{
+    origin "229 787 400"
+    classname "node_pathnode"
+}
+{
+    origin "297 716 400"
+    classname "node_pathnode"
+}
+{
+    origin "216 614 400"
+    classname "node_pathnode"
+}
+{
+    origin "158 497 392"
+    classname "node_pathnode"
+}
+{
+    origin "88 411 392"
+    classname "node_pathnode"
+}
+{
+    origin "37 536 400"
+    classname "node_pathnode"
+}
+{
+    origin "127 589 400"
+    classname "node_pathnode"
+}
+{
+    origin "-127 612 400"
+    classname "node_pathnode"
+}
+{
+    origin "1893.8 -452.5 340.5"
+    targetname "pf3164_auto2108"
+    angles "0 270 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 270 0"
+    animscript "wall_hop"
+    origin "1893.8 -382.5 340.5"
+    target "pf3164_auto2108"
+}
+{
+    targetname "pf3164_auto2108"
+    origin "1893.8 -422.5 332.5"
+    classname "script_origin"
+    angles "0 270 0"
+}
+{
+    targetname "deprecated_traverse"
+    classname "trigger_multiple"
+    origin "1864 -424 343"
+    model "?21"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1894 -422 313"
+    model "?22"
+}
+{
+    animation "traverse_wallhop"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1893.8 -382.5 292.5"
+    angles "0 270 0"
+    classname "script_struct"
+}
+{
+    origin "-311 712 400"
+    classname "node_pathnode"
+}
+{
+    origin "-179 742 400"
+    classname "node_pathnode"
+}
+{
+    origin "-99 858 400"
+    classname "node_pathnode"
+}
+{
+    origin "-195 882 400"
+    classname "node_pathnode"
+}
+{
+    origin "-348 891 400"
+    classname "node_pathnode"
+}
+{
+    origin "-265 811 400"
+    classname "node_pathnode"
+}
+{
+    origin "-461 906 400"
+    classname "node_pathnode"
+}
+{
+    origin "-512 963 400"
+    classname "node_pathnode"
+}
+{
+    origin "-507 834 400"
+    classname "node_pathnode"
+}
+{
+    origin "-427 804 400"
+    classname "node_pathnode"
+}
+{
+    origin "-467 697 400"
+    classname "node_pathnode"
+}
+{
+    origin "-573 711 400"
+    classname "node_pathnode"
+}
+{
+    origin "-13 443 392"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "1765 972 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "296 672 400"
+    classname "node_cover_right"
+}
+{
+    origin "1843 925 345"
+    classname "node_pathnode"
+}
+{
+    origin "1996 893 345"
+    classname "node_pathnode"
+}
+{
+    origin "1934 860 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 347.4 0"
+    origin "262 682 400"
+    classname "node_pathnode"
+}
+{
+    origin "1794 726 345"
+    classname "node_pathnode"
+}
+{
+    origin "1915 713 345"
+    classname "node_pathnode"
+}
+{
+    origin "1913 604 345"
+    classname "node_pathnode"
+}
+{
+    origin "1708 584 348"
+    classname "node_pathnode"
+}
+{
+    origin "1807 596 345"
+    classname "node_pathnode"
+}
+{
+    origin "1719 507 345"
+    classname "node_pathnode"
+}
+{
+    origin "1749 379 345"
+    classname "node_pathnode"
+}
+{
+    origin "1810 493 345"
+    classname "node_pathnode"
+}
+{
+    origin "1928 495 345"
+    classname "node_pathnode"
+}
+{
+    origin "2028 514 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1708 552 348"
+    classname "node_cover_right"
+}
+{
+    origin "2169 389 345"
+    classname "node_pathnode"
+}
+{
+    origin "2206 250 345"
+    classname "node_pathnode"
+}
+{
+    origin "2102 185 345"
+    classname "node_pathnode"
+}
+{
+    origin "2103 285 345"
+    classname "node_pathnode"
+}
+{
+    origin "1980 210 345"
+    classname "node_pathnode"
+}
+{
+    origin "1836 214 345"
+    classname "node_pathnode"
+}
+{
+    origin "1720 189 345"
+    classname "node_pathnode"
+}
+{
+    origin "1898 270 345"
+    classname "node_pathnode"
+}
+{
+    origin "1963 355 345"
+    classname "node_pathnode"
+}
+{
+    origin "1787 286 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "2111 583 345"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "2144 660 322"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "2138 765 280"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "2071 730 282"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "2003 767 284"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "2012 665 256"
+    classname "node_pathnode"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "1708.9 1331.3 792"
+    radius "256"
+    classname "script_struct_heli"
+    script_linkname "pf3161_3"
+    script_linkto "pf3161_6 pf3161_7"
+}
+{
+    angles "0 90 0"
+    spawnflags "32"
+    origin "2023 586 209"
+    classname "node_pathnode"
+}
+{
+    origin "1857 544 209"
+    classname "node_pathnode"
+}
+{
+    origin "1845 441 209"
+    classname "node_pathnode"
+}
+{
+    origin "1495 1130 332.4"
+    angles "0 70.2 0"
+    classname "node_cover_right"
+}
+{
+    origin "2005 477 209"
+    classname "node_pathnode"
+}
+{
+    angles "0 304.1 0"
+    origin "-846 79 190.5"
+    classname "node_cover_right"
+}
+{
+    angles "0 333.4 0"
+    origin "-551 408 294.3"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "-522 393.5 292.8"
+    angles "0 63.4 0"
+    classname "node_cover_left"
+}
+{
+    _id_295D "1"
+    script_linkto "pf3161_12"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-4163.1 -1196.7 1320"
+    angles "0 18 0"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    targetname "chopper_boss_path_start"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-243.1 2115.3 1016"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_2"
+    script_linkto "pf3161_1"
+}
+{
+    _id_295D "1"
+    script_linkto "pf3161_18"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "3052.9 5107.3 1048"
+    angles "0 228 0"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    targetname "chopper_boss_path_start"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-675.1 211.3 1160"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_1"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1219.1 707.3 1160"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkto "pf3161_1 pf3161_12"
+    script_linkname "pf3161_17"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "1516.9 611.3 792"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_6"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-307.1 435.3 1128"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_8"
+    script_linkto "pf3161_1 pf3161_7"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-659.1 -300.7 1000"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_11"
+    script_linkto "pf3161_1 pf3161_12"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "604.9 979.3 840"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_7"
+    script_linkto "pf3161_6"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "2060.9 195.3 856"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_4"
+    script_linkto "pf3161_5 pf3161_6"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "1356.9 -172.7 856"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_5"
+    script_linkto "pf3161_6 pf3161_9"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "1484.9 -828.7 824"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_9"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-864 -976 1168"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_10"
+    script_linkto "pf3161_11"
+}
+{
+    script_linkto "pf3161_13"
+    script_noteworthy "so_chopper_boss_path_struct"
+    script_linkname "pf3161_12"
+    _id_295D "1"
+    _id_2961 "true"
+    _color "1.000000 1.000000 0.000000"
+    origin "-1523.1 -268.7 1000"
+    radius "256"
+    classname "script_struct_heli"
+}
+{
+    _id_164F "pickupNode"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "848 -1456 832"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_14"
+    script_linkto "pf3161_10 pf3161_9"
+    targetname "pf3161_auto1089"
+}
+{
+    _id_295D "1"
+    script_linkto "pf3161_14"
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "1932.9 -4556.7 376"
+    angles "0 108 0"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    targetname "chopper_boss_path_start"
+}
+{
+    script_noteworthy "so_chopper_boss_path_struct"
+    classname "script_struct_heli"
+    radius "256"
+    origin "-1107.1 1859.3 1064"
+    _color "1.000000 1.000000 0.000000"
+    _id_2961 "true"
+    _id_295D "1"
+    script_linkname "pf3161_16"
+    script_linkto "pf3161_2 pf3161_17"
+}
+{
+    angles "0 153.3 0"
+    origin "-197.5 240 303"
+    classname "node_pathnode"
+}
+{
+    angles "0 63.3 0"
+    spawnflags "0"
+    origin "-226.5 254.5 303.6"
+    classname "node_cover_right"
+}
+{
+    angles "0 153.3 0"
+    origin "-183 269 311.8"
+    classname "node_cover_left"
+}
+{
+    spawnflags "0"
+    angles "0 333.4 0"
+    origin "-536 437 304.2"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "-656 400 294"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "-688 400 294"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-804 -476 203.9"
+    classname "node_cover_left"
+}
+{
+    angles "0 333.7 0"
+    origin "-407.5 694 392.6"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-422 664.5 389.5"
+    angles "0 333.7 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 245.2 0"
+    spawnflags "0"
+    origin "-378 679.5 396"
+    classname "node_cover_right"
+}
+{
+    angles "0 153.2 0"
+    origin "-50 527 393.2"
+    classname "node_pathnode"
+}
+{
+    angles "0 244.7 0"
+    spawnflags "0"
+    origin "-79.5 541.5 399.6"
+    classname "node_cover_left"
+}
+{
+    angles "0 151.9 0"
+    origin "-65.5 498 390.7"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "-390 958 399"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-390 992 399"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "-13 912.5 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "856 1340 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-13 880.5 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "19 912.5 402"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "180 897 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "4"
+    origin "148 897 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "180 865 402"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "75 648 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "75 680 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "-11.5 648 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "-11.5 680 402"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "-75.5 680.5 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "-43.5 680.5 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "-74 767 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "-42 767 402"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "181.5 690.5 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    spawnflags "4"
+    origin "149.5 690.5 402"
+    classname "node_cover_right"
+}
+{
+    origin "-130 1181 401"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "824 1340 401"
+    classname "node_cover_left"
+}
+{
+    origin "-81 1079 400"
+    classname "node_pathnode"
+}
+{
+    origin "-186 995 400"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "376 928 401"
+    classname "node_pathnode"
+}
+{
+    origin "380 1138 402.3"
+    angles "0 0 0"
+    classname "node_concealment_crouch"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "376 896 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "376 1048 397.3"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "376 1080 397.3"
+    classname "node_cover_right"
+}
+{
+    origin "428 1138 397.9"
+    angles "0 180 0"
+    classname "node_concealment_crouch"
+}
+{
+    origin "432 1080 400.5"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "432 1048 404.4"
+    classname "node_pathnode"
+}
+{
+    origin "656 1080 396"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    origin "656 1048 396"
+    classname "node_pathnode"
+}
+{
+    origin "848 1080 396"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "848 1048 396"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "600 1048 400"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "600 1080 400"
+    classname "node_cover_right"
+}
+{
+    origin "796 1253 396"
+    angles "0 0 0"
+    classname "node_concealment_crouch"
+}
+{
+    origin "844 1253 396"
+    angles "0 180 0"
+    classname "node_concealment_crouch"
+}
+{
+    angles "0 0 0"
+    origin "600 1340 396"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "600 1308 396"
+    classname "node_cover_left"
+}
+{
+    origin "767 1178 392"
+    classname "node_pathnode"
+}
+{
+    origin "712 1287 392"
+    classname "node_pathnode"
+}
+{
+    origin "493 1192 392"
+    classname "node_pathnode"
+}
+{
+    origin "555 1242 392"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "792 1308 401"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "1022 1220 396"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "1022 1188 396"
+    classname "node_cover_left"
+}
+{
+    angles "0 0 0"
+    origin "1016 1284 396.2"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1016 1316 396.2"
+    classname "node_cover_right"
+}
+{
+    origin "816 1048 396"
+    angles "0 90 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "784 1048 396"
+    classname "node_pathnode"
+}
+{
+    origin "1072 1311 386.3"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    origin "1072 1343 387.1"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    origin "1066 1220 388.8"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "1066 1188 388.8"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1392 1112 332"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "4"
+    origin "1392 1080 321.3"
+    classname "node_cover_right"
+}
+{
+    angles "0 340 0"
+    origin "1333 1193 336.4"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 340 0"
+    origin "1344 1225 335.9"
+    classname "node_cover_right"
+}
+{
+    angles "0 339.8 0"
+    origin "1375 1305 337.1"
+    classname "node_pathnode"
+}
+{
+    angles "0 339.8 0"
+    origin "1362 1272 332"
+    classname "node_cover_left"
+}
+{
+    origin "1548 1148 332.4"
+    angles "0 160.2 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 160.2 0"
+    origin "1535.5 1114.5 327.8"
+    classname "node_pathnode"
+}
+{
+    angles "0.282579 162.092 -0.110145"
+    origin "1576 1230 331.6"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0.537827 163 -0.269674"
+    origin "1565 1196 334.5"
+    classname "node_cover_right"
+}
+{
+    angles "0.282579 252.092 -0.110145"
+    spawnflags "4"
+    origin "1542 1240 332.9"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "1360 1112 332"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-656 432 294"
+    classname "node_cover_left"
+}
+{
+    origin "1747 1344 339"
+    classname "node_pathnode"
+}
+{
+    origin "-852 -275.5 203"
+    classname "node_pathnode"
+}
+{
+    origin "-970 -276 203"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "1958.5 396 212"
+    classname "node_pathnode"
+}
+{
+    origin "1823.5 144 348"
+    angles "0 270 0"
+    classname "node_cover_stand"
+}
+{
+    angles "0 270 0"
+    origin "1990.5 396 212"
+    classname "node_cover_right"
+}
+{
+    spawnflags "0"
+    origin "1764 108 345"
+    classname "node_pathnode"
+}
+{
+    origin "1734 40 316"
+    classname "node_pathnode"
+}
+{
+    origin "1748 -38 274"
+    classname "node_pathnode"
+}
+{
+    origin "1995 -271 272"
+    classname "node_pathnode"
+}
+{
+    origin "1835 -217 272"
+    classname "node_pathnode"
+}
+{
+    origin "1761 -381 326"
+    classname "node_pathnode"
+}
+{
+    origin "1985 43 207"
+    classname "node_pathnode"
+}
+{
+    origin "-750 38.5 198"
+    angles "0 213.9 0"
+    classname "node_cover_stand"
+}
+{
+    angles "0 213.4 0"
+    origin "-799 112 198.7"
+    classname "node_pathnode"
+}
+{
+    angles "0 213.4 0"
+    origin "-779.5 82.5 195.8"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "48.5 -291.5 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "48.5 -259.5 316"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "304.5 -159.5 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "304.5 -191.5 316"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "304.5 -255.5 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "304.5 -223.5 316"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "496 -200 307"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "703 -60.5 316"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "703 -26.5 316"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "1032 -216 291.5"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "1032 -432 303.5"
+    classname "node_cover_right"
+}
+{
+    angles "0 0 0"
+    origin "942 -1583.5 305.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    spawnflags "0"
+    origin "942 -1615.5 305.9"
+    classname "node_cover_left"
+}
+{
+    angles "0 43.3 0"
+    spawnflags "4"
+    origin "535 -1577.5 334.2"
+    classname "node_cover_left"
+}
+{
+    angles "0 43.3 0"
+    origin "513 -1554 325.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 313.3 0"
+    spawnflags "4"
+    origin "536.5 -1532 318.4"
+    classname "node_cover_right"
+}
+{
+    angles "0 135.8 0"
+    spawnflags "4"
+    origin "730.5 -1515 337.5"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    spawnflags "0"
+    origin "746 -1320 310"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1137 -1626 305.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "1137 -1664 305.9"
+    classname "node_cover_right"
+}
+{
+    angles "0 299.7 0"
+    origin "963 -1091 326"
+    classname "node_cover_right"
+}
+{
+    angles "0 299.7 0"
+    origin "923.5 -1114 326"
+    classname "node_pathnode"
+}
+{
+    angles "0 7.29991 0"
+    spawnflags "4"
+    origin "1444.5 -1320.5 325.4"
+    classname "node_cover_left"
+}
+{
+    angles "0 7.29991 0"
+    origin "1439 -1278.5 330.9"
+    classname "node_pathnode"
+}
+{
+    origin "1823 -1372 320"
+    angles "0 75.6 0"
+    classname "node_cover_left"
+}
+{
+    angles "0 73.5 0"
+    origin "1789.5 -1362.5 320"
+    classname "node_pathnode"
+}
+{
+    origin "1799 -1329.5 320"
+    angles "0 344.1 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1689 -1540 319"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1689 -1508 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "1801 -649 319"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1825 344 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "2184 528.5 345"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "2152 528.5 345"
+    classname "node_pathnode"
+}
+{
+    angles "0 152.1 0"
+    origin "2171 -52.5 211.5"
+    classname "node_pathnode"
+}
+{
+    angles "0 242.1 0"
+    origin "2142.5 -37.5 210.6"
+    classname "node_cover_left"
+}
+{
+    angles "0 62.1 0"
+    origin "2082 -154.5 206"
+    classname "node_cover_right"
+}
+{
+    angles "0 62.1 0"
+    origin "2110.5 -169.5 206"
+    classname "node_pathnode"
+}
+{
+    angles "0 152.1 0"
+    origin "2125.5 -141 206.5"
+    classname "node_cover_left"
+}
+{
+    angles "0 332.1 0"
+    origin "1965.5 -59.5 209.2"
+    classname "node_cover_right"
+}
+{
+    angles "0 332.1 0"
+    origin "1950.5 -88 210.1"
+    classname "node_pathnode"
+}
+{
+    angles "0 62.1 0"
+    origin "1979 -103 211.1"
+    classname "node_cover_left"
+}
+{
+    angles "0 242.1 0"
+    origin "2039.5 14 210.2"
+    classname "node_cover_right"
+}
+{
+    angles "0 242.1 0"
+    origin "2011 29 211.6"
+    classname "node_pathnode"
+}
+{
+    angles "0 332.1 0"
+    origin "1996 0.5 207.2"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "2072 88 207"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "2040 88 207"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "2040 120 207"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "2000 -208 228.1"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "1968 -208 234.5"
+    classname "node_pathnode"
+}
+{
+    angles "0 0 0"
+    origin "1968 -176 230.8"
+    classname "node_cover_right"
+}
+{
+    origin "1985 -430 305"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1985 -657 323.7"
+    classname "node_cover_left"
+}
+{
+    origin "1904 128 208"
+    angles "0 180 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "1860 380 210"
+    classname "node_cover_left"
+}
+{
+    angles "0 90 0"
+    origin "1960 560 209"
+    classname "node_cover_right"
+}
+{
+    angles "0 90 0"
+    origin "1992 560 209"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "1857 400 345"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "1825 400 345"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    angles "0 70 0"
+    origin "1365 1180 333"
+    classname "node_cover_left"
+}
+{
+    angles "0 249.8 0"
+    spawnflags "0"
+    origin "1411 1290 332"
+    classname "node_cover_right"
+}
+{
+    angles "0 270 0"
+    origin "-550 874 400"
+    classname "node_cover_left"
+}
+{
+    angles "0 270 0"
+    origin "-518 874 400"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    origin "-1090 -11 203"
+    classname "node_cover_stand"
+}
+{
+    angles "0 270 0"
+    origin "-1058 -11 203"
+    classname "node_pathnode"
+}
+{
+    spawnflags "4"
+    origin "-184 -984 316"
+    angles "0 0 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-246 -1038 314.6"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    spawnflags "0"
+    origin "-246 -974 312"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "-452.5 -913.5 313"
+    classname "node_pathnode"
+}
+{
+    spawnflags "0"
+    origin "-452.5 -881 315"
+    angles "0 180 0"
+    classname "node_cover_left"
+}
+{
+    spawnflags "0"
+    origin "-485 -913.5 316"
+    angles "0 90 0"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "-592.5 -1046 319.3"
+    classname "node_cover_right"
+}
+{
+    angles "0 180 0"
+    origin "-592.5 -1014 320.6"
+    classname "node_pathnode"
+}
+{
+    angles "0 270 0"
+    spawnflags "0"
+    origin "266.5 -159.5 316"
+    classname "node_cover_left"
+}
+{
+    angles "0 180 0"
+    origin "784 -58 309.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1236 -280 181.4"
+    classname "node_pathnode"
+}
+{
+    angles "0 90 0"
+    origin "1197 -280 200.4"
+    classname "node_cover_right"
+}
+{
+    origin "-965.5 -97.5 203"
+    classname "node_pathnode"
+}
+{
+    origin "-851 -99.5 203"
+    classname "node_pathnode"
+}
+{
+    origin "1258.5 1006.5 306.5"
+    classname "node_pathnode"
+}
+{
+    origin "1319 797 323"
+    targetname "pf3165_auto2108"
+    angles "0 180 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 180 0"
+    animscript "stepup_52"
+    origin "1411 797 275"
+    target "pf3165_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf3165_auto2108"
+    origin "1359 797 287"
+    classname "script_origin"
+    angles "0 180 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1347 797 261"
+    model "?23"
+}
+{
+    animation "traverse_stepup_52"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1359 797 235"
+    angles "0 1.00179e-005 0"
+    classname "script_struct"
+}
+{
+    origin "1259 919 306.5"
+    classname "node_pathnode"
+}
+{
+    origin "1253.5 836 306.5"
+    classname "node_pathnode"
+}
+{
+    origin "1308 757.5 306.5"
+    classname "node_pathnode"
+}
+{
+    origin "1153.5 870 213.8"
+    targetname "pf3166_auto2108"
+    angles "0 180 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 180 0"
+    animscript "jumpdown_96"
+    origin "1209.5 870 309.8"
+    target "pf3166_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf3166_auto2108"
+    origin "1193.5 870 269.8"
+    classname "script_origin"
+    angles "0 180 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1206 870 222"
+    model "?24"
+}
+{
+    animation "jump_down_96"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1209.5 870 269.8"
+    angles "0 180 0"
+    classname "script_struct"
+}
+{
+    origin "1158.5 1006.5 274"
+    classname "node_pathnode"
+}
+{
+    origin "1135 919.5 247.3"
+    targetname "pf3167_auto2108"
+    angles "0 270 0"
+    classname "node_negotiation_end"
+}
+{
+    targetname "traverse"
+    classname "node_negotiation_begin"
+    angles "0 270 0"
+    animscript "jumpdown_40"
+    origin "1135 975.5 279.3"
+    target "pf3167_auto2108"
+}
+{
+    _color "0.000000 1.000000 0.250980"
+    targetname "pf3167_auto2108"
+    origin "1135 959.5 247.3"
+    classname "script_origin"
+    angles "0 270 0"
+}
+{
+    targetname "delete_on_load"
+    classname "trigger_multiple"
+    origin "1135 972 227"
+    model "?25"
+}
+{
+    animation "traverse_jumpdown_40"
+    model "body_complete_sp_vip"
+    targetname "delete_on_load"
+    origin "1135 975.5 247.3"
+    angles "0 90 0"
+    classname "script_struct"
+}
+{
+    origin "1120.3 917.1 204.8"
+    angles "0 270 0"
+    classname "mp_tdm_spawn"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "2110 -1390 318"
+    angles "0 180 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "2110 -1438 318"
+    angles "0 180 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    origin "1118.6 918.3 203.8"
+    angles "0 270 0"
+    classname "mp_dm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "1777.3 177.4 195.7"
+    angles "0 90 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "2006 -1588 318"
+    angles "0 124 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "1938 -1602 318"
+    angles "0 90 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "1890 -1602 318"
+    angles "0 90 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "1844 -1602 318"
+    angles "0 90 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "1794 -1602 318"
+    angles "0 90 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    _color "1.000000 0.501961 0.752941"
+    origin "2110 -1490 318"
+    angles "0 180 0"
+    classname "mp_sab_spawn_axis_start"
+}
+{
+    modelscale "1.246716"
+    angles "0 137.4 0"
+    _color "1 .5 .5"
+    origin "1241.1 -1701.5 291.8"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 270 0"
+    _color "1 .5 .5"
+    origin "1770 1428 328"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 212 0"
+    _color "1 .5 .5"
+    origin "2322 61.2 220.4"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "0.908008"
+    origin "-122 1042 388"
+    angles "0 0 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "-122 994 388"
+    angles "0 0 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "-182 948 388"
+    angles "0 0 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "-130 1210 388"
+    angles "0 304 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    origin "1885.6 539.7 195.8"
+    angles "0 270 0"
+    classname "mp_tdm_spawn"
+}
+{
+    modelscale "0.908008"
+    origin "-55.5 1217 388"
+    angles "0 270 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    origin "1883.9 540.9 194.8"
+    angles "0 270 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "1230.3 -1703 297.5"
+    angles "0 125.3 0"
+    classname "mp_tdm_spawn"
+}
+{
+    modelscale "0.908008"
+    origin "4 1216 388"
+    angles "0 270 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "66 1150 388"
+    angles "0 270 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "0.908008"
+    origin "114 1150 388"
+    angles "0 270 0"
+    classname "mp_sab_spawn_allies_start"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-967.3 -1033.5 320"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 36 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "478.5 -1726.4 319.3"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 90 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-138.5 1212.8 401.8"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 302 0"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-995 367 214"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 315 0"
+}
+{
+    modelscale "1.246716"
+    angles "0 270 0"
+    _color "1 .5 .5"
+    origin "1294 1432 338"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.246716"
+    angles "0 199.9 0"
+    _color "1 .5 .5"
+    origin "2038.9 912.1 327"
+    classname "mp_sab_spawn_axis"
+}
+{
+    modelscale "1.278870"
+    classname "mp_sab_spawn_allies"
+    origin "-470 -1418 307"
+    _color "0.501961 0.000000 0.000000"
+    angles "0 16 0"
+}
+{
+    origin "1846 -1599 317"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "1796 -1599 317"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "1940 -1599 317"
+    angles "0 90 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "2003 -1588 317"
+    angles "0 122.3 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "1232.4 -1703 296.5"
+    angles "0 125.3 0"
+    classname "mp_dm_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "1232.7 -1698 296.9"
+    angles "0 125.3 0"
+    classname "mp_dom_spawn"
+}
+{
+    _color "0.501961 0.501961 1.000000"
+    origin "121 -1131.9 316.1"
+    angles "0 180 0"
+    classname "mp_dom_spawn"
+}
+{
+    origin "2154 -1338 317"
+    angles "0 180 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "-124 1043 387"
+    angles "0 0 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-123 995 387"
+    angles "0 0 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "-60 1217 387"
+    angles "0 270 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "119.2 -1134.4 313.1"
+    angles "0 180 0"
+    classname "mp_dm_spawn"
+}
+{
+    origin "-130 1210 395"
+    angles "0 302.4 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "12 1153 387"
+    angles "0 270 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "68 1153 387"
+    angles "0 270 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "117 1153 387"
+    angles "0 270 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    origin "2112 -1388 317"
+    angles "0 180 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "2111 -1436 317"
+    angles "0 180 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "2112 -1487 317"
+    angles "0 180 0"
+    classname "mp_ctf_spawn_axis_start"
+}
+{
+    origin "-186 953 387"
+    angles "0 0 0"
+    classname "mp_ctf_spawn_allies_start"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "491 -1730.7 323.2"
+    angles "0 90 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-967.2 -1043.2 316.2"
+    angles "0 35.3 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "2326 60.2 217"
+    angles "0 215.3 0"
+}
+{
+    classname "mp_ctf_spawn_axis"
+    origin "-470.5 -1415.2 309"
+    angles "0 18.4 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-995 365 204"
+    angles "0 315 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "456 1402 390"
+    angles "0 315 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "-141.2 1208.8 399.1"
+    angles "0 305.1 0"
+}
+{
+    classname "mp_ctf_spawn_allies"
+    origin "2037.1 916.9 327"
+    angles "0 199.9 0"
+}
+{
+    origin "-1102.1 86.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1102.1 149.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1092.1 257.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1046.1 362.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1008.1 287.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1026.1 124.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1024.1 58.9 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "-1026.1 -3.1 206.3"
+    angles "0 0 0"
+    classname "mp_dd_spawn_defender_start"
+}
+{
+    origin "2339 10 213"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    script_label "_b"
+    script_bombmode_original "1"
+    target "pf3168_auto1"
+    script_gameobjectname "dd_bombzone"
+    targetname "dd_bombzone"
+    classname "trigger_use_touch"
+    origin "64 978 384"
+    model "?26"
+}
+{
+    targetname "pf3168_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "64 978 384"
+    model "?27"
+}
+{
+    gndlt "393c3fe701"
+    ltorigin "63.8788 975.92 403.623"
+    target "pf3168_auto2"
+    targetname "pf3168_auto1"
+    spawnflags "4"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3168_2"
+    origin "64 974.5 373.6"
+    angles "0 90 0"
+    model "com_bomb_objective"
+    classname "script_model"
+}
+{
+    gndlt "383c3fe701"
+    ltorigin "67.4056 971.937 393.056"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3168_2"
+    targetname "exploder"
+    spawnflags "4"
+    origin "64 977.5 375.6"
+    angles "0 270 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    targetname "dd_bombzone_clip_b"
+    spawnflags "1"
+    script_gameobjectname "dd_bombzone"
+    classname "script_brushmodel"
+    origin "64 975 404"
+    model "*72"
+}
+{
+    script_label "_a"
+    script_bombmode_original "1"
+    target "pf3169_auto1"
+    script_gameobjectname "dd_bombzone"
+    targetname "dd_bombzone"
+    classname "trigger_use_touch"
+    origin "603 -448 296"
+    model "?28"
+}
+{
+    targetname "pf3169_auto2"
+    classname "trigger_use_touch"
+    script_gameobjectname "dd_bombzone"
+    origin "603 -448 296"
+    model "?29"
+}
+{
+    gndlt "3736360005"
+    ltorigin "597.437 -451.406 305.556"
+    script_gameobjectname "dd_bombzone"
+    script_exploder "pf3169_1"
+    targetname "exploder"
+    spawnflags "4"
+    origin "603 -448 288.1"
+    angles "0 180 0"
+    model "com_bomb_objective_d"
+    classname "script_model"
+}
+{
+    targetname "dd_bombzone_clip_a"
+    spawnflags "1"
+    script_gameobjectname "dd_bombzone"
+    classname "script_brushmodel"
+    origin "602 -447 316"
+    model "*73"
+}
+{
+    gndlt "3635350005"
+    ltorigin "602.42 -447.879 316.123"
+    classname "script_model"
+    model "com_bomb_objective"
+    angles "0 3.18772e-006 0"
+    origin "601 -448 286.1"
+    script_exploder "pf3169_1"
+    script_gameobjectname "dd_bombzone"
+    spawnflags "4"
+    targetname "pf3169_auto1"
+    target "pf3169_auto2"
+}
+{
+    origin "2337 -85 213"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2341 -128 213"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2286 -103 213"
+    angles "0 180 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2148 75 213"
+    angles "0 270 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2197 74 213"
+    angles "0 270 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2246 67 213"
+    angles "0 270 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    origin "2317 59 215"
+    angles "0 217.3 0"
+    classname "mp_dd_spawn_attacker_start"
+}
+{
+    angles "0 180 0"
+    origin "2210.3 -1157 311.8"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    angles "0 180 0"
+    origin "2200.8 212.6 349.5"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    angles "0 270 0"
+    origin "1764 1424 326"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    angles "0 201.9 0"
+    origin "2039 907.2 327.9"
+    classname "mp_dd_spawn_attacker"
+}
+{
+    classname "mp_dd_spawn_defender"
+    angles "0 0 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "-400 -1584 308"
+}
+{
+    modelscale "0.748779"
+    classname "mp_dd_spawn_defender"
+    angles "0 301 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "-136.7 1208 400"
+}
+{
+    modelscale "0.748779"
+    classname "mp_dd_spawn_defender"
+    angles "0 315 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "456 1408 396"
+}
+{
+    modelscale "0.748779"
+    classname "mp_dd_spawn_defender"
+    angles "0 316.5 0"
+    _color "0.423529 0.000000 0.211765"
+    origin "-993.9 360.4 220.4"
+}
+{
+    targetname "remote_uav_range"
+    classname "trigger_multiple"
+    origin "704 -160 1536"
+    model "?30"
+}
