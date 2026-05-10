@@ -68,39 +68,6 @@
 }
 
 {
-    targetname "pf3_auto2"
-    classname "trigger_use_touch"
-    script_gameobjectname "dd_bombzone"
-    origin "-256 1280 0"
-    model "?2"
-}
-{
-    gndlt "5b5e630000"
-    ltorigin "-255.879 1281.58 20.0227"
-    target "pf3_auto2"
-    targetname "pf3_auto1"
-    spawnflags "4"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf3_2"
-    origin "-256 1283 -10"
-    angles "0 270 0"
-    model "com_bomb_objective"
-    classname "script_model"
-}
-{
-    gndlt "5b5e630000"
-    ltorigin "-259.406 1285.56 9.45589"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf3_2"
-    targetname "exploder"
-    spawnflags "4"
-    origin "-256 1280 -8"
-    angles "0 90 0"
-    model "com_bomb_objective_d"
-    classname "script_model"
-}
-
-{
     script_gameobjectname "ctf"
     target "ctf_flag_allies"
     targetname "ctf_trig_allies"

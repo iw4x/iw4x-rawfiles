@@ -1985,39 +1985,6 @@
 }
 
 {
-    targetname "pf3889_auto2"
-    classname "trigger_use_touch"
-    script_gameobjectname "dd_bombzone"
-    origin "-352 16 12"
-    model "?13"
-}
-{
-    gndlt "484b4bee01"
-    ltorigin "-351.879 17.5797 32.0227"
-    target "pf3889_auto2"
-    targetname "pf3889_auto1"
-    spawnflags "4"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf3889_2"
-    origin "-352 19 2"
-    angles "0 270 0"
-    model "com_bomb_objective"
-    classname "script_model"
-}
-{
-    gndlt "484b4bee01"
-    ltorigin "-355.406 21.5633 21.4559"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf3889_2"
-    targetname "exploder"
-    spawnflags "4"
-    origin "-352 16 4"
-    angles "0 90 0"
-    model "com_bomb_objective_d"
-    classname "script_model"
-}
-
-{
     gndlt "4e5150a001"
     ltorigin "697.161 1306.4 -7.11142"
     spawnflags "4"

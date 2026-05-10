@@ -8127,39 +8127,6 @@
 }
 
 {
-    targetname "pf1055_auto2"
-    classname "trigger_use_touch"
-    script_gameobjectname "dd_bombzone"
-    origin "544 1056 -306"
-    model "?28"
-}
-{
-    gndlt "4b4f530000"
-    ltorigin "544.138 1057.46 -286.215"
-    target "pf1055_auto2"
-    targetname "pf1055_auto1"
-    spawnflags "4"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf1055_2"
-    origin "543.991 1059.07 -315.588"
-    angles "2.10776 269.969 -0.301204"
-    model "com_bomb_objective"
-    classname "script_model"
-}
-{
-    gndlt "4b4f520000"
-    ltorigin "540.591 1061.42 -296.45"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf1055_2"
-    targetname "exploder"
-    spawnflags "4"
-    origin "544 1056 -313.7"
-    angles "357.892 89.9689 0.301204"
-    model "com_bomb_objective_d"
-    classname "script_model"
-}
-
-{
     classname "script_origin"
     origin "-776.3 7965.1 1095"
     _color "0 1 .5"
