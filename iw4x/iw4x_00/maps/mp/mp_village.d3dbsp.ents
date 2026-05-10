@@ -850,39 +850,6 @@
 }
 
 {
-    targetname "pf15_auto2"
-    classname "trigger_use_touch"
-    script_gameobjectname "dd_bombzone"
-    origin "-1888 1104 283"
-    model "?11"
-}
-{
-    gndlt "5c64612d01"
-    ltorigin "-1887.11 1105.31 303.023"
-    target "pf15_auto2"
-    targetname "pf15_auto1"
-    spawnflags "4"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf15_2"
-    origin "-1886.5 1106.6 273"
-    angles "0 240 0"
-    model "com_bomb_objective"
-    classname "script_model"
-}
-{
-    gndlt "5c64612d01"
-    ltorigin "-1887.39 1105.67 292.456"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf15_2"
-    targetname "exploder"
-    spawnflags "4"
-    origin "-1888 1104 275"
-    angles "0 60 0"
-    model "com_bomb_objective_d"
-    classname "script_model"
-}
-
-{
     origin "-960 -2176 392"
     angles "0 45 0"
     classname "mp_dom_spawn_allies_start"

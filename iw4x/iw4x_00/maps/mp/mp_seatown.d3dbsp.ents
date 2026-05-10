@@ -7355,39 +7355,6 @@
 }
 
 {
-    targetname "pf2586_auto2"
-    classname "trigger_use_touch"
-    script_gameobjectname "dd_bombzone"
-    origin "-662 -204 176"
-    model "?26"
-}
-{
-    gndlt "2f2f2fda01"
-    ltorigin "-662.096 -205.582 196.023"
-    target "pf2586_auto2"
-    targetname "pf2586_auto1"
-    spawnflags "4"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf2586_2"
-    origin "-661.953 -207 166"
-    angles "0 90.9 0"
-    model "com_bomb_objective"
-    classname "script_model"
-}
-{
-    gndlt "2f2f30d901"
-    ltorigin "-658.595 -209.425 185.456"
-    script_gameobjectname "dd_bombzone"
-    script_exploder "pf2586_2"
-    targetname "exploder"
-    spawnflags "4"
-    origin "-662 -204 168"
-    angles "0 270.9 0"
-    model "com_bomb_objective_d"
-    classname "script_model"
-}
-
-{
     targetname "radiotrigger"
     classname "trigger_multiple"
     origin "-238 -258 216"
