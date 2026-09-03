@@ -92,6 +92,9 @@ LANG_ENGLISH        "Anti-aliasing Alpha"
 REFERENCE           MENU_ADD_TO_FAVORITES_CAPS
 LANG_ENGLISH        "ADD TO FAVORITES"
 
+REFERENCE           MENU_AIM_ACCELERATION
+LANG_ENGLISH        "Aim acceleration"
+
 REFERENCE           MENU_AUTORECORD
 LANG_ENGLISH        "Auto-Recording"
 
@@ -622,6 +625,9 @@ LANG_ENGLISH        "Demos to keep: "
 
 REFERENCE           MPUI_DEMOS_KEEP_CAPS
 LANG_ENGLISH        "DEMOS TO KEEP: "
+
+REFERENCE           MPUI_DESC_AIM_ACCELERATION
+LANG_ENGLISH        "Ease the stick into its full turn rate instead of turning at that rate as soon as you push it. Off gives the stick a direct, 1:1 response; on makes a held direction start slow and speed up."
 
 REFERENCE           MPUI_DESC_AUTORECORD
 LANG_ENGLISH        "Record your matches automatically."
