@@ -66,7 +66,7 @@
 			textalign 6
 			textalignx -60
 			textscale 0.5
-			text "@MENU_OPTIONS_UPPER_CASE"
+			text "IW4x"
 		}
 		itemDef
 		{
@@ -514,7 +514,7 @@
 			{
 				play "mouse_click";
 				close self;
-				open "pc_options_video";
+				open "main_options";
 				execnow "set ui_allow_graphic_change 0";
 			}
 			onFocus

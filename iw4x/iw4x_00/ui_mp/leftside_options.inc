@@ -53,7 +53,8 @@
 		decoration									\
 		text										textArg \
 		visible										visArg \
-	}
+	} \
+	PC_OPTIONS_SELECTION_BAR
 
 #define PC_OPTIONS_BUTTON(itemIndex, buttonName, textArg, actionArg) \
 		PC_OPTIONS_BUTTON_VIS(itemIndex, buttonName, textArg, actionArg, 1)
@@ -73,11 +74,9 @@
 		name										buttonName \
 		group										"mw2_button" \
 		rect										PC_OPTIONS_BUTTON_LEFT_CHOICE_RECT(itemIndex) \
-		style										WINDOW_STYLE_FILLED \
 		type										ITEM_TYPE_BUTTON \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
-		background									"menu_button_selection_bar" \
 		textFont									UI_FONT_SMALL \
 		textAlign									ITEM_ALIGN_TOP_RIGHT \
 		textAlignX									-60 \
@@ -91,66 +90,68 @@
 		} \
 		onFocus \
 		{ \
-			setItemColor							self backColor 0 0 0 1; \
+			PC_OPTIONS_ROW_FOCUS(itemIndex) \
 			setLocalVarString						ui_hint_text(descArg); \
 			setLocalVarFloat						ui_popupYPos (getFocusedItemY()); \
 		} \
 		leaveFocus \
 		{ \
-			setItemColor							self backColor 0 0 0 0; \
+			PC_OPTIONS_ROW_LEAVE \
 			setLocalVarString						ui_hint_text("@NULL_EMPTY"); \
 		} \
 		action \
 		{ \
 			play									CHOICE_CLICK_SOUND; \
+			setLocalVarInt							ui_optionsSection (itemIndex + 1); \
 			actionArg								\
 		} \
 	}
 
-PC_OPTIONS_TITLE("@MENU_OPTIONS_CAPS")
+		itemDef
+		{
+			name									"graphic_warning"
+			rect									10 -120 206 200 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
+			foreColor								CHOICE_TEXTCOLOR
+			textScale								CHOICE_TEXTSIZE
+			decoration
+			autoWrapped
+			text									"@MENU_GRAPHICS_WARNING"
+			visible									when(!localvarbool(ui_brightness_hint_display) && !localVarBool(ui_hint_display) && menuisopen("pc_options_video"))
+		}
+		itemDef
+		{
+			name									"brightness_hint"
+			rect									10 -120 206 200 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
+			foreColor								1 0.8 0.4 1
+			textScale								CHOICE_TEXTSIZE
+			decoration
+			autoWrapped
+			text									"@MENU_BRIGHTNESS_HINT_PC"
+			visible									when(localvarbool(ui_brightness_hint_display) && !localVarBool(ui_hint_display))
+		}
+		itemDef
+		{
+			name									"hint_area"
+			rect									10 -120 206 200 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
+			foreColor								CHOICE_TEXTCOLOR
+			textScale								CHOICE_TEXTSIZE
+			decoration
+			autoWrapped
+			visible									when(localVarBool(ui_hint_display))
+			exp										text(localVarString(ui_hint_text))
+		}
 
-PC_OPTIONS_BUTTON(0, "buttonVideo", "@MENU_VIDEO", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_video";))
-PC_OPTIONS_BUTTON(1, "buttonAudio", "@MENU_AUDIO", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_audio";))
-PC_OPTIONS_BUTTON(2, "buttonControls", "@MENU_CONTROLS", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_controls";))
-PC_OPTIONS_BUTTON(3, "buttonMulti", "@MENU_MULTIPLAYER", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_multi";))
-PC_OPTIONS_BUTTON(4, "buttonGame", "@MENU_GAME", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_game";))
-PC_OPTIONS_BUTTON(5, "buttonGamepad", "@MENU_GAMEPAD", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_gamepad";))
+#ifdef PC_OPTIONS_NAV
+		PC_OPTIONS_TITLE("@MENU_OPTIONS_CAPS")
 
-MENU_CHOICE_HORIZONTAL_LINE(6)
-PC_OPTIONS_BUTTON_RAW(6, "buttonDefaults", "@MENU_RESET_SYSTEM_DEFAULTS", open "options_graphics_defaults";, "@NULL_EMPTY", when (dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby()), 1)
+		PC_OPTIONS_BUTTON(0, "buttonVideo", "@MENU_VIDEO", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_video";))
+		PC_OPTIONS_BUTTON(1, "buttonAudio", "@MENU_AUDIO", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_audio";))
+		PC_OPTIONS_BUTTON(2, "buttonControls", "@MENU_CONTROLS", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_controls";))
+		PC_OPTIONS_BUTTON(3, "buttonMulti", "@MENU_MULTIPLAYER", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_multi";))
+		PC_OPTIONS_BUTTON(4, "buttonGame", "@MENU_GAME", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_game";))
+		PC_OPTIONS_BUTTON(5, "buttonGamepad", "@MENU_GAMEPAD", PC_OPTIONS_BUTTON_LEFT_ACTION(open "pc_options_gamepad";))
 
-itemDef
-{
-	name											"graphic_warning"
-	rect											10 -160 206 240 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
-	foreColor										CHOICE_TEXTCOLOR
-	textScale										CHOICE_TEXTSIZE
-	decoration
-	autoWrapped
-	text											"@MENU_GRAPHICS_WARNING"
-	visible											when(!localvarbool(ui_brightness_hint_display) && !localVarBool(ui_hint_display) && menuisopen("pc_options_video"))
-}
-itemDef
-{
-	name											"brightness_hint"
-	rect											10 -160 206 240 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
-	foreColor										1 0.8 0.4 1
-	textScale										CHOICE_TEXTSIZE
-	decoration
-	autoWrapped
-	text											"@MENU_BRIGHTNESS_HINT_PC"
-	visible											when(localvarbool(ui_brightness_hint_display) && !localVarBool(ui_hint_display))
-}
-itemDef
-{
-	name											"hint_area"
-	rect											10 -160 206 240 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_BOTTOM
-	foreColor										CHOICE_TEXTCOLOR
-	textScale										CHOICE_TEXTSIZE
-	decoration
-	autoWrapped
-	visible											when(localVarBool(ui_hint_display))
-	exp												text(localVarString(ui_hint_text))
-}
+		MENU_CHOICE_HORIZONTAL_LINE(6)
+		PC_OPTIONS_BUTTON_RAW(6, "buttonDefaults", "@MENU_RESET_SYSTEM_DEFAULTS", open "options_graphics_defaults";, "@NULL_EMPTY", when (dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby()), 1)
+#endif
 
-ITEM_BUTTON_BACK(ON_MENU_ESC)
