@@ -1,0 +1,70 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+
+#define PC_OPTIONS_ROW_MEM							ui_row_options
+
+#define MENU_NAME									"main_options"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define ON_MENU_OPEN \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	setLocalVarBool									ui_hint_display 0; \
+	setLocalVarBool									ui_brightness_hint_display 0; \
+	execnow											"profile_menuDvarsSetup; resetViewport"; \
+	setFocus										"buttonVideo"; \
+	PC_OPTIONS_ROW_FOCUS(0) \
+	if (localvarint("ui_optionsSection") == 2) { setFocus "buttonAudio";     PC_OPTIONS_ROW_FOCUS(1) } \
+	if (localvarint("ui_optionsSection") == 3) { setFocus "buttonControls";  PC_OPTIONS_ROW_FOCUS(2) } \
+	if (localvarint("ui_optionsSection") == 4) { setFocus "buttonMulti";     PC_OPTIONS_ROW_FOCUS(3) } \
+	if (localvarint("ui_optionsSection") == 5) { setFocus "buttonGame";      PC_OPTIONS_ROW_FOCUS(4) } \
+	if (localvarint("ui_optionsSection") == 6) { setFocus "buttonGamepad";   PC_OPTIONS_ROW_FOCUS(5) } \
+	if (localvarint("ui_optionsSection") == 7) { setFocus "buttonDefaults";  PC_OPTIONS_ROW_FOCUS(6) }
+
+#define ON_MENU_ESC \
+	close self; \
+	if (dvarbool("cl_ingame")) \
+	{ \
+		open										"class"; \
+	} \
+	if (localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	{ \
+		execnow										"setfromdvar r_picmip ui_r_picmip"; \
+		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
+		execnow										"setfromdvar r_picmip_spec ui_r_picmip_spec"; \
+		execnow										"setfromdvar r_picmip_manual ui_r_picmip_manual"; \
+		exec										"wait; wait; r_applyPicmip"; \
+		setLocalVarBool								"ui_showPicApply" (0); \
+	} \
+	if (localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	{ \
+		open										"all_restart_popmenu"; \
+	} \
+	execnow											"profile_menuDvarsFinish; resetViewport"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY";
+
+{
+	menuDef
+	{
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
+
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_ESC(ON_MENU_ESC)
+
+		#define BACKGROUND_PC_OPTIONS
+		#define BACKGROUND_IW4
+		#define SIDEBAR_RIGHT
+		#include "ui_mp/bg.inc"
+
+		#define PC_OPTIONS_NAV
+		#include "ui_mp/leftside_options.inc"
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
+	}
+}

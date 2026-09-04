@@ -2,6 +2,8 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
+#define PC_OPTIONS_ROW_MEM							ui_row_video
+
 #define MENU_NAME									"pc_options_video"
 #define MENU_TITLE									"@MENU_VIDEO"
 
@@ -30,6 +32,7 @@
 
 #define ON_MENU_OPEN \
 	CLOSE_MENUS										\
+	PC_OPTIONS_ROW_RESTORE \
 	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
 	execnow											"profile_menuDvarsSetup; resetViewport"; \
 	setLocalVarBool									"ui_hideBack" ( 1 ); \
@@ -38,8 +41,7 @@
 		exec										"exec options_graphics.cfg"; \
 		exec										"setfromdvar ui_r_fullscreen r_fullscreen"; \
 	} \
-	execnow											"profile_menuDvarsSetup; resetViewport"; \
-	setFocus										"buttonVideo";
+	execnow											"profile_menuDvarsSetup; resetViewport";
 
 #define ON_MENU_CLOSE \
 	execnow											"profile_menuDvarsFinish; resetViewport"; \
@@ -50,8 +52,9 @@
 	setLocalVarString								ui_hint_text "@NULL_EMPTY";
 
 #define ON_MENU_ESC \
-	close											self; \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	close self; \
+	open "main_options"; \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
 	{ \
 		execnow										"setfromdvar r_picmip ui_r_picmip"; \
 		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
@@ -60,7 +63,7 @@
 		exec										"wait; wait; r_applyPicmip"; \
 		setLocalVarBool								"ui_showPicApply" (0); \
 	} \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice")) && (localvarbool("ui_showApply") || localvarbool("ui_showAudioApply"))) \
 	{ \
 		open										"all_restart_popmenu"; \
 	} \
@@ -70,11 +73,11 @@
 {
 	menuDef
 	{
-		name											MENU_NAME
-		rect											0 0 640 480
-		foreColor										CHOICE_TEXTCOLOR
-		focusColor										CHOICE_TEXTCOLOR
-		blurWorld										7
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
 
 		MENU_ON_OPEN(ON_MENU_OPEN)
 		MENU_ON_CLOSE(ON_MENU_CLOSE)
@@ -106,35 +109,35 @@
 
 		itemDef
 		{
-			rect										260 CHOICE_Y(9) 225 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
-			style										WINDOW_STYLE_FILLED
-			foreColor									CHOICE_TEXTCOLOR
-			disablecolor								0.6 0.55 0.55 1
-			background									"menu_setting_selection_bar"
-			type										ITEM_TYPE_BUTTON
-			textFont									UI_FONT_SMALL
-			textAlign									ITEM_ALIGN_TOP_RIGHT
-			textAlignX									-60
-			textScale									CHOICE_TEXTSIZE
-			text										"@MENU_ADVANCED_VIDEO"
-			visible										1
+			rect									CHOICE_RECT(9)
+			foreColor								CHOICE_TEXTCOLOR
+			disablecolor							0.6 0.55 0.55 1
+			type									ITEM_TYPE_BUTTON
+			textFont								UI_FONT_SMALL
+			textAlign								ITEM_ALIGN_TOP_RIGHT
+			textAlignX								CHOICE_LABEL_ALIGNX
+			textScale								CHOICE_TEXTSIZE
+			text									"@MENU_ADVANCED_VIDEO"
+			visible									1
 			mouseEnter
 			{
-				play									CHOICE_FOCUS_SOUND;
+				play								CHOICE_FOCUS_SOUND;
 			}
 			onFocus
 			{
-				setItemColor							self backColor 0 0 0 1;
+				PC_OPTIONS_ROW_FOCUS(9)
 			}
 			leaveFocus
 			{
-				setItemColor							self backColor 0 0 0 0;
+				PC_OPTIONS_ROW_LEAVE
 			}
 			action
 			{
-				open									"pc_options_advanced_video";
-				close									self;
+				open								"pc_options_advanced_video";
+				close								self;
 			}
 		}
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }

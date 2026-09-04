@@ -2,6 +2,8 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
+#define PC_OPTIONS_ROW_MEM							ui_row_audio
+
 #define MENU_NAME									"pc_options_audio"
 #define MENU_TITLE									"@MENU_AUDIO"
 
@@ -28,6 +30,7 @@
 
 #define ON_MENU_OPEN \
 	CLOSE_MENUS										\
+	PC_OPTIONS_ROW_RESTORE \
 	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
 	if (!localvarint("ui_showAudioApply")) \
 	{ \
@@ -35,12 +38,12 @@
 		exec										"setfromdvar ui_snd_enableEq snd_enableEq"; \
 		exec										"setfromdvar ui_outputConfig snd_outputConfiguration"; \
 	} \
-	execnow											"profile_menuDvarsSetup; resetViewport"; \
-	setFocus										"buttonAudio";
+	execnow											"profile_menuDvarsSetup; resetViewport";
 
 #define ON_MENU_ESC \
 	close self; \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	open "main_options"; \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
 	{ \
 		execnow										"setfromdvar r_picmip ui_r_picmip"; \
 		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
@@ -49,7 +52,7 @@
 		exec										"wait; wait; r_applyPicmip"; \
 		setLocalVarBool								"ui_showPicApply" (0); \
 	} \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && (localvarbool("ui_showApply") || localvarbool("ui_showAudioApply"))) \
 	{ \
 		open "all_restart_popmenu"; \
 	} \
@@ -59,11 +62,11 @@
 {
 	menuDef
 	{
-		name											MENU_NAME
-		rect											0 0 640 480
-		foreColor										CHOICE_TEXTCOLOR
-		focusColor										CHOICE_TEXTCOLOR
-		blurWorld										7
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
 
 		MENU_ON_OPEN(ON_MENU_OPEN)
 		MENU_ON_ESC(ON_MENU_ESC)
@@ -82,5 +85,7 @@
 		PC_OPTIONS_SEPERATOR(1)
 		PC_OPTIONS_DVARYESNO(2, "@MPUI_ENABLE_VOICE_CHAT", "cl_voice", ;, when(0))
 		PC_OPTIONS_KEYBINDING(3, "@MENU_VOICE_CHAT_BUTTON", "+talk")
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }

@@ -2,22 +2,24 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
+#define PC_OPTIONS_ROW_MEM							ui_row_gamepad
+
 #define MENU_NAME									"pc_options_gamepad"
 #define MENU_TITLE									"@MENU_GAMEPAD"
 
 #undef CHOICE_GROUP
 #define CHOICE_GROUP								MENU_NAME
 
-#define SENSITIVITY_1		0.6		// (Low)
-#define SENSITIVITY_2		1		// (Medium)
-#define SENSITIVITY_3		1.4
-#define SENSITIVITY_4		1.8		// (High)
-#define SENSITIVITY_5		2.0
-#define SENSITIVITY_6		2.2
-#define SENSITIVITY_7		2.6		// (Very High)
-#define SENSITIVITY_8		3.0
-#define SENSITIVITY_9		3.5
-#define SENSITIVITY_10		4.0		// (Insane)
+#define SENSITIVITY_1								0.6		// (Low)
+#define SENSITIVITY_2								1		// (Medium)
+#define SENSITIVITY_3								1.4
+#define SENSITIVITY_4								1.8		// (High)
+#define SENSITIVITY_5								2.0
+#define SENSITIVITY_6								2.2
+#define SENSITIVITY_7								2.6		// (Very High)
+#define SENSITIVITY_8								3.0
+#define SENSITIVITY_9								3.5
+#define SENSITIVITY_10								4.0		// (Insane)
 
 #define CLOSE_MENUS \
 	close "controls_multi"; \
@@ -41,15 +43,16 @@
 
 #define ON_MENU_OPEN \
 	CLOSE_MENUS										\
+	PC_OPTIONS_ROW_RESTORE \
 	exec											"setfromdvar ui_name name"; \
 	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
 	setLocalVarBool									ui_hint_display 1; \
-	execnow											"profile_menuDvarsSetup; resetViewport"; \
-	setFocus										"buttonGamepad";
+	execnow											"profile_menuDvarsSetup; resetViewport";
 
 #define ON_MENU_ESC \
 	close self; \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	open "main_options"; \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
 	{ \
 		execnow										"setfromdvar r_picmip ui_r_picmip"; \
 		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
@@ -58,7 +61,7 @@
 		exec										"wait; wait; r_applyPicmip"; \
 		setLocalVarBool								"ui_showPicApply" (0); \
 	} \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_Audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && (localvarbool("ui_showApply") || localvarbool("ui_showAudioApply"))) \
 	{ \
 		open										"all_restart_popmenu"; \
 	} \
@@ -69,25 +72,25 @@
 #define ON_GPAD_DISABLED when(dvarBool("gpad_enabled") == 0)
 
 #define ON_GAMEPAD_ENABLED_TOGGLE \
-    if (dvarbool("gpad_enabled") && dvarstring("gpad_sticksConfig") == "") \
-    { \
-        setdvar                                     gpad_sticksConfig "thumbstick_default"; \
-        execnow                                     "bindgpsticksconfigs"; \
-    } \
-    if (dvarbool("gpad_enabled") && dvarstring("gpad_buttonConfig") == "") \
-    { \
-        setdvar                                     gpad_buttonConfig "buttons_default"; \
-        execnow                                     "bindgpbuttonsconfigs"; \
-    }
+	if (dvarbool("gpad_enabled") && dvarstring("gpad_sticksConfig") == "") \
+	{ \
+		setdvar										gpad_sticksConfig "thumbstick_default"; \
+		execnow										"bindgpsticksconfigs"; \
+	} \
+	if (dvarbool("gpad_enabled") && dvarstring("gpad_buttonConfig") == "") \
+	{ \
+		setdvar										gpad_buttonConfig "buttons_default"; \
+		execnow										"bindgpbuttonsconfigs"; \
+	}
 
 {
 	menuDef
 	{
-		name											MENU_NAME
-		rect											0 0 640 480
-		foreColor										CHOICE_TEXTCOLOR
-		focusColor										CHOICE_TEXTCOLOR
-		blurWorld										7
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
 
 		MENU_ON_OPEN(ON_MENU_OPEN)
 		MENU_ON_CLOSE(ON_MENU_CLOSE)
@@ -138,5 +141,7 @@
 			"@MENU_DESC_LOOK_SENSITIVITY_PRESET", ON_GPAD_DISABLED, ON_GPAD_ENABLED
 		)
 		PC_OPTIONS_DVARYESNO_RAW(11, "@MENU_AIM_ACCELERATION", "aim_accel_turnrate_enabled", ;, "@MPUI_DESC_AIM_ACCELERATION", ON_GPAD_DISABLED, ON_GPAD_ENABLED)
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }

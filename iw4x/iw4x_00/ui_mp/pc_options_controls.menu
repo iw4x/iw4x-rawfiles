@@ -2,6 +2,8 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
+#define PC_OPTIONS_ROW_MEM							ui_row_controls
+
 #define MENU_NAME									"pc_options_controls"
 #define MENU_TITLE									"@MENU_CONTROLS"
 
@@ -30,17 +32,18 @@
 
 #define ON_MENU_OPEN \
 	CLOSE_MENUS										\
+	PC_OPTIONS_ROW_RESTORE \
 	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
 	setLocalVarBool									"ui_hideBack" (1); \
-	execnow											"profile_menuDvarsSetup; resetViewport"; \
-	setFocus										"buttonControls";
+	execnow											"profile_menuDvarsSetup; resetViewport";
 
 #define ON_MENU_CLOSE \
 	setLocalVarBool "ui_hideBack" (0);
 
 #define ON_MENU_ESC \
 	close self; \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
+	open "main_options"; \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showPicApply") && !localvarbool("ui_showApply") && !localvarbool("ui_showAudioApply")) \
 	{ \
 		execnow										"setfromdvar r_picmip ui_r_picmip"; \
 		execnow										"setfromdvar r_picmip_bump ui_r_picmip_bump"; \
@@ -49,7 +52,7 @@
 		exec										"wait; wait; r_applyPicmip"; \
 		setLocalVarBool								"ui_showPicApply" (0); \
 	} \
-	if (!(menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && localvarbool("ui_showApply") || localvarbool("ui_showAudioApply")) \
+	if (!(menuisopen("main_options") || menuisopen("pc_options_advanced_video") || menuisopen("pc_options_video") || menuisopen("pc_options_audio") || menuisopen("pc_options_controls") || menuisopen("pc_options_voice") ) && (localvarbool("ui_showApply") || localvarbool("ui_showAudioApply"))) \
 	{ \
 		open										"all_restart_popmenu"; \
 	} \
@@ -59,11 +62,11 @@
 {
 	menuDef
 	{
-		name											MENU_NAME
-		rect											0 0 640 480
-		foreColor										CHOICE_TEXTCOLOR
-		focusColor										CHOICE_TEXTCOLOR
-		blurWorld										7
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
 
 		MENU_ON_OPEN(ON_MENU_OPEN)
 		MENU_ON_CLOSE(ON_MENU_CLOSE)
@@ -87,38 +90,38 @@
 
 		itemDef
 		{
-			rect										302 CHOICE_Y(4) 225 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
-			style										WINDOW_STYLE_FILLED
-			type										ITEM_TYPE_BUTTON
-			foreColor									CHOICE_TEXTCOLOR
-			disableColor								0.6 0.55 0.55 1
-			background									"menu_setting_selection_bar"
-			textFont									UI_FONT_SMALL
-			textAlign									ITEM_ALIGN_TOP_LEFT
-			textAlignX									60
-			textScale									CHOICE_TEXTSIZE
-			text										"@MENU_RESTORE_DEFAULT_CONTROLS"
-			visible										1
+			rect									CHOICE_RECT(4)
+			type									ITEM_TYPE_BUTTON
+			foreColor								CHOICE_TEXTCOLOR
+			disableColor							0.6 0.55 0.55 1
+			textFont								UI_FONT_SMALL
+			textAlign								ITEM_ALIGN_TOP_RIGHT
+			textAlignX								CHOICE_LABEL_ALIGNX
+			textScale								CHOICE_TEXTSIZE
+			text									"@MENU_RESTORE_DEFAULT_CONTROLS"
+			visible									1
 			mouseEnter
 			{
-				play									CHOICE_FOCUS_SOUND;
+				play								CHOICE_FOCUS_SOUND;
 			}
 			onFocus
 			{
-				setItemColor							self backColor 0 0 0 1;
-				setLocalVarString						ui_hint_text("@NULL_EMPTY");
-				setLocalVarFloat						ui_popupYPos (getFocusedItemY());
+				PC_OPTIONS_ROW_FOCUS(4)
+				setLocalVarString					ui_hint_text("@NULL_EMPTY");
+				setLocalVarFloat					ui_popupYPos (getFocusedItemY());
 			}
 			leaveFocus
 			{
-				setItemColor							self backColor 0 0 0 0;
-				setLocalVarString						ui_hint_text("@NULL_EMPTY");
+				PC_OPTIONS_ROW_LEAVE
+				setLocalVarString					ui_hint_text("@NULL_EMPTY");
 			}
 			action
 			{
-				play									CHOICE_CLICK_SOUND;
-				open									"options_control_defaults";
+				play								CHOICE_CLICK_SOUND;
+				open								"options_control_defaults";
 			}
 		}
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }

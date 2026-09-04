@@ -2,6 +2,8 @@
 #include "ui_mp/main.inc"
 #include "ui_mp/pc_options.inc"
 
+#define PC_OPTIONS_ROW_MEM							ui_row_advanced_video
+
 #define MENU_NAME									"pc_options_advanced_video"
 #define MENU_TITLE									"@MENU_ADVANCED_VIDEO"
 
@@ -30,6 +32,7 @@
 
 #define ON_MENU_OPEN \
 	CLOSE_MENUS										\
+	PC_OPTIONS_ROW_RESTORE \
 	execnow											"profile_menuDvarsSetup; resetViewport"; \
 	setLocalVarBool									"ui_hideBack" (1);
 
@@ -46,11 +49,11 @@
 {
 	menuDef
 	{
-		name											MENU_NAME
-		rect											0 0 640 480
-		foreColor										CHOICE_TEXTCOLOR
-		focusColor										CHOICE_TEXTCOLOR
-		blurWorld										7
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
 
 		MENU_ON_OPEN(ON_MENU_OPEN)
 		MENU_ON_CLOSE(ON_MENU_CLOSE)
@@ -58,8 +61,7 @@
 
 		#define BACKGROUND_PC_OPTIONS
 		#define BACKGROUND_IW4
-		#define DISABLE_SIDEBAR
-		#define BACKGROUND_FULL
+		#define SIDEBAR_RIGHT
 		#include "ui_mp/bg.inc"
 
 		PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
@@ -88,6 +90,6 @@
 		PC_OPTIONS_FLOATLIST_RAW(12, "@MENU_NORMAL_MAP_RESOLUTION", "ui_r_picmip_bump", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
 		PC_OPTIONS_FLOATLIST_RAW(13, "@MENU_SPECULAR_MAP_RESOLUTION", "ui_r_picmip_spec", {"@MENU_LOW" 3 "@MENU_NORMAL" 2 "@MENU_HIGH" 1 "@MENU_EXTRA" 0}, setLocalVarBool "ui_showApply" (1);, "@NULL_EMPTY", when((dvarBool("cl_ingame") || dvarBool("sv_running") || inlobby())), when(dvarBool("ui_r_picmip_manual")))
 
-		ITEM_BUTTON_BACK(ON_MENU_ESC)
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }
