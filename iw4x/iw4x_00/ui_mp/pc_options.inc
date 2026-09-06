@@ -44,6 +44,17 @@
 		setLocalVarBool								ui_optionRowShow 1; \
 	}
 
+#define PC_OPTIONS_ON_OPEN \
+	PC_OPTIONS_ROW_RESTORE \
+	exec											"setfromdvar ui_name name"; \
+	setLocalVarString								ui_hint_text "@NULL_EMPTY"; \
+	setLocalVarBool									ui_hint_display 1; \
+	execnow											"profile_menuDvarsSetup; resetViewport";
+
+#define PC_OPTIONS_ON_CLOSE \
+	setLocalVarBool									ui_hint_display 0; \
+	exec											"setfromdvar name ui_name";
+
 #define PC_OPTIONS_BUTTON_BACK(actionArg) \
 	itemDef \
 	{ \
