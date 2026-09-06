@@ -9,7 +9,31 @@
 #undef CHOICE_GROUP
 #define CHOICE_GROUP								MENU_NAME
 
+#define CLOSE_MENUS \
+	close											"controls_multi"; \
+	close											"main_controls"; \
+	close											"main_options"; \
+	close											"options_control_defaults"; \
+	close											"options_graphics"; \
+	close											"options_graphics_defaults"; \
+	close											"options_graphics_texture"; \
+	close											"options_multi"; \
+	close											"options_voice"; \
+	close											"pc_options_actions"; \
+	close											"pc_options_advanced_video"; \
+	close											"pc_options_audio"; \
+	close											"pc_options_controls"; \
+	close											"pc_options_game"; \
+	close											"pc_options_gamepad"; \
+	close											"pc_options_look"; \
+	close											"pc_options_movement"; \
+	close											"pc_options_multi"; \
+	close											"pc_options_network"; \
+	close											"pc_options_video"; \
+	close											"pc_options_voice";
+
 #define ON_MENU_OPEN \
+	CLOSE_MENUS										\
 	PC_OPTIONS_ON_OPEN
 
 #define ON_MENU_CLOSE \
@@ -41,23 +65,23 @@
 
 		PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
 
-		PC_OPTIONS_DVARYESNO(0, "@MENU_SHOW_BLOOD", "cg_blood", "@MPUI_DESC_SHOW_BLOOD")
-		PC_OPTIONS_DVARYESNO(1, "@MENU_COLORBLIND_MODE", "r_colorBlindTeams", "@MPUI_DESC_COLORBLIND_MODE")
-		PC_OPTIONS_DVARYESNO(2, "@MENU_NEWCOLORS", "cg_newColors", "@MPUI_DESC_NEWCOLORS")
-		PC_OPTIONS_SEPARATOR(2)
+		PC_OPTIONS_DVARYESNO_RAW(0, "@MENU_SHOW_BLOOD", "cg_blood", ;, "@MPUI_DESC_SHOW_BLOOD", when(0), 1)
+		PC_OPTIONS_DVARYESNO_RAW(1, "@MENU_COLORBLIND_MODE", "r_colorBlindTeams", ;, "@MPUI_DESC_COLORBLIND_MODE", when(0), 1)
+		PC_OPTIONS_DVARYESNO_RAW(2, "@MENU_NEWCOLORS", "cg_newColors", ;, "@MPUI_DESC_NEWCOLORS", when(0), 1)
+		PC_OPTIONS_SEPERATOR(2)
 
-		PC_OPTIONS_STRLIST(3, "@MENU_DRAWFPS", "cg_drawFPS",
+		PC_OPTIONS_STRLIST_RAW(3, "@MENU_DRAWFPS", "cg_drawFPS",
 			{"@MENU_OFF"; "Off";
 			"@MENU_FPS_SIMPLE"; "Simple";
 			"@MENU_FPS_SIMPLE_RANGES"; "SimpleRanges";
 			"@MENU_FPS_VERBOSE"; "Verbose";
-			"@MENU_FPS_VERBOSE_VIEWPOS"; "Verbose+Viewpos"}, "@MENU_DESC_DRAWFPS")
+			"@MENU_FPS_VERBOSE_VIEWPOS"; "Verbose+Viewpos"}, ;, "@MENU_DESC_DRAWFPS", when(0), 1)
 		PC_OPTIONS_DVARYESNO_RAW(4, "@MENU_FPSLABELS", "cg_drawFPSLabels", ;, "@MENU_DESC_FPSLABELS", when(dvarString("cg_drawFPS") == "Off"), 1)
-		PC_OPTIONS_DVARYESNO(5, "@MENU_LAGOMETER", "drawLagometer", "@MPUI_DESC_LAGOMETER")
-		PC_OPTIONS_SEPARATOR(5)
+		PC_OPTIONS_DVARYESNO_RAW(5, "@MENU_LAGOMETER", "drawLagometer", ;, "@MPUI_DESC_LAGOMETER", when(0), 1)
+		PC_OPTIONS_SEPERATOR(5)
 
-		PC_OPTIONS_DVARYESNO(6, "@MENU_STREAMFRIENDLY_UI", "ui_streamFriendly", "@MPUI_DESC_STREAM_FRIENDLY_UI")
-		PC_OPTIONS_DVARYESNO(7, "@MENU_FRIENDNOTIFY", "cl_notifyFriendState", "@MPUI_DESC_FRIENDNOTIFY")
+		PC_OPTIONS_DVARYESNO_RAW(6, "@MENU_STREAMFRIENDLY_UI", "ui_streamFriendly", ;, "@MPUI_DESC_STREAM_FRIENDLY_UI", when(0), 1)
+		PC_OPTIONS_DVARYESNO_RAW(7, "@MENU_FRIENDNOTIFY", "cl_notifyFriendState", ;, "@MPUI_DESC_FRIENDNOTIFY", when(0), 1)
 		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
 	}
 }
