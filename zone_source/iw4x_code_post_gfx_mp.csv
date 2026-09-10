@@ -34,4 +34,7 @@ material,dpad_ps3_right
 material,dpad_ps3_up
 material,dpad_right
 material,dpad_up
+material,hud_dpad_arrow_left
+material,hud_dpad_arrow_right
 material,hud_dpad_ps3
+material,hud_dpad_xbox360
