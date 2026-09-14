@@ -114,7 +114,7 @@ main()
 	level.initGametypeAwards = ::initGametypeAwards;
 	level.dd = true;
 	level.bombsPlanted = 0;
-	level.ddBombModel = []
+	level.ddBombModel = [];
 	
 	setBombTimerDvar();
 	
@@ -221,63 +221,44 @@ onStartGameType()
 	level.spawnMaxs = ( 0, 0, 0 );	
 	
 	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_cha_spawn_axis" );
-	else
-		maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_dd_spawn_defender" );
-	
-	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_dd_spawn_defender_a", true );
-	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_dd_spawn_defender_b", true );
-	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		maps\mp\gametypes\_spawnlogic::placeSpawnPoints( "mp_cha_spawn_axis_start" );
-	else
-		maps\mp\gametypes\_spawnlogic::placeSpawnPoints( "mp_dd_spawn_defender_start" );
+	defenderClass = getSpawnClass( "mp_dd_spawn_defender", "mp_sd_spawn_defender" );
+	attackerClass = getSpawnClass( "mp_dd_spawn_attacker", "mp_sd_spawn_attacker" );
+	defenderStartClass = getSpawnClass( "mp_dd_spawn_defender_start", defenderClass );
+	attackerStartClass = getSpawnClass( "mp_dd_spawn_attacker_start", attackerClass );
 
 	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["attackers"], "mp_cha_spawn_allies" );
-	else
-		maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["attackers"], "mp_dd_spawn_attacker" );
-		
+	{
+		defenderClass = "mp_cha_spawn_axis";
+		attackerClass = "mp_cha_spawn_allies";
+		defenderStartClass = "mp_cha_spawn_axis_start";
+		attackerStartClass = "mp_cha_spawn_allies_start";
+	}
+
+	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], defenderClass );
+	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_dd_spawn_defender_a", true );
+	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["defenders"], "mp_dd_spawn_defender_b", true );
+	maps\mp\gametypes\_spawnlogic::placeSpawnPoints( defenderStartClass );
+
+	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["attackers"], attackerClass );
 	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["attackers"], "mp_dd_spawn_attacker_a", true );
 	maps\mp\gametypes\_spawnlogic::addSpawnPoints( game["attackers"], "mp_dd_spawn_attacker_b", true );
-	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		maps\mp\gametypes\_spawnlogic::placeSpawnPoints( "mp_cha_spawn_allies_start" );
-	else
-		maps\mp\gametypes\_spawnlogic::placeSpawnPoints( "mp_dd_spawn_attacker_start" );
-	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		level.spawn_defenders = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_cha_spawn_axis" );
-	else
-		level.spawn_defenders = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_defender" );
-		
+	maps\mp\gametypes\_spawnlogic::placeSpawnPoints( attackerStartClass );
+
+	level.spawn_defenders = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( defenderClass );
 	level.spawn_defenders_a = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_defender_a" );
 	level.spawn_defenders_a = array_combine( level.spawn_defenders, level.spawn_defenders_a );
 	level.spawn_defenders_b = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_defender_b" );
 	level.spawn_defenders_b = array_combine( level.spawn_defenders, level.spawn_defenders_b );
-	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-		level.spawn_attackers = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_cha_spawn_allies" );
-	else
-		level.spawn_attackers = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_attacker" );
-		
+
+	level.spawn_attackers = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( attackerClass );
 	level.spawn_attackers_a = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_attacker_a" );
 	level.spawn_attackers_a = array_combine( level.spawn_attackers, level.spawn_attackers_a );
 	level.spawn_attackers_b = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_attacker_b" );
 	level.spawn_attackers_b = array_combine( level.spawn_attackers, level.spawn_attackers_b );
-	
-	if ( getDvar( "mapname" ) == "mp_shipment_long" )
-	{
-		level.spawn_defenders_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_cha_spawn_axis_start" );
-		level.spawn_attackers_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_cha_spawn_allies_start" );
-	}
-	else
-	{
-		level.spawn_defenders_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_defender_start" );
-		level.spawn_attackers_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( "mp_dd_spawn_attacker_start" );
-	}
-	
+
+	level.spawn_defenders_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( defenderStartClass );
+	level.spawn_attackers_start = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( attackerStartClass );
+
 	level.mapCenter = maps\mp\gametypes\_spawnlogic::findBoxCenter( level.spawnMins, level.spawnMaxs );
 	level.aPlanted = false;
 	level.bPlanted = false;
@@ -309,6 +290,17 @@ onStartGameType()
 	maps\mp\gametypes\_gameobjects::main(allowed);
 	
 	thread bombs();
+}
+
+// CoD4 ports have Search and Destroy spawn sets but may have no Demolition sets.
+// Prefer authored Demolition spawns, including script-provided extra spawn points.
+getSpawnClass( preferredClass, fallbackClass )
+{
+	spawnPoints = maps\mp\gametypes\_spawnlogic::getSpawnpointArray( preferredClass );
+	if ( spawnPoints.size )
+		return preferredClass;
+
+	return fallbackClass;
 }
 
 waitToProcess()
