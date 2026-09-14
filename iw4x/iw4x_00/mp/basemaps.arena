@@ -233,9 +233,10 @@
     description  "MPUI_DESC_MAP_CRASH"
     mapimage     "preview_mp_crash"
     mapoverlay   "compass_overlay_map_blank"
-    allieschar   "socom_141_desert"
-    axischar     "opforce_composite"
-    environment  "urban"
+    allieschar   "iw3_usmc_desert"
+    axischar     "iw3_opfor_desert"
+    environment  "iw3"
+    useteamzones "true"
 }
 
 {
@@ -245,9 +246,10 @@
     description  "MPUI_DESC_MAP_OVERGROWN"
     mapimage     "preview_mp_overgrown"
     mapoverlay   "compass_overlay_map_blank"
-    allieschar   "socom_141_forest"
-    axischar     "opforce_airborne"
-    environment  "forest"
+    allieschar   "iw3_sas_woodland"
+    axischar     "iw3_spetsnaz_woodland"
+    environment  "iw3"
+    useteamzones "true"
 }
 
 
@@ -294,9 +296,10 @@
     description  "PATCH_DESC_MAP_VACANT"
     mapimage     "preview_mp_vacant"
     mapoverlay   "compass_overlay_map_blank"
-    allieschar   "us_army"
-    axischar     "opforce_airborne"
-    environment  "urban"
+    allieschar   "iw3_sas_urban"
+    axischar     "iw3_spetsnaz_urban"
+    environment  "iw3"
+    useteamzones "true"
 }
 
 {
@@ -306,9 +309,10 @@
     description  "PATCH_DESC_MAP_STRIKE"
     mapimage     "preview_mp_strike"
     mapoverlay   "compass_overlay_map_blank"
-    allieschar   "us_army"
-    axischar     "opforce_composite"
-    environment  "desert"
+    allieschar   "iw3_usmc_desert"
+    axischar     "iw3_opfor_desert"
+    environment  "iw3"
+    useteamzones "true"
 }
 
 {
@@ -397,8 +401,8 @@
   description   "MPUI_DESC_MAP_KILLHOUSE"
   mapimage      "preview_mp_killhouse"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "iw3_sas_woodland"
-  axischar      "iw3_spetsnaz_woodland"
+  allieschar    "iw3_sas_urban"
+  axischar      "iw3_spetsnaz_urban"
   useteamzones "true"
   environment   "iw3"
 }
@@ -410,8 +414,8 @@
   description   "MPUI_DESC_MAP_CARGOSHIP"
   mapimage      "preview_mp_cargoship"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "iw3_sas_woodland"
-  axischar      "iw3_spetsnaz_woodland"
+  allieschar    "iw3_sas_urban"
+  axischar      "iw3_spetsnaz_urban"
   environment   "iw3"
   useteamzones "true"
 }
@@ -439,6 +443,20 @@
   allieschar    "iw3_usmc_desert"
   axischar      "iw3_opfor_desert"
   environment   "iw3"
+  useteamzones  "true"
+}
+
+{
+  map           "mp_bog_sh"
+  longname      "MPUI_BOG_SH"
+  gametype      "dm war sab sab2 dom sd sd2 hc thc ctf koth dd oneflag gtnw"
+  description   "MPUI_DESC_MAP_BOG"
+  mapimage      "preview_mp_bog_sh"
+  mapoverlay    "compass_overlay_map_blank"
+  allieschar    "iw3_usmc_desert"
+  axischar      "iw3_opfor_desert"
+  environment   "iw3"
+  useteamzones  "true"
 }
 
 {
@@ -513,9 +531,10 @@
   description   "MPUI_DESC_MAP_SHIPMENT"
   mapimage      "preview_mp_shipment"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "iw3_sas_woodland"
-  axischar      "iw3_spetsnaz_woodland"
+  allieschar    "iw3_sas_urban"
+  axischar      "iw3_spetsnaz_urban"
   environment   "iw3"
+  useteamzones  "true"
 }
 
 {
@@ -617,9 +636,9 @@
   description   "MPUI_DESC_MAP_CRASH_SNOW"
   mapimage      "preview_mp_crash_snow"
   mapoverlay    "compass_overlay_map_blank "
-  allieschar    "socom_141_arctic"
-  axischar      "opforce_arctic"
-  environment   "forest"
+  allieschar    "iw3_usmc_desert"
+  axischar      "iw3_opfor_desert"
+  environment   "iw3"
   useteamzones  "true"
 }
 
