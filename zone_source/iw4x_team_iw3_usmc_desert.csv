@@ -208,7 +208,7 @@ sound,IW3_US_1mc_securing_c
 sound,IW3_mp_spawn_usa
 sound,IW3_mp_victory_usa
 xmodel,prop_flag_neutral
-fx,misc/ui_flagbase_black
+fx,ui_flagbase_black
 material,objpoint_flag_american
 material,headicon_american
 xmodel,com_plasticcase_beige_big
