@@ -1,0 +1,71 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+#include "ui_mp/pc_options_gamepad.inc"
+
+#define PC_OPTIONS_ROW_MEM							ui_row_gamepad_timing
+
+#define MENU_NAME									"pc_options_gamepad_timing"
+#define MENU_TITLE									"@MENU_GPAD_ADV_TIMING"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define ON_MENU_OPEN \
+	GPAD_ADV_ON_OPEN \
+	close											"pc_options_gamepad_advanced";
+
+#define ON_MENU_CLOSE \
+	GPAD_ADV_ON_CLOSE("pc_options_gamepad_advanced")
+
+#define ON_MENU_ESC \
+	GPAD_ADV_ON_ESC
+
+#define ON_RELEASE_DELAY_DISABLED					when(dvarBool("gpad_button_release_delay_enabled") == 0)
+
+{
+	menuDef
+	{
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
+
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
+
+		#define BACKGROUND_PC_OPTIONS
+		#define BACKGROUND_IW4
+		#define SIDEBAR_RIGHT
+		#include "ui_mp/bg.inc"
+
+		#include "ui_mp/leftside_options.inc"
+
+		PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+		GPAD_ADV_LIST(0, "@MENU_GPAD_ADV_USE_HOLD", "gpad_use_hold_time", GPAD_ADV_STEPS_HOLD, "@MPUI_DESC_GPAD_ADV_USE_HOLD")
+
+		PC_OPTIONS_SEPERATOR(0)
+
+		GPAD_ADV_YESNO(1, "@MENU_GPAD_ADV_RELEASE_DELAY", "gpad_button_release_delay_enabled", "@MPUI_DESC_GPAD_ADV_RELEASE_DELAY")
+		GPAD_ADV_LIST_DIS(2, "@MENU_GPAD_ADV_RELEASE_DELAY_MIN", "gpad_button_release_delay", GPAD_ADV_STEPS_DELAY, "@MPUI_DESC_GPAD_ADV_RELEASE_DELAY_MIN", ON_RELEASE_DELAY_DISABLED)
+		GPAD_ADV_SLIDER_DIS(3, "@MENU_GPAD_ADV_RELEASE_DELAY_SCALE", "gpad_button_release_delay_scale", 0, 10, 3.5, "@MPUI_DESC_GPAD_ADV_RELEASE_DELAY_SCALE", ON_RELEASE_DELAY_DISABLED)
+		GPAD_ADV_YESNO_DIS(4, "@MENU_GPAD_ADV_RELEASE_SPRINT_ONLY", "gpad_button_release_delay_sprint_only", "@MPUI_DESC_GPAD_ADV_RELEASE_SPRINT_ONLY", ON_RELEASE_DELAY_DISABLED)
+		GPAD_ADV_LIST_DIS(5, "@MENU_GPAD_ADV_RELEASE_GRACE", "gpad_button_release_grace", GPAD_ADV_STEPS_GRACE, "@MPUI_DESC_GPAD_ADV_RELEASE_GRACE", ON_RELEASE_DELAY_DISABLED)
+
+		PC_OPTIONS_SEPERATOR(5)
+
+		GPAD_ADV_LIST(6, "@MENU_GPAD_ADV_SCROLL_FIRST", "gpad_menu_scroll_delay_first", GPAD_ADV_STEPS_SCROLL, "@MPUI_DESC_GPAD_ADV_SCROLL_FIRST")
+		GPAD_ADV_LIST(7, "@MENU_GPAD_ADV_SCROLL_REST", "gpad_menu_scroll_delay_rest", GPAD_ADV_STEPS_SCROLL, "@MPUI_DESC_GPAD_ADV_SCROLL_REST")
+		GPAD_ADV_LIST(8, "@MENU_GPAD_ADV_SCROLL_MIN", "gpad_menu_scroll_delay_min", GPAD_ADV_STEPS_SCROLL, "@MPUI_DESC_GPAD_ADV_SCROLL_MIN")
+		GPAD_ADV_LIST(9, "@MENU_GPAD_ADV_SCROLL_ACCEL", "gpad_menu_scroll_accel_time", GPAD_ADV_STEPS_ACCEL, "@MPUI_DESC_GPAD_ADV_SCROLL_ACCEL")
+
+		PC_OPTIONS_SEPERATOR(9)
+
+		GPAD_ADV_DEFAULTS(10, GPAD_ADV_RESTORE_TIMING)
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
+	}
+}
