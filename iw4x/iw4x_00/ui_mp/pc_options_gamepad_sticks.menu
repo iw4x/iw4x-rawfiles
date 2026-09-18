@@ -1,0 +1,70 @@
+#include "ui/menudef.h"
+#include "ui_mp/main.inc"
+#include "ui_mp/pc_options.inc"
+#include "ui_mp/pc_options_gamepad.inc"
+
+#define PC_OPTIONS_ROW_MEM							ui_row_gamepad_sticks
+
+#define MENU_NAME									"pc_options_gamepad_sticks"
+#define MENU_TITLE									"@MENU_GPAD_ADV_STICKS"
+
+#undef CHOICE_GROUP
+#define CHOICE_GROUP								MENU_NAME
+
+#define ON_MENU_OPEN \
+	GPAD_ADV_ON_OPEN \
+	close											"pc_options_gamepad_advanced";
+
+#define ON_MENU_CLOSE \
+	GPAD_ADV_ON_CLOSE("pc_options_gamepad_advanced")
+
+#define ON_MENU_ESC \
+	GPAD_ADV_ON_ESC
+
+{
+	menuDef
+	{
+		name										MENU_NAME
+		rect										0 0 640 480
+		foreColor									CHOICE_TEXTCOLOR
+		focusColor									CHOICE_TEXTCOLOR
+		blurWorld									7
+
+		MENU_ON_OPEN(ON_MENU_OPEN)
+		MENU_ON_CLOSE(ON_MENU_CLOSE)
+		MENU_ON_ESC(ON_MENU_ESC)
+
+		#define BACKGROUND_PC_OPTIONS
+		#define BACKGROUND_IW4
+		#define SIDEBAR_RIGHT
+		#include "ui_mp/bg.inc"
+
+		#include "ui_mp/leftside_options.inc"
+
+		PC_OPTIONS_SECTION_TITLE(MENU_TITLE)
+
+		GPAD_ADV_SLIDER(0, "@MENU_GPAD_ADV_DEADZONE_INNER", "gpad_stick_deadzone_min", 0, 0.9, 0.2, "@MPUI_DESC_GPAD_ADV_DEADZONE_INNER")
+		GPAD_ADV_SLIDER(1, "@MENU_GPAD_ADV_DEADZONE_OUTER", "gpad_stick_deadzone_max", 0, 0.5, 0.01, "@MPUI_DESC_GPAD_ADV_DEADZONE_OUTER")
+		GPAD_ADV_SLIDER(2, "@MENU_GPAD_ADV_DEADZONE_ANTI", "gpad_stick_anti_deadzone", 0, 0.9, 0, "@MPUI_DESC_GPAD_ADV_DEADZONE_ANTI")
+
+		PC_OPTIONS_SEPERATOR(2)
+
+		GPAD_ADV_SLIDER(3, "@MENU_GPAD_ADV_STICK_PRESSED", "gpad_stick_pressed", 0.05, 1, 0.4, "@MPUI_DESC_GPAD_ADV_STICK_PRESSED")
+		GPAD_ADV_SLIDER(4, "@MENU_GPAD_ADV_STICK_HYSTERESIS", "gpad_stick_pressed_hysteresis", 0, 0.5, 0.1, "@MPUI_DESC_GPAD_ADV_STICK_HYSTERESIS")
+
+		PC_OPTIONS_SEPERATOR(4)
+
+		PC_OPTIONS_STRLIST_RAW(5, "@MENU_THUMBSTICK_LAYOUT", "gpad_sticksConfig",
+			{"@MENU_DEFAULT"; "thumbstick_default";
+			"@MENU_SOUTHPAW"; "thumbstick_southpaw";
+			"@MENU_LEGACY"; "thumbstick_legacy";
+			"@MENU_LEGACY_SOUTHPAW"; "thumbstick_legacysouthpaw"}, execNow "bindgpsticksconfigs";, "@MENU_DESC_THUMBSTICK_LAYOUT", when(0), 1)
+		GPAD_ADV_YESNO(6, "@MENU_LOOK_INVERSION", "input_invertPitch", "@MPUI_DESC_LOOK_INVERSION")
+
+		PC_OPTIONS_SEPERATOR(6)
+
+		GPAD_ADV_DEFAULTS(7, GPAD_ADV_RESTORE_STICKS)
+
+		PC_OPTIONS_BUTTON_BACK(ON_MENU_ESC)
+	}
+}
