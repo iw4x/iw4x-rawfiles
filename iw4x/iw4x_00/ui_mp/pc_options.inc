@@ -1,6 +1,7 @@
 #define CHOICE_Y(i)									(28 + (i * 20))
 #define CHOICE_ORIGIN(i)							-64 CHOICE_Y(i)
 #define CHOICE_RECT(i)								CHOICE_ORIGIN(i) 336 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+#define CHOICE_CONTROL_RECT(i)						CHOICE_ORIGIN(i) 384 20 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 
 #define CHOICE_LABEL_ALIGNX							-60
 #define CHOICE_CONTROL_ALIGNX						288
@@ -215,7 +216,7 @@
 #define PC_OPTIONS_DVARENUMLIST_RAW(itemIndex, textArg, dvarArg, dvarEnumArg, actionArg, descArg, disArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
 		type										ITEM_TYPE_DVARENUM \
@@ -266,7 +267,7 @@
 #define PC_OPTIONS_DVARYESNO_RAW(itemIndex, textArg, dvarArg, actionArg, descArg, disArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
 		type										ITEM_TYPE_YESNO \
@@ -316,7 +317,7 @@
 #define PC_OPTIONS_DVARSLIDER_RAW(itemIndex, textArg, dvarArg, dvarMin, dvarMax, dvarDef, focusArg, focusLeaveArg, actionArg, disArg, visArg, visValue) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
 		type										ITEM_TYPE_SLIDER \
@@ -367,7 +368,7 @@
 #define PC_OPTIONS_FLOATLIST_RAW(itemIndex, textArg, dvarArg, dvarFloatListArg, actionArg, descArg, disArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
 		type										ITEM_TYPE_MULTI \
@@ -406,7 +407,7 @@
 #define PC_OPTIONS_STRLIST_RAW(itemIndex, textArg, dvarArg, dvarStrListArg, actionArg, descArg, disArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		disableColor								0.6 0.55 0.55 1 \
 		type										ITEM_TYPE_MULTI \
@@ -448,7 +449,7 @@
 #define PC_OPTIONS_KEYBINDING_RAW(itemIndex, textArg, dvarArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		type										ITEM_TYPE_BIND \
 		dvar										dvarArg \
@@ -499,7 +500,7 @@
 #define PC_OPTIONS_EDITFIELD_RAW(itemIndex, textArg, dvarArg, maxCharsArg, descArg, visArg) \
 	itemDef \
 	{ \
-		rect										CHOICE_RECT(itemIndex) \
+		rect										CHOICE_CONTROL_RECT(itemIndex) \
 		foreColor									CHOICE_TEXTCOLOR \
 		type										ITEM_TYPE_EDITFIELD \
 		text										" " \
