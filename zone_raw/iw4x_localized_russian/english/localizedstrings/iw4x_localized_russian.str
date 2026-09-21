@@ -775,7 +775,7 @@ LANG_ENGLISH        "Усадьба с тропическим ландшафто
 REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
 LANG_ENGLISH        "Фавела с тропическим ландшафтом."
 
-REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE_IW4X
 LANG_ENGLISH        "Бой на ближней и средней дистанции на военной базе на Кубе."
 
 REFERENCE           MPUI_DESC_MAP_HARDHAT

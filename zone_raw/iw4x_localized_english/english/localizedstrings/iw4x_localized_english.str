@@ -1031,7 +1031,7 @@ LANG_ENGLISH        "Estate with a tropical landscape."
 REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
 LANG_ENGLISH        "Favela with a tropical landscape."
 
-REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE_IW4X
 LANG_ENGLISH        "Close range to medium range combat in a military practice facility in Cuba."
 
 REFERENCE           MPUI_DESC_MAP_HARDHAT
