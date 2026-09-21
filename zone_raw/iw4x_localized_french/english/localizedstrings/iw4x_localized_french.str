@@ -439,7 +439,7 @@ LANG_ENGLISH        "Résidence paisible sur une île tropicale. Battez vous pou
 REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
 LANG_ENGLISH        "Allées abandonnées de favelas brésiliennes. Parfait pour tous les modes de jeu."
 
-REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE_IW4X
 LANG_ENGLISH        "Centre d'entraînement au tir situé à Cuba. Combats rapprochés et à moyenne distance."
 
 REFERENCE           MPUI_DESC_MAP_KILLHOUSE

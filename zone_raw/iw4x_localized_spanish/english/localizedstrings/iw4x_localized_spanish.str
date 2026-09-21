@@ -463,7 +463,7 @@ LANG_ENGLISH        "Estate con un ambiente tropical."
 REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
 LANG_ENGLISH        "Favela con un ambiente tropical."
 
-REFERENCE           MPUI_DESC_MAP_FIRINGRANGE
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE_IW4X
 LANG_ENGLISH        "Enfrentamientos de corta a media distancia en una estación de entrenamiento militar en Cuba."
 
 REFERENCE           MPUI_DESC_MAP_KILLHOUSE

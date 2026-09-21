@@ -119,7 +119,7 @@
 		LOCAL_MAP_SELECTION(7, 	"mp_shipment",			"MPUI_SHIPMENT",		"MPUI_DESC_MAP_SHIPMENT",		"preview_mp_shipment",			dvarint("iw4x_maps_dlc") == 3)
 		LOCAL_MAP_SELECTION(8, 	"mp_shipment_long",		"MPUI_SHIPMENT_LONG",	"MPUI_DESC_MAP_SHIPMENT_LONG",	"preview_mp_shipment_long",		dvarint("iw4x_maps_dlc") == 3)
 		LOCAL_MAP_SELECTION(9, 	"mp_rust_long",			"MPUI_RUST_LONG",		"MPUI_DESC_MAP_RUST_LONG",		"preview_mp_rust_long",			dvarint("iw4x_maps_dlc") == 3)
-		LOCAL_MAP_SELECTION(10, "mp_firingrange",		"MPUI_FIRINGRANGE",		"MPUI_DESC_MAP_FIRINGRANGE",	"preview_mp_firingrange",		dvarint("iw4x_maps_dlc") == 3)
+		LOCAL_MAP_SELECTION(10, "mp_firingrange",		"MPUI_FIRINGRANGE",		"MPUI_DESC_MAP_FIRINGRANGE_IW4X",	"preview_mp_firingrange",		dvarint("iw4x_maps_dlc") == 3)
 		LOCAL_MAP_SELECTION(11, "mp_bloc", 				"MPUI_BLOC",			"MPUI_DESC_MAP_BLOC",			"preview_mp_bloc",				dvarint("iw4x_maps_dlc") == 3)
 		LOCAL_MAP_SELECTION(12, "mp_crash_tropical",	"MPUI_CRASH_TROPICAL",	"MPUI_DESC_MAP_CRASH_TROPICAL",	"preview_mp_crash_tropical",	dvarint("iw4x_maps_dlc") == 3)
 		LOCAL_MAP_SELECTION(13, "mp_estate_tropical",	"MPUI_ESTATE_TROPICAL",	"MPUI_DESC_MAP_ESTATE_TROPICAL","preview_mp_estate_tropical",	dvarint("iw4x_maps_dlc") == 3)
