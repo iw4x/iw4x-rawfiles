@@ -1,0 +1,73 @@
+#!/bin/sh
+
+# Copyright (c) the IW4x authors (see the AUTHORS file).
+# SPDX-License-Identifier: GPL-3.0-only
+
+# Start the Steam client with the IW4x companion module preloaded. With the
+# module loaded, friends see IW4x while the game runs under Proton (see
+# host-linux.cxx).
+#
+# Usage: iw4x-steam [<steam-argument>...]
+#
+# The module is only loaded at the client startup, so the client must not
+# already be running (in which case steam would forward the arguments to
+# it). The IW4X_STEAM environment variable specifies the Steam command
+# (steam by default).
+#
+# The module is preloaded from a directory named after $PLATFORM, which the
+# dynamic linker expands separately in each process. In the Steam client it
+# expands to i686, which contains the module. In the 64-bit programs that
+# start the client it expands to a 64-bit platform, which contains an empty
+# stand-in (see stub-linux.c).
+#
+owd="$(dirname "$(readlink -f "$0")")"
+dir="$owd/lib/iw4x-steam"
+
+if [ ! -f "$dir/i686/libiw4x-steam.so" ]; then
+  echo "iw4x-steam: error: no module in $dir/i686" 1>&2
+  exit 1
+fi
+
+if pgrep -u "$(id -u)" -x steam >/dev/null 2>&1; then
+  echo "iw4x-steam: error: Steam is already running" 1>&2
+  echo "  info: exit it and run iw4x-steam again for the module to load" 1>&2
+  exit 1
+fi
+
+# The dynamic linker splits LD_PRELOAD at spaces and colons and offers no
+# way to escape them. But when the module is distributed with the game, the
+# directory is inside the game installation, whose path often contains
+# spaces (for example, .../steamapps/common/Call of Duty Modern Warfare 2/).
+# So in this case we preload the module through a symlink in the user's
+# runtime directory, which is private to the user. Note that the link is only
+# needed while the Steam client starts since the module removes itself from
+# LD_PRELOAD (see host-linux.cxx).
+#
+case "$dir" in
+  *" "*|*:*)
+    run="${XDG_RUNTIME_DIR:-}"
+
+    case "$run" in
+      ""|*" "*|*:*)
+        echo "iw4x-steam: error: spaces or colons in module directory" 1>&2
+        echo "  info: module directory: $dir" 1>&2
+        echo "  info: XDG_RUNTIME_DIR is not set or contains them too" 1>&2
+        exit 1
+        ;;
+    esac
+
+    if ! ln -sfn "$dir" "$run/iw4x-steam"; then
+      echo "iw4x-steam: error: unable to create link $run/iw4x-steam" 1>&2
+      exit 1
+    fi
+
+    dir="$run/iw4x-steam"
+    ;;
+esac
+
+# Note: the dynamic linker expands $PLATFORM, so it is escaped here.
+#
+LD_PRELOAD="$dir/\$PLATFORM/libiw4x-steam.so${LD_PRELOAD:+ $LD_PRELOAD}"
+export LD_PRELOAD
+
+exec "${IW4X_STEAM:-steam}" "$@"
