@@ -72,6 +72,14 @@ done
 # Move executable files to launcher files
 mv -v $work_dir/temp/zip-files/{iw4x.exe,zonebuilder.exe,Unlinker.exe,binkw32.dll,mss32.dll,companion64.dll} $work_dir/temp/launcher-files/
 
+# Move crash reporter to its own launcher archive, so it is not downloaded
+# again whenever some other file in archive.zip changes
+pushd $work_dir/temp/zip-files/
+zip -r -X crash-reporter.zip crash-reporter
+mv -v $work_dir/temp/zip-files/crash-reporter.zip $work_dir/temp/launcher-files/crash-reporter.zip
+rm -r $work_dir/temp/zip-files/crash-reporter
+popd
+
 # Create launcher zip in launcher-folder with all smaller rawfiles
 pushd $work_dir/temp/zip-files/
 zip -r -X archive.zip *
