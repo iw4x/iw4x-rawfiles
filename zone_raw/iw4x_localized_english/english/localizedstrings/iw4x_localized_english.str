@@ -182,6 +182,9 @@ LANG_ENGLISH        "Change the thumbstick layout for the gamepad"
 REFERENCE           MENU_DRAWFPS
 LANG_ENGLISH        "Show FPS"
 
+REFERENCE           MENU_FILTER_CAPS
+LANG_ENGLISH        "FILTER"
+
 REFERENCE           MENU_FOV
 LANG_ENGLISH        "Field of view"
 
