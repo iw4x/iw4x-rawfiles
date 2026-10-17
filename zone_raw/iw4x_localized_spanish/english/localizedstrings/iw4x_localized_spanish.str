@@ -142,6 +142,9 @@ LANG_ENGLISH        "Activar Devmode"
 REFERENCE           MENU_DRAWFPS
 LANG_ENGLISH        "Mostrar FPS"
 
+REFERENCE           MENU_FILTER_CAPS
+LANG_ENGLISH        "FILTRO"
+
 REFERENCE           MENU_FOV
 LANG_ENGLISH        "Campo de visión"
 

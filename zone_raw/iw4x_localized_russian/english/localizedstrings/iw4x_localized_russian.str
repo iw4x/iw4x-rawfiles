@@ -226,6 +226,9 @@ LANG_ENGLISH        "Включить режим разработчика"
 REFERENCE           MENU_DRAWFPS
 LANG_ENGLISH        "Показать FPS"
 
+REFERENCE           MENU_FILTER_CAPS
+LANG_ENGLISH        "ФИЛЬТР"
+
 REFERENCE           MENU_FOV
 LANG_ENGLISH        "Поле зрения"
 
