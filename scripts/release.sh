@@ -27,7 +27,7 @@ $SUDO apt-get install zip curl -y
 
 # Copy artifacts to zip-files dir
 cp -v iw4x.exe Unlinker.exe binkw32.dll mss32.dll companion64.dll $work_dir/temp/zip-files/
-cp -v -r $work_dir/{iw4x,miles,zone,linux} $work_dir/temp/zip-files/
+cp -v -r $work_dir/{iw4x,miles,zone,linux,crash-reporter} $work_dir/temp/zip-files/
 
 # Copy language fast files
 mkdir -p $work_dir/temp/zip-files/zone/patch
