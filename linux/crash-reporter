@@ -1,0 +1,29 @@
+#!/bin/sh
+# Launch the native crash reporter for IW4x running under Wine.
+#
+# The Windows build of the reporter doesn't start under Wine (its UI toolkit
+# passes a process handle where Windows expects a module handle, which only
+# Windows tolerates). So instead IW4x starts this script, which Wine runs
+# natively, and we hand the report to the Linux build.
+#
+# The only argument is the Windows path of the report, for example
+# C:\users\steamuser\...\<event-id>.envelope.
+#
+set -u
+
+dir=$(dirname -- "$(readlink -f -- "$0")")
+prefix=${WINEPREFIX:-$HOME/.wine}
+
+# Map the report path onto the prefix's drive links. We don't use winepath
+# since Proton doesn't ship it.
+#
+report=$1
+case $report in
+  [A-Za-z]:\\*)
+    drive=$(printf '%s' "$report" | cut -c1 | tr 'A-Z' 'a-z')
+    rest=$(printf '%s' "$report" | cut -c3- | tr '\\' '/')
+    report=$prefix/dosdevices/$drive:$rest
+    ;;
+esac
+
+exec "$dir/../crash-reporter/Sentry.CrashReporter" "$report"
