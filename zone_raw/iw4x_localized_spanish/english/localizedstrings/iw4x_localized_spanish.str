@@ -356,7 +356,7 @@ REFERENCE           MENU_GPAD_ADV_FEEDBACK
 LANG_ENGLISH        "Vibración e iluminación"
 
 REFERENCE           MENU_GPAD_ADV_GRAPH
-LANG_ENGLISH        "Curva de respuesta"
+LANG_ENGLISH        "Curva de respuesta de entrada"
 
 REFERENCE           MENU_GPAD_ADV_GRAPH_INDEX
 LANG_ENGLISH        "Curva de respuesta"
