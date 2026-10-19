@@ -5,7 +5,7 @@
 
 #define MENU_NAME													"pc_join_unranked"
 #define MENU_MUSIC													"music_mainmenu_mp"
-#define MENU_TITLE													"@MENU_JOIN_SERVER_CAPS"
+#define MENU_TITLE													"@MENU_JOIN_SERVER_CAP"
 
 #undef CHOICE_GROUP
 #define CHOICE_GROUP												MENU_NAME
@@ -55,13 +55,18 @@
 
 		ITEM_MENU_TITLE_VIS(MENU_TITLE, 1)
 
-		BUTTON_FOOTER(-341, 85, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
-		BUTTON_FOOTER(-251, 53, "filtername", "@MENU_FILTER_CAPS", open "popup_servername_filter";)
-		BUTTON_FOOTER_VIS(-193, 135, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
-		BUTTON_FOOTER_VIS(-193, 135, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
-		BUTTON_FOOTER(-48, 85, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
-		BUTTON_FOOTER(42, 95, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
-		BUTTON_FOOTER(147, 80, "loadmod", "@MENU_LOAD_MOD_CAPS", uiScript "DownloadServerMod";)
-		BUTTON_FOOTER(232, 95, "joinserver", "@MENU_JOIN_SERVER_CAPS", uiScript "JoinServer";)
+		// The footer buttons sit side by side with their text centered, so a
+		// label wider than its slot runs into the next one. The slots are
+		// sized for the longest translation of each label, not the English
+		// one, and together span most of a 16:9 screen.
+		//
+		BUTTON_FOOTER(-383, 110, "back", "@PLATFORM_BACK_CAPS", ON_MENU_ESC)
+		BUTTON_FOOTER(-273, 70, "filtername", "@MENU_FILTER_CAPS", open "popup_servername_filter";)
+		BUTTON_FOOTER_VIS(-203, 150, "addFavorite", "@MENU_ADD_TO_FAVORITES_CAPS", uiScript "CreateListFavorite", when(dvarInt("ui_netSource") != 2))
+		BUTTON_FOOTER_VIS(-203, 150, "delFavorite", "@MENU_DEL_FAVORITE_CAPS", uiScript "DeleteFavorite", when(dvarInt("ui_netSource") == 2))
+		BUTTON_FOOTER(-53, 100, "passwordenter", "@MENU_PASSWORD_CAPS", open "popup_joinpassword";)
+		BUTTON_FOOTER(47, 105, "serverinfo", "@MENU_SERVER_INFO_CAPS", open "serverinfo_popmenu";)
+		BUTTON_FOOTER(152, 100, "loadmod", "@MENU_LOAD_MOD_CAPS", uiScript "DownloadServerMod";)
+		BUTTON_FOOTER(252, 130, "joinserver", "@MENU_JOIN_SERVER_CAP", uiScript "JoinServer";)
 	}
 }
