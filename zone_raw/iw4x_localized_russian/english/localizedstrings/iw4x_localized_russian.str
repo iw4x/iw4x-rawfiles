@@ -13,6 +13,9 @@ LANG_ENGLISH        "Они режут их"
 REFERENCE           CARDTITLE_TRANSGENDER
 LANG_ENGLISH        "Неделя акул!"
 
+REFERENCE           CARDTITLE_WAVE_DEFENSE
+LANG_ENGLISH        "Отражение атак"
+
 REFERENCE           CONF_GAME_DESC
 LANG_ENGLISH        "Зарабатывайте очки, убивая противников и собирая их жетоны."
 
@@ -121,6 +124,9 @@ LANG_ENGLISH        "Сглаживание Альфа"
 REFERENCE           MENU_ADD_TO_FAVORITES_CAPS
 LANG_ENGLISH        "ДОБАВИТЬ В ИЗБРАННОЕ"
 
+REFERENCE           MENU_AIM_ACCELERATION
+LANG_ENGLISH        "Ускорение прицела"
+
 REFERENCE           MENU_AUTORECORD
 LANG_ENGLISH        "Автозапись"
 
@@ -170,7 +176,7 @@ REFERENCE           MENU_D3D9EX
 LANG_ENGLISH        "Direct3D 9Ex"
 
 REFERENCE           MENU_DEL_FAVORITE_CAPS
-LANG_ENGLISH        "DEL. FAVORITE"
+LANG_ENGLISH        "УДАЛИТЬ"
 
 REFERENCE           MENU_DELETE
 LANG_ENGLISH        "Удалить"
@@ -200,16 +206,16 @@ REFERENCE           MENU_DESC_MAXPACKETS
 LANG_ENGLISH        "Максимальное количество пакетов, отправляемых за кадр"
 
 REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
-LANG_ENGLISH        "Setup stats?"
+LANG_ENGLISH        "Настроить статистику?"
 
 REFERENCE           MENU_MODDED_STATS_WARNING
-LANG_ENGLISH        "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button."
+LANG_ENGLISH        "Вы впервые заходите на сервер с модом. ^1Вы начнете с 1-го уровня со стандартными классами, ^7если не настроите их сейчас.\n\nПозже классы можно изменить, загрузив мод сервера в разделе ^4Моды ^7главного меню или кнопкой ^4Загрузить мод^7."
 
 REFERENCE           MENU_MODDED_STATS_WARNING_NO
-LANG_ENGLISH        "No, continue with default stats"
+LANG_ENGLISH        "Нет, оставить стандартную статистику"
 
 REFERENCE           MENU_MODDED_STATS_WARNING_YES
-LANG_ENGLISH        "Yes, take me to the main menu"
+LANG_ENGLISH        "Да, вернуться в главное меню"
 
 REFERENCE           MENU_DESC_SNAPS
 LANG_ENGLISH        "Скорость моментального снимка"
@@ -233,7 +239,7 @@ REFERENCE           MENU_FOV
 LANG_ENGLISH        "Поле зрения"
 
 REFERENCE           MENU_FOV_CAPS
-LANG_ENGLISH        "FOV(Поле зрения): "
+LANG_ENGLISH        "FOV:"
 
 REFERENCE           MENU_FOV_HINT_PC
 LANG_ENGLISH        "Увеличенное поле зрения (FOV) может привести к снижению производительности на старых компьютерах."
@@ -260,7 +266,7 @@ REFERENCE           MENU_FPS_CAP
 LANG_ENGLISH        "Ограничить кадры FPS"
 
 REFERENCE           MENU_FPS_DRAW
-LANG_ENGLISH        "FPS Drawing"
+LANG_ENGLISH        "Отображение FPS"
 
 REFERENCE           MENU_FPS_LABELS
 LANG_ENGLISH        "Метки FPS"
@@ -283,9 +289,6 @@ LANG_ENGLISH        "Друзья"
 REFERENCE           MENU_FRIENDS_CAPS
 LANG_ENGLISH        "ДРУЗЬЯ"
 
-REFERENCE           MENU_FULLSCREEN
-LANG_ENGLISH        "Полной экран"
-
 REFERENCE           MENU_GAME
 LANG_ENGLISH        "Игра"
 
@@ -302,19 +305,175 @@ REFERENCE           MENU_GAMEPAD_ENABLED
 LANG_ENGLISH        "Геймпад включен"
 
 REFERENCE           MENU_GPAD_FORCE_FEEDBACK
-LANG_ENGLISH        "Enable haptic feedback"
+LANG_ENGLISH        "Включить тактильную отдачу"
 
 REFERENCE           MENU_GPAD_PS_CAPS
 LANG_ENGLISH        "PlayStation"
 
 REFERENCE           MENU_GPAD_RUMBLE
-LANG_ENGLISH        "Enable rumble"
+LANG_ENGLISH        "Включить вибрацию"
 
 REFERENCE           MENU_GPAD_STYLE
-LANG_ENGLISH        "Button Style"
+LANG_ENGLISH        "Стиль кнопок"
 
 REFERENCE           MENU_GPAD_XBOX_CAPS
 LANG_ENGLISH        "Xbox"
+
+REFERENCE           MENU_GPAD_ADVANCED
+LANG_ENGLISH        "Дополнительно"
+
+REFERENCE           MENU_GPAD_ADV_ACCEL_RATE
+LANG_ENGLISH        "Темп ускорения"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE
+LANG_ENGLISH        "Адаптив. курки"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_ADS
+LANG_ENGLISH        "Упор курка прицела"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY
+LANG_ENGLISH        "Сильный упор"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY_END
+LANG_ENGLISH        "Конец сильн. щелчка"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY_START
+LANG_ENGLISH        "Начало сильн. щелчка"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT
+LANG_ENGLISH        "Слабый упор"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT_END
+LANG_ENGLISH        "Конец слаб. щелчка"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT_START
+LANG_ENGLISH        "Начало слаб. щелчка"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_STRENGTH
+LANG_ENGLISH        "Сила эффекта курков"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_ANTI
+LANG_ENGLISH        "Антимертвая зона"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_INNER
+LANG_ENGLISH        "Внутр. мертвая зона"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_OUTER
+LANG_ENGLISH        "Внешн. мертвая зона"
+
+REFERENCE           MENU_GPAD_ADV_DEFAULTS
+LANG_ENGLISH        "По умолчанию"
+
+REFERENCE           MENU_GPAD_ADV_DEFAULTS_ALL
+LANG_ENGLISH        "Сбросить все доп. настройки"
+
+REFERENCE           MENU_GPAD_ADV_FEEDBACK
+LANG_ENGLISH        "Вибрация и подсветка"
+
+REFERENCE           MENU_GPAD_ADV_GRAPH
+LANG_ENGLISH        "Кривая отклика"
+
+REFERENCE           MENU_GPAD_ADV_GRAPH_INDEX
+LANG_ENGLISH        "Кривая отклика"
+
+REFERENCE           MENU_GPAD_ADV_HAPTIC_INTENSITY
+LANG_ENGLISH        "Сила тактил. отдачи"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BAR
+LANG_ENGLISH        "Подсветка"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BLUE
+LANG_ENGLISH        "Подсветка: синий"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BRIGHTNESS
+LANG_ENGLISH        "Подсветка: яркость"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_GREEN
+LANG_ENGLISH        "Подсветка: зеленый"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_RED
+LANG_ENGLISH        "Подсветка: красный"
+
+REFERENCE           MENU_GPAD_ADV_OUTPUT_INTERVAL
+LANG_ENGLISH        "Интервал вывода (мс)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY
+LANG_ENGLISH        "Удерживать нажатия"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY_MIN
+LANG_ENGLISH        "Мин. нажатие (мс)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY_SCALE
+LANG_ENGLISH        "Множитель пинга"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_GRACE
+LANG_ENGLISH        "Запас отпуск. (мс)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_SPRINT_ONLY
+LANG_ENGLISH        "Только кнопка бега"
+
+REFERENCE           MENU_GPAD_ADV_RESPONSE
+LANG_ENGLISH        "Отклик обзора"
+
+REFERENCE           MENU_GPAD_ADV_RUMBLE_HIGH
+LANG_ENGLISH        "Высокочаст. вибрация"
+
+REFERENCE           MENU_GPAD_ADV_RUMBLE_LOW
+LANG_ENGLISH        "Низкочаст. вибрация"
+
+REFERENCE           MENU_GPAD_ADV_SCALE_VIEW_AXIS
+LANG_ENGLISH        "Связать оси обзора"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_ACCEL
+LANG_ENGLISH        "Разгон прокрутки (мс)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_FIRST
+LANG_ENGLISH        "Задержка 1-го шага (мс)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_MIN
+LANG_ENGLISH        "Мин. задержка (мс)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_REST
+LANG_ENGLISH        "Задержка повтора (мс)"
+
+REFERENCE           MENU_GPAD_ADV_STICKS
+LANG_ENGLISH        "Стики и мертвые зоны"
+
+REFERENCE           MENU_GPAD_ADV_STICK_HYSTERESIS
+LANG_ENGLISH        "Гистерезис стика"
+
+REFERENCE           MENU_GPAD_ADV_STICK_PRESSED
+LANG_ENGLISH        "Порог нажатия стика"
+
+REFERENCE           MENU_GPAD_ADV_TEST_RUMBLE
+LANG_ENGLISH        "Тест вибрации"
+
+REFERENCE           MENU_GPAD_ADV_TIMING
+LANG_ENGLISH        "Тайминги и задержка"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGERS
+LANG_ENGLISH        "Курки"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGER_DEADZONE
+LANG_ENGLISH        "Мертвая зона курка"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGER_HYSTERESIS
+LANG_ENGLISH        "Гистерезис курка"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_PITCH
+LANG_ENGLISH        "Поворот по вертикали"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_PITCH_ADS
+LANG_ENGLISH        "Поворот по верт. (прицел)"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_YAW
+LANG_ENGLISH        "Поворот по горизонт."
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_YAW_ADS
+LANG_ENGLISH        "Поворот по гориз. (прицел)"
+
+REFERENCE           MENU_GPAD_ADV_USE_HOLD
+LANG_ENGLISH        "Удерж. исп./перезар. (мс)"
 
 REFERENCE           MENU_GTNW_DESC
 LANG_ENGLISH        "Команды сражаются за захват ядерного боезаряда, чтобы активировать ядерный удар."
@@ -332,19 +491,16 @@ REFERENCE           MENU_LAGOMETER
 LANG_ENGLISH        "Показать лагометр"
 
 REFERENCE           MENU_LOAD_MOD_CAPS
-LANG_ENGLISH        "LOAD MOD"
+LANG_ENGLISH        "ЗАГРУЗИТЬ МОД"
 
 REFERENCE           MENU_LOADING_MAPS
 LANG_ENGLISH        "Загрузка выбора карты..."
 
 REFERENCE           MENU_LOCKON_ENABLED
-LANG_ENGLISH        "Включить помощь при прицеливании"
-
-REFERENCE           MENU_LOGIN
-LANG_ENGLISH        "Авторизоваться"
+LANG_ENGLISH        "Включить захват цели"
 
 REFERENCE           MENU_LOGIN_CAPS
-LANG_ENGLISH        "Авторизоваться"
+LANG_ENGLISH        "АВТОРИЗОВАТЬСЯ"
 
 REFERENCE           MENU_LOGOUT
 LANG_ENGLISH        "Отключиться"
@@ -360,18 +516,6 @@ LANG_ENGLISH        "Максимальный FPS"
 
 REFERENCE           MENU_MAXPACKETS
 LANG_ENGLISH        "Макс. кол-во пакетов на кадр"
-
-REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
-LANG_ENGLISH        "Setup stats?"
-
-REFERENCE           MENU_MODDED_STATS_WARNING
-LANG_ENGLISH        "You are joining a modded server for the first time, ^1you will start at rank 1 with default classes ^7unless you set them up now.\n\nLater you can edit your classes by loading the servers mod from ^4Mods ^7on the main menu, or using the ^4Load Mod ^7button."
-
-REFERENCE           MENU_MODDED_STATS_WARNING_NO
-LANG_ENGLISH        "No, continue with default stats"
-
-REFERENCE           MENU_MODDED_STATS_WARNING_YES
-LANG_ENGLISH        "Yes, take me to the main menu"
 
 REFERENCE           MENU_MODS
 LANG_ENGLISH        "Моды"
@@ -410,7 +554,7 @@ REFERENCE           MENU_PLAY_CAPS
 LANG_ENGLISH        "ИГРАТЬ"
 
 REFERENCE           MENU_RAW_MOUSE
-LANG_ENGLISH         "Raw Mouse Input"
+LANG_ENGLISH         "Прямой ввод мыши"
 
 REFERENCE           MENU_RECONNECTING_TO_PARTY
 LANG_ENGLISH        "ПОДКЛЮЧЕНИЕ К СЕРВЕРУ"
@@ -440,7 +584,7 @@ REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
 LANG_ENGLISH        "(Высокая) 4"
 
 REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
-LANG_ENGLISH        "(Insane) 10"
+LANG_ENGLISH        "(Огромная) 10"
 
 REFERENCE           MENU_SENSITIVITY_LOW_CAPS
 LANG_ENGLISH        "(Низкая) 1"
@@ -452,13 +596,13 @@ REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
 LANG_ENGLISH        "(Очень высокая) 7"
 
 REFERENCE           MENU_SERVER_INFO_CAPS
-LANG_ENGLISH        "ИНФОРМАЦИЯ О СЕРВЕРЕ"
+LANG_ENGLISH        "О СЕРВЕРЕ"
 
 REFERENCE           MENU_SHARPSHOOTER
 LANG_ENGLISH        "Всем игрокам предоставляется одинаковое оружие, выбранное случайным образом. Каждые 45 секунд для всех игроков случайно выбирается новое оружие."
 
 REFERENCE           MENU_SLOWDOWN_ENABLED
-LANG_ENGLISH        "Включить замедление помощи при прицеливании"
+LANG_ENGLISH        "Включить замедление прицела"
 
 REFERENCE           MENU_SNAPS
 LANG_ENGLISH        "Скорость моментального снимка"
@@ -473,7 +617,7 @@ REFERENCE           MENU_STORE_CAPS
 LANG_ENGLISH        "ПОЛУЧИТЬ DLC"
 
 REFERENCE           MENU_STREAMFRIENDLY_UI
-LANG_ENGLISH        "Stream Friendly UI"
+LANG_ENGLISH        "Интерфейс для стрима"
 
 REFERENCE           MENU_SYNC_NODES
 LANG_ENGLISH        "Синхронизация узлов"
@@ -506,10 +650,10 @@ REFERENCE           MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
 LANG_ENGLISH        "Ждем больше игроков для баланса команд"
 
 REFERENCE           MENU_XAXIS
-LANG_ENGLISH        "Window X-Axis Pos"
+LANG_ENGLISH        "Положение окна по X"
 
 REFERENCE           MENU_YAXIS
-LANG_ENGLISH        "Window Y-Axis Pos"
+LANG_ENGLISH        "Положение окна по Y"
 
 REFERENCE           MP_AFRICA_ELIMINATED
 LANG_ENGLISH        "Ополчение ликвидировано"
@@ -556,20 +700,8 @@ LANG_ENGLISH        "Внутренний круг проиграл"
 REFERENCE           MP_INNERCIRCLE_NAME
 LANG_ENGLISH        "Внутренний круг"
 
-REFERENCE           MP_MARINES_ELIMINATED
-LANG_ENGLISH        "Морские пехотинцы уничтожены"
-
-REFERENCE           MP_MARINES_FORFEITED
-LANG_ENGLISH        "Морские пехотинцы проиграли"
-
 REFERENCE           MP_NEUTRAL_FLAG_DROPPED_BY
 LANG_ENGLISH        "&&1 бросил флаг!"
-
-REFERENCE           MP_OPFOR_ELIMINATED
-LANG_ENGLISH        "OpFor уничтожены"
-
-REFERENCE           MP_OPFOR_FORFEITED
-LANG_ENGLISH        "OpFor проиграли"
 
 REFERENCE           MP_PICKUP_C4
 LANG_ENGLISH        "Нажмите и удерживайте ^3[{+activate}]^7 чтобы подобрать С4"
@@ -592,12 +724,6 @@ LANG_ENGLISH        "ЧВК"
 REFERENCE           MP_SAS
 LANG_ENGLISH        "Специальная воздушная служба"
 
-REFERENCE           MP_SAS_ELIMINATED
-LANG_ENGLISH        "SAS уничтожен"
-
-REFERENCE           MP_SAS_FORFEITED
-LANG_ENGLISH        "SAS проиграл"
-
 REFERENCE           MP_SAS_SHORT_NAME
 LANG_ENGLISH        "SAS"
 
@@ -606,9 +732,6 @@ LANG_ENGLISH        "Ожидание"
 
 REFERENCE           MP_SPETSNAZ_ELIMINATED
 LANG_ENGLISH        "Спецназ уничтожен"
-
-REFERENCE           MP_SPETSNAZ_FORFEITED
-LANG_ENGLISH        "Спецназ проиграл"
 
 REFERENCE           MP_SPETSNAZ_NAME
 LANG_ENGLISH        "Спецназ"
@@ -624,9 +747,6 @@ LANG_ENGLISH        "Автоматическая запись: "
 
 REFERENCE           MPUI_AUTORECORD_CAPS
 LANG_ENGLISH        "АВТОМАТИЧЕСКАЯ ЗАПИСЬ: "
-
-REFERENCE           MPUI_BLOC
-LANG_ENGLISH        "Многоквартирный дом"
 
 REFERENCE           MPUI_BLOC_SH
 LANG_ENGLISH        "Забытый Город"
@@ -671,25 +791,28 @@ REFERENCE           MPUI_DEMO_CREATED
 LANG_ENGLISH        "Создано:"
 
 REFERENCE           MPUI_DEMO_CREATED_CAPS
-LANG_ENGLISH        "Создано:"
+LANG_ENGLISH        "СОЗДАНО:"
 
 REFERENCE           MPUI_DEMO_DATE
 LANG_ENGLISH        "Дата:"
 
 REFERENCE           MPUI_DEMO_DATE_CAPS
-LANG_ENGLISH        "Дата:"
+LANG_ENGLISH        "ДАТА:"
 
 REFERENCE           MPUI_DEMO_LENGTH
 LANG_ENGLISH        "Длина:"
 
 REFERENCE           MPUI_DEMO_LENGTH_CAPS
-LANG_ENGLISH        "Длина:"
+LANG_ENGLISH        "ДЛИНА:"
 
 REFERENCE           MPUI_DEMOS_KEEP
 LANG_ENGLISH        "Сохранить демо: "
 
 REFERENCE           MPUI_DEMOS_KEEP_CAPS
 LANG_ENGLISH        "СОХРАНИТЬ ДЕМО: "
+
+REFERENCE           MPUI_DESC_AIM_ACCELERATION
+LANG_ENGLISH        "Плавно разгонять стик до полной скорости поворота, а не сразу. Откл.: прямой отклик 1:1; вкл.: поворот при удержании начинается медленно и ускоряется."
 
 REFERENCE           MPUI_DESC_AUTORECORD
 LANG_ENGLISH        "Автоматически записывайте свои матчи."
@@ -732,6 +855,168 @@ LANG_ENGLISH        "Включить/выключить прием ввода �
 
 REFERENCE           MPUI_DESC_GPAD_STYLE
 LANG_ENGLISH        "Переключение между Xbox и PlayStation HUD."
+
+REFERENCE           MPUI_DESC_GPAD_ADVANCED
+LANG_ENGLISH        "Тонкая настройка контроллера."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ACCEL_RATE
+LANG_ENGLISH        "Скорость разгона поворота до максимума, в град./с за секунду."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE
+LANG_ENGLISH        "Сопротивление курков в зависимости от оружия. Нужен DualSense."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_ADS
+LANG_ENGLISH        "Постоянный упор курка прицеливания. Ноль - без упора."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY
+LANG_ENGLISH        "Упор для винтовок, дробовиков, снайп. винтовок и гранатометов."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY_END
+LANG_ENGLISH        "Конец сильного щелчка, в десятых долях хода курка."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY_START
+LANG_ENGLISH        "Начало сильного щелчка, в десятых долях хода курка."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT
+LANG_ENGLISH        "Упор для пистолетов-пулеметов, пистолетов и гранат."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT_END
+LANG_ENGLISH        "Конец слабого щелчка, в десятых долях хода курка."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT_START
+LANG_ENGLISH        "Начало слабого щелчка, в десятых долях хода курка."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_STRENGTH
+LANG_ENGLISH        "Масштаб всех эффектов курков. Ноль - курки свободны."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_ANTI
+LANG_ENGLISH        "Отклонение стика сразу после выхода из внутр. мертвой зоны."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_INNER
+LANG_ENGLISH        "Насколько нужно сдвинуть стик от центра, чтобы он сработал."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_OUTER
+LANG_ENGLISH        "За сколько до края стик считается отклоненным полностью."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEFAULTS
+LANG_ENGLISH        "Сбросить все настройки этой страницы."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEFAULTS_ALL
+LANG_ENGLISH        "Сбросить все дополнительные настройки контроллера."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_FEEDBACK
+LANG_ENGLISH        "Сила вибрации, тактильной отдачи и световая панель."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_GRAPH
+LANG_ENGLISH        "Изменение отклонения стика по кривой отклика."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_GRAPH_INDEX
+LANG_ENGLISH        "Форма кривой. Чем выше, тем точнее у центра."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_HAPTICS
+LANG_ENGLISH        "Вибрация через тактильные приводы вместо моторов."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_HAPTIC_INTENSITY
+LANG_ENGLISH        "Масштаб всех тактильных эффектов на приводах."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BAR
+LANG_ENGLISH        "Подсветка панели контроллера. Нужен DualShock 4 или DualSense."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BLUE
+LANG_ENGLISH        "Синяя составляющая цвета подсветки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BRIGHTNESS
+LANG_ENGLISH        "Приглушает подсветку, не меняя ее цвет."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_GREEN
+LANG_ENGLISH        "Зеленая составляющая цвета подсветки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_RED
+LANG_ENGLISH        "Красная составляющая цвета подсветки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_OUTPUT_INTERVAL
+LANG_ENGLISH        "Мин. интервал между отчетами вибрации. Ноль - без пропусков."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY
+LANG_ENGLISH        "Удерживать короткое нажатие, чтобы его заметил сервер."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY_MIN
+LANG_ENGLISH        "Мин. длительность нажатия для сервера, без учета пинга."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY_SCALE
+LANG_ENGLISH        "Задержка = пинг x множитель. Ноль - только мин. нажатие."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_GRACE
+LANG_ENGLISH        "Сколько кнопка считается нажатой после отпускания."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_SPRINT_ONLY
+LANG_ENGLISH        "Удерживать только бег, чтобы стрельба была мгновенной."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RESPONSE
+LANG_ENGLISH        "Скорость поворота, ускорение и кривая отклика стика."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RUMBLE_HIGH
+LANG_ENGLISH        "Сила высокочастотного (слабого) мотора."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RUMBLE_LOW
+LANG_ENGLISH        "Сила низкочастотного (сильного) мотора."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCALE_VIEW_AXIS
+LANG_ENGLISH        "Масштабировать обе оси обзора по преобладающей."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_ACCEL
+LANG_ENGLISH        "За сколько удержание разгоняется до мин. задержки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_FIRST
+LANG_ENGLISH        "Пауза при удержании перед вторым шагом прокрутки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_MIN
+LANG_ENGLISH        "Интервал прокрутки при полном ускорении."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_REST
+LANG_ENGLISH        "Интервал прокрутки после первого повтора."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SENSITIVITY
+LANG_ENGLISH        "Множитель всех скоростей поворота ниже."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICKS
+LANG_ENGLISH        "Мертвые зоны, порог нажатия и раскладка стиков."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICK_HYSTERESIS
+LANG_ENGLISH        "Полоса вокруг порога нажатия против дребезга."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICK_PRESSED
+LANG_ENGLISH        "Отклонение, при котором стик считается нажатым."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TEST_RUMBLE
+LANG_ENGLISH        "Короткий эффект с текущими настройками."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TIMING
+LANG_ENGLISH        "Длительность нажатий, повтор в меню и компенсация задержки."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGERS
+LANG_ENGLISH        "Мертвая зона, гистерезис и адаптивные эффекты курков."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGER_DEADZONE
+LANG_ENGLISH        "Насколько нажать курок, чтобы он сработал."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGER_HYSTERESIS
+LANG_ENGLISH        "Насколько отпустить курок, чтобы он считался отпущенным."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_PITCH
+LANG_ENGLISH        "Скорость поворота по вертикали без прицела, град./с."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_PITCH_ADS
+LANG_ENGLISH        "Скорость поворота по вертикали при взгляде в прицел, град./с."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_YAW
+LANG_ENGLISH        "Скорость поворота по горизонтали без прицела, град./с."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_YAW_ADS
+LANG_ENGLISH        "Скорость поворота по горизонтали при взгляде в прицел, град./с."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_USE_HOLD
+LANG_ENGLISH        "^3Только закрытая игра: ^7время удержания исп./перезарядки."
 
 REFERENCE           MPUI_DESC_LOCKON_ENABLED
 LANG_ENGLISH        "Включить/выключить помощь при прицеливании Lockon. Lockon помогает удерживать перекрестие прицела на цели при движении. Серверы могут отключить помощь при прицеливании с помощью sv_allowAimAssist независимо от этой настройки."
@@ -868,9 +1153,6 @@ LANG_ENGLISH        "Скачивание"
 REFERENCE           MPUI_DOWNLOADING_CAPS
 LANG_ENGLISH        "СКАЧИВАНИЕ"
 
-REFERENCE           MPUI_ENABLE_VOICE_CHAT
-LANG_ENGLISH        "Включить голосовой чат"
-
 REFERENCE           MPUI_ESTATE_TROPICAL
 LANG_ENGLISH        "Усадьба: Тропики"
 
@@ -907,12 +1189,6 @@ LANG_ENGLISH        "Дом убийств"
 REFERENCE           MPUI_LOCKDOWN
 LANG_ENGLISH        "Карантин"
 
-REFERENCE           MPUI_MARINES
-LANG_ENGLISH        "Разведка морской пехоты"
-
-REFERENCE           MPUI_MARINES_SHORT
-LANG_ENGLISH        "Морские пехотинцы"
-
 REFERENCE           MPUI_MAX_CLIENTS
 LANG_ENGLISH        "Макс. количество клиентов:"
 
@@ -939,12 +1215,6 @@ LANG_ENGLISH        "Один патрон"
 
 REFERENCE           MPUI_OITC_CAPS
 LANG_ENGLISH        "ОДИН ПАТРОН"
-
-REFERENCE           MPUI_OPFOR
-LANG_ENGLISH        "OpFor"
-
-REFERENCE           MPUI_OPFOR_SHORT
-LANG_ENGLISH        "OpFor"
 
 REFERENCE           MPUI_PLEASE_WAIT
 LANG_ENGLISH        "Пожалуйста подождите"
@@ -986,7 +1256,7 @@ REFERENCE           MPUI_SECURITY_LEVEL
 LANG_ENGLISH        "Уровень безопасности:"
 
 REFERENCE           MPUI_SECURITY_LEVEL_CAPS
-LANG_ENGLISH        "SECURITY LEVEL:"
+LANG_ENGLISH        "УРОВЕНЬ БЕЗОПАСНОСТИ:"
 
 REFERENCE           MPUI_SECURITY_LEVEL_MESSAGE
 LANG_ENGLISH        "Ваш уровень безопасности %d"
@@ -994,8 +1264,8 @@ LANG_ENGLISH        "Ваш уровень безопасности %d"
 REFERENCE           MPUI_SECURITY_NEW_LEVEL_MESSAGE
 LANG_ENGLISH        "Ваш новый уровень безопасности %d"
 
-REFERENCE           MPUI_SHARPSHOOTER
-LANG_ENGLISH        "Меткий стрелок"
+REFERENCE           MPUI_SERVERQUERIED_FORMAT
+LANG_ENGLISH        "Серверы: &&1\nИгроки: &&2 (&&3)"
 
 REFERENCE           MPUI_SHARPSHOOTER_CAPS
 LANG_ENGLISH        "МЕТКИЙ СТРЕЛОК"
@@ -1076,7 +1346,7 @@ REFERENCE           OBJECTIVES_TDEF_SCORE
 LANG_ENGLISH        "Захватите и удерживайте флаг, чтобы получить двойной бонус к очкам. Первая команда, которая наберет &&1, побеждает."
 
 REFERENCE           PATCH_COD4_DLC
-LANG_ENGLISH        "Call of Duty 4 Pack"
+LANG_ENGLISH        "Набор Call of Duty 4"
 
 REFERENCE           PATCH_DESC_COD4_DLC
 LANG_ENGLISH        "Call Of Duty 4 карты, портированные командой на IW4x"
@@ -1094,7 +1364,7 @@ REFERENCE           PATCH_DESC_MW3_DLC
 LANG_ENGLISH        "Карты Modern Warfare 3, портированные командой IW4x"
 
 REFERENCE           PATCH_DLC1
-LANG_ENGLISH        "Stimulus Maps"
+LANG_ENGLISH        "Карты Stimulus"
 
 REFERENCE           PATCH_DLC2
 LANG_ENGLISH        "Карты возрождения"
@@ -1106,22 +1376,22 @@ REFERENCE           PATCH_DLC_MAPS_MORE_DESC
 LANG_ENGLISH        "Больше бонусных сетевых карт."
 
 REFERENCE           PATCH_IW4X_DLC
-LANG_ENGLISH        "IW4x Classics"
+LANG_ENGLISH        "Классика IW4x"
 
 REFERENCE           PATCH_MORE
 LANG_ENGLISH        "^3Больше"
 
 REFERENCE           PATCH_MW3_DLC
-LANG_ENGLISH        "Modern Warfare 3 Pack"
+LANG_ENGLISH        "Набор Modern Warfare 3"
 
 REFERENCE           PERKS_COMBATHIGH
-LANG_ENGLISH        "Сок"
+LANG_ENGLISH        "Ускорение"
 
 REFERENCE           PERKS_DESC_COMBATHIGH
 LANG_ENGLISH        "Двигайтесь быстрее в течение нескольких секунд после появления."
 
 REFERENCE           PERKS_PAINKILLER
-LANG_ENGLISH        "Сок"
+LANG_ENGLISH        "Ускорение"
 
 REFERENCE           PLATFORM_CHANGE_NAME_CAPS
 LANG_ENGLISH        "^3И^7ЗМЕНИТЬ ИМЯ"
@@ -1163,13 +1433,13 @@ REFERENCE           PLATFORM_REFRESH
 LANG_ENGLISH        "Обновить ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_CAPS
-LANG_ENGLISH        "Обновить ^0- ^3F5"
+LANG_ENGLISH        "ОБНОВИТЬ ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_LIST
 LANG_ENGLISH        "Обновить список ^0- ^3F5"
 
 REFERENCE           PLATFORM_REFRESH_LIST_CAPS
-LANG_ENGLISH        "Обновить список ^0- ^3F5"
+LANG_ENGLISH        "ОБНОВИТЬ СПИСОК ^0- ^3F5"
 
 REFERENCE           PLAYERCARDS_TITLE_EVIL_CHICKEN
 LANG_ENGLISH        "Злая курица"
@@ -1331,7 +1601,7 @@ REFERENCE           QUICKMESSAGE_ON_MY_WAY
 LANG_ENGLISH        "Уже иду."
 
 REFERENCE           QUICKMESSAGE_QUICK_MESSAGE
-LANG_ENGLISH        "Quick Message"
+LANG_ENGLISH        "Быстрое сообщение"
 
 REFERENCE           QUICKMESSAGE_REGROUP
 LANG_ENGLISH        "Перегруппироваться!"
@@ -1433,57 +1703,72 @@ REFERENCE           SPLASHES_TOP_GUN_RANK
 LANG_ENGLISH        "Лучший рейтинг оружия!"
 
 REFERENCE           SPLASHES_X2_BONUS
-LANG_ENGLISH        "x2 Bonus!"
+LANG_ENGLISH        "Бонус x2!"
 
 REFERENCE           WEAPON_AK47_CLASSIC
-LANG_ENGLISH        "AK-47 Classic"
+LANG_ENGLISH        "Классический АК-47"
 
 REFERENCE           WEAPON_AK47_CLASSIC_ACOG
-LANG_ENGLISH        "AK-47 Classic ACOG Sight"
+LANG_ENGLISH        "Классический АК-47 с прицелом ACOG"
 
 REFERENCE           WEAPON_AK47_CLASSIC_BLING
-LANG_ENGLISH        "AK-47 Classic Bling"
+LANG_ENGLISH        "Классический АК-47 класса люкс"
 
 REFERENCE           WEAPON_AK47_CLASSIC_FMJ
-LANG_ENGLISH        "AK-47 Classic FMJ"
+LANG_ENGLISH        "Классический АК-47 с ЦМ патронами"
 
 REFERENCE           WEAPON_AK47_CLASSIC_GP25
-LANG_ENGLISH        "AK-47 Classic Grenade Launcher"
+LANG_ENGLISH        "Классический АК-47 с подствольным гранатометом"
 
 REFERENCE           WEAPON_AK47_CLASSIC_REDDOT
-LANG_ENGLISH        "AK-47 Classic Red Dot Sight"
+LANG_ENGLISH        "Классический АК-47 с коллиматорным прицелом"
 
 REFERENCE           WEAPON_AK47_CLASSIC_SILENCER
-LANG_ENGLISH        "AK-47 Classic Silenced"
+LANG_ENGLISH        "Классический АК-47 с глушителем"
 
 REFERENCE           WEAPON_AK47_CLASSIC_XMAGS
-LANG_ENGLISH        "AK-47 Classic Extended Mags"
-
-REFERENCE           WEAPON_AK74U_ACOG
-LANG_ENGLISH        "AK-74u ACOG Sight"
+LANG_ENGLISH        "Классический АК-47 с магазином повышенной емкости"
 
 REFERENCE           WEAPON_AK74U_EXTENDED_MAGS
-LANG_ENGLISH        "AK-74u Extended Mags"
+LANG_ENGLISH        "АК-74У с магазином повышенной емкости"
 
 REFERENCE           WEAPON_DESERTEAGLEGOLD_AKIMBO
-LANG_ENGLISH        "Gold Desert Eagle Akimbo"
+LANG_ENGLISH        "Парные позолоченные \"Дезерт Игл\""
 
 REFERENCE           WEAPON_DESERTEAGLEGOLD_BLING
-LANG_ENGLISH        "Gold Desert Eagle Bling"
+LANG_ENGLISH        "Позолоченный \"Дезерт Игл\" класса люкс"
 
 REFERENCE           WEAPON_DESERTEAGLEGOLD_FMJ
-LANG_ENGLISH        "Gold Desert Eagle FMJ"
+LANG_ENGLISH        "Позолоченный \"Дезерт Игл\" с ЦМ патронами"
 
 REFERENCE           WEAPON_DESERTEAGLEGOLD_TACTICAL
-LANG_ENGLISH        "Gold Desert Eagle Tactical Knife"
-
-REFERENCE           WEAPON_FAL_GL
-LANG_ENGLISH        "FAL Grenade Launcher"
+LANG_ENGLISH        "Позолоченный \"Дезерт Игл\" с тактическим ножом"
 
 REFERENCE           WEAPON_PEACEKEEPER
 LANG_ENGLISH        "Peacekeeper"
 
+REFERENCE           MENU_FPS_SIMPLE
+LANG_ENGLISH        "Простой"
+
+REFERENCE           MENU_FPS_SIMPLE_RANGES
+LANG_ENGLISH        "Простой + диапазоны"
+
+REFERENCE           MENU_FPS_VERBOSE
+LANG_ENGLISH        "Подробный"
+
+REFERENCE           MENU_FPS_VERBOSE_VIEWPOS
+LANG_ENGLISH        "Подробный + позиция"
+
+REFERENCE           MENU_MAXFPS_DEFAULT
+LANG_ENGLISH        "85 (по умолч.)"
+
+REFERENCE           MENU_DEVELOPED_BY
+LANG_ENGLISH        "РАЗРАБОТЧИКИ"
+
 REFERENCE           WEAPON_TYPE99
 LANG_ENGLISH        "Type 99"
+
+REFERENCE           NULL_EMPTY
+LANG_ENGLISH        ""
 
 ENDMARKER

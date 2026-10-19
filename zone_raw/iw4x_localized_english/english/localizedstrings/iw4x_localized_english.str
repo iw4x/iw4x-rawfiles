@@ -1250,6 +1250,9 @@ LANG_ENGLISH        "Your security level is %d"
 REFERENCE           MPUI_SECURITY_NEW_LEVEL_MESSAGE
 LANG_ENGLISH        "Your new security level is %d"
 
+REFERENCE           MPUI_SERVERQUERIED_FORMAT
+LANG_ENGLISH        "Servers: &&1\nPlayers: &&2 (&&3)"
+
 REFERENCE           MPUI_SHARPSHOOTER
 LANG_ENGLISH        "Sharpshooter"
 
@@ -1717,5 +1720,23 @@ LANG_ENGLISH        "FAL Grenade Launcher"
 
 REFERENCE           WEAPON_PEACEKEEPER
 LANG_ENGLISH        "Peacekeeper"
+
+REFERENCE           MENU_FPS_SIMPLE
+LANG_ENGLISH        "Simple"
+
+REFERENCE           MENU_FPS_SIMPLE_RANGES
+LANG_ENGLISH        "SimpleRanges"
+
+REFERENCE           MENU_FPS_VERBOSE
+LANG_ENGLISH        "Verbose"
+
+REFERENCE           MENU_FPS_VERBOSE_VIEWPOS
+LANG_ENGLISH        "Verbose+Viewpos"
+
+REFERENCE           MENU_MAXFPS_DEFAULT
+LANG_ENGLISH        "85 (Default)"
+
+REFERENCE           MENU_DEVELOPED_BY
+LANG_ENGLISH        "DEVELOPED BY"
 
 ENDMARKER
