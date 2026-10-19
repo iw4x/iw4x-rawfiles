@@ -1,7 +1,7 @@
 #define ITEM_MENU_TITLE_VIS(textArg, visArg) \
 	itemDef \
 	{ \
-		rect														-50 -35 146 28 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
+		rect														-50 -35 236 28 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP \
 		foreColor													CHOICE_TEXTCOLOR \
 		textFont													9 \
 		textScale													0.45 \
@@ -47,7 +47,7 @@
 itemDef
 {
 	name															"sourcefield"
-	rect															100 -33 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															190 -33 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	foreColor														CHOICE_TEXTCOLOR
 	backColor														0.6 0.55 0.55 0.2
@@ -76,7 +76,7 @@ itemDef
 itemDef
 {
 	name															"gametype"
-	rect															100 -15 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															190 -15 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	foreColor														CHOICE_TEXTCOLOR
 	backColor														0.6 0.55 0.55 0.2
@@ -106,7 +106,7 @@ itemDef
 itemDef
 {
 	name															"filterServers"
-	rect															100 3 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															190 3 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	type															ITEM_TYPE_BUTTON
 	foreColor														CHOICE_TEXTCOLOR
@@ -137,7 +137,7 @@ itemDef
 itemDef
 {
 	name															"refreshSource"
-	rect															304 -33 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															394 -33 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	type															ITEM_TYPE_BUTTON
 	foreColor														CHOICE_TEXTCOLOR
@@ -168,7 +168,7 @@ itemDef
 itemDef
 {
 	name															"refreshFilter"
-	rect															304 -15 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															394 -15 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	type															ITEM_TYPE_BUTTON
 	foreColor														CHOICE_TEXTCOLOR
@@ -199,7 +199,7 @@ itemDef
 itemDef
 {
 	name															"createFavorite2"
-	rect															304 3 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+	rect															394 3 144 18 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
 	style															WINDOW_STYLE_FILLED
 	type															ITEM_TYPE_BUTTON
 	foreColor														CHOICE_TEXTCOLOR
@@ -248,10 +248,10 @@ itemDef
 #define MATCHTYPE_WIDTH												20
 #define AIMASSIST_WIDTH												20
 #define VOICECHAT_WIDTH												20
-#define SERVER_WIDTH												208
+#define SERVER_WIDTH												180
 #define MAP_WIDTH													70
 #define PLAYERS_WIDTH												50
-#define TYPE_WIDTH													102
+#define TYPE_WIDTH													130
 #define MOD_WIDTH													100
 #define PING_WIDTH													40
 
@@ -395,7 +395,7 @@ itemDef
 					(SERVER_POS_X + 1)				SERVER_WIDTH			38				0
 					(MAP_POS_X + 1)					MAP_WIDTH				25				0
 					(PLAYERS_POS_X + 1)				PLAYERS_WIDTH			10				0
-					(TYPE_POS_X + 1)				TYPE_WIDTH				22				0
+					(TYPE_POS_X + 1)				TYPE_WIDTH				32				0
 					(MOD_POS_X + 1)					MOD_WIDTH				20				0
 					(PING_POS_X + 1)				PING_WIDTH				20				0
 	doubleClick
