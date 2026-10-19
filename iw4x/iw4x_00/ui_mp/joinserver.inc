@@ -248,11 +248,11 @@ itemDef
 #define MATCHTYPE_WIDTH												20
 #define AIMASSIST_WIDTH												20
 #define VOICECHAT_WIDTH												20
-#define SERVER_WIDTH												180
-#define MAP_WIDTH													70
+#define SERVER_WIDTH												185
+#define MAP_WIDTH													90
 #define PLAYERS_WIDTH												50
 #define TYPE_WIDTH													130
-#define MOD_WIDTH													100
+#define MOD_WIDTH													75
 #define PING_WIDTH													40
 
 #define TAB_LABEL_OFFSET	\
