@@ -371,7 +371,7 @@ REFERENCE           MENU_GPAD_ADV_FEEDBACK
 LANG_ENGLISH        "Вибрация и подсветка"
 
 REFERENCE           MENU_GPAD_ADV_GRAPH
-LANG_ENGLISH        "Кривая отклика"
+LANG_ENGLISH        "Кривая отклика ввода"
 
 REFERENCE           MENU_GPAD_ADV_GRAPH_INDEX
 LANG_ENGLISH        "Кривая отклика"
@@ -1496,7 +1496,7 @@ REFERENCE           QUICKMESSAGE_4_SORRY
 LANG_ENGLISH        "4. Извини."
 
 REFERENCE           QUICKMESSAGE_4_SUPPRESSING_FIRE
-LANG_ENGLISH        "4. База под обстрелом!"
+LANG_ENGLISH        "4. Огонь на подавление!"
 
 REFERENCE           QUICKMESSAGE_5_ATTACK_LEFT_FLANK
 LANG_ENGLISH        "5. Атакуем слева!"
@@ -1631,7 +1631,7 @@ REFERENCE           QUICKMESSAGE_STICK_TOGETHER
 LANG_ENGLISH        "Держитесь вместе!"
 
 REFERENCE           QUICKMESSAGE_SUPPRESSING_FIRE
-LANG_ENGLISH        "База под обстрелом!"
+LANG_ENGLISH        "Огонь на подавление!"
 
 REFERENCE           QUICKMESSAGE_TOOK_LONG_ENOUGH
 LANG_ENGLISH        "Слишком долго!"
