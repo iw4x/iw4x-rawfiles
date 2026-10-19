@@ -68,7 +68,7 @@
 		textalign													ITEM_ALIGN_TOP_CENTER \
 		textScale													CHOICE_TEXTSIZE \
 		exp															rect x (0 - 250) \
-		text														"DEVELOPED BY" \
+		text														"@MENU_DEVELOPED_BY" \
 	} \
 	itemDef \
 	{ \
