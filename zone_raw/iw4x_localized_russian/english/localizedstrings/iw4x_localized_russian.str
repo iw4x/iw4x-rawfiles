@@ -1765,6 +1765,27 @@ LANG_ENGLISH        "85 (по умолч.)"
 REFERENCE           MENU_DEVELOPED_BY
 LANG_ENGLISH        "РАЗРАБОТЧИКИ"
 
+REFERENCE           MENU_WELCOME_TITLE
+LANG_ENGLISH        "Добро пожаловать в IW4x"
+
+REFERENCE           MENU_WELCOME_MESSAGE
+LANG_ENGLISH        "Спасибо, что играете в IW4x!\n\nЧтобы получить помощь, сообщить об ошибке или просто пообщаться с сообществом, заходите на ^4iw4x.io^7: там наш Discord и другие ресурсы.\n\nИ главное: хотя мы стараемся поддерживать стабильность игры, это по-прежнему проект сообщества без каких-либо гарантий. Помогите нам, сообщая об ошибках и оставляя отзывы!"
+
+REFERENCE           MENU_WEBSITE_CAPS
+LANG_ENGLISH        "САЙТ"
+
+REFERENCE           MENU_I_UNDERSTAND_CAPS
+LANG_ENGLISH        "ПОНЯТНО"
+
+REFERENCE           MPUI_SERVER_BROWSER_TOAST
+LANG_ENGLISH        "Браузер серверов"
+
+REFERENCE           MPUI_FETCHING_SERVERS
+LANG_ENGLISH        "Получение списка серверов..."
+
+REFERENCE           MPUI_SERVERS_REFRESHED
+LANG_ENGLISH        "Серверы обновлены"
+
 REFERENCE           WEAPON_TYPE99
 LANG_ENGLISH        "Type 99"
 
