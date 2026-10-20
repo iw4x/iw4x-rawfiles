@@ -1,0 +1,1697 @@
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           CARDTITLE_ASEXUAL
+LANG_ENGLISH        "Asso"
+
+REFERENCE           CARDTITLE_NONBINARY
+LANG_ENGLISH        "Loro li affettano"
+
+REFERENCE           CARDTITLE_TRANSGENDER
+LANG_ENGLISH        "È la Shark Week!"
+
+REFERENCE           CARDTITLE_WAVE_DEFENSE
+LANG_ENGLISH        "Difesa dall'ondata"
+
+REFERENCE           CONF_KILL_CONFIRMED
+LANG_ENGLISH        "UCCISIONE CONFERMATA"
+
+REFERENCE           CUSTOM_MAPS_DLC
+LANG_ENGLISH        "Mappe personalizzate"
+
+REFERENCE           DESC_CUSTOM_MAPS_DLC
+LANG_ENGLISH        "Mappe scaricate collocate nella sottocartella /usermaps"
+
+REFERENCE           ERR_INVALID_CHALLENGE_SIGNATURE
+LANG_ENGLISH        "Firma della challenge non valida!"
+
+REFERENCE           ERR_INVALID_CONNECT_DATA
+LANG_ENGLISH        "Dati di connessione non validi!"
+
+REFERENCE           ERR_INVALID_CONNECT_PACKET
+LANG_ENGLISH        "Pacchetto di connessione non valido!"
+
+REFERENCE           ERR_INVALID_CONNECT_STRING
+LANG_ENGLISH        "Stringa di connessione non valida!"
+
+REFERENCE           ERR_INVALID_INFOSTRING_DATA
+LANG_ENGLISH        "Dati infostring non validi!"
+
+REFERENCE           ERR_XUID_CERTIFICATE_MISMATCH
+LANG_ENGLISH        "Lo XUID non corrisponde al certificato!"
+
+REFERENCE           EXE_AWAITINGGAMESTATE
+LANG_ENGLISH        "In attesa dello stato di gioco"
+
+REFERENCE           EXE_PROGRESS
+LANG_ENGLISH        "Avanzamento:"
+
+REFERENCE           FONT_ICON_HINT_AUTO_COMPLETE
+LANG_ENGLISH        "Premi ^3&&1 ^7per il completamento automatico"
+
+REFERENCE           FONT_ICON_HINT_MODIFIER
+LANG_ENGLISH        "Usa ^3&&1 ^7per i modificatori"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_BIG
+LANG_ENGLISH        "^2&&1  ^7Icona più grande"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_HORIZONTAL
+LANG_ENGLISH        "^2&&1  ^7Capovolgi l'icona in orizzontale"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_FLIP_VERTICAL
+LANG_ENGLISH        "^2&&1  ^7Capovolgi l'icona in verticale"
+
+REFERENCE           FONT_ICON_MODIFIER_LIST_HEADER
+LANG_ENGLISH        "Sono disponibili i seguenti modificatori:"
+
+REFERENCE           FONT_ICON_SEARCH_START_WITH
+LANG_ENGLISH        "Icone font che iniziano con ^2&&1^7:"
+
+REFERENCE           GAME_NOTONROTATION
+LANG_ENGLISH        "Questa mappa o modalità non fa parte della rotazione del server"
+
+REFERENCE           MENU_16X
+LANG_ENGLISH        "16x"
+
+REFERENCE           MENU_8X
+LANG_ENGLISH        "8x"
+
+REFERENCE           MENU_AA_MAXQUALITY
+LANG_ENGLISH        "Qualità anti-aliasing"
+
+REFERENCE           MENU_AAA_DITHER
+LANG_ENGLISH        "Dither (scarsa)"
+
+REFERENCE           MENU_AAA_SUPER
+LANG_ENGLISH        "Supersampling (buona)"
+
+REFERENCE           MENU_AAALPHA
+LANG_ENGLISH        "Anti-aliasing alfa"
+
+REFERENCE           MENU_ADD_TO_FAVORITES_CAPS
+LANG_ENGLISH        "AGGIUNGI A PREFERITI"
+
+REFERENCE           MENU_AIM_ACCELERATION
+LANG_ENGLISH        "Accelerazione mira"
+
+REFERENCE           MENU_AUTORECORD
+LANG_ENGLISH        "Registrazione auto"
+
+REFERENCE           MENU_AUTORECORD_CAPS
+LANG_ENGLISH        "REGISTRAZIONE AUTO"
+
+REFERENCE           MENU_BORDERLESS
+LANG_ENGLISH        "Senza bordi"
+
+REFERENCE           MENU_CHANGE_GAMETYPE
+LANG_ENGLISH        "Cambia modalità"
+
+REFERENCE           MENU_CHANGELOG
+LANG_ENGLISH        "Novità"
+
+REFERENCE           MENU_CHANGELOG_CAPS
+LANG_ENGLISH        "NOVITÀ"
+
+REFERENCE           MENU_CHECK_FOR_UPDATES
+LANG_ENGLISH        "^3Aggiornamento disponibile"
+
+REFERENCE           MENU_CHECK_FOR_UPDATES_CAPS
+LANG_ENGLISH        "^3AGGIORNAMENTO DISPONIBILE"
+
+REFERENCE           MENU_CLOSE_CAPS
+LANG_ENGLISH        "CHIUDI"
+
+REFERENCE           MENU_COLORBLIND_MODE
+LANG_ENGLISH        "Modalità daltonici"
+
+REFERENCE           MENU_CONF
+LANG_ENGLISH        "Recupera le piastrine per far segnare punti alla tua squadra e impedirlo ai nemici."
+
+REFERENCE           MENU_CRANKED
+LANG_ENGLISH        "Le uccisioni ti danno bonus extra, punti doppi e un limite di tempo. Concatena le uccisioni per restare in vita!"
+
+REFERENCE           MENU_CUSTOM_TITLE
+LANG_ENGLISH        "Titolo personalizzato"
+
+REFERENCE           MENU_CUSTOM_TITLE_CAPS
+LANG_ENGLISH        "TITOLO PERSONALIZZATO"
+
+REFERENCE           MENU_D3D9EX
+LANG_ENGLISH        "Direct3D 9Ex"
+
+REFERENCE           MENU_DEL_FAVORITE_CAPS
+LANG_ENGLISH        "ELIM. PREFERITO"
+
+REFERENCE           MENU_DELETE_CAPS
+LANG_ENGLISH        "ELIMINA"
+
+REFERENCE           MENU_DEMOS_KEEP
+LANG_ENGLISH        "Registrazioni da tenere"
+
+REFERENCE           MENU_DEMOS_KEEP_CAPS
+LANG_ENGLISH        "REGISTRAZIONI DA TENERE"
+
+REFERENCE           MENU_DESC_BUTTON_LAYOUT
+LANG_ENGLISH        "Cambia la configurazione dei tasti del gamepad"
+
+REFERENCE           MENU_DESC_DRAWFPS
+LANG_ENGLISH        "Mostra i fotogrammi al secondo"
+
+REFERENCE           MENU_DESC_FPSLABELS
+LANG_ENGLISH        "Mostra la posizione della visuale"
+
+REFERENCE           MENU_DESC_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH        "Scegli tra diverse preimpostazioni di sensibilità"
+
+REFERENCE           MENU_DESC_MAXPACKETS
+LANG_ENGLISH        "Numero massimo di pacchetti inviati per fotogramma"
+
+REFERENCE           MENU_DESC_SNAPS
+LANG_ENGLISH        "Frequenza degli snapshot"
+
+REFERENCE           MENU_DESC_THUMBSTICK_LAYOUT
+LANG_ENGLISH        "Cambia la configurazione delle levette del gamepad"
+
+REFERENCE           MENU_DRAWFPS
+LANG_ENGLISH        "Mostra FPS"
+
+REFERENCE           MENU_FILTER_CAPS
+LANG_ENGLISH        "FILTRO"
+
+REFERENCE           MENU_FOV
+LANG_ENGLISH        "Campo visivo"
+
+REFERENCE           MENU_FOV_CAPS
+LANG_ENGLISH        "FOV: "
+
+REFERENCE           MENU_FOV_HINT_PC
+LANG_ENGLISH        "Aumentare il campo visivo (FOV) può ridurre le prestazioni sui computer meno recenti."
+
+REFERENCE           MENU_FOVSCALE
+LANG_ENGLISH        "Scala campo visivo"
+
+REFERENCE           MENU_FPS_0
+LANG_ENGLISH        "OFF: 0"
+
+REFERENCE           MENU_FPS_1
+LANG_ENGLISH        "ON: 1"
+
+REFERENCE           MENU_FPS_2
+LANG_ENGLISH        "ON: 2"
+
+REFERENCE           MENU_FPS_3
+LANG_ENGLISH        "ON: 3"
+
+REFERENCE           MENU_FPS_4
+LANG_ENGLISH        "ON: 4"
+
+REFERENCE           MENU_FPS_CAP
+LANG_ENGLISH        "Limite FPS"
+
+REFERENCE           MENU_FPS_DRAW
+LANG_ENGLISH        "Visualizzazione FPS"
+
+REFERENCE           MENU_FPS_LABELS
+LANG_ENGLISH        "Etichette FPS"
+
+REFERENCE           MENU_FPSLABELS
+LANG_ENGLISH        "Mostra etichette FPS"
+
+REFERENCE           MENU_FRIEND_ADD
+LANG_ENGLISH        "Aggiungi amico"
+
+REFERENCE           MENU_FRIEND_ADD_CAPS
+LANG_ENGLISH        "AGGIUNGI AMICO"
+
+REFERENCE           MENU_FRIENDNOTIFY
+LANG_ENGLISH        "Notifiche amici"
+
+REFERENCE           MENU_FRIENDS
+LANG_ENGLISH        "Amici"
+
+REFERENCE           MENU_FRIENDS_CAPS
+LANG_ENGLISH        "AMICI"
+
+REFERENCE           MENU_GAME
+LANG_ENGLISH        "Gioco"
+
+REFERENCE           MENU_GAME_CAPS
+LANG_ENGLISH        "GIOCO"
+
+REFERENCE           MENU_GAME_SETTINGS_CAPS
+LANG_ENGLISH        "IMPOSTAZIONI DI GIOCO"
+
+REFERENCE           MENU_GAMEPAD
+LANG_ENGLISH        "Gamepad"
+
+REFERENCE           MENU_GAMEPAD_ENABLED
+LANG_ENGLISH        "Gamepad attivo"
+
+REFERENCE           MENU_GPAD_FORCE_FEEDBACK
+LANG_ENGLISH        "Attiva feedback aptico"
+
+REFERENCE           MENU_GPAD_PS_CAPS
+LANG_ENGLISH        "PlayStation"
+
+REFERENCE           MENU_GPAD_RUMBLE
+LANG_ENGLISH        "Attiva vibrazione"
+
+REFERENCE           MENU_GPAD_STYLE
+LANG_ENGLISH        "Stile tasti"
+
+REFERENCE           MENU_GPAD_XBOX_CAPS
+LANG_ENGLISH        "Xbox"
+
+REFERENCE           MENU_GPAD_ADVANCED
+LANG_ENGLISH        "Avanzate"
+
+REFERENCE           MENU_GPAD_ADV_ACCEL_RATE
+LANG_ENGLISH        "Velocità accelerazione"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE
+LANG_ENGLISH        "Grilletti adattivi"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_ADS
+LANG_ENGLISH        "Resistenza grilletto mira"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY
+LANG_ENGLISH        "Resistenza forte"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY_END
+LANG_ENGLISH        "Fine scatto forte"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_HEAVY_START
+LANG_ENGLISH        "Inizio scatto forte"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT
+LANG_ENGLISH        "Resistenza leggera"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT_END
+LANG_ENGLISH        "Fine scatto leggero"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_LIGHT_START
+LANG_ENGLISH        "Inizio scatto leggero"
+
+REFERENCE           MENU_GPAD_ADV_ADAPTIVE_STRENGTH
+LANG_ENGLISH        "Intensità effetti grilletti"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_ANTI
+LANG_ENGLISH        "Anti-zona morta levetta"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_INNER
+LANG_ENGLISH        "Zona morta interna levetta"
+
+REFERENCE           MENU_GPAD_ADV_DEADZONE_OUTER
+LANG_ENGLISH        "Zona morta esterna levetta"
+
+REFERENCE           MENU_GPAD_ADV_DEFAULTS
+LANG_ENGLISH        "Ripristina predefiniti"
+
+REFERENCE           MENU_GPAD_ADV_DEFAULTS_ALL
+LANG_ENGLISH        "Ripristina tutte le avanzate"
+
+REFERENCE           MENU_GPAD_ADV_FEEDBACK
+LANG_ENGLISH        "Vibrazione e luci"
+
+REFERENCE           MENU_GPAD_ADV_GRAPH
+LANG_ENGLISH        "Curva di risposta input"
+
+REFERENCE           MENU_GPAD_ADV_GRAPH_INDEX
+LANG_ENGLISH        "Curva di risposta"
+
+REFERENCE           MENU_GPAD_ADV_HAPTIC_INTENSITY
+LANG_ENGLISH        "Intensità aptica"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BAR
+LANG_ENGLISH        "Barra luminosa"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BLUE
+LANG_ENGLISH        "Barra luminosa: blu"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_BRIGHTNESS
+LANG_ENGLISH        "Barra luminosa: luminosità"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_GREEN
+LANG_ENGLISH        "Barra luminosa: verde"
+
+REFERENCE           MENU_GPAD_ADV_LIGHT_RED
+LANG_ENGLISH        "Barra luminosa: rosso"
+
+REFERENCE           MENU_GPAD_ADV_OUTPUT_INTERVAL
+LANG_ENGLISH        "Intervallo di invio (ms)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY
+LANG_ENGLISH        "Prolunga pressioni brevi"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY_MIN
+LANG_ENGLISH        "Pressione minima (ms)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_DELAY_SCALE
+LANG_ENGLISH        "Moltiplicatore ping"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_GRACE
+LANG_ENGLISH        "Tolleranza rilascio (ms)"
+
+REFERENCE           MENU_GPAD_ADV_RELEASE_SPRINT_ONLY
+LANG_ENGLISH        "Solo tasto corsa"
+
+REFERENCE           MENU_GPAD_ADV_RESPONSE
+LANG_ENGLISH        "Risposta visuale"
+
+REFERENCE           MENU_GPAD_ADV_RUMBLE_HIGH
+LANG_ENGLISH        "Vibrazione alta frequenza"
+
+REFERENCE           MENU_GPAD_ADV_RUMBLE_LOW
+LANG_ENGLISH        "Vibrazione bassa frequenza"
+
+REFERENCE           MENU_GPAD_ADV_SCALE_VIEW_AXIS
+LANG_ENGLISH        "Scala assi visuale"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_ACCEL
+LANG_ENGLISH        "Accel. scorrimento (ms)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_FIRST
+LANG_ENGLISH        "Ritardo 1° scorrimento (ms)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_MIN
+LANG_ENGLISH        "Ritardo scorr. minimo (ms)"
+
+REFERENCE           MENU_GPAD_ADV_SCROLL_REST
+LANG_ENGLISH        "Ritardo ripetizione (ms)"
+
+REFERENCE           MENU_GPAD_ADV_STICKS
+LANG_ENGLISH        "Levette e zone morte"
+
+REFERENCE           MENU_GPAD_ADV_STICK_HYSTERESIS
+LANG_ENGLISH        "Isteresi pressione levetta"
+
+REFERENCE           MENU_GPAD_ADV_STICK_PRESSED
+LANG_ENGLISH        "Soglia pressione levetta"
+
+REFERENCE           MENU_GPAD_ADV_TEST_RUMBLE
+LANG_ENGLISH        "Prova vibrazione"
+
+REFERENCE           MENU_GPAD_ADV_TIMING
+LANG_ENGLISH        "Tempi e latenza"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGERS
+LANG_ENGLISH        "Grilletti"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGER_DEADZONE
+LANG_ENGLISH        "Zona morta grilletti"
+
+REFERENCE           MENU_GPAD_ADV_TRIGGER_HYSTERESIS
+LANG_ENGLISH        "Isteresi grilletti"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_PITCH
+LANG_ENGLISH        "Rotazione verticale"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_PITCH_ADS
+LANG_ENGLISH        "Rotazione verticale (mirino)"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_YAW
+LANG_ENGLISH        "Rotazione orizzontale"
+
+REFERENCE           MENU_GPAD_ADV_TURNRATE_YAW_ADS
+LANG_ENGLISH        "Rotazione orizzontale (mirino)"
+
+REFERENCE           MENU_GPAD_ADV_USE_HOLD
+LANG_ENGLISH        "Pressione Usa/Ricarica (ms)"
+
+REFERENCE           MENU_GTNW_DESC
+LANG_ENGLISH        "Le squadre si contendono il carico nucleare per attivare l'attacco nucleare."
+
+REFERENCE           MENU_GUNGAME
+LANG_ENGLISH        "Sii il primo giocatore a uccidere con ognuna delle armi fornite."
+
+REFERENCE           MENU_INF
+LANG_ENGLISH        "I sopravvissuti eliminati diventano infetti. Infetta tutti o sopravvivi fino alla fine per vincere."
+
+REFERENCE           MENU_JOIN_SERVER_CAPS
+LANG_ENGLISH        "ENTRA NEL SERVER"
+
+REFERENCE           MENU_LAGOMETER
+LANG_ENGLISH        "Mostra lagometro"
+
+REFERENCE           MENU_LOAD_MOD_CAPS
+LANG_ENGLISH        "CARICA MOD"
+
+REFERENCE           MENU_LOADING_MAPS
+LANG_ENGLISH        "Caricamento selezione mappe..."
+
+REFERENCE           MENU_LOCKON_ENABLED
+LANG_ENGLISH        "Attiva aggancio mira assistita"
+
+REFERENCE           MENU_LOOK_SENSITIVITY_PRESET
+LANG_ENGLISH        "Preimpostazione sensibilità"
+
+REFERENCE           MENU_MAXFPS
+LANG_ENGLISH        "FPS massimi"
+
+REFERENCE           MENU_MAXPACKETS
+LANG_ENGLISH        "Max. pacchetti per fotogramma"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_TITLE
+LANG_ENGLISH        "Impostare le statistiche?"
+
+REFERENCE           MENU_MODDED_STATS_WARNING
+LANG_ENGLISH        "Stai entrando per la prima volta in un server modificato: ^1inizierai dal grado 1 con le classi predefinite ^7a meno che tu non le imposti ora.\n\nIn seguito potrai modificare le tue classi caricando la mod del server da ^4Mod ^7nel menu principale, oppure con il pulsante ^4Carica mod^7."
+
+REFERENCE           MENU_MODDED_STATS_WARNING_NO
+LANG_ENGLISH        "No, continua con le statistiche predefinite"
+
+REFERENCE           MENU_MODDED_STATS_WARNING_YES
+LANG_ENGLISH        "Sì, portami al menu principale"
+
+REFERENCE           MENU_MODS_CAPS
+LANG_ENGLISH        "MOD"
+
+REFERENCE           MENU_MOTD
+LANG_ENGLISH        "Notizie"
+
+REFERENCE           MENU_MOTD_CAPS
+LANG_ENGLISH        "NOTIZIE"
+
+REFERENCE           MENU_NATIVECURSOR
+LANG_ENGLISH        "Mostra cursore di sistema"
+
+REFERENCE           MENU_NEWCOLORS
+LANG_ENGLISH        "Usa nuovi codici colore"
+
+REFERENCE           MENU_NOBORDER
+LANG_ENGLISH        "Disattiva bordo finestra"
+
+REFERENCE           MENU_OITC_DESC
+LANG_ENGLISH        "Ottieni munizioni eliminando i nemici. Vince chi ottiene il punteggio più alto."
+
+REFERENCE           MENU_PASSWORD_CAPS
+LANG_ENGLISH        "PASSWORD"
+
+REFERENCE           MENU_PLAY
+LANG_ENGLISH        "Gioca"
+
+REFERENCE           MENU_PLAY_CAPS
+LANG_ENGLISH        "GIOCA"
+
+REFERENCE           MENU_RAW_MOUSE
+LANG_ENGLISH        "Input mouse diretto"
+
+REFERENCE           MENU_RECONNECTING_TO_PARTY
+LANG_ENGLISH        "CONNESSIONE AL SERVER"
+
+REFERENCE           MENU_RESET_STATS
+LANG_ENGLISH        "Azzerare le statistiche?"
+
+REFERENCE           MENU_RESET_STATS_CAPS
+LANG_ENGLISH        "AZZERARE LE STATISTICHE?"
+
+REFERENCE           MENU_SCREEN_OPTIONS
+LANG_ENGLISH        "Opzioni schermo"
+
+REFERENCE           MENU_SCROLL_DOWN
+LANG_ENGLISH        "^3SCORRI IN BASSO"
+
+REFERENCE           MENU_SCROLL_UP
+LANG_ENGLISH        "^3SCORRI SU"
+
+REFERENCE           MENU_SEARCHINGFORGAMES_100MS
+LANG_ENGLISH        ""
+
+REFERENCE           MENU_SECURITY_INCREASE
+LANG_ENGLISH        "Aumento livello di sicurezza"
+
+REFERENCE           MENU_SENSITIVITY_HIGH_CAPS
+LANG_ENGLISH        "(Elevata) 4"
+
+REFERENCE           MENU_SENSITIVITY_INSANE_CAPS
+LANG_ENGLISH        "(Folle) 10"
+
+REFERENCE           MENU_SENSITIVITY_LOW_CAPS
+LANG_ENGLISH        "(Ridotta) 1"
+
+REFERENCE           MENU_SENSITIVITY_MEDIUM_CAPS
+LANG_ENGLISH        "(Media) 2"
+
+REFERENCE           MENU_SENSITIVITY_VERY_HIGH_CAPS
+LANG_ENGLISH        "(Elevatissima) 7"
+
+REFERENCE           MENU_SERVER_INFO_CAPS
+LANG_ENGLISH        "INFO SERVER"
+
+REFERENCE           MENU_SHARPSHOOTER
+LANG_ENGLISH        "Tutti i giocatori ricevono la stessa arma, scelta a caso. Ogni 45 secondi viene scelta a caso una nuova arma, usata da tutti."
+
+REFERENCE           MENU_SLOWDOWN_ENABLED
+LANG_ENGLISH        "Attiva rallentamento mira assistita"
+
+REFERENCE           MENU_SNAPS
+LANG_ENGLISH        "Frequenza snapshot"
+
+REFERENCE           MENU_STORE
+LANG_ENGLISH        "Ottieni DLC"
+
+REFERENCE           MENU_STORE_CAPS
+LANG_ENGLISH        "OTTIENI DLC"
+
+REFERENCE           MENU_STREAMFRIENDLY_UI
+LANG_ENGLISH        "Interfaccia per streaming"
+
+REFERENCE           MENU_SYNC_NODES
+LANG_ENGLISH        "Sincronizza nodi"
+
+REFERENCE           MENU_SYNC_NODES_CAPS
+LANG_ENGLISH        "SINCRONIZZA NODI"
+
+REFERENCE           MENU_TDEF
+LANG_ENGLISH        "Cattura e difendi la bandiera per ottenere un bonus punti doppi per la squadra. Non per i deboli di cuore.\n \n Creata da Intricate."
+
+REFERENCE           MENU_THEATER
+LANG_ENGLISH        "Cinema"
+
+REFERENCE           MENU_THEATER_CAPS
+LANG_ENGLISH        "CINEMA"
+
+REFERENCE           MENU_UNLOCK_STATS
+LANG_ENGLISH        "Sbloccare le statistiche?"
+
+REFERENCE           MENU_UNLOCK_STATS_CAPS
+LANG_ENGLISH        "SBLOCCARE LE STATISTICHE?"
+
+REFERENCE           MENU_VISIT_WEBSITE
+LANG_ENGLISH        "Visita il sito"
+
+REFERENCE           MENU_VISIT_WEBSITE_CAPS
+LANG_ENGLISH        "VISITA IL SITO"
+
+REFERENCE           MENU_WAITING_FOR_MORE_PLAYERS_TEAMS
+LANG_ENGLISH        "In attesa di altri giocatori per equilibrare le squadre"
+
+REFERENCE           MENU_XAXIS
+LANG_ENGLISH        "Pos. finestra asse X"
+
+REFERENCE           MENU_YAXIS
+LANG_ENGLISH        "Pos. finestra asse Y"
+
+REFERENCE           MP_AFRICA_ELIMINATED
+LANG_ENGLISH        "Milizie eliminate"
+
+REFERENCE           MP_AFRICA_FORFEITED
+LANG_ENGLISH        "Le milizie africane si sono arrese"
+
+REFERENCE           MP_AFRICA_MILITIA_NAME
+LANG_ENGLISH        "Milizie africane"
+
+REFERENCE           MP_DELTA_ELIMINATED
+LANG_ENGLISH        "Unità Delta eliminata"
+
+REFERENCE           MP_DELTA_FORFEITED
+LANG_ENGLISH        "L'unità Delta si è ritirata"
+
+REFERENCE           MP_DELTA_NAME
+LANG_ENGLISH        "Delta Force"
+
+REFERENCE           MP_DELTA_SHORT_NAME
+LANG_ENGLISH        "Delta"
+
+REFERENCE           MP_DRAFT_STARTS_IN
+LANG_ENGLISH        "Infezione tra: &&1"
+
+REFERENCE           MP_GIGN
+LANG_ENGLISH        "GIGN"
+
+REFERENCE           MP_GIGN_ELIMINATED
+LANG_ENGLISH        "Unità GIGN eliminata"
+
+REFERENCE           MP_GIGN_FORFEITED
+LANG_ENGLISH        "L'unità GIGN si è ritirata"
+
+REFERENCE           MP_GIGN_SHORT_NAME
+LANG_ENGLISH        "GIGN"
+
+REFERENCE           MP_INNERCIRCLE_ELIMINATED
+LANG_ENGLISH        "Inner Circle eliminato"
+
+REFERENCE           MP_INNERCIRCLE_FORFEITED
+LANG_ENGLISH        "L'Inner Circle si è ritirato"
+
+REFERENCE           MP_INNERCIRCLE_NAME
+LANG_ENGLISH        "Inner Circle"
+
+REFERENCE           MP_NEUTRAL_FLAG_DROPPED_BY
+LANG_ENGLISH        "&&1 ha perso la bandiera!"
+
+REFERENCE           MP_PICKUP_C4
+LANG_ENGLISH        "Tieni premuto ^3[{+activate}]^7 per raccogliere il C4"
+
+REFERENCE           MP_PICKUP_CLAYMORE
+LANG_ENGLISH        "Tieni premuto ^3[{+activate}]^7 per raccogliere la mina Claymore"
+
+REFERENCE           MP_PMC
+LANG_ENGLISH        "P.M.C."
+
+REFERENCE           MP_PMC_ELIMINATED
+LANG_ENGLISH        "Unità P.M.C. eliminata"
+
+REFERENCE           MP_PMC_FORFEITED
+LANG_ENGLISH        "L'unità P.M.C. si è ritirata"
+
+REFERENCE           MP_PMC_SHORT_NAME
+LANG_ENGLISH        "PMC"
+
+REFERENCE           MP_SAS
+LANG_ENGLISH        "Special Air Service"
+
+REFERENCE           MP_SAS_SHORT_NAME
+LANG_ENGLISH        "SAS"
+
+REFERENCE           MP_SEARCHING_FOR_PLAYER
+LANG_ENGLISH        "In attesa"
+
+REFERENCE           MP_WEAPON
+LANG_ENGLISH        "Arma:"
+
+REFERENCE           MPUI_ARKADEN
+LANG_ENGLISH        "Arkaden"
+
+REFERENCE           MPUI_AUTORECORD
+LANG_ENGLISH        "Registrazione automatica: "
+
+REFERENCE           MPUI_AUTORECORD_CAPS
+LANG_ENGLISH        "REGISTRAZIONE AUTOMATICA: "
+
+REFERENCE           MPUI_BLOC_SH
+LANG_ENGLISH        "Città dimenticata"
+
+REFERENCE           MPUI_BOG_SH
+LANG_ENGLISH        "Acquitrino"
+
+REFERENCE           MPUI_CARENTAN
+LANG_ENGLISH        "Chinatown"
+
+REFERENCE           MPUI_CARGOSHIP_SH
+LANG_ENGLISH        "Mercantile"
+
+REFERENCE           MPUI_CO_HUNTED
+LANG_ENGLISH        "Villaggio"
+
+REFERENCE           MPUI_CONF
+LANG_ENGLISH        "Uccisione confermata"
+
+REFERENCE           MPUI_CONF_CAPS
+LANG_ENGLISH        "UCCISIONE CONFERMATA"
+
+REFERENCE           MPUI_CRANKED
+LANG_ENGLISH        "Cranked"
+
+REFERENCE           MPUI_CRANKED_CAPS
+LANG_ENGLISH        "CRANKED"
+
+REFERENCE           MPUI_CRASH_SNOW
+LANG_ENGLISH        "Schianto invernale"
+
+REFERENCE           MPUI_CRASH_TROPICAL
+LANG_ENGLISH        "Schianto: tropicale"
+
+REFERENCE           MPUI_DEMO_AUTHOR
+LANG_ENGLISH        "Autore:"
+
+REFERENCE           MPUI_DEMO_AUTHOR_CAPS
+LANG_ENGLISH        "AUTORE:"
+
+REFERENCE           MPUI_DEMO_CREATED
+LANG_ENGLISH        "Creata:"
+
+REFERENCE           MPUI_DEMO_CREATED_CAPS
+LANG_ENGLISH        "CREATA:"
+
+REFERENCE           MPUI_DEMO_DATE
+LANG_ENGLISH        "Data:"
+
+REFERENCE           MPUI_DEMO_DATE_CAPS
+LANG_ENGLISH        "DATA:"
+
+REFERENCE           MPUI_DEMO_LENGTH
+LANG_ENGLISH        "Durata:"
+
+REFERENCE           MPUI_DEMO_LENGTH_CAPS
+LANG_ENGLISH        "DURATA:"
+
+REFERENCE           MPUI_DEMOS_KEEP
+LANG_ENGLISH        "Demo da tenere: "
+
+REFERENCE           MPUI_DEMOS_KEEP_CAPS
+LANG_ENGLISH        "DEMO DA TENERE: "
+
+REFERENCE           MPUI_DESC_AIM_ACCELERATION
+LANG_ENGLISH        "Porta gradualmente la levetta alla piena velocità di rotazione invece di ruotare a quella velocità non appena la muovi. Disattivata, la levetta risponde in modo diretto (1:1); attivata, una direzione mantenuta parte lenta e poi accelera."
+
+REFERENCE           MPUI_DESC_AUTORECORD
+LANG_ENGLISH        "Registra automaticamente le tue partite."
+
+REFERENCE           MPUI_DESC_CHANGE_NAME
+LANG_ENGLISH        "Cambia il tuo nome"
+
+REFERENCE           MPUI_DESC_CHANGELOG
+LANG_ENGLISH        "Scopri le novità."
+
+REFERENCE           MPUI_DESC_CHECK_FOR_UPDATES
+LANG_ENGLISH        "Controlla se è disponibile una nuova versione."
+
+REFERENCE           MPUI_DESC_CUSTOM_TITLE
+LANG_ENGLISH        "Cambia il testo del titolo del call sign"
+
+REFERENCE           MPUI_DESC_D3D9EX
+LANG_ENGLISH        "Usa Direct3D 9Ex."
+
+REFERENCE           MPUI_DESC_DEMOS_KEEP
+LANG_ENGLISH        "Definisci quante registrazioni conservare prima che vengano eliminate le più vecchie."
+
+REFERENCE           MPUI_DESC_ENABLE_VOICE_CHAT
+LANG_ENGLISH        "Usa le comunicazioni vocali"
+
+REFERENCE           MPUI_DESC_FOV
+LANG_ENGLISH        "Regola il campo visivo."
+
+REFERENCE           MPUI_DESC_FOVSCALE
+LANG_ENGLISH        "Regola la scala del campo visivo; modifica anche il campo visivo con il mirino."
+
+REFERENCE           MPUI_DESC_FRIENDNOTIFY
+LANG_ENGLISH        "Vuoi inviare notifiche di stato ai tuoi amici?"
+
+REFERENCE           MPUI_DESC_FRIENDS
+LANG_ENGLISH        "Scopri dove stanno giocando i tuoi amici."
+
+REFERENCE           MPUI_DESC_GAMEPAD_ENABLED
+LANG_ENGLISH        "Attiva/disattiva l'input dai gamepad"
+
+REFERENCE           MPUI_DESC_GPAD_STYLE
+LANG_ENGLISH        "Scegli tra l'interfaccia Xbox e quella PlayStation."
+
+REFERENCE           MPUI_DESC_GPAD_ADVANCED
+LANG_ENGLISH        "Regolazione dettagliata del controller."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ACCEL_RATE
+LANG_ENGLISH        "Rapidità con cui la velocità di rotazione raggiunge il massimo, in gradi/s al secondo."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE
+LANG_ENGLISH        "I grilletti oppongono resistenza in base all'arma impugnata. Richiede un DualSense."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_ADS
+LANG_ENGLISH        "Resistenza costante sul grilletto assegnato alla mira. Zero lo lascia libero."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY
+LANG_ENGLISH        "Resistenza degli effetti per fucili, fucili a pompa, fucili di precisione e lanciatori."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY_END
+LANG_ENGLISH        "Dove termina uno scatto forte, in decimi della corsa del grilletto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_HEAVY_START
+LANG_ENGLISH        "Dove inizia uno scatto forte, in decimi della corsa del grilletto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT
+LANG_ENGLISH        "Resistenza degli effetti per mitragliatrici, pistole e granate."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT_END
+LANG_ENGLISH        "Dove termina uno scatto leggero, in decimi della corsa del grilletto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_LIGHT_START
+LANG_ENGLISH        "Dove inizia uno scatto leggero, in decimi della corsa del grilletto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_ADAPTIVE_STRENGTH
+LANG_ENGLISH        "Scala tutti gli effetti dei grilletti. Zero lascia i grilletti liberi."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_ANTI
+LANG_ENGLISH        "Inclinazione a cui salta la levetta quando esce dalla zona morta interna."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_INNER
+LANG_ENGLISH        "Quanto deve spostarsi una levetta dal centro prima di essere rilevata."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEADZONE_OUTER
+LANG_ENGLISH        "A quale distanza dal bordo una levetta risulta completamente inclinata."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEFAULTS
+LANG_ENGLISH        "Ripristina i valori predefiniti di tutte le impostazioni di questa pagina."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_DEFAULTS_ALL
+LANG_ENGLISH        "Ripristina i valori predefiniti di tutte le impostazioni avanzate del controller."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_FEEDBACK
+LANG_ENGLISH        "Intensità della vibrazione, intensità aptica e barra luminosa."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_GRAPH
+LANG_ENGLISH        "Modella l'inclinazione della levetta tramite una curva di risposta."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_GRAPH_INDEX
+LANG_ENGLISH        "Curva applicata alla levetta. Valori più alti danno più precisione vicino al centro."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_HAPTICS
+LANG_ENGLISH        "Riproduce la vibrazione sugli attuatori del controller anziché sui motori."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_HAPTIC_INTENSITY
+LANG_ENGLISH        "Scala tutti gli effetti aptici riprodotti sugli attuatori."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BAR
+LANG_ENGLISH        "Illumina la barra del controller. Richiede un DualShock 4 o un DualSense."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BLUE
+LANG_ENGLISH        "Componente blu del colore della barra luminosa."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_BRIGHTNESS
+LANG_ENGLISH        "Attenua la barra luminosa senza cambiarne la tonalità."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_GREEN
+LANG_ENGLISH        "Componente verde del colore della barra luminosa."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_LIGHT_RED
+LANG_ENGLISH        "Componente rossa del colore della barra luminosa."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_OUTPUT_INTERVAL
+LANG_ENGLISH        "Intervallo minimo tra i comandi di vibrazione. Zero invia ogni modifica."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY
+LANG_ENGLISH        "Mantiene premuto un tasto toccato abbastanza a lungo da farlo rilevare al server."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY_MIN
+LANG_ENGLISH        "Pressione minima mostrata al server, prima del moltiplicatore ping."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_DELAY_SCALE
+LANG_ENGLISH        "Il ritardo è il ping per questo valore. Zero lo fissa alla pressione minima."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_GRACE
+LANG_ENGLISH        "Per quanto tempo dopo il rilascio il tasto risulta ancora premuto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RELEASE_SPRINT_ONLY
+LANG_ENGLISH        "Prolunga solo il tasto corsa, così lo sparo resta immediato."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RESPONSE
+LANG_ENGLISH        "Velocità di rotazione, accelerazione e curva di risposta della levetta."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RUMBLE_HIGH
+LANG_ENGLISH        "Scala il motore ad alta frequenza (leggero)."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_RUMBLE_LOW
+LANG_ENGLISH        "Scala il motore a bassa frequenza (pesante)."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCALE_VIEW_AXIS
+LANG_ENGLISH        "Scala entrambi gli assi della visuale in base a quello dominante."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_ACCEL
+LANG_ENGLISH        "Tempo necessario a una direzione mantenuta per raggiungere il ritardo minimo."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_FIRST
+LANG_ENGLISH        "Attesa di una direzione mantenuta prima del secondo scorrimento."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_MIN
+LANG_ENGLISH        "Intervallo tra i passi di scorrimento alla massima accelerazione."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SCROLL_REST
+LANG_ENGLISH        "Intervallo tra i passi di scorrimento dopo la prima ripetizione."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_SENSITIVITY
+LANG_ENGLISH        "Moltiplica tutte le velocità di rotazione impostate qui sotto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICKS
+LANG_ENGLISH        "Zone morte, soglia di pressione e configurazione delle levette."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICK_HYSTERESIS
+LANG_ENGLISH        "Margine invariato attorno alla soglia di pressione, contro lo sfarfallio."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_STICK_PRESSED
+LANG_ENGLISH        "Inclinazione oltre la quale una levetta risulta premuta."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TEST_RUMBLE
+LANG_ENGLISH        "Riproduce un breve effetto con le impostazioni attuali."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TIMING
+LANG_ENGLISH        "Durata delle pressioni, ripetizione nei menu e compensazione della latenza."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGERS
+LANG_ENGLISH        "Zona morta e isteresi dei grilletti, effetti dei grilletti adattivi."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGER_DEADZONE
+LANG_ENGLISH        "Quanto va premuto un grilletto prima che risulti premuto."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TRIGGER_HYSTERESIS
+LANG_ENGLISH        "Quanto deve tornare indietro un grilletto prima che risulti rilasciato."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_PITCH
+LANG_ENGLISH        "Gradi al secondo di rotazione verticale della visuale, senza mirino."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_PITCH_ADS
+LANG_ENGLISH        "Gradi al secondo di rotazione verticale della visuale, mirando con il mirino."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_YAW
+LANG_ENGLISH        "Gradi al secondo di rotazione orizzontale della visuale, senza mirino."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_TURNRATE_YAW_ADS
+LANG_ENGLISH        "Gradi al secondo di rotazione orizzontale della visuale, mirando con il mirino."
+
+REFERENCE           MPUI_DESC_GPAD_ADV_USE_HOLD
+LANG_ENGLISH        "^3Solo partite private: ^7durata della pressione di Usa/Ricarica prima che si attivi."
+
+REFERENCE           MPUI_DESC_LOCKON_ENABLED
+LANG_ENGLISH        "Attiva/disattiva l'aggancio della mira assistita. L'aggancio aiuta a tenere il mirino sui bersagli mentre ti muovi. I server possono disattivare la mira assistita con sv_allowAimAssist indipendentemente da questa impostazione."
+
+REFERENCE           MPUI_DESC_LOGOUT
+LANG_ENGLISH        "Disconnettiti."
+
+REFERENCE           MPUI_DESC_LOOK_INVERSION
+LANG_ENGLISH        "Inverte l'asse verticale del gamepad (su/giù)"
+
+REFERENCE           MPUI_DESC_MAP_ARKADEN
+LANG_ENGLISH        "Centro commerciale tedesco (medio). Intense partite Cerca e distruggi."
+
+REFERENCE           MPUI_DESC_MAP_BLOC_SH
+LANG_ENGLISH        "Una versione modificata di Blocco."
+
+REFERENCE           MPUI_DESC_MAP_CARENTAN
+LANG_ENGLISH        "Piccola città di notte. Ottima per qualsiasi modalità."
+
+REFERENCE           MPUI_DESC_MAP_CARGOSHIP
+LANG_ENGLISH        "Una mappa di medie dimensioni presente in Call of Duty 4: Modern Warfare. È ambientata su una nave da carico durante una tempesta e si basa sulla missione della campagna Crew Expendable."
+
+REFERENCE           MPUI_DESC_MAP_CARGOSHIP_SH
+LANG_ENGLISH        "Una versione innevata di Lavoro sporco, mappa di Call of Duty 4: Modern Warfare."
+
+REFERENCE           MPUI_DESC_MAP_CO_HUNTED
+LANG_ENGLISH        "Villaggio russo di sera."
+
+REFERENCE           MPUI_DESC_MAP_CRASH_SNOW
+LANG_ENGLISH        "Schianto in versione notturna, innevata e natalizia. Attenzione ai raid aerei..."
+
+REFERENCE           MPUI_DESC_MAP_CRASH_TROPICAL
+LANG_ENGLISH        "Schianto con un paesaggio tropicale."
+
+REFERENCE           MPUI_DESC_MAP_DOME
+LANG_ENGLISH        "Piccolo avamposto nel deserto. Azione rapida e frenetica."
+
+REFERENCE           MPUI_DESC_MAP_ESTATE_TROPICAL
+LANG_ENGLISH        "Estate con un paesaggio tropicale."
+
+REFERENCE           MPUI_DESC_MAP_FAV_TROPICAL
+LANG_ENGLISH        "Favela con un paesaggio tropicale."
+
+REFERENCE           MPUI_DESC_MAP_FIRINGRANGE_IW4X
+LANG_ENGLISH        "Combattimenti a distanza ravvicinata e media in un poligono di tiro militare a Cuba."
+
+REFERENCE           MPUI_DESC_MAP_HARDHAT
+LANG_ENGLISH        "Un piccolo cantiere edile. Azione rapida e ravvicinata."
+
+REFERENCE           MPUI_DESC_MAP_KILLHOUSE
+LANG_ENGLISH        "Killhouse è una mappa molto piccola del Variety Map Pack di Call of Duty 4: Modern Warfare. È teatro di battaglie feroci, dato che non è più grande di Spedizione."
+
+REFERENCE           MPUI_DESC_MAP_LOCKDOWN
+LANG_ENGLISH        "Centro di una città europea. Ottima per Team Defender."
+
+REFERENCE           MPUI_DESC_MAP_MISSION
+LANG_ENGLISH        "Insediamento coloniale africano. Combatti per il controllo del centro."
+
+REFERENCE           MPUI_DESC_MAP_NUKED
+LANG_ENGLISH        "Un sito per test nucleari abbandonato, usato durante la Guerra fredda."
+
+REFERENCE           MPUI_DESC_MAP_OILRIG
+LANG_ENGLISH        "L'unico giorno facile... era ieri"
+
+REFERENCE           MPUI_DESC_MAP_RESISTANCE
+LANG_ENGLISH        "Quartiere parigino. Ottima per Dominio e Uccisione confermata."
+
+REFERENCE           MPUI_DESC_MAP_RUST_LONG
+LANG_ENGLISH        "Azione frenetica in un deposito petrolifero in mezzo al deserto."
+
+REFERENCE           MPUI_DESC_MAP_SEATOWN
+LANG_ENGLISH        "Una città costiera. Le strade strette portano a scontri ravvicinati e frenetici."
+
+REFERENCE           MPUI_DESC_MAP_SHIPMENT_LONG
+LANG_ENGLISH        "Una versione più grande di Spedizione, la mappa originale di Call of Duty 4: Modern Warfare."
+
+REFERENCE           MPUI_DESC_MAP_STORM_SPRING
+LANG_ENGLISH        "Una versione modificata di Storm, innevata anziché piovosa."
+
+REFERENCE           MPUI_DESC_MAP_UNDERGROUND
+LANG_ENGLISH        "Piccola stazione della metropolitana. Azione rapida sia all'interno che all'esterno."
+
+REFERENCE           MPUI_DESC_MAP_VILLAGE
+LANG_ENGLISH        "Grande villaggio africano. Ottimo per tutte le modalità di gioco."
+
+REFERENCE           MPUI_DESC_MAXFPS
+LANG_ENGLISH        "Imposta il numero massimo di fotogrammi al secondo."
+
+REFERENCE           MPUI_DESC_MODS
+LANG_ENGLISH        "Sfoglia le tue mod."
+
+REFERENCE           MPUI_DESC_NATIVECURSOR
+LANG_ENGLISH        "Mostra il cursore di sistema invece di quello del gioco."
+
+REFERENCE           MPUI_DESC_NEWCOLORS
+LANG_ENGLISH        "Usa lo schema dei codici colore di ^2Warfare2."
+
+REFERENCE           MPUI_DESC_NOBORDER
+LANG_ENGLISH        "Non usare il bordo in modalità finestra."
+
+REFERENCE           MPUI_DESC_OPTIONS
+LANG_ENGLISH        "Imposta le opzioni di gioco."
+
+REFERENCE           MPUI_DESC_QUIT
+LANG_ENGLISH        "Esci dal gioco."
+
+REFERENCE           MPUI_DESC_RESET_STATS
+LANG_ENGLISH        "Azzera le tue statistiche."
+
+REFERENCE           MPUI_DESC_SLOWDOWN_ENABLED
+LANG_ENGLISH        "Attiva/disattiva il rallentamento della mira assistita. Il rallentamento riduce la velocità di rotazione della levetta quando il mirino passa su un bersaglio. I server possono disattivare la mira assistita con sv_allowAimAssist indipendentemente da questa impostazione."
+
+REFERENCE           MPUI_DESC_STORE
+LANG_ENGLISH        "Rimanda al sito XLabs con le informazioni per scaricare i DLC"
+
+REFERENCE           MPUI_DESC_STREAM_FRIENDLY_UI
+LANG_ENGLISH        "Nasconde le notifiche di stato degli amici e le info sul server nella classifica."
+
+REFERENCE           MPUI_DESC_THEATER
+LANG_ENGLISH        "Guarda le partite che hai giocato."
+
+REFERENCE           MPUI_DESC_UNLOCK_STATS
+LANG_ENGLISH        "Sblocca le tue statistiche."
+
+REFERENCE           MPUI_DOME
+LANG_ENGLISH        "Dome"
+
+REFERENCE           MPUI_DOWNLOADING
+LANG_ENGLISH        "Download in corso"
+
+REFERENCE           MPUI_DOWNLOADING_CAPS
+LANG_ENGLISH        "DOWNLOAD IN CORSO"
+
+REFERENCE           MPUI_ESTATE_TROPICAL
+LANG_ENGLISH        "Estate: tropicale"
+
+REFERENCE           MPUI_FAV_TROPICAL
+LANG_ENGLISH        "Favela: tropicale"
+
+REFERENCE           MPUI_GUNGAME
+LANG_ENGLISH        "Gun Game"
+
+REFERENCE           MPUI_GUNGAME_CAPS
+LANG_ENGLISH        "GUN GAME"
+
+REFERENCE           MPUI_HARDHAT
+LANG_ENGLISH        "Hardhat"
+
+REFERENCE           MPUI_INF
+LANG_ENGLISH        "Infetti"
+
+REFERENCE           MPUI_INF_CAPS
+LANG_ENGLISH        "INFETTI"
+
+REFERENCE           MPUI_IS_PRIVATE
+LANG_ENGLISH        "Protetto da password:"
+
+REFERENCE           MPUI_IS_PRIVATE_CAPS
+LANG_ENGLISH        "PROTETTO DA PASSWORD:"
+
+REFERENCE           MPUI_IW4_TEST_MAP
+LANG_ENGLISH        "Mappa di prova IW4"
+
+REFERENCE           MPUI_KILLHOUSE
+LANG_ENGLISH        "Killhouse"
+
+REFERENCE           MPUI_LOCKDOWN
+LANG_ENGLISH        "Lockdown"
+
+REFERENCE           MPUI_MAX_CLIENTS
+LANG_ENGLISH        "Max. client:"
+
+REFERENCE           MPUI_MAX_CLIENTS_CAPS
+LANG_ENGLISH        "MAX. CLIENT:"
+
+REFERENCE           MPUI_MISSION
+LANG_ENGLISH        "Mission"
+
+REFERENCE           MPUI_MOD
+LANG_ENGLISH        "Mod:"
+
+REFERENCE           MPUI_MOD_CAPS
+LANG_ENGLISH        "MOD:"
+
+REFERENCE           MPUI_NA
+LANG_ENGLISH        "^3Attualmente non disponibile."
+
+REFERENCE           MPUI_NUKED
+LANG_ENGLISH        "Nuketown"
+
+REFERENCE           MPUI_OITC
+LANG_ENGLISH        "Un colpo in canna"
+
+REFERENCE           MPUI_OITC_CAPS
+LANG_ENGLISH        "UN COLPO IN CANNA"
+
+REFERENCE           MPUI_PLEASE_WAIT
+LANG_ENGLISH        "Attendere"
+
+REFERENCE           MPUI_RESET_STATS
+LANG_ENGLISH        "Azzera statistiche"
+
+REFERENCE           MPUI_RESET_STATS_CAPS
+LANG_ENGLISH        "AZZERA STATISTICHE"
+
+REFERENCE           MPUI_RESET_STATS_WARNING
+LANG_ENGLISH        "Vuoi davvero azzerare le tue statistiche?\n\nTutto ciò che hai sbloccato, incluse armi, esperienza, sfide, titoli ed emblemi, verrà azzerato.\n\nDovrai avanzare nuovamente di grado per riottenerlo."
+
+REFERENCE           MPUI_RESISTANCE
+LANG_ENGLISH        "Resistance"
+
+REFERENCE           MPUI_RULES_AIMASSIST
+LANG_ENGLISH        "Mira assistita"
+
+REFERENCE           MPUI_RULES_VOICECHAT
+LANG_ENGLISH        "Chat vocale"
+
+REFERENCE           MPUI_RUST_LONG
+LANG_ENGLISH        "Rust: lunga"
+
+REFERENCE           MPUI_SEATOWN
+LANG_ENGLISH        "Seatown"
+
+REFERENCE           MPUI_SECURITY_INCREASE_MESSAGE
+LANG_ENGLISH        "Aumento del livello di sicurezza da %d a %d (stima: %s)"
+
+REFERENCE           MPUI_SECURITY_LEVEL
+LANG_ENGLISH        "Livello di sicurezza:"
+
+REFERENCE           MPUI_SECURITY_LEVEL_CAPS
+LANG_ENGLISH        "LIVELLO DI SICUREZZA:"
+
+REFERENCE           MPUI_SECURITY_LEVEL_MESSAGE
+LANG_ENGLISH        "Il tuo livello di sicurezza è %d"
+
+REFERENCE           MPUI_SECURITY_NEW_LEVEL_MESSAGE
+LANG_ENGLISH        "Il tuo nuovo livello di sicurezza è %d"
+
+REFERENCE           MPUI_SERVERQUERIED_FORMAT
+LANG_ENGLISH        "Server: &&1\nGiocatori: &&2 (&&3)"
+
+REFERENCE           MPUI_SHARPSHOOTER_CAPS
+LANG_ENGLISH        "TIRATORE SCELTO"
+
+REFERENCE           MPUI_SHIPMENT_LONG
+LANG_ENGLISH        "Spedizione: lunga"
+
+REFERENCE           MPUI_STORM_SPRING
+LANG_ENGLISH        "Impianto chimico"
+
+REFERENCE           MPUI_TDEF
+LANG_ENGLISH        "Team Defender"
+
+REFERENCE           MPUI_TDEF_CAPS
+LANG_ENGLISH        "TEAM DEFENDER"
+
+REFERENCE           MPUI_UNDERGROUND
+LANG_ENGLISH        "Underground"
+
+REFERENCE           MPUI_UNLOCK_STATS
+LANG_ENGLISH        "Sblocca statistiche"
+
+REFERENCE           MPUI_UNLOCK_STATS_CAPS
+LANG_ENGLISH        "SBLOCCA STATISTICHE"
+
+REFERENCE           MPUI_UNLOCK_STATS_WARNING
+LANG_ENGLISH        "Vuoi davvero sbloccare le tue statistiche?\n\nOtterrai l'esperienza e il Prestigio massimi e sbloccherai tutte le armi, le sfide, i titoli e gli emblemi."
+
+REFERENCE           MPUI_VERSION
+LANG_ENGLISH        "Versione:"
+
+REFERENCE           MPUI_VERSION_CAPS
+LANG_ENGLISH        "VERSIONE:"
+
+REFERENCE           MPUI_VILLAGE
+LANG_ENGLISH        "Village"
+
+REFERENCE           MPUI_VIP_CAPS
+LANG_ENGLISH        "VIP"
+
+REFERENCE           OBJECTIVES_CONF
+LANG_ENGLISH        "Recupera le piastrine per vincere."
+
+REFERENCE           OBJECTIVES_CONF_HINT
+LANG_ENGLISH        "Recupera le piastrine per vincere."
+
+REFERENCE           OBJECTIVES_CONF_SCORE
+LANG_ENGLISH        "Recupera le piastrine per far segnare punti alla tua squadra e impedirlo ai nemici. Vince la prima squadra che arriva a &&1."
+
+REFERENCE           OBJECTIVES_INFECT
+LANG_ENGLISH        "I sopravvissuti eliminati diventano infetti. Infetta tutti o sopravvivi fino alla fine per vincere."
+
+REFERENCE           OBJECTIVES_INFECT_HINT
+LANG_ENGLISH        "Guardati le spalle."
+
+REFERENCE           OBJECTIVES_INFECT_SCORE
+LANG_ENGLISH        "I sopravvissuti diventano infetti. Infetta tutti o sopravvivi fino alla fine per vincere."
+
+REFERENCE           OBJECTIVES_TDEF
+LANG_ENGLISH        "Cattura e difendi la bandiera per ottenere un bonus punti doppi per la squadra."
+
+REFERENCE           OBJECTIVES_TDEF_ATTACKER_HINT
+LANG_ENGLISH        "Cattura la bandiera: bonus x2 per la squadra."
+
+REFERENCE           OBJECTIVES_TDEF_DEFENDER_HINT
+LANG_ENGLISH        "Difendi la bandiera: bonus x2 per la squadra."
+
+REFERENCE           OBJECTIVES_TDEF_HINT
+LANG_ENGLISH        "Cattura e difendi la bandiera."
+
+REFERENCE           OBJECTIVES_TDEF_SCORE
+LANG_ENGLISH        "Cattura e difendi la bandiera per ottenere un bonus punti doppi per la squadra. Vince la prima squadra che arriva a &&1."
+
+REFERENCE           PATCH_COD4_DLC
+LANG_ENGLISH        "Pacchetto Call of Duty 4"
+
+REFERENCE           PATCH_DESC_COD4_DLC
+LANG_ENGLISH        "Mappe di Call of Duty 4 convertite per IW4x dal team"
+
+REFERENCE           PATCH_DESC_DLC1
+LANG_ENGLISH        "Lo Stimulus Package di Modern Warfare 2 offre nuove mappe multigiocatore ricche d'azione, tra cui campi di battaglia inediti e leggendarie mappe preferite dai fan di Call of Duty 4: Modern Warfare."
+
+REFERENCE           PATCH_DESC_DLC2
+LANG_ENGLISH        "Il gioco d'azione in prima persona più venduto di tutti i tempi diventa ancora più grande con nuovi ed epici contenuti multigiocatore! Il Resurgence Pack di Modern Warfare 2 offre cinque incredibili nuove mappe multigiocatore. Porta l'azione in nuove ed emozionanti ambientazioni, poi combatti nei leggendari scenari di Call of Duty 4: Modern Warfare."
+
+REFERENCE           PATCH_DESC_IW4X_DLC
+LANG_ENGLISH        "DLC originale di IW4x con diverse mappe di Call of Duty: Online"
+
+REFERENCE           PATCH_DESC_MW3_DLC
+LANG_ENGLISH        "Mappe di Modern Warfare 3 convertite per IW4x dal team"
+
+REFERENCE           PATCH_DLC1
+LANG_ENGLISH        "Mappe Stimulus"
+
+REFERENCE           PATCH_DLC2
+LANG_ENGLISH        "Mappe Resurgence"
+
+REFERENCE           PATCH_IW4X_DLC
+LANG_ENGLISH        "Classici IW4x"
+
+REFERENCE           PATCH_MW3_DLC
+LANG_ENGLISH        "Pacchetto Modern Warfare 3"
+
+REFERENCE           PERKS_COMBATHIGH
+LANG_ENGLISH        "Adrenalina"
+
+REFERENCE           PERKS_DESC_COMBATHIGH
+LANG_ENGLISH        "Muoviti più velocemente per alcuni secondi dopo il rientro."
+
+REFERENCE           PERKS_PAINKILLER
+LANG_ENGLISH        "Adrenalina"
+
+REFERENCE           PLATFORM_CHANGE_NAME_CAPS
+LANG_ENGLISH        "^3C^7AMBIA NOME"
+
+REFERENCE           PLATFORM_DYK_IW4_MSG40
+LANG_ENGLISH        "Le tue partite vengono registrate automaticamente. Puoi guardarle nel menu Cinema."
+
+REFERENCE           PLATFORM_DYK_IW4_MSG41
+LANG_ENGLISH        "Non vuoi salire di grado? Prova la funzione per sbloccare le statistiche nel menu Caserma."
+
+REFERENCE           PLATFORM_DYK_IW4_MSG42
+LANG_ENGLISH        "Visita il menu DLC per i contenuti scaricabili più recenti."
+
+REFERENCE           PLATFORM_DYK_IW4_MSG43
+LANG_ENGLISH        "Puoi regolare il campo visivo nelle opzioni video."
+
+REFERENCE           PLATFORM_DYK_IW4_MSG44
+LANG_ENGLISH        "Se ti piace un server in particolare, puoi aggiungerlo ai preferiti."
+
+REFERENCE           PLATFORM_FRIENDS
+LANG_ENGLISH        "Amici ^0- ^3F"
+
+REFERENCE           PLATFORM_FRIENDS_CAPS
+LANG_ENGLISH        "AMICI ^0- ^3F"
+
+REFERENCE           PLATFORM_REFRESH
+LANG_ENGLISH        "Aggiorna ^0- ^3F5"
+
+REFERENCE           PLATFORM_REFRESH_CAPS
+LANG_ENGLISH        "AGGIORNA ^0- ^3F5"
+
+REFERENCE           PLATFORM_REFRESH_LIST
+LANG_ENGLISH        "Aggiorna elenco ^0- ^3F5"
+
+REFERENCE           PLATFORM_REFRESH_LIST_CAPS
+LANG_ENGLISH        "AGGIORNA ELENCO ^0- ^3F5"
+
+REFERENCE           PLAYERCARDS_TITLE_EVIL_CHICKEN
+LANG_ENGLISH        "Pollo malvagio"
+
+REFERENCE           PLAYERCARDS_TITLE_NO_LAST_STAND
+LANG_ENGLISH        "Niente Sopravvivenza!"
+
+REFERENCE           QUICKMESSAGE_1_COMMANDS
+LANG_ENGLISH        "1. Comandi"
+
+REFERENCE           QUICKMESSAGE_1_ENEMY_SPOTTED
+LANG_ENGLISH        "1. Contatto!"
+
+REFERENCE           QUICKMESSAGE_1_FOLLOW_ME
+LANG_ENGLISH        "1. Seguitemi!"
+
+REFERENCE           QUICKMESSAGE_1_YES_SIR
+LANG_ENGLISH        "1. Ricevuto."
+
+REFERENCE           QUICKMESSAGE_2_ENEMY_DOWN
+LANG_ENGLISH        "2. Nemico abbattuto!"
+
+REFERENCE           QUICKMESSAGE_2_MOVE_IN
+LANG_ENGLISH        "2. Avanzate!"
+
+REFERENCE           QUICKMESSAGE_2_MULTIPLE_CONTACTS
+LANG_ENGLISH        "2. Contatti multipli!"
+
+REFERENCE           QUICKMESSAGE_2_NO_SIR
+LANG_ENGLISH        "2. Negativo."
+
+REFERENCE           QUICKMESSAGE_2_STATEMENTS
+LANG_ENGLISH        "2. Comunicazioni"
+
+REFERENCE           QUICKMESSAGE_3_FALL_BACK
+LANG_ENGLISH        "3. Ripiegate!"
+
+REFERENCE           QUICKMESSAGE_3_IM_IN_POSITION
+LANG_ENGLISH        "3. In posizione."
+
+REFERENCE           QUICKMESSAGE_3_IM_ON_MY_WAY
+LANG_ENGLISH        "3. In movimento."
+
+REFERENCE           QUICKMESSAGE_3_ON_MY_WAY
+LANG_ENGLISH        "3. Sto arrivando."
+
+REFERENCE           QUICKMESSAGE_3_RESPONSES
+LANG_ENGLISH        "3. Risposte"
+
+REFERENCE           QUICKMESSAGE_4_AREA_SECURE
+LANG_ENGLISH        "4. Area sicura!"
+
+REFERENCE           QUICKMESSAGE_4_SORRY
+LANG_ENGLISH        "4. Scusate."
+
+REFERENCE           QUICKMESSAGE_4_SUPPRESSING_FIRE
+LANG_ENGLISH        "4. Fuoco di copertura!"
+
+REFERENCE           QUICKMESSAGE_5_ATTACK_LEFT_FLANK
+LANG_ENGLISH        "5. Attaccate il fianco sinistro!"
+
+REFERENCE           QUICKMESSAGE_5_GREAT_SHOT
+LANG_ENGLISH        "5. Bel colpo!"
+
+REFERENCE           QUICKMESSAGE_5_GRENADE
+LANG_ENGLISH        "5. Granata!"
+
+REFERENCE           QUICKMESSAGE_5_WATCH_SIX
+LANG_ENGLISH        "5. Guardati le spalle!"
+
+REFERENCE           QUICKMESSAGE_6_ATTACK_RIGHT_FLANK
+LANG_ENGLISH        "6. Attaccate il fianco destro!"
+
+REFERENCE           QUICKMESSAGE_6_SNIPER
+LANG_ENGLISH        "6. Cecchino!"
+
+REFERENCE           QUICKMESSAGE_6_TOOK_LONG_ENOUGH
+LANG_ENGLISH        "6. Forza!"
+
+REFERENCE           QUICKMESSAGE_7_ARE_YOU_CRAZY
+LANG_ENGLISH        "7. Sei impazzito?"
+
+REFERENCE           QUICKMESSAGE_7_HOLD_THIS_POSITION
+LANG_ENGLISH        "7. Mantenete la posizione!"
+
+REFERENCE           QUICKMESSAGE_7_NEED_REINFORCEMENTS
+LANG_ENGLISH        "7. Servono rinforzi!"
+
+REFERENCE           QUICKMESSAGE_8_HOLD_YOUR_FIRE
+LANG_ENGLISH        "8. Cessate il fuoco!"
+
+REFERENCE           QUICKMESSAGE_8_REGROUP
+LANG_ENGLISH        "8. Raggruppatevi!"
+
+REFERENCE           QUICKMESSAGE_ARE_YOU_CRAZY
+LANG_ENGLISH        "Sei impazzito?"
+
+REFERENCE           QUICKMESSAGE_AREA_SECURE
+LANG_ENGLISH        "Area sicura!"
+
+REFERENCE           QUICKMESSAGE_ATTACK_LEFT_FLANK
+LANG_ENGLISH        "Attaccate il fianco sinistro!"
+
+REFERENCE           QUICKMESSAGE_ATTACK_RIGHT_FLANK
+LANG_ENGLISH        "Attaccate il fianco destro!"
+
+REFERENCE           QUICKMESSAGE_COME_ON
+LANG_ENGLISH        "Forza."
+
+REFERENCE           QUICKMESSAGE_ENEMIES_SPOTTED
+LANG_ENGLISH        "Contatti multipli!"
+
+REFERENCE           QUICKMESSAGE_ENEMY_DOWN
+LANG_ENGLISH        "Nemico abbattuto!"
+
+REFERENCE           QUICKMESSAGE_ENEMY_GRENADE
+LANG_ENGLISH        "Granata nemica!"
+
+REFERENCE           QUICKMESSAGE_ENEMY_SPOTTED
+LANG_ENGLISH        "Contatto!"
+
+REFERENCE           QUICKMESSAGE_ESC_EXIT
+LANG_ENGLISH        "Esc. Esci"
+
+REFERENCE           QUICKMESSAGE_FALL_BACK
+LANG_ENGLISH        "Ripiegate!"
+
+REFERENCE           QUICKMESSAGE_FOLLOW_ME
+LANG_ENGLISH        "Seguitemi!"
+
+REFERENCE           QUICKMESSAGE_GREAT_SHOT
+LANG_ENGLISH        "Bel colpo!"
+
+REFERENCE           QUICKMESSAGE_GRENADE
+LANG_ENGLISH        "Granata!"
+
+REFERENCE           QUICKMESSAGE_HOLD_THIS_POSITION
+LANG_ENGLISH        "Mantenete la posizione!"
+
+REFERENCE           QUICKMESSAGE_HOLD_YOUR_FIRE
+LANG_ENGLISH        "Cessate il fuoco!"
+
+REFERENCE           QUICKMESSAGE_IM_IN_POSITION
+LANG_ENGLISH        "In posizione."
+
+REFERENCE           QUICKMESSAGE_IM_ON_MY_WAY
+LANG_ENGLISH        "In movimento."
+
+REFERENCE           QUICKMESSAGE_MOVE_IN
+LANG_ENGLISH        "Avanzate!"
+
+REFERENCE           QUICKMESSAGE_NEED_REINFORCEMENTS
+LANG_ENGLISH        "Servono rinforzi!"
+
+REFERENCE           QUICKMESSAGE_NO_SIR
+LANG_ENGLISH        "Negativo."
+
+REFERENCE           QUICKMESSAGE_ON_MY_WAY
+LANG_ENGLISH        "Sto arrivando."
+
+REFERENCE           QUICKMESSAGE_QUICK_MESSAGE
+LANG_ENGLISH        "Messaggio rapido"
+
+REFERENCE           QUICKMESSAGE_REGROUP
+LANG_ENGLISH        "Raggruppatevi!"
+
+REFERENCE           QUICKMESSAGE_SNIPER
+LANG_ENGLISH        "Cecchino!"
+
+REFERENCE           QUICKMESSAGE_SORRY
+LANG_ENGLISH        "Scusate."
+
+REFERENCE           QUICKMESSAGE_SQUAD_ATTACK_LEFT_FLANK
+LANG_ENGLISH        "Squadra, attaccate il fianco sinistro!"
+
+REFERENCE           QUICKMESSAGE_SQUAD_ATTACK_RIGHT_FLANK
+LANG_ENGLISH        "Squadra, attaccate il fianco destro!"
+
+REFERENCE           QUICKMESSAGE_SQUAD_HOLD_THIS_POSITION
+LANG_ENGLISH        "Squadra, mantenete la posizione!"
+
+REFERENCE           QUICKMESSAGE_SQUAD_REGROUP
+LANG_ENGLISH        "Squadra, raggruppatevi!"
+
+REFERENCE           QUICKMESSAGE_SQUAD_STICK_TOGETHER
+LANG_ENGLISH        "Squadra, restate uniti!"
+
+REFERENCE           QUICKMESSAGE_STICK_TOGETHER
+LANG_ENGLISH        "Restate uniti!"
+
+REFERENCE           QUICKMESSAGE_SUPPRESSING_FIRE
+LANG_ENGLISH        "Fuoco di copertura!"
+
+REFERENCE           QUICKMESSAGE_TOOK_LONG_ENOUGH
+LANG_ENGLISH        "Era ora!"
+
+REFERENCE           QUICKMESSAGE_TOOK_YOU_LONG_ENOUGH
+LANG_ENGLISH        "Ce ne hai messo di tempo!"
+
+REFERENCE           QUICKMESSAGE_WATCH_SIX
+LANG_ENGLISH        "Guardati le spalle!"
+
+REFERENCE           QUICKMESSAGE_YES_SIR
+LANG_ENGLISH        "Ricevuto."
+
+REFERENCE           QUICKMESSAGE_YOU_OUTTA_YOUR_MIND
+LANG_ENGLISH        "Sei fuori di testa?"
+
+REFERENCE           QUICKMESSAGE_YOURE_CRAZY
+LANG_ENGLISH        "Sei pazzo!"
+
+REFERENCE           QUICKMESSAGE_YOURE_NUTS
+LANG_ENGLISH        "Sei matto!"
+
+REFERENCE           SPLASHES_COMBATHIGH_DESC
+LANG_ENGLISH        "Muoviti più velocemente per alcuni secondi dopo il rientro."
+
+REFERENCE           SPLASHES_DENIED_KILL
+LANG_ENGLISH        "Uccisione impedita!"
+
+REFERENCE           SPLASHES_DRAFTED
+LANG_ENGLISH        "Infetto!"
+
+REFERENCE           SPLASHES_DRAFTED_ROGUE
+LANG_ENGLISH        "Sei stato infettato!"
+
+REFERENCE           SPLASHES_DROPPED_ENEMY_GUN_RANK
+LANG_ENGLISH        "Livello arma nemico ridotto!"
+
+REFERENCE           SPLASHES_DROPPED_GUN_RANK
+LANG_ENGLISH        "Livello arma perso!"
+
+REFERENCE           SPLASHES_FINAL_ROGUE
+LANG_ENGLISH        "Ultimo sopravvissuto!"
+
+REFERENCE           SPLASHES_FIRST_MERCENARY
+LANG_ENGLISH        "Primo infetto!"
+
+REFERENCE           SPLASHES_GAINED_GUN_RANK
+LANG_ENGLISH        "Livello arma ottenuto!"
+
+REFERENCE           SPLASHES_GOT_DRAFTED
+LANG_ENGLISH        "Sei stato infettato!"
+
+REFERENCE           SPLASHES_KILL_CONFIRMED
+LANG_ENGLISH        "Uccisione confermata!"
+
+REFERENCE           SPLASHES_KILL_DENIED
+LANG_ENGLISH        "Uccisione negata!"
+
+REFERENCE           SPLASHES_SURVIVOR
+LANG_ENGLISH        "Sopravvissuto!"
+
+REFERENCE           SPLASHES_TAGS_RETRIEVED
+LANG_ENGLISH        "Piastrine recuperate!"
+
+REFERENCE           SPLASHES_TEAM_ASSIST
+LANG_ENGLISH        "Assist di squadra!"
+
+REFERENCE           SPLASHES_TOP_GUN_RANK
+LANG_ENGLISH        "Livello arma massimo!"
+
+REFERENCE           SPLASHES_X2_BONUS
+LANG_ENGLISH        "Bonus x2!"
+
+REFERENCE           WEAPON_AK47_CLASSIC
+LANG_ENGLISH        "AK-47 Classic"
+
+REFERENCE           WEAPON_AK47_CLASSIC_ACOG
+LANG_ENGLISH        "AK-47 Classic con mirino ACOG"
+
+REFERENCE           WEAPON_AK47_CLASSIC_BLING
+LANG_ENGLISH        "AK-47 Classic accessoriato"
+
+REFERENCE           WEAPON_AK47_CLASSIC_FMJ
+LANG_ENGLISH        "AK-47 Classic FMJ"
+
+REFERENCE           WEAPON_AK47_CLASSIC_GP25
+LANG_ENGLISH        "AK-47 Classic con lanciagranate"
+
+REFERENCE           WEAPON_AK47_CLASSIC_REDDOT
+LANG_ENGLISH        "AK-47 Classic con mirino laser"
+
+REFERENCE           WEAPON_AK47_CLASSIC_SILENCER
+LANG_ENGLISH        "AK-47 Classic silenziato"
+
+REFERENCE           WEAPON_AK47_CLASSIC_XMAGS
+LANG_ENGLISH        "AK-47 Classic con caricatore modificato"
+
+REFERENCE           WEAPON_AK74U_EXTENDED_MAGS
+LANG_ENGLISH        "AK-74u con caricatore modificato"
+
+REFERENCE           WEAPON_DESERTEAGLEGOLD_AKIMBO
+LANG_ENGLISH        "Desert Eagle placcata oro Akimbo"
+
+REFERENCE           WEAPON_DESERTEAGLEGOLD_BLING
+LANG_ENGLISH        "Desert Eagle placcata oro accessoriata"
+
+REFERENCE           WEAPON_DESERTEAGLEGOLD_FMJ
+LANG_ENGLISH        "Desert Eagle placcata oro FMJ"
+
+REFERENCE           WEAPON_DESERTEAGLEGOLD_TACTICAL
+LANG_ENGLISH        "Desert Eagle placcata oro con coltello da combattimento"
+
+REFERENCE           WEAPON_PEACEKEEPER
+LANG_ENGLISH        "Peacekeeper"
+
+REFERENCE           MENU_FPS_SIMPLE
+LANG_ENGLISH        "Semplice"
+
+REFERENCE           MENU_FPS_SIMPLE_RANGES
+LANG_ENGLISH        "Semplice+intervalli"
+
+REFERENCE           MENU_FPS_VERBOSE
+LANG_ENGLISH        "Dettagliato"
+
+REFERENCE           MENU_FPS_VERBOSE_VIEWPOS
+LANG_ENGLISH        "Dettagliato+posizione"
+
+REFERENCE           MENU_MAXFPS_DEFAULT
+LANG_ENGLISH        "85 (predefinito)"
+
+REFERENCE           MENU_DEVELOPED_BY
+LANG_ENGLISH        "SVILUPPATO DA"
+
+REFERENCE           MENU_WELCOME_TITLE
+LANG_ENGLISH        "Benvenuto in IW4x"
+
+REFERENCE           MENU_WELCOME_MESSAGE
+LANG_ENGLISH        "Grazie per aver scelto IW4x!\n\nPer ricevere assistenza, segnalare bug o semplicemente passare del tempo con la community, visita ^4iw4x.io ^7per il nostro Discord e altre risorse.\n\nSoprattutto, ricorda che, pur impegnandoci a mantenere il gioco stabile, si tratta di un progetto della community senza alcuna garanzia. Aiutaci segnalando bug e lasciando un feedback!"
+
+REFERENCE           MENU_WEBSITE_CAPS
+LANG_ENGLISH        "SITO WEB"
+
+REFERENCE           MENU_I_UNDERSTAND_CAPS
+LANG_ENGLISH        "HO CAPITO"
+
+REFERENCE           MPUI_SERVER_BROWSER_TOAST
+LANG_ENGLISH        "Browser server"
+
+REFERENCE           MPUI_FETCHING_SERVERS
+LANG_ENGLISH        "Recupero server in corso..."
+
+REFERENCE           MPUI_SERVERS_REFRESHED
+LANG_ENGLISH        "Server aggiornati"
+
+REFERENCE           MENU_ADVANCED_VIDEO
+LANG_ENGLISH        "Video avanzato"
+
+REFERENCE           MPUI_GTNW_CAPS
+LANG_ENGLISH        "GUERRA TERMONUCLEARE"
+
+REFERENCE           MENU_RESET
+LANG_ENGLISH        "Ripristina"
+
+REFERENCE           NULL_EMPTY
+LANG_ENGLISH        ""
+
+ENDMARKER
