@@ -19,11 +19,6 @@ FACTION_COLOR_R_COL 				= 13;
 FACTION_COLOR_G_COL 				= 14;
 FACTION_COLOR_B_COL 				= 15;
 
-init()
-{
-	level.intermissionTime = getDvarInt( "scr_intermissionTime" );
-}
-
 // when a team leaves completely, that team forfeited, team left wins round, ends game
 onForfeit( team )
 {
@@ -2199,7 +2194,7 @@ endGame( winner, endReasonText, nukeDetonated )
 	if (!matchmakingGame())
 	{
 
-		intermissionTime = level.intermissionTime;
+		intermissionTime = getDvarFloat( "scr_intermissionTime" );
 
 		if(getDvarInt( "party_host" ))
 		{
