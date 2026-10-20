@@ -1739,4 +1739,25 @@ LANG_ENGLISH        "85 (Default)"
 REFERENCE           MENU_DEVELOPED_BY
 LANG_ENGLISH        "DEVELOPED BY"
 
+REFERENCE           MENU_WELCOME_TITLE
+LANG_ENGLISH        "Welcome to IW4x"
+
+REFERENCE           MENU_WELCOME_MESSAGE
+LANG_ENGLISH        "Thank you for playing IW4x!\n\nTo get help, report bugs, or just hang out with the community, head over to ^4iw4x.io ^7for our Discord and other resources.\n\nAbove all, please remember that while we try to keep the game stable, it's still a community project without any guarantees. Please help us by reporting bugs and giving feedback!"
+
+REFERENCE           MENU_WEBSITE_CAPS
+LANG_ENGLISH        "WEBSITE"
+
+REFERENCE           MENU_I_UNDERSTAND_CAPS
+LANG_ENGLISH        "I UNDERSTAND"
+
+REFERENCE           MPUI_SERVER_BROWSER_TOAST
+LANG_ENGLISH        "Server Browser"
+
+REFERENCE           MPUI_FETCHING_SERVERS
+LANG_ENGLISH        "Fetching servers..."
+
+REFERENCE           MPUI_SERVERS_REFRESHED
+LANG_ENGLISH        "Servers refreshed"
+
 ENDMARKER

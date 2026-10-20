@@ -1798,6 +1798,27 @@ LANG_ENGLISH        "85 (par défaut)"
 REFERENCE           MENU_DEVELOPED_BY
 LANG_ENGLISH        "DÉVELOPPÉ PAR"
 
+REFERENCE           MENU_WELCOME_TITLE
+LANG_ENGLISH        "Bienvenue dans IW4x"
+
+REFERENCE           MENU_WELCOME_MESSAGE
+LANG_ENGLISH        "Merci de jouer à IW4x !\n\nPour obtenir de l'aide, signaler des bugs ou simplement passer du temps avec la communauté, rendez-vous sur ^4iw4x.io ^7pour notre Discord et d'autres ressources.\n\nSurtout, n'oubliez pas que, même si nous faisons tout pour que le jeu reste stable, il s'agit d'un projet communautaire sans aucune garantie. Aidez-nous en signalant les bugs et en donnant votre avis !"
+
+REFERENCE           MENU_WEBSITE_CAPS
+LANG_ENGLISH        "SITE WEB"
+
+REFERENCE           MENU_I_UNDERSTAND_CAPS
+LANG_ENGLISH        "J'AI COMPRIS"
+
+REFERENCE           MPUI_SERVER_BROWSER_TOAST
+LANG_ENGLISH        "Navigateur de serveurs"
+
+REFERENCE           MPUI_FETCHING_SERVERS
+LANG_ENGLISH        "Récupération des serveurs..."
+
+REFERENCE           MPUI_SERVERS_REFRESHED
+LANG_ENGLISH        "Serveurs actualisés"
+
 REFERENCE           WEAPON_TYPE99
 LANG_ENGLISH        "Type 99"
 

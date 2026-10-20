@@ -22,8 +22,8 @@
 #define MENU_NAME													"menu_first_launch"
 #define MENU_MUSIC													"music_opening"
 
-#define WELCOME_TITLE												"Welcome to IW4x"
-#define WELCOME_MESSAGE												"Thank you for playing IW4x!\n\nTo get help, report bugs, or just hang out with the community, head over to ^4iw4x.io ^7for our Discord and other resources.\n\nAbove all, please remember that while we try to keep the game stable, it's still a community project without any guarantees. Please help us by reporting bugs and giving feedback!"
+#define WELCOME_TITLE												"@MENU_WELCOME_TITLE"
+#define WELCOME_MESSAGE												"@MENU_WELCOME_MESSAGE"
 
 #define MENU_ITEM_WELCOME_BOX(titleArg, messageArg) \
 	itemDef \
@@ -136,8 +136,8 @@
 
 		MENU_ITEM_WELCOME_BOX(WELCOME_TITLE, WELCOME_MESSAGE)
 
-		MENU_ITEM_BUTTON(-300, 326, 106.667, "website", "WEBSITE", uiScript "visitWebsite";)
-		MENU_ITEM_BUTTON(-70, 326, 146.667, "ok", "I UNDERSTAND", ACTION_ACCEPT)
+		MENU_ITEM_BUTTON(-300, 326, 106.667, "website", "@MENU_WEBSITE_CAPS", uiScript "visitWebsite";)
+		MENU_ITEM_BUTTON(-70, 326, 146.667, "ok", "@MENU_I_UNDERSTAND_CAPS", ACTION_ACCEPT)
 		MENU_ITEM_BUTTON(-70, 400, 146.667, "quit", "@MENU_QUIT_CAPS", ON_MENU_ESC)
 	}
 }
