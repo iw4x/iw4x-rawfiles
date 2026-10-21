@@ -177,7 +177,7 @@
 			foreColor 1 1 1 0.65
 			background "hud_dpad_xbox360"
 			textScale 0.55
-			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && !dvarbool( "gpad_style" ) )
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarint( "gpad_glyph_style" ) == 0 )
 		}
 		itemDef
 		{
@@ -188,7 +188,7 @@
 			foreColor 1 1 1 0.65
 			background "hud_dpad_ps3"
 			textScale 0.55
-			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarbool( "gpad_style" ) )
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarint( "gpad_glyph_style" ) == 1 )
 		}
 		itemDef
 		{

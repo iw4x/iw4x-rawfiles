@@ -30,7 +30,7 @@
 			forecolor 1 1 1 0.65
 			background "hud_dpad_xbox360"
 			textscale 0.55
-			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && !dvarint( "gpad_style" ) )
+			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_glyph_style" ) == 0 )
 		}
 		itemDef
 		{
@@ -41,7 +41,7 @@
 			forecolor 1 1 1 0.65
 			background "hud_dpad_ps3"
 			textscale 0.55
-			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_style" ) )
+			visible when(dvarint( "gpad_in_use" ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_glyph_style" ) == 1 )
 		}
 		itemDef
 		{
@@ -276,7 +276,7 @@
 			textscale 0
 			textstyle 0
 			background "button_x"
-			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && !dvarbool( "gpad_style" ) && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarint( "gpad_glyph_style" ) == 0 && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
 		}
 		itemDef
 		{
@@ -290,7 +290,7 @@
 			textscale 0
 			textstyle 0
 			background "button_ps3_square"
-			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarbool( "gpad_style" ) && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
+			visible when ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) && dvarint( "gpad_glyph_style" ) == 1 && !inkillcam() && !spectatingclient() && player( "stockAmmo" ) > 0 && player( "clipAmmo" ) >= 0 )
 		}
 	}
 }
