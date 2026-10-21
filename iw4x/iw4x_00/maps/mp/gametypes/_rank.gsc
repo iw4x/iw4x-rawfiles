@@ -8,7 +8,7 @@ init()
 	level.scoreInfo = [];
 	level.xpScale = getDvarInt( "scr_xpscale" );
 
-	level.xpScale = max( level.xpScale, 0 );
+	level.xpScale = max( level.xpScale, 1 );
 
 	level.rankTable = [];
 
@@ -750,9 +750,6 @@ isLastRestXPAward( baseXP )
 
 syncXPStat()
 {
-	if ( level.xpScale > 4 || level.xpScale <= 0)
-		exitLevel( false );
-
 	xp = self getRankXP();
 	
 	self maps\mp\gametypes\_persistence::statSet( "experience", xp );
