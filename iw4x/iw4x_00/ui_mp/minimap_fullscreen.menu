@@ -14,6 +14,8 @@
 		hiddenDuringFlashbang 
 		hiddenDuringScope 
 		visible 1
+		// hidden while spectating with a controller, as on console
+		visible when ( ! ( ( spectatingclient( ) || spectatingfree( ) ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
 		itemDef
 		{
 			name minimap_border

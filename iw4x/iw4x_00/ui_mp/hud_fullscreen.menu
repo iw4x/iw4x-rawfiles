@@ -190,7 +190,92 @@
 			textalign 4
 			textscale 0.375
 			textstyle 3
-			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) )
+			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && !( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
+		}
+		// controller: the console list of spectator buttons, top left
+		itemDef
+		{
+			rect 9 -2 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( keybinding( "togglemenu" ) + " Menu" )
+			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
+		}
+		itemDef
+		{
+			rect 9 21 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			text "@PLATFORM_FOLLOWNEXTPLAYER"
+			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
+		}
+		itemDef
+		{
+			rect 9 44 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			text "@PLATFORM_FOLLOWPREVIOUSPLAYER"
+			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
+		}
+		itemDef
+		{
+			rect 9 67 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			text "@PLATFORM_THIRDPERSON"
+			visible when ( ( ! ( inkillcam( ) ) ) && spectatingclient( ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) && !dvarbool( "cg_thirdPerson" ) )
+		}
+		itemDef
+		{
+			rect 9 67 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			text "@PLATFORM_FIRSTPERSON"
+			visible when ( ( ! ( inkillcam( ) ) ) && spectatingclient( ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) && dvarbool( "cg_thirdPerson" ) )
+		}
+		itemDef
+		{
+			rect 9 90 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( keybinding( "+scores" ) + " Score" )
+			visible when ( ( ! ( inkillcam( ) ) ) && spectatingclient( ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
+		}
+		itemDef
+		{
+			rect 9 67 180 5 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_TOP
+			decoration
+			visible 1
+			forecolor 1 1 1 0.65
+			textalign 4
+			textscale 0.4
+			textstyle 3
+			exp text ( keybinding( "+scores" ) + " Score" )
+			visible when ( ( ! ( inkillcam( ) ) ) && ( spectatingclient( ) || spectatingfree( ) ) && ( ! ( ui_active( ) ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) && !spectatingclient( ) && ( dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) )
 		}
 		itemDef
 		{
