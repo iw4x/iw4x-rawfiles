@@ -10,7 +10,24 @@
 		fullscreen 0
 		rect 3 3 0 0 8 8
 		foreColor 1 1 1 1
-		visible when ( ( ( ! ( ui_active( ) ) ) && ( ! ( flashbanged( ) ) ) && ( ! ( ( ( weaponname( ) == "killstreak_ac130_mp" ) || ( weaponname( ) == "killstreak_helicopter_minigun_mp" ) || ( weaponname( ) == "killstreak_predator_missile_mp" ) || ( ( weaponname( ) == "ac130_105mm_mp" ) || ( weaponname( ) == "ac130_40mm_mp" ) || ( weaponname( ) == "ac130_25mm_mp" ) ) || ( adsjavelin( ) ) || ( weaponname( ) == "heli_remote_mp" ) || missilecam( ) ) || ( getperk( "equipment" ) == "_specialty_blastshield" && ( ( ! ( dvarint( "scr_gameended" ) ) ) || inkillcam( ) ) ) ) ) && ( ! ( scoped( ) ) ) && ( ! ( selecting_location( ) ) ) && ( !isempjammed( ) ) && ( ( ! ( dvarbool( "g_hardcore" ) ) ) || radarisenabled( ) || dvarint( "g_compassShowEnemies" ) ) && ( ! ( dvarint( "scr_gameended" ) ) ) ) && ( ! ( milliseconds( ) - localvarint( "ui_show_killedBy" ) < 4000 || ( inkillcam( ) ) ) ) && ( ! ( selecting_location( ) ) ) && ( ! ( spectatingfree( ) ) ) && ( ! ( ( spectatingclient( ) || spectatingfree( ) ) && dvarbool( "gpad_enabled" ) && dvarint( "gpad_in_use" ) ) ) ) 
+		// Keep this statement within the engine's 200-entry expression limit.
+		visible when (
+			!ui_active() && !flashbanged()
+			&& !(weaponname() == "killstreak_ac130_mp"
+				|| weaponname() == "killstreak_helicopter_minigun_mp"
+				|| weaponname() == "killstreak_predator_missile_mp"
+				|| weaponname() == "ac130_105mm_mp"
+				|| weaponname() == "ac130_40mm_mp"
+				|| weaponname() == "ac130_25mm_mp"
+				|| adsjavelin() || weaponname() == "heli_remote_mp" || missilecam()
+				|| (getperk("equipment") == "_specialty_blastshield" && (!dvarint("scr_gameended") || inkillcam())))
+			&& !scoped() && !selecting_location() && !isempjammed()
+			&& (!dvarbool("g_hardcore") || radarisenabled() || dvarint("g_compassShowEnemies"))
+			&& !dvarint("scr_gameended")
+			&& !(milliseconds() - localvarint("ui_show_killedBy") < 4000 || inkillcam())
+			&& !spectatingfree()
+			&& !(spectatingclient() && dvarbool("gpad_enabled") && dvarint("gpad_in_use"))
+		)
 		hiddenDuringFlashbang 
 		hiddenDuringScope 
 		visible 1
