@@ -78,7 +78,8 @@
 		CHOICE_BUTTON_FOCUS(3, "dlc_list_4", "@PATCH_IW4X_DLC", setdvar "iw4x_maps_dlc" 3;, LOCAL_MAP_FOCUS( "PATCH_IW4X_DLC", "PATCH_DESC_IW4X_DLC", "preview_codo_dlc" ), 1)
 		CHOICE_BUTTON_FOCUS(4, "dlc_list_5", "@PATCH_COD4_DLC", setdvar "iw4x_maps_dlc" 4;, LOCAL_MAP_FOCUS( "PATCH_COD4_DLC", "PATCH_DESC_COD4_DLC", "preview_cod4_dlc" ), 1)
 		CHOICE_BUTTON_FOCUS(5, "dlc_list_6", "@PATCH_MW3_DLC", setdvar "iw4x_maps_dlc" 5;, LOCAL_MAP_FOCUS( "PATCH_MW3_DLC", "PATCH_DESC_MW3_DLC", "preview_mw3_dlc" ), 1)
-		CHOICE_BUTTON_FOCUS(6, "dlc_list_custom", "@CUSTOM_MAPS_DLC", setdvar "iw4x_maps_dlc" 99;, LOCAL_MAP_FOCUS( "CUSTOM_MAPS_DLC", "DESC_CUSTOM_MAPS_DLC", "preview_custom_maps" ), 1)
+		CHOICE_BUTTON_FOCUS(6, "dlc_list_sp", "Single Player", setdvar "iw4x_maps_dlc" 6;, LOCAL_MAP_FOCUS( "Single Player", "Single Player Maps", "preview_airport" ), 1)
+		CHOICE_BUTTON_FOCUS(7, "dlc_list_custom", "@CUSTOM_MAPS_DLC", setdvar "iw4x_maps_dlc" 99;, LOCAL_MAP_FOCUS( "CUSTOM_MAPS_DLC", "DESC_CUSTOM_MAPS_DLC", "preview_custom_maps" ), 1)
 
 		LOCAL_MAP_SELECTION(0, 	"mp_afghan", 			"MPUI_AFGHAN", 			"MPUI_DESC_MAP_AFGHAN", 		"preview_mp_afghan",			dvarint("iw4x_maps_dlc") == 0)
 		LOCAL_MAP_SELECTION(1, 	"mp_derail", 			"MPUI_DERAIL", 			"MPUI_DESC_MAP_DERAIL", 		"preview_mp_derail",			dvarint("iw4x_maps_dlc") == 0)
@@ -146,6 +147,15 @@
 		LOCAL_MAP_SELECTION(6,	"mp_seatown", 			"MPUI_SEATOWN",			"MPUI_DESC_MAP_SEATOWN",		"preview_mp_seatown",			dvarint("iw4x_maps_dlc") == 5)
 		LOCAL_MAP_SELECTION(7,	"mp_underground", 		"MPUI_UNDERGROUND",		"MPUI_DESC_MAP_UNDERGROUND",	"preview_mp_underground",		dvarint("iw4x_maps_dlc") == 5)
 		LOCAL_MAP_SELECTION(8,	"mp_village", 			"MPUI_VILLAGE",			"MPUI_DESC_MAP_VILLAGE",		"preview_mp_village",			dvarint("iw4x_maps_dlc") == 5)
+
+		LOCAL_MAP_SELECTION(0,	"trainer", 			"Trainer",					"Trainer",						"preview_trainer",				dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(1,	"roadkill",			"Roadkill",					"Roadkill",						"preview_roadkill",				dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(2,	"cliffhanger",		"Cliffhanger",				"Cliffhanger",					"preview_cliffhanger",			dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(3,	"airport", 			"Airport",					"Airport",						"preview_airport",				dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(4,	"favela", 			"MPUI_FAVELA",				"MPUI_DESC_MAP_FAVELA",			"preview_favela",				dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(5,	"favela_escape",	"Favela Escape",			"Favela Escape",				"preview_favela_escape",		dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(6,	"invasion",			"MPUI_INVASION",			"MPUI_DESC_MAP_INVASION",		"preview_invasion",				dvarint("iw4x_maps_dlc") == 6)
+		LOCAL_MAP_SELECTION(7,	"arcadia", 			"Arcadia",					"Arcadia",						"preview_arcadia",				dvarint("iw4x_maps_dlc") == 6)
 
 		itemDef 
 		{
